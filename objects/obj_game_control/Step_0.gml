@@ -5,10 +5,43 @@
 	
 //}
 
-if global.lives <= 0 {
-	game_end()	
+if global.round < 1 and global.round >= (array_length(global.bloon_sends) - 1) {
+	exit;	
 }
 
-if instance_number(obj_bloon) <= 0 and bully_count <= 0 {
+var _round = global.bloon_sends[global.round - 1];
+var _bloons_remaining = false;
+
+for(var _i = 0; _i < array_length(_round); _i++) {
+	if _round[_i].count < 0 {
+		continue;
+	}
+	_bloons_remaining = true;
+	if _round[_i].cooldown <= 0 {
+		with instance_create_depth(-32, 192, depth, obj_bloon) {
+			scr_bloon_stat_setup(id, _round[_i].class, _round[_i].layers);
+		}
+		_round[_i].cooldown += _round[_i].spread;
+		_round[_i].count--;
+	}
+	_round[_i].cooldown--;
+}
+
+if !_bloons_remaining {
+	global.round_gap--;
+	if global.round_gap < 0 {
+		global.round++;
+		global.round_gap = 360;
+	}
+}
+
+global.round_time++;
+
+/*if global.lives <= 0 {
+	game_end()	
+} */
+
+/*if instance_number(obj_bloon) <= 0 and bully_count <= 0 {
 	instance_create_depth(100, 100, depth - 100, obj_win_butt)	
 }
+*/
