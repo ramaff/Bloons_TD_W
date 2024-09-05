@@ -5,7 +5,7 @@
 	
 //}
 
-if global.round < 1 and global.round >= (array_length(global.bloon_sends) - 1) {
+if global.round < 1 || global.round > array_length(global.bloon_sends) {
 	exit;	
 }
 
@@ -13,13 +13,13 @@ var _round = global.bloon_sends[global.round - 1];
 var _bloons_remaining = false;
 
 for(var _i = 0; _i < array_length(_round); _i++) {
-	if _round[_i].count < 0 {
+	if _round[_i].count < 1 {
 		continue;
 	}
 	_bloons_remaining = true;
 	if _round[_i].cooldown <= 0 {
 		with instance_create_depth(-32, 192, depth, obj_bloon) {
-			scr_bloon_stat_setup(id, _round[_i].class, _round[_i].layers);
+			scr_bloon_stat_setup(id, _round[_i].class, struct_get(_round[_i], "layer"));
 		}
 		_round[_i].cooldown += _round[_i].spread;
 		_round[_i].count--;

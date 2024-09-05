@@ -1,10 +1,17 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layers = 1){
+function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red"){
 
-	_bloon.bloon_stats = variable_clone(struct_get(global.bloon_stats, _class)[_layers - 1])
+	var _class_stats = struct_get(global.bloon_stats, _class)
+	
+	_bloon.bloon_stats = variable_clone(struct_get(_class_stats, _layer))
+	
+	show_debug_message(_bloon.bloon_stats)
 
-	_bloon.image_index = _layers - 1
+	_bloon.image_index = _bloon.bloon_stats.index
+	if _class = "splitter" {
+		_bloon.sprite_index = spr_splitter_bloon;
+	}
 	
 	_bloon.speed = _bloon.bloon_stats.speed
 	_bloon.path_speed = _bloon.speed

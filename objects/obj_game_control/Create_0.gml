@@ -9,35 +9,60 @@ global.bloon_sends = [
 	[
 		{
 			"class": "normal",
-			"layers": 1,
+			"layer": "red",
 			"count": 10,
-			"spread": 75,
+			"spread": 45,
 			"cooldown": 0
 		}
 	],
 	[
 		{
 			"class": "normal",
-			"layers": 1,
-			"count": 15,
-			"spread": 56,
+			"layer": "red",
+			"count": 18,
+			"spread": 30,
 			"cooldown": 0
 		}
 	],
 	[
 		{
 			"class": "normal",
-			"layers": 2,
+			"layer": "blue",
 			"count": 8,
-			"spread": 80,
+			"spread": 54,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
-			"layers": 1,
+			"layer": "red",
+			"count": 10,
+			"spread": 18,
+			"cooldown": 540
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "blue",
+			"count": 12,
+			"spread": 45,
+			"cooldown": 0
+		},
+		{
+			"class": "splitter",
+			"layer": "orange",
 			"count": 8,
-			"spread": 30,
-			"cooldown": 750
+			"spread": 60,
+			"cooldown": 640
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 1,
+			"spread": 45,
+			"cooldown": 0
 		}
 	]
 ]

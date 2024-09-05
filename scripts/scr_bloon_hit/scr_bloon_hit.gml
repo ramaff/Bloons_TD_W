@@ -11,15 +11,35 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 		_bloon.bloon_stats.health += 1;
 		_bloon.bloon_stats.layers -= 1;
 		
-		if _bloon.bloon_stats.layers < 1 {
+		if _bloon.bloon_stats.layers < 1 || !variable_struct_exists(_bloon.bloon_stats, "children") {
 		
 			instance_destroy(_bloon);
 			exit;
 		}
 	
-		var _layers = _bloon.bloon_stats.layers
+		//var _layers = _bloon.bloon_stats.layers
+		var _children = _bloon.bloon_stats.children
+		var _pos = _bloon.path_position
+		
+		show_debug_message(_children)
+		
+		for(var _i = 0; _i < array_length(_children); _i++) {
+			var _layer = variable_struct_get(_children[_i], "layer")
+			var _child_class = variable_struct_get(_children[_i], "class")
+			
+			show_debug_message(_child_class)
+			show_debug_message(_layer)
 	
-		scr_bloon_stat_setup(_bloon, _class, _layers)
+			with instance_create_depth(_bloon.x, _bloon.y, depth, obj_bloon) {
+				scr_bloon_stat_setup(id, _child_class, _layer)
+				
+				path_position = _pos
+				_pos -= 0.02
+			}
+		//scr_bloon_stat_setup(_bloon, _class, _layer)
+		}
+		
+		instance_destroy(_bloon)
 	
 	}
 	
