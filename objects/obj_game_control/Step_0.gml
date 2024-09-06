@@ -17,6 +17,7 @@ for(var _i = 0; _i < array_length(_round); _i++) {
 		continue;
 	}
 	_bloons_remaining = true;
+	show_debug_message(_round[_i])
 	if _round[_i].cooldown <= 0 {
 		with instance_create_depth(-32, 192, depth, obj_bloon) {
 			scr_bloon_stat_setup(id, _round[_i].class, struct_get(_round[_i], "layer"));

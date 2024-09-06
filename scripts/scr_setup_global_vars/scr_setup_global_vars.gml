@@ -132,9 +132,10 @@ function scr_setup_global_vars(){
 				]
 			}
 		},
-		"splitter": [
-			{
+		"splitter": {
+			"orange": {
 				layers: 2,
+				index: 0,
 				health: 1,
 				density: 1,
 				speed: 1.8,
@@ -153,31 +154,35 @@ function scr_setup_global_vars(){
 					}
 				]
 			},
-			{
+			"cyan": {
 				layers: 3,
+				index: 1,
 				health: 1,
 				density: 1,
 				speed: 2.3,
 			},
-			{
+			"lime": {
 				layers: 4,
+				index: 3,
 				health: 1,
 				density: 1,
 				speed: 2.8,
 			},
-			{
+			"amber": {
 				layers: 5,
+				index: 4,
 				health: 1,
 				density: 1,
 				speed: 4.8,
 			},
-			{
+			"purple": {
 				layers: 6,
+				index: 5,
 				health: 1,
 				density: 1,
 				speed: 5.3,
 			},
-		],
+		},
 		"moab": [
 			{
 				layers: 1,

@@ -4,6 +4,8 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red"){
 
 	var _class_stats = struct_get(global.bloon_stats, _class)
 	
+	show_debug_message(_layer)
+	
 	_bloon.bloon_stats = variable_clone(struct_get(_class_stats, _layer))
 	
 	show_debug_message(_bloon.bloon_stats)
