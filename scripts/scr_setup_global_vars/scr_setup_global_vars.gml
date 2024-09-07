@@ -7,6 +7,7 @@ function scr_setup_global_vars(){
 			"red": {
 				layers: 1,
 				index: 0,
+				rbe: 1,
 				health: 1,
 				density: 1,
 				speed: 1.5
@@ -14,6 +15,7 @@ function scr_setup_global_vars(){
 			"blue": {
 				layers: 2,
 				index: 1,
+				rbe: 2,
 				health: 1,
 				density: 1,
 				speed: 2,
@@ -27,6 +29,7 @@ function scr_setup_global_vars(){
 			"green": {
 				layers: 3,
 				index: 2,
+				rbe: 3,
 				health: 1,
 				density: 1,
 				speed: 2.5,
@@ -40,6 +43,7 @@ function scr_setup_global_vars(){
 			"yellow": {
 				layers: 4,
 				index: 3,
+				rbe: 4,
 				health: 1,
 				density: 1,
 				speed: 4.5,
@@ -53,6 +57,7 @@ function scr_setup_global_vars(){
 			"pink": {
 				layers: 5,
 				index: 4,
+				rbe: 5,
 				health: 1,
 				density: 1,
 				speed: 5,
@@ -66,6 +71,7 @@ function scr_setup_global_vars(){
 			"black": {
 				layers: 6,
 				index: 5,
+				rbe: 11,
 				health: 1,
 				density: 1,
 				speed: 2,
@@ -83,6 +89,7 @@ function scr_setup_global_vars(){
 			"white": {
 				layers: 6,
 				index: 6,
+				rbe: 11,
 				health: 1,
 				density: 1,
 				speed: 2.25,
@@ -100,6 +107,7 @@ function scr_setup_global_vars(){
 			"zebra": {
 				layers: 7,
 				index: 7,
+				rbe: 23,
 				health: 1,
 				density: 1,
 				speed: 2.5,
@@ -117,6 +125,7 @@ function scr_setup_global_vars(){
 			"rainbow": {
 				layers: 8,
 				index: 8,
+				rbe: 47,
 				health: 1,
 				density: 1,
 				speed: 4.25,
@@ -136,6 +145,8 @@ function scr_setup_global_vars(){
 			"orange": {
 				layers: 2,
 				index: 0,
+				rbe: 4,
+				power_lvl: 3,
 				health: 1,
 				density: 1,
 				speed: 1.8,
@@ -157,30 +168,88 @@ function scr_setup_global_vars(){
 			"cyan": {
 				layers: 3,
 				index: 1,
+				rbe: 7,
+				power_lvl: 5,
 				health: 1,
 				density: 1,
 				speed: 2.3,
+				children: [
+					{
+						"class": "normal",
+						"layer": "blue"
+					},
+					{
+						"class": "normal",
+						"layer": "blue"
+					},
+					{
+						"class": "normal",
+						"layer": "blue"
+					}
+				]
 			},
 			"lime": {
 				layers: 4,
-				index: 3,
+				index: 2,
 				health: 1,
 				density: 1,
 				speed: 2.8,
+				children: [
+					{
+						"class": "normal",
+						"layer": "green"
+					},
+					{
+						"class": "normal",
+						"layer": "green"
+					},
+					{
+						"class": "normal",
+						"layer": "green"
+					}
+				]
 			},
 			"amber": {
 				layers: 5,
-				index: 4,
+				index: 3,
 				health: 1,
 				density: 1,
 				speed: 4.8,
+				children: [
+					{
+						"class": "normal",
+						"layer": "yellow"
+					},
+					{
+						"class": "normal",
+						"layer": "yellow"
+					},
+					{
+						"class": "normal",
+						"layer": "yellow"
+					}
+				]
 			},
 			"purple": {
 				layers: 6,
-				index: 5,
+				index: 4,
 				health: 1,
 				density: 1,
 				speed: 5.3,
+				children: [
+					{
+						"class": "normal",
+						"layer": "pink"
+					},
+					{
+						"class": "normal",
+						"layer": "pink"
+					},
+					{
+						"class": "normal",
+						"layer": "pink"
+					}
+				]
 			},
 		},
 		"moab": [
@@ -191,14 +260,15 @@ function scr_setup_global_vars(){
 				speed: 2.1,
 			}
 		],
-		"bully": [
-			{
+		"bully": {
+			"object": "obj_bully",
+			"bully": {
 				layers: 1,
-				health: 5000,
+				health: 500,
 				density: 1,
 				speed: 1,
 			}
-		]
+		}
 		
 		
 	}

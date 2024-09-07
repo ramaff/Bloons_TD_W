@@ -10,12 +10,15 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red"){
 	
 	show_debug_message(_bloon.bloon_stats)
 
-	_bloon.image_index = _bloon.bloon_stats.index
+	if variable_struct_exists(_bloon.bloon_stats, "index") {
+		_bloon.image_index = _bloon.bloon_stats.index
+	}
 	if _class = "splitter" {
 		_bloon.sprite_index = spr_splitter_bloon;
 	}
 	
 	_bloon.speed = _bloon.bloon_stats.speed
 	_bloon.path_speed = _bloon.speed
+	_bloon.depth = -_bloon.bloon_stats.layers
 
 }

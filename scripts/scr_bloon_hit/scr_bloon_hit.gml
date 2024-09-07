@@ -7,6 +7,8 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 	
 	while(_bloon.bloon_stats.health <= 0) {
 		
+		// In the future when calculating multi-layer damage, we can give each bloon an 'rbe' value.
+		// Then we subtract the original rbe by the rbe of all the remaining bloon children
 		global.money += 1;
 		_bloon.bloon_stats.health += 1;
 		_bloon.bloon_stats.layers -= 1;
@@ -36,7 +38,7 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 				
 				path_position = _pos
 				parent_id = _parent_id
-				_pos -= 0.02
+				_pos -= 0.01
 			}
 		//scr_bloon_stat_setup(_bloon, _class, _layer)
 		}
