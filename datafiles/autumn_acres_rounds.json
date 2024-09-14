@@ -1,0 +1,34 @@
+[
+	[
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 10,
+			"spread": 30,
+			"cooldown": 0
+		},
+		{
+			"class": "splitter",
+			"layer": "orange",
+			"count": 5,
+			"spread": 60,
+			"cooldown": 300
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 12,
+			"spread": 48,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 12,
+			"spread": 48,
+			"cooldown": 10
+		}
+	]
+]

@@ -16,6 +16,8 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red"){
 	if _class = "splitter" {
 		_bloon.sprite_index = spr_splitter_bloon;
 	}
+	path = pth_autumn_acres;
+	path_start(path, bloon_stats.speed, path_action_stop, true);
 	
 	_bloon.speed = _bloon.bloon_stats.speed
 	_bloon.path_speed = _bloon.speed

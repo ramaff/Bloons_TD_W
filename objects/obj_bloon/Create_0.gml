@@ -12,4 +12,5 @@ bloon_stats = {
 
 image_index = bloon_stats.layers - 1;
 
-path_start(pth_title_track, bloon_stats.speed, path_action_stop, true);
+path = pth_title_track
+path_start(path, bloon_stats.speed, path_action_stop, true);
