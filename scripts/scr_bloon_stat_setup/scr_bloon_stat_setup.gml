@@ -21,11 +21,15 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	if _class = "splitter" {
 		_bloon.sprite_index = spr_splitter_bloon;
 	}
+	if _class = "splitter" {
+		_bloon.sprite_index = spr_big_deflation_bloon;
+	}
 	path = pth_autumn_acres;
 	path_start(path, bloon_stats.speed, path_action_stop, true);
 	
 	if variable_struct_exists(_bloon.bloon_stats, "tattered") {
-		_bloon.bloon_stats.speed = _bloon.bloon_stats.speed * 2	
+		_bloon.bloon_stats.speed = _bloon.bloon_stats.speed * 2
+		variable_struct_set(_bloon.bloon_stats, "tattered_sprite", spr_bloon_tattered)
 	}
 	
 	_bloon.speed = _bloon.bloon_stats.speed

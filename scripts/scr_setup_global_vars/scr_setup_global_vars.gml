@@ -252,6 +252,43 @@ function scr_setup_global_vars(){
 				]
 			},
 		},
+		"deflation": {
+			"object": "obj_deflation_boss",
+			"red": {
+				layers: 11,
+				index: 0,
+				rbe: 14,
+				health: 10,
+				density: 1,
+				speed: 3.3,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "orange",
+						"properties": [
+							"tattered"
+						]
+					}
+				]
+			},
+			"blue": {
+				layers: 22,
+				index: 0,
+				rbe: 27,
+				health: 20,
+				density: 1,
+				speed: 3.3,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "orange",
+						"properties": [
+							"tattered"
+						]
+					}
+				]
+			}
+		},
 		"moab": [
 			{
 				layers: 1,

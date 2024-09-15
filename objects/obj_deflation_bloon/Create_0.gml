@@ -12,4 +12,7 @@ bloon_stats = {
 
 image_index = bloon_stats.layers - 1;
 
-path_start(pth_title_track, bloon_stats.speed, path_action_stop, true);
+target = instance_create_depth(x, y, depth, obj_bloon_target);
+
+target.path_position = 0;
+target.path_start(path, bloon_stats.speed, path_action_stop, true);
