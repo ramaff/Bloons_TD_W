@@ -3,7 +3,7 @@
 
 if path_position >= 1 {
 	
-	global.lives -= bloon_stats.layers
+	global.lives -= bloon_stats.rbe
 	
 	path_position = 0;
 	path_start(path, bloon_stats.speed, path_action_stop, true);

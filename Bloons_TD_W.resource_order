@@ -46,6 +46,7 @@
     {"name":"spr_bloon_tattered","order":13,"path":"sprites/spr_bloon_tattered/spr_bloon_tattered.yy",},
     {"name":"spr_big_deflation_bloon","order":14,"path":"sprites/spr_big_deflation_bloon/spr_big_deflation_bloon.yy",},
     {"name":"obj_bloon_academia_control","order":8,"path":"objects/obj_bloon_academia_control/obj_bloon_academia_control.yy",},
+    {"name":"spr_bloon_target","order":15,"path":"sprites/spr_bloon_target/spr_bloon_target.yy",},
     {"name":"spr_upgrade_butt","order":4,"path":"sprites/spr_upgrade_butt/spr_upgrade_butt.yy",},
     {"name":"obj_bloon","order":2,"path":"objects/obj_bloon/obj_bloon.yy",},
     {"name":"spr_useless_long_butt","order":5,"path":"sprites/spr_useless_long_butt/spr_useless_long_butt.yy",},

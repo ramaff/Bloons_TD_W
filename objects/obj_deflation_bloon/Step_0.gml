@@ -2,20 +2,25 @@
 // You can write your code in this editor
 path_position = target.path_position;
 
-if point_distance(x, y, target.x, target.y) > 80 {
+if point_distance(x, y, target.x, target.y) > 20 {
 	var _angle = point_direction(x, y, target.x, target.y)
 	direction = scr_angle_converge(_angle, direction, 2)
-	speed = lerp(speed, 0, 0.05);
+	speed = bloon_stats.speed * 1.5;
+	//speed = lerp(speed, 0, 0.05);
 } else {
-	speed = lerp(speed, bloon_stats.speed, 0.05);	
+	//speed = lerp(speed, bloon_stats.speed, 0.05);	
 }
 
 if path_position >= 1 {
 
-	target.path_position = 0;
-
-	global.lives -= bloon_stats.layers
+	global.lives -= bloon_stats.rbe
 	
-	target.path_start(path, bloon_stats.speed, path_action_stop, true);
+	with (target) {
+		path_position = 0;
+		path_start(other.path, other.bloon_stats.speed, path_action_stop, true);
+	}
+	
+	x = target.x;
+	y = target.y;
 	
 }

@@ -253,14 +253,14 @@ function scr_setup_global_vars(){
 			},
 		},
 		"deflation": {
-			"object": "obj_deflation_boss",
+			"object": "obj_deflation_bloon",
 			"red": {
 				layers: 11,
 				index: 0,
 				rbe: 14,
 				health: 10,
 				density: 1,
-				speed: 3.3,
+				speed: 2.7,
 				children: [
 					{
 						"class": "splitter",

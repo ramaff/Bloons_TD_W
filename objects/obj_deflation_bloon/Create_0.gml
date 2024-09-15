@@ -12,6 +12,8 @@ bloon_stats = {
 
 image_index = bloon_stats.layers - 1;
 
+/*
+path = pth_autumn_acres
 target = instance_create_depth(x, y, depth, obj_bloon_target);
 
 target.path_position = 0;

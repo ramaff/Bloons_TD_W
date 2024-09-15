@@ -21,11 +21,17 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	if _class = "splitter" {
 		_bloon.sprite_index = spr_splitter_bloon;
 	}
-	if _class = "splitter" {
-		_bloon.sprite_index = spr_big_deflation_bloon;
-	}
 	path = pth_autumn_acres;
-	path_start(path, bloon_stats.speed, path_action_stop, true);
+	if _class = "deflation" {
+		_bloon.sprite_index = spr_big_deflation_bloon;
+		target = instance_create_depth(x, y, depth, obj_bloon_target);
+		with(target) {
+			path_position = 0;
+			path_start(other.path, _bloon.bloon_stats.speed, path_action_stop, true);
+		}
+	} else {
+		path_start(path, bloon_stats.speed, path_action_stop, true);
+	}
 	
 	if variable_struct_exists(_bloon.bloon_stats, "tattered") {
 		_bloon.bloon_stats.speed = _bloon.bloon_stats.speed * 2

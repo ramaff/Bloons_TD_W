@@ -69,6 +69,7 @@
     {"id":{"name":"spr_bloon_tattered","path":"sprites/spr_bloon_tattered/spr_bloon_tattered.yy",},},
     {"id":{"name":"spr_big_deflation_bloon","path":"sprites/spr_big_deflation_bloon/spr_big_deflation_bloon.yy",},},
     {"id":{"name":"obj_bloon_academia_control","path":"objects/obj_bloon_academia_control/obj_bloon_academia_control.yy",},},
+    {"id":{"name":"spr_bloon_target","path":"sprites/spr_bloon_target/spr_bloon_target.yy",},},
     {"id":{"name":"spr_upgrade_butt","path":"sprites/spr_upgrade_butt/spr_upgrade_butt.yy",},},
     {"id":{"name":"obj_bloon","path":"objects/obj_bloon/obj_bloon.yy",},},
     {"id":{"name":"spr_useless_long_butt","path":"sprites/spr_useless_long_butt/spr_useless_long_butt.yy",},},
