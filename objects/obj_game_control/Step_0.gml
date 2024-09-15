@@ -19,8 +19,12 @@ for(var _i = 0; _i < array_length(_round); _i++) {
 	_bloons_remaining = true;
 	if _round[_i].cooldown <= 0 {
 		var _bloon_object = scr_bloon_class_to_object(struct_get(_round[_i], "class"));
+		var _properties = []
+		if variable_struct_exists(_round[_i], "properties") {
+			_properties = struct_get(_round[_i], "properties")
+		}
 		with instance_create_depth(-32, 192, depth, _bloon_object) {
-			scr_bloon_stat_setup(id, _round[_i].class, struct_get(_round[_i], "layer"));
+			scr_bloon_stat_setup(id, _round[_i].class, struct_get(_round[_i], "layer"), _properties);
 		}
 		_round[_i].cooldown += _round[_i].spread;
 		_round[_i].count--;

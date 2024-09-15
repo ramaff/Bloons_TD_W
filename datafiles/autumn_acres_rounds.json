@@ -29,6 +29,75 @@
 			"count": 12,
 			"spread": 48,
 			"cooldown": 10
+		},
+		{
+			"class": "splitter",
+			"layer": "orange",
+			"count": 5,
+			"spread": 30,
+			"cooldown": 600
+		}
+	],
+	[
+		{
+			"class": "splitter",
+			"layer": "orange",
+			"count": 20,
+			"spread": 30,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 12,
+			"spread": 30,
+			"cooldown": 750,
+			"properties": [
+				"tattered"
+			]
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 8,
+			"spread": 5,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 8,
+			"spread": 5,
+			"cooldown": 150
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 8,
+			"spread": 5,
+			"cooldown": 300
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 8,
+			"spread": 450,
+			"cooldown": 10,
+			"properties": [
+				"tattered"
+			]
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 8,
+			"spread": 10,
+			"cooldown": 600,
+			"properties": [
+				"tattered"
+			]
 		}
 	]
 ]
