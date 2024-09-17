@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Bloons",
+    "path": "folders/Objects/Bloons.yy",
   },
   "parentObjectId": {
     "name": "obj_bounty",

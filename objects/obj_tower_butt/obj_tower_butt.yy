@@ -1,9 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_win_butt",
+  "name": "obj_tower_butt",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_you_win_butt",
-    "path": "sprites/spr_you_win_butt/spr_you_win_butt.yy",
+    "name": "spr_tower_butt",
+    "path": "sprites/spr_tower_butt/spr_tower_butt.yy",
   },
   "spriteMaskId": null,
   "visible": true,
