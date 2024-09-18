@@ -38,6 +38,7 @@ function scr_setup_global_vars(){
 			]
 		}
 	}
+	show_debug_message(global.tower_stats)
 
 	global.bloon_stats = {
 		"normal": {

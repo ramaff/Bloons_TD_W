@@ -2,11 +2,15 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_select_monkey(){
 	
+	instance_destroy(obj_tower_butt)
+	
+	//var _upgrade_stats = 
+	
 	with instance_create_depth(800, 104, depth, obj_upgrade_butt) {
 		
 		selected_monkey = other.id;
 		
-		upgrade_stats = json_parse(json_stringify(other.tower_stats));
+		upgrade_stats = variable_clone(other.tower_stats);
 		
 		upgrade_stats.upgrade_cost = upgrade_stats.total_cost * 0.4;
 		upgrade_stats.upgrade_cost = round(upgrade_stats.upgrade_cost / 10) * 10

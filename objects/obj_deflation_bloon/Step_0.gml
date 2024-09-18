@@ -1,10 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 path_position = target.path_position;
 
 if point_distance(x, y, target.x, target.y) > 20 {
 	var _angle = point_direction(x, y, target.x, target.y)
-	direction = scr_angle_converge(_angle, direction, 2)
+	direction = scr_angle_converge(_angle, direction, 3)
 	speed = bloon_stats.speed * 1.5;
 	//speed = lerp(speed, 0, 0.05);
 } else {
@@ -24,3 +25,5 @@ if path_position >= 1 {
 	y = target.y;
 	
 }
+
+image_angle = direction - 90;

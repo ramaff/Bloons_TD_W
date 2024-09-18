@@ -1,11 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+scr_setup_global_vars()
+
 global.money = 650
 global.lives = 200
 
 global.round = 1;
 global.bloon_sends = scr_import_json("autumn_acres_rounds.json", json_parse);
+
+instance_create_depth(x, y, depth, obj_tower_control)
 
 // Loop through the bloon sends for the most powerful bloon (if a specific bloon isn't specified)
 // If round_icon is set, then use that as the sprite
