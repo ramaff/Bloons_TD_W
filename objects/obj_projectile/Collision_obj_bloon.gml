@@ -1,6 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if variable_struct_exists(projectile_stats, "height") {
+	var _bloon_height = 0;
+	if variable_struct_exists(other.bloon_stats, "height") {
+		_bloon_height = other.bloon_stats.height
+	}
+	if abs(projectile_stats.height - _bloon_height) > 15 {
+		exit;	
+	}
+}
+
 var _bloon_par_id = other.parent_id
 
 if !variable_struct_exists(projectile_stats.bloons_hit, _bloon_par_id) {

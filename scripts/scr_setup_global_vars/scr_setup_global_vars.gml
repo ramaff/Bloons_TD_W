@@ -6,7 +6,7 @@ function scr_setup_global_vars(){
 		"jim": {
 			total_cost: 250,
 			upgrade_cost: 0,
-			range: 140,
+			range: 110,
 			delay: 30,
 			attack_cooldown: 0,
 	
@@ -21,6 +21,7 @@ function scr_setup_global_vars(){
 			]
 		},
 		"sling_monkey": {
+			tower_sprite: "spr_pebble_monkey",
 			total_cost: 175,
 			upgrade_cost: 0,
 			range: 105,
@@ -32,13 +33,17 @@ function scr_setup_global_vars(){
 					sprite: "spr_stone",
 					pierce: 2,
 					damage: 1,
-					speed: 12,
-					lifespan: 30
+					speed: 8,
+					lifespan: 30,
+					height: 13,
+					lobbing: {
+						gravity: 1,
+						speed: 5
+					}
 				}
 			]
 		}
 	}
-	show_debug_message(global.tower_stats)
 
 	global.bloon_stats = {
 		"normal": {

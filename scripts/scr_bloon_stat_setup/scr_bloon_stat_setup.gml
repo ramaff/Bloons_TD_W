@@ -4,16 +4,13 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 
 	var _class_stats = struct_get(global.bloon_stats, _class)
 	
-	show_debug_message(_layer)
 	
 	_bloon.bloon_stats = variable_clone(struct_get(_class_stats, _layer))
 	
 	for(var _i = 0; _i < array_length(_properties); _i++) {
-		show_debug_message(_properties[_i])
 		variable_struct_set(_bloon.bloon_stats, _properties[_i], true)
 	}
 	
-	show_debug_message(_bloon.bloon_stats)
 
 	if variable_struct_exists(_bloon.bloon_stats, "index") {
 		_bloon.image_index = _bloon.bloon_stats.index

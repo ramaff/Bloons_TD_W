@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_big_bully_bloon",
-    "path": "sprites/spr_big_bully_bloon/spr_big_bully_bloon.yy",
+    "name": "spr_big_bully_bloon_og_cba",
+    "path": "sprites/spr_big_bully_bloon_og_cba/spr_big_bully_bloon_og_cba.yy",
   },
   "spriteMaskId": null,
   "visible": true,
