@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if global.money >= upgrade_stats.upgrade_cost {
-	scr_upgrade_monkey(selected_monkey, upgrade_stats)
+	scr_upgrade_monkey(selected_monkey, upgrade_stats, path)
 	global.money -= upgrade_stats.upgrade_cost
 }
 

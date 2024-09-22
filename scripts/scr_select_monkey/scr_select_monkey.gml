@@ -5,25 +5,23 @@ function scr_select_monkey(){
 	instance_destroy(obj_tower_butt)
 	
 	//var _upgrade_stats = 
-	
-	with instance_create_depth(800, 104, depth, obj_upgrade_butt) {
+	for(var _j = 0; _j < array_length(tower_stats.upgrades); _j++) {
+		var _upgrade_info = tower_stats.upgrades[_j][tower_stats.upgrade_count[_j]]
+		var _upgrade_stats = variable_struct_get(variable_struct_get(global.upgrade_stats, base_tower_id), _upgrade_info.keyword);
+		with instance_create_depth(800, 104 + (144 * _j), depth, obj_upgrade_butt) {
 		
-		selected_monkey = other.id;
+			selected_monkey = other.id;
 		
-		upgrade_stats = variable_clone(other.tower_stats);
+			upgrade_stats = variable_clone(_upgrade_stats);
 		
-		upgrade_stats.upgrade_cost = upgrade_stats.total_cost * 0.4;
-		upgrade_stats.upgrade_cost = round(upgrade_stats.upgrade_cost / 10) * 10
-		for(var _i = 0; _i < array_length(upgrade_stats.projectile_stats); _i++) {
-		
-			upgrade_stats.projectile_stats[_i].pierce = upgrade_stats.projectile_stats[_i].pierce * 2
+			upgrade_stats.upgrade_cost = _upgrade_info.upgrade_cost;
+			upgrade_stats.upgrade_cost = round(upgrade_stats.upgrade_cost / 5) * 5
+			path = _j;
 		
 		}
-		
-		upgrade_string = "Increase the pierce of the monkey by " + string(upgrade_stats.projectile_stats[0].pierce / 2)
-		
 	}
 	
+	/*
 	with instance_create_depth(800, 264, depth, obj_upgrade_butt) {
 		
 		selected_monkey = other.id;
@@ -58,5 +56,6 @@ function scr_select_monkey(){
 		upgrade_string = "Makes the monkey throw twice as many darts"
 		
 	}
+	*/
 	
 }

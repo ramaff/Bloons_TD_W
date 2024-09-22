@@ -18,6 +18,50 @@ function scr_setup_global_vars(){
 					speed: 12,
 					lifespan: 30
 				}
+			],
+			upgrades: [
+				[
+					{
+						keyword: "stronger",
+						upgrade_cost: 100
+					}, 
+					{
+						keyword: "stronger",
+						upgrade_cost: 200
+					}, 
+					{
+						keyword: "stronger",
+						upgrade_cost: 400
+					}
+				],
+				[
+					{
+						keyword: "faster",
+						upgrade_cost: 150
+					}, 
+					{
+						keyword: "faster",
+						upgrade_cost: 300
+					}, 
+					{
+						keyword: "faster",
+						upgrade_cost: 600
+					}
+				],
+				[
+					{
+						keyword: "darter",
+						upgrade_cost: 200
+					}, 
+					{
+						keyword: "darter",
+						upgrade_cost: 400
+					}, 
+					{
+						keyword: "darter",
+						upgrade_cost: 800
+					}
+				]
 			]
 		},
 		"sling_monkey": {
@@ -41,7 +85,48 @@ function scr_setup_global_vars(){
 						speed: 5
 					}
 				}
+			],
+			upgrades: [
+				[
+					{
+						keyword: "stone skipping",
+						upgrade_cost: 100
+					}
+				],
+				[
+					{
+						keyword: "sharp sight",
+						upgrade_cost: 100
+					}
+				]
 			]
+		}
+	}
+	
+	global.upgrade_stats = {
+		"jim": {
+			"darter": {
+				shot_count_multiplier: 2,
+				upgrade_string: "shoots more darts"
+			},
+			"faster": {
+				fire_rate_multiplier: 1.75,
+				upgrade_string: "shoots more often"
+			},
+			"stronger": {
+				pierce_multiplier: 2,
+				upgrade_string: "shoots more poppier darts"
+			}
+		},
+		"sling_monkey": {
+			"stone skipping": {
+				pierce: 2,
+				lifespan: 30
+			},
+			"sharp sight": {
+				camo_detection: true,
+				range: 40
+			}
 		}
 	}
 

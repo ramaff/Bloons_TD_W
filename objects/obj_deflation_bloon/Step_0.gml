@@ -6,7 +6,7 @@ path_position = target.path_position;
 if point_distance(x, y, target.x, target.y) > 20 {
 	var _angle = point_direction(x, y, target.x, target.y)
 	direction = scr_angle_converge(_angle, direction, 3)
-	speed = bloon_stats.speed * 1.5;
+	speed = bloon_stats.speed * 2;
 } else {
 }
 

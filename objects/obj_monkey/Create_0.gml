@@ -6,7 +6,6 @@ tower_stats = {
 	range: 140,
 	delay: 30,
 	attack_cooldown: 0,
-	
 	projectile_stats: [
 		{
 			sprite: "spr_dart",
@@ -15,5 +14,13 @@ tower_stats = {
 			speed: 10,
 			lifespan: 40
 		}
+	],
+	upgrades: [
+		[
+			{
+				keyword: "darter",
+				upgrade_cost: 200
+			}
+		]
 	]
 }
