@@ -102,18 +102,95 @@
 	],
 	[
 		{
+			"class": "deflation",
+			"layer": "red",
+			"count": 5,
+			"spread": 75,
+			"cooldown": 0
+		}
+	],
+	[
+		{
 			"class": "splitter",
 			"layer": "orange",
 			"count": 30,
+			"spread": 40,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "green",
+			"count": 12,
+			"spread": 40,
+			"cooldown": 400,
+			"properties": [
+				"tattered"
+			]
+		}
+	],
+	[
+		{
+			"class": "splitter",
+			"layer": "orange",
+			"count": 10,
+			"spread": 20,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "yellow",
+			"count": 15,
+			"spread": 45,
+			"cooldown": 200
+		},
+		{
+			"class": "splitter",
+			"layer": "orange",
+			"count": 10,
+			"spread": 20,
+			"cooldown": 400
+		},
+		{
+			"class": "splitter",
+			"layer": "orange",
+			"count": 10,
+			"spread": 20,
+			"cooldown": 800
+		}
+	],
+	[
+		{
+			"class": "splitter",
+			"layer": "lime",
+			"count": 25,
 			"spread": 50,
 			"cooldown": 0
 		},
 		{
 			"class": "deflation",
 			"layer": "red",
+			"count": 10,
+			"spread": 100,
+			"cooldown": 200
+		}
+	],
+	[
+		{
+			"class": "splitter",
+			"layer": "orange",
+			"count": 40,
+			"spread": 30,
+			"cooldown": 0,
+			"properties": [
+				"tattered"
+			]
+		},
+		{
+			"class": "deflation",
+			"layer": "blue",
 			"count": 5,
-			"spread": 90,
-			"cooldown": 600
+			"spread": 240,
+			"cooldown": 200
 		}
 	]
 ]

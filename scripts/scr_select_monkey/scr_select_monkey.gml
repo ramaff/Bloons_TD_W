@@ -2,10 +2,18 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_select_monkey(){
 	
+	if !variable_struct_exists(global.upgrade_stats, base_tower_id) {
+		exit;
+	}
+	
 	instance_destroy(obj_tower_butt)
 	
 	//var _upgrade_stats = 
 	for(var _j = 0; _j < array_length(tower_stats.upgrades); _j++) {
+		if tower_stats.upgrade_count[_j] >= array_length(tower_stats.upgrades[_j]) {
+			continue;	
+		}
+		
 		var _upgrade_info = tower_stats.upgrades[_j][tower_stats.upgrade_count[_j]]
 		var _upgrade_stats = variable_struct_get(variable_struct_get(global.upgrade_stats, base_tower_id), _upgrade_info.keyword);
 		with instance_create_depth(800, 104 + (144 * _j), depth, obj_upgrade_butt) {

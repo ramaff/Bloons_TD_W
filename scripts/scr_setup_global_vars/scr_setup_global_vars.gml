@@ -96,7 +96,40 @@ function scr_setup_global_vars(){
 				[
 					{
 						keyword: "sharp sight",
-						upgrade_cost: 100
+						upgrade_cost: 150
+					}
+				]
+			]
+		},
+		"marbles_monkey": {
+			tower_sprite: "spr_marbles_monkey",
+			total_cost: 300,
+			upgrade_cost: 0,
+			range: 95,
+			delay: 40,
+			attack_cooldown: 0,
+	
+			projectile_stats: [
+				{
+					sprite: "spr_marble",
+					pierce: 3,
+					damage: 1,
+					speed: 8,
+					lifespan: 120,
+					friction: 0.25
+				}
+			],
+			upgrades: [
+				[
+					{
+						keyword: "bigger marbles",
+						upgrade_cost: 250
+					}
+				],
+				[
+					{
+						keyword: "marble bag",
+						upgrade_cost: 450
 					}
 				]
 			]
@@ -107,25 +140,56 @@ function scr_setup_global_vars(){
 		"jim": {
 			"darter": {
 				shot_count_multiplier: 2,
-				upgrade_string: "shoots more darts"
+				upgrade_string: "shoots more darts."
 			},
 			"faster": {
 				fire_rate_multiplier: 1.75,
-				upgrade_string: "shoots more often"
+				upgrade_string: "shoots more often."
 			},
 			"stronger": {
 				pierce_multiplier: 2,
-				upgrade_string: "shoots more poppier darts"
+				upgrade_string: "shoots more poppier darts."
 			}
 		},
 		"sling_monkey": {
 			"stone skipping": {
 				pierce: 2,
-				lifespan: 30
+				lifespan: 28,
+				upgrade_string: "stones skips and pops 2 more bloons."
 			},
 			"sharp sight": {
 				camo_detection: true,
-				range: 40
+				range: 40,
+				upgrade_string: "Allows the sling monkey to pop camo bloons, and target further."
+			}
+		},
+		"marbles_monkey": {
+			"bigger marbles": {
+				pierce: 3,
+				lifespan: 120,
+				upgrade_string: "Marbles pop more bloons, and last longer"
+			},
+			"marble bag": {
+				fire_rate_multiplier: 0.5,
+				projectile_stats: [
+					{
+						sprite: "spr_marble",
+						speed: 6
+					},
+					{
+						sprite: "spr_marble",
+						speed: 10
+					},
+					{
+						sprite: "spr_marble",
+						speed: 10
+					},
+					{
+						sprite: "spr_marble",
+						speed: 6
+					}
+				],
+				upgrade_string: "Throws out 5 marbles at once, less often."
 			}
 		}
 	}

@@ -63,6 +63,8 @@
     {"name":"spr_bloon_tattered","order":5,"path":"sprites/spr_bloon_tattered/spr_bloon_tattered.yy",},
     {"name":"spr_big_deflation_bloon","order":1,"path":"sprites/spr_big_deflation_bloon/spr_big_deflation_bloon.yy",},
     {"name":"obj_tower_info_pan","order":4,"path":"objects/obj_tower_info_pan/obj_tower_info_pan.yy",},
+    {"name":"spr_marble","order":3,"path":"sprites/spr_marble/spr_marble.yy",},
+    {"name":"spr_marbles_monkey","order":3,"path":"sprites/spr_marbles_monkey/spr_marbles_monkey.yy",},
     {"name":"spr_bloon_target","order":1,"path":"sprites/spr_bloon_target/spr_bloon_target.yy",},
     {"name":"spr_upgrade_butt","order":5,"path":"sprites/spr_upgrade_butt/spr_upgrade_butt.yy",},
     {"name":"obj_bloon","order":1,"path":"objects/obj_bloon/obj_bloon.yy",},

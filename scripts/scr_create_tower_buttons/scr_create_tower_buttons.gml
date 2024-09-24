@@ -10,4 +10,8 @@ function scr_create_tower_buttons(){
 		base_tower_id = "sling_monkey"
 		tower_stats = scr_get_tower_stats(base_tower_id)
 	}
+	with instance_create_depth(800, 256, depth, obj_tower_butt) {
+		base_tower_id = "marbles_monkey"
+		tower_stats = scr_get_tower_stats(base_tower_id)
+	}
 }

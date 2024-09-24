@@ -11,7 +11,12 @@ if variable_struct_exists(projectile_stats, "lobbing") {
 		projectile_stats.lobbing.speed = projectile_stats.lobbing.speed * (-1)
 	}
 }
-
+if variable_struct_exists(projectile_stats, "friction") {
+	
+	projectile_stats.speed -= projectile_stats.friction;
+	projectile_stats.speed = max(projectile_stats.speed, 0);
+	speed = projectile_stats.speed;
+}
 
 
 
