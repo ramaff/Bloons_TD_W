@@ -135,7 +135,7 @@ function scr_setup_global_vars(){
 			]
 		},
 		"pogo_stick_monkey": {
-			tower_sprite: "spr_marbles_monkey",
+			tower_sprite: "spr_pogo_stick_monkey",
 			tower_object: "obj_pogo_stick_monkey",
 			tower_base: true,
 			tower_base_sprite: "spr_pogo_pad",

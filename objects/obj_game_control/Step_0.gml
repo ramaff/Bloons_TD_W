@@ -20,11 +20,15 @@ for(var _i = 0; _i < array_length(_round); _i++) {
 	if _round[_i].cooldown <= 0 {
 		var _bloon_object = scr_bloon_class_to_object(struct_get(_round[_i], "class"));
 		var _properties = []
+		var _round_number = 0;
 		if variable_struct_exists(_round[_i], "properties") {
 			_properties = struct_get(_round[_i], "properties")
 		}
+		if variable_struct_exists(_round[_i], "round") {
+			_round_number = struct_get(_round[_i], "round")
+		}
 		with instance_create_depth(-32, 192, depth, _bloon_object) {
-			scr_bloon_stat_setup(id, _round[_i].class, struct_get(_round[_i], "layer"), _properties);
+			scr_bloon_stat_setup(id, _round[_i].class, struct_get(_round[_i], "layer"), _properties, _round_number);
 		}
 		_round[_i].cooldown += _round[_i].spread;
 		_round[_i].count--;
@@ -37,6 +41,12 @@ if !_bloons_remaining {
 	if global.round_gap < 0 {
 		global.round++;
 		global.round_gap = 360;
+		if global.round < array_length(global.bloon_sends) {
+			with instance_create_depth(x, y, depth, obj_round_check) {
+				round_number = global.round;
+				alarm[0] = other.round_properties[global.round - 1].sends_end_time;
+			}
+		}
 	}
 }
 

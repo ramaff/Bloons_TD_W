@@ -108,6 +108,7 @@
     {"id":{"name":"bloon_academia","path":"rooms/bloon_academia/bloon_academia.yy",},},
     {"id":{"name":"scr_bloon_stat_setup","path":"scripts/scr_bloon_stat_setup/scr_bloon_stat_setup.yy",},},
     {"id":{"name":"obj_tower_base","path":"objects/obj_tower_base/obj_tower_base.yy",},},
+    {"id":{"name":"obj_round_check","path":"objects/obj_round_check/obj_round_check.yy",},},
     {"id":{"name":"spr_title_track","path":"sprites/spr_title_track/spr_title_track.yy",},},
     {"id":{"name":"spr_autumn_acres_track","path":"sprites/spr_autumn_acres_track/spr_autumn_acres_track.yy",},},
     {"id":{"name":"spr_banana_icon","path":"sprites/spr_banana_icon/spr_banana_icon.yy",},},
