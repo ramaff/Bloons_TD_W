@@ -56,6 +56,7 @@
     {"id":{"name":"scr_create_tower","path":"scripts/scr_create_tower/scr_create_tower.yy",},},
     {"id":{"name":"spr_stone","path":"sprites/spr_stone/spr_stone.yy",},},
     {"id":{"name":"scr_bloon_hit","path":"scripts/scr_bloon_hit/scr_bloon_hit.yy",},},
+    {"id":{"name":"scr_pogo_stick_monkey_upgrades","path":"scripts/scr_pogo_stick_monkey_upgrades/scr_pogo_stick_monkey_upgrades.yy",},},
     {"id":{"name":"track_parent","path":"rooms/track_parent/track_parent.yy",},},
     {"id":{"name":"obj_tower_butt","path":"objects/obj_tower_butt/obj_tower_butt.yy",},},
     {"id":{"name":"spr_tower_info_butt","path":"sprites/spr_tower_info_butt/spr_tower_info_butt.yy",},},

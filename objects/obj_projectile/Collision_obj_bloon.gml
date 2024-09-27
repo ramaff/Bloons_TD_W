@@ -6,7 +6,7 @@ if variable_struct_exists(projectile_stats, "height") {
 	if variable_struct_exists(other.bloon_stats, "height") {
 		_bloon_height = other.bloon_stats.height
 	}
-	if abs(projectile_stats.height - _bloon_height) > 15 {
+	if abs(projectile_stats.height - _bloon_height) > 20 {
 		exit;	
 	}
 }

@@ -5,6 +5,12 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 	var _original_value = _monkey.tower_stats.total_cost
 	var _tower_stats = _monkey.tower_stats;
 	
+	if variable_struct_exists(_upgrade_stats, "upgrade_script") {
+		with(_monkey) {
+			script_execute(_upgrade_stats.upgrade_script)
+		}
+	}
+	
 	var _projectile_count = array_length(_tower_stats.projectile_stats)
 	
 	if variable_struct_exists(_upgrade_stats, "projectile_stats") {

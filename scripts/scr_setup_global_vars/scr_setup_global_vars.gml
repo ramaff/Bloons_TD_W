@@ -78,8 +78,8 @@ function scr_setup_global_vars(){
 					pierce: 2,
 					damage: 1,
 					speed: 8,
-					lifespan: 30,
-					height: 13,
+					lifespan: 32,
+					height: 21,
 					lobbing: {
 						gravity: 1,
 						speed: 5
@@ -189,8 +189,8 @@ function scr_setup_global_vars(){
 		"sling_monkey": {
 			"stone skipping": {
 				pierce: 2,
-				lifespan: 28,
-				upgrade_string: "stones skips and pops 2 more bloons."
+				lifespan: 32,
+				upgrade_string: "stones skip and pop 2 more bloons."
 			},
 			"sharp sight": {
 				camo_detection: true,
@@ -224,6 +224,16 @@ function scr_setup_global_vars(){
 						speed: 6
 					}
 				],
+				upgrade_string: "Throws out 5 marbles at once, less often."
+			}
+		},
+		"pogo_stick_monkey": {
+			"Heavy Hops": {
+				upgrade_script: scr_heavy_hops,
+				upgrade_string: "Marbles pop more bloons, and last longer"
+			},
+			"Quick Hops": {
+				upgrade_script: scr_quick_hops,
 				upgrade_string: "Throws out 5 marbles at once, less often."
 			}
 		}
