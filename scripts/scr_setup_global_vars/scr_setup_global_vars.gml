@@ -133,6 +133,41 @@ function scr_setup_global_vars(){
 					}
 				]
 			]
+		},
+		"pogo_stick_monkey": {
+			tower_sprite: "spr_marbles_monkey",
+			tower_object: "obj_pogo_stick_monkey",
+			tower_base: true,
+			tower_base_sprite: "spr_pogo_pad",
+			total_cost: 550,
+			upgrade_cost: 0,
+			range: 150,
+			delay: 60,
+			attack_cooldown: 0,
+	
+			projectile_stats: [
+				{
+					sprite: "spr_pogo_hop_splash",
+					pierce: 15,
+					damage: 1,
+					speed: 0,
+					lifespan: 20
+				}
+			],
+			upgrades: [
+				[
+					{
+						keyword: "Heavy Hops",
+						upgrade_cost: 400
+					}
+				],
+				[
+					{
+						keyword: "Quick Hops",
+						upgrade_cost: 300
+					}
+				]
+			]
 		}
 	}
 	
