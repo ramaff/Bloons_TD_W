@@ -24,6 +24,9 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 	// Here we update the stats for all the projectiles
 	for(var _i = 0; _i < _projectile_count; _i++) {
 		
+		if variable_struct_exists(_upgrade_stats, "projectile_sprite") {
+			_tower_stats.projectile_stats[_i].sprite = _upgrade_stats.projectile_sprite
+		}
 		if variable_struct_exists(_upgrade_stats, "pierce_multiplier") {
 			_tower_stats.projectile_stats[_i].pierce = _tower_stats.projectile_stats[_i].pierce * _upgrade_stats.pierce_multiplier
 		}

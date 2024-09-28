@@ -111,6 +111,7 @@
     {"id":{"name":"obj_tower_base","path":"objects/obj_tower_base/obj_tower_base.yy",},},
     {"id":{"name":"obj_round_check","path":"objects/obj_round_check/obj_round_check.yy",},},
     {"id":{"name":"spr_title_track","path":"sprites/spr_title_track/spr_title_track.yy",},},
+    {"id":{"name":"spr_big_pogo_hop_splash","path":"sprites/spr_big_pogo_hop_splash/spr_big_pogo_hop_splash.yy",},},
     {"id":{"name":"spr_autumn_acres_track","path":"sprites/spr_autumn_acres_track/spr_autumn_acres_track.yy",},},
     {"id":{"name":"spr_banana_icon","path":"sprites/spr_banana_icon/spr_banana_icon.yy",},},
     {"id":{"name":"spr_shadow","path":"sprites/spr_shadow/spr_shadow.yy",},},

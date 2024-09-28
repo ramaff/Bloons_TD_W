@@ -139,9 +139,9 @@ function scr_setup_global_vars(){
 			tower_object: "obj_pogo_stick_monkey",
 			tower_base: true,
 			tower_base_sprite: "spr_pogo_pad",
-			total_cost: 550,
+			total_cost: 575,
 			upgrade_cost: 0,
-			range: 150,
+			range: 160,
 			delay: 60,
 			attack_cooldown: 0,
 	
@@ -159,12 +159,20 @@ function scr_setup_global_vars(){
 					{
 						keyword: "Heavy Hops",
 						upgrade_cost: 400
+					},
+					{
+						keyword: "Pineapple Planter",
+						upgrade_cost: 900
 					}
 				],
 				[
 					{
 						keyword: "Quick Hops",
 						upgrade_cost: 300
+					},
+					{
+						keyword: "Jackhammer",
+						upgrade_cost: 1800
 					}
 				]
 			]
@@ -230,11 +238,29 @@ function scr_setup_global_vars(){
 		"pogo_stick_monkey": {
 			"Heavy Hops": {
 				upgrade_script: scr_heavy_hops,
-				upgrade_string: "Marbles pop more bloons, and last longer"
+				upgrade_string: "Pogo stick hops further into the air, and comes back down with more force.",
+				projectile_sprite: "spr_big_pogo_hop_splash",
+				pierce_multiplier: 2
+			},
+			"Pineapple Planting": {
+				upgrade_string: "Pogo stick hops further into the air, and comes back down with more force.",
+				projectile_stats: [
+					{
+						sprite: "spr_pogo_hop_splash",
+						pierce: 15,
+						damage: 1,
+						speed: 0,
+						lifespan: 20
+					}
+				],
 			},
 			"Quick Hops": {
 				upgrade_script: scr_quick_hops,
-				upgrade_string: "Throws out 5 marbles at once, less often."
+				upgrade_string: "Hops 50% faster"
+			},
+			"Jackhammer": {
+				upgrade_script: scr_jackhammer,
+				upgrade_string: "Hops 3x faster"
 			}
 		}
 	}
