@@ -14,8 +14,16 @@ function scr_select_monkey(){
 			continue;	
 		}
 		
+		var _tower_upgrades = variable_struct_get(global.upgrade_stats, base_tower_id)
+		
 		var _upgrade_info = tower_stats.upgrades[_j][tower_stats.upgrade_count[_j]]
-		var _upgrade_stats = variable_struct_get(variable_struct_get(global.upgrade_stats, base_tower_id), _upgrade_info.keyword);
+		
+		if !variable_struct_exists(_tower_upgrades, _upgrade_info.keyword) {
+			continue
+		}
+		var _upgrade_stats = variable_struct_get(_tower_upgrades, _upgrade_info.keyword);
+		//show_debug_message(_upgrade_info)
+		//show_debug_message(_upgrade_stats)
 		with instance_create_depth(800, 104 + (144 * _j), depth, obj_upgrade_butt) {
 		
 			selected_monkey = other.id;

@@ -7,7 +7,7 @@ global.money = 650
 global.lives = 200
 
 global.round = 0;
-global.bloon_sends = scr_import_json("autumn_acres_rounds.json", json_parse);
+global.bloon_sends = scr_import_json("training_tent_rounds.json", json_parse);
 
 
 instance_create_depth(x, y, depth, obj_tower_control)

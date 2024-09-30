@@ -182,9 +182,9 @@
 	[
 		{
 			"class": "normal",
-			"layer": "rainbow",
-			"count": 5,
-			"spread": 75,
+			"layer": "black",
+			"count": 12,
+			"spread": 36,
 			"cooldown": 0
 		},
 		{
@@ -192,7 +192,7 @@
 			"layer": "purple",
 			"count": 8,
 			"spread": 75,
-			"cooldown": 500
+			"cooldown": 0
 		}
 	],
 	[
@@ -201,6 +201,51 @@
 			"layer": "bully",
 			"count": 1,
 			"spread": 30,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "black",
+			"count": 12,
+			"spread": 36,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "white",
+			"count": 15,
+			"spread": 33,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "zebra",
+			"count": 9,
+			"spread": 60,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 5,
+			"spread": 75,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "moab",
+			"layer": "mini",
+			"count": 1,
+			"spread": 0,
 			"cooldown": 0
 		}
 	]

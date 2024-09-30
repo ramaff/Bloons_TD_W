@@ -1,11 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_place_tower",
+  "name": "obj_hero_butt",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -13,7 +14,10 @@
     "name": "Menu UI",
     "path": "folders/Objects/Menu UI.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_tower_butt",
+    "path": "objects/obj_tower_butt/obj_tower_butt.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_monkey",
-    "path": "sprites/spr_monkey/spr_monkey.yy",
+    "name": "spr_tower_butt",
+    "path": "sprites/spr_tower_butt/spr_tower_butt.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -17,7 +17,7 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	if _class = "splitter" {
 		_bloon.sprite_index = spr_splitter_bloon;
 	}
-	path = pth_autumn_acres;
+	path = pth_training_tent;
 	if _class = "deflation" {
 		_bloon.sprite_index = spr_big_deflation_bloon;
 		target = instance_create_depth(x, y, depth, obj_bloon_target);

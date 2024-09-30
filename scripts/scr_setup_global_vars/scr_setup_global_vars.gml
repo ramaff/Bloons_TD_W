@@ -9,6 +9,8 @@ function scr_setup_global_vars(){
 			range: 110,
 			delay: 30,
 			attack_cooldown: 0,
+			health: 200,
+			max_health: 200,
 	
 			projectile_stats: [
 				{
@@ -60,6 +62,39 @@ function scr_setup_global_vars(){
 					{
 						keyword: "darter",
 						upgrade_cost: 800
+					}
+				]
+			]
+		},
+		"angry squirrel": {
+			total_cost: 350,
+			upgrade_cost: 0,
+			range: 115,
+			delay: 24,
+			attack_cooldown: 0,
+			health: 150,
+			max_health: 150,
+	
+			projectile_stats: [
+				{
+					sprite: "spr_dart",
+					pierce: 2,
+					damage: 1,
+					speed: 12,
+					lifespan: 30
+				}
+			],
+			upgrades: [
+				[
+					{
+						keyword: "stronger",
+						upgrade_cost: 100
+					}
+				],
+				[
+					{
+						keyword: "faster",
+						upgrade_cost: 150
 					}
 				]
 			]
@@ -242,7 +277,7 @@ function scr_setup_global_vars(){
 				projectile_sprite: "spr_big_pogo_hop_splash",
 				pierce_multiplier: 2
 			},
-			"Pineapple Planting": {
+			"Pineapple Planter": {
 				upgrade_string: "Pogo stick hops further into the air, and comes back down with more force.",
 				projectile_stats: [
 					{

@@ -12,4 +12,4 @@ bloon_stats = {
 
 image_index = 0
 
-path_start(pth_title_track, bloon_stats.speed, path_action_stop, true);
+path_start(pth_training_tent, bloon_stats.speed, path_action_stop, true);

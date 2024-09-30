@@ -5,6 +5,7 @@ function scr_create_tower(_tower_id, _tower_stats){
 	if variable_struct_exists(_tower_stats, "tower_object") {
 		_tower = asset_get_index(_tower_stats.tower_object)
 	}
+	var _id = noone;
 	
 	with instance_create_depth(x, y, depth, _tower) {
 		base_tower_id = _tower_id
@@ -15,7 +16,7 @@ function scr_create_tower(_tower_id, _tower_stats){
 		tower_stats.upgrade_count = [0, 0, 0]
 		
 		if variable_struct_exists(_tower_stats, "tower_base") {
-			var _id = id;
+			_id = id;
 			with instance_create_depth(x, y, depth, obj_tower_base) {
 				monkey_base = _id;
 				_id.tower_base = id;
@@ -26,5 +27,6 @@ function scr_create_tower(_tower_id, _tower_stats){
 			}
 		}
 	}
+	return _id;
 
 }
