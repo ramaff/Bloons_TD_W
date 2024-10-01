@@ -14,16 +14,18 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 	var _projectile_count = array_length(_tower_stats.projectile_stats)
 	
 	if variable_struct_exists(_upgrade_stats, "projectile_stats") {
-		show_debug_message(_tower_stats)
+		/*show_debug_message(_tower_stats)
 		show_debug_message(_tower_stats.projectile_stats)
 		show_debug_message(_upgrade_stats)
-		show_debug_message(_upgrade_stats.projectile_stats)
+		show_debug_message(_upgrade_stats.projectile_stats) */
 		var _upgrade_projectile_count = array_length(_upgrade_stats.projectile_stats)
+		show_debug_message(_upgrade_projectile_count)
 		for(var _i = 0; _i < _upgrade_projectile_count; _i++) {
 			_tower_stats.projectile_stats[_projectile_count + _i] = variable_clone(_tower_stats.projectile_stats[0])
-			var _projectiles_length = array_length(_tower_stats.projectile_stats)
-			show_debug_message(_tower_stats.projectile_stats)
-			_tower_stats.projectile_stats[_projectiles_length].speed = _upgrade_stats.projectile_stats[_upgrade_projectile_count].speed
+			//var _projectiles_length = array_length(_tower_stats.projectile_stats)
+			/*show_debug_message(_tower_stats.projectile_stats)
+			show_debug_message(_upgrade_stats.projectile_stats) */
+			_tower_stats.projectile_stats[_projectile_count + _i].speed = _upgrade_stats.projectile_stats[_i].speed
 		}
 	}
 	

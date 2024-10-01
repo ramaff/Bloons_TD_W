@@ -8,6 +8,7 @@
     {"name":"Controllers","order":17,"path":"folders/Objects/Controllers.yy",},
     {"name":"Menu UI","order":20,"path":"folders/Objects/Menu UI.yy",},
     {"name":"Notes","order":11,"path":"folders/Objects/Notes.yy",},
+    {"name":"Projectiles","order":22,"path":"folders/Objects/Projectiles.yy",},
     {"name":"Towers","order":18,"path":"folders/Objects/Towers.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
@@ -24,7 +25,6 @@
     {"name":"ui","order":21,"path":"folders/Sprites/ui.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Projectiles","order":22,"path":"folders/Objects/Projectiles.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"autumn_acres","order":4,"path":"rooms/autumn_acres/autumn_acres.yy",},
