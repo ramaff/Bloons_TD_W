@@ -174,7 +174,7 @@ function scr_setup_global_vars(){
 			tower_object: "obj_pogo_stick_monkey",
 			tower_base: true,
 			tower_base_sprite: "spr_pogo_pad",
-			total_cost: 575,
+			total_cost: 475,
 			upgrade_cost: 0,
 			range: 160,
 			delay: 60,
@@ -193,7 +193,7 @@ function scr_setup_global_vars(){
 				[
 					{
 						keyword: "Heavy Hops",
-						upgrade_cost: 400
+						upgrade_cost: 350
 					},
 					{
 						keyword: "Pineapple Planter",
@@ -203,7 +203,7 @@ function scr_setup_global_vars(){
 				[
 					{
 						keyword: "Quick Hops",
-						upgrade_cost: 300
+						upgrade_cost: 250
 					},
 					{
 						keyword: "Jackhammer",
@@ -281,11 +281,19 @@ function scr_setup_global_vars(){
 				upgrade_string: "Pogo stick hops further into the air, and comes back down with more force.",
 				projectile_stats: [
 					{
-						sprite: "spr_pogo_hop_splash",
-						pierce: 15,
+						object: "obj_no_hit",
+						sprite: "spr_planted_pineapple",
+						pierce: 40,
 						damage: 1,
 						speed: 0,
-						lifespan: 20
+						lifespan: 90,
+						projectile_burst: [{
+							expire_activation: true,
+							object: "obj_explosion_projectile",
+							sprite: "spr_explosion_splash",
+							lifespan: 20
+						}
+						]
 					}
 				],
 			},

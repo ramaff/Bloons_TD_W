@@ -18,7 +18,7 @@ if !instance_exists(_target) {
 if hop_height <= 0 {
 	hop_height = 0;
 	hop_speed = max_hop_speed
-	scr_create_tower_projectiles(tower_stats, _target, x, y)
+	scr_create_tower_projectiles(tower_stats.projectile_stats, x, y, _target)
 }
 
 direction = point_direction(x, y, _target.x, _target.y - hop_height);
