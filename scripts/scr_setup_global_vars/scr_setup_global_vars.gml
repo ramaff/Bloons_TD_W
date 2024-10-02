@@ -282,16 +282,23 @@ function scr_setup_global_vars(){
 				projectile_stats: [
 					{
 						object: "obj_no_hit",
-						sprite: "spr_planted_pineapple",
+						sprite: "spr_pineapple",
 						pierce: 40,
 						damage: 1,
 						speed: 0,
 						lifespan: 90,
+						image_angle: 0,
 						projectile_burst: [{
 							expire_activation: true,
 							object: "obj_explosion_projectile",
-							sprite: "spr_explosion_splash",
-							lifespan: 20
+							sprite: "spr_explosion_damage",
+							lifespan: 20,
+							speed: 0,
+							direction: 0,
+							damage: 1,
+							pierce: 40,
+							size: 1.5,
+							particles: 3
 						}
 						]
 					}
