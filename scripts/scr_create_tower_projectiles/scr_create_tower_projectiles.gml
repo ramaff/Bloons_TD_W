@@ -10,8 +10,6 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 		var _dir = -15 * ((_proj_count - 1) / 2)
 	}
 	
-	show_debug_message(_projectile_stats)
-	
 	for(var _i = 0; _i < _proj_count; _i++) {
 		
 		var _projectile = obj_projectile
@@ -21,8 +19,6 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 			_projectile_stats[_i].object = "obj_projectile"	
 		}
 		
-		show_debug_message(_projectile_stats[_i])
-
 		with instance_create_depth(x,y,depth, _projectile) {
 			projectile_stats = variable_clone(_projectile_stats[_i])
 			

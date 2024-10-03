@@ -14,8 +14,12 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	if variable_struct_exists(_bloon.bloon_stats, "index") {
 		_bloon.image_index = _bloon.bloon_stats.index
 	}
-	if _class = "splitter" {
-		_bloon.sprite_index = spr_splitter_bloon;
+	if variable_struct_exists(_class_stats, "sprite") {
+		_bloon.sprite_index = asset_get_index(_class_stats.sprite);
+	}
+	show_debug_message(_bloon.bloon_stats)
+	if variable_struct_exists(_bloon.bloon_stats, "sprite") {
+		_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.sprite);
 	}
 	path = pth_training_tent;
 	if _class = "deflation" {
@@ -37,5 +41,6 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	_bloon.speed = _bloon.bloon_stats.speed
 	_bloon.path_speed = _bloon.speed
 	_bloon.depth = -_bloon.bloon_stats.layers
+	_bloon.bloon_stats.max_health = _bloon.bloon_stats.health;
 
 }

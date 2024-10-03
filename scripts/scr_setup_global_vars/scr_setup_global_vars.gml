@@ -468,6 +468,7 @@ function scr_setup_global_vars(){
 
 	global.bloon_stats = {
 		"normal": {
+			"sprite": "spr_bloon",
 			"red": {
 				layers: 1,
 				index: 0,
@@ -606,6 +607,7 @@ function scr_setup_global_vars(){
 			}
 		},
 		"splitter": {
+			"sprite": "spr_splitter_bloon",
 			"orange": {
 				layers: 2,
 				index: 0,
@@ -718,6 +720,7 @@ function scr_setup_global_vars(){
 		},
 		"deflation": {
 			"object": "obj_deflation_bloon",
+			"sprite": "spr_big_deflation_bloon",
 			"red": {
 				layers: 11,
 				index: 0,
@@ -753,14 +756,36 @@ function scr_setup_global_vars(){
 				]
 			}
 		},
-		"moab": [
-			{
-				layers: 1,
-				health: 200,
+		"moab": {
+			"object": "obj_moab_class",
+			"mini": {
+				sprite: "spr_mini_moab",
+				layers: 58,
+				index: 0,
+				rbe: 238,
+				health: 50,
 				density: 1,
 				speed: 2.1,
+				children: [
+					{
+						"class": "normal",
+						"layer": "rainbow"
+					},
+					{
+						"class": "normal",
+						"layer": "rainbow"
+					},
+					{
+						"class": "normal",
+						"layer": "rainbow"
+					},
+					{
+						"class": "normal",
+						"layer": "rainbow"
+					}
+				]
 			}
-		],
+		},
 		"bully": {
 			"object": "obj_bully",
 			"bully": {
