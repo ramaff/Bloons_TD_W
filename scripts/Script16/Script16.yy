@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_bloon_hit",
+  "name": "Script16",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "bloons",
-    "path": "folders/Scripts/bloons.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
 }

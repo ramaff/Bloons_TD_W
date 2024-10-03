@@ -39,7 +39,6 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 			}
 			direction = projectile_stats.direction
 			speed = projectile_stats.speed
-			show_debug_message(projectile_stats.sprite)
 			sprite_index = asset_get_index(projectile_stats.sprite)
 			alarm[0] = projectile_stats.lifespan
 			

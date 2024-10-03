@@ -198,6 +198,10 @@ function scr_setup_global_vars(){
 					{
 						keyword: "Pineapple Planter",
 						upgrade_cost: 900
+					},
+					{
+						keyword: "Pineapple Pogo",
+						upgrade_cost: 3000
 					}
 				],
 				[
@@ -208,6 +212,10 @@ function scr_setup_global_vars(){
 					{
 						keyword: "Jackhammer",
 						upgrade_cost: 1800
+					},
+					{
+						keyword: "Drill",
+						upgrade_cost: 4500
 					}
 				]
 			]
@@ -278,7 +286,7 @@ function scr_setup_global_vars(){
 				pierce_multiplier: 2
 			},
 			"Pineapple Planter": {
-				upgrade_string: "Pogo stick hops further into the air, and comes back down with more force.",
+				upgrade_string: "Plant pineapples with each hop that explode after 3 seconds",
 				projectile_stats: [
 					{
 						object: "obj_no_hit",
@@ -288,29 +296,172 @@ function scr_setup_global_vars(){
 						speed: 0,
 						lifespan: 90,
 						image_angle: 0,
-						projectile_burst: [{
-							expire_activation: true,
-							object: "obj_explosion_projectile",
-							sprite: "spr_explosion_damage",
-							lifespan: 20,
-							speed: 0,
-							direction: 0,
-							damage: 1,
-							pierce: 40,
-							size: 1.5,
-							particles: 3
-						}
+						expire_burst_activation: true,
+						projectile_burst: [
+							{
+								object: "obj_explosion_projectile",
+								sprite: "spr_explosion_damage",
+								lifespan: 20,
+								speed: 0,
+								direction: 0,
+								damage: 1,
+								pierce: 40,
+								size: 1.5,
+								particles: 3
+							}
 						]
 					}
 				],
+			},
+			"Pineapple Pogo": {
+				upgrade_string: "Plant jumbo pineapples that explode into more pineapples",
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_pogo_hop_splash",
+						pierce: 15,
+						damage: 1,
+						speed: 0,
+						lifespan: 20
+					},
+					{
+						object: "obj_no_hit",
+						sprite: "spr_large_pineapple",
+						pierce: 80,
+						damage: 1,
+						speed: 0,
+						lifespan: 90,
+						image_angle: 0,
+						expire_burst_activation: true,
+						projectile_burst: [
+							{
+								object: "obj_explosion_projectile",
+								sprite: "spr_explosion_damage",
+								lifespan: 20,
+								speed: 0,
+								direction: 0,
+								damage: 1,
+								pierce: 80,
+								size: 2,
+								particles: 6
+							},
+							{
+								object: "obj_no_hit",
+								sprite: "spr_pineapple",
+								pierce: 40,
+								damage: 1,
+								speed: 2,
+								direction: 0,
+								lifespan: 60,
+								image_angle: 0,
+								height: 0,
+								lobbing: {
+									gravity: 0.25,
+									speed: 7.5
+								},
+								expire_burst_activation: true,
+								projectile_burst: [
+									{
+										object: "obj_explosion_projectile",
+										sprite: "spr_explosion_damage",
+										lifespan: 20,
+										speed: 0,
+										direction: 0,
+										damage: 1,
+										pierce: 40,
+										size: 1.5,
+										particles: 3
+									}
+								]
+							},
+							{
+								object: "obj_no_hit",
+								sprite: "spr_pineapple",
+								pierce: 40,
+								damage: 1,
+								speed: 2,
+								direction: 120,
+								lifespan: 60,
+								image_angle: 0,
+								height: 0,
+								lobbing: {
+									gravity: 0.25,
+									speed: 7.5
+								},
+								expire_burst_activation: true,
+								projectile_burst: [
+									{
+										object: "obj_explosion_projectile",
+										sprite: "spr_explosion_damage",
+										lifespan: 20,
+										speed: 0,
+										direction: 0,
+										damage: 1,
+										pierce: 40,
+										size: 1.5,
+										particles: 3
+									}
+								]
+							},
+							{
+								object: "obj_no_hit",
+								sprite: "spr_pineapple",
+								pierce: 40,
+								damage: 1,
+								speed: 2,
+								direction: 240,
+								lifespan: 60,
+								image_angle: 0,
+								height: 0,
+								lobbing: {
+									gravity: 0.25,
+									speed: 7.5
+								},
+								expire_burst_activation: true,
+								projectile_burst: [
+									{
+										object: "obj_explosion_projectile",
+										sprite: "spr_explosion_damage",
+										lifespan: 20,
+										speed: 0,
+										direction: 0,
+										damage: 1,
+										pierce: 40,
+										size: 1.5,
+										particles: 3
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"Pineapple Express": {
+				upgrade_string: "Hops faster all along the track to deliver pineapples"
 			},
 			"Quick Hops": {
 				upgrade_script: scr_quick_hops,
 				upgrade_string: "Hops 50% faster"
 			},
 			"Jackhammer": {
+				tower_sprite: "spr_jackhammer_monkey",
 				upgrade_script: scr_jackhammer,
 				upgrade_string: "Hops 3x faster"
+			},
+			"Drill": {
+				tower_sprite: "spr_drill_monkey",
+				upgrade_script: scr_drill,
+				upgrade_string: "Shreds everything under it",
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_drill_splash",
+						pierce: 20,
+						damage: 1,
+						speed: 0,
+						lifespan: 20
+					}
+				],
 			}
 		}
 	}
