@@ -3,6 +3,7 @@
 
 var _tower_id = scr_create_tower(base_tower_id, tower_stats)
 
+
 global.money -= tower_stats.total_cost
 
 if hero {

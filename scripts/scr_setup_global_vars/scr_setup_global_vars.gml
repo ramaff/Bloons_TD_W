@@ -4,6 +4,7 @@ function scr_setup_global_vars(){
 	
 	global.tower_stats = {
 		"jim": {
+			tower_object: "obj_hero",
 			total_cost: 250,
 			upgrade_cost: 0,
 			range: 110,
@@ -67,6 +68,8 @@ function scr_setup_global_vars(){
 			]
 		},
 		"angry squirrel": {
+			tower_object: "obj_hero",
+			tower_sprite: "spr_angry_squirrel",
 			total_cost: 350,
 			upgrade_cost: 0,
 			range: 115,

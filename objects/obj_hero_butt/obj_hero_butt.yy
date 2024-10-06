@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_tower_butt",
-    "path": "sprites/spr_tower_butt/spr_tower_butt.yy",
+    "name": "spr_hero_butt",
+    "path": "sprites/spr_hero_butt/spr_hero_butt.yy",
   },
   "spriteMaskId": null,
   "visible": true,

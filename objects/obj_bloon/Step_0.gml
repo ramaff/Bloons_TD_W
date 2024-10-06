@@ -7,7 +7,7 @@ if path_position >= 1 {
 	
 	with (obj_hero) {
 		if _hero_number = 0 {
-			tower_stats.health -= bloon_stats.rbe
+			tower_stats.health -= other.bloon_stats.rbe
 		}
 		_hero_number--;
 		//global.lives -= bloon_stats.rbe

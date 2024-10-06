@@ -1,0 +1,11 @@
+[
+	[
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 10,
+			"spread": 45,
+			"cooldown": 0
+		}
+	]
+]
