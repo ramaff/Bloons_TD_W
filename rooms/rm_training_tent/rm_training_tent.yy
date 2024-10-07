@@ -1,13 +1,13 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "training_tent",
+  "name": "rm_training_tent",
   "creationCodeFile": "rooms/track_parent/RoomCreationCode.gml",
   "inheritCode": true,
   "inheritCreationOrder": true,
   "inheritLayers": true,
   "instanceCreationOrder": [
-    {"name":"inst_2B160758_1","path":"rooms/training_tent/training_tent.yy",},
+    {"name":"inst_2B160758_1","path":"rooms/rm_training_tent/rm_training_tent.yy",},
   ],
   "isDnd": false,
   "layers": [
