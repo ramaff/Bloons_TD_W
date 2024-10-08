@@ -21,11 +21,11 @@ function scr_create_tower_buttons(){
 		}
 	}
 	
-	var _towers = ["sling_monkey", "sling_monkey", "marbles_monkey", "pogo_stick_monkey"]
+	var _towers = ["sling_monkey", "cactus_monkey", "marbles_monkey", "assassin_monkey", "pineapple_monkey", "pogo_stick_monkey"]
 	
-	for(var _j = 0; _j < 2; _j++) {
+	for(var _j = 0; _j < 3; _j++) {
 		for(var _k = 0; _k < 2; _k++) {
-			with instance_create_depth(800 + (64 * _j), 256 + (64 * _k), depth, obj_tower_butt) {
+			with instance_create_depth(800 + (64 * _k), 256 + (64 * _j), depth, obj_tower_butt) {
 				base_tower_id = _towers[(_j * 2) + _k]
 				tower_stats = scr_get_tower_stats(base_tower_id)
 			}
