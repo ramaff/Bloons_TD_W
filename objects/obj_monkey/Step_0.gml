@@ -7,10 +7,23 @@ if tower_stats.attack_cooldown > 0 {
 
 if tower_stats.attack_cooldown <= 0 {
 	
+	if variable_struct_exists(tower_stats, "upgrade_attack_script") {
+		script_execute(tower_stats.upgrade_attack_script)
+	}
+	
 	var _target = scr_get_bloon_target(tower_stats, x, y)
 	
 	if !instance_exists(_target) {
 		exit;
+	}
+	
+	if variable_struct_exists(tower_stats, "no_target") {
+		if tower_stats.no_target {
+			direction = tower_stats.direction
+		}
+		if variable_struct_exists(tower_stats, "attack_angle_offset") {
+			direction += tower_stats.attack_angle_offset
+		}
 	}
 	
 	tower_stats.attack_cooldown += tower_stats.delay	

@@ -299,20 +299,20 @@ function scr_setup_tower_stats(){
 		},
 		"pineapple_monkey": {
 			tower_sprite: "spr_pineapple_monkey",
-			total_cost: 525,
+			total_cost: 475,
 			upgrade_cost: 0,
-			range: 180,
+			range: 200,
 			minimum_range: 90,
-			delay: 60,
+			delay: 63,
 			attack_cooldown: 0,
 	
 			projectile_stats: [
 				{
 					object: "obj_no_hit",
-					sprite: "spr_pineapple",
+					sprite: "spr_small_pineapple",
 					pierce: 40,
 					damage: 1,
-					speed: 4.5,
+					speed: 5,
 					direction: 0,
 					lifespan: 30,
 					image_angle: 0,
@@ -331,7 +331,7 @@ function scr_setup_tower_stats(){
 							direction: 0,
 							damage: 1,
 							pierce: 40,
-							size: 1.2,
+							size: 1.1,
 							particles: 3
 						}
 					]
@@ -340,14 +340,18 @@ function scr_setup_tower_stats(){
 			upgrades: [
 				[
 					{
-						keyword: "stone skipping",
-						upgrade_cost: 100
+						keyword: "bigger pineapples",
+						upgrade_cost: 300
 					}
 				],
 				[
 					{
-						keyword: "sharp sight",
-						upgrade_cost: 150
+						keyword: "faster growth",
+						upgrade_cost: 300
+					},
+					{
+						keyword: "pineapple juggling",
+						upgrade_cost: 900
 					}
 				]
 			]

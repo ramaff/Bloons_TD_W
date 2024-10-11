@@ -49,8 +49,8 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 		}
 	}
 	
-	if variable_struct_exists(_upgrade_stats, "firerate_multiplier") {
-		_tower_stats.delay = _tower_stats.delay / _upgrade_stats.firerate_multiplier
+	if variable_struct_exists(_upgrade_stats, "fire_rate_multiplier") {
+		_tower_stats.delay = _tower_stats.delay / _upgrade_stats.fire_rate_multiplier
 	}
 	
 	if variable_struct_exists(_upgrade_stats, "range") {
