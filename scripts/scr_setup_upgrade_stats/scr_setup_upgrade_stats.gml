@@ -283,12 +283,15 @@ function scr_setup_upgrade_stats(){
 				fire_rate_multiplier: 1.5,
 				upgrade_string: "Throws pineapples 50% faster."
 			},
-			"pineapple juggling": {
+			"pineapple express": {
 				upgrade_string: "Tosses a bunch of pineapples without aiming.",
 				attack_angle_offset: 0,
 				upgrade_attack_script: scr_pineapple_juggling,
+				projectile_replacement: true,
 				projectile_stats: [
 					{
+						projectile_count: 3,
+						projectile_spread: 120,
 						object: "obj_no_hit",
 						sprite: "spr_small_pineapple",
 						pierce: 40,
@@ -296,66 +299,6 @@ function scr_setup_upgrade_stats(){
 						speed: 5,
 						no_target: true,
 						direction: 0,
-						lifespan: 30,
-						image_angle: 0,
-						height: 0,
-						lobbing: {
-							gravity: 0.5,
-							speed: 7.5
-						},
-						expire_burst_activation: true,
-						projectile_burst: [
-							{
-								object: "obj_explosion_projectile",
-								sprite: "spr_explosion_damage",
-								lifespan: 20,
-								speed: 0,
-								direction: 0,
-								damage: 1,
-								pierce: 40,
-								size: 1.1,
-								particles: 3
-							}
-						]
-					},
-					{
-						object: "obj_no_hit",
-						sprite: "spr_small_pineapple",
-						pierce: 40,
-						damage: 1,
-						speed: 5,
-						no_target: true,
-						direction: 120,
-						lifespan: 30,
-						image_angle: 0,
-						height: 0,
-						lobbing: {
-							gravity: 0.5,
-							speed: 7.5
-						},
-						expire_burst_activation: true,
-						projectile_burst: [
-							{
-								object: "obj_explosion_projectile",
-								sprite: "spr_explosion_damage",
-								lifespan: 20,
-								speed: 0,
-								direction: 0,
-								damage: 1,
-								pierce: 40,
-								size: 1.1,
-								particles: 3
-							}
-						]
-					},
-					{
-						object: "obj_no_hit",
-						sprite: "spr_small_pineapple",
-						pierce: 40,
-						damage: 1,
-						speed: 5,
-						no_target: true,
-						direction: 240,
 						lifespan: 30,
 						image_angle: 0,
 						height: 0,

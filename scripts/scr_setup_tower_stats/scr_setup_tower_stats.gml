@@ -350,8 +350,12 @@ function scr_setup_tower_stats(){
 						upgrade_cost: 300
 					},
 					{
-						keyword: "pineapple juggling",
+						keyword: "pineapple express",
 						upgrade_cost: 900
+					},
+					{
+						keyword: "pineapple split",
+						upgrade_cost: 3000
 					}
 				]
 			]

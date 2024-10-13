@@ -10,6 +10,10 @@ with instance_create_depth(800, 192, depth, obj_place_tower) {
 	}
 }
 
+with instance_create_depth(800, 192, depth - 100, obj_cancel_tower) {
+	image_yscale = 3;
+}
+
 
 
 

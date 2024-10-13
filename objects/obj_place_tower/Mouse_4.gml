@@ -11,6 +11,10 @@ if hero {
 	button_id.hero_id = _tower_id;
 }
 
+with(obj_cancel_tower) {
+	instance_destroy()	
+}
+
 instance_destroy()
 
 

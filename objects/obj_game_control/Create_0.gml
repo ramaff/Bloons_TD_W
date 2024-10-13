@@ -12,6 +12,10 @@ global.bloon_sends = scr_import_json("training_tent_rounds.json", json_parse);
 
 instance_create_depth(x, y, depth, obj_tower_control)
 
+with instance_create_depth(800, 444, depth, obj_go_button) {
+	image_yscale = 0.75	
+}
+
 // Loop through the bloon sends for the most powerful bloon (if a specific bloon isn't specified)
 // If round_icon is set, then use that as the sprite
 // Otherwise just use the default sprite value for that bloon class
