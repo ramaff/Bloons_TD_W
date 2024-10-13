@@ -286,6 +286,7 @@ function scr_setup_upgrade_stats(){
 			"pineapple express": {
 				upgrade_string: "Tosses a bunch of pineapples without aiming.",
 				attack_angle_offset: 0,
+				fire_rate_multiplier: 1.33,
 				upgrade_attack_script: scr_pineapple_juggling,
 				projectile_replacement: true,
 				projectile_stats: [
@@ -293,8 +294,8 @@ function scr_setup_upgrade_stats(){
 						projectile_count: 3,
 						projectile_spread: 120,
 						object: "obj_no_hit",
-						sprite: "spr_small_pineapple",
-						pierce: 40,
+						sprite: "spr_pineapple",
+						pierce: 60,
 						damage: 1,
 						speed: 5,
 						no_target: true,
@@ -315,10 +316,80 @@ function scr_setup_upgrade_stats(){
 								speed: 0,
 								direction: 0,
 								damage: 1,
-								pierce: 40,
-								size: 1.1,
-								particles: 3
+								pierce: 60,
+								size: 1.4,
+								particles: 5
 							}
+						]
+					}
+				]
+			},
+			"pineapple split": {
+				upgrade_string: "Tosses big pineapples that split into more pineapples.",
+				attack_angle_offset: 0,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						projectile_count: 3,
+						projectile_spread: 120,
+						object: "obj_no_hit",
+						sprite: "spr_large_pineapple",
+						pierce: 80,
+						damage: 1,
+						speed: 5,
+						no_target: true,
+						direction: 0,
+						lifespan: 30,
+						image_angle: 0,
+						height: 0,
+						lobbing: {
+							gravity: 0.5,
+							speed: 7.5
+						},
+						expire_burst_activation: true,
+						projectile_burst: [
+							{
+								object: "obj_explosion_projectile",
+								sprite: "spr_explosion_damage",
+								lifespan: 20,
+								speed: 0,
+								direction: 0,
+								damage: 1,
+								pierce: 80,
+								size: 1.7,
+								particles: 8
+							},
+							{
+								projectile_count: 3,
+								projectile_spread: 120,
+								object: "obj_no_hit",
+								sprite: "spr_pineapple",
+								pierce: 30,
+								damage: 1,
+								speed: 2,
+								direction: 0,
+								lifespan: 60,
+								image_angle: 0,
+								height: 0,
+								lobbing: {
+									gravity: 0.25,
+									speed: 7.5
+								},
+								expire_burst_activation: true,
+								projectile_burst: [
+									{
+										object: "obj_explosion_projectile",
+										sprite: "spr_explosion_damage",
+										lifespan: 20,
+										speed: 0,
+										direction: 0,
+										damage: 1,
+										pierce: 30,
+										size: 1.1,
+										particles: 3
+									}
+								]
+							},
 						]
 					}
 				]

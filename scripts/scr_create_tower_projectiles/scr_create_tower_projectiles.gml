@@ -1,14 +1,14 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _target = noone){
+function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _target = noone, _angle_offset = 0){
 	
 
 	var _proj_count = array_length(_projectile_stats)
-	if _proj_count = 1 {
+	/*if _proj_count = 1 {
 		var _dir = 0	
 	} else {
 		var _dir = -15 * ((_proj_count - 1) / 2)
-	}
+	} */
 	
 	for(var _i = 0; _i < _proj_count; _i++) {
 		var _shot_count = 1;
@@ -19,6 +19,9 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 		if variable_struct_exists(_projectile_stats[_i], "projectile_spread") {
 			_spread = _projectile_stats[_i].projectile_spread
 		}
+		
+		var _dir = -_spread * ((_shot_count - 1) / 2)
+		_dir += _angle_offset
 		
 		var _projectile = obj_projectile
 		if variable_struct_exists(_projectile_stats[_i], "object") {
@@ -34,7 +37,7 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 			
 				if instance_exists(_target) {
 					if !struct_exists(projectile_stats, "direction") {
-						projectile_stats.direction = point_direction(x, y, _target.x, _target.y) + _dir;
+						projectile_stats.direction = point_direction(x, y, _target.x, _target.y);
 					} else {
 						projectile_stats.direction += point_direction(x, y, _target.x, _target.y);
 					}
@@ -43,7 +46,7 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 						projectile_stats.direction = 0
 					}
 				}
-				direction = projectile_stats.direction
+				direction = projectile_stats.direction + _dir
 				speed = projectile_stats.speed
 				sprite_index = asset_get_index(projectile_stats.sprite)
 				alarm[0] = projectile_stats.lifespan

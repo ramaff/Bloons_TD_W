@@ -19,14 +19,20 @@ if tower_stats.attack_cooldown <= 0 {
 	
 	if variable_struct_exists(tower_stats, "no_target") {
 		if tower_stats.no_target {
-			direction = tower_stats.direction
-		}
-		if variable_struct_exists(tower_stats, "attack_angle_offset") {
-			direction += tower_stats.attack_angle_offset
+			_target = noone;
 		}
 	}
 	
+	
+	var _angle_offset = 0;
+	if variable_struct_exists(tower_stats, "attack_angle_offset") {
+		show_debug_message(tower_stats.attack_angle_offset)
+		_angle_offset += tower_stats.attack_angle_offset
+	}
+	
+	show_debug_message(_angle_offset)
+	
 	tower_stats.attack_cooldown += tower_stats.delay	
-	scr_create_tower_projectiles(tower_stats.projectile_stats, x, y, _target)
+	scr_create_tower_projectiles(tower_stats.projectile_stats, x, y, _target, _angle_offset)
 	
 }

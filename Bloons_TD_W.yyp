@@ -66,6 +66,7 @@
     {"id":{"name":"scr_bloon_class_to_object","path":"scripts/scr_bloon_class_to_object/scr_bloon_class_to_object.yy",},},
     {"id":{"name":"spr_jackhammer_monkey","path":"sprites/spr_jackhammer_monkey/spr_jackhammer_monkey.yy",},},
     {"id":{"name":"obj_game_control","path":"objects/obj_game_control/obj_game_control.yy",},},
+    {"id":{"name":"scr_merge_struct","path":"scripts/scr_merge_struct/scr_merge_struct.yy",},},
     {"id":{"name":"obj_pogo_stick_monkey","path":"objects/obj_pogo_stick_monkey/obj_pogo_stick_monkey.yy",},},
     {"id":{"name":"scr_create_tower","path":"scripts/scr_create_tower/scr_create_tower.yy",},},
     {"id":{"name":"spr_stone","path":"sprites/spr_stone/spr_stone.yy",},},
