@@ -13,7 +13,7 @@ function scr_create_tower(_tower_id, _tower_stats){
 		if variable_struct_exists(_tower_stats, "tower_sprite") {
 			sprite_index = asset_get_index(_tower_stats.tower_sprite)
 		}
-		tower_stats.upgrade_count = [0, 0, 0]
+		tower_stats.upgrade_count = [0, 0, 0, 0]
 		
 		_id = id;
 		

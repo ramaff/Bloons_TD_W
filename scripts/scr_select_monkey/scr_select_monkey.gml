@@ -24,7 +24,8 @@ function scr_select_monkey(){
 		var _upgrade_stats = variable_struct_get(_tower_upgrades, _upgrade_info.keyword);
 		//show_debug_message(_upgrade_info)
 		//show_debug_message(_upgrade_stats)
-		with instance_create_depth(800, 104 + (144 * _j), depth, obj_upgrade_butt) {
+		var _y_offset = 144 * max(0, _j - 1)
+		with instance_create_depth(800, 104 + _y_offset, depth, obj_upgrade_butt) {
 		
 			selected_monkey = other.id;
 		
@@ -34,6 +35,9 @@ function scr_select_monkey(){
 			upgrade_stats.upgrade_cost = round(upgrade_stats.upgrade_cost / 5) * 5
 			path = _j;
 		
+		}
+		if _j = 0 {
+			break;	
 		}
 	}
 	

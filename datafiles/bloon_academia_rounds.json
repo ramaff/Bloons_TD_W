@@ -12,7 +12,23 @@
 			"layer": "red",
 			"count": 5,
 			"spread": 45,
+			"cooldown": 450
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 25,
+			"spread": 45,
 			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 15,
+			"spread": 45,
+			"cooldown": 450
 		}
 	]
 ]

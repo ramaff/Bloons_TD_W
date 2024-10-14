@@ -192,6 +192,7 @@ function scr_setup_bloon_stats(){
 			"lime": {
 				layers: 4,
 				index: 2,
+				rbe: 10,
 				health: 1,
 				density: 1,
 				speed: 2.8,
@@ -213,6 +214,7 @@ function scr_setup_bloon_stats(){
 			"amber": {
 				layers: 5,
 				index: 3,
+				rbe: 13,
 				health: 1,
 				density: 1,
 				speed: 4.8,
@@ -234,6 +236,7 @@ function scr_setup_bloon_stats(){
 			"purple": {
 				layers: 6,
 				index: 4,
+				rbe: 16,
 				health: 1,
 				density: 1,
 				speed: 5.3,

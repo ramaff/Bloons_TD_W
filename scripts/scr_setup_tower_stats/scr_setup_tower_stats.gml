@@ -342,13 +342,19 @@ function scr_setup_tower_stats(){
 					{
 						keyword: "bigger pineapples",
 						upgrade_cost: 300
-					}
-				],
-				[
+					},
 					{
 						keyword: "faster growth",
 						upgrade_cost: 300
 					},
+				],
+				[
+					{
+						keyword: "grilled pineapples",
+						upgrade_cost: 1200
+					}
+				],
+				[
 					{
 						keyword: "pineapple express",
 						upgrade_cost: 900
