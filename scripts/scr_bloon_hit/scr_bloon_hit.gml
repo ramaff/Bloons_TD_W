@@ -1,9 +1,22 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_bloon_hit(_bloon = other, _class = "normal"){
+	
+	if variable_struct_exists(_bloon.bloon_stats, "shielded") {
+		if _bloon.bloon_stats.shielded {
+			_bloon.bloon_stats.shield_health -= projectile_stats.damage
+			if _bloon.bloon_stats.shield_health < 1 {
+				_bloon.bloon_stats.shielded = false
+				_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.sprite);
+			}
+			instance_destroy()
+			exit;
+		}
+	}
 
 	_bloon.bloon_stats.health -= projectile_stats.damage;
 	projectile_stats.pierce -= _bloon.bloon_stats.density;
+	
 	
 	while(_bloon.bloon_stats.health <= 0) {
 		

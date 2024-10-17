@@ -7,6 +7,8 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	_bloon.bloon_stats = variable_clone(struct_get(_class_stats, _layer))
 	_bloon.bloon_stats.round = _round;
 	
+	_bloon.bloon_stats = scr_merge_struct(_bloon.bloon_stats, _class_stats)
+	
 	for(var _i = 0; _i < array_length(_properties); _i++) {
 		variable_struct_set(_bloon.bloon_stats, _properties[_i], true)
 	}
@@ -21,9 +23,10 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	if variable_struct_exists(_bloon.bloon_stats, "sprite") {
 		_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.sprite);
 	}
-	path = pth_training_tent;
+	
+	path = global.paths[0];
 	if _class = "deflation" {
-		_bloon.sprite_index = spr_big_deflation_bloon;
+		//_bloon.sprite_index = spr_big_deflation_bloon;
 		target = instance_create_depth(x, y, depth, obj_bloon_target);
 		with(target) {
 			path_position = 0;
@@ -35,7 +38,12 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	
 	if variable_struct_exists(_bloon.bloon_stats, "tattered") {
 		_bloon.bloon_stats.speed = _bloon.bloon_stats.speed * 2
-		variable_struct_set(_bloon.bloon_stats, "tattered_sprite", spr_bloon_tattered)
+		//variable_struct_set(_bloon.bloon_stats, "tattered_sprite", _class_stats.tattered_sprite)
+	}
+	if variable_struct_exists(_bloon.bloon_stats, "shielded") {
+		//variable_struct_set(_bloon.bloon_stats, "shielded_sprite", _class_stats.shielded_sprite)
+		_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.shielded_sprite);
+		_bloon.bloon_stats.shield_health = floor(_bloon.bloon_stats.layers + sqrt(_bloon.bloon_stats.rbe - _bloon.bloon_stats.layers))
 	}
 	
 	_bloon.speed = _bloon.bloon_stats.speed

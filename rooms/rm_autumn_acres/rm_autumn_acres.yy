@@ -1,13 +1,13 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "autumn_acres",
+  "name": "rm_autumn_acres",
   "creationCodeFile": "rooms/track_parent/RoomCreationCode.gml",
   "inheritCode": true,
   "inheritCreationOrder": true,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_124D8B3D","path":"rooms/autumn_acres/autumn_acres.yy",},
+    {"name":"inst_124D8B3D","path":"rooms/rm_autumn_acres/rm_autumn_acres.yy",},
   ],
   "isDnd": false,
   "layers": [

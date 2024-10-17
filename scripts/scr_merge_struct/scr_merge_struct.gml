@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_merge_struct(_target_struct, _merging_struct, _inner_join){
+function scr_merge_struct(_target_struct, _merging_struct, _inner_join = false){
 	var _merged_struct = _target_struct;
     if (_inner_join) {
 	    var _keys_to_copy = variable_struct_get_names(_target_struct);

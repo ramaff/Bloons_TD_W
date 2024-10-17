@@ -2,6 +2,28 @@
 	[
 		{
 			"class": "normal",
+			"layer": "blue",
+			"count": 5,
+			"spread": 45,
+			"cooldown": 0,
+			"properties": [
+				"shielded"
+			]
+		},
+		{
+			"class": "normal",
+			"layer": "black",
+			"count": 5,
+			"spread": 75,
+			"cooldown": 400,
+			"properties": [
+				"shielded"
+			]
+		}
+	],
+	[
+		{
+			"class": "normal",
 			"layer": "red",
 			"count": 15,
 			"spread": 45,
@@ -29,6 +51,62 @@
 			"count": 15,
 			"spread": 45,
 			"cooldown": 450
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "blue",
+			"count": 15,
+			"spread": 45,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "blue",
+			"count": 5,
+			"spread": 45,
+			"cooldown": 600,
+			"properties": [
+				"shielded"
+			]
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "green",
+			"count": 15,
+			"spread": 45,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "lead",
+			"layer": "lead",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "green",
+			"count": 30,
+			"spread": 45,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 10,
+			"spread": 60,
+			"cooldown": 300,
+			"properties": [
+				"shielded"
+			]
 		}
 	]
 ]

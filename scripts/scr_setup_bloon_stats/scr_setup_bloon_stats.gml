@@ -4,6 +4,8 @@ function scr_setup_bloon_stats(){
 	return {
 		"normal": {
 			"sprite": "spr_bloon",
+			"shielded_sprite": "spr_bloon_shielded",
+			"tattered_sprite": "spr_bloon_tattered",
 			"red": {
 				layers: 1,
 				index: 0,

@@ -1,13 +1,13 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "bloon_academia",
+  "name": "rm_bloon_academia",
   "creationCodeFile": "rooms/track_parent/RoomCreationCode.gml",
   "inheritCode": true,
   "inheritCreationOrder": true,
   "inheritLayers": true,
   "instanceCreationOrder": [
-    {"name":"inst_2B160758_1","path":"rooms/bloon_academia/bloon_academia.yy",},
+    {"name":"inst_2B160758_1","path":"rooms/rm_bloon_academia/rm_bloon_academia.yy",},
   ],
   "isDnd": false,
   "layers": [
