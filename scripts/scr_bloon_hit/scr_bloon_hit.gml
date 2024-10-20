@@ -13,6 +13,24 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 			exit;
 		}
 	}
+	
+	show_debug_message(_bloon.bloon_stats)
+	show_debug_message(projectile_stats)
+	var _stopped_by_lead = false;
+	if variable_struct_exists(_bloon.bloon_stats, "metallic") {
+		if _bloon.bloon_stats.metallic {
+			_stopped_by_lead = true;
+			if variable_struct_exists(projectile_stats, "lead_hit") {
+				if projectile_stats.lead_hit {
+					_stopped_by_lead = false;
+				}
+			}
+		}
+	}
+	if _stopped_by_lead {
+		instance_destroy()
+		exit;
+	}
 
 	_bloon.bloon_stats.health -= projectile_stats.damage;
 	projectile_stats.pierce -= _bloon.bloon_stats.density;

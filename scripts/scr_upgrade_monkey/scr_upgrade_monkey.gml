@@ -40,7 +40,14 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 			_tower_stats.projectile_stats[_i].pierce = _tower_stats.projectile_stats[_i].pierce * _upgrade_stats.pierce_multiplier
 		}
 		if variable_struct_exists(_upgrade_stats, "shot_count_multiplier") {
-			_tower_stats.projectile_stats[_projectile_count + _i] = _tower_stats.projectile_stats[_i]
+			//_tower_stats.projectile_stats[_projectile_count + _i] = _tower_stats.projectile_stats[_i]
+			if !variable_struct_exists(_tower_stats.projectile_stats[_i], "projectile_count") {
+				_tower_stats.projectile_stats[_i].projectile_count = 1;
+			}
+			_tower_stats.projectile_stats[_i].projectile_count = _tower_stats.projectile_stats[_i].projectile_count * _upgrade_stats.shot_count_multiplier
+			if !variable_struct_exists(_tower_stats.projectile_stats[_i], "projectile_spread") {
+				_tower_stats.projectile_stats[_i].projetile_spread = 15;
+			}
 		}
 		
 		if variable_struct_exists(_upgrade_stats, "pierce") {

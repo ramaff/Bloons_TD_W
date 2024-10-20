@@ -4,7 +4,7 @@ function scr_create_tower_buttons(){
 	
 	var _heroes = ["jim", "angry squirrel"]
 	for(var _i = 0; _i < 2; _i++) {
-		with instance_create_depth(800, 64 + (_i * 64), depth, obj_hero_butt) {
+		with instance_create_depth(816, 64 + (_i * 64), depth, obj_hero_butt) {
 			base_tower_id = _heroes[_i];
 			tower_stats = scr_get_tower_stats(base_tower_id)
 			var _hero_id = noone
@@ -25,7 +25,7 @@ function scr_create_tower_buttons(){
 	
 	for(var _j = 0; _j < 3; _j++) {
 		for(var _k = 0; _k < 2; _k++) {
-			with instance_create_depth(800 + (64 * _k), 256 + (64 * _j), depth, obj_tower_butt) {
+			with instance_create_depth(812 + (72 * _k), 256 + (64 * _j), depth, obj_tower_butt) {
 				base_tower_id = _towers[(_j * 2) + _k]
 				tower_stats = scr_get_tower_stats(base_tower_id)
 			}

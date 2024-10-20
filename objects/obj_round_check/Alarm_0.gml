@@ -12,8 +12,13 @@ with(obj_bloon) {
 	}
 }
 
+var _text = "round " + string(round_number) + " cleared: +$" + string(100 + round_number)
+
 if !_bloons_remaining {
 	global.money += 100 + round_number;
+	with instance_create_depth(600, 200, -100, obj_text) {
+		text = _text	
+	}
 	instance_destroy()
 }
 

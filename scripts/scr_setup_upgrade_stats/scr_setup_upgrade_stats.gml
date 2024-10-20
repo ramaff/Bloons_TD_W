@@ -251,6 +251,7 @@ function scr_setup_upgrade_stats(){
 					{
 						object: "obj_no_hit",
 						sprite: "spr_pineapple",
+						lead_hit: true,
 						pierce: 60,
 						damage: 1,
 						speed: 5,
@@ -267,6 +268,7 @@ function scr_setup_upgrade_stats(){
 							{
 								object: "obj_explosion_projectile",
 								sprite: "spr_explosion_damage",
+								lead_hit: true,
 								lifespan: 20,
 								speed: 0,
 								direction: 0,
@@ -295,6 +297,7 @@ function scr_setup_upgrade_stats(){
 						projectile_spread: 120,
 						object: "obj_no_hit",
 						sprite: "spr_pineapple",
+						lead_hit: true,
 						pierce: 60,
 						damage: 1,
 						speed: 5,
@@ -312,6 +315,7 @@ function scr_setup_upgrade_stats(){
 							{
 								object: "obj_explosion_projectile",
 								sprite: "spr_explosion_damage",
+								lead_hit: true,
 								lifespan: 20,
 								speed: 0,
 								direction: 0,
@@ -334,6 +338,7 @@ function scr_setup_upgrade_stats(){
 						projectile_spread: 120,
 						object: "obj_no_hit",
 						sprite: "spr_large_pineapple",
+						lead_hit: true,
 						pierce: 80,
 						damage: 1,
 						speed: 5,
@@ -351,6 +356,7 @@ function scr_setup_upgrade_stats(){
 							{
 								object: "obj_explosion_projectile",
 								sprite: "spr_explosion_damage",
+								lead_hit: true,
 								lifespan: 20,
 								speed: 0,
 								direction: 0,
@@ -364,6 +370,7 @@ function scr_setup_upgrade_stats(){
 								projectile_spread: 120,
 								object: "obj_no_hit",
 								sprite: "spr_pineapple",
+								lead_hit: true,
 								pierce: 30,
 								damage: 1,
 								speed: 2,
@@ -380,6 +387,7 @@ function scr_setup_upgrade_stats(){
 									{
 										object: "obj_explosion_projectile",
 										sprite: "spr_explosion_damage",
+										lead_hit: true,
 										lifespan: 20,
 										speed: 0,
 										direction: 0,

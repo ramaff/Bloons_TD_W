@@ -12,6 +12,11 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	for(var _i = 0; _i < array_length(_properties); _i++) {
 		variable_struct_set(_bloon.bloon_stats, _properties[_i], true)
 	}
+	if variable_struct_exists(_class_stats, "properties") {
+		for(var _i = 0; _i < array_length(_class_stats.properties); _i++) {
+			variable_struct_set(_bloon.bloon_stats, _class_stats.properties[_i], true)
+		}
+	}
 
 	if variable_struct_exists(_bloon.bloon_stats, "index") {
 		_bloon.image_index = _bloon.bloon_stats.index
@@ -19,7 +24,6 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	if variable_struct_exists(_class_stats, "sprite") {
 		_bloon.sprite_index = asset_get_index(_class_stats.sprite);
 	}
-	show_debug_message(_bloon.bloon_stats)
 	if variable_struct_exists(_bloon.bloon_stats, "sprite") {
 		_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.sprite);
 	}

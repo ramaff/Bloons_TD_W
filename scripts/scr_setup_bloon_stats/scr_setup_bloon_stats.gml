@@ -258,6 +258,31 @@ function scr_setup_bloon_stats(){
 				]
 			},
 		},
+		"lead": {
+			"sprite": "spr_lead_bloon",
+			"tattered_sprite": "spr_lead_tattered",
+			"properties": [
+				"metallic"
+			],
+			"lead": {
+				layers: 7,
+				index: 0,
+				rbe: 23,
+				health: 1,
+				density: 1,
+				speed: 2.5,
+				children: [
+					{
+						"class": "normal",
+						"layer": "black"
+					},
+					{
+						"class": "normal",
+						"layer": "black"
+					}
+				]
+			}
+		},
 		"deflation": {
 			"object": "obj_deflation_bloon",
 			"sprite": "spr_big_deflation_bloon",
@@ -292,6 +317,28 @@ function scr_setup_bloon_stats(){
 						"properties": [
 							"tattered"
 						]
+					}
+				]
+			}
+		},
+		"ceramic": {
+			"object": "obj_ceramic_class",
+			"ceramic": {
+				sprite: "spr_ceramic_bloon",
+				layers: 18,
+				index: 0,
+				rbe: 104,
+				health: 10,
+				density: 1,
+				speed: 3.75,
+				children: [
+					{
+						"class": "normal",
+						"layer": "rainbow"
+					},
+					{
+						"class": "normal",
+						"layer": "rainbow"
 					}
 				]
 			}

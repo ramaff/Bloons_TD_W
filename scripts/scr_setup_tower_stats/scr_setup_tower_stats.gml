@@ -310,6 +310,7 @@ function scr_setup_tower_stats(){
 				{
 					object: "obj_no_hit",
 					sprite: "spr_small_pineapple",
+					lead_hit: true,
 					pierce: 40,
 					damage: 1,
 					speed: 5,
@@ -326,6 +327,7 @@ function scr_setup_tower_stats(){
 						{
 							object: "obj_explosion_projectile",
 							sprite: "spr_explosion_damage",
+							lead_hit: true,
 							lifespan: 20,
 							speed: 0,
 							direction: 0,
@@ -347,7 +349,9 @@ function scr_setup_tower_stats(){
 						keyword: "faster growth",
 						upgrade_cost: 300
 					},
-				],
+				]
+			],
+			split_upgrades: [
 				[
 					{
 						keyword: "grilled pineapples",

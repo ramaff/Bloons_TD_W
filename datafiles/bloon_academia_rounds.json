@@ -2,28 +2,6 @@
 	[
 		{
 			"class": "normal",
-			"layer": "blue",
-			"count": 5,
-			"spread": 45,
-			"cooldown": 0,
-			"properties": [
-				"shielded"
-			]
-		},
-		{
-			"class": "normal",
-			"layer": "black",
-			"count": 5,
-			"spread": 75,
-			"cooldown": 400,
-			"properties": [
-				"shielded"
-			]
-		}
-	],
-	[
-		{
-			"class": "normal",
 			"layer": "red",
 			"count": 15,
 			"spread": 45,
@@ -63,7 +41,7 @@
 		},
 		{
 			"class": "normal",
-			"layer": "blue",
+			"layer": "red",
 			"count": 5,
 			"spread": 45,
 			"cooldown": 600,
@@ -93,7 +71,7 @@
 	[
 		{
 			"class": "normal",
-			"layer": "green",
+			"layer": "blue",
 			"count": 30,
 			"spread": 45,
 			"cooldown": 0
@@ -107,6 +85,106 @@
 			"properties": [
 				"shielded"
 			]
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "green",
+			"count": 30,
+			"spread": 45,
+			"cooldown": 0
+		},
+		{
+			"class": "splitter",
+			"layer": "orange",
+			"count": 20,
+			"spread": 40,
+			"cooldown": 600
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "blue",
+			"count": 20,
+			"spread": 40,
+			"cooldown": 0,
+			"properties": [
+				"shielded"
+			]
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 20,
+			"spread": 15,
+			"cooldown": 900,
+			"properties": [
+				"shielded"
+			]
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "yellow",
+			"count": 10,
+			"spread": 60,
+			"cooldown": 0
+		},
+		{
+			"class": "splitter",
+			"layer": "cyan",
+			"count": 20,
+			"spread": 30,
+			"cooldown": 600
+		},
+		{
+			"class": "normal",
+			"layer": "yellow",
+			"count": 10,
+			"spread": 30,
+			"cooldown": 1200
+		}
+	],
+	[
+		{
+			"class": "ceramic",
+			"layer": "ceramic",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "green",
+			"count": 60,
+			"spread": 30,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "yellow",
+			"count": 6,
+			"spread": 30,
+			"cooldown": 415
+		},
+		{
+			"class": "normal",
+			"layer": "yellow",
+			"count": 6,
+			"spread": 30,
+			"cooldown": 1015
+		},
+		{
+			"class": "normal",
+			"layer": "yellow",
+			"count": 6,
+			"spread": 30,
+			"cooldown": 1615
 		}
 	]
 ]
