@@ -186,5 +186,175 @@
 			"spread": 30,
 			"cooldown": 1615
 		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "green",
+			"count": 20,
+			"spread": 40,
+			"cooldown": 0,
+			"properties": [
+				"shielded"
+			]
+		},
+		{
+			"class": "normal",
+			"layer": "green",
+			"count": 5,
+			"spread": 40,
+			"cooldown": 620,
+			"properties": [
+				"shielded"
+			]
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "pink",
+			"count": 10,
+			"spread": 60,
+			"cooldown": 0
+		},
+		{
+			"class": "splitter",
+			"layer": "lime",
+			"count": 20,
+			"spread": 30,
+			"cooldown": 60
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "black",
+			"count": 5,
+			"spread": 60,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "white",
+			"count": 5,
+			"spread": 60,
+			"cooldown": 400
+		}
+	],
+	[
+		{
+			"class": "lead",
+			"layer": "lead",
+			"count": 2,
+			"spread": 60,
+			"cooldown": 0
+		},
+		{
+			"class": "ceramic",
+			"layer": "ceramic",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 120
+		},
+		{
+			"class": "lead",
+			"layer": "lead",
+			"count": 2,
+			"spread": 60,
+			"cooldown": 240
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "pink",
+			"count": 30,
+			"spread": 40,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "pink",
+			"count": 10,
+			"spread": 40,
+			"cooldown": 820
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "zebra",
+			"count": 10,
+			"spread": 75,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "green",
+			"count": 20,
+			"spread": 10,
+			"cooldown": 450,
+			"properties": [
+				"shielded"
+			]
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "black",
+			"count": 20,
+			"spread": 60,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "white",
+			"count": 20,
+			"spread": 60,
+			"cooldown": 30
+		},
+		{
+			"class": "lead",
+			"layer": "lead",
+			"count": 5,
+			"spread": 120,
+			"cooldown": 600
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "yellow",
+			"count": 20,
+			"spread": 75,
+			"cooldown": 0,
+			"properties": [
+				"shielded"
+			]
+		},
+		{
+			"class": "normal",
+			"layer": "yellow",
+			"count": 20,
+			"spread": 5,
+			"cooldown": 450
+		},
+		{
+			"class": "splitter",
+			"layer": "amber",
+			"count": 10,
+			"spread": 5,
+			"cooldown": 1050
+		}
+	],
+	[
+		{
+			"class": "bully",
+			"layer": "red bully",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
 	]
 ]

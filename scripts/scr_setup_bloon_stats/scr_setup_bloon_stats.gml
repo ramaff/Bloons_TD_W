@@ -380,6 +380,13 @@ function scr_setup_bloon_stats(){
 				health: 500,
 				density: 1,
 				speed: 1,
+			},
+			"red bully": {
+				sprite: "spr_red_bully",
+				layers: 1,
+				health: 500,
+				density: 1,
+				speed: 1,
 			}
 		}
 	}

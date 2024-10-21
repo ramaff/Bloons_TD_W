@@ -340,6 +340,7 @@ function scr_setup_tower_stats(){
 				}
 			],
 			upgrades: [
+				[],
 				[
 					{
 						keyword: "bigger pineapples",
