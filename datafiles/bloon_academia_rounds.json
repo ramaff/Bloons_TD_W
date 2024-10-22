@@ -479,11 +479,162 @@
 	],
 	[
 		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 20,
+			"spread": 60,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "zebra",
+			"count": 40,
+			"spread": 33,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "zebra",
+			"count": 5,
+			"spread": 45,
+			"cooldown": 1390,
+			"properties": [
+				"shielded"
+			]
+		}
+	],
+	[
+		{
+			"class": "lead",
+			"layer": "lead",
+			"count": 20,
+			"spread": 20,
+			"cooldown": 0
+		},
+		{
+			"class": "ceramic",
+			"layer": "ceramic",
+			"count": 2,
+			"spread": 120,
+			"cooldown": 600
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 30,
+			"spread": 40,
+			"cooldown": 0
+		},
+		{
+			"class": "splitter",
+			"layer": "lime",
+			"count": 40,
+			"spread": 8,
+			"cooldown": 660,
+			"properties": [
+				"shielded"
+			]
+		}
+	],
+	[
+		{
 			"class": "bully",
 			"layer": "green bully",
 			"count": 1,
 			"spread": 0,
 			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 30,
+			"spread": 36,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 6,
+			"spread": 36,
+			"cooldown": 876
+		},
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 6,
+			"spread": 36,
+			"cooldown": 888
+		}
+	],
+	[
+		{
+			"class": "ceramic",
+			"layer": "ceramic",
+			"count": 5,
+			"spread": 90,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "splitter",
+			"layer": "purple",
+			"count": 90,
+			"spread": 12,
+			"cooldown": 0
+		},
+		{
+			"class": "moab",
+			"layer": "mini",
+			"count": 2,
+			"spread": 360,
+			"cooldown": 600
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 10,
+			"spread": 5,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 10,
+			"spread": 5,
+			"cooldown": 240
+		},
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 10,
+			"spread": 5,
+			"cooldown": 480
+		},
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 10,
+			"spread": 5,
+			"cooldown": 720
+		},
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 5,
+			"spread": 20,
+			"cooldown": 960,
+			"properties": [
+				"shielded"
+			]
 		}
 	],
 	[
@@ -497,11 +648,95 @@
 	],
 	[
 		{
+			"class": "lead",
+			"layer": "lead",
+			"count": 40,
+			"spread": 15,
+			"cooldown": 0
+		},
+		{
+			"class": "lead",
+			"layer": "block",
+			"count": 3,
+			"spread": 120,
+			"cooldown": 1080
+		}
+	],
+	[
+		{
+			"class": "splitter",
+			"layer": "amber",
+			"count": 40,
+			"spread": 15,
+			"cooldown": 0,
+			"properties": [
+				"shielded"
+			]
+		},
+		{
+			"class": "splitter",
+			"layer": "purple",
+			"count": 20,
+			"spread": 15,
+			"cooldown": 700,
+			"properties": [
+				"shielded"
+			]
+		}
+	],
+	[
+		{
+			"class": "ceramic",
+			"layer": "ceramic",
+			"count": 10,
+			"spread": 60,
+			"cooldown": 0
+		},
+		{
+			"class": "ceramic",
+			"layer": "brick",
+			"count": 3,
+			"spread": 150,
+			"cooldown": 780
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "pink",
+			"count": 100,
+			"spread": 12,
+			"cooldown": 0
+		},
+		{
+			"class": "moab",
+			"layer": "mini",
+			"count": 4,
+			"spread": 200,
+			"cooldown": 300
+		},
+		{
+			"class": "moab",
+			"layer": "moab",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 1250
+		}
+	],
+	[
+		{
 			"class": "bully",
 			"layer": "big bully",
 			"count": 1,
 			"spread": 0,
 			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 40,
+			"spread": 30,
+			"cooldown": 360
 		}
 	]
 ]

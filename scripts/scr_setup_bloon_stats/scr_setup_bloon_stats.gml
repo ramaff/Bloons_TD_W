@@ -145,6 +145,8 @@ function scr_setup_bloon_stats(){
 		},
 		"splitter": {
 			"sprite": "spr_splitter_bloon",
+			"shielded_sprite": "spr_splitter_shielded",
+			"tattered_sprite": "spr_splitter_tattered",
 			"orange": {
 				layers: 2,
 				index: 0,
@@ -383,10 +385,37 @@ function scr_setup_bloon_stats(){
 			},
 			"red bully": {
 				sprite: "spr_red_bully",
-				layers: 1,
+				layers: 500,
 				health: 500,
 				density: 1,
 				speed: 1,
+			},
+			"blue bully": {
+				sprite: "spr_blue_bully",
+				layers: 1000,
+				health: 1000,
+				density: 1,
+				speed: 1.2,
+			},
+			"green bully": {
+				sprite: "spr_green_bully",
+				layers: 1500,
+				health: 1500,
+				density: 1,
+				speed: 1.4,
+			},
+			"yellow bully": {
+				sprite: "spr_yellow_bully",
+				layers: 2000,
+				health: 2000,
+				density: 1,
+				speed: 1.8,
+			},
+			"big bully": {
+				layers: 5000,
+				health: 5000,
+				density: 1,
+				speed: 2,
 			}
 		}
 	}
