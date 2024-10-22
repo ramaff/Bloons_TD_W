@@ -4,15 +4,15 @@ function scr_setup_upgrade_stats(){
 	return {
 		"jim": {
 			"darter": {
-				shot_count_multiplier: 2,
+				shot_count: 1,
 				upgrade_string: "shoots more darts."
 			},
 			"faster": {
-				fire_rate_multiplier: 1.75,
+				fire_rate_multiplier: 1.33,
 				upgrade_string: "shoots more often."
 			},
 			"stronger": {
-				pierce_multiplier: 2,
+				pierce: 1,
 				upgrade_string: "shoots more poppier darts."
 			}
 		},

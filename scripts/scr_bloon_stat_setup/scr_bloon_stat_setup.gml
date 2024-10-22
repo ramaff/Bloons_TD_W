@@ -18,14 +18,14 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		}
 	}
 
-	if variable_struct_exists(_bloon.bloon_stats, "index") {
-		_bloon.image_index = _bloon.bloon_stats.index
-	}
 	if variable_struct_exists(_class_stats, "sprite") {
 		_bloon.sprite_index = asset_get_index(_class_stats.sprite);
 	}
 	if variable_struct_exists(_bloon.bloon_stats, "sprite") {
 		_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.sprite);
+	}
+	if variable_struct_exists(_bloon.bloon_stats, "index") {
+		_bloon.image_index = _bloon.bloon_stats.index
 	}
 	
 	path = global.paths[0];

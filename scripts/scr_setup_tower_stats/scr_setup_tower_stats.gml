@@ -26,7 +26,7 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "stronger",
-						upgrade_cost: 100
+						upgrade_cost: 150
 					}, 
 					{
 						keyword: "stronger",
@@ -34,7 +34,7 @@ function scr_setup_tower_stats(){
 					}, 
 					{
 						keyword: "stronger",
-						upgrade_cost: 400
+						upgrade_cost: 200
 					}
 				],
 				[
@@ -48,7 +48,7 @@ function scr_setup_tower_stats(){
 					}, 
 					{
 						keyword: "faster",
-						upgrade_cost: 600
+						upgrade_cost: 450
 					}
 				],
 				[
@@ -62,7 +62,7 @@ function scr_setup_tower_stats(){
 					}, 
 					{
 						keyword: "darter",
-						upgrade_cost: 800
+						upgrade_cost: 600
 					}
 				]
 			]

@@ -356,5 +356,152 @@
 			"spread": 0,
 			"cooldown": 0
 		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 300,
+			"spread": 3,
+			"cooldown": 0
+		},
+		{
+			"class": "splitter",
+			"layer": "purple",
+			"count": 6,
+			"spread": 15,
+			"cooldown": 200
+		},
+		{
+			"class": "splitter",
+			"layer": "purple",
+			"count": 6,
+			"spread": 15,
+			"cooldown": 500
+		},
+		{
+			"class": "splitter",
+			"layer": "purple",
+			"count": 8,
+			"spread": 15,
+			"cooldown": 800
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "zebra",
+			"count": 30,
+			"spread": 40,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "black",
+			"count": 5,
+			"spread": 15,
+			"cooldown": 300,
+			"properties": [
+				"shielded"
+			]
+		},
+		{
+			"class": "normal",
+			"layer": "black",
+			"count": 5,
+			"spread": 15,
+			"cooldown": 600,
+			"properties": [
+				"shielded"
+			]
+		},
+		{
+			"class": "normal",
+			"layer": "black",
+			"count": 5,
+			"spread": 15,
+			"cooldown": 900,
+			"properties": [
+				"shielded"
+			]
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 8,
+			"spread": 100,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "pink",
+			"count": 60,
+			"spread": 10,
+			"cooldown": 400
+		},
+		{
+			"class": "normal",
+			"layer": "pink",
+			"count": 10,
+			"spread": 10,
+			"cooldown": 905
+		}
+	],
+	[
+		{
+			"class": "lead",
+			"layer": "lead",
+			"count": 20,
+			"spread": 30,
+			"cooldown": 0
+		},
+		{
+			"class": "splitter",
+			"layer": "cyan",
+			"count": 40,
+			"spread": 8,
+			"cooldown": 660,
+			"properties": [
+				"shielded"
+			]
+		}
+	],
+	[
+		{
+			"class": "bully",
+			"layer": "blue bully",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "bully",
+			"layer": "green bully",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "bully",
+			"layer": "yellow bully",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "bully",
+			"layer": "big bully",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
 	]
 ]
