@@ -15,6 +15,14 @@ tower_stats = {
 			lifespan: 40
 		}
 	],
+	abilities: {
+		"Power Dart": {
+			"charge_time": 30,
+			"cooldown": 0,
+			"max_charges": 1,
+			"charges": 0
+		}
+	},
 	upgrades: [
 		[
 			{
@@ -24,3 +32,5 @@ tower_stats = {
 		]
 	]
 }
+
+alarm[0] = 30;

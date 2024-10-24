@@ -5,13 +5,21 @@ function scr_setup_tower_stats(){
 	return {
 		"jim": {
 			tower_object: "obj_hero",
-			total_cost: 250,
+			total_cost: 300,
 			upgrade_cost: 0,
 			range: 110,
 			delay: 30,
 			attack_cooldown: 0,
 			health: 200,
 			max_health: 200,
+			abilities: {
+				"Power Dart": {
+					"charge_time": 30,
+					"charge": 30,
+					"max_charges": 3,
+					"charges": 0
+				}
+			},
 	
 			projectile_stats: [
 				{
