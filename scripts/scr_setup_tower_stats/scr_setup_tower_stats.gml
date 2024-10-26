@@ -26,7 +26,7 @@ function scr_setup_tower_stats(){
 				{
 					sprite: "spr_dart",
 					pierce: 1,
-					damage: 1,
+					damage: 3,
 					speed: 12,
 					lifespan: 30
 				}

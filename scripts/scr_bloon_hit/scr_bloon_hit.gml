@@ -14,8 +14,6 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 		}
 	}
 	
-	show_debug_message(_bloon.bloon_stats)
-	show_debug_message(projectile_stats)
 	var _stopped_by_lead = false;
 	if variable_struct_exists(_bloon.bloon_stats, "metallic") {
 		if _bloon.bloon_stats.metallic {
@@ -35,47 +33,57 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 	_bloon.bloon_stats.health -= projectile_stats.damage;
 	projectile_stats.pierce -= _bloon.bloon_stats.density;
 	
+	var _og_rbe = _bloon.bloon_stats.rbe;
+	var _pops = 0
+	var _cash_earned = 0
+	
+	var _children = []
+	if variable_struct_exists(_bloon.bloon_stats, "children") {
+		_children = _bloon.bloon_stats.children
+	}
+	var _pos = _bloon.path_position
+	var _parent_id = _bloon.parent_id
+	
+	var _xx = _bloon.x
+	var _yy = _bloon.y
 	
 	while(_bloon.bloon_stats.health <= 0) {
 		
 		// In the future when calculating multi-layer damage, we can give each bloon an 'rbe' value.
 		// Then we subtract the original rbe by the rbe of all the remaining bloon children
+		instance_destroy(_bloon);
+		
 		global.money += 1;
 		_bloon.bloon_stats.health += 1;
 		_bloon.bloon_stats.layers -= 1;
 		
-		if _bloon.bloon_stats.layers < 1 || !variable_struct_exists(_bloon.bloon_stats, "children") {
-		
-			instance_destroy(_bloon);
-			exit;
+		//if _bloon.bloon_stats.layers < 1 || !variable_struct_exists(_bloon.bloon_stats, "children") {
+		if _bloon.bloon_stats.layers < 1 {
+			break;
 		}
-	
-		//var _layers = _bloon.bloon_stats.layers
-		var _children = _bloon.bloon_stats.children
-		var _pos = _bloon.path_position
-		var _parent_id = _bloon.parent_id
-		
-		//show_debug_message(_children)
 		
 		for(var _i = 0; _i < array_length(_children); _i++) {
 			var _layer = variable_struct_get(_children[_i], "layer")
 			var _child_class = variable_struct_get(_children[_i], "class")
 			
-			//show_debug_message(_child_class)
-			//show_debug_message(_layer)
-	
-			with instance_create_depth(_bloon.x, _bloon.y, depth, obj_bloon) {
-				scr_bloon_stat_setup(id, _child_class, _layer)
-				
-				path_position = _pos
-				parent_id = _parent_id
-				_pos -= 0.01
+			var _class_stats = struct_get(global.bloon_stats, _child_class)
+			if variable_struct_exists(_class_stats, "children") {
+				_children = array_concat(_children, _class_stats.children)
 			}
-		//scr_bloon_stat_setup(_bloon, _class, _layer)
 		}
-		
-		instance_destroy(_bloon)
+	}
 	
+	for(var _i = 0; _i < array_length(_children); _i++) {
+		var _layer = variable_struct_get(_children[_i], "layer")
+		var _child_class = variable_struct_get(_children[_i], "class")
+
+		with instance_create_depth(_bloon.x, _bloon.y, depth, obj_bloon) {
+			scr_bloon_stat_setup(id, _child_class, _layer, [], _bloon.bloon_stats.round)
+				
+			path_position = _pos
+			parent_id = _parent_id
+			_pos -= 0.01
+		}
 	}
 	
 	if _class = "moab" {
@@ -111,6 +119,6 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 			_bloon.image_index = 4;	
 		}
 	}
-	
+
 
 }
