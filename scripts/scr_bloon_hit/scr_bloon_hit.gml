@@ -1,5 +1,47 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
+function scr_apply_damage_to_bloon(_bloon_stats, _damage, _bloon = noone) {
+	var _resulting_bloons = []
+	_bloon_stats.health -= _damage
+	
+	if _bloon_stats.health <= 0 {
+		global.money += 1;
+		
+		var _children = []
+		if variable_struct_exists(_bloon_stats, "children") {
+			_children = _bloon_stats.children
+		}
+		
+		var _remaining_damage = 0 - _bloon_stats.health
+		
+		show_debug_message(_remaining_damage)
+		
+		for(var _i = 0; _i < array_length(_children); _i++) {
+			var _layer = variable_struct_get(_children[_i], "layer")
+			var _child_class = variable_struct_get(_children[_i], "class")
+			
+			var _class_stats = struct_get(global.bloon_stats, _child_class)
+			var _child_stats = variable_clone(struct_get(_class_stats, _layer))
+			
+			_child_stats.layer = _layer
+			_child_stats.class = _child_class
+			
+			_resulting_bloons = array_concat(_resulting_bloons, scr_apply_damage_to_bloon(_child_stats, _remaining_damage))
+			/*if variable_struct_exists(_class_stats, "children") {
+				_children = array_concat(_children, _class_stats.children)
+			} */
+		}
+		if instance_exists(_bloon) {
+			instance_destroy(_bloon)	
+		}
+	} else if _bloon = noone {
+		return [_bloon_stats]	
+	}
+	
+	return _resulting_bloons
+}
+
 function scr_bloon_hit(_bloon = other, _class = "normal"){
 	
 	if variable_struct_exists(_bloon.bloon_stats, "shielded") {
@@ -30,24 +72,24 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 		exit;
 	}
 
-	_bloon.bloon_stats.health -= projectile_stats.damage;
+	//_bloon.bloon_stats.health -= projectile_stats.damage;
 	projectile_stats.pierce -= _bloon.bloon_stats.density;
+	
+	var _damage = projectile_stats.damage;
 	
 	var _og_rbe = _bloon.bloon_stats.rbe;
 	var _pops = 0
 	var _cash_earned = 0
 	
-	var _children = []
-	if variable_struct_exists(_bloon.bloon_stats, "children") {
-		_children = _bloon.bloon_stats.children
-	}
 	var _pos = _bloon.path_position
 	var _parent_id = _bloon.parent_id
 	
 	var _xx = _bloon.x
 	var _yy = _bloon.y
 	
-	while(_bloon.bloon_stats.health <= 0) {
+	var _resulting_bloons = scr_apply_damage_to_bloon(_bloon.bloon_stats, _damage, _bloon)
+	
+	/*while(_bloon.bloon_stats.health <= 0) {
 		
 		// In the future when calculating multi-layer damage, we can give each bloon an 'rbe' value.
 		// Then we subtract the original rbe by the rbe of all the remaining bloon children
@@ -71,13 +113,16 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 				_children = array_concat(_children, _class_stats.children)
 			}
 		}
-	}
+	} */
 	
-	for(var _i = 0; _i < array_length(_children); _i++) {
-		var _layer = variable_struct_get(_children[_i], "layer")
-		var _child_class = variable_struct_get(_children[_i], "class")
+	show_debug_message("resulting bloons: ")
+	
+	for(var _i = 0; _i < array_length(_resulting_bloons); _i++) {
+		show_debug_message(_resulting_bloons[_i])
+		var _layer = variable_struct_get(_resulting_bloons[_i], "layer")
+		var _child_class = variable_struct_get(_resulting_bloons[_i], "class")
 
-		with instance_create_depth(_bloon.x, _bloon.y, depth, obj_bloon) {
+		with instance_create_depth(_xx, _yy, depth, obj_bloon) {
 			scr_bloon_stat_setup(id, _child_class, _layer, [], _bloon.bloon_stats.round)
 				
 			path_position = _pos
