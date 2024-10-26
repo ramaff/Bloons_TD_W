@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 3,
   "parent": {
-    "name": "Bloons_TD_W",
-    "path": "Bloons_TD_W.yyp",
+    "name": "ui",
+    "path": "folders/Sprites/ui.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

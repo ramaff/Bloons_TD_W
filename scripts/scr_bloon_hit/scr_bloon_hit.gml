@@ -28,9 +28,6 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _bloon = noone) {
 			_child_stats.class = _child_class
 			
 			_resulting_bloons = array_concat(_resulting_bloons, scr_apply_damage_to_bloon(_child_stats, _remaining_damage))
-			/*if variable_struct_exists(_class_stats, "children") {
-				_children = array_concat(_children, _class_stats.children)
-			} */
 		}
 		if instance_exists(_bloon) {
 			instance_destroy(_bloon)	
@@ -77,9 +74,9 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 	
 	var _damage = projectile_stats.damage;
 	
-	var _og_rbe = _bloon.bloon_stats.rbe;
-	var _pops = 0
-	var _cash_earned = 0
+	//var _og_rbe = _bloon.bloon_stats.rbe;
+	//var _pops = 0
+	//var _cash_earned = 0
 	
 	var _pos = _bloon.path_position
 	var _parent_id = _bloon.parent_id
@@ -88,37 +85,8 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 	var _yy = _bloon.y
 	
 	var _resulting_bloons = scr_apply_damage_to_bloon(_bloon.bloon_stats, _damage, _bloon)
-	
-	/*while(_bloon.bloon_stats.health <= 0) {
-		
-		// In the future when calculating multi-layer damage, we can give each bloon an 'rbe' value.
-		// Then we subtract the original rbe by the rbe of all the remaining bloon children
-		instance_destroy(_bloon);
-		
-		global.money += 1;
-		_bloon.bloon_stats.health += 1;
-		_bloon.bloon_stats.layers -= 1;
-		
-		//if _bloon.bloon_stats.layers < 1 || !variable_struct_exists(_bloon.bloon_stats, "children") {
-		if _bloon.bloon_stats.layers < 1 {
-			break;
-		}
-		
-		for(var _i = 0; _i < array_length(_children); _i++) {
-			var _layer = variable_struct_get(_children[_i], "layer")
-			var _child_class = variable_struct_get(_children[_i], "class")
-			
-			var _class_stats = struct_get(global.bloon_stats, _child_class)
-			if variable_struct_exists(_class_stats, "children") {
-				_children = array_concat(_children, _class_stats.children)
-			}
-		}
-	} */
-	
-	show_debug_message("resulting bloons: ")
-	
+
 	for(var _i = 0; _i < array_length(_resulting_bloons); _i++) {
-		show_debug_message(_resulting_bloons[_i])
 		var _layer = variable_struct_get(_resulting_bloons[_i], "layer")
 		var _child_class = variable_struct_get(_resulting_bloons[_i], "class")
 

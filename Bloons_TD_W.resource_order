@@ -149,7 +149,7 @@
     {"name":"spr_pogo_hop_splash","order":4,"path":"sprites/spr_pogo_hop_splash/spr_pogo_hop_splash.yy",},
     {"name":"spr_planted_pineapple","order":6,"path":"sprites/spr_planted_pineapple/spr_planted_pineapple.yy",},
     {"name":"spr_bully_bloon","order":14,"path":"sprites/spr_bully_bloon/spr_bully_bloon.yy",},
-    {"name":"spr_pointer","order":16,"path":"sprites/spr_pointer/spr_pointer.yy",},
+    {"name":"spr_pointer","order":19,"path":"sprites/spr_pointer/spr_pointer.yy",},
     {"name":"spr_going_butt","order":13,"path":"sprites/spr_going_butt/spr_going_butt.yy",},
     {"name":"spr_go_butt","order":11,"path":"sprites/spr_go_butt/spr_go_butt.yy",},
     {"name":"obj_training_tent_button","order":1,"path":"objects/obj_training_tent_button/obj_training_tent_button.yy",},

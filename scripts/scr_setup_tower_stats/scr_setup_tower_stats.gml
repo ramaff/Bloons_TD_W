@@ -63,15 +63,15 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "darter",
-						upgrade_cost: 200
+						upgrade_cost: 250
 					}, 
 					{
 						keyword: "darter",
-						upgrade_cost: 400
+						upgrade_cost: 500
 					}, 
 					{
 						keyword: "darter",
-						upgrade_cost: 600
+						upgrade_cost: 750
 					}
 				]
 			]

@@ -8,7 +8,7 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "shoots more darts."
 			},
 			"faster": {
-				fire_rate_multiplier: 1.33,
+				fire_rate_multiplier: 1.167,
 				upgrade_string: "shoots more often."
 			},
 			"stronger": {
