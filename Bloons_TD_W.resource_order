@@ -105,6 +105,7 @@
     {"name":"obj_lose_indication","order":8,"path":"objects/obj_lose_indication/obj_lose_indication.yy",},
     {"name":"spr_big_deflation_bloon","order":1,"path":"sprites/spr_big_deflation_bloon/spr_big_deflation_bloon.yy",},
     {"name":"obj_hero","order":3,"path":"objects/obj_hero/obj_hero.yy",},
+    {"name":"scr_power_dart","order":2,"path":"scripts/scr_power_dart/scr_power_dart.yy",},
     {"name":"obj_tower_info_pan","order":4,"path":"objects/obj_tower_info_pan/obj_tower_info_pan.yy",},
     {"name":"spr_marble","order":3,"path":"sprites/spr_marble/spr_marble.yy",},
     {"name":"scr_create_tower_projectiles","order":2,"path":"scripts/scr_create_tower_projectiles/scr_create_tower_projectiles.yy",},
@@ -138,6 +139,7 @@
     {"name":"spr_block_bloon","order":8,"path":"sprites/spr_block_bloon/spr_block_bloon.yy",},
     {"name":"spr_small_pineapple","order":12,"path":"sprites/spr_small_pineapple/spr_small_pineapple.yy",},
     {"name":"obj_bloon_academia_button","order":2,"path":"objects/obj_bloon_academia_button/obj_bloon_academia_button.yy",},
+    {"name":"spr_ability_ui","order":18,"path":"sprites/spr_ability_ui/spr_ability_ui.yy",},
     {"name":"spr_polly","order":9,"path":"sprites/spr_polly/spr_polly.yy",},
     {"name":"obj_hero_butt","order":5,"path":"objects/obj_hero_butt/obj_hero_butt.yy",},
     {"name":"spr_angry_squirrel","order":6,"path":"sprites/spr_angry_squirrel/spr_angry_squirrel.yy",},
@@ -152,6 +154,7 @@
     {"name":"scr_upgrade_monkey","order":7,"path":"scripts/scr_upgrade_monkey/scr_upgrade_monkey.yy",},
     {"name":"spr_large_pineapple","order":10,"path":"sprites/spr_large_pineapple/spr_large_pineapple.yy",},
     {"name":"obj_no_hit","order":2,"path":"objects/obj_no_hit/obj_no_hit.yy",},
+    {"name":"scr_ability_activate","order":8,"path":"scripts/scr_ability_activate/scr_ability_activate.yy",},
     {"name":"spr_green_bully","order":12,"path":"sprites/spr_green_bully/spr_green_bully.yy",},
   ],
 }

@@ -4,11 +4,6 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 	
 
 	var _proj_count = array_length(_projectile_stats)
-	/*if _proj_count = 1 {
-		var _dir = 0	
-	} else {
-		var _dir = -15 * ((_proj_count - 1) / 2)
-	} */
 	
 	for(var _i = 0; _i < _proj_count; _i++) {
 		var _shot_count = 1;

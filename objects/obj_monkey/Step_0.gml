@@ -30,8 +30,6 @@ if tower_stats.attack_cooldown <= 0 {
 		_angle_offset += tower_stats.attack_angle_offset
 	}
 	
-	show_debug_message(_angle_offset)
-	
 	tower_stats.attack_cooldown += tower_stats.delay	
 	scr_create_tower_projectiles(tower_stats.projectile_stats, x, y, _target, _angle_offset)
 	

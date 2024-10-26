@@ -17,7 +17,8 @@ function scr_setup_tower_stats(){
 					"charge_time": 30,
 					"charge": 30,
 					"max_charges": 3,
-					"charges": 0
+					"charges": 0,
+					"ability_script": scr_power_dart
 				}
 			},
 	
