@@ -98,7 +98,7 @@ function scr_setup_tower_stats(){
 			attack_cooldown: 0,
 			health: 150,
 			max_health: 150,
-			stat_boosts: [],
+			stat_boosts: {},
 			damage_scripts: [
 				scr_angry_squirrel_anger
 			],

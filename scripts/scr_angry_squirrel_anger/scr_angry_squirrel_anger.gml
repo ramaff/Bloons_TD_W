@@ -7,10 +7,11 @@ function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 		fire_rate_boost_duration: 180,
 	}
 	if !variable_struct_exists(_tower_stats, "stat_boosts") {
-		_tower_stats.stat_boosts = []
+		_tower_stats.stat_boosts = {}
 	}
-	var _boost_length = array_length(_tower_stats.stat_boosts)
+	//var _boost_length = array_length(_tower_stats.stat_boosts)
 	
-	_tower_stats.stat_boosts[_boost_length] = _anger_boost
+	variable_struct_set(_tower_stats.stat_boosts, "angry_boost", _anger_boost)
+	//_tower_stats.stat_boosts.angry_boost = _anger_boost
 
 }

@@ -1,15 +1,27 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if tower_stats.attack_cooldown > 0 {
-	var _tick_down = 1;
-	if variable_struct_exists(tower_stats, "stat_boosts") {
-		for(var _i = 0; _i < array_length(tower_stats.stat_boosts); _i++) {
-			if variable_struct_exists(tower_stats.stat_boosts[_i], "fire_rate_boost_multiplier") {
-				_tick_down = _tick_down * tower_stats.stat_boosts[_i].fire_rate_boost_multiplier;
+var _tick_down = 1;
+
+if variable_struct_exists(tower_stats, "stat_boosts") {
+	var _boosts = variable_struct_get_names(tower_stats.stat_boosts);
+	for(var _i = 0; _i < array_length(_boosts); _i++) {
+		var _current_boost = variable_struct_get(tower_stats.stat_boosts, _boosts[_i])
+		if variable_struct_exists(_current_boost, "fire_rate_boost_duration") {
+			if variable_struct_exists(_current_boost, "fire_rate_boost_multiplier") {
+				_tick_down = _tick_down * _current_boost.fire_rate_boost_multiplier;
+			}
+			
+			_current_boost.fire_rate_boost_duration--;
+			
+			if _current_boost.fire_rate_boost_duration <= 0 {
+				struct_remove(tower_stats.stat_boosts, _boosts[_i])
 			}
 		}
 	}
+}
+
+if tower_stats.attack_cooldown > 0 {
 	tower_stats.attack_cooldown -= _tick_down;
 }
 
