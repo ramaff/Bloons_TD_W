@@ -15,6 +15,7 @@ tower_stats = {
 			lifespan: 40
 		}
 	],
+	stat_boosts: [],
 	abilities: {
 		"Power Dart": {
 			"charge_time": 30,

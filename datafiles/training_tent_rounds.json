@@ -2,15 +2,6 @@
 	[
 		{
 			"class": "normal",
-			"layer": "rainbow",
-			"count": 10,
-			"spread": 450,
-			"cooldown": 0
-		}
-	],
-	[
-		{
-			"class": "normal",
 			"layer": "red",
 			"count": 10,
 			"spread": 45,

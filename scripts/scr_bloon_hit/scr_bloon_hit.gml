@@ -15,8 +15,6 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _bloon = noone) {
 		
 		var _remaining_damage = 0 - _bloon_stats.health
 		
-		show_debug_message(_remaining_damage)
-		
 		for(var _i = 0; _i < array_length(_children); _i++) {
 			var _layer = variable_struct_get(_children[_i], "layer")
 			var _child_class = variable_struct_get(_children[_i], "class")
@@ -96,6 +94,8 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 			path_position = _pos
 			parent_id = _parent_id
 			_pos -= 0.01
+			
+			image_index = bloon_stats.index
 		}
 	}
 	

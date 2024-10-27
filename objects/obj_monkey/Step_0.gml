@@ -2,7 +2,15 @@
 // You can write your code in this editor
 
 if tower_stats.attack_cooldown > 0 {
-	tower_stats.attack_cooldown -= 1;
+	var _tick_down = 1;
+	if variable_struct_exists(tower_stats, "stat_boosts") {
+		for(var _i = 0; _i < array_length(tower_stats.stat_boosts); _i++) {
+			if variable_struct_exists(tower_stats.stat_boosts[_i], "fire_rate_boost_multiplier") {
+				_tick_down = _tick_down * tower_stats.stat_boosts[_i].fire_rate_boost_multiplier;
+			}
+		}
+	}
+	tower_stats.attack_cooldown -= _tick_down;
 }
 
 if tower_stats.attack_cooldown <= 0 {

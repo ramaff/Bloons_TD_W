@@ -74,6 +74,18 @@ function scr_setup_tower_stats(){
 						upgrade_cost: 750
 					}
 				]
+			],
+			split_upgrades: [
+				[
+				],
+				[
+				],
+				[
+					{
+						keyword: "split darts",
+						upgrade_cost: 3000
+					}
+				]
 			]
 		},
 		"angry squirrel": {
@@ -82,14 +94,18 @@ function scr_setup_tower_stats(){
 			total_cost: 350,
 			upgrade_cost: 0,
 			range: 115,
-			delay: 24,
+			delay: 27,
 			attack_cooldown: 0,
 			health: 150,
 			max_health: 150,
+			stat_boosts: [],
+			damage_scripts: [
+				scr_angry_squirrel_anger
+			],
 	
 			projectile_stats: [
 				{
-					sprite: "spr_dart",
+					sprite: "spr_acorn",
 					pierce: 2,
 					damage: 1,
 					speed: 12,
@@ -99,14 +115,22 @@ function scr_setup_tower_stats(){
 			upgrades: [
 				[
 					{
-						keyword: "stronger",
-						upgrade_cost: 100
+						keyword: "Anger Mismanagement",
+						upgrade_cost: 150
+					},
+					{
+						keyword: "Poke",
+						upgrade_cost: 600
 					}
 				],
 				[
 					{
-						keyword: "faster",
-						upgrade_cost: 150
+						keyword: "Bigger Acorns",
+						upgrade_cost: 250
+					},
+					{
+						keyword: "Beefed up Squirrel",
+						upgrade_cost: 750
 					}
 				]
 			]

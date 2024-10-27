@@ -18,6 +18,11 @@ if path_position >= 1 {
 			with instance_create_depth(x, y, -100, obj_text) {
 				text = "-" + string(_damage);	
 			}
+			if variable_struct_exists(tower_stats, "damage_scripts") {
+				for(var _i = 0; _i < array_length(tower_stats.damage_scripts); _i++) {
+					script_execute(tower_stats.damage_scripts[_i])
+				}
+			}
 		}
 		_hero_number--;
 		if tower_stats.health <= 0 {
