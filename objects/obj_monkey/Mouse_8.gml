@@ -1,7 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-scr_ability_activate()
+if variable_struct_exists(tower_stats, "abilities") {
+	scr_ability_activate()
+}
 
 
 

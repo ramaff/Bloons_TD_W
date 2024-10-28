@@ -36,13 +36,16 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Poke the squirrel to make it angry.",
 				abilities: {
 					"Poke": {
-						"charge_time": 40,
-						"charge": 40,
+						"charge_time": 45,
+						"charge": 45,
 						"max_charges": 1,
 						"charges": 0,
 						"ability_script": scr_angry_squirrel_anger
 					}
 				}
+			},
+			"Lingering Flame": {
+				upgrade_string: "The squirrel remains slightly mad for 15 seconds after being provoked. Also boosts anger potency."
 			},
 			"Bigger Acorns": {
 				projectile_replacement: true,
@@ -72,6 +75,18 @@ function scr_setup_upgrade_stats(){
 				health: 150,
 				max_health: 150,
 				upgrade_string: "The squirrel has twice as much health, and throws acorns twice as hard!"
+			},
+			"Vent": {
+				upgrade_string: "The squirrel can throw nearby towers to regain some of its health and pop more bloons.",
+				abilities: {
+					"Vent": {
+						"charge_time": 60,
+						"charge": 60,
+						"max_charges": 1,
+						"charges": 0,
+						"ability_script": scr_vent
+					}
+				}
 			}
 		},
 		"marbles_monkey": {

@@ -5,6 +5,7 @@ function scr_setup_tower_stats(){
 	return {
 		"jim": {
 			tower_object: "obj_hero",
+			tower_sprite: "spr_monkey",
 			total_cost: 300,
 			upgrade_cost: 0,
 			range: 110,
@@ -91,10 +92,10 @@ function scr_setup_tower_stats(){
 		"angry squirrel": {
 			tower_object: "obj_hero",
 			tower_sprite: "spr_angry_squirrel",
-			total_cost: 350,
+			total_cost: 300,
 			upgrade_cost: 0,
 			range: 115,
-			delay: 27,
+			delay: 24,
 			attack_cooldown: 0,
 			health: 150,
 			max_health: 150,
@@ -120,25 +121,41 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Poke",
-						upgrade_cost: 600
+						upgrade_cost: 400
 					},
 					{
 						keyword: "Lingering Flame",
-						upgrade_cost: 1600
+						upgrade_cost: 1200
+					},
+					{
+						keyword: "Acorn Assault",
+						upgrade_cost: 3300
+					},
+					{	
+						keyword: "Fiery Rage",
+						upgrade_cost: 6600
 					}
 				],
 				[
 					{
 						keyword: "Bigger Acorns",
-						upgrade_cost: 250
+						upgrade_cost: 200
 					},
 					{
 						keyword: "Beefed-Up Squirrel",
-						upgrade_cost: 1050
+						upgrade_cost: 900
 					},
 					{
 						keyword: "Vent",
 						upgrade_cost: 1050
+					},
+					{
+						keyword: "Tree Tossing",
+						upgrade_cost: 2500
+					},
+					{
+						keyword: "Rampage",
+						upgrade_cost: 7500
 					}
 				]
 			]

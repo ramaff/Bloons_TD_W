@@ -3,19 +3,25 @@
 function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 
 	var _anger_boost = {
-		fire_rate_boost_multiplier: 3,
-		fire_rate_boost_duration: 180,
+		fire_rate_boost_multiplier: 4,
+		fire_rate_boost_duration: 90,
 	}
 	if !variable_struct_exists(_tower_stats, "stat_boosts") {
 		_tower_stats.stat_boosts = {}
 	}
-	show_debug_message(_tower_stats)
 	if variable_struct_exists(_tower_stats, "active_upgrades") {
 		if variable_struct_exists(_tower_stats.active_upgrades, "Anger Mismanagement") {
 			_anger_boost.fire_rate_boost_duration = _anger_boost.fire_rate_boost_duration * 2;
 		}
+		if variable_struct_exists(_tower_stats.active_upgrades, "Lingering Flame") {
+			_anger_boost.fire_rate_boost_multiplier = _anger_boost.fire_rate_boost_multiplier / 1.5
+			var _lingering_flame_boost = {
+				fire_rate_boost_multiplier: 2,
+				fire_rate_boost_duration: 630,
+			}
+			variable_struct_set(_tower_stats.stat_boosts, "lingering_flame", _lingering_flame_boost)
+		}
 	}
-	show_debug_message(_anger_boost)
 	//var _boost_length = array_length(_tower_stats.stat_boosts)
 	
 	variable_struct_set(_tower_stats.stat_boosts, "angry_boost", _anger_boost)

@@ -1,6 +1,22 @@
 [
 	[
 		{
+			"class": "peek-a-bloon",
+			"layer": "red",
+			"count": 5,
+			"spread": 60,
+			"cooldown": 0
+		},
+		{
+			"class": "peek-a-bloon",
+			"layer": "green",
+			"count": 5,
+			"spread": 60,
+			"cooldown": 400
+		}
+	],
+	[
+		{
 			"class": "normal",
 			"layer": "red",
 			"count": 10,

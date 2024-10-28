@@ -417,6 +417,144 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 2,
 			}
-		}
+		},
+		"peek-a-bloon": {
+			"sprite": "spr_peek_a_bloon",
+			"object": "obj_peek_a_bloon",
+			"red": {
+				layers: 2,
+				index: 0,
+				rbe: 2,
+				health: 1,
+				density: 1,
+				speed: 0.75,
+				children: [
+					{
+						"class": "normal",
+						"layer": "red",
+						"properties": [
+							"tattered"
+						]
+					}
+				]
+			},
+			"blue": {
+				layers: 3,
+				index: 1,
+				rbe: 5,
+				health: 1,
+				density: 1,
+				speed: 1,
+				children: [
+					{
+						"class": "peek-a-bloon",
+						"layer": "red"
+					},
+					{
+						"class": "normal",
+						"layer": "blue",
+						"properties": [
+							"tattered"
+						]
+					}
+				]
+			},
+			"green": {
+				layers: 4,
+				index: 2,
+				rbe: 9,
+				health: 1,
+				density: 1,
+				speed: 1.25,
+				children: [
+					{
+						"class": "peek-a-bloon",
+						"layer": "blue"
+					},
+					{
+						"class": "normal",
+						"layer": "green",
+						"properties": [
+							"tattered"
+						]
+					}
+				]
+			},
+			"yellow": {
+				layers: 5,
+				index: 3,
+				rbe: 14,
+				health: 1,
+				density: 1,
+				speed: 2.25,
+				children: [
+					{
+						"class": "peek-a-bloon",
+						"layer": "green"
+					},
+					{
+						"class": "normal",
+						"layer": "yellow",
+						"properties": [
+							"tattered"
+						]
+					}
+				]
+			},
+			"pink": {
+				layers: 6,
+				index: 4,
+				rbe: 20,
+				health: 1,
+				density: 1,
+				speed: 2.5,
+				children: [
+					{
+						"class": "peek-a-bloon",
+						"layer": "yellow"
+					},
+					{
+						"class": "normal",
+						"layer": "pink",
+						"properties": [
+							"tattered"
+						]
+					}
+				]
+			},
+			"rainbow": {
+				layers: 9,
+				index: 5,
+				rbe: 128,
+				health: 1,
+				density: 1,
+				speed: 2,
+				children: [
+					{
+						"class": "peek-a-bloon",
+						"layer": "pink"
+					},
+					{
+						"class": "peek-a-bloon",
+						"layer": "pink"
+					},
+					{
+						"class": "peek-a-bloon",
+						"layer": "pink"
+					},
+					{
+						"class": "peek-a-bloon",
+						"layer": "pink"
+					},
+					{
+						"class": "normal",
+						"layer": "rainbow",
+						"properties": [
+							"tattered"
+						]
+					}
+				]
+			}
+		},
 	}
 }
