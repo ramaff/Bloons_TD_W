@@ -289,12 +289,12 @@ function scr_setup_bloon_stats(){
 			"object": "obj_deflation_bloon",
 			"sprite": "spr_big_deflation_bloon",
 			"red": {
-				layers: 6,
+				layers: 5,
 				index: 0,
-				rbe: 8,
-				health: 4,
+				rbe: 7,
+				health: 3,
 				density: 1,
-				speed: 2.7,
+				speed: 3.3,
 				children: [
 					{
 						"class": "splitter",
@@ -306,12 +306,12 @@ function scr_setup_bloon_stats(){
 				]
 			},
 			"blue": {
-				layers: 11,
-				index: 0,
-				rbe: 15,
-				health: 8,
+				layers: 9,
+				index: 1,
+				rbe: 13,
+				health: 6,
 				density: 1,
-				speed: 3.3,
+				speed: 4.4,
 				children: [
 					{
 						"class": "splitter",
@@ -323,16 +323,50 @@ function scr_setup_bloon_stats(){
 				]
 			},
 			"green": {
-				layers: 16,
-				index: 0,
-				rbe: 22,
-				health: 12,
+				layers: 13,
+				index: 2,
+				rbe: 19,
+				health: 9,
 				density: 1,
-				speed: 3.3,
+				speed: 5.5,
 				children: [
 					{
 						"class": "splitter",
 						"layer": "lime",
+						"properties": [
+							"tattered"
+						]
+					}
+				]
+			},
+			"yellow": {
+				layers: 17,
+				index: 3,
+				rbe: 25,
+				health: 12,
+				density: 1,
+				speed: 9.9,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "amber",
+						"properties": [
+							"tattered"
+						]
+					}
+				]
+			},
+			"pink": {
+				layers: 17,
+				index: 4,
+				rbe: 31,
+				health: 15,
+				density: 1,
+				speed: 11,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "pink",
 						"properties": [
 							"tattered"
 						]

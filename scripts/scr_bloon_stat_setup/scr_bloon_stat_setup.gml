@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", _properties = [], _round = 0){
+function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", _path = pth_bloon_academia, _properties = [], _round = 0){
 
 	var _class_stats = struct_get(global.bloon_stats, _class)
 	
@@ -28,16 +28,18 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		_bloon.image_index = _bloon.bloon_stats.index
 	}
 	
-	path = global.paths[0];
+	_bloon.bloon_stats.path = _path
 	if _class = "deflation" {
 		//_bloon.sprite_index = spr_big_deflation_bloon;
 		target = instance_create_depth(x, y, depth, obj_bloon_target);
 		with(target) {
 			path_position = 0;
-			path_start(other.path, _bloon.bloon_stats.speed, path_action_stop, true);
+			path_start(_path, _bloon.bloon_stats.speed, path_action_stop, true);
+			x = path_get_x(_path, 0)
+			y = path_get_y(_path, 0)
 		}
 	} else {
-		path_start(path, bloon_stats.speed, path_action_stop, true);
+		path_start(_path, bloon_stats.speed, path_action_stop, true);
 	}
 	
 	if variable_struct_exists(_bloon.bloon_stats, "tattered") {
