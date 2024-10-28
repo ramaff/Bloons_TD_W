@@ -121,6 +121,10 @@ function scr_setup_tower_stats(){
 					{
 						keyword: "Poke",
 						upgrade_cost: 600
+					},
+					{
+						keyword: "Lingering Flame",
+						upgrade_cost: 1600
 					}
 				],
 				[
@@ -129,8 +133,12 @@ function scr_setup_tower_stats(){
 						upgrade_cost: 250
 					},
 					{
-						keyword: "Beefed up Squirrel",
-						upgrade_cost: 750
+						keyword: "Beefed-Up Squirrel",
+						upgrade_cost: 1050
+					},
+					{
+						keyword: "Vent",
+						upgrade_cost: 1050
 					}
 				]
 			]

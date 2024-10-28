@@ -13,6 +13,28 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 		}
 	}
 	
+	if !variable_struct_exists(_tower_stats, "active_upgrades") {
+		_tower_stats.active_upgrades = {}
+	}
+	variable_struct_set(_tower_stats.active_upgrades, _upgrade_stats.keyword, true)
+	
+	if !variable_struct_exists(_tower_stats, "abilities") {
+		_tower_stats.abilities = {}
+	}
+	if variable_struct_exists(_upgrade_stats, "abilities") {
+		_tower_stats.abilities = scr_merge_struct(_tower_stats.abilities, _upgrade_stats.abilities)
+	}
+	if variable_struct_exists(_upgrade_stats, "health") {
+		_tower_stats.health += _upgrade_stats.health;
+	}
+	if variable_struct_exists(_upgrade_stats, "max_health") {
+		_tower_stats.max_health += _upgrade_stats.max_health;
+	}
+	
+	if variable_struct_exists(_upgrade_stats, "range") {
+		_tower_stats.range += _upgrade_stats.range;
+	}
+	
 	var _projectile_count = array_length(_tower_stats.projectile_stats)
 	
 	if variable_struct_exists(_upgrade_stats, "projectile_stats") {

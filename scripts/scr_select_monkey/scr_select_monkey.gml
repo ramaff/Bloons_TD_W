@@ -34,6 +34,7 @@ function scr_select_monkey(){
 		
 			upgrade_stats.upgrade_cost = _upgrade_info.upgrade_cost;
 			upgrade_stats.upgrade_cost = round(upgrade_stats.upgrade_cost / 5) * 5
+			upgrade_stats.keyword = _upgrade_info.keyword
 			path = _j;
 		
 		}

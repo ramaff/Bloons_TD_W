@@ -28,6 +28,52 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Allows the sling monkey to pop camo bloons, and target further."
 			}
 		},
+		"angry squirrel": {
+			"Anger Mismanagement": {
+				upgrade_string: "The squirrel stays mad twice as long."
+			},
+			"Poke": {
+				upgrade_string: "Poke the squirrel to make it angry.",
+				abilities: {
+					"Poke": {
+						"charge_time": 40,
+						"charge": 40,
+						"max_charges": 1,
+						"charges": 0,
+						"ability_script": scr_angry_squirrel_anger
+					}
+				}
+			},
+			"Bigger Acorns": {
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_big_acorn",
+						pierce: 4,
+						damage: 1,
+						speed: 12,
+						lifespan: 60
+					}
+				],
+				upgrade_string: "Throws bigger acorns that pop more bloons."
+			},
+			"Beefed-Up Squirrel": {
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_big_acorn",
+						pierce: 6,
+						damage: 2,
+						speed: 18,
+						lifespan: 60
+					}
+				],
+				range: 15,
+				health: 150,
+				max_health: 150,
+				upgrade_string: "The squirrel has twice as much health, and throws acorns twice as hard!"
+			}
+		},
 		"marbles_monkey": {
 			"bigger marbles": {
 				pierce: 3,

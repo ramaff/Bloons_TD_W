@@ -9,6 +9,13 @@ function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 	if !variable_struct_exists(_tower_stats, "stat_boosts") {
 		_tower_stats.stat_boosts = {}
 	}
+	show_debug_message(_tower_stats)
+	if variable_struct_exists(_tower_stats, "active_upgrades") {
+		if variable_struct_exists(_tower_stats.active_upgrades, "Anger Mismanagement") {
+			_anger_boost.fire_rate_boost_duration = _anger_boost.fire_rate_boost_duration * 2;
+		}
+	}
+	show_debug_message(_anger_boost)
 	//var _boost_length = array_length(_tower_stats.stat_boosts)
 	
 	variable_struct_set(_tower_stats.stat_boosts, "angry_boost", _anger_boost)
