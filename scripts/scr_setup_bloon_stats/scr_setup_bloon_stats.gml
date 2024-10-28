@@ -289,10 +289,10 @@ function scr_setup_bloon_stats(){
 			"object": "obj_deflation_bloon",
 			"sprite": "spr_big_deflation_bloon",
 			"red": {
-				layers: 11,
+				layers: 6,
 				index: 0,
-				rbe: 14,
-				health: 10,
+				rbe: 8,
+				health: 4,
 				density: 1,
 				speed: 2.7,
 				children: [
@@ -306,16 +306,33 @@ function scr_setup_bloon_stats(){
 				]
 			},
 			"blue": {
-				layers: 22,
+				layers: 11,
 				index: 0,
-				rbe: 27,
-				health: 20,
+				rbe: 15,
+				health: 8,
 				density: 1,
 				speed: 3.3,
 				children: [
 					{
 						"class": "splitter",
-						"layer": "orange",
+						"layer": "cyan",
+						"properties": [
+							"tattered"
+						]
+					}
+				]
+			},
+			"green": {
+				layers: 16,
+				index: 0,
+				rbe: 22,
+				health: 12,
+				density: 1,
+				speed: 3.3,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "lime",
 						"properties": [
 							"tattered"
 						]

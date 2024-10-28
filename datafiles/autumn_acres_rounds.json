@@ -1,22 +1,6 @@
 [
 	[
 		{
-			"class": "peek-a-bloon",
-			"layer": "red",
-			"count": 5,
-			"spread": 60,
-			"cooldown": 0
-		},
-		{
-			"class": "peek-a-bloon",
-			"layer": "green",
-			"count": 5,
-			"spread": 60,
-			"cooldown": 400
-		}
-	],
-	[
-		{
 			"class": "normal",
 			"layer": "red",
 			"count": 10,
@@ -26,6 +10,13 @@
 		{
 			"class": "splitter",
 			"layer": "orange",
+			"count": 5,
+			"spread": 60,
+			"cooldown": 300
+		},
+		{
+			"class": "peek-a-bloon",
+			"layer": "red",
 			"count": 5,
 			"spread": 60,
 			"cooldown": 300
@@ -121,7 +112,7 @@
 			"class": "deflation",
 			"layer": "red",
 			"count": 5,
-			"spread": 75,
+			"spread": 120,
 			"cooldown": 0
 		}
 	],
@@ -185,8 +176,8 @@
 		{
 			"class": "deflation",
 			"layer": "red",
-			"count": 10,
-			"spread": 100,
+			"count": 5,
+			"spread": 180,
 			"cooldown": 200
 		}
 	],
@@ -203,10 +194,56 @@
 		},
 		{
 			"class": "deflation",
+			"layer": "red",
+			"count": 10,
+			"spread": 120,
+			"cooldown": 200
+		}
+	],
+	[
+		{
+			"class": "deflation",
+			"layer": "blue",
+			"count": 4,
+			"spread": 140,
+			"cooldown": 0
+		},
+		{
+			"class": "deflation",
+			"layer": "green",
+			"count": 4,
+			"spread": 150,
+			"cooldown": 600
+		}
+	],
+	[
+		{
+			"class": "splitter",
+			"layer": "orange",
+			"count": 33,
+			"spread": 40,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "yellow",
+			"count": 33,
+			"spread": 40,
+			"cooldown": 20
+		},
+		{
+			"class": "peek-a-bloon",
+			"layer": "red",
+			"count": 5,
+			"spread": 60,
+			"cooldown": 300
+		},
+		{
+			"class": "peek-a-bloon",
 			"layer": "blue",
 			"count": 5,
-			"spread": 240,
-			"cooldown": 200
+			"spread": 60,
+			"cooldown": 750
 		}
 	]
 ]
