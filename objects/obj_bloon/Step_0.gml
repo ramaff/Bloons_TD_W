@@ -28,7 +28,7 @@ if variable_struct_exists(bloon_stats, "float to track") {
 	//show_debug_message("vert speed: " + string(bloon_stats.vertical_speed))
 	//show_debug_message("vert speed: " + string(bloon_stats.vertical_speed))
 	
-	if bloon_stats.float_height < 0 {
+	if bloon_stats.float_height < 1 and bloon_stats.vertical_speed <= 0 {
 		//bloon_stats.vertical_speed = bloon_stats.vertical_speed * (-1)
 		variable_struct_remove(bloon_stats, "float to track")
 		
@@ -36,6 +36,7 @@ if variable_struct_exists(bloon_stats, "float to track") {
 		path_position = target.path_position
 		x = path_get_x(bloon_stats.path, path_position);
 		y = path_get_y(bloon_stats.path, path_position);
+		path_speed = bloon_stats.speed
 		
 		if instance_exists(target) {
 			instance_destroy(target)	

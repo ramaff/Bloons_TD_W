@@ -11,6 +11,9 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	
 	target = noone;
 	
+	var _xx = x;
+	var _yy = y;
+	
 	for(var _i = 0; _i < array_length(_properties); _i++) {
 		variable_struct_set(_bloon.bloon_stats, _properties[_i], true)
 	}
@@ -64,8 +67,8 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		var _target = instance_create_depth(_bloon.x, _bloon.y, depth, obj_bloon_target);
 		with(_target) {
 			path_start(_path, 0, path_action_stop, true);
-			path_position = _bloon.path_position
-			speed = _bloon.speed / 5;
+			path_position = _bloon.path_position - 0.075
+			//speed = _bloon.speed / 5;
 			path_speed = _bloon.path_speed / 5;
 			x = path_get_x(_path, 0)
 			y = path_get_y(_path, 0)
@@ -75,9 +78,11 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 			speed = 0;
 			bloon_stats.float_height = 5;
 			bloon_stats.vertical_speed = (1 + random(1));
-			bloon_stats.float_gravity = 0.05;
+			bloon_stats.float_gravity = 0.1;
 			bloon_stats.vertical_direction = 45 + random(90);
 			path_end()
+			x = _xx;
+			y = _yy;
 		}
 	}
 

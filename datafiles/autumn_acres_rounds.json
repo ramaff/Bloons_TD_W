@@ -1,15 +1,6 @@
 [
 	[
 		{
-			"class": "deflation",
-			"layer": "red",
-			"count": 5,
-			"spread": 120,
-			"cooldown": 0
-		}
-	],
-	[
-		{
 			"class": "normal",
 			"layer": "red",
 			"count": 10,
@@ -113,8 +104,8 @@
 		{
 			"class": "deflation",
 			"layer": "red",
-			"count": 5,
-			"spread": 120,
+			"count": 10,
+			"spread": 75,
 			"cooldown": 0
 		}
 	],
@@ -206,16 +197,16 @@
 		{
 			"class": "deflation",
 			"layer": "blue",
-			"count": 4,
+			"count": 5,
 			"spread": 140,
 			"cooldown": 0
 		},
 		{
 			"class": "deflation",
 			"layer": "green",
-			"count": 4,
+			"count": 5,
 			"spread": 150,
-			"cooldown": 600
+			"cooldown": 660
 		}
 	],
 	[
@@ -447,8 +438,8 @@
 		},
 		{
 			"class": "peek-a-bloon",
-			"layer": "rainbow",
-			"count": 5,
+			"layer": "pink",
+			"count": 10,
 			"spread": 30,
 			"cooldown": 180
 		}

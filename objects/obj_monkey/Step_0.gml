@@ -46,7 +46,6 @@ if tower_stats.attack_cooldown <= 0 {
 	
 	var _angle_offset = 0;
 	if variable_struct_exists(tower_stats, "attack_angle_offset") {
-		show_debug_message(tower_stats.attack_angle_offset)
 		_angle_offset += tower_stats.attack_angle_offset
 	}
 	

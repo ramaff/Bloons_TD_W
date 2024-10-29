@@ -318,7 +318,7 @@ function scr_setup_bloon_stats(){
 						"class": "splitter",
 						"layer": "cyan",
 						"properties": [
-							"tattered"
+							"tattered", "float to track"
 						]
 					}
 				]
@@ -335,7 +335,7 @@ function scr_setup_bloon_stats(){
 						"class": "splitter",
 						"layer": "lime",
 						"properties": [
-							"tattered"
+							"tattered", "float to track"
 						]
 					}
 				]
@@ -346,13 +346,13 @@ function scr_setup_bloon_stats(){
 				rbe: 25,
 				health: 12,
 				density: 1,
-				speed: 9.9,
+				speed: 6.6,
 				children: [
 					{
 						"class": "splitter",
 						"layer": "amber",
 						"properties": [
-							"tattered"
+							"tattered", "float to track"
 						]
 					}
 				]
@@ -363,13 +363,13 @@ function scr_setup_bloon_stats(){
 				rbe: 31,
 				health: 15,
 				density: 1,
-				speed: 11,
+				speed: 7.7,
 				children: [
 					{
 						"class": "splitter",
-						"layer": "pink",
+						"layer": "purple",
 						"properties": [
-							"tattered"
+							"tattered", "float to track"
 						]
 					}
 				]
