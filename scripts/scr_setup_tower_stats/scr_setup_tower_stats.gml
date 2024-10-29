@@ -236,20 +236,38 @@ function scr_setup_tower_stats(){
 		},
 		"marbles_monkey": {
 			tower_sprite: "spr_marbles_monkey",
-			total_cost: 300,
+			total_cost: 450,
 			upgrade_cost: 0,
 			range: 95,
-			delay: 40,
+			delay: 60,
 			attack_cooldown: 0,
 	
 			projectile_stats: [
 				{
 					sprite: "spr_marble",
-					pierce: 3,
+					pierce: 2,
 					damage: 1,
 					speed: 8,
-					lifespan: 120,
+					lifespan: 90,
+					friction: 0.2
+				},
+				{
+					sprite: "spr_marble",
+					pierce: 2,
+					damage: 1,
+					speed: 6,
+					direction: -30,
+					lifespan: 90,
 					friction: 0.25
+				},
+				{
+					sprite: "spr_marble",
+					pierce: 2,
+					damage: 1,
+					speed: 6,
+					direction: 30,
+					lifespan: 90,
+					friction: 0.2
 				}
 			],
 			upgrades: [
@@ -261,7 +279,7 @@ function scr_setup_tower_stats(){
 				],
 				[
 					{
-						keyword: "marble bag",
+						keyword: "bigger bag",
 						upgrade_cost: 450
 					}
 				]

@@ -288,6 +288,7 @@ function scr_setup_bloon_stats(){
 		"deflation": {
 			"object": "obj_deflation_bloon",
 			"sprite": "spr_big_deflation_bloon",
+			"height": 5,
 			"red": {
 				layers: 5,
 				index: 0,
@@ -472,6 +473,7 @@ function scr_setup_bloon_stats(){
 		"peek-a-bloon": {
 			"sprite": "spr_peek_a_bloon",
 			"object": "obj_peek_a_bloon",
+			"height": 5,
 			"red": {
 				layers: 2,
 				index: 0,

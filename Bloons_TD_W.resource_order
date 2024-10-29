@@ -91,6 +91,7 @@
     {"name":"spr_world_map_button_locked","order":5,"path":"sprites/spr_world_map_button_locked/spr_world_map_button_locked.yy",},
     {"name":"spr_drill_splash","order":11,"path":"sprites/spr_drill_splash/spr_drill_splash.yy",},
     {"name":"spr_tower_butt","order":3,"path":"sprites/spr_tower_butt/spr_tower_butt.yy",},
+    {"name":"spr_training_tent_track_old","order":7,"path":"sprites/spr_training_tent_track_old/spr_training_tent_track_old.yy",},
     {"name":"obj_mini_moab","order":7,"path":"objects/obj_mini_moab/obj_mini_moab.yy",},
     {"name":"spr_explosion_damage","order":8,"path":"sprites/spr_explosion_damage/spr_explosion_damage.yy",},
     {"name":"obj_bounty","order":3,"path":"objects/obj_bounty/obj_bounty.yy",},

@@ -26,6 +26,10 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _bloon = noone) {
 			_child_stats.class = _child_class
 			_child_stats.properties = variable_struct_get(_children[_i], "properties")
 			
+			if variable_struct_exists(_bloon_stats, "float to track") {
+				_child_stats.properties[array_length(_child_stats.properties)] = "float to track"
+			}
+			
 			_resulting_bloons = array_concat(_resulting_bloons, scr_apply_damage_to_bloon(_child_stats, _remaining_damage))
 		}
 		if instance_exists(_bloon) {
@@ -96,10 +100,16 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 			scr_bloon_stat_setup(id, _child_class, _layer, _bloon.bloon_stats.path, _child_properties, _bloon.bloon_stats.round)
 				
 			path_position = _pos
-			x = path_get_x(path_index, path_position);
-			y = path_get_y(path_index, path_position);
+			x = path_get_x(_bloon.bloon_stats.path, path_position);
+			y = path_get_y(_bloon.bloon_stats.path, path_position);
 			parent_id = _parent_id
 			_pos -= 0.01
+			
+			if instance_exists(target) {
+				target.path_position = _pos	
+				target.x = path_get_x(_bloon.bloon_stats.path, path_position);
+				target.y = path_get_y(_bloon.bloon_stats.path, path_position);
+			}
 			
 			image_index = bloon_stats.index
 		}

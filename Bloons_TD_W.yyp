@@ -121,6 +121,7 @@
     {"id":{"name":"spr_world_map_button_locked","path":"sprites/spr_world_map_button_locked/spr_world_map_button_locked.yy",},},
     {"id":{"name":"spr_drill_splash","path":"sprites/spr_drill_splash/spr_drill_splash.yy",},},
     {"id":{"name":"spr_tower_butt","path":"sprites/spr_tower_butt/spr_tower_butt.yy",},},
+    {"id":{"name":"spr_training_tent_track_old","path":"sprites/spr_training_tent_track_old/spr_training_tent_track_old.yy",},},
     {"id":{"name":"obj_mini_moab","path":"objects/obj_mini_moab/obj_mini_moab.yy",},},
     {"id":{"name":"spr_explosion_damage","path":"sprites/spr_explosion_damage/spr_explosion_damage.yy",},},
     {"id":{"name":"obj_bounty","path":"objects/obj_bounty/obj_bounty.yy",},},

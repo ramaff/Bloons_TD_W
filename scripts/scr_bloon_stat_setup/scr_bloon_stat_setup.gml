@@ -9,6 +9,8 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	
 	_bloon.bloon_stats = scr_merge_struct(_bloon.bloon_stats, _class_stats)
 	
+	target = noone;
+	
 	for(var _i = 0; _i < array_length(_properties); _i++) {
 		variable_struct_set(_bloon.bloon_stats, _properties[_i], true)
 	}
@@ -59,17 +61,24 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	_bloon.bloon_stats.max_health = _bloon.bloon_stats.health;
 	
 	if variable_struct_exists(_bloon.bloon_stats, "float to track") {
-		var _target = instance_create_depth(x, y, depth, obj_bloon_target);
+		var _target = instance_create_depth(_bloon.x, _bloon.y, depth, obj_bloon_target);
 		with(_target) {
-			path_position = 0;
 			path_start(_path, 0, path_action_stop, true);
+			path_position = _bloon.path_position
+			speed = _bloon.speed / 5;
+			path_speed = _bloon.path_speed / 5;
 			x = path_get_x(_path, 0)
 			y = path_get_y(_path, 0)
 		}
-		_bloon.bloon_stats.height = 0;
-		_bloon.bloon_stats.vertical_speed = (1.5 + random(1.5));
-		_bloon.bloon_stats.gravity = 0.1;
-		_bloon.bloon_stats.vertical_direction = 45 + random(90);
+		with(_bloon) {
+			target = _target
+			speed = 0;
+			bloon_stats.float_height = 5;
+			bloon_stats.vertical_speed = (1 + random(1));
+			bloon_stats.float_gravity = 0.05;
+			bloon_stats.vertical_direction = 45 + random(90);
+			path_end()
+		}
 	}
 
 }
