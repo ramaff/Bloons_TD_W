@@ -24,6 +24,7 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _bloon = noone) {
 			
 			_child_stats.layer = _layer
 			_child_stats.class = _child_class
+			_child_stats.properties = variable_struct_get(_children[_i], "properties")
 			
 			_resulting_bloons = array_concat(_resulting_bloons, scr_apply_damage_to_bloon(_child_stats, _remaining_damage))
 		}
@@ -87,9 +88,12 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 	for(var _i = 0; _i < array_length(_resulting_bloons); _i++) {
 		var _layer = variable_struct_get(_resulting_bloons[_i], "layer")
 		var _child_class = variable_struct_get(_resulting_bloons[_i], "class")
+		var _child_properties = variable_struct_get(_resulting_bloons[_i], "properties")
+		
+		show_debug_message(_resulting_bloons[_i])
 
 		with instance_create_depth(_xx, _yy, depth, obj_bloon) {
-			scr_bloon_stat_setup(id, _child_class, _layer, _bloon.bloon_stats.path, [], _bloon.bloon_stats.round)
+			scr_bloon_stat_setup(id, _child_class, _layer, _bloon.bloon_stats.path, _child_properties, _bloon.bloon_stats.round)
 				
 			path_position = _pos
 			x = path_get_x(path_index, path_position);

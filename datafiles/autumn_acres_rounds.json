@@ -1,6 +1,15 @@
 [
 	[
 		{
+			"class": "deflation",
+			"layer": "red",
+			"count": 5,
+			"spread": 120,
+			"cooldown": 0
+		}
+	],
+	[
+		{
 			"class": "normal",
 			"layer": "red",
 			"count": 10,

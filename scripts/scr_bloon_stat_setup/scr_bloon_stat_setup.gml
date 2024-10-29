@@ -31,13 +31,14 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	_bloon.bloon_stats.path = _path
 	if _class = "deflation" {
 		//_bloon.sprite_index = spr_big_deflation_bloon;
-		target = instance_create_depth(x, y, depth, obj_bloon_target);
-		with(target) {
+		var _target = instance_create_depth(x, y, depth, obj_bloon_target);
+		with(_target) {
 			path_position = 0;
 			path_start(_path, _bloon.bloon_stats.speed, path_action_stop, true);
 			x = path_get_x(_path, 0)
 			y = path_get_y(_path, 0)
 		}
+		_bloon.target = _target
 	} else {
 		path_start(_path, bloon_stats.speed, path_action_stop, true);
 	}
@@ -56,5 +57,19 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	_bloon.path_speed = _bloon.speed
 	_bloon.depth = -_bloon.bloon_stats.layers
 	_bloon.bloon_stats.max_health = _bloon.bloon_stats.health;
+	
+	if variable_struct_exists(_bloon.bloon_stats, "float to track") {
+		var _target = instance_create_depth(x, y, depth, obj_bloon_target);
+		with(_target) {
+			path_position = 0;
+			path_start(_path, 0, path_action_stop, true);
+			x = path_get_x(_path, 0)
+			y = path_get_y(_path, 0)
+		}
+		_bloon.bloon_stats.height = 0;
+		_bloon.bloon_stats.vertical_speed = (1.5 + random(1.5));
+		_bloon.bloon_stats.gravity = 0.1;
+		_bloon.bloon_stats.vertical_direction = 45 + random(90);
+	}
 
 }

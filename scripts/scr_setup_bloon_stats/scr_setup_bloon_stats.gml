@@ -300,7 +300,7 @@ function scr_setup_bloon_stats(){
 						"class": "splitter",
 						"layer": "orange",
 						"properties": [
-							"tattered"
+							"tattered", "float to track"
 						]
 					}
 				]
