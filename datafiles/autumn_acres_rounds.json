@@ -198,7 +198,7 @@
 			"class": "deflation",
 			"layer": "blue",
 			"count": 5,
-			"spread": 140,
+			"spread": 100,
 			"cooldown": 0
 		},
 		{
@@ -206,7 +206,7 @@
 			"layer": "green",
 			"count": 5,
 			"spread": 150,
-			"cooldown": 660
+			"cooldown": 630
 		}
 	],
 	[

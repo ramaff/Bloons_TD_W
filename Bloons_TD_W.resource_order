@@ -140,6 +140,7 @@
     {"name":"obj_win_butt","order":2,"path":"objects/obj_win_butt/obj_win_butt.yy",},
     {"name":"spr_peek_a_bloon","order":19,"path":"sprites/spr_peek_a_bloon/spr_peek_a_bloon.yy",},
     {"name":"spr_pogo_hole","order":4,"path":"sprites/spr_pogo_hole/spr_pogo_hole.yy",},
+    {"name":"spr_needle","order":16,"path":"sprites/spr_needle/spr_needle.yy",},
     {"name":"spr_range_donut","order":10,"path":"sprites/spr_range_donut/spr_range_donut.yy",},
     {"name":"spr_pause_butt","order":14,"path":"sprites/spr_pause_butt/spr_pause_butt.yy",},
     {"name":"pth_bloon_academia","order":2,"path":"paths/pth_bloon_academia/pth_bloon_academia.yy",},

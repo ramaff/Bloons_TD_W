@@ -207,15 +207,19 @@ function scr_setup_tower_stats(){
 	
 			projectile_stats: [
 				{
-					sprite: "spr_stone",
-					pierce: 2,
+					sprite: "spr_needle",
+					projectile_count: 4,
+					projectile_spread: 90,
+					no_target: true,
+					direction: 0,
+					pierce: 1,
 					damage: 1,
-					speed: 8,
-					lifespan: 32,
-					height: 21,
+					speed: 6,
+					lifespan: 17,
+					height: 9,
 					lobbing: {
 						gravity: 1,
-						speed: 5
+						speed: 8
 					}
 				}
 			],

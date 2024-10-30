@@ -173,6 +173,7 @@
     {"id":{"name":"spr_peek_a_bloon","path":"sprites/spr_peek_a_bloon/spr_peek_a_bloon.yy",},},
     {"id":{"name":"obj_map_button","path":"objects/obj_map_button/obj_map_button.yy",},},
     {"id":{"name":"spr_pogo_hole","path":"sprites/spr_pogo_hole/spr_pogo_hole.yy",},},
+    {"id":{"name":"spr_needle","path":"sprites/spr_needle/spr_needle.yy",},},
     {"id":{"name":"obj_explosion_projectile","path":"objects/obj_explosion_projectile/obj_explosion_projectile.yy",},},
     {"id":{"name":"spr_range_donut","path":"sprites/spr_range_donut/spr_range_donut.yy",},},
     {"id":{"name":"spr_pause_butt","path":"sprites/spr_pause_butt/spr_pause_butt.yy",},},
