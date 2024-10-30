@@ -4,6 +4,10 @@
 // Inherit the parent event
 event_inherited();
 
+if image_alpha <= 0 {
+	exit;	
+}
+
 var _xx_offset = 40 + (84 * (bloon_stats.health / bloon_stats.max_health))
 
 var _yy = sprite_get_height(sprite_index) / 2

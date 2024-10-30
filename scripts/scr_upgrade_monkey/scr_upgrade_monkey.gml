@@ -5,7 +5,7 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 	var _original_value = _monkey.tower_stats.total_cost
 	var _tower_stats = _monkey.tower_stats;
 	
-	_tower_stats = scr_merge_struct(_tower_stats, _upgrade_stats, false)
+	//_tower_stats = scr_merge_struct(_tower_stats, _upgrade_stats, false)
 	
 	if variable_struct_exists(_upgrade_stats, "upgrade_script") {
 		with(_monkey) {
@@ -30,10 +30,7 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 	if variable_struct_exists(_upgrade_stats, "max_health") {
 		_tower_stats.max_health += _upgrade_stats.max_health;
 	}
-	
-	if variable_struct_exists(_upgrade_stats, "range") {
-		_tower_stats.range += _upgrade_stats.range;
-	}
+
 	
 	var _projectile_count = array_length(_tower_stats.projectile_stats)
 	

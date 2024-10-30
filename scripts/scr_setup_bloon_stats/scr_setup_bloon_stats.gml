@@ -4,6 +4,7 @@ function scr_setup_bloon_stats(){
 	return {
 		"normal": {
 			"sprite": "spr_bloon",
+			"object": "obj_normal_bloon",
 			"shielded_sprite": "spr_bloon_shielded",
 			"tattered_sprite": "spr_bloon_tattered",
 			"red": {
@@ -145,6 +146,7 @@ function scr_setup_bloon_stats(){
 		},
 		"splitter": {
 			"sprite": "spr_splitter_bloon",
+			"object": "obj_splitter_bloon",
 			"shielded_sprite": "spr_splitter_shielded",
 			"tattered_sprite": "spr_splitter_tattered",
 			"orange": {
@@ -619,11 +621,11 @@ function scr_setup_bloon_stats(){
 			"object": "obj_tack_the_ripper",
 			"red": {
 				sprite: "spr_tack_the_ripper",
-				layers: 500,
-				damage: 30,
-				health: 500,
+				layers: 1500,
+				damage: 40,
+				health: 1500,
 				density: 1,
-				speed: 1,
+				speed: 1.7,
 			},
 			"blue": {
 				sprite: "spr_blue_bully",

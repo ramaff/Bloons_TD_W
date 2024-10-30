@@ -1,17 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_explosion_projectile",
+  "name": "obj_normal_bloon",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Projectiles",
-    "path": "folders/Objects/Projectiles.yy",
+    "name": "Bloons",
+    "path": "folders/Objects/Bloons.yy",
   },
   "parentObjectId": {
-    "name": "obj_damage_dealer",
-    "path": "objects/obj_damage_dealer/obj_damage_dealer.yy",
+    "name": "obj_bloon",
+    "path": "objects/obj_bloon/obj_bloon.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -29,9 +29,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_explosion_damage",
-    "path": "sprites/spr_explosion_damage/spr_explosion_damage.yy",
+    "name": "spr_bloon",
+    "path": "sprites/spr_bloon/spr_bloon.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

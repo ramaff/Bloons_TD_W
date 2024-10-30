@@ -512,7 +512,7 @@
 	],
 	[
 		{
-			"class": "tack the ripper",
+			"class": "tack_the_ripper",
 			"layer": "red",
 			"count": 1,
 			"spread": 0,
