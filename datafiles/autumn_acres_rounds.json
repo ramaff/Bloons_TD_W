@@ -443,5 +443,146 @@
 			"spread": 30,
 			"cooldown": 180
 		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "zebra",
+			"count": 30,
+			"spread": 45,
+			"cooldown": 0
+		},
+		{
+			"class": "deflation",
+			"layer": "yellow",
+			"count": 10,
+			"spread": 60,
+			"cooldown": 400
+		}
+	],
+	[
+		{
+			"class": "splitter",
+			"layer": "amber",
+			"count": 40,
+			"spread": 30,
+			"cooldown": 0,
+			"properties": [
+				"tattered"
+			]
+		},
+		{
+			"class": "lead",
+			"layer": "lead",
+			"count": 10,
+			"spread": 30,
+			"cooldown": 500
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 10,
+			"spread": 60,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 3,
+			"spread": 30,
+			"cooldown": 780,
+			"properties": [
+				"tattered"
+			]
+		}
+	],
+	[
+		{
+			"class": "splitter",
+			"layer": "purple",
+			"count": 40,
+			"spread": 20,
+			"cooldown": 0,
+			"properties": [
+				"tattered"
+			]
+		}
+	],
+	[
+		{
+			"class": "tack the ripper",
+			"layer": "red",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "zebra",
+			"count": 45,
+			"spread": 30,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "zebra",
+			"count": 45,
+			"spread": 30,
+			"cooldown": 0
+		},
+		{
+			"class": "peek-a-bloon",
+			"layer": "yellow",
+			"count": 20,
+			"spread": 30,
+			"cooldown": 315
+		}
+	],
+	[
+		{
+			"class": "splitter",
+			"layer": "amber",
+			"count": 80,
+			"spread": 15,
+			"cooldown": 0
+		},
+		{
+			"class": "deflation",
+			"layer": "red",
+			"count": 30,
+			"spread": 30,
+			"cooldown": 300
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 25,
+			"spread": 45,
+			"cooldown": 0
+		},
+		{
+			"class": "deflation",
+			"layer": "yellow",
+			"count": 15,
+			"spread": 60,
+			"cooldown": 300
+		}
+	],
+	[
+		{
+			"class": "ceramic",
+			"layer": "ceramic",
+			"count": 15,
+			"spread": 90,
+			"cooldown": 0
+		}
 	]
 ]

@@ -3,7 +3,7 @@
 
 if path_position >= 1 {
 	
-	global.lives -= 2
+	global.lives -= bloon_stats.damage
 	
 	bloon_stats.speed += 0.5;
 	

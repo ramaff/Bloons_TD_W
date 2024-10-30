@@ -431,6 +431,7 @@ function scr_setup_bloon_stats(){
 			"object": "obj_bully",
 			"bully": {
 				layers: 1,
+				damage: 5,
 				health: 500,
 				density: 1,
 				speed: 1,
@@ -438,6 +439,7 @@ function scr_setup_bloon_stats(){
 			"red bully": {
 				sprite: "spr_red_bully",
 				layers: 500,
+				damage: 2,
 				health: 500,
 				density: 1,
 				speed: 1,
@@ -446,6 +448,7 @@ function scr_setup_bloon_stats(){
 				sprite: "spr_blue_bully",
 				layers: 1000,
 				health: 1000,
+				damage: 4,
 				density: 1,
 				speed: 1.2,
 			},
@@ -453,6 +456,7 @@ function scr_setup_bloon_stats(){
 				sprite: "spr_green_bully",
 				layers: 1500,
 				health: 1500,
+				damage: 6,
 				density: 1,
 				speed: 1.4,
 			},
@@ -460,12 +464,14 @@ function scr_setup_bloon_stats(){
 				sprite: "spr_yellow_bully",
 				layers: 2000,
 				health: 2000,
+				damage: 8,
 				density: 1,
 				speed: 1.8,
 			},
 			"big bully": {
 				layers: 5000,
 				health: 5000,
+				damage: 10,
 				density: 1,
 				speed: 2,
 			}
@@ -607,6 +613,48 @@ function scr_setup_bloon_stats(){
 						]
 					}
 				]
+			}
+		},
+		"tack_the_ripper": {
+			"object": "obj_tack_the_ripper",
+			"red": {
+				sprite: "spr_tack_the_ripper",
+				layers: 500,
+				damage: 30,
+				health: 500,
+				density: 1,
+				speed: 1,
+			},
+			"blue": {
+				sprite: "spr_blue_bully",
+				layers: 1000,
+				health: 1000,
+				damage: 4,
+				density: 1,
+				speed: 1.2,
+			},
+			"green": {
+				sprite: "spr_green_bully",
+				layers: 1500,
+				health: 1500,
+				damage: 6,
+				density: 1,
+				speed: 1.4,
+			},
+			"yellow": {
+				sprite: "spr_yellow_bully",
+				layers: 2000,
+				health: 2000,
+				damage: 8,
+				density: 1,
+				speed: 1.8,
+			},
+			"pink": {
+				layers: 5000,
+				health: 5000,
+				damage: 10,
+				density: 1,
+				speed: 2,
 			}
 		},
 	}

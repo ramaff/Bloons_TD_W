@@ -87,6 +87,8 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 	var _xx = _bloon.x
 	var _yy = _bloon.y
 	
+	instance_create_depth(_xx, _yy, depth, obj_pop)
+	
 	var _resulting_bloons = scr_apply_damage_to_bloon(_bloon.bloon_stats, _damage, _bloon)
 
 	for(var _i = 0; _i < array_length(_resulting_bloons); _i++) {
