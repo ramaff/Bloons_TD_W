@@ -89,6 +89,37 @@ function scr_setup_upgrade_stats(){
 				}
 			}
 		},
+		"cactus_monkey": {
+			"pointy-er needles": {
+				pierce: 1,
+				upgrade_string: "Needles pop an additional bloon"
+			},
+			"faster unload": {
+				fire_rate_multiplier: 1.666,
+				upgrade_string: "Throws out 5 marbles at once, less often."
+			},
+			"bandito": {
+				fire_rate_multiplier: 1.166,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_needle",
+						projectile_count: 6,
+						projectile_spread: 30,
+						pierce: 2,
+						damage: 1,
+						speed: 8,
+						lifespan: 15,
+						height: 4,
+						lobbing: {
+							gravity: 0.5,
+							speed: 3.5
+						}
+					}
+				],
+				upgrade_string: "Shoots from a gun"
+			}
+		},
 		"marbles_monkey": {
 			"bigger marbles": {
 				pierce: 3,

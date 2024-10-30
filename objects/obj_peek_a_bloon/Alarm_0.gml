@@ -14,9 +14,9 @@ with(obj_bloon) {
 }
 
 if _visible = false {
-	image_alpha = lerp(image_alpha, 0, 0.1);
+	image_alpha = lerp(image_alpha, 0, 0.05);
 } else {
-	image_alpha = lerp(image_alpha, 1, 0.1);
+	image_alpha = lerp(image_alpha, 1, 0.8);
 }
 
 if image_alpha = 0 {

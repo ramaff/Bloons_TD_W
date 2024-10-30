@@ -202,7 +202,7 @@ function scr_setup_tower_stats(){
 			total_cost: 350,
 			upgrade_cost: 0,
 			range: 105,
-			delay: 60,
+			delay: 40,
 			attack_cooldown: 0,
 	
 			projectile_stats: [
@@ -214,28 +214,39 @@ function scr_setup_tower_stats(){
 					direction: 0,
 					pierce: 1,
 					damage: 1,
-					speed: 6,
-					lifespan: 17,
-					height: 9,
+					speed: 8,
+					lifespan: 15,
+					height: 4,
 					lobbing: {
-						gravity: 1,
-						speed: 8
+						gravity: 0.5,
+						speed: 3.5
 					}
 				}
 			],
 			upgrades: [
+				[],
 				[
 					{
-						keyword: "stone skipping",
-						upgrade_cost: 100
+						keyword: "pointy-er needles",
+						upgrade_cost: 200
+					},
+					{
+						keyword: "faster unload",
+						upgrade_cost: 300
+					},
+				]
+			],
+			split_upgrades: [
+				[
+					{
+						keyword: "bandito",
+						upgrade_cost: 1200
+					},
+					{
+						keyword: "needle storm",
+						upgrade_cost: 3300
 					}
 				],
-				[
-					{
-						keyword: "sharp sight",
-						upgrade_cost: 150
-					}
-				]
 			]
 		},
 		"marbles_monkey": {

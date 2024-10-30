@@ -3,7 +3,7 @@
 
 alarm[1] = 60 + (300 / bloon_stats.speed);
 
-if instance_number(obj_bloon) > instance_number(obj_tack_the_ripper) {
+if instance_number(obj_bloon) <= instance_number(obj_tack_the_ripper) {
 	exit;	
 }
 
