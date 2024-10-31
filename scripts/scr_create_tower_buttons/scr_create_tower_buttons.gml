@@ -18,16 +18,22 @@ function scr_create_tower_buttons(){
 				hero_placed = true;
 				hero_id = _hero_id;
 			}
+			if variable_struct_exists(tower_stats, "butt_sprite") {
+				sprite_index = asset_get_index(tower_stats.butt_sprite)
+			}
 		}
 	}
 	
-	var _towers = ["sling_monkey", "cactus_monkey", "marbles_monkey", "assassin_monkey", "pineapple_monkey", "pogo_stick_monkey"]
+	var _towers = ["sling_monkey", "cactus_monkey", "pineapple_monkey", "pogo_stick_monkey", "marbles_monkey", "assassin_monkey"]
 	
-	for(var _j = 0; _j < 3; _j++) {
+	for(var _j = 0; _j < 2; _j++) {
 		for(var _k = 0; _k < 2; _k++) {
 			with instance_create_depth(812 + (72 * _k), 256 + (64 * _j), depth, obj_tower_butt) {
 				base_tower_id = _towers[(_j * 2) + _k]
 				tower_stats = scr_get_tower_stats(base_tower_id)
+				if variable_struct_exists(tower_stats, "butt_sprite") {
+					sprite_index = asset_get_index(tower_stats.butt_sprite)
+				}
 			}
 		}
 	}

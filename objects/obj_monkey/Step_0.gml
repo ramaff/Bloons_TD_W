@@ -27,8 +27,8 @@ if tower_stats.attack_cooldown > 0 {
 
 if tower_stats.attack_cooldown <= 0 {
 	
-	if variable_struct_exists(tower_stats, "upgrade_attack_script") {
-		script_execute(tower_stats.upgrade_attack_script)
+	if variable_struct_exists(tower_stats, "tower_attack_script") {
+		script_execute(tower_stats.tower_attack_script)
 	}
 	
 	var _target = scr_get_bloon_target(tower_stats, x, y)

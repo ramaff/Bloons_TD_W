@@ -96,19 +96,73 @@ function scr_setup_upgrade_stats(){
 			},
 			"faster unload": {
 				fire_rate_multiplier: 1.666,
-				upgrade_string: "Throws out 5 marbles at once, less often."
+				upgrade_string: "Shoots out needles a lot faster."
 			},
 			"bandito": {
+				upgrade_script: scr_bandito,
 				fire_rate_multiplier: 1.166,
 				projectile_replacement: true,
+				range: 50,
 				projectile_stats: [
 					{
 						sprite: "spr_needle",
-						projectile_count: 6,
+						projectile_count: 4,
 						projectile_spread: 30,
 						pierce: 2,
 						damage: 1,
-						speed: 8,
+						speed: 12,
+						lifespan: 15,
+						height: 4,
+						lobbing: {
+							gravity: 0.5,
+							speed: 3.5
+						}
+					},
+					{
+						sprite: "spr_needle",
+						projectile_count: 4,
+						projectile_spread: 30,
+						pierce: 2,
+						damage: 1,
+						direction: 180,
+						speed: 12,
+						lifespan: 15,
+						height: 4,
+						lobbing: {
+							gravity: 0.5,
+							speed: 3.5
+						}
+					}
+				],
+				upgrade_string: "Shoots from a gun"
+			},
+			"needle storm": {
+				fire_rate_multiplier: 4,
+				projectile_replacement: true,
+				tower_attack_script: scr_needle_storm,
+				projectile_stats: [
+					{
+						sprite: "spr_needle",
+						projectile_count: 2,
+						projectile_spread: 30,
+						pierce: 2,
+						damage: 1,
+						speed: 12,
+						lifespan: 15,
+						height: 4,
+						lobbing: {
+							gravity: 0.5,
+							speed: 3.5
+						}
+					},
+					{
+						sprite: "spr_needle",
+						projectile_count: 2,
+						projectile_spread: 30,
+						pierce: 2,
+						damage: 1,
+						direction: 180,
+						speed: 12,
 						lifespan: 15,
 						height: 4,
 						lobbing: {
@@ -155,160 +209,6 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Pogo stick hops further into the air, and comes back down with more force.",
 				projectile_sprite: "spr_big_pogo_hop_splash",
 				pierce_multiplier: 2
-			},
-			"Pineapple Planter": {
-				upgrade_string: "Plant pineapples with each hop that explode after 3 seconds",
-				projectile_stats: [
-					{
-						object: "obj_no_hit",
-						sprite: "spr_pineapple",
-						pierce: 40,
-						damage: 1,
-						speed: 0,
-						lifespan: 90,
-						image_angle: 0,
-						expire_burst_activation: true,
-						projectile_burst: [
-							{
-								object: "obj_explosion_projectile",
-								sprite: "spr_explosion_damage",
-								lifespan: 20,
-								speed: 0,
-								direction: 0,
-								damage: 1,
-								pierce: 40,
-								size: 1.5,
-								particles: 3
-							}
-						]
-					}
-				],
-			},
-			"Pineapple Pogo": {
-				upgrade_string: "Plant jumbo pineapples that explode into more pineapples",
-				projectile_replacement: true,
-				projectile_stats: [
-					{
-						sprite: "spr_pogo_hop_splash",
-						pierce: 15,
-						damage: 1,
-						speed: 0,
-						lifespan: 20
-					},
-					{
-						object: "obj_no_hit",
-						sprite: "spr_large_pineapple",
-						pierce: 80,
-						damage: 1,
-						speed: 0,
-						lifespan: 90,
-						image_angle: 0,
-						expire_burst_activation: true,
-						projectile_burst: [
-							{
-								object: "obj_explosion_projectile",
-								sprite: "spr_explosion_damage",
-								lifespan: 20,
-								speed: 0,
-								direction: 0,
-								damage: 1,
-								pierce: 80,
-								size: 2,
-								particles: 6
-							},
-							{
-								object: "obj_no_hit",
-								sprite: "spr_pineapple",
-								pierce: 40,
-								damage: 1,
-								speed: 2,
-								direction: 0,
-								lifespan: 60,
-								image_angle: 0,
-								height: 0,
-								lobbing: {
-									gravity: 0.25,
-									speed: 7.5
-								},
-								expire_burst_activation: true,
-								projectile_burst: [
-									{
-										object: "obj_explosion_projectile",
-										sprite: "spr_explosion_damage",
-										lifespan: 20,
-										speed: 0,
-										direction: 0,
-										damage: 1,
-										pierce: 40,
-										size: 1.5,
-										particles: 3
-									}
-								]
-							},
-							{
-								object: "obj_no_hit",
-								sprite: "spr_pineapple",
-								pierce: 40,
-								damage: 1,
-								speed: 2,
-								direction: 120,
-								lifespan: 60,
-								image_angle: 0,
-								height: 0,
-								lobbing: {
-									gravity: 0.25,
-									speed: 7.5
-								},
-								expire_burst_activation: true,
-								projectile_burst: [
-									{
-										object: "obj_explosion_projectile",
-										sprite: "spr_explosion_damage",
-										lifespan: 20,
-										speed: 0,
-										direction: 0,
-										damage: 1,
-										pierce: 40,
-										size: 1.5,
-										particles: 3
-									}
-								]
-							},
-							{
-								object: "obj_no_hit",
-								sprite: "spr_pineapple",
-								pierce: 40,
-								damage: 1,
-								speed: 2,
-								direction: 240,
-								lifespan: 60,
-								image_angle: 0,
-								height: 0,
-								lobbing: {
-									gravity: 0.25,
-									speed: 7.5
-								},
-								expire_burst_activation: true,
-								projectile_burst: [
-									{
-										object: "obj_explosion_projectile",
-										sprite: "spr_explosion_damage",
-										lifespan: 20,
-										speed: 0,
-										direction: 0,
-										damage: 1,
-										pierce: 40,
-										size: 1.5,
-										particles: 3
-									}
-								]
-							}
-						]
-					}
-				]
-			},
-			"Pineapple Express": {
-				upgrade_string: "Hops faster all along the track to deliver pineapples"
 			},
 			"Quick Hops": {
 				upgrade_script: scr_quick_hops,
@@ -381,8 +281,9 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Tosses a bunch of pineapples without aiming.",
 				attack_angle_offset: 0,
 				fire_rate_multiplier: 1.33,
-				upgrade_attack_script: scr_pineapple_juggling,
+				tower_attack_script: scr_pineapple_juggling,
 				projectile_replacement: true,
+				no_target: true,
 				projectile_stats: [
 					{
 						projectile_count: 3,
@@ -393,7 +294,6 @@ function scr_setup_upgrade_stats(){
 						pierce: 60,
 						damage: 1,
 						speed: 5,
-						no_target: true,
 						direction: 0,
 						lifespan: 30,
 						image_angle: 0,
@@ -434,7 +334,6 @@ function scr_setup_upgrade_stats(){
 						pierce: 80,
 						damage: 1,
 						speed: 5,
-						no_target: true,
 						direction: 0,
 						lifespan: 30,
 						image_angle: 0,

@@ -30,6 +30,10 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 	if variable_struct_exists(_upgrade_stats, "max_health") {
 		_tower_stats.max_health += _upgrade_stats.max_health;
 	}
+	
+	if variable_struct_exists(_upgrade_stats, "tower_attack_script") {
+		_tower_stats.tower_attack_script = _upgrade_stats.tower_attack_script
+	}
 
 	
 	var _projectile_count = array_length(_tower_stats.projectile_stats)

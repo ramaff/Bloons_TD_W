@@ -6,6 +6,7 @@ function scr_setup_tower_stats(){
 		"jim": {
 			tower_object: "obj_hero",
 			tower_sprite: "spr_monkey",
+			butt_sprite: "spr_jim_hero_butt",
 			total_cost: 300,
 			upgrade_cost: 0,
 			range: 110,
@@ -92,6 +93,7 @@ function scr_setup_tower_stats(){
 		"angry squirrel": {
 			tower_object: "obj_hero",
 			tower_sprite: "spr_angry_squirrel",
+			butt_sprite: "spr_angry_squirrel_hero_butt",
 			total_cost: 300,
 			upgrade_cost: 0,
 			range: 115,
@@ -162,6 +164,7 @@ function scr_setup_tower_stats(){
 		},
 		"sling_monkey": {
 			tower_sprite: "spr_pebble_monkey",
+			butt_sprite: "spr_sling_shot_tower_butt",
 			total_cost: 175,
 			upgrade_cost: 0,
 			range: 105,
@@ -199,18 +202,21 @@ function scr_setup_tower_stats(){
 		},
 		"cactus_monkey": {
 			tower_sprite: "spr_cactus_monkey",
+			butt_sprite: "spr_cactus_monkey_tower_butt",
 			total_cost: 350,
 			upgrade_cost: 0,
 			range: 105,
-			delay: 40,
+			delay: 34,
 			attack_cooldown: 0,
+			attack_angle_offset: 0,
+			tower_attack_script: scr_cactus_base_alternate,
+			no_target: true,
 	
 			projectile_stats: [
 				{
 					sprite: "spr_needle",
 					projectile_count: 4,
 					projectile_spread: 90,
-					no_target: true,
 					direction: 0,
 					pierce: 1,
 					damage: 1,
@@ -340,6 +346,7 @@ function scr_setup_tower_stats(){
 		"pogo_stick_monkey": {
 			tower_sprite: "spr_pogo_stick_monkey",
 			tower_object: "obj_pogo_stick_monkey",
+			butt_sprite: "spr_pogo_stick_monkey_tower_butt",
 			tower_base: true,
 			tower_base_sprite: "spr_pogo_pad",
 			total_cost: 475,
@@ -359,27 +366,33 @@ function scr_setup_tower_stats(){
 			],
 			upgrades: [
 				[
+				],
+				[
 					{
 						keyword: "Heavy Hops",
 						upgrade_cost: 350
 					},
 					{
-						keyword: "Pineapple Planter",
-						upgrade_cost: 900
+						keyword: "Quick Hops",
+						upgrade_cost: 250
+					}
+				]
+			],
+			split_upgrades: [
+				[
+					{
+						keyword: "Jumbo Jump",
+						upgrade_cost: 1800
 					},
 					{
-						keyword: "Pineapple Pogo",
-						upgrade_cost: 3000
+						keyword: "Jet Jumbo",
+						upgrade_cost: 3900
 					}
 				],
 				[
 					{
-						keyword: "Quick Hops",
-						upgrade_cost: 250
-					},
-					{
 						keyword: "Jackhammer",
-						upgrade_cost: 1800
+						upgrade_cost: 1600
 					},
 					{
 						keyword: "Drill",
@@ -390,6 +403,7 @@ function scr_setup_tower_stats(){
 		},
 		"pineapple_monkey": {
 			tower_sprite: "spr_pineapple_monkey",
+			butt_sprite: "spr_pineapple_monkey_tower_butt",
 			total_cost: 475,
 			upgrade_cost: 0,
 			range: 200,
