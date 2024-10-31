@@ -1,15 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bloon_target",
-  "eventList": [],
+  "name": "obj_zombie_bloon",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Bloons",
     "path": "folders/Objects/Bloons.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_bloon",
+    "path": "objects/obj_bloon/obj_bloon.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -26,9 +31,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bloon_target",
-    "path": "sprites/spr_bloon_target/spr_bloon_target.yy",
+    "name": "spr_bloon",
+    "path": "sprites/spr_bloon/spr_bloon.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

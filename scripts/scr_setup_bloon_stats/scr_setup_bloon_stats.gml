@@ -659,5 +659,147 @@ function scr_setup_bloon_stats(){
 				speed: 2,
 			}
 		},
+		"zombie": {
+			"sprite": "spr_zombie_bloon",
+			"object": "obj_zombie_bloon",
+			"shielded_sprite": "spr_bloon_shielded",
+			"tattered_sprite": "spr_bloon_tattered",
+			"red": {
+				layers: 1,
+				index: 0,
+				rbe: 1,
+				health: 1,
+				density: 1,
+				speed: 1.5
+			},
+			"blue": {
+				layers: 2,
+				index: 1,
+				rbe: 2,
+				health: 1,
+				density: 1,
+				speed: 2,
+				children: [
+					{
+						"class": "zombie",
+						"layer": "red"
+					}
+				]
+			},
+			"green": {
+				layers: 3,
+				index: 2,
+				rbe: 3,
+				health: 1,
+				density: 1,
+				speed: 2.5,
+				children: [
+					{
+						"class": "zombie",
+						"layer": "blue"
+					}
+				]
+			},
+			"yellow": {
+				layers: 4,
+				index: 3,
+				rbe: 4,
+				health: 1,
+				density: 1,
+				speed: 4.5,
+				children: [
+					{
+						"class": "zombie",
+						"layer": "green"
+					}
+				]
+			},
+			"pink": {
+				layers: 5,
+				index: 4,
+				rbe: 5,
+				health: 1,
+				density: 1,
+				speed: 5,
+				children: [
+					{
+						"class": "zombie",
+						"layer": "yellow"
+					}
+				]
+			},
+			"black": {
+				layers: 6,
+				index: 5,
+				rbe: 11,
+				health: 1,
+				density: 1,
+				speed: 2,
+				children: [
+					{
+						"class": "zombie",
+						"layer": "pink"
+					},
+					{
+						"class": "zombie",
+						"layer": "pink"
+					}
+				]
+			},
+			"white": {
+				layers: 6,
+				index: 6,
+				rbe: 11,
+				health: 1,
+				density: 1,
+				speed: 2.25,
+				children: [
+					{
+						"class": "zombie",
+						"layer": "pink"
+					},
+					{
+						"class": "zombie",
+						"layer": "pink"
+					}
+				]
+			},
+			"zebra": {
+				layers: 7,
+				index: 7,
+				rbe: 23,
+				health: 1,
+				density: 1,
+				speed: 2.5,
+				children: [
+					{
+						"class": "zombie",
+						"layer": "black"
+					},
+					{
+						"class": "zombie",
+						"layer": "white"
+					}
+				]
+			},
+			"rainbow": {
+				layers: 8,
+				index: 8,
+				rbe: 47,
+				health: 1,
+				density: 1,
+				speed: 4.25,
+				children: [
+					{
+						"class": "zombie",
+						"layer": "zebra"
+					},
+					{
+						"class": "zombie",
+						"layer": "zebra"
+					}
+				]
+			}
+		}
 	}
 }

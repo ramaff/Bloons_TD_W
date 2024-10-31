@@ -30,8 +30,6 @@ for(var _i = 0; _i < array_length(_round); _i++) {
 		var _path = global.paths[0];
 		with instance_create_depth(path_get_x(_path, 0), path_get_y(_path, 0), depth, _bloon_object) {
 			scr_bloon_stat_setup(id, _round[_i].class, struct_get(_round[_i], "layer"), _path, _properties, _round_number);
-			//x = path_get_x(path, 0)
-			//y = path_get_y(other.path, 0)
 		}
 		_round[_i].cooldown += _round[_i].spread;
 		_round[_i].count--;

@@ -1,8 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bloon_target",
-  "eventList": [],
+  "name": "obj_bloon_tombstone",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -26,9 +30,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bloon_target",
-    "path": "sprites/spr_bloon_target/spr_bloon_target.yy",
+    "name": "spr_bloon_tomb_stone",
+    "path": "sprites/spr_bloon_tomb_stone/spr_bloon_tomb_stone.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

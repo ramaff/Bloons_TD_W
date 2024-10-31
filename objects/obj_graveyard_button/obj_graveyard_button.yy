@@ -1,15 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bloon_target",
-  "eventList": [],
+  "name": "obj_graveyard_button",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Bloons",
-    "path": "folders/Objects/Bloons.yy",
+    "name": "World Map",
+    "path": "folders/Objects/World Map.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_map_button",
+    "path": "objects/obj_map_button/obj_map_button.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -26,9 +31,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bloon_target",
-    "path": "sprites/spr_bloon_target/spr_bloon_target.yy",
+    "name": "spr_world_map_button",
+    "path": "sprites/spr_world_map_button/spr_world_map_button.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

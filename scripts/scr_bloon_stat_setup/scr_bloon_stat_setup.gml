@@ -9,6 +9,9 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	
 	_bloon.bloon_stats = scr_merge_struct(_bloon.bloon_stats, _class_stats)
 	
+	_bloon.bloon_stats.class = _class
+	_bloon.bloon_stats.layer = _layer
+	
 	target = noone;
 	
 	var _xx = x;

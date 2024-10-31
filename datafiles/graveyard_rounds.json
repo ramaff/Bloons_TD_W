@@ -1,0 +1,61 @@
+[
+	[
+		{
+			"class": "normal",
+			"layer": "blue",
+			"count": 10,
+			"spread": 60,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 40,
+			"spread": 15,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "blue",
+			"count": 20,
+			"spread": 40,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"class": "normal",
+			"layer": "blue",
+			"count": 16,
+			"spread": 40,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "blue",
+			"count": 12,
+			"spread": 10,
+			"cooldown": 760
+		}
+	],
+	[
+		{
+			"class": "zombie",
+			"layer": "blue",
+			"count": 20,
+			"spread": 40,
+			"cooldown": 0
+		},
+		{
+			"class": "zombie",
+			"layer": "green",
+			"count": 10,
+			"spread": 60,
+			"cooldown": 860
+		}
+	]
+]

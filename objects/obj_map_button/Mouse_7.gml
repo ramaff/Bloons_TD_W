@@ -15,6 +15,10 @@ var _tracks_info = {
 	"rm_autumn_acres": {
 		"paths": [pth_autumn_acres],
 		"round_data": "autumn_acres_rounds.json"
+	},
+	"rm_graveyard": {
+		"paths": [pth_graveyard_1, pth_graveyard_2, pth_graveyard_3, pth_graveyard_4, pth_graveyard_5, pth_graveyard_6],
+		"round_data": "graveyard_rounds.json"
 	}
 }
 
