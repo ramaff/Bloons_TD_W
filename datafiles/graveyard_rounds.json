@@ -46,16 +46,16 @@
 		{
 			"class": "zombie",
 			"layer": "blue",
-			"count": 20,
-			"spread": 40,
+			"count": 10,
+			"spread": 30,
 			"cooldown": 0
 		},
 		{
 			"class": "zombie",
 			"layer": "green",
-			"count": 10,
-			"spread": 60,
-			"cooldown": 860
+			"count": 5,
+			"spread": 30,
+			"cooldown": 480
 		}
 	]
 ]

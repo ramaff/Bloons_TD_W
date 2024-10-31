@@ -9,6 +9,7 @@ global.lives = 200
 global.round = 0;
 global.bloon_sends = scr_import_json(global.round_data, json_parse);
 
+bloon_send_number = 0;
 
 instance_create_depth(x, y, depth, obj_tower_control)
 

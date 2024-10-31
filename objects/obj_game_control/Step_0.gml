@@ -27,12 +27,13 @@ for(var _i = 0; _i < array_length(_round); _i++) {
 		if variable_struct_exists(_round[_i], "round") {
 			_round_number = struct_get(_round[_i], "round")
 		}
-		var _path = global.paths[0];
+		var _path = global.paths[bloon_send_number mod array_length(global.paths)];
 		with instance_create_depth(path_get_x(_path, 0), path_get_y(_path, 0), depth, _bloon_object) {
 			scr_bloon_stat_setup(id, _round[_i].class, struct_get(_round[_i], "layer"), _path, _properties, _round_number);
 		}
 		_round[_i].cooldown += _round[_i].spread;
 		_round[_i].count--;
+		bloon_send_number++;
 	}
 	_round[_i].cooldown--;
 }

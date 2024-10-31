@@ -90,6 +90,15 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 	instance_create_depth(_xx, _yy, depth, obj_pop)
 	
 	var _resulting_bloons = scr_apply_damage_to_bloon(_bloon.bloon_stats, _damage, _bloon)
+	
+	if array_length(_resulting_bloons) == 0 {
+		if variable_struct_exists(_bloon.bloon_stats, "zombie_stats") {
+			with instance_create_depth(_xx, _yy, depth, obj_bloon_tombstone) {
+				bloon_stats = _bloon.bloon_stats.zombie_stats
+				path_position = _pos
+			}
+		}	
+	}
 
 	for(var _i = 0; _i < array_length(_resulting_bloons); _i++) {
 		var _layer = variable_struct_get(_resulting_bloons[_i], "layer")
@@ -106,6 +115,18 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 			y = path_get_y(_bloon.bloon_stats.path, path_position);
 			parent_id = _parent_id
 			_pos -= 0.01
+			
+			if _child_class = "zombie" {
+				//show_debug_message("zombie stats: ")
+				//show_debug_message(bloon_stats.zombie_stats)
+				//show_debug_message(_bloon.bloon_stats.zombie_stats)
+				if _i = 0 {
+					bloon_stats.zombie_stats = _bloon.bloon_stats.zombie_stats
+					//show_debug_message(bloon_stats.zombie_stats)
+				} else {
+					variable_struct_remove(bloon_stats, "zombie_stats")	
+				}
+			}
 			
 			if instance_exists(target) {
 				target.path_position = _pos	

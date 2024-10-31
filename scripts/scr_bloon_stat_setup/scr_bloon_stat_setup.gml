@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", _path = pth_bloon_academia, _properties = [], _round = 0){
+function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", _path = pth_bloon_academia, _properties = [], _round = 0) {
 
 	var _class_stats = struct_get(global.bloon_stats, _class)
 	
@@ -87,6 +87,13 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 			x = _xx;
 			y = _yy;
 		}
+	}
+	
+	if _class == "zombie" {
+		
+		if !variable_struct_exists(_bloon.bloon_stats, "zombie_stats") {
+			_bloon.bloon_stats.zombie_stats = variable_clone(_bloon.bloon_stats)	
+		} 
 	}
 
 }
