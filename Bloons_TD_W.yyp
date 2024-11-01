@@ -208,6 +208,7 @@
     {"id":{"name":"obj_round_check","path":"objects/obj_round_check/obj_round_check.yy",},},
     {"id":{"name":"spr_pineapple","path":"sprites/spr_pineapple/spr_pineapple.yy",},},
     {"id":{"name":"spr_pineapple_monkey","path":"sprites/spr_pineapple_monkey/spr_pineapple_monkey.yy",},},
+    {"id":{"name":"spr_nurse_bloon","path":"sprites/spr_nurse_bloon/spr_nurse_bloon.yy",},},
     {"id":{"name":"spr_training_tent_track","path":"sprites/spr_training_tent_track/spr_training_tent_track.yy",},},
     {"id":{"name":"spr_big_pogo_hop_splash","path":"sprites/spr_big_pogo_hop_splash/spr_big_pogo_hop_splash.yy",},},
     {"id":{"name":"spr_cancel_tower","path":"sprites/spr_cancel_tower/spr_cancel_tower.yy",},},
@@ -242,6 +243,7 @@
     {"id":{"name":"spr_sling_shot_tower_butt","path":"sprites/spr_sling_shot_tower_butt/spr_sling_shot_tower_butt.yy",},},
     {"id":{"name":"spr_green_bully","path":"sprites/spr_green_bully/spr_green_bully.yy",},},
     {"id":{"name":"scr_wave","path":"scripts/scr_wave/scr_wave.yy",},},
+    {"id":{"name":"spr_regrow_bloon","path":"sprites/spr_regrow_bloon/spr_regrow_bloon.yy",},},
     {"id":{"name":"original_cba_room","path":"rooms/original_cba_room/original_cba_room.yy",},},
   ],
   "RoomOrderNodes": [
