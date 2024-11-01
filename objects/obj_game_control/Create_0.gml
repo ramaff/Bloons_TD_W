@@ -31,6 +31,7 @@ for(var _i = 0; _i < array_length(global.bloon_sends); _i++) {
 	
 	var _group = global.bloon_sends[_i];
 	var _bloon_sends_end_time = 30;
+	//show_debug_message(_group)
 	for(var _j = 0; _j < array_length(_group); _j++) {
 		_group[_j].round = _i + 1;
 		_bloon_sends_end_time = max(_group[_j].cooldown + (_group[_j].count * _group[_j].spread), _bloon_sends_end_time);

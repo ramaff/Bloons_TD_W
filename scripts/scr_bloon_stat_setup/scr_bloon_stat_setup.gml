@@ -17,17 +17,29 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	var _xx = x;
 	var _yy = y;
 	
-	for(var _i = 0; _i < array_length(_properties); _i++) {
-		variable_struct_set(_bloon.bloon_stats, _properties[_i], true)
-	}
 	if variable_struct_exists(_class_stats, "properties") {
+		_bloon.bloon_stats.properties = array_concat(_properties, _class_stats.properties)
+	} else {
+		_bloon.bloon_stats.properties = _properties
+	}
+	
+	for(var _i = 0; _i < array_length(_bloon.bloon_stats.properties); _i++) {
+		variable_struct_set(_bloon.bloon_stats, _bloon.bloon_stats.properties[_i], true)
+	}
+	/*if variable_struct_exists(_class_stats, "properties") {
 		for(var _i = 0; _i < array_length(_class_stats.properties); _i++) {
 			variable_struct_set(_bloon.bloon_stats, _class_stats.properties[_i], true)
 		}
-	}
+	}*/
 
 	if variable_struct_exists(_class_stats, "sprite") {
 		_bloon.sprite_index = asset_get_index(_class_stats.sprite);
+	}
+	if variable_struct_exists(_bloon.bloon_stats, "regrow")  {
+		_bloon.bloon_stats.sprite = "spr_regrow_bloon"
+		if _class = "splitter" {
+			_bloon.bloon_stats.sprite = "spr_regrow_splitter_bloon"
+		}
 	}
 	if variable_struct_exists(_bloon.bloon_stats, "sprite") {
 		_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.sprite);

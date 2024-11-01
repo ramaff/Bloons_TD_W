@@ -19,7 +19,7 @@ for(var _i = 0; _i < array_length(_round); _i++) {
 }
 
 global.round++;
-global.round_gap = 360;
+global.round_gap = 480;
 with instance_create_depth(x, y, depth, obj_round_check) {
 	round_number = global.round;
 	alarm[0] = other.round_properties[global.round - 1].sends_end_time;

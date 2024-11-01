@@ -198,6 +198,20 @@ function scr_setup_tower_stats(){
 						upgrade_cost: 150
 					}
 				]
+			],
+			split_upgrades: [
+				[
+					{
+						keyword: "long shot",
+						upgrade_cost: 600
+					}
+				],
+				[
+					{
+						keyword: "Goliath Shot",
+						upgrade_cost: 2000
+					}
+				]
 			]
 		},
 		"cactus_monkey": {

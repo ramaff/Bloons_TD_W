@@ -11,7 +11,7 @@ draw_text(32, 4, "Round")
 draw_text(32, 32, string(global.round) + "/" + string(array_length(global.bloon_sends)))
 
 var _panels = min(4, array_length(global.bloon_sends) - global.round);
-var _gap = global.round_gap / 4.5;
+var _gap = global.round_gap / 6;
 
 for(var _i = 0; _i < _panels; _i++) {
 	if global.round < 1 {

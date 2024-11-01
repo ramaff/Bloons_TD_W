@@ -377,6 +377,112 @@ function scr_setup_bloon_stats(){
 				]
 			}
 		},
+		"nurse": {
+			"object": "obj_nurse_bloon",
+			"sprite": "spr_nurse_bloon",
+			"red": {
+				layers: 8,
+				index: 0,
+				rbe: 10,
+				health: 6,
+				density: 1,
+				speed: 0.9,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "orange",
+						"properties": [
+							"regrow"
+						]
+					}
+				]
+			},
+			"blue": {
+				layers: 15,
+				index: 1,
+				rbe: 19,
+				health: 12,
+				density: 1,
+				speed: 1.2,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "cyan",
+						"properties": [
+							"regrow"
+						]
+					}
+				]
+			},
+			"green": {
+				layers: 22,
+				index: 2,
+				rbe: 28,
+				health: 18,
+				density: 1,
+				speed: 1.5,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "lime",
+						"properties": [
+							"regrow"
+						]
+					}
+				]
+			},
+			"yellow": {
+				layers: 29,
+				index: 3,
+				rbe: 37,
+				health: 24,
+				density: 1,
+				speed: 2.7,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "amber",
+						"properties": [
+							"regrow"
+						]
+					}
+				]
+			},
+			"pink": {
+				layers: 36,
+				index: 4,
+				rbe: 46,
+				health: 30,
+				density: 1,
+				speed: 3,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "purple",
+						"properties": [
+							"regrow"
+						]
+					}
+				]
+			},
+			"rainbow": {
+				layers: 99,
+				index: 4,
+				rbe: 232,
+				health: 90,
+				density: 1,
+				speed: 2.4,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "prismatic",
+						"properties": [
+							"regrow"
+						]
+					}
+				]
+			}
+		},
 		"ceramic": {
 			"object": "obj_ceramic_class",
 			"ceramic": {
@@ -626,37 +732,17 @@ function scr_setup_bloon_stats(){
 				health: 1500,
 				density: 1,
 				speed: 1.7,
-			},
-			"blue": {
-				sprite: "spr_blue_bully",
-				layers: 1000,
-				health: 1000,
-				damage: 4,
-				density: 1,
-				speed: 1.2,
-			},
+			}
+		},
+		"frankensteins_bloon": {
+			"object": "obj_frankensteins_bloon",
 			"green": {
-				sprite: "spr_green_bully",
-				layers: 1500,
-				health: 1500,
-				damage: 6,
+				sprite: "spr_frankensteins_bloon",
+				layers: 3000,
+				damage: 60,
+				health: 3000,
 				density: 1,
-				speed: 1.4,
-			},
-			"yellow": {
-				sprite: "spr_yellow_bully",
-				layers: 2000,
-				health: 2000,
-				damage: 8,
-				density: 1,
-				speed: 1.8,
-			},
-			"pink": {
-				layers: 5000,
-				health: 5000,
-				damage: 10,
-				density: 1,
-				speed: 2,
+				speed: 1,
 			}
 		},
 		"zombie": {

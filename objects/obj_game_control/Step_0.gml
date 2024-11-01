@@ -42,7 +42,7 @@ if !_bloons_remaining {
 	global.round_gap--;
 	if global.round_gap < 0 {
 		global.round++;
-		global.round_gap = 360;
+		global.round_gap = 480;
 		if global.round < array_length(global.bloon_sends) {
 			with instance_create_depth(x, y, depth, obj_round_check) {
 				round_number = global.round;

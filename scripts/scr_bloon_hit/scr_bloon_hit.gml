@@ -5,6 +5,8 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _bloon = noone) {
 	var _resulting_bloons = []
 	_bloon_stats.health -= _damage
 	
+	//show_debug_message("bloon stats:" + string(_bloon_stats))
+	
 	if _bloon_stats.health <= 0 {
 		global.money += 1;
 		
@@ -26,8 +28,28 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _bloon = noone) {
 			_child_stats.class = _child_class
 			_child_stats.properties = variable_struct_get(_children[_i], "properties")
 			
+			if !variable_struct_exists(_bloon_stats, "parents") {
+				_child_stats.parents = [
+					{
+						"class": _bloon_stats.class,
+						"layer": _bloon_stats.layer,
+					}
+				]
+			} else {
+				_bloon_stats.parents[array_length(_bloon_stats.parents)] = {
+					"class": _bloon_stats.class,
+					"layer": _bloon_stats.layer
+				}
+				_child_stats.parents = variable_clone(_bloon_stats.parents)
+			}
+			
+			//show_debug_message("child stats:" + string(_child_stats))
+			
 			if variable_struct_exists(_bloon_stats, "float to track") {
 				_child_stats.properties[array_length(_child_stats.properties)] = "float to track"
+			}
+			if variable_struct_exists(_bloon_stats, "regrow") {
+				_child_stats.properties[array_length(_child_stats.properties)] = "regrow"
 			}
 			
 			_resulting_bloons = array_concat(_resulting_bloons, scr_apply_damage_to_bloon(_child_stats, _remaining_damage))
@@ -87,7 +109,7 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 	var _xx = _bloon.x
 	var _yy = _bloon.y
 	
-	instance_create_depth(_xx, _yy, depth, obj_pop)
+	instance_create_depth(_xx, _yy, depth - 10, obj_pop)
 	
 	var _resulting_bloons = scr_apply_damage_to_bloon(_bloon.bloon_stats, _damage, _bloon)
 	
@@ -115,6 +137,12 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 			y = path_get_y(_bloon.bloon_stats.path, path_position);
 			parent_id = _parent_id
 			_pos -= 0.01
+			
+			//show_debug_message("resulting bloon stats:" + string(_resulting_bloons[_i]))
+			
+			if variable_struct_exists(_resulting_bloons[_i], "parents") {
+				bloon_stats.parents = _resulting_bloons[_i].parents	
+			}
 			
 			if _child_class = "zombie" {
 				//show_debug_message("zombie stats: ")

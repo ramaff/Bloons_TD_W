@@ -8,9 +8,17 @@ bloon_stats = {
 	health: 1,
 	density: 1,
 	speed: 1.5,
+	parents: [
+		{
+			"class": "normal",
+			"layer": "blue"
+		}
+	]
 }
 
 image_index = bloon_stats.layers - 1;
 
 path = pth_training_tent
 path_start(path, bloon_stats.speed, path_action_stop, true);
+
+alarm[0] = 90;
