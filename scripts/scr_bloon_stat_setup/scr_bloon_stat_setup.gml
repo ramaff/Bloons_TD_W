@@ -12,6 +12,8 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	_bloon.bloon_stats.class = _class
 	_bloon.bloon_stats.layer = _layer
 	
+	_bloon.bloon_stats.projectile_hits = {}
+	
 	target = noone;
 	
 	var _xx = x;

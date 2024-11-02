@@ -54,9 +54,9 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _bloon = noone) {
 			
 			_resulting_bloons = array_concat(_resulting_bloons, scr_apply_damage_to_bloon(_child_stats, _remaining_damage))
 		}
-		if instance_exists(_bloon) {
+		/*if instance_exists(_bloon) {
 			instance_destroy(_bloon)	
-		}
+		} */
 	} else if _bloon = noone {
 		return [_bloon_stats]	
 	}
@@ -64,11 +64,11 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _bloon = noone) {
 	return _resulting_bloons
 }
 
-function scr_bloon_hit(_bloon = other, _class = "normal"){
+function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = projectile_stats) {
 	
 	if variable_struct_exists(_bloon.bloon_stats, "shielded") {
 		if _bloon.bloon_stats.shielded {
-			_bloon.bloon_stats.shield_health -= projectile_stats.damage
+			_bloon.bloon_stats.shield_health -= _projectile_stats.damage
 			if _bloon.bloon_stats.shield_health < 1 {
 				_bloon.bloon_stats.shielded = false
 				_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.sprite);
@@ -82,8 +82,8 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 	if variable_struct_exists(_bloon.bloon_stats, "metallic") {
 		if _bloon.bloon_stats.metallic {
 			_stopped_by_lead = true;
-			if variable_struct_exists(projectile_stats, "lead_hit") {
-				if projectile_stats.lead_hit {
+			if variable_struct_exists(_projectile_stats, "lead_hit") {
+				if _projectile_stats.lead_hit {
 					_stopped_by_lead = false;
 				}
 			}
@@ -94,10 +94,10 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 		exit;
 	}
 
-	//_bloon.bloon_stats.health -= projectile_stats.damage;
-	projectile_stats.pierce -= _bloon.bloon_stats.density;
+	//_bloon.bloon_stats.health -= _projectile_stats.damage;
+	_projectile_stats.pierce -= _bloon.bloon_stats.density;
 	
-	var _damage = projectile_stats.damage;
+	var _damage = _projectile_stats.damage;
 	
 	//var _og_rbe = _bloon.bloon_stats.rbe;
 	//var _pops = 0
@@ -112,6 +112,8 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 	instance_create_depth(_xx, _yy, depth - 10, obj_pop)
 	
 	var _resulting_bloons = scr_apply_damage_to_bloon(_bloon.bloon_stats, _damage, _bloon)
+	
+	//show_debug_message(array_length(_resulting_bloons))
 	
 	if array_length(_resulting_bloons) == 0 {
 		if variable_struct_exists(_bloon.bloon_stats, "zombie_stats") {
@@ -155,6 +157,8 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 					variable_struct_remove(bloon_stats, "zombie_stats")	
 				}
 			}
+			
+			bloon_stats.projectile_hits = variable_clone(_bloon.bloon_stats.projectile_hits)
 			
 			if instance_exists(target) {
 				target.path_position = _pos	
@@ -203,6 +207,10 @@ function scr_bloon_hit(_bloon = other, _class = "normal"){
 		if _bloon.bloon_stats.health < 1000 {
 			_bloon.image_index = 4;	
 		}
+	}
+	
+	if _bloon.bloon_stats.health <= 0 {
+		instance_destroy(_bloon)	
 	}
 
 

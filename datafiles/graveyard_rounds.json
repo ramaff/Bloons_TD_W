@@ -1,6 +1,43 @@
 [
 	[
 		{
+			"class": "frankensteins_bloon",
+			"layer": "green",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 7500
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 1000,
+			"spread": 2,
+			"cooldown": 0
+		},
+		{
+			"class": "splitter",
+			"layer": "orange",
+			"count": 600,
+			"spread": 6,
+			"cooldown": 2000
+		},
+		{
+			"class": "splitter",
+			"layer": "cyan",
+			"count": 600,
+			"spread": 6,
+			"cooldown": 5600
+		},
+		{
+			"class": "splitter",
+			"layer": "lime",
+			"count": 600,
+			"spread": 6,
+			"cooldown": 9200
+		}
+	],
+	[
+		{
 			"class": "normal",
 			"layer": "blue",
 			"count": 10,

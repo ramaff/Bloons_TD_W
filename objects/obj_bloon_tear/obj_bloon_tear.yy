@@ -1,12 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_frankensteins_bloon",
+  "name": "obj_bloon_tear",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":3,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -14,10 +12,7 @@
     "name": "Bloons",
     "path": "folders/Objects/Bloons.yy",
   },
-  "parentObjectId": {
-    "name": "obj_bounty",
-    "path": "objects/obj_bounty/obj_bounty.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -34,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_frankensteins_bloon",
-    "path": "sprites/spr_frankensteins_bloon/spr_frankensteins_bloon.yy",
+    "name": "spr_bloon_tear",
+    "path": "sprites/spr_bloon_tear/spr_bloon_tear.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -7,6 +7,7 @@ function scr_setup_bloon_stats(){
 			"object": "obj_normal_bloon",
 			"shielded_sprite": "spr_bloon_shielded",
 			"tattered_sprite": "spr_bloon_tattered",
+			max_health: 1,
 			"red": {
 				layers: 1,
 				index: 0,
@@ -149,6 +150,7 @@ function scr_setup_bloon_stats(){
 			"object": "obj_splitter_bloon",
 			"shielded_sprite": "spr_splitter_shielded",
 			"tattered_sprite": "spr_splitter_tattered",
+			max_health: 1,
 			"orange": {
 				layers: 2,
 				index: 0,
@@ -268,6 +270,7 @@ function scr_setup_bloon_stats(){
 			"properties": [
 				"metallic"
 			],
+			max_health: 1,
 			"lead": {
 				layers: 7,
 				index: 0,
@@ -296,6 +299,7 @@ function scr_setup_bloon_stats(){
 				index: 0,
 				rbe: 7,
 				health: 3,
+				max_health: 3,
 				density: 1,
 				speed: 3.3,
 				children: [
@@ -313,6 +317,7 @@ function scr_setup_bloon_stats(){
 				index: 1,
 				rbe: 13,
 				health: 6,
+				max_health: 6,
 				density: 1,
 				speed: 4.4,
 				children: [
