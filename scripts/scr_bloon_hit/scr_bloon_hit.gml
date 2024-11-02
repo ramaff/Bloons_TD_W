@@ -150,7 +150,7 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 				//show_debug_message("zombie stats: ")
 				//show_debug_message(bloon_stats.zombie_stats)
 				//show_debug_message(_bloon.bloon_stats.zombie_stats)
-				if _i = 0 {
+				if _i = 0 and variable_struct_exists(_bloon.bloon_stats, "zombie_stats") {
 					bloon_stats.zombie_stats = _bloon.bloon_stats.zombie_stats
 					//show_debug_message(bloon_stats.zombie_stats)
 				} else {

@@ -1,43 +1,6 @@
 [
 	[
 		{
-			"class": "frankensteins_bloon",
-			"layer": "green",
-			"count": 1,
-			"spread": 0,
-			"cooldown": 7500
-		},
-		{
-			"class": "normal",
-			"layer": "red",
-			"count": 1000,
-			"spread": 2,
-			"cooldown": 0
-		},
-		{
-			"class": "splitter",
-			"layer": "orange",
-			"count": 600,
-			"spread": 6,
-			"cooldown": 2000
-		},
-		{
-			"class": "splitter",
-			"layer": "cyan",
-			"count": 600,
-			"spread": 6,
-			"cooldown": 5600
-		},
-		{
-			"class": "splitter",
-			"layer": "lime",
-			"count": 600,
-			"spread": 6,
-			"cooldown": 9200
-		}
-	],
-	[
-		{
 			"class": "normal",
 			"layer": "blue",
 			"count": 10,
@@ -515,7 +478,7 @@
 		{
 			"class": "nurse",
 			"layer": "pink",
-			"count": 4,
+			"count": 5,
 			"spread": 90,
 			"cooldown": 300
 		}
@@ -533,16 +496,37 @@
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 80,
-			"spread": 10,
+			"count": 120,
+			"spread": 15,
 			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "pink",
+			"count": 80,
+			"spread": 15,
+			"cooldown": 605
+		},
+		{
+			"class": "normal",
+			"layer": "pink",
+			"count": 40,
+			"spread": 15,
+			"cooldown": 1210
 		},
 		{
 			"class": "splitter",
 			"layer": "purple",
-			"count": 30,
+			"count": 40,
 			"spread": 20,
-			"cooldown": 950
+			"cooldown": 1950
+		},
+		{
+			"class": "nurse",
+			"layer": "green",
+			"count": 22,
+			"spread": 120,
+			"cooldown": 0
 		}
 	],
 	[
@@ -567,7 +551,7 @@
 			]
 		},
 		{
-			"class": "normal",
+			"class": "splitter",
 			"layer": "amber",
 			"count": 40,
 			"spread": 8,

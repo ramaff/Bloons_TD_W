@@ -747,7 +747,7 @@ function scr_setup_bloon_stats(){
 				damage: 60,
 				health: 3000,
 				density: 1,
-				speed: 1,
+				speed: 0.8,
 			}
 		},
 		"zombie": {

@@ -102,7 +102,7 @@ function scr_setup_upgrade_stats(){
 				upgrade_script: scr_bandito,
 				fire_rate_multiplier: 1.166,
 				projectile_replacement: true,
-				range: 50,
+				range: 60,
 				projectile_stats: [
 					{
 						sprite: "spr_needle",
@@ -137,9 +137,10 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Shoots from a gun"
 			},
 			"needle storm": {
-				fire_rate_multiplier: 4,
+				fire_rate_multiplier: 6,
 				projectile_replacement: true,
 				tower_attack_script: scr_needle_storm,
+				range: 60,
 				projectile_stats: [
 					{
 						sprite: "spr_needle",

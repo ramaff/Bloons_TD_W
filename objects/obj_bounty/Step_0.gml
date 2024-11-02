@@ -5,6 +5,6 @@ var _leaked = scr_track_end_bloon_check(bloon_stats)
 
 if _leaked {
 	
-	bloon_stats.speed += 0.5;
+	bloon_stats.speed = bloon_stats.speed * 1.2;
 	
 }

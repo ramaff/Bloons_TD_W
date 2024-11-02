@@ -16,7 +16,7 @@ var _projectile_stats = {
 show_debug_message(bloon_stats.health)
 
 with instance_create_depth(x, y, -100, obj_text) {
-	text = "+" + string(bloon_stats.max_health / 6) + "hp";
+	text = "+" + string(other.bloon_stats.max_health / 6) + "hp";
 }
 
 bloon_stats.health += bloon_stats.max_health / 6;
