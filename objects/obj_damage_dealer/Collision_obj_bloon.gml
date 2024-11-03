@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if variable_struct_exists(projectile_stats, "projectile_burst") {
+	event_perform(ev_alarm, 0)
+	exit;
+}
+
 if variable_struct_exists(projectile_stats, "height") {
 	var _bloon_height = 0;
 	if variable_struct_exists(other.bloon_stats, "height") {

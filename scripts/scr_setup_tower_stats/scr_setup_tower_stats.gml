@@ -84,8 +84,8 @@ function scr_setup_tower_stats(){
 				],
 				[
 					{
-						keyword: "split darts",
-						upgrade_cost: 3000
+						keyword: "split dart monkey",
+						upgrade_cost: 3750
 					}
 				]
 			]

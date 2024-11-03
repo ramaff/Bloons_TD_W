@@ -743,9 +743,9 @@ function scr_setup_bloon_stats(){
 			"object": "obj_frankensteins_bloon",
 			"green": {
 				sprite: "spr_frankensteins_bloon",
-				layers: 3000,
-				damage: 60,
-				health: 3000,
+				layers: 2400,
+				damage: 50,
+				health: 2400,
 				density: 1,
 				speed: 0.8,
 			}

@@ -3,7 +3,7 @@
 
 
 if alarm[2] > 0 {
-	alarm[1] = 5;	
+	alarm[1] = 10;	
 }
 
 image_index = 1;
@@ -13,13 +13,15 @@ var _projectile_stats = {
 	pierce: 999999999
 }
 
-show_debug_message(bloon_stats.health)
+//show_debug_message(bloon_stats.health)
 
 with instance_create_depth(x, y, -100, obj_text) {
-	text = "+" + string(other.bloon_stats.max_health / 6) + "hp";
+	text = "+" + string(other.bloon_stats.max_health / 15) + "hp";
 }
 
-bloon_stats.health += bloon_stats.max_health / 6;
+bloon_stats.health += bloon_stats.max_health / 15;
+
+bloon_stats.health = min(bloon_stats.health, bloon_stats.max_health)
 
 var _frank_id = id;
 

@@ -6,6 +6,6 @@ path_speed = bloon_stats.speed;
 sprite_index = spr_frankensteins_bloon;
 image_index = 0;
 
-alarm[3] = 600;
+alarm[3] = 900;
 
 

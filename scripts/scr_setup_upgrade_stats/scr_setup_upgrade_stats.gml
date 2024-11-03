@@ -14,6 +14,36 @@ function scr_setup_upgrade_stats(){
 			"stronger": {
 				pierce: 1,
 				upgrade_string: "shoots more poppier darts."
+			},
+			"split dart monkey": {
+				range: 15,
+				health: 50,
+				max_health: 50,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_dart",
+						pierce: 4,
+						projectile_count: 4,
+						projectile_spread: 15,
+						damage: 1,
+						speed: 12,
+						lifespan: 30,
+						expire_burst_activation: true,
+						projectile_burst: [
+							{
+								projectile_count: 4,
+								projectile_spread: 90,
+								sprite: "spr_dart",
+								pierce: 4,
+								damage: 1,
+								speed: 12,
+								lifespan: 30,
+							},
+						]
+					}
+				],
+				upgrade_string: "Darts split into 4 more darts. Jim gets more HP and range."
 			}
 		},
 		"sling_monkey": {
@@ -110,7 +140,7 @@ function scr_setup_upgrade_stats(){
 						projectile_spread: 30,
 						pierce: 2,
 						damage: 1,
-						speed: 12,
+						speed: 16,
 						lifespan: 15,
 						height: 4,
 						lobbing: {
@@ -125,7 +155,7 @@ function scr_setup_upgrade_stats(){
 						pierce: 2,
 						damage: 1,
 						direction: 180,
-						speed: 12,
+						speed: 16,
 						lifespan: 15,
 						height: 4,
 						lobbing: {
@@ -140,7 +170,7 @@ function scr_setup_upgrade_stats(){
 				fire_rate_multiplier: 6,
 				projectile_replacement: true,
 				tower_attack_script: scr_needle_storm,
-				range: 60,
+				range: 20,
 				projectile_stats: [
 					{
 						sprite: "spr_needle",
@@ -148,7 +178,7 @@ function scr_setup_upgrade_stats(){
 						projectile_spread: 30,
 						pierce: 2,
 						damage: 1,
-						speed: 12,
+						speed: 18,
 						lifespan: 15,
 						height: 4,
 						lobbing: {
@@ -163,7 +193,7 @@ function scr_setup_upgrade_stats(){
 						pierce: 2,
 						damage: 1,
 						direction: 180,
-						speed: 12,
+						speed: 18,
 						lifespan: 15,
 						height: 4,
 						lobbing: {

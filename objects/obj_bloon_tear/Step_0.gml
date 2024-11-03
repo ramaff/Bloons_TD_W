@@ -8,6 +8,7 @@ if instance_exists(target) {
 	
 	if _dist < 30 {
 		target.bloon_stats.health += 2;
+		target.bloon_stats.health = min(target.bloon_stats.health, target.bloon_stats.max_health)
 		/*with instance_create_depth(target.x, target.y, -100, obj_text) {
 			text = "+" + string(2) + "hp";
 		} */
