@@ -56,6 +56,16 @@ function scr_setup_upgrade_stats(){
 				camo_detection: true,
 				range: 40,
 				upgrade_string: "Allows the sling monkey to pop camo bloons, and target further."
+			},
+			"long shot": {
+				fire_rate_multiplier: 1.333,
+				range: -60,
+				tower_attack_script: scr_long_shot_boost,
+				upgrade_string: "The range and damage of the sling shot increases over time the longer a shot is prepared."
+			},
+			"Goliath Shot": {
+				fire_rate_multiplier: 2,
+				upgrade_string: "Highly charged shot apply a puncture effect to big bloons. Increases the speed and max potency of the prepared shot."
 			}
 		},
 		"angry squirrel": {
@@ -132,6 +142,7 @@ function scr_setup_upgrade_stats(){
 				upgrade_script: scr_bandito,
 				fire_rate_multiplier: 1.166,
 				projectile_replacement: true,
+				tower_sprite: "spr_cactus_bandito",
 				range: 60,
 				projectile_stats: [
 					{

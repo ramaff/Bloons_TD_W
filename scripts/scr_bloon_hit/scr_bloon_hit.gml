@@ -147,12 +147,8 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			}
 			
 			if _child_class = "zombie" {
-				//show_debug_message("zombie stats: ")
-				//show_debug_message(bloon_stats.zombie_stats)
-				//show_debug_message(_bloon.bloon_stats.zombie_stats)
 				if _i = 0 and variable_struct_exists(_bloon.bloon_stats, "zombie_stats") {
 					bloon_stats.zombie_stats = _bloon.bloon_stats.zombie_stats
-					//show_debug_message(bloon_stats.zombie_stats)
 				} else {
 					variable_struct_remove(bloon_stats, "zombie_stats")	
 				}
@@ -173,44 +169,18 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		}
 	}
 	
-	if _class = "moab" {
-		_bloon.path_position -= 0.003;
-		if random(3) > 2 {
-			with instance_create_depth(_bloon.x, _bloon.y, depth, obj_bloon) {
-				scr_bloon_stat_setup(id, "normal", 1 + irandom(4), _bloon.bloon_stats.path)
-				
-				path_position = _bloon.path_position - random(0.1)
-				x = path_get_x(path_index, path_position);
-				y = path_get_y(path_index, path_position);
-			}	
-		}
-		
-		if _bloon.bloon_stats.health < 130 {
-			_bloon.image_index = 1;	
-		}
-		if _bloon.bloon_stats.health < 70 {
-			_bloon.image_index = 2;	
-		}
-	}
-	
-	if _class = "bully" {
-		
-		if _bloon.bloon_stats.health < 4000 {
-			_bloon.image_index = 1;	
-		}
-		if _bloon.bloon_stats.health < 3000 {
-			_bloon.image_index = 2;	
-		}
-		if _bloon.bloon_stats.health < 2000 {
-			_bloon.image_index = 3;	
-		}
-		if _bloon.bloon_stats.health < 1000 {
-			_bloon.image_index = 4;	
-		}
-	}
-	
 	if _bloon.bloon_stats.health <= 0 {
 		instance_destroy(_bloon)	
+	}
+	
+	if variable_struct_exists(_projectile_stats, "puncture") {
+		if _projectile_stats.puncture > 0 {
+			with instance_create_depth(x, y, _bloon.depth - 1, obj_puncture) {
+				target = _bloon.id;
+				potency = _projectile_stats.puncture
+				image_angle = random(360);
+			}
+		}
 	}
 
 

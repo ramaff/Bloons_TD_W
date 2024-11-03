@@ -34,6 +34,11 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 	if variable_struct_exists(_upgrade_stats, "tower_attack_script") {
 		_tower_stats.tower_attack_script = _upgrade_stats.tower_attack_script
 	}
+	
+	if variable_struct_exists(_upgrade_stats, "tower_sprite") {
+		_tower_stats.tower_sprite = _upgrade_stats.tower_sprite
+		_monkey.sprite_index = asset_get_index(_tower_stats.tower_sprites)
+	}
 
 	
 	var _projectile_count = array_length(_tower_stats.projectile_stats)

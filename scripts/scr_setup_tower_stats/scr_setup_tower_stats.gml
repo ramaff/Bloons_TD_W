@@ -186,13 +186,12 @@ function scr_setup_tower_stats(){
 				}
 			],
 			upgrades: [
+				[],
 				[
 					{
 						keyword: "stone skipping",
 						upgrade_cost: 100
-					}
-				],
-				[
+					},
 					{
 						keyword: "sharp sight",
 						upgrade_cost: 150
@@ -204,9 +203,7 @@ function scr_setup_tower_stats(){
 					{
 						keyword: "long shot",
 						upgrade_cost: 600
-					}
-				],
-				[
+					},
 					{
 						keyword: "Goliath Shot",
 						upgrade_cost: 2000
