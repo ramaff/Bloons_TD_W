@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if global.round > array_length(global.bloon_sends) {
+if global.round >= array_length(global.bloon_sends) {
 	exit;	
 }
 

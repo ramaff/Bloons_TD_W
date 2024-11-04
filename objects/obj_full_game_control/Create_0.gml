@@ -9,6 +9,6 @@ global.missions_complete = {
 	"parade": false
 }
 
-
+scr_load_game()
 
 

@@ -7,8 +7,10 @@ function scr_select_monkey(){
 	}
 	
 	instance_destroy(obj_tower_butt)
+	instance_destroy(obj_upgrade_butt)
 	
 	var _all_normal_upgrades = true
+	var _ords = ["Z", "X", "C", "V"]
 	
 	//var _upgrade_stats = 
 	for(var _j = 0; _j < array_length(tower_stats.upgrades); _j++) {
@@ -29,8 +31,14 @@ function scr_select_monkey(){
 		with instance_create_depth(800, 104 + _y_offset, depth, obj_upgrade_butt) {
 		
 			selected_monkey = other.id;
+			
+			ord_key = _ords[_j];
 		
 			upgrade_stats = variable_clone(_upgrade_stats);
+			
+			if other.all_bases {
+				image_index = _j + 1;
+			}
 		
 			upgrade_stats.upgrade_cost = _upgrade_info.upgrade_cost;
 			upgrade_stats.upgrade_cost = round(upgrade_stats.upgrade_cost / 5) * 5
@@ -44,9 +52,14 @@ function scr_select_monkey(){
 		if variable_struct_exists(tower_stats, "split_upgrades") {
 			tower_stats.upgrades = tower_stats.split_upgrades
 			tower_stats.upgrade_count = [0, 0, 0]
+			all_bases = true;
 			
 			scr_select_monkey()
 		}
+	}
+	
+	if instance_number(obj_upgrade_butt) <= 0 {
+		scr_create_tower_buttons()
 	}
 	
 }

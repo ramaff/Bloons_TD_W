@@ -7,5 +7,7 @@ if global.money >= upgrade_stats.upgrade_cost {
 	global.money -= upgrade_stats.upgrade_cost
 }
 
-instance_destroy(obj_upgrade_butt)
-scr_create_tower_buttons()
+with (selected_monkey) {
+	scr_select_monkey()
+}
+//scr_create_tower_buttons()

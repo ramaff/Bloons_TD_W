@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-selected_monkey = noone;
-upgrade_stats = {};
-upgrade_string = "";
+speed = speed * 0.98;
 
-ord_key = "z"
+
+
+

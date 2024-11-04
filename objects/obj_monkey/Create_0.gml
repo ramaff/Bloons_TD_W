@@ -34,4 +34,6 @@ tower_stats = {
 	]
 }
 
+all_bases = false
+
 alarm[0] = 30;

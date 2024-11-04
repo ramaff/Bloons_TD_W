@@ -1,8 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-selected_monkey = noone;
-upgrade_stats = {};
-upgrade_string = "";
+alarm[0] = 180;
 
-ord_key = "z"
+speed = 11;
+direction = 90;
+
+
+
+

@@ -5,8 +5,14 @@
 	
 //}
 
-if global.round < 1 || global.round > array_length(global.bloon_sends) {
+if global.round < 1 {
 	exit;	
+}
+
+global.total_time++;
+
+if global.round > array_length(global.bloon_sends) {
+	exit;
 }
 
 var _round = global.bloon_sends[global.round - 1];
@@ -38,17 +44,42 @@ for(var _i = 0; _i < array_length(_round); _i++) {
 	_round[_i].cooldown--;
 }
 
-if !_bloons_remaining {
+if !_bloons_remaining and global.round < array_length(global.bloon_sends) {
 	global.round_gap--;
 	if global.round_gap < 0 {
 		global.round++;
 		global.round_gap = 480;
+		_bloons_remaining = true;
+		//if global.round >= array_length(global.bloon_sends) {
+		//	global.round_gap = 0;	
+		//}
 		if global.round < array_length(global.bloon_sends) {
 			with instance_create_depth(x, y, depth, obj_round_check) {
 				round_number = global.round;
 				alarm[0] = other.round_properties[global.round - 1].sends_end_time;
 			}
 		}
+	}
+}
+
+if global.round >= array_length(global.bloon_sends) and !_bloons_remaining and instance_number(obj_bloon) <= 0 {
+	show_debug_message(_bloons_remaining)
+	show_debug_message(instance_number(obj_bloon))
+	if !instance_exists(obj_win_indication) {
+		var _best_time = 999999;
+		var _current_stage_prog = variable_struct_get(global.missions_complete, "training_room")
+		show_debug_message("global.missions_complete")
+		show_debug_message(global.missions_complete)
+		show_debug_message("_current_stage_prog")
+		show_debug_message(_current_stage_prog)
+		if variable_struct_exists(_current_stage_prog, "best_time") {
+			_best_time = _current_stage_prog.best_time
+		}
+		_current_stage_prog = {
+			"best_time": min(global.total_time, _best_time)
+		}
+		scr_save_game()
+		instance_create_depth(10, 600, -500, obj_win_indication)
 	}
 }
 
