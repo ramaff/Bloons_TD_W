@@ -1,50 +1,6 @@
 [
 	[
 		{
-			"class": "bully",
-			"layer": "bully",
-			"count": 1,
-			"spread": 30,
-			"cooldown": 6000
-		},
-		{
-			"class": "splitter",
-			"layer": "orange",
-			"count": 360,
-			"spread": 20,
-			"cooldown": 0
-		},
-		{
-			"class": "splitter",
-			"layer": "orange",
-			"count": 300,
-			"spread": 20,
-			"cooldown": 1204
-		},
-		{
-			"class": "splitter",
-			"layer": "orange",
-			"count": 240,
-			"spread": 20,
-			"cooldown": 2408
-		},
-		{
-			"class": "splitter",
-			"layer": "orange",
-			"count": 180,
-			"spread": 20,
-			"cooldown": 3612
-		},
-		{
-			"class": "splitter",
-			"layer": "orange",
-			"count": 120,
-			"spread": 20,
-			"cooldown": 4816
-		}
-	],
-	[
-		{
 			"class": "normal",
 			"layer": "red",
 			"count": 10,

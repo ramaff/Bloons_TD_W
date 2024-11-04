@@ -93,8 +93,8 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		with(_bloon) {
 			target = _target
 			speed = 0;
-			bloon_stats.float_height = 5;
-			bloon_stats.vertical_speed = (1 + random(1));
+			bloon_stats.float_height = 10;
+			bloon_stats.vertical_speed = (1 + random(2));
 			bloon_stats.float_gravity = 0.1;
 			bloon_stats.vertical_direction = 45 + random(90);
 			path_end()

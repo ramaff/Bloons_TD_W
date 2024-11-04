@@ -170,14 +170,15 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 	}
 	
 	if _bloon.bloon_stats.health <= 0 {
-		instance_destroy(_bloon)	
+		instance_destroy(_bloon)
+		exit;
 	}
 	
 	if variable_struct_exists(_projectile_stats, "puncture") {
 		if _projectile_stats.puncture > 0 {
 			with instance_create_depth(x, y, _bloon.depth - 1, obj_puncture) {
 				target = _bloon.id;
-				potency = _projectile_stats.puncture
+				puncture = _projectile_stats.puncture
 				image_angle = random(360);
 			}
 		}

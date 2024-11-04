@@ -15,7 +15,7 @@ function scr_track_end_bloon_check(_bloon_stats = bloon_stats){
 			_damage = _bloon_stats.rbe
 		}
 		if variable_struct_exists(_bloon_stats, "max_health") {
-			_damage = _bloon_stats.health - _bloon_stats.max_health;
+			_damage += _bloon_stats.health - _bloon_stats.max_health;
 		}
 		if variable_struct_exists(_bloon_stats, "damage") {
 			_damage = _bloon_stats.damage	
