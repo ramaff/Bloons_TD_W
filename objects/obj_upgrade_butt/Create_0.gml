@@ -6,3 +6,5 @@ upgrade_stats = {};
 upgrade_string = "";
 
 ord_key = "z"
+
+depth = -999999

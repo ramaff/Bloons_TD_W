@@ -1,6 +1,10 @@
 [
 	[
 		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "normal",
 			"layer": "red",
 			"count": 10,
@@ -10,6 +14,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "normal",
 			"layer": "red",
 			"count": 18,
@@ -18,6 +26,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
 		{
 			"class": "normal",
 			"layer": "blue",
@@ -35,6 +47,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "normal",
 			"layer": "blue",
 			"count": 12,
@@ -51,6 +67,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 8
+		},
+		{
 			"class": "normal",
 			"layer": "rainbow",
 			"count": 1,
@@ -59,6 +79,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 2
+		},
 		{
 			"class": "normal",
 			"layer": "green",
@@ -75,6 +99,11 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0,
+			"round_icon_count": 2
+		},
 		{
 			"class": "normal",
 			"layer": "red",

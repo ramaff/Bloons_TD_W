@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+draw_sprite(spr_tower_tiles, 0, x, y)
 
 var _total_range = tower_stats.range
 if variable_struct_exists(tower_stats, "stat_boosts") {

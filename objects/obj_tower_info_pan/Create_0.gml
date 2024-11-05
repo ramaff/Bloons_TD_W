@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-hero = false
+depth = -999999
 
-with(obj_non_placeable_tile) {
-	image_alpha = 1;	
-}
+
+
+

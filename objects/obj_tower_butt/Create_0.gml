@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 info_pan_id = noone;
-
+depth = -999999
 
 
 

@@ -12,6 +12,9 @@ if global.round > 0 {
 var _next_round = global.bloon_sends[global.round]
 
 for(var _i = 0; _i < array_length(_round); _i++) {
+	if variable_struct_exists(_round[_i], "round_icon_sprite") {
+		continue;	
+	}
 	if _round[_i].count < 1 {
 		continue;
 	}

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_non_placeable_tile",
+  "name": "obj_placeable_tile",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_non_placeable_tile",
-    "path": "sprites/spr_non_placeable_tile/spr_non_placeable_tile.yy",
+    "name": "spr_placeable_tile",
+    "path": "sprites/spr_placeable_tile/spr_placeable_tile.yy",
   },
   "spriteMaskId": null,
   "visible": true,
