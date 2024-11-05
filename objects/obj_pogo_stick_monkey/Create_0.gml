@@ -6,6 +6,6 @@ hop_speed = 5;
 max_hop_speed = 5;
 hop_gravity = 0.25;
 
-
+all_bases = false
 
 

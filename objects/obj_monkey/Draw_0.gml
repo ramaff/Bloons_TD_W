@@ -43,7 +43,7 @@ if variable_struct_exists(tower_stats, "abilities") {
 		}
 		draw_sprite(spr_ability_ui, 0, x - 32, y + _yy)
 		if _ability.charges > 0 {
-			draw_text(x + 32, y + _yy + 4, "x" + string(_ability.charges))	
+			scr_draw_outline_text(x + 32, y + _yy + 4, "x" + string(_ability.charges))	
 		}
 	}
 }

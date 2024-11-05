@@ -1,7 +1,7 @@
 {
   "resourceType": "GMPath",
   "resourceVersion": "1.0",
-  "name": "pth_training_tent",
+  "name": "pth_training_room",
   "closed": false,
   "kind": 1,
   "parent": {

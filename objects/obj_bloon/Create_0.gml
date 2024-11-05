@@ -18,7 +18,7 @@ bloon_stats = {
 
 image_index = bloon_stats.layers - 1;
 
-path = pth_training_tent
+path = pth_training_room
 path_start(path, bloon_stats.speed, path_action_stop, true);
 
 alarm[0] = 90;

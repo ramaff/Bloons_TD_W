@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+x = floor(mouse_x / 16) * 16;
+y = (floor((mouse_y - 60) / 16) * 16) + 60;
 
 if collision_rectangle(x - 31, y - 31, x + 17, y + 17, obj_non_placeable_tile, false, false) {
 	exit;

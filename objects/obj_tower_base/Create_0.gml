@@ -3,6 +3,6 @@
 
 monkey_base = noone;
 
-
+all_bases = false
 
 

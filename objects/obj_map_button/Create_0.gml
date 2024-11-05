@@ -1,7 +1,33 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-track = rm_training_tent
+track = rm_training_room
+tracks_info = {
+	"rm_training_room": {
+		"paths": [pth_training_room],
+		"track_sprite": "spr_training_room_track",
+		"name": "training room",
+		"round_data": "training_room_rounds.json"
+	},
+	"rm_bloon_academia": {
+		"paths": [pth_bloon_academia],
+		"round_data": "bloon_academia_rounds.json",
+		"name": "bloon academia",
+		"requirement": "training_room"
+	},
+	"rm_autumn_acres": {
+		"paths": [pth_autumn_acres],
+		"round_data": "autumn_acres_rounds.json",
+		"name": "autumn acres",
+		"requirement": "bloon_academia"
+	},
+	"rm_graveyard": {
+		"paths": [pth_graveyard_1, pth_graveyard_2, pth_graveyard_3, pth_graveyard_4, pth_graveyard_5, pth_graveyard_6],
+		"round_data": "graveyard_rounds.json",
+		"name": "graveyard",
+		"requirement": "autumn_acres"
+	}
+}
 
 
 
