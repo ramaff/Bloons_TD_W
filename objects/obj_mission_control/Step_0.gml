@@ -9,8 +9,6 @@ if global.round < 1 {
 	exit;	
 }
 
-global.total_time++;
-
 if global.round > array_length(global.bloon_sends) {
 	exit;
 }
@@ -63,26 +61,18 @@ if !_bloons_remaining and global.round < array_length(global.bloon_sends) {
 }
 
 if global.round >= array_length(global.bloon_sends) and !_bloons_remaining and instance_number(obj_bloon) <= 0 {
-	show_debug_message(_bloons_remaining)
-	show_debug_message(instance_number(obj_bloon))
 	if !instance_exists(obj_win_indication) {
-		var _best_time = 999999;
 		var _current_stage_prog = variable_struct_get(global.missions_complete, "training_room")
-		show_debug_message("global.missions_complete")
-		show_debug_message(global.missions_complete)
-		show_debug_message("_current_stage_prog")
-		show_debug_message(_current_stage_prog)
-		if variable_struct_exists(_current_stage_prog, "best_time") {
-			_best_time = _current_stage_prog.best_time
-		}
-		_current_stage_prog = {
-			"best_time": min(global.total_time, _best_time)
-		}
+		_current_stage_prog.best_time = min(global.total_time, _current_stage_prog.best_time)
+		_current_stage_prog.complete = true
+		//variable_struct_set(global.missions_complete.training_room, "best_time", min(global.total_time, _best_time))
 		scr_save_game()
 		instance_create_depth(10, 600, -500, obj_win_indication)
 	}
+	exit;
 }
 
+global.total_time++;
 global.round_time++;
 
 /*if global.lives <= 0 {

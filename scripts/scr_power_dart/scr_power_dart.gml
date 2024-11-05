@@ -10,7 +10,16 @@ function scr_power_dart(){
 		_ability_stats[_i].pierce = _ability_stats[_i].pierce * 50;
 		_ability_stats[_i].sprite = "spr_big_dart"
 		_ability_stats[_i].lifespan = _ability_stats[_i].lifespan * 2;
-		
+		if variable_struct_exists(_ability_stats[_i], "projectile_burst") {
+			var _ability_stats_burst = _ability_stats[_i].projectile_burst
+			var _burst_count = array_length(_ability_stats_burst)
+			for(var _j = 0; _j < _burst_count; _j++) {
+				_ability_stats_burst[_j].damage = _ability_stats_burst[_j].damage * 3;	
+				_ability_stats_burst[_j].pierce = _ability_stats_burst[_j].pierce * 50;
+				_ability_stats_burst[_j].sprite = "spr_big_dart"
+				_ability_stats_burst[_j].lifespan = _ability_stats_burst[_j].lifespan * 2;
+			}
+		}
 	}
 	
 	with instance_create_depth(x, y, -100, obj_pointer_into_projectiles) {

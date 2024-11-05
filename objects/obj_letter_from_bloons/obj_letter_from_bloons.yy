@@ -1,18 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_place_tower",
+  "name": "obj_letter_from_bloons",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Menu UI",
-    "path": "folders/Objects/Menu UI.yy",
+    "name": "World Map",
+    "path": "folders/Objects/World Map.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -31,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_monkey",
-    "path": "sprites/spr_monkey/spr_monkey.yy",
+    "name": "spr_letter_from_the_bloons",
+    "path": "sprites/spr_letter_from_the_bloons/spr_letter_from_the_bloons.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -33,8 +33,18 @@ if variable_struct_exists(tower_stats, "abilities") {
 	
 		var _yy = 32 + 32 * _i
 
-		draw_sprite_part(spr_ability_ui, 0, 0, 0, _xx_offset, 64, x - 64, y + _yy)
-		draw_sprite(spr_ability_ui, 1, x - 64, y + _yy)
+		//draw_sprite_part(spr_ability_ui, 0, 0, 0, _xx_offset, 64, x - 64, y + _yy)
+		for(var _j = 0; _j < _ability.charges + 1; _j++) {
+			if _j = _ability.charges {
+				draw_sprite_part(spr_ability_ui, _j + 1, 0, 0, _xx_offset, 64, x - 64, y + _yy)
+			} else {
+				draw_sprite(spr_ability_ui, _j + 1, x - 64, y + _yy)
+			}
+		}
+		draw_sprite(spr_ability_ui, 0, x - 64, y + _yy)
+		if _ability.charges > 0 {
+			draw_text(x, y + _yy, "x" + string(_ability.charges))	
+		}
 	}
 }
 

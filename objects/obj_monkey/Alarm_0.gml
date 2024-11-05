@@ -13,8 +13,9 @@ if variable_struct_exists(tower_stats, "abilities") {
 		}
 		_ability.charge++;
 		if _ability.charge >= _ability.charge_time {
-			if _ability.charges >= _ability.max_charges - 1 {
+			if _ability.charges <= _ability.max_charges - 1 {
 				_ability.charge -= _ability.charge_time
+				_ability.charges++;
 			}
 		}
 	}

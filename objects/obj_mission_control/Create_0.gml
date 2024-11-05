@@ -43,3 +43,20 @@ for(var _i = 0; _i < array_length(global.bloon_sends); _i++) {
 
 global.round_time = 0
 global.round_gap = 360;
+
+for(var _i = 0; _i < array_length(global.paths); _i++) {
+	var _path = global.paths[_i];
+	for(var _j = 0; _j < 100; _j++) {
+		var _xx = path_get_x(_path, _j / 100)
+		var _yy = path_get_y(_path, _j / 100)
+		var _xx_up = ceil(_xx / 16) * 16;
+		var _xx_down = floor(_xx / 16) * 16;
+		var _yy_up = ceil(_yy / 16) * 16;
+		var _yy_down = floor(_yy / 16) * 16;
+		//show_debug_message("_xx: " + string(_xx) + "_yy: " + string(_yy))
+		instance_create_depth(_xx_down, _yy_down, depth, obj_non_placeable_tile)
+		instance_create_depth(_xx_up, _yy_down, depth, obj_non_placeable_tile)
+		instance_create_depth(_xx_up, _yy_up, depth, obj_non_placeable_tile)
+		instance_create_depth(_xx_down, _yy_up, depth, obj_non_placeable_tile)
+	}
+}

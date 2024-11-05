@@ -21,7 +21,7 @@ function scr_load_game(){
 	if (file_exists(_save_file)) {
 	    ini_open(_save_file)
   
-		global.missions_complete = json_decode(ini_read_string("Progress", "missions_complete", global.missions_complete));
+		global.missions_complete = json_parse(ini_read_string("Progress", "missions_complete", global.missions_complete));
 
 	    ini_close();
 

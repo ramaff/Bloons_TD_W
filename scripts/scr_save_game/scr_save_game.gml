@@ -9,7 +9,7 @@ function scr_save_game(){
 
 	ini_open(_backup_save_file)
 	
-	ini_write_string("Progress", "missions_complete", json_stringify(global.missions_complete));
+	ini_write_string("Progress", "missions_complete", string_replace_all(json_stringify(global.missions_complete), "\"", "'"));
 
 	ini_close();
 	
