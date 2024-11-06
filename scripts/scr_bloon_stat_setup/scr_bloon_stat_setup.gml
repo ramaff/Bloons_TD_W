@@ -34,7 +34,8 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		}
 	}*/
 
-	if variable_struct_exists(_class_stats, "sprite") {
+	if variable_struct_exists(_class_stats, "sprite") and !variable_struct_exists(_bloon.bloon_stats, "sprite") {
+		_bloon.bloon_stats.sprite = _class_stats.sprite
 		_bloon.sprite_index = asset_get_index(_class_stats.sprite);
 	}
 	if variable_struct_exists(_bloon.bloon_stats, "regrow")  {
@@ -78,7 +79,10 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	_bloon.speed = _bloon.bloon_stats.speed
 	_bloon.path_speed = _bloon.speed
 	_bloon.depth = -_bloon.bloon_stats.layers
-	_bloon.bloon_stats.max_health = _bloon.bloon_stats.health;
+	if !variable_struct_exists(_bloon.bloon_stats, "max_health") {
+		_bloon.bloon_stats.max_health = _bloon.bloon_stats.health;
+	}
+	//_bloon.bloon_stats.max_health = _bloon.bloon_stats.health;
 	
 	if variable_struct_exists(_bloon.bloon_stats, "float to track") {
 		var _target = instance_create_depth(_bloon.x, _bloon.y, depth, obj_bloon_target);

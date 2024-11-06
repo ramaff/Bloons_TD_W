@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+if wait {
+	wait = false;
+	exit;	
+}
+
 x = floor(mouse_x / 16) * 16;
 y = (floor((mouse_y - 60) / 16) * 16) + 60;
 

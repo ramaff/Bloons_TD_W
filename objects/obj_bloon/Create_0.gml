@@ -22,3 +22,4 @@ path = pth_training_room
 path_start(path, bloon_stats.speed, path_action_stop, true);
 
 alarm[0] = 90;
+leak_frame = false;

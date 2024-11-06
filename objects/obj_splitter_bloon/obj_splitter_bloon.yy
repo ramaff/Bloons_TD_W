@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Bloons",
-    "path": "folders/Objects/Bloons.yy",
+    "name": "Base Bloons",
+    "path": "folders/Objects/Bloons/Base Bloons.yy",
   },
   "parentObjectId": {
     "name": "obj_bloon",
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bloon",
-    "path": "sprites/spr_bloon/spr_bloon.yy",
+    "name": "spr_splitter_bloon",
+    "path": "sprites/spr_splitter_bloon/spr_splitter_bloon.yy",
   },
   "spriteMaskId": null,
   "visible": true,

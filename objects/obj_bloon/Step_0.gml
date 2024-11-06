@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+leak_frame = false;
+
 if variable_struct_exists(bloon_stats, "float to track") {
 	
 	//speed = bloon_stats.vertical_speed;
@@ -44,6 +46,6 @@ if variable_struct_exists(bloon_stats, "float to track") {
 	}
 }
 
-scr_track_end_bloon_check()
+leak_frame = scr_track_end_bloon_check()
 
 

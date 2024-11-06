@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Bloons",
-    "path": "folders/Objects/Bloons.yy",
+    "name": "Bounties",
+    "path": "folders/Objects/Bloons/Bounties.yy",
   },
   "parentObjectId": null,
   "persistent": false,

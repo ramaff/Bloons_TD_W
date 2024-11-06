@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Bloons",
-    "path": "folders/Objects/Bloons.yy",
+    "name": "Bloon Objects",
+    "path": "folders/Objects/Bloons/Bloon Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,

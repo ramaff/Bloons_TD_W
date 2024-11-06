@@ -265,13 +265,13 @@ function scr_setup_bloon_stats(){
 			},
 		},
 		"lead": {
-			"sprite": "spr_lead_bloon",
-			"tattered_sprite": "spr_lead_tattered",
 			"properties": [
 				"metallic"
 			],
-			max_health: 1,
+			"object": "obj_lead_bloon",
 			"lead": {
+				"sprite": "spr_lead_bloon",
+				"tattered_sprite": "spr_lead_tattered",
 				layers: 7,
 				index: 0,
 				rbe: 23,
@@ -524,6 +524,7 @@ function scr_setup_bloon_stats(){
 				index: 0,
 				rbe: 104,
 				health: 10,
+				max_health: 10,
 				density: 1,
 				speed: 3.75,
 				children: [
@@ -543,6 +544,7 @@ function scr_setup_bloon_stats(){
 				index: 0,
 				rbe: 238,
 				health: 30,
+				max_health: 30,
 				density: 1,
 				speed: 2.5,
 				children: [
@@ -590,6 +592,7 @@ function scr_setup_bloon_stats(){
 		"bully": {
 			"object": "obj_bully",
 			"bully": {
+				sprite: "spr_bully_bloon",
 				layers: 1,
 				damage: 5,
 				health: 500,
@@ -626,9 +629,11 @@ function scr_setup_bloon_stats(){
 				health: 2000,
 				damage: 8,
 				density: 1,
-				speed: 1.8,
+				speed: 2,
 			},
 			"big bully": {
+				sprite: "spr_big_bully_bloon",
+				object: "obj_big_bully_bloon",
 				layers: 5000,
 				health: 5000,
 				damage: 10,

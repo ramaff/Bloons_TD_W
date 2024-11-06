@@ -3,7 +3,7 @@
 
 if bully_count > 0 {
 	
-	with instance_create_depth(-32, 192, depth, obj_big_bully) {
+	with instance_create_depth(-32, 192, depth, obj_big_bully_cba_i_think) {
 		scr_bloon_stat_setup(id, "bully", 1)
 	}
 	

@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Bloons",
-    "path": "folders/Objects/Bloons.yy",
+    "name": "Special Class Bloons",
+    "path": "folders/Objects/Bloons/Special Class Bloons.yy",
   },
   "parentObjectId": {
     "name": "obj_bloon",
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bloon",
-    "path": "sprites/spr_bloon/spr_bloon.yy",
+    "name": "spr_zombie_bloon",
+    "path": "sprites/spr_zombie_bloon/spr_zombie_bloon.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -13,3 +13,5 @@ bloon_stats = {
 image_index = 0
 
 path_start(pth_training_room, bloon_stats.speed, path_action_stop, true);
+
+leak_frame = false;

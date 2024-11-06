@@ -15,3 +15,10 @@ if bloon_stats.health <= (bloon_stats.max_health / 2) and alarm[3] = -1 {
 // Inherit the parent event
 event_inherited();
 
+if leak_frame {
+	
+	bloon_stats.speed = bloon_stats.speed * 1.2;
+	path_speed = speed;
+	
+}
+
