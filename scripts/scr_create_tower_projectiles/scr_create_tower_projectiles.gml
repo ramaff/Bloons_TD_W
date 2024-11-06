@@ -36,6 +36,9 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 				if variable_struct_exists(_current_boosts, "pierce_boost") {
 					projectile_stats.pierce += _current_boosts.pierce_boost
 				}
+				if variable_struct_exists(_current_boosts, "speed_boost") {
+					projectile_stats.speed += _current_boosts.speed_boost
+				}
 				if variable_struct_exists(_current_boosts, "puncture") {
 					if variable_struct_exists(projectile_stats, "puncture") {
 						projectile_stats.puncture += _current_boosts.puncture

@@ -206,7 +206,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Goliath Shot",
-						upgrade_cost: 2000
+						upgrade_cost: 2500
 					}
 				]
 			]

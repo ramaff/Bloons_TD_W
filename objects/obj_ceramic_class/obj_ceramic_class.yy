@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bloon",
-    "path": "sprites/spr_bloon/spr_bloon.yy",
+    "name": "spr_ceramic_bloon",
+    "path": "sprites/spr_ceramic_bloon/spr_ceramic_bloon.yy",
   },
   "spriteMaskId": null,
   "visible": true,

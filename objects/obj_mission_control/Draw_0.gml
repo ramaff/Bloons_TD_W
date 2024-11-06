@@ -20,11 +20,11 @@ var _xx = 100;
 if global.round = 0 {
 	_gap = 80;	
 }
-var _round = max(0, global.round - 1)
+var _round = max(-1, global.round - 1)
 
 for(var _i = 0; _i < _panels; _i++) {
 	_xx += 80
-	var _icon = round_properties[_round + _i]
+	var _icon = round_properties[_round + _i + 1]
 	if _icon.count = 2 {
 		draw_sprite(asset_get_index(_icon.sprite), _icon.index, _xx + _gap - 4, 28 - 4)
 		draw_sprite(asset_get_index(_icon.sprite), _icon.index, _xx + _gap + 4, 28 + 4)

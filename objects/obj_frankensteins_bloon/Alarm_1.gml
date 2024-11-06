@@ -44,5 +44,3 @@ with (obj_bloon) {
 	
 	instance_create_depth(x, y, depth - 100, obj_bloon_zap_from_above)
 }
-
-show_debug_message(bloon_stats.health)

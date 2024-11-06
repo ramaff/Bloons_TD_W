@@ -1,6 +1,10 @@
 [
 	[
 		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "normal",
 			"layer": "red",
 			"count": 15,
@@ -17,6 +21,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "normal",
 			"layer": "red",
 			"count": 25,
@@ -32,6 +40,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_shielded_bloon_icon",
+			"round_icon_index": 0
+		},
 		{
 			"class": "normal",
 			"layer": "blue",
@@ -52,6 +64,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "normal",
 			"layer": "green",
 			"count": 15,
@@ -61,6 +77,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_lead_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "lead",
 			"layer": "lead",
 			"count": 1,
@@ -69,6 +89,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_shielded_bloon_icon",
+			"round_icon_index": 0
+		},
 		{
 			"class": "normal",
 			"layer": "blue",
@@ -89,6 +113,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "normal",
 			"layer": "green",
 			"count": 30,
@@ -104,6 +132,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_shielded_bloon_icon",
+			"round_icon_index": 1
+		},
 		{
 			"class": "normal",
 			"layer": "blue",
@@ -126,6 +158,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 3
+		},
 		{
 			"class": "normal",
 			"layer": "yellow",
@@ -150,6 +186,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "ceramic",
 			"layer": "ceramic",
 			"count": 1,
@@ -158,6 +198,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 3
+		},
 		{
 			"class": "normal",
 			"layer": "green",
@@ -189,6 +233,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_shielded_bloon_icon",
+			"round_icon_index": 2
+		},
+		{
 			"class": "normal",
 			"layer": "green",
 			"count": 20,
@@ -211,6 +259,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 4
+		},
+		{
 			"class": "normal",
 			"layer": "pink",
 			"count": 10,
@@ -227,6 +279,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 5
+		},
+		{
 			"class": "normal",
 			"layer": "black",
 			"count": 5,
@@ -242,6 +298,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_ceramic_bloon",
+			"round_icon_index": 0
+		},
 		{
 			"class": "lead",
 			"layer": "lead",
@@ -266,6 +326,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 5
+		},
+		{
 			"class": "normal",
 			"layer": "pink",
 			"count": 30,
@@ -281,6 +345,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 7
+		},
 		{
 			"class": "normal",
 			"layer": "zebra",
@@ -300,6 +368,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_lead_bloon",
+			"round_icon_index": 0
+		},
 		{
 			"class": "normal",
 			"layer": "black",
@@ -323,6 +395,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_shielded_bloon_icon",
+			"round_icon_index": 3
+		},
 		{
 			"class": "normal",
 			"layer": "yellow",
@@ -350,6 +426,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "bully",
 			"layer": "red bully",
 			"count": 1,
@@ -358,6 +438,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 4
+		},
 		{
 			"class": "normal",
 			"layer": "red",
@@ -388,6 +472,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_shielded_bloon_icon",
+			"round_icon_index": 5
+		},
 		{
 			"class": "normal",
 			"layer": "zebra",
@@ -428,6 +516,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 8
+		},
+		{
 			"class": "normal",
 			"layer": "rainbow",
 			"count": 8,
@@ -451,6 +543,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_lead_bloon",
+			"round_icon_index": 7
+		},
+		{
 			"class": "lead",
 			"layer": "lead",
 			"count": 20,
@@ -470,6 +566,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "bully",
 			"layer": "blue bully",
 			"count": 1,
@@ -479,6 +579,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 8
+		},
+		{
 			"class": "normal",
 			"layer": "rainbow",
 			"count": 20,
@@ -487,6 +591,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_shielded_bloon_icon",
+			"round_icon_index": 7
+		},
 		{
 			"class": "normal",
 			"layer": "zebra",
@@ -507,6 +615,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "lead",
 			"layer": "lead",
 			"count": 20,
@@ -522,6 +634,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 8
+		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
@@ -542,6 +658,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "bully",
 			"layer": "green bully",
 			"count": 1,
@@ -550,6 +670,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 8
+		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
@@ -574,6 +698,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "ceramic",
 			"layer": "ceramic",
 			"count": 5,
@@ -582,6 +710,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_mini_moab_icon",
+			"round_icon_index": 0
+		},
 		{
 			"class": "splitter",
 			"layer": "purple",
@@ -598,6 +730,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_shielded_bloon_icon",
+			"round_icon_index": 8
+		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
@@ -639,6 +775,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "bully",
 			"layer": "yellow bully",
 			"count": 1,
@@ -647,6 +787,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_block_bloon",
+			"round_icon_index": 0
+		},
 		{
 			"class": "lead",
 			"layer": "lead",
@@ -663,6 +807,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_shielded_bloon_icon",
+			"round_icon_index": 4
+		},
 		{
 			"class": "splitter",
 			"layer": "amber",
@@ -686,6 +834,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_brick_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "ceramic",
 			"layer": "ceramic",
 			"count": 10,
@@ -701,6 +853,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_moab_icon",
+			"round_icon_index": 0
+		},
 		{
 			"class": "normal",
 			"layer": "pink",
@@ -724,6 +880,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
 		{
 			"class": "bully",
 			"layer": "big bully",

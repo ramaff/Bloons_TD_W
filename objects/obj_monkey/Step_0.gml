@@ -6,6 +6,7 @@ var _range_boost = 0;
 var _current_boosts = {
 	"damage_boost": 0,
 	"pierce_boost": 0,
+	"speed_boost": 0,
 	"puncture": 0
 }
 
@@ -26,6 +27,9 @@ if variable_struct_exists(tower_stats, "stat_boosts") {
 			}
 			if variable_struct_exists(_current_boost, "pierce_boost") {
 				_current_boosts.pierce_boost += _current_boost.pierce_boost;
+			}
+			if variable_struct_exists(_current_boost, "speed_boost") {
+				_current_boosts.speed_boost += _current_boost.speed_boost;
 			}
 			if variable_struct_exists(_current_boost, "puncture") {
 				_current_boosts.puncture += _current_boost.puncture;

@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_lead_bloon",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -29,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bloon",
-    "path": "sprites/spr_bloon/spr_bloon.yy",
+    "name": "spr_lead_bloon",
+    "path": "sprites/spr_lead_bloon/spr_lead_bloon.yy",
   },
   "spriteMaskId": null,
   "visible": true,

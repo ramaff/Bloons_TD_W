@@ -37,7 +37,7 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 	
 	if variable_struct_exists(_upgrade_stats, "tower_sprite") {
 		_tower_stats.tower_sprite = _upgrade_stats.tower_sprite
-		_monkey.sprite_index = asset_get_index(_tower_stats.tower_sprites)
+		_monkey.sprite_index = asset_get_index(_tower_stats.tower_sprite)
 	}
 
 	

@@ -288,6 +288,34 @@ function scr_setup_bloon_stats(){
 						"layer": "black"
 					}
 				]
+			},
+			"block": {
+				"sprite": "spr_block_bloon",
+				layers: 17,
+				index: 0,
+				rbe: 104,
+				health: 10,
+				max_health: 10,
+				density: 1,
+				speed: 1.75,
+				children: [
+					{
+						"class": "lead",
+						"layer": "lead"
+					},
+					{
+						"class": "lead",
+						"layer": "lead"
+					},
+					{
+						"class": "lead",
+						"layer": "lead"
+					},
+					{
+						"class": "lead",
+						"layer": "lead"
+					}
+				]
 			}
 		},
 		"deflation": {
@@ -506,6 +534,25 @@ function scr_setup_bloon_stats(){
 					{
 						"class": "normal",
 						"layer": "rainbow"
+					}
+				]
+			},
+			"brick": {
+				sprite: "spr_brick_bloon",
+				layers: 48,
+				index: 0,
+				rbe: 238,
+				health: 30,
+				density: 1,
+				speed: 2.5,
+				children: [
+					{
+						"class": "ceramic",
+						"layer": "ceramic"
+					},
+					{
+						"class": "ceramic",
+						"layer": "ceramic"
 					}
 				]
 			}

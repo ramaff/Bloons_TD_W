@@ -59,7 +59,7 @@ function scr_setup_upgrade_stats(){
 			},
 			"long shot": {
 				fire_rate_multiplier: 1.333,
-				range: -60,
+				range: -40,
 				tower_attack_script: scr_long_shot_boost,
 				upgrade_string: "The range and damage of the sling shot increases over time the longer a shot is prepared."
 			},

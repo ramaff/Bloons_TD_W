@@ -3,9 +3,10 @@
 function scr_long_shot_boost(_tower_stats = tower_stats) {
 
 	var _long_shot_boost = {
-		range_boost: 0.3,
+		range_boost: 0.33,
 		damage_boost: 0,
 		pierce_boost: 0,
+		speed_boost: 0,
 		boost_duration: 600,
 		attack_expire: true
 	}
@@ -30,12 +31,13 @@ function scr_long_shot_boost(_tower_stats = tower_stats) {
 		}
 		_long_shot_boost.range_boost += _current_long_shot_boost.range_boost;
 
-		var _max_range_charge = 9 * _max_charge
+		var _max_range_charge = 10 * _max_charge
 		if _long_shot_boost.range_boost > _max_range_charge {
 			_long_shot_boost.range_boost = _max_range_charge;	
 		}
-		_long_shot_boost.damage_boost = floor(_long_shot_boost.range_boost / 9);
-		_long_shot_boost.pierce_boost = floor(_long_shot_boost.range_boost / 9);
+		_long_shot_boost.damage_boost = floor(_long_shot_boost.range_boost / 10);
+		_long_shot_boost.pierce_boost = floor(_long_shot_boost.range_boost / 10);
+		_long_shot_boost.speed_boost = floor(_long_shot_boost.range_boost / 10);
 	}
 	
 	variable_struct_set(_tower_stats.stat_boosts, "long shot boost", _long_shot_boost)

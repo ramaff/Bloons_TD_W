@@ -47,7 +47,7 @@ if instance_exists(target) {
 	instance_destroy();	
 }
 
-puncture -= 0.1;
+puncture -= 0.05;
 
 if puncture <= 0 {
 	instance_destroy()	
