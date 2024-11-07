@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_big_bully_bloon",
-  "bbox_bottom": 191,
-  "bbox_left": 46,
-  "bbox_right": 209,
-  "bbox_top": 77,
+  "name": "spr_nerd_bloon",
+  "bbox_bottom": 107,
+  "bbox_left": 23,
+  "bbox_right": 99,
+  "bbox_top": 25,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,11 +13,11 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c59481a7-2218-4a8c-97b3-dfefd06c4564",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"43bd2286-29f7-4173-b2c4-fb6bb4fb1743",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 256,
+  "height": 128,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fe0d8fb5-de47-4b0b-8b06-b64b756e9ca8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_big_bully_bloon",
+    "name": "spr_nerd_bloon",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c59481a7-2218-4a8c-97b3-dfefd06c4564","path":"sprites/spr_big_bully_bloon/spr_big_bully_bloon.yy",},},},"Disabled":false,"id":"9d15229e-48a5-4594-9b83-6fb98742018a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"43bd2286-29f7-4173-b2c4-fb6bb4fb1743","path":"sprites/spr_nerd_bloon/spr_nerd_bloon.yy",},},},"Disabled":false,"id":"3d78681a-63f3-47ee-b557-523cdfe2c6fd","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 128,
-    "yorigin": 128,
+    "xorigin": 64,
+    "yorigin": 64,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 256,
+  "width": 128,
 }

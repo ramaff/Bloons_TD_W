@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+show_debug_message(bloon_stats.speed)
 
 event_inherited();
 
