@@ -5,7 +5,9 @@ function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 	var _anger_boost = {
 		fire_rate_boost_multiplier: 4,
 		range_boost: 30,
-		boost_duration: 180
+		boost_duration: 180,
+		sprite: "spr_angry_squirrel_angry",
+		sprite_priority: 2
 	}
 	if !variable_struct_exists(_tower_stats, "stat_boosts") {
 		_tower_stats.stat_boosts = {}
@@ -19,7 +21,9 @@ function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 			var _lingering_flame_boost = {
 				fire_rate_boost_multiplier: 2,
 				boost_duration: 1200,
-				range_boost: 15
+				range_boost: 15,
+				sprite: "spr_angry_squirrel_lingering_flame",
+				sprite_priority: 1
 			}
 			variable_struct_set(_tower_stats.stat_boosts, "lingering_flame", _lingering_flame_boost)
 		}

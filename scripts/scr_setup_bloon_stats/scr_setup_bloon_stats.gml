@@ -598,19 +598,19 @@ function scr_setup_bloon_stats(){
 				speed: 1.5,
 				children: [
 					{
-						"class": "normal",
+						"class": "ceramic",
 						"layer": "ceramic"
 					},
 					{
-						"class": "normal",
+						"class": "ceramic",
 						"layer": "ceramic"
 					},
 					{
-						"class": "normal",
+						"class": "ceramic",
 						"layer": "ceramic"
 					},
 					{
-						"class": "normal",
+						"class": "ceramic",
 						"layer": "ceramic"
 					}
 				]

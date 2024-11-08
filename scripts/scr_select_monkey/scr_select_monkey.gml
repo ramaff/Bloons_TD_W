@@ -48,7 +48,7 @@ function scr_select_monkey(){
 		}
 	}
 	
-	if _all_normal_upgrades {
+	if _all_normal_upgrades and !all_bases {
 		if variable_struct_exists(tower_stats, "split_upgrades") {
 			tower_stats.upgrades = tower_stats.split_upgrades
 			tower_stats.upgrade_count = [0, 0, 0]

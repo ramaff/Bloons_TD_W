@@ -16,8 +16,8 @@ function scr_setup_tower_stats(){
 			max_health: 200,
 			abilities: {
 				"Power Dart": {
-					"charge_time": 30,
-					"charge": 30,
+					"charge_time": 20,
+					"charge": 20,
 					"max_charges": 3,
 					"charges": 0,
 					"ability_script": scr_power_dart

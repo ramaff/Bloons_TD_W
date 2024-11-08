@@ -6,6 +6,7 @@ tower_stats = {
 	range: 140,
 	delay: 30,
 	attack_cooldown: 0,
+	tower_sprite: "spr_monkey",
 	projectile_stats: [
 		{
 			sprite: "spr_dart",
@@ -37,4 +38,4 @@ tower_stats = {
 all_bases = false
 stun = 0;
 
-alarm[0] = 30;
+alarm[0] = 60;

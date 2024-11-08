@@ -8,7 +8,11 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _bloon = noone) {
 	//show_debug_message("bloon stats:" + string(_bloon_stats))
 	
 	if _bloon_stats.health <= 0 {
-		global.money += 1;
+		var _cash_flow = 1;
+		if global.round > 20 {
+			_cash_flow = _cash_flow * 0.5;
+		}
+		global.money += _cash_flow;
 		
 		var _children = []
 		if variable_struct_exists(_bloon_stats, "children") {

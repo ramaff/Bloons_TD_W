@@ -557,7 +557,7 @@
 			"class": "splitter",
 			"layer": "cyan",
 			"count": 40,
-			"spread": 8,
+			"spread": 16,
 			"cooldown": 660,
 			"properties": [
 				"shielded"

@@ -76,8 +76,8 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Poke the squirrel to make it angry.",
 				abilities: {
 					"Poke": {
-						"charge_time": 45,
-						"charge": 45,
+						"charge_time": 40,
+						"charge": 40,
 						"max_charges": 1,
 						"charges": 0,
 						"ability_script": scr_angry_squirrel_anger
