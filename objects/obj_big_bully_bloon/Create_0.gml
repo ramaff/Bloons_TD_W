@@ -1,9 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-monkey_base = noone;
 
-all_bases = false
+// Inherit the parent event
+event_inherited();
 
-
-depth = -y + 50
+alarm[4] = 450 / bloon_stats.speed;

@@ -599,6 +599,14 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 1,
 			},
+			"nerd": {
+				sprite: "spr_nerd_bloon",
+				layers: 1,
+				damage: 3,
+				health: 500,
+				density: 1,
+				speed: 2,
+			},
 			"red bully": {
 				sprite: "spr_red_bully",
 				layers: 500,
@@ -638,7 +646,7 @@ function scr_setup_bloon_stats(){
 				health: 5000,
 				damage: 10,
 				density: 1,
-				speed: 2,
+				speed: 1.25,
 			}
 		},
 		"peek-a-bloon": {

@@ -35,5 +35,6 @@ tower_stats = {
 }
 
 all_bases = false
+stun = 0;
 
 alarm[0] = 30;

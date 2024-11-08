@@ -25,7 +25,7 @@ for(var _i = 0; _i < array_length(_round); _i++) {
 	}
 	_bloons_remaining = true;
 	if _round[_i].cooldown <= 0 {
-		var _bloon_object = scr_bloon_class_to_object(struct_get(_round[_i], "class"));
+		var _bloon_object = scr_bloon_class_to_object(struct_get(_round[_i], "class"), struct_get(_round[_i], "layer"));
 		var _properties = []
 		var _round_number = 0;
 		if variable_struct_exists(_round[_i], "properties") {

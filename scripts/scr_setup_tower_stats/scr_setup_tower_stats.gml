@@ -419,7 +419,7 @@ function scr_setup_tower_stats(){
 			upgrade_cost: 0,
 			range: 200,
 			minimum_range: 90,
-			delay: 63,
+			delay: 78,
 			attack_cooldown: 0,
 	
 			projectile_stats: [

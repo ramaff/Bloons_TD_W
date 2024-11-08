@@ -3,6 +3,10 @@
 
 alarm[0] = 30;
 
+if stun > 0 {
+	exit;
+}
+
 if variable_struct_exists(tower_stats, "abilities") {
 	var _abilities = variable_struct_get_names(tower_stats.abilities);
 	for (var _i = 0; _i < array_length(_abilities); _i++) {

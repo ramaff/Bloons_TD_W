@@ -24,6 +24,10 @@ if abs(mouse_x - x) < 32 and abs(mouse_y - y) < 32 {
 
 draw_self()
 
+if stun > 0 {
+	draw_sprite(spr_tower_stun, floor(scr_wave(0, 3, 1, 0)), x, y)	
+}
+
 if variable_struct_exists(tower_stats, "abilities") {
 	var _abilities = variable_struct_get_names(tower_stats.abilities);
 	for (var _i = 0; _i < array_length(_abilities); _i++) {

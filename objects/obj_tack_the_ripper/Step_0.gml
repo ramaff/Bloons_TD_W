@@ -8,8 +8,11 @@ if leak_frame {
 	
 	bloon_stats.speed = bloon_stats.speed * 1.2;
 	path_speed = speed;
+	speed = bloon_stats.speed;
+	path_speed = speed;
 	
 }
+
 
 if instance_exists(slicer) {
 	image_alpha = 0

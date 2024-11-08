@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+depth = -y
+
 var _tick_down = 1;
 var _range_boost = 0;
 var _current_boosts = {
@@ -42,6 +44,11 @@ if variable_struct_exists(tower_stats, "stat_boosts") {
 			}
 		}
 	}
+}
+
+if stun > 0 {
+	stun -= sqrt(tower_stats.total_cost) / 60;	
+	exit;
 }
 
 if tower_stats.attack_cooldown > 0 {

@@ -14,6 +14,9 @@ draw_sprite(spr_shadow, 0, x, y + hop_height)
 
 draw_self()
 
+if stun > 0 {
+	draw_sprite(spr_tower_stun, floor(scr_wave(0, 3, 1, 0)), x, y)	
+}
 
 
 

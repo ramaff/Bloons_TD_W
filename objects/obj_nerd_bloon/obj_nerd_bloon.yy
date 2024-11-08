@@ -1,8 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bully",
-  "eventList": [],
+  "name": "obj_nerd_bloon",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -29,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bully_bloon",
-    "path": "sprites/spr_bully_bloon/spr_bully_bloon.yy",
+    "name": "spr_nerd_bloon",
+    "path": "sprites/spr_nerd_bloon/spr_nerd_bloon.yy",
   },
   "spriteMaskId": null,
   "visible": true,

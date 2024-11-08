@@ -4,9 +4,12 @@
 speed = 0;
 path_speed = 0;
 
-alarm[2] = 90 / bloon_stats.speed;
+alarm[5] = 90 / bloon_stats.speed;
 
-sprite_index = spr_big_bully_bloon_windup_throw
+sprite_index = spr_big_bully_bloon_windup_punch
 image_index = 0;
+
+
+
 
 
