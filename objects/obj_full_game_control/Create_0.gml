@@ -24,6 +24,32 @@ global.missions_complete = {
 	}
 }
 
+global.towers_progress = {
+	"selected": ["sling_shot_monkey", "cactus_monkey", "pineapple_monkey", "pogo_stick_monkey"],
+	"sling_shot_monkey": {
+		"unlocked": true	
+	},
+	"cactus_monkey": {
+		"unlocked": true	
+	},
+	"pineapple_monkey": {
+		"unlocked": true	
+	},
+	"pogo_stick_monkey": {
+		"unlocked": true	
+	}
+}
+
+global.heroes_progress = {
+	"selected": ["jim"],
+	"jim": {
+		"unlocked": true	
+	},
+	"angry_squirrel": {
+		"unlocked": false	
+	}
+}
+
 scr_load_game()
 
 

@@ -28,6 +28,7 @@ tracks_info = {
 		"requirement": "autumn_acres"
 	}
 }
+global.mission = "training_room"
 
 
 

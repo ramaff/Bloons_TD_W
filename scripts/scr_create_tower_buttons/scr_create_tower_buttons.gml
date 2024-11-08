@@ -1,9 +1,13 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_create_tower_buttons(){
+	var _tower_prog = global.towers_progress
 	
-	var _heroes = ["jim", "angry squirrel"]
-	for(var _i = 0; _i < 2; _i++) {
+	var _heroes = global.heroes_progress.selected
+	if global.mission = "bloon_academia" {
+		_heroes[array_length(_heroes)] = "angry_squirrel"	
+	}
+	for(var _i = 0; _i < array_length(_heroes); _i++) {
 		with instance_create_depth(816, 64 + (_i * 64), depth, obj_hero_butt) {
 			base_tower_id = _heroes[_i];
 			tower_stats = scr_get_tower_stats(base_tower_id)
@@ -24,7 +28,7 @@ function scr_create_tower_buttons(){
 		}
 	}
 	
-	var _towers = ["sling_monkey", "cactus_monkey", "pineapple_monkey", "pogo_stick_monkey", "marbles_monkey", "assassin_monkey"]
+	var _towers = global.towers_progress.selected
 	
 	for(var _j = 0; _j < 2; _j++) {
 		for(var _k = 0; _k < 2; _k++) {
