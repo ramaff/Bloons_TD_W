@@ -9,6 +9,6 @@ function scr_cactus_base_alternate(){
 
 function scr_needle_storm(){
 
-	tower_stats.attack_angle_offset = scr_wave(-60, 60, 1.5, 0)
+	tower_stats.attack_angle_offset = scr_wave(-45, 45, 0.75, 0)
 
 }

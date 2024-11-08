@@ -587,6 +587,33 @@ function scr_setup_bloon_stats(){
 						"layer": "rainbow"
 					}
 				]
+			},
+			"moab": {
+				sprite: "spr_moab",
+				layers: 218,
+				index: 0,
+				rbe: 616,
+				health: 200,
+				density: 1,
+				speed: 1.5,
+				children: [
+					{
+						"class": "normal",
+						"layer": "ceramic"
+					},
+					{
+						"class": "normal",
+						"layer": "ceramic"
+					},
+					{
+						"class": "normal",
+						"layer": "ceramic"
+					},
+					{
+						"class": "normal",
+						"layer": "ceramic"
+					}
+				]
 			}
 		},
 		"bully": {

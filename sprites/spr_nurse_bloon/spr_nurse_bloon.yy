@@ -31,8 +31,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "bloons",
-    "path": "folders/Sprites/bloons.yy",
+    "name": "Special Bloon Classes",
+    "path": "folders/Sprites/bloons/Special Bloon Classes.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -52,6 +52,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"tower_butts","folderPath":"folders/Sprites/ui/tower_butts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Special Bloon Classes","folderPath":"folders/Sprites/bloons/Special Bloon Classes.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Base Classes","folderPath":"folders/Sprites/bloons/Base Classes.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Moab Class","folderPath":"folders/Sprites/bloons/Moab Class.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"autumn_acres_rounds.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -292,6 +295,7 @@
     {"id":{"name":"spr_jim_hero_butt","path":"sprites/spr_jim_hero_butt/spr_jim_hero_butt.yy",},},
     {"id":{"name":"obj_angry_squirrel","path":"objects/obj_angry_squirrel/obj_angry_squirrel.yy",},},
     {"id":{"name":"obj_frankensteins_bloon","path":"objects/obj_frankensteins_bloon/obj_frankensteins_bloon.yy",},},
+    {"id":{"name":"spr_moab","path":"sprites/spr_moab/spr_moab.yy",},},
     {"id":{"name":"scr_load_game","path":"scripts/scr_load_game/scr_load_game.yy",},},
     {"id":{"name":"spr_going_butt","path":"sprites/spr_going_butt/spr_going_butt.yy",},},
     {"id":{"name":"spr_go_butt","path":"sprites/spr_go_butt/spr_go_butt.yy",},},

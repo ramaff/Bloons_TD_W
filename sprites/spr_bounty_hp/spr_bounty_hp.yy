@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "bloons",
-    "path": "folders/Sprites/bloons.yy",
+    "name": "bosses",
+    "path": "folders/Sprites/bloons/bosses.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
