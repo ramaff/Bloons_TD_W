@@ -16,7 +16,7 @@ if variable_struct_exists(_track_info, "requirement") {
 
 global.paths = _track_info.paths
 global.round_data = _track_info.round_data
-global.mission = string_replace(_track, " ", "_")
+global.mission = string_replace(_track_info.name, " ", "_")
 
 room_goto(track)
 

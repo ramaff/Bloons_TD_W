@@ -46,7 +46,7 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Darts split into 4 more darts. Jim gets more HP and range."
 			}
 		},
-		"sling_monkey": {
+		"sling_shot_monkey": {
 			"stone skipping": {
 				pierce: 2,
 				lifespan: 32,
@@ -68,7 +68,7 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Highly charged shot apply a puncture effect to big bloons. Increases the speed and max potency of the prepared shot."
 			}
 		},
-		"angry squirrel": {
+		"angry_squirrel": {
 			"Anger Mismanagement": {
 				upgrade_string: "The squirrel stays mad twice as long."
 			},

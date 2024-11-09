@@ -65,7 +65,9 @@ if !_bloons_remaining and global.round < array_length(global.bloon_sends) {
 
 if global.round >= array_length(global.bloon_sends) and !_bloons_remaining and instance_number(obj_bloon) <= 0 {
 	if !instance_exists(obj_win_indication) {
+		show_debug_message(global.mission)
 		var _current_stage_prog = variable_struct_get(global.missions_complete, global.mission)
+		show_debug_message(_current_stage_prog)
 		_current_stage_prog.best_time = min(global.total_time, _current_stage_prog.best_time)
 		_current_stage_prog.complete = true
 		//variable_struct_set(global.missions_complete.training_room, "best_time", min(global.total_time, _best_time))

@@ -22,6 +22,8 @@ function scr_load_game(){
 	    ini_open(_save_file)
   
 		global.missions_complete = json_parse(ini_read_string("Progress", "missions_complete", global.missions_complete));
+		global.towers_progress = json_parse(ini_read_string("Progress", "towers_progress", global.towers_progress));
+		global.heroes_progress = json_parse(ini_read_string("Progress", "heroes_progress", global.heroes_progress));
 
 	    ini_close();
 

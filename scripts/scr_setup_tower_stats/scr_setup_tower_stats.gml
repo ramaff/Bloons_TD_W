@@ -90,7 +90,7 @@ function scr_setup_tower_stats(){
 				]
 			]
 		},
-		"angry squirrel": {
+		"angry_squirrel": {
 			tower_object: "obj_hero",
 			tower_sprite: "spr_angry_squirrel",
 			butt_sprite: "spr_angry_squirrel_hero_butt",
@@ -162,7 +162,7 @@ function scr_setup_tower_stats(){
 				]
 			]
 		},
-		"sling_monkey": {
+		"sling_shot_monkey": {
 			tower_sprite: "spr_pebble_monkey",
 			butt_sprite: "spr_sling_shot_tower_butt",
 			total_cost: 175,
