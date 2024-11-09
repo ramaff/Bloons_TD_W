@@ -7,7 +7,7 @@
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 15,
+			"count": 20,
 			"spread": 45,
 			"cooldown": 0
 		},
@@ -16,7 +16,7 @@
 			"layer": "red",
 			"count": 5,
 			"spread": 45,
-			"cooldown": 472
+			"cooldown": 697
 		}
 	],
 	[
@@ -27,16 +27,16 @@
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 25,
-			"spread": 45,
+			"count": 35,
+			"spread": 40,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 15,
-			"spread": 45,
-			"cooldown": 450
+			"count": 20,
+			"spread": 40,
+			"cooldown": 620
 		}
 	],
 	[
@@ -47,8 +47,8 @@
 		{
 			"class": "normal",
 			"layer": "blue",
-			"count": 15,
-			"spread": 45,
+			"count": 25,
+			"spread": 40,
 			"cooldown": 0
 		},
 		{
@@ -56,7 +56,7 @@
 			"layer": "red",
 			"count": 5,
 			"spread": 45,
-			"cooldown": 600,
+			"cooldown": 1050,
 			"properties": [
 				"shielded"
 			]
@@ -70,8 +70,8 @@
 		{
 			"class": "normal",
 			"layer": "green",
-			"count": 15,
-			"spread": 45,
+			"count": 25,
+			"spread": 40,
 			"cooldown": 0
 		}
 	],
@@ -205,7 +205,7 @@
 		{
 			"class": "normal",
 			"layer": "green",
-			"count": 60,
+			"count": 75,
 			"spread": 30,
 			"cooldown": 0
 		},
@@ -239,7 +239,7 @@
 		{
 			"class": "normal",
 			"layer": "green",
-			"count": 20,
+			"count": 25,
 			"spread": 40,
 			"cooldown": 0,
 			"properties": [
@@ -251,7 +251,7 @@
 			"layer": "green",
 			"count": 5,
 			"spread": 40,
-			"cooldown": 620,
+			"cooldown": 820,
 			"properties": [
 				"shielded"
 			]
@@ -265,8 +265,8 @@
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 10,
-			"spread": 60,
+			"count": 15,
+			"spread": 40,
 			"cooldown": 0
 		},
 		{
@@ -274,7 +274,7 @@
 			"layer": "lime",
 			"count": 20,
 			"spread": 30,
-			"cooldown": 60
+			"cooldown": 300
 		}
 	],
 	[
@@ -332,14 +332,14 @@
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 30,
+			"count": 40,
 			"spread": 40,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 10,
+			"count": 20,
 			"spread": 40,
 			"cooldown": 820
 		}
@@ -352,7 +352,7 @@
 		{
 			"class": "normal",
 			"layer": "zebra",
-			"count": 10,
+			"count": 12,
 			"spread": 75,
 			"cooldown": 0
 		},
@@ -360,7 +360,7 @@
 			"class": "normal",
 			"layer": "green",
 			"count": 20,
-			"spread": 10,
+			"spread": 20,
 			"cooldown": 450,
 			"properties": [
 				"shielded"
@@ -375,14 +375,14 @@
 		{
 			"class": "normal",
 			"layer": "black",
-			"count": 20,
+			"count": 25,
 			"spread": 60,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "white",
-			"count": 20,
+			"count": 25,
 			"spread": 60,
 			"cooldown": 30
 		},
@@ -412,16 +412,16 @@
 		{
 			"class": "normal",
 			"layer": "yellow",
-			"count": 20,
+			"count": 40,
 			"spread": 5,
 			"cooldown": 450
 		},
 		{
 			"class": "splitter",
 			"layer": "amber",
-			"count": 10,
-			"spread": 5,
-			"cooldown": 1050
+			"count": 20,
+			"spread": 15,
+			"cooldown": 1150
 		}
 	],
 	[
@@ -466,7 +466,7 @@
 		{
 			"class": "splitter",
 			"layer": "purple",
-			"count": 8,
+			"count": 12,
 			"spread": 15,
 			"cooldown": 800
 		}
@@ -529,16 +529,16 @@
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 60,
+			"count": 100,
 			"spread": 10,
 			"cooldown": 400
 		},
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 10,
+			"count": 20,
 			"spread": 10,
-			"cooldown": 905
+			"cooldown": 1205
 		}
 	],
 	[
@@ -557,7 +557,7 @@
 			"class": "splitter",
 			"layer": "cyan",
 			"count": 40,
-			"spread": 16,
+			"spread": 20,
 			"cooldown": 660,
 			"properties": [
 				"shielded"
@@ -585,7 +585,7 @@
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 20,
+			"count": 25,
 			"spread": 60,
 			"cooldown": 0
 		}
@@ -649,7 +649,7 @@
 			"class": "splitter",
 			"layer": "lime",
 			"count": 40,
-			"spread": 8,
+			"spread": 22,
 			"cooldown": 660,
 			"properties": [
 				"shielded"
@@ -677,23 +677,23 @@
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 30,
-			"spread": 36,
+			"count": 36,
+			"spread": 42,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 6,
-			"spread": 36,
-			"cooldown": 876
+			"count": 12,
+			"spread": 42,
+			"cooldown": 878
 		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 6,
-			"spread": 36,
-			"cooldown": 888
+			"count": 12,
+			"spread": 42,
+			"cooldown": 892
 		}
 	],
 	[
@@ -704,7 +704,7 @@
 		{
 			"class": "ceramic",
 			"layer": "ceramic",
-			"count": 5,
+			"count": 6,
 			"spread": 90,
 			"cooldown": 0
 		}
@@ -717,15 +717,15 @@
 		{
 			"class": "splitter",
 			"layer": "purple",
-			"count": 90,
-			"spread": 12,
+			"count": 105,
+			"spread": 15,
 			"cooldown": 0
 		},
 		{
 			"class": "moab",
 			"layer": "mini",
 			"count": 2,
-			"spread": 360,
+			"spread": 390,
 			"cooldown": 600
 		}
 	],
@@ -765,8 +765,8 @@
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 5,
-			"spread": 20,
+			"count": 10,
+			"spread": 30,
 			"cooldown": 960,
 			"properties": [
 				"shielded"
@@ -794,16 +794,16 @@
 		{
 			"class": "lead",
 			"layer": "lead",
-			"count": 40,
-			"spread": 15,
+			"count": 42,
+			"spread": 18,
 			"cooldown": 0
 		},
 		{
 			"class": "lead",
 			"layer": "block",
 			"count": 3,
-			"spread": 150,
-			"cooldown": 850
+			"spread": 180,
+			"cooldown": 1050
 		}
 	],
 	[
@@ -814,8 +814,8 @@
 		{
 			"class": "splitter",
 			"layer": "amber",
-			"count": 40,
-			"spread": 15,
+			"count": 60,
+			"spread": 18,
 			"cooldown": 0,
 			"properties": [
 				"shielded"
@@ -825,11 +825,18 @@
 			"class": "splitter",
 			"layer": "purple",
 			"count": 20,
-			"spread": 15,
-			"cooldown": 700,
+			"spread": 25,
+			"cooldown": 1250,
 			"properties": [
 				"shielded"
 			]
+		},
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 40,
+			"spread": 20,
+			"cooldown": 1500
 		}
 	],
 	[
@@ -860,23 +867,23 @@
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 100,
-			"spread": 12,
+			"count": 300,
+			"spread": 7,
 			"cooldown": 0
 		},
 		{
 			"class": "moab",
 			"layer": "mini",
-			"count": 4,
-			"spread": 200,
-			"cooldown": 300
+			"count": 6,
+			"spread": 240,
+			"cooldown": 240
 		},
 		{
 			"class": "moab",
 			"layer": "moab",
 			"count": 1,
 			"spread": 0,
-			"cooldown": 1250
+			"cooldown": 1850
 		}
 	],
 	[
@@ -886,17 +893,17 @@
 		},
 		{
 			"class": "bully",
-			"layer": "big bully",
-			"count": 1,
-			"spread": 0,
+			"layer": "nerd",
+			"count": 6,
+			"spread": 300,
 			"cooldown": 0
 		},
 		{
-			"class": "normal",
-			"layer": "rainbow",
-			"count": 40,
-			"spread": 30,
-			"cooldown": 360
+			"class": "bully",
+			"layer": "big bully",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 1800
 		}
 	]
 ]

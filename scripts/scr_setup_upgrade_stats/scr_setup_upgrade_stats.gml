@@ -140,7 +140,7 @@ function scr_setup_upgrade_stats(){
 			},
 			"bandito": {
 				upgrade_script: scr_bandito,
-				fire_rate_multiplier: 1.166,
+				fire_rate_multiplier: 1.333,
 				projectile_replacement: true,
 				tower_sprite: "spr_cactus_bandito",
 				range: 60,

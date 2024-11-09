@@ -8,3 +8,6 @@ upgrade_string = "";
 ord_key = "z"
 
 depth = -999999
+
+clicked = true;
+alarm[0] = 1;

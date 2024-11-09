@@ -13,11 +13,12 @@ event_inherited();
 if leak_frame {
 		
 	alarm[1] = 150 / bloon_stats.speed;
-	bloon_stats.speed = bloon_stats.speed * 1.2;
+	bloon_stats.speed = bloon_stats.speed * 1.15;
 	speed = bloon_stats.speed;
 	path_speed = speed;
+	nerd_spawn = 3;
 	
-	alarm[4] = 450 / bloon_stats.speed;
+	alarm[4] = 750 / bloon_stats.speed;
 	
 }
 

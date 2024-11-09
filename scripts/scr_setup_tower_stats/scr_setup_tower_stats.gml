@@ -148,7 +148,7 @@ function scr_setup_tower_stats(){
 						upgrade_cost: 900
 					},
 					{
-						keyword: "Vent",
+						keyword: "Venteeee",
 						upgrade_cost: 1050
 					},
 					{

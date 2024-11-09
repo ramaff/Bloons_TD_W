@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-function scr_apply_damage_to_bloon(_bloon_stats, _damage, _bloon = noone) {
+function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone) {
 	var _resulting_bloons = []
 	_bloon_stats.health -= _damage
 	
@@ -9,7 +9,7 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _bloon = noone) {
 	
 	if _bloon_stats.health <= 0 {
 		var _cash_flow = 1;
-		if global.round > 20 {
+		if _round > 20 {
 			_cash_flow = _cash_flow * 0.5;
 		}
 		global.money += _cash_flow;
@@ -56,7 +56,7 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _bloon = noone) {
 				_child_stats.properties[array_length(_child_stats.properties)] = "regrow"
 			}
 			
-			_resulting_bloons = array_concat(_resulting_bloons, scr_apply_damage_to_bloon(_child_stats, _remaining_damage))
+			_resulting_bloons = array_concat(_resulting_bloons, scr_apply_damage_to_bloon(_child_stats, _remaining_damage, _round))
 		}
 		/*if instance_exists(_bloon) {
 			instance_destroy(_bloon)	
@@ -115,7 +115,7 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 	
 	instance_create_depth(_xx, _yy, depth - 10, obj_pop)
 	
-	var _resulting_bloons = scr_apply_damage_to_bloon(_bloon.bloon_stats, _damage, _bloon)
+	var _resulting_bloons = scr_apply_damage_to_bloon(_bloon.bloon_stats, _damage, _bloon.bloon_stats.round, _bloon)
 	
 	//show_debug_message(array_length(_resulting_bloons))
 	

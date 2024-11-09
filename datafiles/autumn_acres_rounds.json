@@ -1,6 +1,10 @@
 [
 	[
 		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "normal",
 			"layer": "red",
 			"count": 10,
@@ -16,6 +20,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 0
+		},
 		{
 			"class": "normal",
 			"layer": "red",
@@ -39,6 +47,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_tattered_bloon_icon",
+			"round_icon_index": 0
+		},
 		{
 			"class": "normal",
 			"layer": "red",
@@ -83,6 +95,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_tattered_bloon_icon",
+			"round_icon_index": 1
+		},
+		{
 			"class": "splitter",
 			"layer": "orange",
 			"count": 20,
@@ -101,6 +117,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_deflation_bloon_icon",
+			"round_icon_index": 0
+		},
 		{
 			"class": "deflation",
 			"layer": "red",
@@ -176,6 +196,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_deflation_bloon_icon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "splitter",
 			"layer": "orange",
 			"count": 40,
@@ -194,6 +218,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_deflation_bloon_icon",
+			"round_icon_index": 2
+		},
 		{
 			"class": "deflation",
 			"layer": "blue",
@@ -287,6 +315,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_deflation_bloon_icon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "normal",
 			"layer": "black",
 			"count": 4,
@@ -323,6 +355,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_deflation_bloon_icon",
+			"round_icon_index": 3
+		},
 		{
 			"class": "deflation",
 			"layer": "yellow",
@@ -430,6 +466,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_deflation_bloon_icon",
+			"round_icon_index": 4
+		},
+		{
 			"class": "deflation",
 			"layer": "pink",
 			"count": 10,
@@ -445,6 +485,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_deflation_bloon_icon",
+			"round_icon_index": 3
+		},
 		{
 			"class": "normal",
 			"layer": "zebra",
@@ -546,6 +590,10 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_deflation_bloon_icon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "splitter",
 			"layer": "amber",
 			"count": 80,
@@ -561,6 +609,10 @@
 		}
 	],
 	[
+		{
+			"round_icon_sprite": "spr_deflation_bloon_icon",
+			"round_icon_index": 3
+		},
 		{
 			"class": "normal",
 			"layer": "rainbow",

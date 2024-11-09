@@ -3,8 +3,8 @@
 function scr_create_tower_buttons(){
 	var _tower_prog = global.towers_progress
 	
-	var _heroes = global.heroes_progress.selected
-	if global.mission = "bloon_academia" {
+	var _heroes = variable_clone(global.heroes_progress.selected)
+	if global.mission = "bloon_academia" and !global.heroes_progress.angry_squirrel.unlocked {
 		_heroes[array_length(_heroes)] = "angry_squirrel"	
 	}
 	for(var _i = 0; _i < array_length(_heroes); _i++) {

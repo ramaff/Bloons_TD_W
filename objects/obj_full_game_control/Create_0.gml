@@ -43,7 +43,7 @@ global.towers_progress = {
 global.heroes_progress = {
 	"selected": ["jim"],
 	"jim": {
-		"unlocked": true	
+		"unlocked": true
 	},
 	"angry_squirrel": {
 		"unlocked": false	

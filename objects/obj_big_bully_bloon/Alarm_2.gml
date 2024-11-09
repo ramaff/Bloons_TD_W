@@ -23,3 +23,4 @@
 image_index = 1;
 
 alarm[3] = 60 / bloon_stats.speed;
+nerd_spawn--;

@@ -88,19 +88,20 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		var _target = instance_create_depth(_bloon.x, _bloon.y, depth, obj_bloon_target);
 		with(_target) {
 			path_start(_path, 0, path_action_stop, true);
-			path_position = _bloon.path_position - 0.075
+			path_position = _bloon.path_position * 0.8
 			//speed = _bloon.speed / 5;
-			path_speed = _bloon.path_speed / 5;
+			path_speed = _bloon.path_speed / 10;
 			x = path_get_x(_path, 0)
 			y = path_get_y(_path, 0)
 		}
 		with(_bloon) {
 			target = _target
 			speed = 0;
+			path_position = _bloon.path_position * 0.8
 			bloon_stats.float_height = 10;
-			bloon_stats.vertical_speed = (1 + random(2));
+			bloon_stats.vertical_speed = (1 + random(3));
 			bloon_stats.float_gravity = 0.1;
-			bloon_stats.vertical_direction = 45 + random(90);
+			bloon_stats.vertical_direction = 60 + random(120);
 			path_end()
 			x = _xx;
 			y = _yy;

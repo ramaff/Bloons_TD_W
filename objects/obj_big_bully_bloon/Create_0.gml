@@ -6,3 +6,5 @@
 event_inherited();
 
 alarm[4] = 450 / bloon_stats.speed;
+
+nerd_spawn = 3;

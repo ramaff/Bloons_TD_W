@@ -629,10 +629,40 @@ function scr_setup_bloon_stats(){
 			"nerd": {
 				sprite: "spr_nerd_bloon",
 				layers: 1,
-				damage: 3,
-				health: 500,
+				damage: 5,
+				health: 250,
 				density: 1,
-				speed: 2,
+				speed: 1.5,
+				children: [
+					{
+						"class": "normal",
+						"layer": "rainbow",
+						"properties": [
+							 "float to track"
+						]
+					},
+					{
+						"class": "normal",
+						"layer": "rainbow",
+						"properties": [
+							 "float to track"
+						]
+					},
+					{
+						"class": "normal",
+						"layer": "rainbow",
+						"properties": [
+							 "float to track"
+						]
+					},
+					{
+						"class": "normal",
+						"layer": "rainbow",
+						"properties": [
+							 "float to track"
+						]
+					}
+				]
 			},
 			"red bully": {
 				sprite: "spr_red_bully",
@@ -673,7 +703,7 @@ function scr_setup_bloon_stats(){
 				health: 5000,
 				damage: 10,
 				density: 1,
-				speed: 1.25,
+				speed: 1.35,
 			}
 		},
 		"peek-a-bloon": {

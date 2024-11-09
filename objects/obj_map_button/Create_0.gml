@@ -13,7 +13,7 @@ tracks_info = {
 		"paths": [pth_bloon_academia],
 		"round_data": "bloon_academia_rounds.json",
 		"name": "bloon academia",
-		"requirement": "training_room"
+		"requirement": "training_room",
 	},
 	"rm_autumn_acres": {
 		"paths": [pth_autumn_acres],
