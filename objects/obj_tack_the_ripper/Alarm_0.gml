@@ -6,7 +6,8 @@ var _xx = x;
 var _yy = y;
 
 with(obj_projectile) {
-	if distance_to_point(_xx, _yy) < 160 {
+	var _dist = distance_to_point(_xx, _yy)
+	if _dist < 160 and _dist > 70 {
 		var _ang = point_direction(x, y, _xx, _yy);
 		if abs(angle_difference(direction, _ang)) < 45 {
 			var _proj = instance_copy(false)

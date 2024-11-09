@@ -853,7 +853,7 @@ function scr_setup_bloon_stats(){
 				damage: 40,
 				health: 1500,
 				density: 1,
-				speed: 1.7,
+				speed: 1.9,
 			}
 		},
 		"frankensteins_bloon": {
