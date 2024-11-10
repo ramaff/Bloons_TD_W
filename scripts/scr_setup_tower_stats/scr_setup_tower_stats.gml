@@ -85,7 +85,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "split dart monkey",
-						upgrade_cost: 3750
+						upgrade_cost: 3300
+					},
+					{
+						keyword: "darterer",
+						upgrade_cost: 5100
 					}
 				]
 			]
@@ -360,7 +364,7 @@ function scr_setup_tower_stats(){
 			butt_sprite: "spr_pogo_stick_monkey_tower_butt",
 			tower_base: true,
 			tower_base_sprite: "spr_pogo_pad",
-			total_cost: 475,
+			total_cost: 450,
 			upgrade_cost: 0,
 			range: 160,
 			delay: 60,
@@ -381,11 +385,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Heavy Hops",
-						upgrade_cost: 350
+						upgrade_cost: 300
 					},
 					{
 						keyword: "Quick Hops",
-						upgrade_cost: 250
+						upgrade_cost: 300
 					}
 				]
 			],
@@ -403,11 +407,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Jackhammer",
-						upgrade_cost: 1600
+						upgrade_cost: 1550
 					},
 					{
 						keyword: "Drill",
-						upgrade_cost: 4500
+						upgrade_cost: 4350
 					}
 				]
 			]

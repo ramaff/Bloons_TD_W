@@ -44,7 +44,14 @@ function scr_setup_upgrade_stats(){
 					}
 				],
 				upgrade_string: "Darts split into 4 more darts. Jim gets more HP and range."
-			}
+			},
+			"darterer": {
+				range: 15,
+				shot_count: 4,
+				health: 50,
+				max_health: 50,
+				upgrade_string: "shoots so many more darts."
+			},
 		},
 		"sling_shot_monkey": {
 			"stone skipping": {
@@ -65,7 +72,7 @@ function scr_setup_upgrade_stats(){
 			},
 			"Goliath Shot": {
 				fire_rate_multiplier: 2,
-				upgrade_string: "Highly charged shot apply a puncture effect to big bloons. Increases the speed and max potency of the prepared shot."
+				upgrade_string: "When charged enough, the sling applies a devastating effect to big bloons."
 			}
 		},
 		"angry_squirrel": {

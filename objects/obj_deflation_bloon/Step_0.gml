@@ -24,10 +24,10 @@ if point_distance(x, y, target.x, target.y) > 20 {
 } else {
 }
 */
+// Inherit the parent event
+event_inherited();
 
-if path_position >= 1 {
-
-	global.lives -= bloon_stats.rbe
+if leak_frame {
 	
 	with (target) {
 		path_position = 0;

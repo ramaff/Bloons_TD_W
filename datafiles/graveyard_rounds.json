@@ -610,6 +610,13 @@
 			"count": 1,
 			"spread": 0,
 			"cooldown": 0
+		},
+		{
+			"class": "zombie",
+			"layer": "zebra",
+			"count": 20,
+			"spread": 30,
+			"cooldown": 0
 		}
 	],
 	[
@@ -705,7 +712,7 @@
 			"class": "normal",
 			"layer": "rainbow",
 			"count": 20,
-			"spread": 50,
+			"spread": 40,
 			"cooldown": 0,
 			"properties": [
 				"regrow"
@@ -716,27 +723,21 @@
 			"layer": "ceramic",
 			"count": 4,
 			"spread": 90,
-			"cooldown": 1080
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_nurse_bloon_icon",
-			"round_icon_index": 4
+			"cooldown": 980
 		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 33,
-			"spread": 30,
-			"cooldown": 0
+			"count": 40,
+			"spread": 20,
+			"cooldown": 1440
 		},
 		{
 			"class": "nurse",
 			"layer": "pink",
 			"count": 10,
-			"spread": 90,
-			"cooldown": 60
+			"spread": 75,
+			"cooldown": 1440
 		}
 	],
 	[
@@ -754,16 +755,29 @@
 		{
 			"class": "moab",
 			"layer": "mini",
-			"count": 4,
-			"spread": 300,
+			"count": 6,
+			"spread": 210,
 			"cooldown": 150
 		},
 		{
 			"class": "nurse",
 			"layer": "pink",
-			"count": 10,
-			"spread": 150,
+			"count": 15,
+			"spread": 100,
 			"cooldown": 60
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_nurse_bloon_icon",
+			"round_icon_index": 4
+		},
+		{
+			"class": "zombie",
+			"layer": "rainbow",
+			"count": 40,
+			"spread": 40,
+			"cooldown": 0
 		}
 	]
 ]

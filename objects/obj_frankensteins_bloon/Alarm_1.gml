@@ -3,7 +3,7 @@
 
 
 if alarm[2] > 0 {
-	alarm[1] = 10;	
+	alarm[1] = 20;
 }
 
 image_index = 1;
@@ -16,10 +16,10 @@ var _projectile_stats = {
 //show_debug_message(bloon_stats.health)
 
 with instance_create_depth(x, y, -100, obj_text) {
-	text = "+" + string(other.bloon_stats.max_health / 15) + "hp";
+	text = "+" + string(other.bloon_stats.max_health / 30) + "hp";
 }
 
-bloon_stats.health += bloon_stats.max_health / 15;
+bloon_stats.health += bloon_stats.max_health / 30;
 
 bloon_stats.health = min(bloon_stats.health, bloon_stats.max_health)
 
@@ -36,7 +36,7 @@ with (obj_bloon) {
 		target = _frank_id
 		sprite_index = spr_bloon_tear
 		image_index = _index
-		speed = 3 + random(3);
+		speed = 4 + random(6);
 		if _class = "splitter" {
 			sprite_index = spr_splitter_bloon_tear;	
 		}
