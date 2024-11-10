@@ -332,6 +332,7 @@ function scr_setup_upgrade_stats(){
 				fire_rate_multiplier: 1.33,
 				tower_attack_script: scr_pineapple_juggling,
 				projectile_replacement: true,
+				tower_sprite: "spr_pineapple_express_monkey",
 				no_target: true,
 				projectile_stats: [
 					{

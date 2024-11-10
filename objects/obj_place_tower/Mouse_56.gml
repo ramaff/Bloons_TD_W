@@ -5,6 +5,13 @@ if wait {
 	exit;	
 }
 
+if mouse_x > 800 {
+	exit;	
+}
+if mouse_y < 60 || mouse_y > 540 {
+	exit;	
+}
+
 x = floor(mouse_x / 16) * 16;
 y = (floor((mouse_y - 60) / 16) * 16) + 60;
 

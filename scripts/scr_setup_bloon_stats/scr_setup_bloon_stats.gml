@@ -520,6 +520,7 @@ function scr_setup_bloon_stats(){
 			"object": "obj_ceramic_class",
 			"ceramic": {
 				sprite: "spr_ceramic_bloon",
+				"tattered_sprite": "spr_ceramic_tattered",
 				layers: 18,
 				index: 0,
 				rbe: 104,

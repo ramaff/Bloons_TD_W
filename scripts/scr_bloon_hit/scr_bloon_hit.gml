@@ -30,7 +30,11 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 			
 			_child_stats.layer = _layer
 			_child_stats.class = _child_class
-			_child_stats.properties = variable_struct_get(_children[_i], "properties")
+			_child_stats.properties = []
+			if variable_struct_exists(_children[_i], "properties") {
+				_child_stats.properties = variable_struct_get(_children[_i], "properties")
+			}
+			_child_stats.properties = array_concat(_child_stats.properties, _bloon_stats.properties)
 			
 			if !variable_struct_exists(_bloon_stats, "parents") {
 				_child_stats.parents = [
@@ -48,13 +52,25 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 			}
 			
 			//show_debug_message("child stats:" + string(_child_stats))
+			if variable_struct_exists(_bloon_stats, "tattered") {
+				var _index = array_get_index(_child_stats.properties, "tattered")
+				if _index != -1 {
+					array_delete(_child_stats.properties, _index, 1)
+				}
+			}
+			if variable_struct_exists(_bloon_stats, "metallic") {
+				var _index = array_get_index(_child_stats.properties, "metallic")
+				if _index != -1 {
+					array_delete(_child_stats.properties, _index, 1)
+				}
+			}
 			
-			if variable_struct_exists(_bloon_stats, "float to track") {
+			/*if variable_struct_exists(_bloon_stats, "float to track") {
 				_child_stats.properties[array_length(_child_stats.properties)] = "float to track"
 			}
 			if variable_struct_exists(_bloon_stats, "regrow") {
 				_child_stats.properties[array_length(_child_stats.properties)] = "regrow"
-			}
+			} */
 			
 			_resulting_bloons = array_concat(_resulting_bloons, scr_apply_damage_to_bloon(_child_stats, _remaining_damage, _round))
 		}

@@ -1,7 +1,7 @@
-/// @description Insert description here
+ /// @description Insert description here
 // You can write your code in this editor
 
-alarm[1] = 60 + (300 / bloon_stats.speed);
+alarm[1] = 60 + (480 / bloon_stats.speed);
 
 if instance_number(obj_bloon) <= instance_number(obj_tack_the_ripper) {
 	exit;	
