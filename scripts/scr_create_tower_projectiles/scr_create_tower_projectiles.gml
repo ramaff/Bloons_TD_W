@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _target = noone, _angle_offset = 0, _current_boosts = {}){
+function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _target = noone, _angle_offset = 0, _current_boosts = {}, _tower_id = id) {
 	
 
 	var _proj_count = array_length(_projectile_stats)
@@ -29,6 +29,7 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 		
 			with instance_create_depth(x,y,depth, _projectile) {
 				projectile_stats = variable_clone(_projectile_stats[_i])
+				projectile_stats.tower_id = _tower_id
 				
 				if variable_struct_exists(_current_boosts, "damage_boost") {
 					projectile_stats.damage += _current_boosts.damage_boost

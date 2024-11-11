@@ -5,7 +5,8 @@
 if instance_exists(target) {
 	var _projectile_stats = {
 		damage: puncture_damage,
-		pierce: 999999999
+		pierce: 999999999,
+		tower_id: og_proj_tower_id
 	}
 	var _layers = ["red", "blue", "green", "yellow", "pink"]
 	var _layer = _layers[puncture_damage - 1]

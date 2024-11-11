@@ -61,7 +61,7 @@ if tower_stats.attack_cooldown <= 0 {
 		script_execute(tower_stats.tower_attack_script)
 	}
 	
-	var _target = scr_get_bloon_target(tower_stats, x, y, _range_boost)
+	var _target = scr_get_bloon_target(tower_stats, x, y, targeting, _range_boost)
 	
 	if !instance_exists(_target) {
 		exit;
@@ -80,7 +80,7 @@ if tower_stats.attack_cooldown <= 0 {
 	
 	
 	tower_stats.attack_cooldown += tower_stats.delay	
-	scr_create_tower_projectiles(tower_stats.projectile_stats, x, y, _target, _angle_offset, _current_boosts)
+	scr_create_tower_projectiles(tower_stats.projectile_stats, x, y, _target, _angle_offset, _current_boosts, id)
 	
 	if variable_struct_exists(tower_stats, "stat_boosts") {
 		var _boosts = variable_struct_get_names(tower_stats.stat_boosts);

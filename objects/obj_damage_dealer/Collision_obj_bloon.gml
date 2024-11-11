@@ -22,7 +22,7 @@ var _bloon_par_id = other.parent_id
 if !variable_struct_exists(other.bloon_stats.projectile_hits, id) {
 	variable_struct_set(other.bloon_stats.projectile_hits, id, id)
 	//show_debug_message("damage dealer, other projectile hits: " + string(other.bloon_stats.projectile_hits))
-	scr_bloon_hit(other, other.bloon_stats.class);
+	scr_bloon_hit(other, other.bloon_stats.class, projectile_stats);
 	
 	if projectile_stats.pierce <= 0 {
 		instance_destroy();

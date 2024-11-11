@@ -11,3 +11,5 @@ depth = -999999
 
 clicked = true;
 alarm[0] = 1;
+
+info_pan_id = noone;

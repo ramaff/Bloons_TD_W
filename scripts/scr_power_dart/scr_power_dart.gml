@@ -25,6 +25,7 @@ function scr_power_dart(){
 	with instance_create_depth(x, y, -100, obj_pointer_into_projectiles) {
 		alarm[0] = 180;
 		projectile_stats = _ability_stats
+		tower_id = other.id;
 	}
 	
 	//scr_create_tower_projectiles(_ability_stats, x, y, noone, 0)

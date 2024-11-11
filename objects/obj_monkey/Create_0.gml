@@ -37,5 +37,7 @@ tower_stats = {
 
 all_bases = false
 stun = 0;
+targeting = "first";
+pop_count = 0;
 
 alarm[0] = 60;

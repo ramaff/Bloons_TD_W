@@ -1,11 +1,17 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone) {
+function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone, _tower = noone) {
 	var _resulting_bloons = []
 	_bloon_stats.health -= _damage
 	
 	//show_debug_message("bloon stats:" + string(_bloon_stats))
+	
+	if _bloon_stats.health > 0 {
+		if instance_exists(_tower) {
+			_tower.pop_count += _damage
+		}	
+	}
 	
 	if _bloon_stats.health <= 0 {
 		var _cash_flow = 1;
@@ -13,6 +19,9 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 			_cash_flow = _cash_flow * 0.5;
 		}
 		global.money += _cash_flow;
+		if instance_exists(_tower) {
+			_tower.pop_count++;
+		}
 		
 		var _children = []
 		if variable_struct_exists(_bloon_stats, "children") {
@@ -65,6 +74,13 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 				}
 			}
 			
+			if variable_struct_exists(_bloon_stats, "shielded") {
+				var _index = array_get_index(_child_stats.properties, "shielded")
+				if _index != -1 {
+					array_delete(_child_stats.properties, _index, 1)
+				}
+			}
+			
 			/*if variable_struct_exists(_bloon_stats, "float to track") {
 				_child_stats.properties[array_length(_child_stats.properties)] = "float to track"
 			}
@@ -72,7 +88,7 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 				_child_stats.properties[array_length(_child_stats.properties)] = "regrow"
 			} */
 			
-			_resulting_bloons = array_concat(_resulting_bloons, scr_apply_damage_to_bloon(_child_stats, _remaining_damage, _round))
+			_resulting_bloons = array_concat(_resulting_bloons, scr_apply_damage_to_bloon(_child_stats, _remaining_damage, _round, noone, _tower))
 		}
 		/*if instance_exists(_bloon) {
 			instance_destroy(_bloon)	
@@ -131,7 +147,12 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 	
 	instance_create_depth(_xx, _yy, depth - 10, obj_pop)
 	
-	var _resulting_bloons = scr_apply_damage_to_bloon(_bloon.bloon_stats, _damage, _bloon.bloon_stats.round, _bloon)
+	var _tower = noone;
+	if variable_struct_exists(_projectile_stats, "tower_id") {
+		_tower = _projectile_stats.tower_id
+	}
+	
+	var _resulting_bloons = scr_apply_damage_to_bloon(_bloon.bloon_stats, _damage, _bloon.bloon_stats.round, _bloon, _tower)
 	
 	//show_debug_message(array_length(_resulting_bloons))
 	
@@ -200,6 +221,7 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 				target = _bloon.id;
 				puncture = _projectile_stats.puncture
 				image_angle = random(360);
+				og_proj_tower_id = _tower;
 			}
 		}
 	}

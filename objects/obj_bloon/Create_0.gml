@@ -13,7 +13,8 @@ bloon_stats = {
 			"class": "normal",
 			"layer": "blue"
 		}
-	]
+	],
+	properties: []
 }
 
 image_index = bloon_stats.layers - 1;

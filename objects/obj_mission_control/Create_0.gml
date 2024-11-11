@@ -3,7 +3,7 @@
 
 scr_setup_global_vars()
 
-global.money = 65000
+global.money = 650
 global.lives = 200
 
 global.round = 0;
@@ -16,6 +16,8 @@ bloon_send_number = 0;
 depth = -99999;
 
 instance_create_depth(x, y, depth, obj_tower_control)
+
+alarm[0] = 1;
 
 /*with instance_create_depth(800, 444, depth, obj_go_button) {
 	image_yscale = 0.75	

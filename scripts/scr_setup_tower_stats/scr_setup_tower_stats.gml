@@ -89,7 +89,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "darterer",
-						upgrade_cost: 5100
+						upgrade_cost: 4800
 					}
 				]
 			]

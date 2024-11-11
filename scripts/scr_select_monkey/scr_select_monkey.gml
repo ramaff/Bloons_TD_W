@@ -27,8 +27,8 @@ function scr_select_monkey(){
 			continue
 		}
 		var _upgrade_stats = variable_struct_get(_tower_upgrades, _upgrade_info.keyword);
-		var _y_offset = 144 * _j
-		with instance_create_depth(800, 104 + _y_offset, depth, obj_upgrade_butt) {
+		var _y_offset = 96 * _j
+		with instance_create_depth(800, 152 + _y_offset, depth, obj_upgrade_butt) {
 		
 			selected_monkey = other.id;
 			
@@ -56,6 +56,20 @@ function scr_select_monkey(){
 			
 			scr_select_monkey()
 		}
+	}
+	
+	with instance_create_depth(800, 440, depth, obj_sell_butt) {
+		
+		selected_monkey = other.id;
+		
+		sell_price = round(other.tower_stats.total_cost / 5) * 4;
+		
+	}
+	
+	with instance_create_depth(800, 64, depth, obj_targetting_butt) {
+		
+		selected_monkey = other.id;
+		
 	}
 	
 	if instance_number(obj_upgrade_butt) <= 0 {

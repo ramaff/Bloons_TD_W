@@ -33,6 +33,10 @@ if variable_struct_exists(bloon_stats, "float to track") {
 	if bloon_stats.float_height < 1 and bloon_stats.vertical_speed <= 0 {
 		//bloon_stats.vertical_speed = bloon_stats.vertical_speed * (-1)
 		variable_struct_remove(bloon_stats, "float to track")
+		var _index = array_get_index(bloon_stats.properties, "float to track") 
+		if _index != -1{
+			array_delete(bloon_stats.properties, _index, 1)
+		}
 		
 		path_start(bloon_stats.path, bloon_stats.speed, path_action_stop, true)
 		path_position = target.path_position

@@ -16,7 +16,7 @@ hop_height += hop_speed
 	
 hop_speed -= hop_gravity
 
-var _target = scr_get_bloon_target(tower_stats, tower_base.x, tower_base.y)
+var _target = scr_get_bloon_target(tower_stats, tower_base.x, tower_base.y, targeting)
 	
 if !instance_exists(_target) {
 	_target = tower_base
@@ -25,7 +25,7 @@ if !instance_exists(_target) {
 if hop_height <= 0 {
 	hop_height = 0;
 	hop_speed = max_hop_speed
-	scr_create_tower_projectiles(tower_stats.projectile_stats, x, y, _target)
+	scr_create_tower_projectiles(tower_stats.projectile_stats, x, y, _target, 0, {}, id)
 }
 
 direction = point_direction(x, y, _target.x, _target.y - hop_height);

@@ -621,7 +621,7 @@ function scr_setup_bloon_stats(){
 			"object": "obj_bully",
 			"bully": {
 				sprite: "spr_bully_bloon",
-				layers: 1,
+				layers: 500,
 				damage: 5,
 				health: 500,
 				density: 1,
@@ -629,7 +629,7 @@ function scr_setup_bloon_stats(){
 			},
 			"nerd": {
 				sprite: "spr_nerd_bloon",
-				layers: 1,
+				layers: 250,
 				damage: 5,
 				health: 250,
 				density: 1,
@@ -861,9 +861,9 @@ function scr_setup_bloon_stats(){
 			"object": "obj_frankensteins_bloon",
 			"green": {
 				sprite: "spr_frankensteins_bloon",
-				layers: 2400,
+				layers: 2700,
 				damage: 50,
-				health: 2400,
+				health: 2700,
 				density: 1,
 				speed: 0.8,
 			}

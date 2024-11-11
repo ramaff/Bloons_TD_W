@@ -11,5 +11,6 @@ puncture_damage = 3;
 
 target = noone;
 
+og_proj_tower_id = noone;
 
 

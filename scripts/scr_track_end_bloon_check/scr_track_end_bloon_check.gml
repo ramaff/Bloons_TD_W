@@ -35,6 +35,13 @@ function scr_track_end_bloon_check(_bloon_stats = bloon_stats){
 			}
 			_hero_number--;
 			if tower_stats.health <= 0 {
+				with (obj_tower_tile) {
+					if instance_exists(tower_id) {
+						if tower_id = other.id {
+							instance_destroy()
+						}
+					}
+				}
 				instance_destroy();	
 			}
 		}

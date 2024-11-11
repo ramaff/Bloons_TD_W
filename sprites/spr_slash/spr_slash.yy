@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Bloons_TD_W",
-    "path": "Bloons_TD_W.yyp",
+    "name": "bloon objects",
+    "path": "folders/Sprites/bloons/bloon objects.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
