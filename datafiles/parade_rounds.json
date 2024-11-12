@@ -1,0 +1,102 @@
+[
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 15,
+			"spread": 45,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 15,
+			"spread": 45,
+			"cooldown": 5
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal",
+			"layer": "blue",
+			"count": 15,
+			"spread": 45,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 15,
+			"spread": 45,
+			"cooldown": 5
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal",
+			"layer": "blue",
+			"count": 15,
+			"spread": 45,
+			"cooldown": 0
+		},
+		{
+			"class": "splitter",
+			"layer": "orange",
+			"count": 15,
+			"spread": 45,
+			"cooldown": 5
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "normal",
+			"layer": "green",
+			"count": 15,
+			"spread": 45,
+			"cooldown": 0
+		},
+		{
+			"class": "splitter",
+			"layer": "orange",
+			"count": 15,
+			"spread": 45,
+			"cooldown": 5
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_stuffed_bloon_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 75,
+			"spread": 15,
+			"cooldown": 5
+		},
+		{
+			"class": "stuffed",
+			"layer": "red",
+			"count": 5,
+			"spread": 150,
+			"cooldown": 120
+		}
+	]
+]

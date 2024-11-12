@@ -318,6 +318,41 @@ function scr_setup_bloon_stats(){
 				]
 			}
 		},
+		"stuffed": {
+			"object": "obj_bloon",
+			"sprite": "spr_stuffed_bloon",
+			"red": {
+				layers: 3,
+				index: 0,
+				rbe: 14,
+				health: 1,
+				density: 1,
+				speed: 1.1,
+				children: [
+					{
+						"class": "splitter", "layer": "orange", "properties": ["float to track"]
+					},
+					{
+						"class": "splitter", "layer": "orange", "properties": ["float to track"]
+					},
+					{
+						"class": "normal", "layer": "red", "properties": ["float to track"]
+					},
+					{
+						"class": "normal", "layer": "red", "properties": ["float to track"]
+					},
+					{
+						"class": "normal", "layer": "red", "properties": ["float to track"]
+					},
+					{
+						"class": "normal", "layer": "red", "properties": ["float to track"]
+					},
+					{
+						"class": "normal ", "layer": "red", "properties": ["float to track"]
+					}
+				]
+			}
+		},
 		"deflation": {
 			"object": "obj_deflation_bloon",
 			"sprite": "spr_big_deflation_bloon",

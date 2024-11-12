@@ -3,7 +3,7 @@
 
 scr_setup_global_vars()
 
-global.money = 650
+global.money = 65000
 global.lives = 200
 
 global.round = 0;

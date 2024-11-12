@@ -35,6 +35,7 @@ for(var _i = 0; _i < array_length(_round); _i++) {
 			_round_number = struct_get(_round[_i], "round")
 		}
 		var _path = global.paths[bloon_send_number mod array_length(global.paths)];
+		show_debug_message(path_get_name(_path))
 		with instance_create_depth(path_get_x(_path, 0), path_get_y(_path, 0), depth, _bloon_object) {
 			scr_bloon_stat_setup(id, _round[_i].class, struct_get(_round[_i], "layer"), _path, _properties, _round_number);
 		}
