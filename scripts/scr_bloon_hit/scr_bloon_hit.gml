@@ -164,6 +164,10 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			}
 		}	
 	}
+	
+	if _class = "stuffed" {
+		_pos = _pos * 1.2;
+	}
 
 	for(var _i = 0; _i < array_length(_resulting_bloons); _i++) {
 		var _layer = variable_struct_get(_resulting_bloons[_i], "layer")

@@ -1,6 +1,26 @@
 [
 	[
 		{
+			"round_icon_sprite": "spr_stuffed_bloon_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "splitter",
+			"layer": "orange",
+			"count": 60,
+			"spread": 30,
+			"cooldown": 5
+		},
+		{
+			"class": "hot_air",
+			"layer": "red",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 240
+		}
+	],
+	[
+		{
 			"round_icon_sprite": "spr_bloon",
 			"round_icon_index": 0
 		},
@@ -94,8 +114,8 @@
 		{
 			"class": "stuffed",
 			"layer": "red",
-			"count": 5,
-			"spread": 150,
+			"count": 10,
+			"spread": 90,
 			"cooldown": 120
 		}
 	]

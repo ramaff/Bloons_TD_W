@@ -348,7 +348,7 @@ function scr_setup_bloon_stats(){
 						"class": "normal", "layer": "red", "properties": ["float to track"]
 					},
 					{
-						"class": "normal ", "layer": "red", "properties": ["float to track"]
+						"class": "normal", "layer": "red", "properties": ["float to track"]
 					}
 				]
 			}
@@ -1043,6 +1043,18 @@ function scr_setup_bloon_stats(){
 						"layer": "zebra"
 					}
 				]
+			}
+		},
+		"hot_air": {
+			"object": "obj_hot_air_bloon",
+			sprite: "spr_hot_air_bloon",
+			"red": {
+				index: 0,
+				layers: 100,
+				damage: 0,
+				health: 100,
+				density: 1,
+				speed: 1,
 			}
 		}
 	}

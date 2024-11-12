@@ -167,6 +167,7 @@
     {"name":"spr_bloon_slicing_ripper","order":2,"path":"sprites/spr_bloon_slicing_ripper/spr_bloon_slicing_ripper.yy",},
     {"name":"spr_hero_hp","order":16,"path":"sprites/spr_hero_hp/spr_hero_hp.yy",},
     {"name":"spr_placeable_tile","order":10,"path":"sprites/spr_placeable_tile/spr_placeable_tile.yy",},
+    {"name":"spr_hot_air_bloon_bottom","order":6,"path":"sprites/spr_hot_air_bloon_bottom/spr_hot_air_bloon_bottom.yy",},
     {"name":"spr_bloon_tattered","order":1,"path":"sprites/spr_bloon_tattered/spr_bloon_tattered.yy",},
     {"name":"obj_lose_indication","order":8,"path":"objects/obj_lose_indication/obj_lose_indication.yy",},
     {"name":"obj_hero","order":3,"path":"objects/obj_hero/obj_hero.yy",},
@@ -277,6 +278,7 @@
     {"name":"spr_parade_track","order":16,"path":"sprites/spr_parade_track/spr_parade_track.yy",},
     {"name":"scr_load_game","order":3,"path":"scripts/scr_load_game/scr_load_game.yy",},
     {"name":"spr_going_butt","order":13,"path":"sprites/spr_going_butt/spr_going_butt.yy",},
+    {"name":"obj_hot_air_bloon","order":4,"path":"objects/obj_hot_air_bloon/obj_hot_air_bloon.yy",},
     {"name":"spr_go_butt","order":11,"path":"sprites/spr_go_butt/spr_go_butt.yy",},
     {"name":"obj_training_tent_button","order":1,"path":"objects/obj_training_tent_button/obj_training_tent_button.yy",},
     {"name":"scr_upgrade_monkey","order":7,"path":"scripts/scr_upgrade_monkey/scr_upgrade_monkey.yy",},
@@ -286,6 +288,7 @@
     {"name":"spr_mission_info_panel_xl","order":13,"path":"sprites/spr_mission_info_panel_xl/spr_mission_info_panel_xl.yy",},
     {"name":"spr_green_bully","order":6,"path":"sprites/spr_green_bully/spr_green_bully.yy",},
     {"name":"scr_wave","order":3,"path":"scripts/scr_wave/scr_wave.yy",},
+    {"name":"spr_hot_air_bloon","order":5,"path":"sprites/spr_hot_air_bloon/spr_hot_air_bloon.yy",},
     {"name":"spr_regrow_bloon","order":3,"path":"sprites/spr_regrow_bloon/spr_regrow_bloon.yy",},
   ],
 }
