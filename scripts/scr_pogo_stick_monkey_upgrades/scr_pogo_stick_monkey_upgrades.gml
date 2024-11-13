@@ -15,6 +15,5 @@ function scr_jackhammer(){
 }
 
 function scr_drill(){
-	hop_gravity = hop_gravity * 4.5;
-	max_hop_speed = max_hop_speed * 1.5;
+	hop_gravity = hop_gravity * 3;
 }

@@ -71,8 +71,8 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "The range and damage of the sling shot increases over time the longer a shot is prepared."
 			},
 			"Goliath Shot": {
-				fire_rate_multiplier: 2,
-				upgrade_string: "When charged enough, the sling applies a devastating effect to big bloons."
+				fire_rate_multiplier: 2.166,
+				upgrade_string: "When charged enough, the sling applies a devastating effect to big bloons. Much faster charging."
 			}
 		},
 		"angry_squirrel": {
@@ -279,7 +279,8 @@ function scr_setup_upgrade_stats(){
 						pierce: 20,
 						damage: 1,
 						speed: 0,
-						lifespan: 20
+						lifespan: 20,
+						lead_hit: true
 					}
 				],
 			}
@@ -314,8 +315,8 @@ function scr_setup_upgrade_stats(){
 								speed: 0,
 								direction: 0,
 								damage: 1,
-								pierce: 40,
-								size: 1.4,
+								pierce: 60,
+								size: 1.8,
 								particles: 5
 							}
 						]
@@ -363,7 +364,7 @@ function scr_setup_upgrade_stats(){
 								direction: 0,
 								damage: 1,
 								pierce: 60,
-								size: 1.4,
+								size: 1.8,
 								particles: 5
 							}
 						]
@@ -403,8 +404,8 @@ function scr_setup_upgrade_stats(){
 								direction: 0,
 								damage: 1,
 								pierce: 80,
-								size: 1.7,
-								particles: 8
+								size: 2,
+								particles: 7
 							},
 							{
 								projectile_count: 3,
@@ -433,8 +434,8 @@ function scr_setup_upgrade_stats(){
 										speed: 0,
 										direction: 0,
 										damage: 1,
-										pierce: 30,
-										size: 1.1,
+										pierce: 40,
+										size: 1.4,
 										particles: 3
 									}
 								]

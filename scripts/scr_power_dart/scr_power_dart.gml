@@ -7,7 +7,7 @@ function scr_power_dart(){
 	
 	for(var _i = 0; _i < _proj_count; _i++) {
 		_ability_stats[_i].damage = _ability_stats[_i].damage * 3;	
-		_ability_stats[_i].pierce = _ability_stats[_i].pierce * 50;
+		_ability_stats[_i].pierce = _ability_stats[_i].pierce * 15;
 		_ability_stats[_i].sprite = "spr_big_dart"
 		_ability_stats[_i].lifespan = _ability_stats[_i].lifespan * 2;
 		if variable_struct_exists(_ability_stats[_i], "projectile_burst") {

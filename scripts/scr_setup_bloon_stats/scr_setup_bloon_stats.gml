@@ -1047,14 +1047,46 @@ function scr_setup_bloon_stats(){
 		},
 		"hot_air": {
 			"object": "obj_hot_air_bloon",
-			sprite: "spr_hot_air_bloon",
 			"red": {
+				"sprite": "spr_hot_air_bloon",
 				index: 0,
 				layers: 100,
 				damage: 0,
 				health: 100,
 				density: 1,
 				speed: 1,
+			},
+			"blue": {
+				"sprite": "spr_hot_air_bloon_blue",
+				index: 0,
+				layers: 200,
+				damage: 0,
+				health: 200,
+				density: 1,
+				speed: 1,
+			}
+		},
+		"pinata": {
+			"object": "obj_pinata",
+			"pinata": {
+				"sprite": "spr_pinata",
+				index: 0,
+				rbe: 1200,
+				layers: 300,
+				health: 300,
+				density: 1,
+				speed: 3.3,
+			}
+		},
+		"the_party_tank": {
+			"object": "obj_the_party_tank",
+			"the_party_tank": {
+				sprite: "spr_the_party_tank",
+				layers: 8500,
+				damage: 500,
+				health: 8500,
+				density: 1,
+				speed: 0.095,
 			}
 		}
 	}

@@ -37,11 +37,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "stronger",
-						upgrade_cost: 150
+						upgrade_cost: 125
 					}, 
 					{
 						keyword: "stronger",
-						upgrade_cost: 200
+						upgrade_cost: 150
 					}, 
 					{
 						keyword: "stronger",
@@ -55,11 +55,11 @@ function scr_setup_tower_stats(){
 					}, 
 					{
 						keyword: "faster",
-						upgrade_cost: 300
+						upgrade_cost: 225
 					}, 
 					{
 						keyword: "faster",
-						upgrade_cost: 450
+						upgrade_cost: 300
 					}
 				],
 				[
@@ -69,11 +69,11 @@ function scr_setup_tower_stats(){
 					}, 
 					{
 						keyword: "darter",
-						upgrade_cost: 500
+						upgrade_cost: 425
 					}, 
 					{
 						keyword: "darter",
-						upgrade_cost: 750
+						upgrade_cost: 600
 					}
 				]
 			],
@@ -85,11 +85,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "split dart monkey",
-						upgrade_cost: 3300
+						upgrade_cost: 2700
 					},
 					{
 						keyword: "darterer",
-						upgrade_cost: 4800
+						upgrade_cost: 3900
 					}
 				]
 			]
@@ -385,7 +385,7 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Heavy Hops",
-						upgrade_cost: 300
+						upgrade_cost: 250
 					},
 					{
 						keyword: "Quick Hops",
@@ -407,11 +407,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Jackhammer",
-						upgrade_cost: 1550
+						upgrade_cost: 1350
 					},
 					{
 						keyword: "Drill",
-						upgrade_cost: 4350
+						upgrade_cost: 3750
 					}
 				]
 			]
@@ -453,7 +453,7 @@ function scr_setup_tower_stats(){
 							direction: 0,
 							damage: 1,
 							pierce: 40,
-							size: 1.1,
+							size: 1.4,
 							particles: 3
 						}
 					]

@@ -12,11 +12,11 @@
 			"cooldown": 5
 		},
 		{
-			"class": "hot_air",
-			"layer": "red",
+			"class": "the_party_tank",
+			"layer": "the_party_tank",
 			"count": 1,
 			"spread": 0,
-			"cooldown": 240
+			"cooldown": 60
 		}
 	],
 	[
