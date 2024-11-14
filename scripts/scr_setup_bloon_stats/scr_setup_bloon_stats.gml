@@ -503,12 +503,12 @@ function scr_setup_bloon_stats(){
 			"object": "obj_nurse_bloon",
 			"sprite": "spr_nurse_bloon",
 			"red": {
-				layers: 8,
+				layers: 12,
 				index: 0,
-				rbe: 10,
-				health: 6,
+				rbe: 13,
+				health: 9,
 				density: 1,
-				speed: 0.9,
+				speed: 1.2,
 				children: [
 					{
 						"class": "splitter",
@@ -520,12 +520,12 @@ function scr_setup_bloon_stats(){
 				]
 			},
 			"blue": {
-				layers: 15,
+				layers: 21,
 				index: 1,
-				rbe: 19,
-				health: 12,
+				rbe: 25,
+				health: 18,
 				density: 1,
-				speed: 1.2,
+				speed: 1.5,
 				children: [
 					{
 						"class": "splitter",
@@ -537,12 +537,12 @@ function scr_setup_bloon_stats(){
 				]
 			},
 			"green": {
-				layers: 22,
+				layers: 31,
 				index: 2,
-				rbe: 28,
-				health: 18,
+				rbe: 37,
+				health: 27,
 				density: 1,
-				speed: 1.5,
+				speed: 1.8,
 				children: [
 					{
 						"class": "splitter",
@@ -554,10 +554,10 @@ function scr_setup_bloon_stats(){
 				]
 			},
 			"yellow": {
-				layers: 29,
+				layers: 41,
 				index: 3,
-				rbe: 37,
-				health: 24,
+				rbe: 49,
+				health: 36,
 				density: 1,
 				speed: 2.7,
 				children: [
@@ -571,10 +571,10 @@ function scr_setup_bloon_stats(){
 				]
 			},
 			"pink": {
-				layers: 36,
+				layers: 51,
 				index: 4,
-				rbe: 46,
-				health: 30,
+				rbe: 61,
+				health: 45,
 				density: 1,
 				speed: 3,
 				children: [

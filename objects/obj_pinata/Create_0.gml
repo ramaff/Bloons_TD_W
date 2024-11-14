@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-stored_health = 300
+stored_health = 200

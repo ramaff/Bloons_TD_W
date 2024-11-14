@@ -146,6 +146,7 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 	var _yy = _bloon.y
 	
 	instance_create_depth(_xx, _yy, depth - 10, obj_pop)
+	scr_play_sound(snd_pop)
 	
 	var _tower = noone;
 	if variable_struct_exists(_projectile_stats, "tower_id") {
