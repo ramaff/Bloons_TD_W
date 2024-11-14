@@ -2,10 +2,10 @@
 // You can write your code in this editor
 
 
-alarm[1] = 180;
+alarm[1] = 240;
 
-var _class = "normal"
-var _layer = "rainbow"
+var _class = "ceramic"
+var _layer = "brick"
 var _xx = x + 160;
 var _yy = y;
 var _bloon_object = obj_bloon
@@ -15,7 +15,7 @@ var _round = -1
 	
 var _pos = path_position;
 	
-repeat(4) {
+repeat(2) {
 	with instance_create_depth(_xx, _yy, depth, _bloon_object) {
 		scr_bloon_stat_setup(id, _class, _layer, _path, _properties, _round)
 		path_position = _pos

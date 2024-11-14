@@ -7,6 +7,7 @@ function scr_create_tower_buttons(){
 	if global.mission = "bloon_academia" and !global.heroes_progress.angry_squirrel.unlocked {
 		_heroes[array_length(_heroes)] = "angry_squirrel"	
 	}
+	
 	for(var _i = 0; _i < array_length(_heroes); _i++) {
 		with instance_create_depth(816, 64 + (_i * 64), depth, obj_hero_butt) {
 			base_tower_id = _heroes[_i];
@@ -21,6 +22,12 @@ function scr_create_tower_buttons(){
 			if instance_exists(_hero_id) {
 				hero_placed = true;
 				hero_id = _hero_id;
+			} else {
+				if variable_struct_exists(global.placed_towers, _heroes[_i]) {
+					if variable_struct_get(global.placed_towers, _heroes[_i]) {
+						instance_destroy()
+					}
+				}	
 			}
 			if variable_struct_exists(tower_stats, "butt_sprite") {
 				sprite_index = asset_get_index(tower_stats.butt_sprite)

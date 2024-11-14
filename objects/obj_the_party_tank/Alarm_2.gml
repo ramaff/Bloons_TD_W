@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-alarm[2] = 180;
+alarm[2] = 240;
 
 var _class = "moab"
 var _layer = "mini"

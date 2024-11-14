@@ -19,7 +19,7 @@ function scr_setup_tower_stats(){
 					"charge_time": 20,
 					"charge": 0,
 					"max_charges": 3,
-					"charges": 3,
+					"charges": 1,
 					"ability_script": scr_power_dart
 				}
 			},
@@ -101,7 +101,7 @@ function scr_setup_tower_stats(){
 			total_cost: 300,
 			upgrade_cost: 0,
 			range: 115,
-			delay: 24,
+			delay: 32,
 			attack_cooldown: 0,
 			health: 150,
 			max_health: 150,

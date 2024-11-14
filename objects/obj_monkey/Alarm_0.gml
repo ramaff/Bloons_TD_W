@@ -3,7 +3,7 @@
 
 alarm[0] = 60;
 
-if stun > 0 {
+if stun > 0 || global.round <= 0 {
 	exit;
 }
 

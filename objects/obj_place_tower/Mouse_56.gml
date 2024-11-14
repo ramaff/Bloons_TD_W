@@ -57,6 +57,7 @@ global.money -= tower_stats.total_cost
 if hero {
 	button_id.hero_placed = true;
 	button_id.hero_id = _tower_id;
+	variable_struct_set(global.placed_towers, base_tower_id, true)
 }
 
 with(obj_non_placeable_tile) {
