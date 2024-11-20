@@ -19,7 +19,7 @@ function scr_setup_tower_stats(){
 					"charge_time": 20,
 					"charge": 0,
 					"max_charges": 3,
-					"charges": 1,
+					"charges": 3,
 					"ability_script": scr_power_dart
 				}
 			},
@@ -490,7 +490,63 @@ function scr_setup_tower_stats(){
 					}
 				]
 			]
-		}
+		},
+		"haunted_monkey": {
+			tower_sprite: "spr_haunted_monkey",
+			tower_object: "obj_haunted_monkey",
+			butt_sprite: "spr_haunted_tower_butt",
+			total_cost: 425,
+			upgrade_cost: 0,
+			range: 110,
+			delay: 24,
+			attack_cooldown: 0,
+	
+			projectile_stats: [
+				{
+					sprite: "spr_ectoplasm",
+					pierce: 2,
+					damage: 1,
+					speed: 12,
+					lifespan: 30
+				}
+			],
+			upgrades: [
+				[
+				],
+				[
+					{
+						keyword: "Heavy Hops",
+						upgrade_cost: 250
+					},
+					{
+						keyword: "Quick Hops",
+						upgrade_cost: 300
+					}
+				]
+			],
+			split_upgrades: [
+				[
+					{
+						keyword: "Jumbo Jump",
+						upgrade_cost: 1800
+					},
+					{
+						keyword: "Jet Jumbo",
+						upgrade_cost: 3900
+					}
+				],
+				[
+					{
+						keyword: "Jackhammer",
+						upgrade_cost: 1350
+					},
+					{
+						keyword: "Drill",
+						upgrade_cost: 3750
+					}
+				]
+			]
+		},
 	}
 
 }

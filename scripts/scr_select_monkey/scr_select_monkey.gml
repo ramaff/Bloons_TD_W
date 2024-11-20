@@ -8,6 +8,11 @@ function scr_select_monkey(){
 	
 	instance_destroy(obj_tower_butt)
 	instance_destroy(obj_upgrade_butt)
+	instance_destroy(obj_place_tower)
+	instance_destroy(obj_cancel_tower)
+	with(obj_non_placeable_tile) {
+		image_alpha = 0;	
+	}
 	
 	var _all_normal_upgrades = true
 	var _ords = ["Z", "X", "C", "V"]
