@@ -515,34 +515,26 @@ function scr_setup_tower_stats(){
 				],
 				[
 					{
-						keyword: "Heavy Hops",
-						upgrade_cost: 250
+						keyword: "Party House",
+						upgrade_cost: 350
 					},
 					{
-						keyword: "Quick Hops",
+						keyword: "Full House",
 						upgrade_cost: 300
 					}
 				]
 			],
 			split_upgrades: [
 				[
-					{
-						keyword: "Jumbo Jump",
-						upgrade_cost: 1800
-					},
-					{
-						keyword: "Jet Jumbo",
-						upgrade_cost: 3900
-					}
 				],
 				[
 					{
-						keyword: "Jackhammer",
-						upgrade_cost: 1350
+						keyword: "Jump Scare",
+						upgrade_cost: 1900
 					},
 					{
-						keyword: "Drill",
-						upgrade_cost: 3750
+						keyword: "Chase Scene",
+						upgrade_cost: 3800
 					}
 				]
 			]

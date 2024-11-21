@@ -156,6 +156,8 @@
     {"id":{"name":"obj_world_map_control","path":"objects/obj_world_map_control/obj_world_map_control.yy",},},
     {"id":{"name":"obj_win_indication","path":"objects/obj_win_indication/obj_win_indication.yy",},},
     {"id":{"name":"spr_hero_hp66","path":"sprites/spr_hero_hp66/spr_hero_hp66.yy",},},
+    {"id":{"name":"obj_ghost_monkey","path":"objects/obj_ghost_monkey/obj_ghost_monkey.yy",},},
+    {"id":{"name":"Sprite154","path":"sprites/Sprite154/Sprite154.yy",},},
     {"id":{"name":"obj_bloon_tombstone","path":"objects/obj_bloon_tombstone/obj_bloon_tombstone.yy",},},
     {"id":{"name":"obj_big_bully_bloon","path":"objects/obj_big_bully_bloon/obj_big_bully_bloon.yy",},},
     {"id":{"name":"spr_tack_the_ripper","path":"sprites/spr_tack_the_ripper/spr_tack_the_ripper.yy",},},
