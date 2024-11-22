@@ -444,6 +444,16 @@ function scr_setup_upgrade_stats(){
 					}
 				]
 			}
-		}
+		},
+		"haunted_monkey": {
+			"Party House": {
+				upgrade_script: scr_spawn_ghost_monkey,
+				upgrade_string: "The monkey gets haunted by an additional ghost."
+			},
+			"Full House": {
+				upgrade_script: scr_spawn_ghost_monkey,
+				upgrade_string: "The monkey gets haunted by three ghosts."
+			}
+		},
 	}
 }

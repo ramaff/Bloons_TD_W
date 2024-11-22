@@ -1,0 +1,10 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function scr_spawn_ghost_monkey(_tower_stats = tower_stats){
+	var _ghost_id = noone;
+	with instance_create_depth(x, y, depth, obj_ghost_monkey) {
+		tower_stats = variable_clone(_tower_stats)
+		_ghost_id = id;
+	}
+	variable_struct_set(ghosts, _ghost_id, _ghost_id)
+}
