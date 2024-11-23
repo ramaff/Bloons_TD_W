@@ -497,8 +497,8 @@ function scr_setup_tower_stats(){
 			butt_sprite: "spr_haunted_tower_butt",
 			total_cost: 425,
 			upgrade_cost: 0,
-			range: 110,
-			delay: 24,
+			range: 125,
+			delay: 25,
 			attack_cooldown: 0,
 	
 			projectile_stats: [
@@ -529,11 +529,11 @@ function scr_setup_tower_stats(){
 				],
 				[
 					{
-						keyword: "Jump Scare",
-						upgrade_cost: 1900
+						keyword: "Chase Scene",
+						upgrade_cost: 900
 					},
 					{
-						keyword: "Chase Scene",
+						keyword: "Jump Scare",
 						upgrade_cost: 3800
 					}
 				]

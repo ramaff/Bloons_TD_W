@@ -453,6 +453,12 @@ function scr_setup_upgrade_stats(){
 			"Full House": {
 				upgrade_script: scr_spawn_ghost_monkey,
 				upgrade_string: "The monkey gets haunted by three ghosts."
+			},
+			"Chase Scene": {
+				fire_rate_multiplier: 1.333,
+				range: 40,
+				upgrade_script: scr_upgrade_ghost_monkeys,
+				upgrade_string: "The monkey gets haunted by three ghosts."
 			}
 		},
 	}

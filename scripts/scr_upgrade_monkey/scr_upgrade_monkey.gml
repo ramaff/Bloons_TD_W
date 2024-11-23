@@ -7,12 +7,6 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 	
 	//_tower_stats = scr_merge_struct(_tower_stats, _upgrade_stats, false)
 	
-	if variable_struct_exists(_upgrade_stats, "upgrade_script") {
-		with(_monkey) {
-			script_execute(_upgrade_stats.upgrade_script)
-		}
-	}
-	
 	if !variable_struct_exists(_tower_stats, "active_upgrades") {
 		_tower_stats.active_upgrades = {}
 	}
@@ -101,6 +95,12 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 	
 	if variable_struct_exists(_upgrade_stats, "camo_detection") {
 		_tower_stats.camo_detection = _upgrade_stats.camo_detection;
+	}
+	
+	if variable_struct_exists(_upgrade_stats, "upgrade_script") {
+		with(_monkey) {
+			script_execute(_upgrade_stats.upgrade_script)
+		}
 	}
 
 	//_monkey.tower_stats = _new_stats

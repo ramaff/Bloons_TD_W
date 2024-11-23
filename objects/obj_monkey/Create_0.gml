@@ -32,7 +32,8 @@ tower_stats = {
 				upgrade_cost: 200
 			}
 		]
-	]
+	],
+	active_upgrades: {}
 }
 
 all_bases = false

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_spawn_ghost_monkey",
+  "name": "scr_haunted_monkey_scripts",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

@@ -327,7 +327,7 @@
     {"id":{"name":"spr_block_bloon","path":"sprites/spr_block_bloon/spr_block_bloon.yy",},},
     {"id":{"name":"spr_acorn","path":"sprites/spr_acorn/spr_acorn.yy",},},
     {"id":{"name":"spr_autumn_acres_track","path":"sprites/spr_autumn_acres_track/spr_autumn_acres_track.yy",},},
-    {"id":{"name":"scr_spawn_ghost_monkey","path":"scripts/scr_spawn_ghost_monkey/scr_spawn_ghost_monkey.yy",},},
+    {"id":{"name":"scr_haunted_monkey_scripts","path":"scripts/scr_haunted_monkey_scripts/scr_haunted_monkey_scripts.yy",},},
     {"id":{"name":"spr_lead_tattered","path":"sprites/spr_lead_tattered/spr_lead_tattered.yy",},},
     {"id":{"name":"pth_parade_2","path":"paths/pth_parade_2/pth_parade_2.yy",},},
     {"id":{"name":"spr_small_pineapple","path":"sprites/spr_small_pineapple/spr_small_pineapple.yy",},},

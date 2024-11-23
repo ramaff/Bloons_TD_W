@@ -80,7 +80,7 @@ if tower_stats.attack_cooldown <= 0 {
 	
 	
 	tower_stats.attack_cooldown += tower_stats.delay	
-	scr_create_tower_projectiles(tower_stats.projectile_stats, x, y, _target, _angle_offset, _current_boosts, id)
+	scr_create_tower_projectiles(tower_stats.projectile_stats, x, y, _target, _angle_offset, _current_boosts, tower_stats.id)
 	
 	if variable_struct_exists(tower_stats, "stat_boosts") {
 		var _boosts = variable_struct_get_names(tower_stats.stat_boosts);
