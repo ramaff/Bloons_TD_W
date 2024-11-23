@@ -3,6 +3,15 @@
 
 
 tower_stats.attack_cooldown = 60;
+var _additional_attacks = []
+if variable_struct_exists(tower_stats, "additional_attacks") {
+	_additional_attacks = tower_stats.additional_attacks	
+}
+
+for(var _i = 0; _i < array_length(_additional_attacks); _i++) {
+	var _attack = _additional_attacks[_i];
+	_attack.attack_cooldown = 60;
+}
 
 // Inherit the parent event
 event_inherited();

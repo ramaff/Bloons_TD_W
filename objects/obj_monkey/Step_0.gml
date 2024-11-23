@@ -55,33 +55,33 @@ if tower_stats.attack_cooldown > 0 {
 	tower_stats.attack_cooldown -= _tick_down;
 }
 
-if tower_stats.attack_cooldown <= 0 {
+attacked = false;
+
+if tower_stats.attack_cooldown <= 0 {	
+	attacked = scr_tower_attack(tower_stats, _current_boosts, _range_boost) || attacked
+}
+
+var _additional_attacks = []
+if variable_struct_exists(tower_stats, "additional_attacks") {
+	_additional_attacks = tower_stats.additional_attacks	
+}
+
+for(var _i = 0; _i < array_length(_additional_attacks); _i++) {
+	var _attack = _additional_attacks[_i];
 	
-	if variable_struct_exists(tower_stats, "tower_attack_script") {
-		script_execute(tower_stats.tower_attack_script)
+	show_debug_message("_attack")
+	show_debug_message(_attack)
+	if _attack.attack_cooldown > 0 {
+		_attack.attack_cooldown -= _tick_down;
 	}
 	
-	var _target = scr_get_bloon_target(tower_stats, x, y, targeting, _range_boost)
-	
-	if !instance_exists(_target) {
-		exit;
-	}
-	
-	if variable_struct_exists(tower_stats, "no_target") {
-		if tower_stats.no_target {
-			_target = noone;
-		}
-	}
-	
-	var _angle_offset = 0;
-	if variable_struct_exists(tower_stats, "attack_angle_offset") {
-		_angle_offset += tower_stats.attack_angle_offset
-	}
-	
-	
-	tower_stats.attack_cooldown += tower_stats.delay	
-	scr_create_tower_projectiles(tower_stats.projectile_stats, x, y, _target, _angle_offset, _current_boosts, tower_stats.id)
-	
+	if _attack.attack_cooldown <= 0 {
+		attacked = scr_tower_attack(_attack, _current_boosts, _range_boost) || attacked
+	}	
+}
+
+
+if attacked {
 	if variable_struct_exists(tower_stats, "stat_boosts") {
 		var _boosts = variable_struct_get_names(tower_stats.stat_boosts);
 		for(var _i = 0; _i < array_length(_boosts); _i++) {
@@ -91,5 +91,4 @@ if tower_stats.attack_cooldown <= 0 {
 			}
 		}
 	}
-	
 }

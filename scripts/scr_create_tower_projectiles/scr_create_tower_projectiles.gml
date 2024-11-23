@@ -74,7 +74,7 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 					image_yscale = projectile_stats.size
 				}
 			
-				if projectile_stats.object = "obj_explosion_projectile" {
+				if projectile_stats.object = "obj_explosion_projectile_w_particles" {
 					var _area = (image_xscale * 100) - 50;
 					repeat(projectile_stats.particles) {
 						var _xxx = random(_area) - (_area / 2);

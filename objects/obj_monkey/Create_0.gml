@@ -40,5 +40,6 @@ all_bases = false
 stun = 0;
 targeting = "first";
 pop_count = 0;
+attacked = false;
 
 alarm[0] = 60;

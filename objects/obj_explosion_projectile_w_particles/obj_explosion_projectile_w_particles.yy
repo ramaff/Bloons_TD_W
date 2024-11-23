@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_explosion_projectile",
+  "name": "obj_explosion_projectile_w_particles",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -10,8 +10,8 @@
     "path": "folders/Objects/Projectiles.yy",
   },
   "parentObjectId": {
-    "name": "obj_damage_dealer",
-    "path": "objects/obj_damage_dealer/obj_damage_dealer.yy",
+    "name": "obj_explosion_projectile",
+    "path": "objects/obj_explosion_projectile/obj_explosion_projectile.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,5 +33,5 @@
     "path": "sprites/spr_explosion_damage/spr_explosion_damage.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

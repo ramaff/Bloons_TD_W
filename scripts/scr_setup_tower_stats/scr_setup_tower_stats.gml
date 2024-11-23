@@ -510,6 +510,25 @@ function scr_setup_tower_stats(){
 					lifespan: 30
 				}
 			],
+			additional_attacks: [
+				{
+					delay: 75,
+					attack_cooldown: 0,
+					range: 75,
+					projectile_stats: [
+						{
+							object: "obj_explosion_projectile",
+							sprite: "spr_jump_scare_explosion",
+							lead_hit: true,
+							lifespan: 20,
+							speed: 0,
+							direction: 0,
+							damage: 1,
+							pierce: 40
+						}
+					]
+				}
+			],
 			upgrades: [
 				[
 				],
