@@ -109,7 +109,10 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 				_bloon.bloon_stats.shielded = false
 				_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.sprite);
 			}
-			instance_destroy()
+			_projectile_stats.pierce -= 10;
+			if _projectile_stats.pierce <= 0 {
+				instance_destroy();	
+			}
 			exit;
 		}
 	}
@@ -230,6 +233,5 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			}
 		}
 	}
-
 
 }

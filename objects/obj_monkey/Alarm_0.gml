@@ -7,8 +7,6 @@ if stun > 0 || global.round <= 0 {
 	exit;
 }
 
-show_debug_message(tower_stats)
-
 if variable_struct_exists(tower_stats, "abilities") {
 	var _abilities = variable_struct_get_names(tower_stats.abilities);
 	for (var _i = 0; _i < array_length(_abilities); _i++) {

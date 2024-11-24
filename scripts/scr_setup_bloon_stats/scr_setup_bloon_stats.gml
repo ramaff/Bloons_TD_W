@@ -321,6 +321,7 @@ function scr_setup_bloon_stats(){
 		"stuffed": {
 			"object": "obj_bloon",
 			"sprite": "spr_stuffed_bloon",
+			"big_bloon_tier": 1,
 			"red": {
 				layers: 3,
 				index: 0,
@@ -410,6 +411,7 @@ function scr_setup_bloon_stats(){
 		"deflation": {
 			"object": "obj_deflation_bloon",
 			"sprite": "spr_big_deflation_bloon",
+			"big_bloon_tier": 1,
 			"height": 5,
 			"red": {
 				layers: 5,
@@ -502,6 +504,7 @@ function scr_setup_bloon_stats(){
 		"nurse": {
 			"object": "obj_nurse_bloon",
 			"sprite": "spr_nurse_bloon",
+			"big_bloon_tier": 1,
 			"red": {
 				layers: 12,
 				index: 0,
@@ -653,6 +656,7 @@ function scr_setup_bloon_stats(){
 			"object": "obj_moab_class",
 			"mini": {
 				sprite: "spr_mini_moab",
+				"big_bloon_tier": 1,
 				layers: 58,
 				index: 0,
 				rbe: 238,
@@ -681,6 +685,7 @@ function scr_setup_bloon_stats(){
 			"moab": {
 				sprite: "spr_moab",
 				layers: 218,
+				"big_bloon_tier": 2,
 				index: 0,
 				rbe: 616,
 				health: 200,
@@ -710,6 +715,7 @@ function scr_setup_bloon_stats(){
 			"object": "obj_bully",
 			"bully": {
 				sprite: "spr_bully_bloon",
+				"big_bloon_tier": 2,
 				layers: 500,
 				damage: 5,
 				health: 500,
@@ -718,6 +724,7 @@ function scr_setup_bloon_stats(){
 			},
 			"nerd": {
 				sprite: "spr_nerd_bloon",
+				"big_bloon_tier": 1,
 				layers: 250,
 				damage: 5,
 				health: 250,
@@ -756,6 +763,7 @@ function scr_setup_bloon_stats(){
 			},
 			"red bully": {
 				sprite: "spr_red_bully",
+				"big_bloon_tier": 2,
 				layers: 500,
 				damage: 2,
 				health: 500,
@@ -764,6 +772,7 @@ function scr_setup_bloon_stats(){
 			},
 			"blue bully": {
 				sprite: "spr_blue_bully",
+				"big_bloon_tier": 3,
 				layers: 1000,
 				health: 1000,
 				damage: 4,
@@ -772,6 +781,7 @@ function scr_setup_bloon_stats(){
 			},
 			"green bully": {
 				sprite: "spr_green_bully",
+				"big_bloon_tier": 4,
 				layers: 1500,
 				health: 1500,
 				damage: 6,
@@ -780,6 +790,7 @@ function scr_setup_bloon_stats(){
 			},
 			"yellow bully": {
 				sprite: "spr_yellow_bully",
+				"big_bloon_tier": 4,
 				layers: 2000,
 				health: 2000,
 				damage: 8,
@@ -788,6 +799,7 @@ function scr_setup_bloon_stats(){
 			},
 			"big bully": {
 				sprite: "spr_big_bully_bloon",
+				"big_bloon_tier": 5,
 				object: "obj_big_bully_bloon",
 				layers: 5000,
 				health: 5000,
@@ -940,6 +952,7 @@ function scr_setup_bloon_stats(){
 			"red": {
 				sprite: "spr_tack_the_ripper",
 				layers: 1500,
+				"big_bloon_tier": 4,
 				damage: 40,
 				health: 1500,
 				density: 1,
@@ -950,6 +963,7 @@ function scr_setup_bloon_stats(){
 			"object": "obj_frankensteins_bloon",
 			"green": {
 				sprite: "spr_frankensteins_bloon",
+				"big_bloon_tier": 4,
 				layers: 2700,
 				damage: 50,
 				health: 2700,
@@ -1101,6 +1115,7 @@ function scr_setup_bloon_stats(){
 		},
 		"hot_air": {
 			"object": "obj_hot_air_bloon",
+			"big_bloon_tier": 2,
 			"red": {
 				"sprite": "spr_hot_air_bloon",
 				index: 0,
@@ -1131,6 +1146,7 @@ function scr_setup_bloon_stats(){
 		},
 		"pinata": {
 			"object": "obj_pinata",
+			"big_bloon_tier": 1,
 			"pinata": {
 				"sprite": "spr_pinata",
 				index: 0,
@@ -1173,6 +1189,7 @@ function scr_setup_bloon_stats(){
 		},
 		"the_party_tank": {
 			"object": "obj_the_party_tank",
+			"big_bloon_tier": 5,
 			"the_party_tank": {
 				sprite: "spr_the_party_tank",
 				layers: 8500,

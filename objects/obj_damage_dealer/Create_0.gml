@@ -4,5 +4,6 @@
 alarm[0] = 30;
 
 projectile_stats = {
-	bloons_hit: {}
+	bloons_hit: {},
+	size: 1
 }

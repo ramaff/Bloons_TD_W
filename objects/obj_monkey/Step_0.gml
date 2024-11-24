@@ -69,8 +69,6 @@ if variable_struct_exists(tower_stats, "additional_attacks") {
 for(var _i = 0; _i < array_length(_additional_attacks); _i++) {
 	var _attack = _additional_attacks[_i];
 	
-	show_debug_message("_attack")
-	show_debug_message(_attack)
 	if _attack.attack_cooldown > 0 {
 		_attack.attack_cooldown -= _tick_down;
 	}

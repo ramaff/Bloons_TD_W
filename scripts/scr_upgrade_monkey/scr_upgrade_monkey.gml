@@ -85,6 +85,13 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 		}
 	}
 	
+	if variable_struct_exists(_upgrade_stats, "additional_attacks") {
+		if !variable_struct_exists(_tower_stats, "additional_attacks") {
+			_tower_stats.additional_attacks = []
+		}
+		_tower_stats.additional_attacks = array_concat(_tower_stats.additional_attacks, _upgrade_stats.additional_attacks)
+	}
+	
 	if variable_struct_exists(_upgrade_stats, "fire_rate_multiplier") {
 		_tower_stats.delay = _tower_stats.delay / _upgrade_stats.fire_rate_multiplier
 	}

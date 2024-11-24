@@ -18,6 +18,11 @@ if variable_struct_exists(projectile_stats, "height") {
 
 var _bloon_par_id = other.parent_id
 
+if variable_struct_exists(projectile_stats, "bloon_pushback") {
+	var _backoff = projectile_stats.bloon_pushback / power(2, other.bloon_stats.big_bloon_tier);
+	other.path_position -= _backoff;	
+}
+
 //show_debug_message("damage dealer, other projectile hits: " + string(other.bloon_stats.projectile_hits))
 if !variable_struct_exists(other.bloon_stats.projectile_hits, id) {
 	variable_struct_set(other.bloon_stats.projectile_hits, id, id)

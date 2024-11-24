@@ -185,6 +185,7 @@
     {"id":{"name":"spr_drill_splash","path":"sprites/spr_drill_splash/spr_drill_splash.yy",},},
     {"id":{"name":"spr_big_bully_bloon_windup_throw","path":"sprites/spr_big_bully_bloon_windup_throw/spr_big_bully_bloon_windup_throw.yy",},},
     {"id":{"name":"spr_tower_butt","path":"sprites/spr_tower_butt/spr_tower_butt.yy",},},
+    {"id":{"name":"spr_explosion","path":"sprites/spr_explosion/spr_explosion.yy",},},
     {"id":{"name":"spr_hot_air_bloon_blue","path":"sprites/spr_hot_air_bloon_blue/spr_hot_air_bloon_blue.yy",},},
     {"id":{"name":"spr_training_tent_track_old","path":"sprites/spr_training_tent_track_old/spr_training_tent_track_old.yy",},},
     {"id":{"name":"obj_mini_moab","path":"objects/obj_mini_moab/obj_mini_moab.yy",},},

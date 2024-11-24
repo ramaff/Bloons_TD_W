@@ -309,14 +309,14 @@ function scr_setup_upgrade_stats(){
 						projectile_burst: [
 							{
 								object: "obj_explosion_projectile",
-								sprite: "spr_explosion_damage",
+								sprite: "spr_explosion",
 								lead_hit: true,
 								lifespan: 20,
 								speed: 0,
 								direction: 0,
 								damage: 1,
 								pierce: 60,
-								size: 1.8,
+								size: 0.65,
 								particles: 5
 							}
 						]
@@ -357,14 +357,14 @@ function scr_setup_upgrade_stats(){
 						projectile_burst: [
 							{
 								object: "obj_explosion_projectile",
-								sprite: "spr_explosion_damage",
+								sprite: "spr_explosion",
 								lead_hit: true,
 								lifespan: 20,
 								speed: 0,
 								direction: 0,
 								damage: 1,
 								pierce: 60,
-								size: 1.8,
+								size: 0.65,
 								particles: 5
 							}
 						]
@@ -397,14 +397,14 @@ function scr_setup_upgrade_stats(){
 						projectile_burst: [
 							{
 								object: "obj_explosion_projectile",
-								sprite: "spr_explosion_damage",
+								sprite: "spr_explosion",
 								lead_hit: true,
 								lifespan: 20,
 								speed: 0,
 								direction: 0,
 								damage: 1,
 								pierce: 80,
-								size: 2,
+								size: 0.75,
 								particles: 7
 							},
 							{
@@ -428,14 +428,14 @@ function scr_setup_upgrade_stats(){
 								projectile_burst: [
 									{
 										object: "obj_explosion_projectile",
-										sprite: "spr_explosion_damage",
+										sprite: "spr_explosion",
 										lead_hit: true,
 										lifespan: 20,
 										speed: 0,
 										direction: 0,
 										damage: 1,
 										pierce: 40,
-										size: 1.4,
+										size: 0.5,
 										particles: 3
 									}
 								]
@@ -459,6 +459,32 @@ function scr_setup_upgrade_stats(){
 				range: 40,
 				upgrade_script: scr_upgrade_ghost_monkeys,
 				upgrade_string: "The monkey gets haunted by three ghosts."
+			},
+			"Jump Scare": {
+				fire_rate_multiplier: 1.666,
+				range: 40,
+				upgrade_script: scr_upgrade_ghost_monkeys,
+				upgrade_string: "The ghosts jump scare bloons, causing them to quickly move backwards.",
+				additional_attacks: [
+					{
+						delay: 75,
+						attack_cooldown: 0,
+						range: 40,
+						projectile_stats: [
+							{
+								object: "obj_explosion_projectile",
+								sprite: "spr_jump_scare_explosion",
+								lead_hit: true,
+								lifespan: 20,
+								speed: 0,
+								direction: 0,
+								damage: 1,
+								pierce: 40,
+								bloon_pushback: 0.01
+							}
+						]
+					}
+				]
 			}
 		},
 	}

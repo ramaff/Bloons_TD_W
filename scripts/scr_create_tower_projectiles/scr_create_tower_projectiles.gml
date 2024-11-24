@@ -72,6 +72,13 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 				if variable_struct_exists(projectile_stats, "size") {
 					image_xscale = projectile_stats.size
 					image_yscale = projectile_stats.size
+				} else {
+					projectile_stats.size = 1;	
+				}
+				
+				if projectile_stats.object = "obj_explosion_projectile" {
+					image_xscale = 0.5;
+					image_yscale = 0.5;
 				}
 			
 				if projectile_stats.object = "obj_explosion_projectile_w_particles" {

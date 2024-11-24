@@ -446,14 +446,14 @@ function scr_setup_tower_stats(){
 					projectile_burst: [
 						{
 							object: "obj_explosion_projectile",
-							sprite: "spr_explosion_damage",
+							sprite: "spr_explosion",
 							lead_hit: true,
 							lifespan: 20,
 							speed: 0,
 							direction: 0,
 							damage: 1,
 							pierce: 40,
-							size: 1.4,
+							size: 0.5,
 							particles: 3
 						}
 					]
@@ -510,25 +510,6 @@ function scr_setup_tower_stats(){
 					lifespan: 30
 				}
 			],
-			additional_attacks: [
-				{
-					delay: 75,
-					attack_cooldown: 0,
-					range: 75,
-					projectile_stats: [
-						{
-							object: "obj_explosion_projectile",
-							sprite: "spr_jump_scare_explosion",
-							lead_hit: true,
-							lifespan: 20,
-							speed: 0,
-							direction: 0,
-							damage: 1,
-							pierce: 40
-						}
-					]
-				}
-			],
 			upgrades: [
 				[
 				],
@@ -553,7 +534,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Jump Scare",
-						upgrade_cost: 3800
+						upgrade_cost: 3500
 					}
 				]
 			]

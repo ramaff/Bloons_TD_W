@@ -146,6 +146,7 @@
     {"name":"spr_drill_splash","order":11,"path":"sprites/spr_drill_splash/spr_drill_splash.yy",},
     {"name":"spr_big_bully_bloon_windup_throw","order":11,"path":"sprites/spr_big_bully_bloon_windup_throw/spr_big_bully_bloon_windup_throw.yy",},
     {"name":"spr_tower_butt","order":3,"path":"sprites/spr_tower_butt/spr_tower_butt.yy",},
+    {"name":"spr_explosion","order":20,"path":"sprites/spr_explosion/spr_explosion.yy",},
     {"name":"spr_hot_air_bloon_blue","order":7,"path":"sprites/spr_hot_air_bloon_blue/spr_hot_air_bloon_blue.yy",},
     {"name":"spr_training_tent_track_old","order":7,"path":"sprites/spr_training_tent_track_old/spr_training_tent_track_old.yy",},
     {"name":"spr_explosion_damage","order":8,"path":"sprites/spr_explosion_damage/spr_explosion_damage.yy",},

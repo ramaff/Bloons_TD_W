@@ -33,6 +33,10 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 			variable_struct_set(_bloon.bloon_stats, _class_stats.properties[_i], true)
 		}
 	}*/
+	
+	if !variable_struct_exists(_bloon.bloon_stats, "big_bloon_tier") {
+		_bloon.bloon_stats.big_bloon_tier = 0;	
+	}
 
 	if variable_struct_exists(_class_stats, "sprite") and !variable_struct_exists(_bloon.bloon_stats, "sprite") {
 		_bloon.bloon_stats.sprite = _class_stats.sprite
