@@ -3,9 +3,9 @@
 
 depth = -y
 
-var _tick_down = 1;
-var _range_boost = 0;
-var _current_boosts = {
+tick_down = 1;
+range_boost = 0;
+current_boosts = {
 	"damage_boost": 0,
 	"pierce_boost": 0,
 	"speed_boost": 0,
@@ -19,22 +19,22 @@ if variable_struct_exists(tower_stats, "stat_boosts") {
 		var _current_boost = variable_struct_get(tower_stats.stat_boosts, _boosts[_i])
 		if variable_struct_exists(_current_boost, "boost_duration") {
 			if variable_struct_exists(_current_boost, "fire_rate_boost_multiplier") {
-				_tick_down = _tick_down * _current_boost.fire_rate_boost_multiplier;
+				tick_down = tick_down * _current_boost.fire_rate_boost_multiplier;
 			}
 			if variable_struct_exists(_current_boost, "range_boost") {
-				_range_boost += _current_boost.range_boost;
+				range_boost += _current_boost.range_boost;
 			}
 			if variable_struct_exists(_current_boost, "damage_boost") {
-				_current_boosts.damage_boost += _current_boost.damage_boost;
+				current_boosts.damage_boost += _current_boost.damage_boost;
 			}
 			if variable_struct_exists(_current_boost, "pierce_boost") {
-				_current_boosts.pierce_boost += _current_boost.pierce_boost;
+				current_boosts.pierce_boost += _current_boost.pierce_boost;
 			}
 			if variable_struct_exists(_current_boost, "speed_boost") {
-				_current_boosts.speed_boost += _current_boost.speed_boost;
+				current_boosts.speed_boost += _current_boost.speed_boost;
 			}
 			if variable_struct_exists(_current_boost, "puncture") {
-				_current_boosts.puncture += _current_boost.puncture;
+				current_boosts.puncture += _current_boost.puncture;
 			}
 			
 			_current_boost.boost_duration--;
@@ -52,13 +52,17 @@ if stun > 0 {
 }
 
 if tower_stats.attack_cooldown > 0 {
-	tower_stats.attack_cooldown -= _tick_down;
+	tower_stats.attack_cooldown -= tick_down;
 }
 
 attacked = false;
 
 if tower_stats.attack_cooldown <= 0 {	
-	attacked = scr_tower_attack(tower_stats, _current_boosts, _range_boost) || attacked
+	attacked = scr_tower_attack(tower_stats, current_boosts, range_boost) || attacked
+	if variable_struct_exists(tower_stats, "attack_barrages") {
+		tower_stats.barrage_count = tower_stats.attack_barrages
+		alarm[1] = tower_stats.barrage_delay
+	}
 }
 
 var _additional_attacks = []
@@ -70,11 +74,11 @@ for(var _i = 0; _i < array_length(_additional_attacks); _i++) {
 	var _attack = _additional_attacks[_i];
 	
 	if _attack.attack_cooldown > 0 {
-		_attack.attack_cooldown -= _tick_down;
+		_attack.attack_cooldown -= tick_down;
 	}
 	
 	if _attack.attack_cooldown <= 0 {
-		attacked = scr_tower_attack(_attack, _current_boosts, _range_boost) || attacked
+		attacked = scr_tower_attack(_attack, current_boosts, range_boost) || attacked
 	}	
 }
 

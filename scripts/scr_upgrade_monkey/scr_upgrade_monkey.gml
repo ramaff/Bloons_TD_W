@@ -25,6 +25,10 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 		_tower_stats.max_health += _upgrade_stats.max_health;
 	}
 	
+	if variable_struct_exists(_upgrade_stats, "attack_barrages") {
+		_tower_stats.attack_barrages += _upgrade_stats.attack_barrages;
+	}
+	
 	if variable_struct_exists(_upgrade_stats, "tower_attack_script") {
 		_tower_stats.tower_attack_script = _upgrade_stats.tower_attack_script
 	}

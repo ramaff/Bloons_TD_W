@@ -491,6 +491,56 @@ function scr_setup_tower_stats(){
 				]
 			]
 		},
+		"assassin_monkey": {
+			tower_sprite: "spr_assassin_monkey",
+			tower_object: "obj_assassin_monkey",
+			butt_sprite: "spr_assassin_tower_butt",
+			total_cost: 450,
+			upgrade_cost: 0,
+			range: 240,
+			delay: 160,
+			attack_cooldown: 0,
+			attack_barrages: 1,
+			barrage_count: 0,
+			barrage_delay: 40,
+			barrage_cooldown: 0,
+	
+			projectile_stats: [
+				{
+					sprite: "spr_knife",
+					pierce: 25,
+					damage: 2,
+					speed: 20,
+					friction: 8,
+					lifespan: 40
+				}
+			],
+			upgrades: [
+				[],
+				[
+					{
+						keyword: "Twin Blades",
+						upgrade_cost: 400
+					},
+					{
+						keyword: "Shadowy Sight",
+						upgrade_cost: 300
+					}
+				]
+			],
+			split_upgrades: [
+				[
+					{
+						keyword: "Multi-Strikes",
+						upgrade_cost: 950
+					},
+					{
+						keyword: "After Images",
+						upgrade_cost: 2700
+					}
+				]
+			]
+		},
 		"haunted_monkey": {
 			tower_sprite: "spr_haunted_monkey",
 			tower_object: "obj_haunted_monkey",

@@ -487,5 +487,21 @@ function scr_setup_upgrade_stats(){
 				]
 			}
 		},
+		"assassin_monkey": {
+			"Twin Blades": {
+				shot_count: 1,
+				upgrade_string: "Assassin is equiped with two blades now."
+			},
+			"Shadowy Sight": {
+				camo_detection: true,
+				range: 80,
+				fire_rate_multiplier: 1.25,
+				upgrade_string: "The assassin can see further and detect camo and attack slightly more often."
+			},
+			"Multi-Strikes": {
+				attack_barrages: 2,
+				upgrade_string: "Strike bloons multiple times."
+			}
+		}
 	}
 }

@@ -43,3 +43,12 @@ pop_count = 0;
 attacked = false;
 
 alarm[0] = 60;
+
+tick_down = 1;
+range_boost = 0;
+current_boosts = {
+	"damage_boost": 0,
+	"pierce_boost": 0,
+	"speed_boost": 0,
+	"puncture": 0
+}
