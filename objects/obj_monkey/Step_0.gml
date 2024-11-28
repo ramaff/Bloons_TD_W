@@ -78,12 +78,17 @@ for(var _i = 0; _i < array_length(_additional_attacks); _i++) {
 	}
 	
 	if _attack.attack_cooldown <= 0 {
-		attacked = scr_tower_attack(_attack, current_boosts, range_boost) || attacked
+		var _add_attack = scr_tower_attack(_attack, current_boosts, range_boost)
+		attacked = _add_attack || attacked
+		if _add_attack {
+			_attack.attack_cooldown += _attack.delay
+		}
 	}	
 }
 
 
 if attacked {
+	tower_stats.attack_cooldown += tower_stats.delay
 	if variable_struct_exists(tower_stats, "stat_boosts") {
 		var _boosts = variable_struct_get_names(tower_stats.stat_boosts);
 		for(var _i = 0; _i < array_length(_boosts); _i++) {

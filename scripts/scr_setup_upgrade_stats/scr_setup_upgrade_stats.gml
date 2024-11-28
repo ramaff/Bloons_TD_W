@@ -501,6 +501,9 @@ function scr_setup_upgrade_stats(){
 			"Multi-Strikes": {
 				attack_barrages: 2,
 				upgrade_string: "Strike bloons multiple times."
+			},
+			"Shadow Clones": {
+				upgrade_string: "Attacks with 3 clones"
 			}
 		}
 	}

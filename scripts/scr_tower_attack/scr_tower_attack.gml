@@ -22,7 +22,6 @@ function scr_tower_attack(_tower_stats = tower_stats, _current_boosts = {}, _ran
 		_angle_offset += _tower_stats.attack_angle_offset
 	}
 	
-	_tower_stats.attack_cooldown += _tower_stats.delay	
 	scr_create_tower_projectiles(_tower_stats.projectile_stats, x, y, _target, _angle_offset, _current_boosts, tower_stats.id)
 
 	return true;

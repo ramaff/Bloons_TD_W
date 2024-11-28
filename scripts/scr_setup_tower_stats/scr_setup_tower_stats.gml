@@ -498,11 +498,11 @@ function scr_setup_tower_stats(){
 			total_cost: 450,
 			upgrade_cost: 0,
 			range: 240,
-			delay: 160,
+			delay: 180,
 			attack_cooldown: 0,
 			attack_barrages: 1,
 			barrage_count: 0,
-			barrage_delay: 40,
+			barrage_delay: 30,
 			barrage_cooldown: 0,
 	
 			projectile_stats: [
@@ -510,9 +510,9 @@ function scr_setup_tower_stats(){
 					sprite: "spr_knife",
 					pierce: 25,
 					damage: 2,
-					speed: 20,
-					friction: 8,
-					lifespan: 40
+					speed: 16,
+					friction: 4,
+					lifespan: 30
 				}
 			],
 			upgrades: [
@@ -532,7 +532,7 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Multi-Strikes",
-						upgrade_cost: 950
+						upgrade_cost: 1090
 					},
 					{
 						keyword: "After Images",
