@@ -1,10 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+
+
+
+
+
+// Inherit the parent event
+event_inherited();
+
 alarm[0] = 150;
-
-instance_create_depth(x, y, depth, obj_heal_bloon_aura)
-
-
-
-

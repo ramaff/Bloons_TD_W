@@ -60,7 +60,7 @@ if tower_stats.barrage_count > 0 {
 			}
 		}
 	} else {
-		scr_tower_attack(tower_stats, current_boosts, range_boost)
+		scr_tower_attack(tower_stats, tower_stats.projectile_stats, current_boosts, range_boost)
 	}
 }
 

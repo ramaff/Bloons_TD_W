@@ -566,11 +566,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Party House",
-						upgrade_cost: 350
+						upgrade_cost: 35
 					},
 					{
 						keyword: "Full House",
-						upgrade_cost: 300
+						upgrade_cost: 30
 					}
 				]
 			],
@@ -580,11 +580,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Chase Scene",
-						upgrade_cost: 900
+						upgrade_cost: 90
 					},
 					{
 						keyword: "Jump Scare",
-						upgrade_cost: 3500
+						upgrade_cost: 350
 					}
 				]
 			]

@@ -47,7 +47,7 @@ if variable_struct_exists(tower_stats, "stat_boosts") {
 if tower_stats.barrage_count > 0 {
 	tower_stats.barrage_count--;
 	alarm[1] = tower_stats.barrage_delay
-	scr_tower_attack(tower_stats, _current_boosts, _range_boost)
+	scr_tower_attack(tower_stats, tower_stats.projectile_stats, _current_boosts, _range_boost)
 }
 
 

@@ -32,7 +32,7 @@ if variable_struct_exists(tower_stats.active_upgrades, "Shadow Clones") {
 			sprite_index = other.sprite_index;
 			image_index = other.image_index;
 			alarm[0] = 40;
-			scr_tower_attack(other.tower_stats, other.current_boosts, other.range_boost, other.targeting)
+			scr_tower_attack(other.tower_stats, other.tower_stats.projectile_stats, other.current_boosts, other.range_boost, other.targeting)
 		}
 		_nx = _cx
 		_ny = _cy

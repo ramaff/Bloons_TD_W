@@ -18,7 +18,10 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 		if _round > 20 {
 			_cash_flow = _cash_flow * 0.5;
 		}
-		global.money += _cash_flow;
+		if _bloon_stats.remaining_value > 0 {
+			global.money += _cash_flow;
+		}
+		_bloon_stats.remaining_value--;
 		if instance_exists(_tower) {
 			_tower.pop_count++;
 		}
@@ -44,20 +47,31 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 				_child_stats.properties = variable_struct_get(_children[_i], "properties")
 			}
 			_child_stats.properties = array_concat(_child_stats.properties, _bloon_stats.properties)
+			_child_stats.remaining_value = _bloon_stats.remaining_value / array_length(_children)
 			
-			if !variable_struct_exists(_bloon_stats, "parents") {
-				_child_stats.parents = [
-					{
+			var _promotable = {
+				"normal": true,
+				"splitter": true,
+				"ceramic": true,
+				"lead": true,
+				"peek-a-bloon": true
+			}
+			
+			if variable_struct_exists(_promotable, _bloon_stats.class) {
+				if !variable_struct_exists(_bloon_stats, "parents") {
+					_child_stats.parents = [
+						{
+							"class": _bloon_stats.class,
+							"layer": _bloon_stats.layer,
+						}
+					]
+				} else {
+					_bloon_stats.parents[array_length(_bloon_stats.parents)] = {
 						"class": _bloon_stats.class,
-						"layer": _bloon_stats.layer,
+						"layer": _bloon_stats.layer
 					}
-				]
-			} else {
-				_bloon_stats.parents[array_length(_bloon_stats.parents)] = {
-					"class": _bloon_stats.class,
-					"layer": _bloon_stats.layer
+					_child_stats.parents = variable_clone(_bloon_stats.parents)
 				}
-				_child_stats.parents = variable_clone(_bloon_stats.parents)
 			}
 			
 			//show_debug_message("child stats:" + string(_child_stats))
@@ -81,18 +95,9 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 				}
 			}
 			
-			/*if variable_struct_exists(_bloon_stats, "float to track") {
-				_child_stats.properties[array_length(_child_stats.properties)] = "float to track"
-			}
-			if variable_struct_exists(_bloon_stats, "regrow") {
-				_child_stats.properties[array_length(_child_stats.properties)] = "regrow"
-			} */
-			
-			_resulting_bloons = array_concat(_resulting_bloons, scr_apply_damage_to_bloon(_child_stats, _remaining_damage, _round, noone, _tower))
+			_resulting_bloons = array_concat(_resulting_bloons, 
+											 scr_apply_damage_to_bloon(_child_stats, _remaining_damage, _round, noone, _tower))
 		}
-		/*if instance_exists(_bloon) {
-			instance_destroy(_bloon)	
-		} */
 	} else if _bloon = noone {
 		return [_bloon_stats]	
 	}
@@ -204,6 +209,12 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			}
 			
 			bloon_stats.projectile_hits = variable_clone(_bloon.bloon_stats.projectile_hits)
+			bloon_stats.remaining_value = _bloon.bloon_stats.remaining_value;
+			
+			alarm[0] = _bloon.alarm[0];
+			if alarm[0] > 90 {
+				alarm[0] = 90;	
+			}
 			
 			if instance_exists(target) {
 				target.path_position = _pos	
