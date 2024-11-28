@@ -7,7 +7,7 @@ with instance_create_depth(other.x, other.y, depth - 10, obj_slash) {
 }
 
 other.bloon_stats.tattered = true
-other.bloon_stats.tattered_sprite = "spr_ceramic_tattered"
+other.bloon_stats.tattered_sprite = "spr_splitter_tattered"
 other.path_speed = other.bloon_stats.speed * 2;
 
 

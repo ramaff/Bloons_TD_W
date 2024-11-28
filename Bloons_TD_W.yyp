@@ -74,6 +74,7 @@
     {"id":{"name":"spr_non_placeable_tile","path":"sprites/spr_non_placeable_tile/spr_non_placeable_tile.yy",},},
     {"id":{"name":"obj_tower_tile","path":"objects/obj_tower_tile/obj_tower_tile.yy",},},
     {"id":{"name":"obj_autumn_acres_button","path":"objects/obj_autumn_acres_button/obj_autumn_acres_button.yy",},},
+    {"id":{"name":"spr_jack_the_ripper","path":"sprites/spr_jack_the_ripper/spr_jack_the_ripper.yy",},},
     {"id":{"name":"obj_slash","path":"objects/obj_slash/obj_slash.yy",},},
     {"id":{"name":"rm_autumn_acres","path":"rooms/rm_autumn_acres/rm_autumn_acres.yy",},},
     {"id":{"name":"scr_setup_upgrade_stats","path":"scripts/scr_setup_upgrade_stats/scr_setup_upgrade_stats.yy",},},

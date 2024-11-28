@@ -41,6 +41,7 @@ stun = 0;
 targeting = "first";
 pop_count = 0;
 attacked = false;
+target = noone;
 
 alarm[0] = 60;
 

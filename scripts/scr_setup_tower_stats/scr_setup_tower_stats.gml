@@ -37,15 +37,15 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "stronger",
-						upgrade_cost: 125
+						upgrade_cost: 120
 					}, 
 					{
 						keyword: "stronger",
-						upgrade_cost: 150
+						upgrade_cost: 140
 					}, 
 					{
 						keyword: "stronger",
-						upgrade_cost: 200
+						upgrade_cost: 170
 					}
 				],
 				[
@@ -55,7 +55,7 @@ function scr_setup_tower_stats(){
 					}, 
 					{
 						keyword: "faster",
-						upgrade_cost: 225
+						upgrade_cost: 220
 					}, 
 					{
 						keyword: "faster",
@@ -65,11 +65,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "darter",
-						upgrade_cost: 250
+						upgrade_cost: 270
 					}, 
 					{
 						keyword: "darter",
-						upgrade_cost: 425
+						upgrade_cost: 420
 					}, 
 					{
 						keyword: "darter",
@@ -495,10 +495,10 @@ function scr_setup_tower_stats(){
 			tower_sprite: "spr_assassin_monkey",
 			tower_object: "obj_assassin_monkey",
 			butt_sprite: "spr_assassin_tower_butt",
-			total_cost: 450,
+			total_cost: 490,
 			upgrade_cost: 0,
 			range: 240,
-			delay: 180,
+			delay: 210,
 			attack_cooldown: 0,
 			attack_barrages: 1,
 			barrage_count: 0,
@@ -509,9 +509,9 @@ function scr_setup_tower_stats(){
 				{
 					sprite: "spr_knife",
 					pierce: 25,
-					damage: 2,
-					speed: 16,
-					friction: 4,
+					damage: 3,
+					speed: 9,
+					friction: 1,
 					lifespan: 30
 				}
 			],
@@ -524,7 +524,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Shadowy Sight",
-						upgrade_cost: 300
+						upgrade_cost: 330
 					}
 				]
 			],
@@ -532,11 +532,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Multi-Strikes",
-						upgrade_cost: 1090
+						upgrade_cost: 1330
 					},
 					{
-						keyword: "After Images",
-						upgrade_cost: 2700
+						keyword: "Shadow Clones",
+						upgrade_cost: 2900
 					}
 				]
 			]

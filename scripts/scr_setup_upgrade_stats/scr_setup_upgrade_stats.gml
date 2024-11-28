@@ -503,7 +503,8 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Strike bloons multiple times."
 			},
 			"Shadow Clones": {
-				upgrade_string: "Attacks with 3 clones"
+				fire_rate_multiplier: 1.25,
+				upgrade_string: "Attacks faster with 2 additional shadow clones."
 			}
 		}
 	}
