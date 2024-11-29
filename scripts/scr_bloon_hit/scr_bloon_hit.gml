@@ -138,14 +138,9 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		exit;
 	}
 
-	//_bloon.bloon_stats.health -= _projectile_stats.damage;
 	_projectile_stats.pierce -= _bloon.bloon_stats.density;
 	
 	var _damage = _projectile_stats.damage;
-	
-	//var _og_rbe = _bloon.bloon_stats.rbe;
-	//var _pops = 0
-	//var _cash_earned = 0
 	
 	var _pos = _bloon.path_position
 	var _parent_id = _bloon.parent_id

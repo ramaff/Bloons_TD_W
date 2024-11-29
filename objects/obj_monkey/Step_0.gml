@@ -78,7 +78,7 @@ for(var _i = 0; _i < array_length(_additional_attacks); _i++) {
 	}
 	
 	if _attack.attack_cooldown <= 0 {
-		var _add_attack = scr_tower_attack(tower_stats, _attack, current_boosts, range_boost)
+		var _add_attack = scr_tower_attack(_attack, _attack.projectile_stats, current_boosts, range_boost, undefined, tower_stats.id)
 		attacked = _add_attack || attacked
 		if _add_attack {
 			_attack.attack_cooldown += _attack.delay
