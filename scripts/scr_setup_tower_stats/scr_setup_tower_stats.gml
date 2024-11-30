@@ -177,7 +177,7 @@ function scr_setup_tower_stats(){
 			tower_object: "obj_clown_monkey",
 			tower_sprite: "spr_clown_monkey",
 			butt_sprite: "spr_clown_monkey_hero_butt",
-			total_cost: 500,
+			total_cost: 400,
 			upgrade_cost: 0,
 			range: 150,
 			delay: 30,
@@ -204,16 +204,16 @@ function scr_setup_tower_stats(){
 				],
 				[
 					{
-						keyword: "Increased Bloon Flow",
-						upgrade_cost: 300
+						keyword: "Higher Quality Animals",
+						upgrade_cost: 450
 					},
 					{
-						keyword: "Higher Quality Bloons",
-						upgrade_cost: 400
+						keyword: "Increased Bloon Flow",
+						upgrade_cost: 750
 					},
 					{
 						keyword: "Special Deliveries",
-						upgrade_cost: 600
+						upgrade_cost: 750
 					}
 				]
 			],

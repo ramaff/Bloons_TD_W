@@ -8,31 +8,42 @@ if global.round > saved_round {
 	saved_round = global.round
 	
 	var _layers = ["red", "blue", "green"]
-	var _class = "normal"
+	var _class = "animal"
 	var _xx = x;
 	var _yy = y;
 	var _bloon_object = obj_bloon
-	var _path = global.paths[irandom(array_length(global.paths))]
+	var _path = global.paths[irandom(array_length(global.paths) - 1)]
 	var _properties = ["float to track"]
 	var _round = saved_round
 
-	for (var _i = 0; _i < array_length(_layers); _i++) {
-
-		var _layer = _layers[_i];
+	var _pack_count = 1;
 	
-		with instance_create_depth(_xx, _yy, depth, _bloon_object) {
-			scr_bloon_stat_setup(id, _class, _layer, _path, _properties, _round)
-			path_position = 0
-			x = _xx;
-			y = _yy;
-			bloon_stats.vertical_speed += 2 + random(4);
-			bloon_stats.float_height += 10;
+	if variable_struct_exists(tower_stats.active_upgrades, "Higher Quality Animals") {
+		_layers = ["red", "blue", "green", "yellow", "pink"]
+	}
+	if variable_struct_exists(tower_stats.active_upgrades, "Increased Bloon Flow") {
+		_pack_count = 2;
+	}
+
+	repeat(_pack_count) {
+		for (var _i = 0; _i < array_length(_layers); _i++) {
+
+			var _layer = _layers[_i];
+	
+			with instance_create_depth(_xx, _yy, depth, _bloon_object) {
+				scr_bloon_stat_setup(id, _class, _layer, _path, _properties, _round)
+				path_position = 0
+				x = _xx;
+				y = _yy;
+				bloon_stats.vertical_speed += 2 + random(4);
+				bloon_stats.float_height += 10;
 		
-			if instance_exists(target) {
-				target.path_position = 0;
-				target.x = path_get_x(bloon_stats.path, path_position);
-				target.y = path_get_y(bloon_stats.path, path_position);
+				if instance_exists(target) {
+					target.path_position = 0;
+					target.x = path_get_x(bloon_stats.path, path_position);
+					target.y = path_get_y(bloon_stats.path, path_position);
 				
+				}
 			}
 		}
 	}

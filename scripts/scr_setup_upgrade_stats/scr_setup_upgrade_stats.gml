@@ -133,6 +133,26 @@ function scr_setup_upgrade_stats(){
 				range: 15,
 			}
 		},
+		"clown_monkey": {
+			"Tack Bloons": {
+				upgrade_string: "Spawns bloons that explode into 8 tacks when popped.",
+				upgrade_script: scr_start_tack_bloon_flow
+			},
+			"Bomb Bloons": {
+				upgrade_string: "Spawns bloons that explode into an explosion when popped.",
+				upgrade_script: scr_start_bomb_bloon_flow
+			},
+			"Ice Bloons": {
+				upgrade_string: "Spawns bloons that explode into a freezing burst when popped.",
+				upgrade_script: scr_start_ice_bloon_flow
+			},
+			"Higher Quality Animals": {
+				upgrade_string: "Creates higher tier bloon animals."
+			},
+			"Increased Bloon Flow": {
+				upgrade_string: "Doubles bloon production."
+			},
+		},
 		"cactus_monkey": {
 			"pointy-er needles": {
 				pierce: 1,
@@ -313,8 +333,7 @@ function scr_setup_upgrade_stats(){
 								direction: 0,
 								damage: 1,
 								pierce: 60,
-								size: 0.65,
-								particles: 5
+								size: 0.65
 							}
 						]
 					}

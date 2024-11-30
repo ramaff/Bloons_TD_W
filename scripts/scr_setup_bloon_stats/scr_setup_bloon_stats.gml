@@ -1128,8 +1128,8 @@ function scr_setup_bloon_stats(){
 			"red": {
 				"sprite": "spr_hot_air_bloon",
 				index: 0,
-				layers: 150,
-				rbe: 150,
+				layers: 350,
+				rbe: 350,
 				damage: 0,
 				health: 150,
 				density: 1,
@@ -1138,8 +1138,8 @@ function scr_setup_bloon_stats(){
 			"blue": {
 				"sprite": "spr_hot_air_bloon_blue",
 				index: 0,
-				layers: 300,
-				rbe: 300,
+				layers: 700,
+				rbe: 700,
 				damage: 0,
 				health: 300,
 				density: 1,
@@ -1148,8 +1148,8 @@ function scr_setup_bloon_stats(){
 			"green": {
 				"sprite": "spr_hot_air_bloon_green",
 				index: 0,
-				layers: 450,
-				rbe: 450,
+				layers: 1050,
+				rbe: 1050,
 				damage: 0,
 				health: 450,
 				density: 1,
@@ -1210,6 +1210,114 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 0.12,
 			}
+		},
+		"animal": {
+			"sprite": "spr_bloon_animal",
+			"object": "obj_normal_bloon",
+			"shielded_sprite": "spr_bloon_shielded",
+			"tattered_sprite": "spr_bloon_tattered",
+			max_health: 1,
+			"red": {
+				layers: 1,
+				index: 0,
+				rbe: 1,
+				health: 1,
+				density: 1,
+				speed: 1.5,
+				children: [
+					{"class": "normal", "layer": "red"},
+					{"class": "normal", "layer": "red"},
+					{"class": "normal", "layer": "red"},
+					{"class": "normal", "layer": "red"},
+					{"class": "normal", "layer": "red"}
+				]
+			},
+			"blue": {
+				layers: 2,
+				index: 1,
+				rbe: 2,
+				health: 1,
+				density: 1,
+				speed: 2,
+				children: [
+					{"class": "normal", "layer": "blue"},
+					{"class": "normal", "layer": "blue"},
+					{"class": "normal", "layer": "blue"},
+					{"class": "normal", "layer": "blue"},
+					{"class": "normal", "layer": "blue"}
+				]
+			},
+			"green": {
+				layers: 3,
+				index: 2,
+				rbe: 3,
+				health: 1,
+				density: 1,
+				speed: 2.5,
+				children: [
+					{"class": "normal", "layer": "green"},
+					{"class": "normal", "layer": "green"},
+					{"class": "normal", "layer": "green"},
+					{"class": "normal", "layer": "green"},
+					{"class": "normal", "layer": "green"}
+				]
+			},
+			"yellow": {
+				layers: 4,
+				index: 3,
+				rbe: 4,
+				health: 1,
+				density: 1,
+				speed: 4.5,
+				children: [
+					{"class": "normal", "layer": "yellow"},
+					{"class": "normal", "layer": "yellow"},
+					{"class": "normal", "layer": "yellow"},
+					{"class": "normal", "layer": "yellow"},
+					{"class": "normal", "layer": "yellow"}
+				]
+			},
+			"pink": {
+				layers: 5,
+				index: 4,
+				rbe: 5,
+				health: 1,
+				density: 1,
+				speed: 5,
+				children: [
+					{"class": "normal", "layer": "pink"},
+					{"class": "normal", "layer": "pink"},
+					{"class": "normal", "layer": "pink"},
+					{"class": "normal", "layer": "pink"},
+					{"class": "normal", "layer": "pink"}
+				]
+			}
+		},
+		"tack": {
+			"sprite": "spr_tack_bloon",
+			"object": "obj_tack_bloon",
+			max_health: 1,
+			"pink": {
+				layers: 1,
+				index: 0,
+				rbe: 1,
+				health: 1,
+				density: 1,
+				speed: 2
+			},
+		},
+		"bomb": {
+			"sprite": "spr_bomb_bloon",
+			"object": "obj_bomb_bloon",
+			max_health: 1,
+			"red": {
+				layers: 1,
+				index: 0,
+				rbe: 1,
+				health: 1,
+				density: 1,
+				speed: 2
+			},
 		}
 	}
 }
