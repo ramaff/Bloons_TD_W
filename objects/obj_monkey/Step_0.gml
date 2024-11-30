@@ -9,6 +9,9 @@ current_boosts = {
 	"damage_boost": 0,
 	"pierce_boost": 0,
 	"speed_boost": 0,
+	"shot_count": 0,
+	"shot_spread": 0,
+	"angular_velocity": 0,
 	"puncture": 0
 }
 
@@ -35,6 +38,19 @@ if variable_struct_exists(tower_stats, "stat_boosts") {
 			}
 			if variable_struct_exists(_current_boost, "puncture") {
 				current_boosts.puncture += _current_boost.puncture;
+			}
+			if variable_struct_exists(_current_boost, "shot_count") {
+				current_boosts.shot_count += _current_boost.shot_count;
+			}
+			if variable_struct_exists(_current_boost, "shot_spread") {
+				current_boosts.shot_spread = _current_boost.shot_spread;
+			}
+			if variable_struct_exists(_current_boost, "alternating_angular_velocity") {
+				var _ang_vel = _current_boost.alternating_angular_velocity;
+				if _current_boost.boost_duration mod 30 < 15 {
+					_ang_vel = _ang_vel * -1;	
+				}
+				current_boosts.angular_velocity += _ang_vel
 			}
 			
 			_current_boost.boost_duration--;

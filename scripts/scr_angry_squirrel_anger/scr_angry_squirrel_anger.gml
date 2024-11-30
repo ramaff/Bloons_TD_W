@@ -16,6 +16,17 @@ function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 		if variable_struct_exists(_tower_stats.active_upgrades, "Anger Mismanagement") {
 			_anger_boost.boost_duration = _anger_boost.boost_duration * 2;
 		}
+		if variable_struct_exists(_tower_stats.active_upgrades, "Venting") {
+			if !variable_struct_exists(_tower_stats.stat_boosts, "angry_boost") {
+				_tower_stats.health += 5;
+				if _tower_stats.health > _tower_stats.max_health {
+					_tower_stats.health = _tower_stats.max_health	
+				}
+			}
+		}
+		if variable_struct_exists(_tower_stats.active_upgrades, "Acorn Assault") {
+			_anger_boost.shot_count = 4;
+		}
 		if variable_struct_exists(_tower_stats.active_upgrades, "Lingering Flame") {
 			_anger_boost.fire_rate_boost_multiplier = _anger_boost.fire_rate_boost_multiplier / 1.5
 			var _lingering_flame_boost = {
@@ -24,6 +35,11 @@ function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 				range_boost: 15,
 				sprite: "spr_angry_squirrel_lingering_flame",
 				sprite_priority: 1
+			}
+			if variable_struct_exists(_tower_stats.active_upgrades, "Acorn Assault") {
+				_lingering_flame_boost.shot_count = 1;
+				_lingering_flame_boost.shot_spread = 30;
+				_lingering_flame_boost.alternating_angular_velocity = 5;
 			}
 			variable_struct_set(_tower_stats.stat_boosts, "lingering_flame", _lingering_flame_boost)
 		}

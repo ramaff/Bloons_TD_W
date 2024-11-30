@@ -39,10 +39,10 @@ global.towers_progress = {
 		"unlocked": true	
 	},
 	"assassin_monkey": {
-		"unlocked": true	
+		"unlocked": false	
 	},
 	"haunted_monkey": {
-		"unlocked": true	
+		"unlocked": false	
 	}
 }
 
@@ -52,6 +52,9 @@ global.heroes_progress = {
 		"unlocked": true
 	},
 	"angry_squirrel": {
+		"unlocked": false	
+	},
+	"clown_monkey": {
 		"unlocked": false	
 	}
 }

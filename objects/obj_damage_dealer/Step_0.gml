@@ -17,6 +17,10 @@ if variable_struct_exists(projectile_stats, "friction") {
 	projectile_stats.speed = max(projectile_stats.speed, 0);
 	speed = projectile_stats.speed;
 }
+if variable_struct_exists(projectile_stats, "angular_velocity") {
+	
+	direction += projectile_stats.angular_velocity
+}
 
 
 

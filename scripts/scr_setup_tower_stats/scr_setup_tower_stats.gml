@@ -132,7 +132,25 @@ function scr_setup_tower_stats(){
 					{
 						keyword: "Lingering Flame",
 						upgrade_cost: 1200
+					}
+				],
+				[
+					{
+						keyword: "Bigger Acorns",
+						upgrade_cost: 200
 					},
+					{
+						keyword: "Beefed-Up Squirrel",
+						upgrade_cost: 1050
+					},
+					{
+						keyword: "Venting",
+						upgrade_cost: 750
+					}
+				]
+			],
+			split_upgrades: [
+				[
 					{
 						keyword: "Acorn Assault",
 						upgrade_cost: 3300
@@ -144,24 +162,70 @@ function scr_setup_tower_stats(){
 				],
 				[
 					{
-						keyword: "Bigger Acorns",
-						upgrade_cost: 200
-					},
-					{
-						keyword: "Beefed-Up Squirrel",
-						upgrade_cost: 900
-					},
-					{
-						keyword: "Venteeee",
-						upgrade_cost: 1050
-					},
-					{
 						keyword: "Tree Tossing",
 						upgrade_cost: 2500
 					},
 					{
 						keyword: "Rampage",
 						upgrade_cost: 7500
+					}
+				],
+				[]
+			]
+		},
+		"clown_monkey": {
+			tower_object: "obj_clown_monkey",
+			tower_sprite: "spr_clown_monkey",
+			butt_sprite: "spr_clown_monkey_hero_butt",
+			total_cost: 500,
+			upgrade_cost: 0,
+			range: 150,
+			delay: 30,
+			attack_cooldown: 0,
+			health: 150,
+			max_health: 150,
+			stat_boosts: {},
+	
+			projectile_stats: [],
+			upgrades: [
+				[
+					{
+						keyword: "Tack Bloons",
+						upgrade_cost: 300
+					},
+					{
+						keyword: "Bomb Bloons",
+						upgrade_cost: 450
+					},
+					{
+						keyword: "Ice Bloons",
+						upgrade_cost: 500
+					}
+				],
+				[
+					{
+						keyword: "Increased Bloon Flow",
+						upgrade_cost: 300
+					},
+					{
+						keyword: "Higher Quality Bloons",
+						upgrade_cost: 400
+					},
+					{
+						keyword: "Special Deliveries",
+						upgrade_cost: 600
+					}
+				]
+			],
+			split_upgrades: [
+				[
+				],
+				[
+				],
+				[
+					{
+						keyword: "Piñata",
+						upgrade_cost: 3000
 					}
 				]
 			]

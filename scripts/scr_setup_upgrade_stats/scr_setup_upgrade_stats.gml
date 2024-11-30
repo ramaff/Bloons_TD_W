@@ -111,7 +111,7 @@ function scr_setup_upgrade_stats(){
 				projectile_replacement: true,
 				projectile_stats: [
 					{
-						sprite: "spr_big_acorn",
+						sprite: "spr_bigger_acorn",
 						pierce: 6,
 						damage: 2,
 						speed: 18,
@@ -119,21 +119,18 @@ function scr_setup_upgrade_stats(){
 					}
 				],
 				range: 15,
-				health: 150,
-				max_health: 150,
-				upgrade_string: "The squirrel has twice as much health, and throws acorns twice as hard!"
+				health: 100,
+				max_health: 100,
+				upgrade_string: "The squirrel has 100 more health, and throws acorns twice as hard!"
 			},
-			"Vent": {
-				upgrade_string: "The squirrel can throw nearby towers to regain some of its health and pop more bloons.",
-				abilities: {
-					"Vent": {
-						"charge_time": 60,
-						"charge": 60,
-						"max_charges": 1,
-						"charges": 0,
-						"ability_script": scr_vent
-					}
-				}
+			"Venting": {
+				upgrade_string: "The squirrel regains some of its health whenever it gets angry",
+			},
+			"Acorn Assault": {
+				upgrade_string: "While angry, release a massively increased amount of acorns.",
+				health: 50,
+				max_health: 50,
+				range: 15,
 			}
 		},
 		"cactus_monkey": {

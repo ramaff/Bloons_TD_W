@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_tower_attack(_tower_stats = tower_stats, _projectile_stats = tower_stats.projectile_stats, 
 						  _current_boosts = {}, _range_boost = 0, _targeting = targeting, _id = tower_stats.id){
+	
 	if variable_struct_exists(_tower_stats, "tower_attack_script") {
 		script_execute(_tower_stats.tower_attack_script)
 	}

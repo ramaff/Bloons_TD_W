@@ -7,6 +7,9 @@ function scr_create_tower_buttons(){
 	if global.mission = "bloon_academia" and !global.heroes_progress.angry_squirrel.unlocked {
 		_heroes[array_length(_heroes)] = "angry_squirrel"	
 	}
+	if global.mission = "parade" and !global.heroes_progress.clown_monkey.unlocked {
+		_heroes[array_length(_heroes)] = "clown_monkey"	
+	}
 	
 	for(var _i = 0; _i < array_length(_heroes); _i++) {
 		with instance_create_depth(816, 64 + (_i * 64), depth, obj_hero_butt) {

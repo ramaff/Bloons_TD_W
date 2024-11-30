@@ -10,9 +10,16 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 		if variable_struct_exists(_projectile_stats[_i], "projectile_count") {
 			_shot_count = _projectile_stats[_i].projectile_count
 		}
+		if variable_struct_exists(_current_boosts, "shot_count") {
+			_shot_count += _current_boosts.shot_count
+		}
+
 		var _spread = 15;
 		if variable_struct_exists(_projectile_stats[_i], "projectile_spread") {
 			_spread = _projectile_stats[_i].projectile_spread
+		}
+		if variable_struct_exists(_current_boosts, "shot_spread") {
+			_spread += _current_boosts.shot_spread
 		}
 		
 		var _dir = -_spread * ((_shot_count - 1) / 2)
@@ -39,6 +46,9 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 				}
 				if variable_struct_exists(_current_boosts, "speed_boost") {
 					projectile_stats.speed += _current_boosts.speed_boost
+				}
+				if variable_struct_exists(_current_boosts, "angular_velocity") {
+					projectile_stats.angular_velocity = _current_boosts.angular_velocity
 				}
 				if variable_struct_exists(_current_boosts, "puncture") {
 					if variable_struct_exists(projectile_stats, "puncture") {

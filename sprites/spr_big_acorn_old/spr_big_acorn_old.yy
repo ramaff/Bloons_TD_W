@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_big_acorn",
-  "bbox_bottom": 56,
-  "bbox_left": 5,
-  "bbox_right": 58,
-  "bbox_top": 7,
+  "name": "spr_big_acorn_old",
+  "bbox_bottom": 61,
+  "bbox_left": 3,
+  "bbox_right": 60,
+  "bbox_top": 4,
   "bboxMode": 2,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3685aa25-70cd-4354-85eb-982b5abda0c0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"83b676da-58ec-48ee-a19e-1698cbc4c687",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_big_acorn",
+    "name": "spr_big_acorn_old",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3685aa25-70cd-4354-85eb-982b5abda0c0","path":"sprites/spr_big_acorn/spr_big_acorn.yy",},},},"Disabled":false,"id":"b3332854-3bcb-43b4-b95e-360450fb3f7d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"83b676da-58ec-48ee-a19e-1698cbc4c687","path":"sprites/spr_big_acorn_old/spr_big_acorn_old.yy",},},},"Disabled":false,"id":"55988811-d0ab-4177-a914-72311f29ca97","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var _tick_down = 1;
+/*var _tick_down = 1;
 var _range_boost = 0;
 var _current_boosts = {
 	"damage_boost": 0,
@@ -42,7 +42,7 @@ if variable_struct_exists(tower_stats, "stat_boosts") {
 			}
 		}
 	}
-}
+} */
 
 if tower_stats.barrage_count > 0 {
 	tower_stats.barrage_count--;
