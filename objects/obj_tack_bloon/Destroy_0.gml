@@ -6,10 +6,10 @@ var _projectile_stats = [
 		sprite: "spr_tack",
 		projectile_count: 8,
 		projectile_spread: 45,
-		direction: 0,
+		direction: 22.5,
 		pierce: 1,
 		damage: 1,
-		speed: 12,
+		speed: 15,
 		lifespan: 15
 	}
 ]

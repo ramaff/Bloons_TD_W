@@ -25,7 +25,7 @@ function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 			}
 		}
 		if variable_struct_exists(_tower_stats.active_upgrades, "Acorn Assault") {
-			_anger_boost.shot_count = 4;
+			_anger_boost.shot_count = 2;
 		}
 		if variable_struct_exists(_tower_stats.active_upgrades, "Lingering Flame") {
 			_anger_boost.fire_rate_boost_multiplier = _anger_boost.fire_rate_boost_multiplier / 1.5
@@ -38,7 +38,7 @@ function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 			}
 			if variable_struct_exists(_tower_stats.active_upgrades, "Acorn Assault") {
 				_lingering_flame_boost.shot_count = 1;
-				_lingering_flame_boost.shot_spread = 30;
+				_lingering_flame_boost.shot_spread = 45;
 				_lingering_flame_boost.alternating_angular_velocity = 5;
 			}
 			variable_struct_set(_tower_stats.stat_boosts, "lingering_flame", _lingering_flame_boost)

@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Base Classes",
-    "path": "folders/Sprites/bloons/Base Classes.yy",
+    "name": "Effects",
+    "path": "folders/Sprites/bloons/Effects.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

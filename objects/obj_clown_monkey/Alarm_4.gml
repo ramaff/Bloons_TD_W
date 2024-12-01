@@ -6,6 +6,10 @@ if variable_struct_exists(tower_stats.active_upgrades, "Increased Bloon Flow") {
 	alarm[4] = alarm[4] / 2;
 }
 
+if stun > 0 {
+	exit;
+}
+
 var _class = "bomb"
 var _layer = "red"
 var _path = global.paths[irandom(array_length(global.paths) - 1)]

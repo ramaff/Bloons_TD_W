@@ -10,8 +10,8 @@ var _projectile_stats = [
 		speed: 0,
 		direction: 0,
 		damage: 1,
-		pierce: 40,
-		size: 0.65
+		pierce: 60,
+		size: 0.75
 	}
 ]
 

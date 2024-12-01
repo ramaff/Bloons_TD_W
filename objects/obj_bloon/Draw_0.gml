@@ -20,6 +20,11 @@ if variable_struct_exists(bloon_stats, "tattered") {
 	}
 }
 
+if variable_struct_exists(bloon_stats, "freeze") {
+	if variable_struct_exists(bloon_stats, "freeze_sprite") {
+		draw_sprite(asset_get_index(bloon_stats.freeze_sprite), image_index, x, y)	
+	}
+}
 
 
 

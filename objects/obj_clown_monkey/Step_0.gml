@@ -4,8 +4,14 @@
 // Inherit the parent event
 event_inherited();
 
+if stun > 0 {
+	exit;
+}
+
+
 if global.round > saved_round {
 	saved_round = global.round
+	
 	
 	var _layers = ["red", "blue", "green"]
 	var _class = "animal"
@@ -35,8 +41,8 @@ if global.round > saved_round {
 				path_position = 0
 				x = _xx;
 				y = _yy;
-				bloon_stats.vertical_speed += 2 + random(4);
-				bloon_stats.float_height += 10;
+				bloon_stats.vertical_speed += 1 + random(2);
+				bloon_stats.float_height += 5;
 		
 				if instance_exists(target) {
 					target.path_position = 0;

@@ -69,11 +69,11 @@ function scr_setup_tower_stats(){
 					}, 
 					{
 						keyword: "darter",
-						upgrade_cost: 420
+						upgrade_cost: 400
 					}, 
 					{
 						keyword: "darter",
-						upgrade_cost: 600
+						upgrade_cost: 540
 					}
 				]
 			],
@@ -145,7 +145,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Venting",
-						upgrade_cost: 750
+						upgrade_cost: 600
 					}
 				]
 			],
@@ -153,11 +153,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Acorn Assault",
-						upgrade_cost: 3300
+						upgrade_cost: 2400
 					},
 					{	
 						keyword: "Fiery Rage",
-						upgrade_cost: 6600
+						upgrade_cost: 5400
 					}
 				],
 				[
@@ -177,13 +177,13 @@ function scr_setup_tower_stats(){
 			tower_object: "obj_clown_monkey",
 			tower_sprite: "spr_clown_monkey",
 			butt_sprite: "spr_clown_monkey_hero_butt",
-			total_cost: 400,
+			total_cost: 300,
 			upgrade_cost: 0,
 			range: 150,
 			delay: 30,
 			attack_cooldown: 0,
-			health: 150,
-			max_health: 150,
+			health: 200,
+			max_health: 200,
 			stat_boosts: {},
 	
 			projectile_stats: [],
@@ -205,7 +205,7 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Higher Quality Animals",
-						upgrade_cost: 450
+						upgrade_cost: 350
 					},
 					{
 						keyword: "Increased Bloon Flow",

@@ -5,9 +5,6 @@ leak_frame = false;
 
 if variable_struct_exists(bloon_stats, "float to track") {
 	
-	//speed = bloon_stats.vertical_speed;
-	//direction = bloon_stats.vertical_direction;
-	
 	bloon_stats.float_height = abs(y - target.y)
 	
 	bloon_stats.vertical_speed -= bloon_stats.float_gravity
@@ -18,20 +15,13 @@ if variable_struct_exists(bloon_stats, "float to track") {
 		bloon_stats.vertical_direction = _tar_angle
 		direction = _tar_angle
 		speed = min(_tar_dist, abs(bloon_stats.vertical_speed))
-		//y += lengthdir_y(abs(bloon_stats.vertical_speed), _tar_angle)
-		//x += lengthdir_x(abs(bloon_stats.vertical_speed), _tar_angle)
-		//bloon_stats.vertical_speed = min(bloon_stats.vertical_speed, _tar_dist)
-		//bloon_stats.height = _tar_dist
 	} else {
 		y -= abs(lengthdir_y(bloon_stats.vertical_speed, bloon_stats.vertical_direction))
 		x += lengthdir_x(bloon_stats.vertical_speed, bloon_stats.vertical_direction)
 	}
 	
-	//show_debug_message("vert speed: " + string(bloon_stats.vertical_speed))
-	//show_debug_message("vert speed: " + string(bloon_stats.vertical_speed))
 	
 	if bloon_stats.float_height < 1 and bloon_stats.vertical_speed <= 0 {
-		//bloon_stats.vertical_speed = bloon_stats.vertical_speed * (-1)
 		variable_struct_remove(bloon_stats, "float to track")
 		var _index = array_get_index(bloon_stats.properties, "float to track") 
 		if _index != -1{
@@ -48,6 +38,22 @@ if variable_struct_exists(bloon_stats, "float to track") {
 			instance_destroy(target)	
 		}
 	}
+}
+
+if variable_struct_exists(bloon_stats, "freeze") {
+	
+	var _move_percent = 1 - (bloon_stats.freeze / power(2, other.bloon_stats.big_bloon_tier))
+	_move_percent = max(0, _move_percent);
+	bloon_stats.freeze_time--;
+	
+	if bloon_stats.freeze_time <= 0 {
+		variable_struct_remove(bloon_stats, "freeze")
+		variable_struct_remove(bloon_stats, "freeze_time")
+		_move_percent = 1;
+	}
+	
+	speed = bloon_stats.speed * _move_percent;
+	path_speed = bloon_stats.speed * _move_percent;
 }
 
 leak_frame = scr_track_end_bloon_check()

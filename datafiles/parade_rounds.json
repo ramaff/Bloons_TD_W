@@ -534,7 +534,7 @@
 		{
 			"class": "hot_air",
 			"layer": "red",
-			"count": 4,
+			"count": 2,
 			"spread": 120,
 			"cooldown": 600
 		}
@@ -660,7 +660,7 @@
 		{
 			"class": "hot_air",
 			"layer": "red",
-			"count": 6,
+			"count": 4,
 			"spread": 60,
 			"cooldown": 600
 		}
@@ -773,7 +773,7 @@
 		{
 			"class": "hot_air",
 			"layer": "red",
-			"count": 10,
+			"count": 6,
 			"spread": 40,
 			"cooldown": 450
 		}
@@ -870,7 +870,7 @@
 		{
 			"class": "hot_air",
 			"layer": "blue",
-			"count": 6,
+			"count": 4,
 			"spread": 45,
 			"cooldown": 500
 		}
@@ -917,7 +917,7 @@
 		{
 			"class": "hot_air",
 			"layer": "green",
-			"count": 6,
+			"count": 4,
 			"spread": 60,
 			"cooldown": 500
 		}

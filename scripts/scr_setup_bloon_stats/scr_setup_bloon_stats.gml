@@ -7,6 +7,7 @@ function scr_setup_bloon_stats(){
 			"object": "obj_normal_bloon",
 			"shielded_sprite": "spr_bloon_shielded",
 			"tattered_sprite": "spr_bloon_tattered",
+			"freeze_sprite": "spr_bloon_freeze",
 			max_health: 1,
 			"red": {
 				layers: 1,
@@ -150,6 +151,7 @@ function scr_setup_bloon_stats(){
 			"object": "obj_splitter_bloon",
 			"shielded_sprite": "spr_splitter_shielded",
 			"tattered_sprite": "spr_splitter_tattered",
+			"freeze_sprite": "spr_splitter_freeze",
 			max_health: 1,
 			"orange": {
 				layers: 2,
@@ -1131,7 +1133,7 @@ function scr_setup_bloon_stats(){
 				layers: 350,
 				rbe: 350,
 				damage: 0,
-				health: 150,
+				health: 350,
 				density: 1,
 				speed: 1.2,
 			},
@@ -1141,7 +1143,7 @@ function scr_setup_bloon_stats(){
 				layers: 700,
 				rbe: 700,
 				damage: 0,
-				health: 300,
+				health: 700,
 				density: 1,
 				speed: 1.4,
 			},
@@ -1151,7 +1153,7 @@ function scr_setup_bloon_stats(){
 				layers: 1050,
 				rbe: 1050,
 				damage: 0,
-				health: 450,
+				health: 1050,
 				density: 1,
 				speed: 1.6,
 			}
@@ -1162,7 +1164,7 @@ function scr_setup_bloon_stats(){
 			"pinata": {
 				"sprite": "spr_pinata",
 				index: 0,
-				rbe: 988,
+				rbe: 1388,
 				layers: 200,
 				health: 200,
 				density: 1,
@@ -1205,6 +1207,7 @@ function scr_setup_bloon_stats(){
 			"the_party_tank": {
 				sprite: "spr_the_party_tank",
 				layers: 8500,
+				rbe: 8500,
 				damage: 500,
 				health: 8500,
 				density: 1,
@@ -1316,7 +1319,20 @@ function scr_setup_bloon_stats(){
 				rbe: 1,
 				health: 1,
 				density: 1,
-				speed: 2
+				speed: 2.5
+			},
+		},
+		"ice": {
+			"sprite": "spr_ice_bloon",
+			"object": "obj_ice_bloon",
+			max_health: 1,
+			"blue": {
+				layers: 1,
+				index: 0,
+				rbe: 1,
+				health: 1,
+				density: 1,
+				speed: 1.5
 			},
 		}
 	}

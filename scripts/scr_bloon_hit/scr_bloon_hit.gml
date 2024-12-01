@@ -133,9 +133,24 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			}
 		}
 	}
+	if variable_struct_exists(_bloon.bloon_stats, "freeze") {
+		if _bloon.bloon_stats.freeze {
+			_stopped_by_lead = true;
+			if variable_struct_exists(_projectile_stats, "lead_hit") {
+				if _projectile_stats.lead_hit {
+					_stopped_by_lead = false;
+				}
+			}
+		}
+	}
 	if _stopped_by_lead {
 		instance_destroy()
 		exit;
+	}
+	
+	if variable_struct_exists(_projectile_stats, "freeze")  {
+		_bloon.bloon_stats.freeze = _projectile_stats.freeze;
+		_bloon.bloon_stats.freeze_time = _projectile_stats.freeze_time;
 	}
 
 	_projectile_stats.pierce -= _bloon.bloon_stats.density;
