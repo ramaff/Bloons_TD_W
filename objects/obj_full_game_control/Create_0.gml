@@ -25,7 +25,7 @@ global.missions_complete = {
 }
 
 global.towers_progress = {
-	"selected": ["sling_shot_monkey", "cactus_monkey", "pineapple_monkey", "pogo_stick_monkey", "assassin_monkey", "haunted_monkey"],
+	"selected": ["sling_shot_monkey", "cactus_monkey", "pineapple_monkey", "pogo_stick_monkey"],
 	"sling_shot_monkey": {
 		"unlocked": true	
 	},

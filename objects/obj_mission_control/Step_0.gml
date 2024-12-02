@@ -71,6 +71,15 @@ if global.round >= array_length(global.bloon_sends) and !_bloons_remaining and i
 		if global.mission = "bloon_academia" {
 			global.heroes_progress.angry_squirrel.unlocked = true
 		}
+		if global.mission = "autumn_acres" {
+			global.towers_progress.assassin_monkey.unlocked = true
+		}
+		if global.mission = "graveyard" {
+			global.towers_progress.haunted_monkey.unlocked = true
+		}
+		if global.mission = "parade" {
+			global.heroes_progress.clown_monkey.unlocked = true
+		}
 		
 		//show_debug_message(_current_stage_prog)
 		_current_stage_prog.best_time = min(global.total_time, _current_stage_prog.best_time)

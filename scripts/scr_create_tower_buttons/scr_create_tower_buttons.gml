@@ -42,6 +42,13 @@ function scr_create_tower_buttons(){
 	
 	var _towers = global.towers_progress.selected
 	
+	if global.mission = "autumn acres" and !global.towers_progress.assassin_monkey.unlocked {
+		_heroes[array_length(_heroes)] = "assassin_monkey"	
+	}
+	if global.mission = "parade" and !global.towers_progress.haunted_monkey.unlocked {
+		_heroes[array_length(_heroes)] = "haunted_monkey"	
+	}
+	
 	for(var _j = 0; _j < 3; _j++) {
 		for(var _k = 0; _k < 2; _k++) {
 			if (_j * 2) + _k >= array_length(_towers) {

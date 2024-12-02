@@ -45,6 +45,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Base Classes","folderPath":"folders/Sprites/bloons/Base Classes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"bloon objects","folderPath":"folders/Sprites/bloons/bloon objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"bosses","folderPath":"folders/Sprites/bloons/bosses.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Effects","folderPath":"folders/Sprites/bloons/Effects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"icons","folderPath":"folders/Sprites/bloons/icons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Moab Class","folderPath":"folders/Sprites/bloons/Moab Class.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Special Bloon Classes","folderPath":"folders/Sprites/bloons/Special Bloon Classes.yy",},
@@ -56,7 +57,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"tower_butts","folderPath":"folders/Sprites/ui/tower_butts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Effects","folderPath":"folders/Sprites/bloons/Effects.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"autumn_acres_rounds.json","CopyToMask":-1,"filePath":"datafiles",},
