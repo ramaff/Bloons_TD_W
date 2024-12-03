@@ -40,13 +40,13 @@ function scr_create_tower_buttons(){
 		}
 	}
 	
-	var _towers = global.towers_progress.selected
+	var _towers = variable_clone(global.towers_progress.selected)
 	
-	if global.mission = "autumn acres" and !global.towers_progress.assassin_monkey.unlocked {
-		_heroes[array_length(_heroes)] = "assassin_monkey"	
+	if global.mission = "autumn_acres" and !global.towers_progress.assassin_monkey.unlocked {
+		_towers[array_length(_towers)] = "assassin_monkey"	
 	}
-	if global.mission = "parade" and !global.towers_progress.haunted_monkey.unlocked {
-		_heroes[array_length(_heroes)] = "haunted_monkey"	
+	if global.mission = "graveyard" and !global.towers_progress.haunted_monkey.unlocked {
+		_towers[array_length(_towers)] = "haunted_monkey"	
 	}
 	
 	for(var _j = 0; _j < 3; _j++) {

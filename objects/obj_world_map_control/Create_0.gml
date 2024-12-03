@@ -24,13 +24,13 @@ if global.towers_progress.assassin_monkey.unlocked and !variable_struct_exists(_
 	with instance_create_depth(480, 600, -500, obj_world_map_note) {
 		text = "The assassin monkey has joined your party"	
 	}
-	global.towers_progress.selected[_heroes_selected_amt] = "assassin_monkey"
+	global.towers_progress.selected[_towers_selected_amt] = "assassin_monkey"
 }
 if global.towers_progress.haunted_monkey.unlocked and !variable_struct_exists(_selected_towers, "haunted_monkey") {
 	with instance_create_depth(480, 600, -500, obj_world_map_note) {
 		text = "The haunted monkey has joined your party"	
 	}
-	global.towers_progress.selected[_heroes_selected_amt] = "assassin_monkey"
+	global.towers_progress.selected[_towers_selected_amt] = "haunted_monkey"
 }
 if global.heroes_progress.clown_monkey.unlocked and !variable_struct_exists(_selected_heroes, "clown_monkey") {
 	with instance_create_depth(480, 600, -500, obj_world_map_note) {

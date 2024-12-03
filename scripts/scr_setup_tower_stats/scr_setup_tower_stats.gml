@@ -191,11 +191,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Tack Bloons",
-						upgrade_cost: 300
+						upgrade_cost: 270
 					},
 					{
 						keyword: "Bomb Bloons",
-						upgrade_cost: 450
+						upgrade_cost: 420
 					},
 					{
 						keyword: "Ice Bloons",
@@ -205,7 +205,7 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Higher Quality Animals",
-						upgrade_cost: 350
+						upgrade_cost: 300
 					},
 					{
 						keyword: "Increased Bloon Flow",
@@ -428,7 +428,7 @@ function scr_setup_tower_stats(){
 			butt_sprite: "spr_pogo_stick_monkey_tower_butt",
 			tower_base: true,
 			tower_base_sprite: "spr_pogo_pad",
-			total_cost: 450,
+			total_cost: 410,
 			upgrade_cost: 0,
 			range: 160,
 			delay: 60,
@@ -449,11 +449,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Heavy Hops",
-						upgrade_cost: 250
+						upgrade_cost: 220
 					},
 					{
 						keyword: "Quick Hops",
-						upgrade_cost: 300
+						upgrade_cost: 260
 					}
 				]
 			],
@@ -471,11 +471,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Jackhammer",
-						upgrade_cost: 1350
+						upgrade_cost: 1080
 					},
 					{
 						keyword: "Drill",
-						upgrade_cost: 3750
+						upgrade_cost: 3150
 					}
 				]
 			]
