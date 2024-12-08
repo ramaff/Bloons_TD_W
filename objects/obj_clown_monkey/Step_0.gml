@@ -20,15 +20,15 @@ if global.round > saved_round {
 	var _bloon_object = obj_bloon
 	var _path = global.paths[irandom(array_length(global.paths) - 1)]
 	var _properties = ["float to track"]
-	var _round = saved_round
+	var _round = -1
 
-	var _pack_count = 1;
+	var _pack_count = 2;
 	
 	if variable_struct_exists(tower_stats.active_upgrades, "Higher Quality Animals") {
 		_layers = ["red", "blue", "green", "yellow", "pink"]
 	}
 	if variable_struct_exists(tower_stats.active_upgrades, "Increased Bloon Flow") {
-		_pack_count = 2;
+		_pack_count = 4;
 	}
 
 	repeat(_pack_count) {
