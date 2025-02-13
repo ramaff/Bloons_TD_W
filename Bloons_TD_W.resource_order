@@ -332,6 +332,7 @@
     {"name":"spr_jim_hero_butt","order":4,"path":"sprites/spr_jim_hero_butt/spr_jim_hero_butt.yy",},
     {"name":"obj_angry_squirrel","order":4,"path":"objects/obj_angry_squirrel/obj_angry_squirrel.yy",},
     {"name":"obj_frankensteins_bloon","order":2,"path":"objects/obj_frankensteins_bloon/obj_frankensteins_bloon.yy",},
+    {"name":"spr_the_bridge_track","order":18,"path":"sprites/spr_the_bridge_track/spr_the_bridge_track.yy",},
     {"name":"spr_parade_track","order":16,"path":"sprites/spr_parade_track/spr_parade_track.yy",},
     {"name":"scr_load_game","order":3,"path":"scripts/scr_load_game/scr_load_game.yy",},
     {"name":"spr_going_butt","order":13,"path":"sprites/spr_going_butt/spr_going_butt.yy",},

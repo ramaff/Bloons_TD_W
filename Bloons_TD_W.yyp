@@ -385,6 +385,7 @@
     {"id":{"name":"obj_angry_squirrel","path":"objects/obj_angry_squirrel/obj_angry_squirrel.yy",},},
     {"id":{"name":"obj_frankensteins_bloon","path":"objects/obj_frankensteins_bloon/obj_frankensteins_bloon.yy",},},
     {"id":{"name":"spr_moab","path":"sprites/spr_moab/spr_moab.yy",},},
+    {"id":{"name":"spr_the_bridge_track","path":"sprites/spr_the_bridge_track/spr_the_bridge_track.yy",},},
     {"id":{"name":"spr_parade_track","path":"sprites/spr_parade_track/spr_parade_track.yy",},},
     {"id":{"name":"scr_load_game","path":"scripts/scr_load_game/scr_load_game.yy",},},
     {"id":{"name":"spr_going_butt","path":"sprites/spr_going_butt/spr_going_butt.yy",},},
