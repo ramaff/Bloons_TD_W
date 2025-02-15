@@ -1329,6 +1329,19 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 1.5
 			},
+		},
+		"water": {
+			"sprite": "spr_water_bloon",
+			"object": "obj_water_bloon",
+			max_health: 1,
+			"red": {
+				layers: 1,
+				index: 0,
+				rbe: 1,
+				health: 1,
+				density: 1,
+				speed: 2.4
+			},
 		}
 	}
 }

@@ -21,6 +21,22 @@ global.missions_complete = {
 	"parade": {
 		"complete": false,
 		"best_time": 999999	
+	},
+	"the_bridge": {
+		"complete": false,
+		"best_time": 999999	
+	},
+	"the_forest": {
+		"complete": false,
+		"best_time": 999999	
+	},
+	"tower_defense": {
+		"complete": false,
+		"best_time": 999999	
+	},
+	"the_stronghold": {
+		"complete": false,
+		"best_time": 999999	
 	}
 }
 

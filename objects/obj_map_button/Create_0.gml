@@ -32,6 +32,12 @@ tracks_info = {
 		"round_data": "parade_rounds.json",
 		"name": "parade",
 		"requirement": "autumn_acres"
+	},
+	"rm_the_bridge": {
+		"paths": [pth_the_bridge_1, pth_the_bridge_2],
+		"round_data": "the_bridge_rounds.json",
+		"name": "the_bridge",
+		"requirement": "parade"
 	}
 }
 global.mission = "training_room"

@@ -1,0 +1,70 @@
+[
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal",
+			"layer": "blue",
+			"count": 15,
+			"spread": 50,
+			"cooldown": 0
+		},
+		{
+			"class": "water",
+			"layer": "red",
+			"count": 5,
+			"spread": 50,
+			"cooldown": 100
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 8,
+			"spread": 5,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 8,
+			"spread": 5,
+			"cooldown": 120
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 8,
+			"spread": 5,
+			"cooldown": 240
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 8,
+			"spread": 5,
+			"cooldown": 360
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 8,
+			"spread": 5,
+			"cooldown": 480
+		},
+		{
+			"class": "water",
+			"layer": "red",
+			"count": 5,
+			"spread": 50,
+			"cooldown": 100
+		}
+	]
+]
