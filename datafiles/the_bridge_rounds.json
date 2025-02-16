@@ -8,15 +8,8 @@
 			"class": "normal",
 			"layer": "blue",
 			"count": 15,
-			"spread": 50,
+			"spread": 45,
 			"cooldown": 0
-		},
-		{
-			"class": "water",
-			"layer": "red",
-			"count": 5,
-			"spread": 50,
-			"cooldown": 100
 		}
 	],
 	[
@@ -60,11 +53,91 @@
 			"cooldown": 480
 		},
 		{
+			"class": "normal",
+			"layer": "red",
+			"count": 8,
+			"spread": 5,
+			"cooldown": 600
+		},
+		{
 			"class": "water",
 			"layer": "red",
 			"count": 5,
 			"spread": 50,
 			"cooldown": 100
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_water_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal",
+			"layer": "blue",
+			"count": 8,
+			"spread": 10,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "blue",
+			"count": 8,
+			"spread": 10,
+			"cooldown": 240
+		},
+		{
+			"class": "normal",
+			"layer": "blue",
+			"count": 10,
+			"spread": 10,
+			"cooldown": 480
+		},
+		{
+			"class": "water",
+			"layer": "red",
+			"count": 5,
+			"spread": 50,
+			"cooldown": 100
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_tattered_bloon_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 60,
+			"spread": 10,
+			"cooldown": 0,
+			"properties": [
+				"tattered"
+			]
+		},
+		{
+			"class": "water",
+			"layer": "red",
+			"count": 5,
+			"spread": 50,
+			"cooldown": 100
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_tattered_splitter_bloon_icon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "splitter",
+			"layer": "cyan",
+			"count": 15,
+			"spread": 2,
+			"cooldown": 0,
+			"properties": [
+				"tattered"
+			]
 		}
 	]
 ]

@@ -14,11 +14,27 @@ if variable_struct_exists(_track_info, "requirement") {
 	}
 }
 
-global.paths = _track_info.paths
-global.round_data = _track_info.round_data
-global.mission = string_replace(_track_info.name, " ", "_")
+var _track_room = track
+var _menu = noone;
 
-room_goto(track)
+with instance_create_depth(0, 0, depth - 1, obj_mission_briefing_menu) {
+	track_room = _track_room
+	track_name = _track
+	track_info = _track_info
+	_menu = id;
+}
+
+with instance_create_depth(690, 390, depth - 2, obj_mission_start_button) {
+	menu = _menu	
+}
+
+instance_deactivate_object(obj_map_button)
+
+//global.paths = _track_info.paths
+//global.round_data = _track_info.round_data
+//global.mission = string_replace(_track_info.name, " ", "_")
+
+//room_goto(track)
 
 
 

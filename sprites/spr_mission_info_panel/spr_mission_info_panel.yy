@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "tracks",
-    "path": "folders/Sprites/tracks.yy",
+    "name": "world map",
+    "path": "folders/Sprites/world map.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
