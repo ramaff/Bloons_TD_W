@@ -522,6 +522,111 @@ function scr_setup_upgrade_stats(){
 				fire_rate_multiplier: 1.25,
 				upgrade_string: "Attacks faster with 2 additional shadow clones."
 			}
-		}
+		},
+		"goonkey": {
+			"Big Goop": {
+				pierce: 2,
+				upgrade_string: "Goo balls hit 2 more bloons."
+			},
+			"Split Splatter": {
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_goop",
+						pierce: 3,
+						damage: 1,
+						speed: 13,
+						lifespan: 20,
+						status_effects: ["goo"],
+						expire_burst_activation: true,
+						projectile_burst: [
+							{
+								projectile_count: 2,
+								projectile_spread: 180,
+								sprite: "spr_goop",
+								pierce: 3,
+								damage: 1,
+								speed: 13,
+								lifespan: 20,
+								status_effects: ["goo"]
+							},
+						]
+					}
+				],
+				upgrade_string: "Goo balls split when hitting bloons."
+			},
+			"Goo Cube": {
+				range: 10,
+				additional_attacks: [
+					{
+						delay: 180,
+						attack_cooldown: 0,
+						range: 120,
+						projectile_stats: [
+							{
+								sprite: "spr_goop",
+								object: "obj_goo_cube",
+								pierce: 1,
+								damage: 1,
+								speed: 26,
+								lifespan: 20,
+								status_effects: ["goo"],
+							}
+						]
+					}
+				]
+				upgrade_string: "Puts bloons into goo cubes that block bloons from progressing further into the track."
+			},
+			"Goo Pool": {
+				fire_rate_multiplier: 1.666,
+				range: 20,
+				upgrade_string: "Covers the nearby track with a goo pool that causes projectiles to stick to the ground for a long time.",
+				additional_attacks: [
+					{
+						delay: 240,
+						attack_cooldown: 0,
+						range: 40,
+						projectile_stats: [
+							{
+								object: "obj_goo_pool",
+								sprite: "spr_goo_pool",
+								projectile_count: 24,
+								projectile_spread: 15,
+								lifespan: 240,
+								speed: 12,
+								direction: 0,
+								friction: 3,
+								damage: 1,
+								pierce: 20
+							},
+							{
+								object: "obj_goo_pool",
+								sprite: "spr_goo_pool",
+								projectile_count: 24,
+								projectile_spread: 15,
+								lifespan: 240,
+								speed: 18,
+								direction: 0,
+								friction: 4.5,
+								damage: 1,
+								pierce: 20
+							},
+							{
+								object: "obj_goo_pool",
+								sprite: "spr_goo_pool",
+								projectile_count: 24,
+								projectile_spread: 15,
+								lifespan: 240,
+								speed: 24,
+								direction: 0,
+								friction: 6,
+								damage: 1,
+								pierce: 20
+							}
+						]
+					}
+				]
+			}
+		},
 	}
 }

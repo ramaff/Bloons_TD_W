@@ -59,6 +59,9 @@ global.towers_progress = {
 	},
 	"haunted_monkey": {
 		"unlocked": false	
+	},
+	"goonkey": {
+		"unlocked": false	
 	}
 }
 

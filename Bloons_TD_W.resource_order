@@ -126,6 +126,7 @@
     {"name":"spr_pogo_stick_monkey","order":2,"path":"sprites/spr_pogo_stick_monkey/spr_pogo_stick_monkey.yy",},
     {"name":"obj_text","order":9,"path":"objects/obj_text/obj_text.yy",},
     {"name":"spr_pogo_pad","order":5,"path":"sprites/spr_pogo_pad/spr_pogo_pad.yy",},
+    {"name":"spr_goonkey_tower_butt","order":9,"path":"sprites/spr_goonkey_tower_butt/spr_goonkey_tower_butt.yy",},
     {"name":"obj_place_tower","order":3,"path":"objects/obj_place_tower/obj_place_tower.yy",},
     {"name":"spr_pop","order":11,"path":"sprites/spr_pop/spr_pop.yy",},
     {"name":"spr_bloon","order":10,"path":"sprites/spr_bloon/spr_bloon.yy",},

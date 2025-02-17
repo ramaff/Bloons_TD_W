@@ -162,6 +162,7 @@
     {"id":{"name":"spr_pogo_stick_monkey","path":"sprites/spr_pogo_stick_monkey/spr_pogo_stick_monkey.yy",},},
     {"id":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},},
     {"id":{"name":"spr_pogo_pad","path":"sprites/spr_pogo_pad/spr_pogo_pad.yy",},},
+    {"id":{"name":"spr_goonkey_tower_butt","path":"sprites/spr_goonkey_tower_butt/spr_goonkey_tower_butt.yy",},},
     {"id":{"name":"obj_place_tower","path":"objects/obj_place_tower/obj_place_tower.yy",},},
     {"id":{"name":"spr_pop","path":"sprites/spr_pop/spr_pop.yy",},},
     {"id":{"name":"spr_bloon","path":"sprites/spr_bloon/spr_bloon.yy",},},

@@ -653,6 +653,54 @@ function scr_setup_tower_stats(){
 				]
 			]
 		},
+		"goonkey": {
+			tower_sprite: "spr_goonkey",
+			butt_sprite: "spr_goonkey_tower_butt",
+			total_cost: 350,
+			upgrade_cost: 0,
+			range: 110,
+			delay: 39,
+			attack_cooldown: 0,
+	
+			projectile_stats: [
+				{
+					sprite: "spr_goop",
+					pierce: 1,
+					damage: 1,
+					speed: 13,
+					lifespan: 20,
+					status_effects: ["goo"]
+				}
+			],
+			upgrades: [
+				[
+				],
+				[
+					{
+						keyword: "Big Goop",
+						upgrade_cost: 400
+					},
+					{
+						keyword: "Split Splatter",
+						upgrade_cost: 600
+					}
+				]
+			],
+			split_upgrades: [
+				[
+				],
+				[
+					{
+						keyword: "Goo Cube",
+						upgrade_cost: 1200
+					},
+					{
+						keyword: "Goo Pool",
+						upgrade_cost: 4200
+					}
+				]
+			]
+		},
 	}
 
 }

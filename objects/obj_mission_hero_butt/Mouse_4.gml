@@ -7,7 +7,10 @@ if array_contains(_selected_heroes, base_tower_id) {
 	var _index = array_get_index(_selected_heroes, base_tower_id)
 	array_delete(_selected_heroes, _index, 1)
 } else {
-	_selected_heroes[array_length(_selected_heroes)] = base_tower_id	
+	_selected_heroes[array_length(_selected_heroes)] = base_tower_id
+	if array_length(_selected_heroes) > 3 {
+		array_delete(_selected_heroes, 0, 1)
+	}
 }
 
 
