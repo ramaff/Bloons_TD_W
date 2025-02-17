@@ -77,4 +77,5 @@ global.heroes_progress = {
 
 scr_load_game()
 
+scr_setup_global_vars()
 

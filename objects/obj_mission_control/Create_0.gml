@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-scr_setup_global_vars()
-
 global.money = 650
 global.lives = 200
 
