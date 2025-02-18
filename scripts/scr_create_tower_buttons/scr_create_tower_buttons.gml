@@ -4,11 +4,14 @@ function scr_create_tower_buttons(){
 	var _tower_prog = global.towers_progress
 	
 	var _heroes = variable_clone(global.heroes_progress.selected)
-	if global.mission = "bloon_academia" and !global.heroes_progress.angry_squirrel.unlocked {
+	/*if global.mission = "bloon_academia" and !global.heroes_progress.angry_squirrel.unlocked {
 		_heroes[array_length(_heroes)] = "angry_squirrel"	
 	}
 	if global.mission = "parade" and !global.heroes_progress.clown_monkey.unlocked {
 		_heroes[array_length(_heroes)] = "clown_monkey"	
+	} */
+	for (var _i = 0; _i < array_length(global.added_heroes); _i++) {
+		_heroes[array_length(_heroes)] = global.added_heroes[_i];	
 	}
 	
 	for(var _i = 0; _i < array_length(_heroes); _i++) {
@@ -42,11 +45,15 @@ function scr_create_tower_buttons(){
 	
 	var _towers = variable_clone(global.towers_progress.selected)
 	
-	if global.mission = "autumn_acres" and !global.towers_progress.assassin_monkey.unlocked {
+	/*if global.mission = "autumn_acres" and !global.towers_progress.assassin_monkey.unlocked {
 		_towers[array_length(_towers)] = "assassin_monkey"	
 	}
 	if global.mission = "graveyard" and !global.towers_progress.haunted_monkey.unlocked {
 		_towers[array_length(_towers)] = "haunted_monkey"	
+	} */
+	
+	for (var _i = 0; _i < array_length(global.added_towers); _i++) {
+		_heroes[array_length(_towers)] = global.added_towers[_i];	
 	}
 	
 	for(var _j = 0; _j < 3; _j++) {

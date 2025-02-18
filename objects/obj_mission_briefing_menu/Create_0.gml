@@ -13,11 +13,9 @@ var _count = 0;
 for(var _i = 0; _i < array_length(_unlocked_towers); _i++) {
 	var _tower = _unlocked_towers[_i]
 	if _tower = "selected" {
-		//array_delete(_unlocked_towers, _i, 1);
 		continue;
 	}
 	if variable_struct_get(variable_struct_get(global.towers_progress, _tower), "unlocked") = false {
-		//array_delete(_unlocked_towers, _i, 1);
 		continue;
 	}
 	if _count mod 2 = 0 {

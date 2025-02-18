@@ -4,6 +4,11 @@
 var _heroes_selected_amt = array_length(global.heroes_progress.selected)
 var _towers_selected_amt = array_length(global.towers_progress.selected)
 
+global.pickable_tower_slots = 6;
+global.pickable_hero_slots = 3;
+global.added_towers = []
+global.added_heroes = []
+
 var _selected_heroes = {}
 var _selected_towers = {}
 

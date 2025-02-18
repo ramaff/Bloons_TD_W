@@ -574,7 +574,7 @@ function scr_setup_upgrade_stats(){
 							}
 						]
 					}
-				]
+				],
 				upgrade_string: "Puts bloons into goo cubes that block bloons from progressing further into the track."
 			},
 			"Goo Pool": {

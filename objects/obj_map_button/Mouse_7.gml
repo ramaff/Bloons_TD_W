@@ -17,6 +17,27 @@ if variable_struct_exists(_track_info, "requirement") {
 var _track_room = track
 var _menu = noone;
 
+global.added_heroes = []
+global.added_towers = []
+
+if _track = "rm_bloon_academia" {
+	global.added_heroes = ["angry_squirrel"]	
+}
+if _track = "rm_autumn_acres" {
+	global.added_towers = ["assassin_monkey"]	
+}
+if _track = "rm_graveyard" {
+	global.added_towers = ["haunted_monkey"]	
+}
+if _track = "rm_parade" {
+	global.added_heroes = ["clown_monkey"]	
+}
+if _track = "rm_the_bridge" {
+	global.added_towers = ["goonkey"]	
+}
+global.pickable_tower_slots = 6 - array_length(global.added_towers)
+global.pickable_hero_slots = 3 - array_length(global.added_heroes)
+
 with instance_create_depth(0, 0, depth - 1, obj_mission_briefing_menu) {
 	track_room = _track_room
 	track_name = _track
