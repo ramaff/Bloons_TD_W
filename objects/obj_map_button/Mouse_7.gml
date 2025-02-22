@@ -38,6 +38,26 @@ if _track = "rm_the_bridge" {
 global.pickable_tower_slots = 6 - array_length(global.added_towers)
 global.pickable_hero_slots = 3 - array_length(global.added_heroes)
 
+//var _selected_towers = global.towers_progress.selected
+//var _selected_heroes = global.heroes_progress.selected
+
+global.towers_progress.selected = [];
+global.heroes_progress.selected = [];
+
+/*for(var _i = 0; _i < array_length(global.added_towers); _i++) {
+	var _ind = array_get_index(global.towers_progress.selected, global.added_towers[_i])
+	if _ind != 1 {
+		array_delete(global.towers_progress.selected, _ind, 1)
+	}
+}
+
+for(var _i = 0; _i < array_length(global.added_heroes); _i++) {
+	var _ind = array_get_index(global.heroes_progress.selected, global.added_heroes[_i])
+	if _ind != 1 {
+		array_delete(global.heroes_progress.selected, _ind, 1)
+	}
+} */
+
 with instance_create_depth(0, 0, depth - 1, obj_mission_briefing_menu) {
 	track_room = _track_room
 	track_name = _track

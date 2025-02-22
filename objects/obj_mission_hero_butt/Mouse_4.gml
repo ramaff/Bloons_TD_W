@@ -3,6 +3,10 @@
 
 var _selected_heroes = global.heroes_progress.selected
 
+if array_contains(global.added_heroes, base_tower_id) {
+	exit;	
+}
+
 if array_contains(_selected_heroes, base_tower_id) {
 	var _index = array_get_index(_selected_heroes, base_tower_id)
 	array_delete(_selected_heroes, _index, 1)

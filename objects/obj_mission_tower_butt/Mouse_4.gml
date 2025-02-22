@@ -3,6 +3,10 @@
 
 var _selected_towers = global.towers_progress.selected
 
+if array_contains(global.added_towers, base_tower_id) {
+	exit;	
+}
+
 if array_contains(_selected_towers, base_tower_id) {
 	var _index = array_get_index(_selected_towers, base_tower_id)
 	array_delete(_selected_towers, _index, 1)

@@ -10,13 +10,23 @@ var _xx = 320;
 var _yy = 60;
 var _count = 0;
 
+for(var _i = 0; _i < array_length(global.added_towers); _i++) {
+	var _tower = global.added_towers[_i]
+	
+	if !array_contains(_unlocked_towers, _tower) {
+		_unlocked_towers[array_length(_unlocked_towers)] = _tower	
+	}
+}
+
 for(var _i = 0; _i < array_length(_unlocked_towers); _i++) {
 	var _tower = _unlocked_towers[_i]
-	if _tower = "selected" {
-		continue;
-	}
-	if variable_struct_get(variable_struct_get(global.towers_progress, _tower), "unlocked") = false {
-		continue;
+	if !array_contains(global.added_towers, _tower) {
+		if _tower = "selected" {
+			continue;
+		}
+		if variable_struct_get(variable_struct_get(global.towers_progress, _tower), "unlocked") = false {
+			continue;
+		}
 	}
 	if _count mod 2 = 0 {
 		_xx += 64;	
@@ -36,15 +46,23 @@ _yy = 60;
 _count = 0;
 var _unlocked_heroes = struct_get_names(global.heroes_progress)
 
+for(var _i = 0; _i < array_length(global.added_heroes); _i++) {
+	var _hero = global.added_heroes[_i]
+	
+	if !array_contains(_unlocked_heroes, _hero) {
+		_unlocked_heroes[array_length(_unlocked_heroes)] = _hero;
+	}
+}
+
 for(var _i = 0; _i < array_length(_unlocked_heroes); _i++) {
 	var _hero = _unlocked_heroes[_i]
-	if _hero = "selected" {
-		//array_delete(_unlocked_heroes, _i, 1);
-		continue;
-	}
-	if variable_struct_get(variable_struct_get(global.heroes_progress, _hero), "unlocked") = false {
-		//array_delete(_unlocked_heroes, _i, 1);
-		continue;
+	if !array_contains(global.added_heroes, _hero) {
+		if _hero = "selected" {
+			continue;
+		}
+		if variable_struct_get(variable_struct_get(global.heroes_progress, _hero), "unlocked") = false {
+			continue;
+		}
 	}
 	if _count mod 2 = 0 {
 		_xx += 128;
@@ -58,3 +76,4 @@ for(var _i = 0; _i < array_length(_unlocked_heroes); _i++) {
 	}
 	_count++;
 }
+
