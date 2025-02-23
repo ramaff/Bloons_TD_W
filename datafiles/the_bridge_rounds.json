@@ -466,7 +466,7 @@
 	[
 		{
 			"round_icon_sprite": "spr_splitter_bloon",
-			"round_icon_index": 5
+			"round_icon_index": 4
 		},
 		{
 			"class": "splitter",
@@ -492,29 +492,29 @@
 			"class": "normal",
 			"layer": "rainbow",
 			"count": 4,
-			"spread": 15,
+			"spread": 45,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
 			"count": 5,
-			"spread": 15,
+			"spread": 45,
 			"cooldown": 400
 		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
 			"count": 5,
-			"spread": 15,
+			"spread": 45,
 			"cooldown": 800
 		},
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 60,
-			"spread": 5,
-			"cooldown": 1200,
+			"count": 80,
+			"spread": 10,
+			"cooldown": 1300,
 			"properties": [
 				"tattered"
 			]
@@ -535,8 +535,8 @@
 		{
 			"class": "water",
 			"layer": "red",
-			"count": 30,
-			"spread": 15,
+			"count": 10,
+			"spread": 30,
 			"cooldown": 0
 		}
 	],
@@ -609,7 +609,7 @@
 			"cooldown": 0
 		},
 		{
-			"class": "normal",
+			"class": "splitter",
 			"layer": "amber",
 			"count": 45,
 			"spread": 5,
@@ -654,7 +654,7 @@
 		{
 			"class": "hot_air",
 			"layer": "red",
-			"count": 3,
+			"count": 2,
 			"spread": 300,
 			"cooldown": 300
 		}
@@ -718,31 +718,18 @@
 			"class": "lead",
 			"layer": "lead",
 			"count": 30,
-			"spread": 10,
+			"spread": 30,
 			"cooldown": 600,
 			"properties": [
 				"tattered"
 			]
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_mini_moab_icon",
-			"round_icon_index": 2
 		},
 		{
 			"class": "moab",
 			"layer": "mini",
-			"count": 5,
-			"spread": 300,
-			"cooldown": 0
-		},
-		{
-			"class": "water",
-			"layer": "red",
-			"count": 180,
-			"spread": 5,
-			"cooldown": 150
+			"count": 3,
+			"spread": 200,
+			"cooldown": 1600
 		}
 	],
 	[
@@ -752,7 +739,7 @@
 		},
 		{
 			"class": "moaby_dick",
-			"layer": "blue",
+			"layer": "mini",
 			"count": 1,
 			"spread": 0,
 			"cooldown": 0
@@ -841,6 +828,13 @@
 			"count": 5,
 			"spread": 150,
 			"cooldown": 450
+		},
+		{
+			"class": "water",
+			"layer": "red",
+			"count": 180,
+			"spread": 5,
+			"cooldown": 150
 		}
 	]
 ]

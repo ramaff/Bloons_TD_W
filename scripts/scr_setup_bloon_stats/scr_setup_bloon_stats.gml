@@ -1254,6 +1254,19 @@ function scr_setup_bloon_stats(){
 				speed: 0.12,
 			}
 		},
+		"moaby_dick": {
+			"object": "obj_moaby_dick",
+			"big_bloon_tier": 5,
+			"mini": {
+				sprite: "spr_moaby_dick",
+				layers: 6000,
+				rbe: 6000,
+				damage: 500,
+				health: 8500,
+				density: 1,
+				speed: 0.12,
+			}
+		},
 		"animal": {
 			"sprite": "spr_bloon_animal",
 			"object": "obj_normal_bloon",
