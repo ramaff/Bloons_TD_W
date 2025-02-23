@@ -524,31 +524,45 @@ function scr_setup_upgrade_stats(){
 			}
 		},
 		"goonkey": {
-			"Big Goop": {
-				pierce: 2,
-				upgrade_string: "Goo balls hit 2 more bloons."
+			"Piercing Goop": {
+				range: 10,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_goop",
+						pierce: 4,
+						damage: 1,
+						speed: 13,
+						lifespan: 20,
+						goop: 1,
+						goop_time: 180
+					}
+				],
+				upgrade_string: "Goo balls hit 2 more bloons and pop bloons that are hit."
 			},
 			"Split Splatter": {
 				projectile_replacement: true,
 				projectile_stats: [
 					{
 						sprite: "spr_goop",
-						pierce: 3,
+						pierce: 4,
 						damage: 1,
 						speed: 13,
 						lifespan: 20,
-						status_effects: ["goo"],
+						goop: 1,
+						goop_time: 180,
 						expire_burst_activation: true,
 						projectile_burst: [
 							{
-								projectile_count: 2,
-								projectile_spread: 180,
+								projectile_count: 4,
+								projectile_spread: 90,
 								sprite: "spr_goop",
-								pierce: 3,
+								pierce: 4,
 								damage: 1,
 								speed: 13,
-								lifespan: 20,
-								status_effects: ["goo"]
+								lifespan: 10,
+								goop: 1,
+								goop_time: 180
 							},
 						]
 					}
@@ -570,7 +584,6 @@ function scr_setup_upgrade_stats(){
 								damage: 1,
 								speed: 26,
 								lifespan: 20,
-								status_effects: ["goo"],
 							}
 						]
 					}

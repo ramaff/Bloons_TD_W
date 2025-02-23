@@ -428,7 +428,7 @@ function scr_setup_tower_stats(){
 			butt_sprite: "spr_pogo_stick_monkey_tower_butt",
 			tower_base: true,
 			tower_base_sprite: "spr_pogo_pad",
-			total_cost: 410,
+			total_cost: 370,
 			upgrade_cost: 0,
 			range: 160,
 			delay: 60,
@@ -449,11 +449,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Heavy Hops",
-						upgrade_cost: 220
+						upgrade_cost: 190
 					},
 					{
 						keyword: "Quick Hops",
-						upgrade_cost: 260
+						upgrade_cost: 230
 					}
 				]
 			],
@@ -471,11 +471,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Jackhammer",
-						upgrade_cost: 1080
+						upgrade_cost: 980
 					},
 					{
 						keyword: "Drill",
-						upgrade_cost: 3150
+						upgrade_cost: 2650
 					}
 				]
 			]
@@ -656,7 +656,7 @@ function scr_setup_tower_stats(){
 		"goonkey": {
 			tower_sprite: "spr_goonkey",
 			butt_sprite: "spr_goonkey_tower_butt",
-			total_cost: 350,
+			total_cost: 330,
 			upgrade_cost: 0,
 			range: 110,
 			delay: 39,
@@ -665,11 +665,12 @@ function scr_setup_tower_stats(){
 			projectile_stats: [
 				{
 					sprite: "spr_goop",
-					pierce: 1,
-					damage: 1,
+					pierce: 2,
+					damage: 0,
 					speed: 13,
 					lifespan: 20,
-					status_effects: ["goo"]
+					goop: 1,
+					goop_time: 180
 				}
 			],
 			upgrades: [
@@ -677,12 +678,12 @@ function scr_setup_tower_stats(){
 				],
 				[
 					{
-						keyword: "Big Goop",
-						upgrade_cost: 400
+						keyword: "Piercing Goop",
+						upgrade_cost: 350
 					},
 					{
 						keyword: "Split Splatter",
-						upgrade_cost: 600
+						upgrade_cost: 530
 					}
 				]
 			],

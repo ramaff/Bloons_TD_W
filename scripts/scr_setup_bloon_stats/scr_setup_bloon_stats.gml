@@ -8,6 +8,7 @@ function scr_setup_bloon_stats(){
 			"shielded_sprite": "spr_bloon_shielded",
 			"tattered_sprite": "spr_bloon_tattered",
 			"freeze_sprite": "spr_bloon_freeze",
+			"goop_sprite": "spr_bloon_goop",
 			max_health: 1,
 			"red": {
 				layers: 1,
@@ -265,6 +266,28 @@ function scr_setup_bloon_stats(){
 					}
 				]
 			},
+			"prismatic": {
+				layers: 9,
+				index: 5,
+				rbe: 142,
+				health: 1,
+				density: 1,
+				speed: 4.55,
+				children: [
+					{
+						"class": "normal",
+						"layer": "rainbow"
+					},
+					{
+						"class": "normal",
+						"layer": "rainbow"
+					},
+					{
+						"class": "normal",
+						"layer": "rainbow"
+					}
+				]
+			},
 		},
 		"lead": {
 			"properties": [
@@ -496,6 +519,23 @@ function scr_setup_bloon_stats(){
 					{
 						"class": "splitter",
 						"layer": "purple",
+						"properties": [
+							"tattered", "float to track"
+						]
+					}
+				]
+			},
+			"rainbow": {
+				layers: 54,
+				index: 5,
+				rbe: 187,
+				health: 45,
+				density: 1,
+				speed: 6.3,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "prismatic",
 						"properties": [
 							"tattered", "float to track"
 						]

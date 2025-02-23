@@ -41,7 +41,7 @@ function scr_create_tower_buttons(){
 	var _towers = variable_clone(global.towers_progress.selected)
 	
 	for (var _i = 0; _i < array_length(global.added_towers); _i++) {
-		_heroes[array_length(_towers)] = global.added_towers[_i];	
+		_towers[array_length(_towers)] = global.added_towers[_i];	
 	}
 	
 	for(var _j = 0; _j < 3; _j++) {

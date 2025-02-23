@@ -25,6 +25,11 @@ if variable_struct_exists(bloon_stats, "freeze") {
 		draw_sprite(asset_get_index(bloon_stats.freeze_sprite), image_index, x, y)	
 	}
 }
+if variable_struct_exists(bloon_stats, "goop") {
+	if variable_struct_exists(bloon_stats, "goop_sprite") {
+		draw_sprite(asset_get_index(bloon_stats.goop_sprite), image_index, x, y)	
+	} 
+}
 
 
 

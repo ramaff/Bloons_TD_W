@@ -16,7 +16,10 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 	if _bloon_stats.health <= 0 {
 		var _cash_flow = 1;
 		if _round > 20 {
-			_cash_flow = _cash_flow * 0.5;
+			_cash_flow = _cash_flow * 0.6;
+		}
+		if _round > 30 {
+			_cash_flow = _cash_flow * 0.4;
 		}
 		if _bloon_stats.remaining_value > 0 {
 			global.money += _cash_flow;
@@ -152,6 +155,10 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		_bloon.bloon_stats.freeze = _projectile_stats.freeze;
 		_bloon.bloon_stats.freeze_time = _projectile_stats.freeze_time;
 	}
+	if variable_struct_exists(_projectile_stats, "goop") {
+		_bloon.bloon_stats.goop = _projectile_stats.goop;
+		_bloon.bloon_stats.goop_time = _projectile_stats.goop_time;
+	}
 
 	_projectile_stats.pierce -= _bloon.bloon_stats.density;
 	
@@ -216,6 +223,10 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 				} else {
 					variable_struct_remove(bloon_stats, "zombie_stats")	
 				}
+			}
+			if variable_struct_exists(_bloon.bloon_stats, "goop") {
+				bloon_stats.goop = _bloon.bloon_stats.goop;
+				bloon_stats.goop_time = _bloon.bloon_stats.goop_time;
 			}
 			
 			bloon_stats.projectile_hits = variable_clone(_bloon.bloon_stats.projectile_hits)

@@ -56,6 +56,22 @@ if variable_struct_exists(bloon_stats, "freeze") {
 	path_speed = bloon_stats.speed * _move_percent;
 }
 
+if variable_struct_exists(bloon_stats, "goop") {
+	
+	var _move_percent = 1 - ((bloon_stats.goop * 0.5) / power(2, other.bloon_stats.big_bloon_tier))
+	_move_percent = max(0, _move_percent);
+	bloon_stats.goop_time--;
+	
+	if bloon_stats.goop_time <= 0 {
+		variable_struct_remove(bloon_stats, "goop")
+		variable_struct_remove(bloon_stats, "goop_time")
+		_move_percent = 1;
+	}
+	
+	speed = bloon_stats.speed * _move_percent;
+	path_speed = bloon_stats.speed * _move_percent;
+}
+
 leak_frame = scr_track_end_bloon_check()
 
 
