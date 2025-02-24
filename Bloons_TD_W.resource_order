@@ -342,7 +342,7 @@
     {"name":"spr_ability_ui","order":18,"path":"sprites/spr_ability_ui/spr_ability_ui.yy",},
     {"name":"spr_clown_monkey","order":9,"path":"sprites/spr_clown_monkey/spr_clown_monkey.yy",},
     {"name":"spr_tattered_splitter_bloon_icon","order":6,"path":"sprites/spr_tattered_splitter_bloon_icon/spr_tattered_splitter_bloon_icon.yy",},
-    {"name":"obj_the_party_tank","order":5,"path":"objects/obj_the_party_tank/obj_the_party_tank.yy",},
+    {"name":"obj_the_party_tank","order":8,"path":"objects/obj_the_party_tank/obj_the_party_tank.yy",},
     {"name":"obj_hero_butt","order":5,"path":"objects/obj_hero_butt/obj_hero_butt.yy",},
     {"name":"spr_angry_squirrel","order":6,"path":"sprites/spr_angry_squirrel/spr_angry_squirrel.yy",},
     {"name":"scr_cactus_monkey_scripts","order":5,"path":"scripts/scr_cactus_monkey_scripts/scr_cactus_monkey_scripts.yy",},

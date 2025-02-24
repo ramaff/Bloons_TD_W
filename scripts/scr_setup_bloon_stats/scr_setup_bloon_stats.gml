@@ -1264,7 +1264,7 @@ function scr_setup_bloon_stats(){
 				damage: 500,
 				health: 8500,
 				density: 1,
-				speed: 0.12,
+				speed: 0.08,
 			}
 		},
 		"animal": {

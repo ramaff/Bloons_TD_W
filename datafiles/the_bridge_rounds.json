@@ -20,56 +20,56 @@
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 10,
+			"count": 12,
 			"spread": 5,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 10,
+			"count": 12,
 			"spread": 5,
 			"cooldown": 120
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 10,
+			"count": 12,
 			"spread": 5,
 			"cooldown": 240
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 10,
+			"count": 12,
 			"spread": 5,
 			"cooldown": 360
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 10,
+			"count": 12,
 			"spread": 5,
 			"cooldown": 480
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 10,
+			"count": 12,
 			"spread": 5,
 			"cooldown": 600
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 10,
+			"count": 12,
 			"spread": 5,
 			"cooldown": 720
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 10,
+			"count": 12,
 			"spread": 5,
 			"cooldown": 840
 		}
@@ -186,6 +186,13 @@
 			"count": 10,
 			"spread": 2,
 			"cooldown": 1080
+		},
+		{
+			"class": "normal",
+			"layer": "blue",
+			"count": 30,
+			"spread": 2,
+			"cooldown": 1440
 		}
 	],
 	[
@@ -196,7 +203,7 @@
 		{
 			"class": "splitter",
 			"layer": "cyan",
-			"count": 25,
+			"count": 28,
 			"spread": 50,
 			"cooldown": 0
 		},
@@ -246,8 +253,8 @@
 		{
 			"class": "normal",
 			"layer": "blue",
-			"count": 80,
-			"spread": 20,
+			"count": 90,
+			"spread": 18,
 			"cooldown": 0
 		},
 		{
@@ -350,8 +357,8 @@
 		{
 			"class": "splitter",
 			"layer": "lime",
-			"count": 40,
-			"spread": 30,
+			"count": 45,
+			"spread": 28,
 			"cooldown": 0
 		},
 		{
@@ -471,7 +478,7 @@
 		{
 			"class": "splitter",
 			"layer": "purple",
-			"count": 25,
+			"count": 30,
 			"spread": 40,
 			"cooldown": 0
 		},
@@ -480,7 +487,7 @@
 			"layer": "green",
 			"count": 12,
 			"spread": 30,
-			"cooldown": 1080
+			"cooldown": 1280
 		}
 	],
 	[
@@ -512,8 +519,8 @@
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 80,
-			"spread": 10,
+			"count": 100,
+			"spread": 8,
 			"cooldown": 1300,
 			"properties": [
 				"tattered"
@@ -548,7 +555,7 @@
 		{
 			"class": "deflation",
 			"layer": "yellow",
-			"count": 18,
+			"count": 20,
 			"spread": 40,
 			"cooldown": 0
 		}
@@ -561,8 +568,8 @@
 		{
 			"class": "normal",
 			"layer": "yellow",
-			"count": 80,
-			"spread": 5,
+			"count": 180,
+			"spread": 2,
 			"cooldown": 0,
 			"properties": [
 				"regrow"
@@ -577,8 +584,8 @@
 		{
 			"class": "normal",
 			"layer": "zebra",
-			"count": 40,
-			"spread": 20,
+			"count": 45,
+			"spread": 18,
 			"cooldown": 0
 		},
 		{
@@ -611,7 +618,7 @@
 		{
 			"class": "splitter",
 			"layer": "amber",
-			"count": 45,
+			"count": 48,
 			"spread": 5,
 			"cooldown": 1350,
 			"properties": [
@@ -647,15 +654,15 @@
 		{
 			"class": "deflation",
 			"layer": "pink",
-			"count": 30,
-			"spread": 40,
+			"count": 35,
+			"spread": 45,
 			"cooldown": 0
 		},
 		{
 			"class": "hot_air",
 			"layer": "red",
 			"count": 2,
-			"spread": 300,
+			"spread": 450,
 			"cooldown": 300
 		}
 	],
@@ -687,8 +694,8 @@
 		{
 			"class": "normal",
 			"layer": "zebra",
-			"count": 80,
-			"spread": 15,
+			"count": 90,
+			"spread": 12,
 			"cooldown": 0,
 			"properties": [
 				"tattered"
@@ -698,7 +705,7 @@
 			"class": "water",
 			"layer": "red",
 			"count": 120,
-			"spread": 10,
+			"spread": 9,
 			"cooldown": 0
 		}
 	],
@@ -753,7 +760,7 @@
 		{
 			"class": "ceramic",
 			"layer": "ceramic",
-			"count": 16,
+			"count": 20,
 			"spread": 90,
 			"cooldown": 0
 		}
@@ -766,7 +773,7 @@
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 120,
+			"count": 140,
 			"spread": 15,
 			"cooldown": 0,
 			"properties": [
@@ -777,7 +784,7 @@
 			"class": "hot_air",
 			"layer": "blue",
 			"count": 3,
-			"spread": 300,
+			"spread": 450,
 			"cooldown": 300
 		}
 	],
@@ -789,7 +796,7 @@
 		{
 			"class": "ceramic",
 			"layer": "ceramic",
-			"count": 16,
+			"count": 18,
 			"spread": 90,
 			"cooldown": 0,
 			"properties": [
@@ -806,7 +813,14 @@
 			"class": "deflation",
 			"layer": "rainbow",
 			"count": 25,
-			"spread": 40,
+			"spread": 90,
+			"cooldown": 0
+		},
+		{
+			"class": "deflation",
+			"layer": "rainbow",
+			"count": 5,
+			"spread": 1890,
 			"cooldown": 0
 		}
 	],

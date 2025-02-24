@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Special Class Bloons",
-    "path": "folders/Objects/Bloons/Special Class Bloons.yy",
+    "name": "Bounties",
+    "path": "folders/Objects/Bloons/Bounties.yy",
   },
   "parentObjectId": {
     "name": "obj_bounty",

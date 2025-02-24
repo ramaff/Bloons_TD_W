@@ -131,7 +131,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Lingering Flame",
-						upgrade_cost: 1200
+						upgrade_cost: 900
 					}
 				],
 				[
