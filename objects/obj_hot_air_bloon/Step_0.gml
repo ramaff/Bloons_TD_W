@@ -52,6 +52,10 @@ with instance_create_depth(x, y, _depth, obj_draw_something) {
 
 direction = _tar_angle
 
+if y < 0 {
+	y = 0;	
+}
+
 
 // Inherit the parent event
 event_inherited();

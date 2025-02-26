@@ -846,8 +846,8 @@
 		{
 			"class": "water",
 			"layer": "red",
-			"count": 180,
-			"spread": 5,
+			"count": 60,
+			"spread": 15,
 			"cooldown": 150
 		}
 	]

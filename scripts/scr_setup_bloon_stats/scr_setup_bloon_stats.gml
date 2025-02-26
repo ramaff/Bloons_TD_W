@@ -1243,7 +1243,7 @@ function scr_setup_bloon_stats(){
 		},
 		"the_party_tank": {
 			"object": "obj_the_party_tank",
-			"big_bloon_tier": 5,
+			"big_bloon_tier": 7,
 			"the_party_tank": {
 				sprite: "spr_the_party_tank",
 				layers: 8500,
@@ -1256,15 +1256,15 @@ function scr_setup_bloon_stats(){
 		},
 		"moaby_dick": {
 			"object": "obj_moaby_dick",
-			"big_bloon_tier": 5,
+			"big_bloon_tier": 7,
 			"mini": {
 				sprite: "spr_moaby_dick",
-				layers: 6000,
-				rbe: 6000,
+				layers: 6500,
+				rbe: 6500,
 				damage: 500,
 				health: 8500,
 				density: 1,
-				speed: 0.08,
+				speed: 0.06,
 			}
 		},
 		"animal": {
