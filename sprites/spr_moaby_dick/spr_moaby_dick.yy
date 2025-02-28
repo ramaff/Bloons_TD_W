@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Moab Class",
-    "path": "folders/Sprites/bloons/Moab Class.yy",
+    "name": "bosses",
+    "path": "folders/Sprites/bloons/bosses.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

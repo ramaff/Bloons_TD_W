@@ -832,15 +832,15 @@
 		{
 			"class": "moab",
 			"layer": "moab",
-			"count": 1,
-			"spread": 0,
+			"count": 3,
+			"spread": 360,
 			"cooldown": 0
 		},
 		{
 			"class": "moab",
 			"layer": "mini",
 			"count": 5,
-			"spread": 150,
+			"spread": 60,
 			"cooldown": 450
 		},
 		{

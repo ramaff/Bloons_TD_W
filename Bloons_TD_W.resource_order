@@ -64,7 +64,7 @@
     {"name":"spr_big_acorn","order":15,"path":"sprites/spr_big_acorn/spr_big_acorn.yy",},
     {"name":"rm_world_map","order":5,"path":"rooms/rm_world_map/rm_world_map.yy",},
     {"name":"pth_graveyard_4","order":7,"path":"paths/pth_graveyard_4/pth_graveyard_4.yy",},
-    {"name":"spr_moaby_dick","order":2,"path":"sprites/spr_moaby_dick/spr_moaby_dick.yy",},
+    {"name":"spr_moaby_dick","order":19,"path":"sprites/spr_moaby_dick/spr_moaby_dick.yy",},
     {"name":"spr_nurse_bloon_damaged","order":10,"path":"sprites/spr_nurse_bloon_damaged/spr_nurse_bloon_damaged.yy",},
     {"name":"spr_explosion_part","order":9,"path":"sprites/spr_explosion_part/spr_explosion_part.yy",},
     {"name":"spr_world_map_button","order":5,"path":"sprites/spr_world_map_button/spr_world_map_button.yy",},
