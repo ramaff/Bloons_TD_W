@@ -679,11 +679,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Piercing Goop",
-						upgrade_cost: 350
+						upgrade_cost: 35
 					},
 					{
 						keyword: "Split Splatter",
-						upgrade_cost: 530
+						upgrade_cost: 53
 					}
 				]
 			],
@@ -693,11 +693,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Goo Cube",
-						upgrade_cost: 1200
+						upgrade_cost: 120
 					},
 					{
 						keyword: "Goo Pool",
-						upgrade_cost: 4200
+						upgrade_cost: 420
 					}
 				]
 			]

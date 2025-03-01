@@ -27,8 +27,21 @@ if variable_struct_exists(projectile_stats, "bloon_pushback") and other.path_pos
 }
 
 //show_debug_message("damage dealer, other projectile hits: " + string(other.bloon_stats.projectile_hits))
+// the bloon needs to keep track of the projectile id b/c all of the bloon's children need to inherit the previous projectile hits.
+// However the check needs to happen/be processed by the projectile b/c there are less projectiles than bloons (usually)
+var _hitable = false
 if !variable_struct_exists(other.bloon_stats.projectile_hits, id) {
-	variable_struct_set(other.bloon_stats.projectile_hits, id, id)
+	_hitable = true;
+}
+show_debug_message("id")
+show_debug_message(id)
+show_debug_message("projectile_stats.id_offset")
+show_debug_message(projectile_stats.id_offset)
+if variable_struct_get(other.bloon_stats.projectile_hits, id) != (real(id) + projectile_stats.id_offset) {
+	_hitable = true	
+}
+if _hitable {
+	variable_struct_set(other.bloon_stats.projectile_hits, id, real(id) + projectile_stats.id_offset)
 	//show_debug_message("damage dealer, other projectile hits: " + string(other.bloon_stats.projectile_hits))
 	scr_bloon_hit(other, other.bloon_stats.class, projectile_stats);
 	
@@ -36,3 +49,4 @@ if !variable_struct_exists(other.bloon_stats.projectile_hits, id) {
 		instance_destroy();
 	}
 }
+	

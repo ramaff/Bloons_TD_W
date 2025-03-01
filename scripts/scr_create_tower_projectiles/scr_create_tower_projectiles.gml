@@ -38,6 +38,8 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 				projectile_stats = variable_clone(_projectile_stats[_i])
 				projectile_stats.tower_id = _tower_id
 				
+				projectile_stats.id_offset = 0;
+				
 				if variable_struct_exists(_current_boosts, "damage_boost") {
 					projectile_stats.damage += _current_boosts.damage_boost
 				}
@@ -73,6 +75,9 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 				speed = projectile_stats.speed
 				sprite_index = asset_get_index(projectile_stats.sprite)
 				alarm[0] = projectile_stats.lifespan
+				if variable_struct_exists(projectile_stats, "tick_frequency") {
+					alarm[1] = projectile_stats.tick_frequency;
+				}
 			
 				projectile_stats.bloons_hit = {}
 			

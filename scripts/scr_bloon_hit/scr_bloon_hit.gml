@@ -35,8 +35,9 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 		}
 		
 		var _remaining_damage = 0 - _bloon_stats.health
+		var _children_count = array_length(_children)
 		
-		for(var _i = 0; _i < array_length(_children); _i++) {
+		for(var _i = 0; _i < _children_count; _i++) {
 			var _layer = variable_struct_get(_children[_i], "layer")
 			var _child_class = variable_struct_get(_children[_i], "class")
 			

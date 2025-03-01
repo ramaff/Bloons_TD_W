@@ -579,11 +579,24 @@ function scr_setup_upgrade_stats(){
 						projectile_stats: [
 							{
 								sprite: "spr_goop",
-								object: "obj_goo_cube",
 								pierce: 1,
-								damage: 1,
-								speed: 26,
+								damage: 0,
+								speed: 20,
 								lifespan: 20,
+								expire_burst_activation: true,
+								projectile_burst: [
+									{
+										sprite: "spr_goo_cube",
+										pierce: 60,
+										damage: 1,
+										speed: 3,
+										friction: 1,
+										lifespan: 600,
+										tick_frequency: 15,
+										image_angle: 0,
+										bloon_pushback: 0.05
+									}
+								]
 							}
 						]
 					}
@@ -598,43 +611,37 @@ function scr_setup_upgrade_stats(){
 					{
 						delay: 240,
 						attack_cooldown: 0,
-						range: 40,
+						range: 400,
 						projectile_stats: [
 							{
-								object: "obj_goo_pool",
 								sprite: "spr_goo_pool",
-								projectile_count: 24,
-								projectile_spread: 15,
+								projectile_count: 4,
+								projectile_spread: 90,
 								lifespan: 240,
-								speed: 12,
+								speed: 15,
 								direction: 0,
-								friction: 3,
+								friction: 2.5,
 								damage: 1,
-								pierce: 20
+								pierce: 40,
+								tick_frequency: 120,
+								goop: 1,
+								goop_time: 180,
+								image_angle: 0
 							},
 							{
-								object: "obj_goo_pool",
 								sprite: "spr_goo_pool",
-								projectile_count: 24,
-								projectile_spread: 15,
-								lifespan: 240,
-								speed: 18,
-								direction: 0,
-								friction: 4.5,
-								damage: 1,
-								pierce: 20
-							},
-							{
-								object: "obj_goo_pool",
-								sprite: "spr_goo_pool",
-								projectile_count: 24,
-								projectile_spread: 15,
+								projectile_count: 6,
+								projectile_spread: 60,
 								lifespan: 240,
 								speed: 24,
 								direction: 0,
-								friction: 6,
+								friction: 4,
 								damage: 1,
-								pierce: 20
+								pierce: 40,
+								tick_frequency: 120,
+								goop: 1,
+								goop_time: 180,
+								image_angle: 0
 							}
 						]
 					}

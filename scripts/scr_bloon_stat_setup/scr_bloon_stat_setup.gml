@@ -25,7 +25,8 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		_bloon.bloon_stats.properties = _properties
 	}
 	
-	for(var _i = 0; _i < array_length(_bloon.bloon_stats.properties); _i++) {
+	var _number_of_props = array_length(_bloon.bloon_stats.properties)
+	for(var _i = 0; _i < _number_of_props; _i++) {
 		variable_struct_set(_bloon.bloon_stats, _bloon.bloon_stats.properties[_i], true)
 	}
 	
