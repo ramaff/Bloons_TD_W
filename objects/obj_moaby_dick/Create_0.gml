@@ -5,6 +5,6 @@
 event_inherited();
 
 spawn_speed = 1;
-water_count = 40;
+water_count = 4;
 alarm[1] = 450 / spawn_speed;
 

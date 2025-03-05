@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-alarm[1] = 450 / spawn_speed;
-alarm[2] = 1;
+alarm[1] = 600 / spawn_speed;
+alarm[2] = 30;
 
 spawn_speed += 0.1;
 water_count = 30;

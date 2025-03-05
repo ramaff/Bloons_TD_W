@@ -820,8 +820,8 @@
 			"class": "deflation",
 			"layer": "rainbow",
 			"count": 5,
-			"spread": 1890,
-			"cooldown": 0
+			"spread": 90,
+			"cooldown": 1800
 		}
 	],
 	[

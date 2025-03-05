@@ -496,7 +496,7 @@ function scr_setup_upgrade_stats(){
 								direction: 0,
 								damage: 1,
 								pierce: 40,
-								bloon_pushback: 0.0033
+								bloon_pushback: 0.0666
 							}
 						]
 					}
