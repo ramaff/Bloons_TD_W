@@ -1,0 +1,22 @@
+[
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 100,
+			"spread": 30,
+			"cooldown": 0
+		},
+		{
+			"class": "bee",
+			"layer": "bee",
+			"count": 10,
+			"spread": 90,
+			"cooldown": 0
+		}
+	]
+]

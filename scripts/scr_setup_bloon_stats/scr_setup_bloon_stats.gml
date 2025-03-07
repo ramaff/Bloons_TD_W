@@ -1395,6 +1395,33 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 2.4
 			},
+		},
+		"bee": {
+			"object": "obj_bee_bloon",
+			"sprite": "spr_bee_bloon",
+			"big_bloon_tier": 1,
+			"height": 5,
+			"bee": {
+				layers: 6,
+				index: 0,
+				rbe: 6,
+				health: 6,
+				max_health: 6,
+				density: 1,
+				speed: 3.9,
+				children: [
+					{
+						"class": "normal", "layer": "red", "properties": [
+							"float to track"
+						]
+					},
+					{
+						"class": "normal", "layer": "yellow", "properties": [
+							"float to track"
+						]
+					}
+				]
+			}
 		}
 	}
 }

@@ -54,7 +54,7 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	}
 	
 	_bloon.bloon_stats.path = _path
-	if _class = "deflation" {
+	if _class = "deflation" || _class = "bee" {
 		//_bloon.sprite_index = spr_big_deflation_bloon;
 		var _target = instance_create_depth(x, y, depth, obj_bloon_target);
 		with(_target) {

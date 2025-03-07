@@ -39,6 +39,9 @@ if _hitable {
 		if other.path_position < 0.01 {
 			other.path_position = 0.01	
 		}
+		if instance_exists(other.target) {
+			other.target.path_position = other.path_position
+		}
 	}
 	
 	if projectile_stats.pierce <= 0 {
