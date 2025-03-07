@@ -47,7 +47,12 @@ function scr_track_end_bloon_check(_bloon_stats = bloon_stats){
 		}
 	
 		path_position = 0;
-		path_start(bloon_stats.path, _bloon_stats.speed, path_action_stop, true);
+		if instance_exists(target) {
+			x = path_get_point_x(bloon_stats.path, 0)
+			y = path_get_point_x(bloon_stats.path, 0)
+		} else {
+			path_start(bloon_stats.path, _bloon_stats.speed, path_action_stop, true);
+		}
 		
 		return true;
 	

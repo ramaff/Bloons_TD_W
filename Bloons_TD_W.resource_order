@@ -139,6 +139,7 @@
     {"name":"obj_the_bridge_button","order":12,"path":"objects/obj_the_bridge_button/obj_the_bridge_button.yy",},
     {"name":"spr_frankensteins_bloon_pile","order":5,"path":"sprites/spr_frankensteins_bloon_pile/spr_frankensteins_bloon_pile.yy",},
     {"name":"spr_bloon_shielded","order":3,"path":"sprites/spr_bloon_shielded/spr_bloon_shielded.yy",},
+    {"name":"pth_the_forest_1","order":14,"path":"paths/pth_the_forest_1/pth_the_forest_1.yy",},
     {"name":"obj_haunted_monkey","order":8,"path":"objects/obj_haunted_monkey/obj_haunted_monkey.yy",},
     {"name":"scr_setup_tower_stats","order":20,"path":"scripts/scr_setup_tower_stats/scr_setup_tower_stats.yy",},
     {"name":"spr_big_bully_bloon_windup_punch_v1","order":12,"path":"sprites/spr_big_bully_bloon_windup_punch_v1/spr_big_bully_bloon_windup_punch_v1.yy",},

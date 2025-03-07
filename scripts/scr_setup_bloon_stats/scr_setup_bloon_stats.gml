@@ -1408,7 +1408,7 @@ function scr_setup_bloon_stats(){
 				health: 6,
 				max_health: 6,
 				density: 1,
-				speed: 3.9,
+				speed: 2.3,
 				children: [
 					{
 						"class": "normal", "layer": "red", "properties": [

@@ -3,7 +3,6 @@
 
 path_position = target.path_position;
 
-
 // Inherit the parent event
 event_inherited();
 
