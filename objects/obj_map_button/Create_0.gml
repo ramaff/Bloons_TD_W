@@ -40,7 +40,7 @@ tracks_info = {
 		"requirement": "parade"
 	},
 	"rm_the_forest": {
-		"paths": [pth_the_bridge_1, pth_the_bridge_2],
+		"paths": [pth_the_forest_1, pth_the_forest_2, pth_the_forest_3],
 		"round_data": "the_forest_rounds.json",
 		"name": "the_forest",
 		"requirement": "the_bridge"

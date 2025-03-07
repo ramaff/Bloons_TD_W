@@ -1,7 +1,7 @@
 {
   "resourceType": "GMPath",
   "resourceVersion": "1.0",
-  "name": "pth_the_forest_1",
+  "name": "pth_the_forest_3",
   "closed": false,
   "kind": 0,
   "parent": {
@@ -13,7 +13,9 @@
     {"speed":100.0,"x":116.0,"y":314.0,},
     {"speed":100.0,"x":299.0,"y":315.0,},
     {"speed":100.0,"x":298.0,"y":482.0,},
-    {"speed":100.0,"x":860.0,"y":485.0,},
+    {"speed":100.0,"x":458.3567,"y":477.4248,},
+    {"speed":100.0,"x":461.0,"y":114.0,},
+    {"speed":100.0,"x":860.1343,"y":117.5611,},
   ],
   "precision": 4,
 }

@@ -1410,17 +1410,24 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 2.3,
 				children: [
-					{
-						"class": "normal", "layer": "red", "properties": [
-							"float to track"
-						]
-					},
-					{
-						"class": "normal", "layer": "yellow", "properties": [
-							"float to track"
-						]
-					}
+					{"class": "normal", "layer": "red", "properties": ["float to track"]},
+					{"class": "normal", "layer": "yellow", "properties": ["float to track"]}
 				]
+			}
+		},
+		"bloom": {
+			"object": "obj_bloom_bloon",
+			"sprite": "spr_bloom_bloon",
+			"big_bloon_tier": 1,
+			"height": 5,
+			"bloom": {
+				layers: 4,
+				index: 0,
+				rbe: 4,
+				health: 4,
+				max_health: 4,
+				density: 1,
+				speed: 1.9
 			}
 		}
 	}

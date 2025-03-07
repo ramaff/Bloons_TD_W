@@ -5,18 +5,125 @@
 			"round_icon_index": 1
 		},
 		{
+			"class": "bloom",
+			"layer": "bloom",
+			"count": 5,
+			"spread": 90,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "normal",
 			"layer": "red",
-			"count": 100,
-			"spread": 30,
+			"count": 36,
+			"spread": 28,
 			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "normal",
+			"layer": "green",
+			"count": 12,
+			"spread": 72,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 24,
+			"spread": 40,
+			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 24,
+			"spread": 40,
+			"cooldown": 5
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "normal",
+			"layer": "green",
+			"count": 20,
+			"spread": 63,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
 		},
 		{
 			"class": "bee",
 			"layer": "bee",
-			"count": 10,
+			"count": 2,
 			"spread": 90,
 			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "normal",
+			"layer": "green",
+			"count": 36,
+			"spread": 48,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "bloom",
+			"layer": "bloom",
+			"count": 5,
+			"spread": 90,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "normal",
+			"layer": "green",
+			"count": 20,
+			"spread": 63,
+			"cooldown": 0,
+			"properties": [
+				"camo"
+			]
 		}
 	]
 ]
