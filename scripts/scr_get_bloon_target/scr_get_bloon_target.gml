@@ -12,7 +12,8 @@ function scr_check_if_bloon_invisible(_bloon) {
 
 function scr_first_targeting(_bloon, _best_target_info) {
 	var _check = false
-	_check = _bloon.path_position > _best_target_info.path_position
+	//var _target_position = min(_bloon.path_position, 0)
+	_check = _bloon.path_position >= _best_target_info.path_position
 	
 	if _check and scr_check_if_bloon_invisible(_bloon) {
 		_best_target_info.path_position = _bloon.path_position
@@ -23,7 +24,8 @@ function scr_first_targeting(_bloon, _best_target_info) {
 
 function scr_last_targeting(_bloon, _best_target_info) {
 	var _check = false
-	_check = _bloon.path_position < _best_target_info.path_position
+	//var _target_position = min(_bloon.path_position, 0)
+	_check = _bloon.path_position <= _best_target_info.path_position
 	
 	if _check and scr_check_if_bloon_invisible(_bloon) {
 		_best_target_info.path_position = _bloon.path_position
@@ -75,14 +77,6 @@ function scr_get_bloon_target(_tower_stats, _xx = x, _yy = y, _targeting = "firs
 		"bloon_power_level": 0,
 		"bloon_distance": 0
 	}
-	/*if variable_struct_exists(tower_stats, "minimum_range") {
-		with (obj_bloon) {
-			var _p_dist = distance_to_point(_xx, _yy)
-			if _p_dist <= _tower_stats.range and _p_dist >= _tower_stats.minimum_range and path_position > _furthest_position {
-				_target = id;
-			}
-		}
-	} else { */
 	var _total_range = _tower_stats.range + _range_boost
 	var _targeting_script = scr_first_targeting
 	
@@ -106,7 +100,6 @@ function scr_get_bloon_target(_tower_stats, _xx = x, _yy = y, _targeting = "firs
 			}
 		}
 	}
-	// }
 	
 	return _target
 

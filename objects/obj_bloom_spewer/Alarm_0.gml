@@ -9,10 +9,10 @@ var _xx = x;
 var _yy = y;
 var _bloon_object = obj_bloon
 var _path = path
-var _properties = []
+var _properties = ["stay_floating"]
 var _round = -1
 
-if alarm[1] < 9 {
+if alarm[1] < 11 {
 	_layer = "yellow"	
 }
 
@@ -20,8 +20,9 @@ var _pos = path_position;
 	
 with instance_create_depth(_xx, _yy, depth, _bloon_object) {
 	scr_bloon_stat_setup(id, _class, _layer, _path, _properties, _round)
-	path_position = _pos
 	path_end()
+	path_position = _pos
+	//path_end()
 	x = _xx
 	y = _yy
 	speed = 0;

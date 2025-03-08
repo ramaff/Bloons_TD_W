@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 direction = point_direction(x, y, start_x, start_y) + ang_offset;
-speed = 16;
+speed += 0.5;
 
 
 
