@@ -208,7 +208,7 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			
 			path_position = _pos
 			if variable_struct_exists(_bloon.bloon_stats, "stay_floating") {
-				//path_end()
+				path_end()
 				path_position = 0;
 				x = _xx;
 				y = _yy;

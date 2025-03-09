@@ -347,6 +347,7 @@ function scr_setup_bloon_stats(){
 			"object": "obj_bloon",
 			"sprite": "spr_stuffed_bloon",
 			"big_bloon_tier": 1,
+			"remaining_value": 1,
 			"red": {
 				layers: 3,
 				index: 0,
@@ -1402,15 +1403,15 @@ function scr_setup_bloon_stats(){
 			"big_bloon_tier": 1,
 			"height": 5,
 			"bee": {
-				layers: 6,
+				layers: 12,
 				index: 0,
-				rbe: 6,
+				rbe: 21,
 				health: 6,
 				max_health: 6,
 				density: 1,
 				speed: 2.3,
 				children: [
-					{"class": "normal", "layer": "red", "properties": ["float to track"]},
+					{"class": "normal", "layer": "black", "properties": ["float to track"]},
 					{"class": "normal", "layer": "yellow", "properties": ["float to track"]}
 				]
 			}
@@ -1420,14 +1421,18 @@ function scr_setup_bloon_stats(){
 			"sprite": "spr_bloom_bloon",
 			"big_bloon_tier": 1,
 			"height": 5,
+			"remaining_value": 1,
 			"bloom": {
-				layers: 4,
+				layers: 8,
 				index: 0,
-				rbe: 4,
+				rbe: 14,
 				health: 4,
 				max_health: 4,
 				density: 1,
-				speed: 1.9
+				speed: 1.9,
+				children: [
+					{"class": "splitter", "layer": "lime"},
+				]
 			}
 		}
 	}

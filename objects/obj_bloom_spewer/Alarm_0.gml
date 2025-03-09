@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-alarm[0] = 1;
+alarm[0] = 2;
 
 var _class = "normal"
 var _layer = "red"
@@ -12,7 +12,7 @@ var _path = path
 var _properties = ["stay_floating"]
 var _round = -1
 
-if alarm[1] < 11 {
+if alarm[1] < 19 {
 	_layer = "yellow"	
 }
 
@@ -27,4 +27,5 @@ with instance_create_depth(_xx, _yy, depth, _bloon_object) {
 	y = _yy
 	speed = 0;
 	bloon_stats.speed = 0;
+	bloon_stats.remaining_value = 0;
 }

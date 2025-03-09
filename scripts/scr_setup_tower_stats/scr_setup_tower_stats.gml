@@ -336,6 +336,7 @@ function scr_setup_tower_stats(){
 		},
 		"marbles_monkey": {
 			tower_sprite: "spr_marbles_monkey",
+			butt_sprite: "spr_marbles_monkey_tower_butt",
 			total_cost: 450,
 			upgrade_cost: 0,
 			range: 95,
@@ -349,7 +350,8 @@ function scr_setup_tower_stats(){
 					damage: 1,
 					speed: 8,
 					lifespan: 90,
-					friction: 0.2
+					friction: 0.2,
+					image_angle: 0
 				},
 				{
 					sprite: "spr_marble",
@@ -358,7 +360,8 @@ function scr_setup_tower_stats(){
 					speed: 6,
 					direction: -30,
 					lifespan: 90,
-					friction: 0.25
+					friction: 0.2,
+					image_angle: 0
 				},
 				{
 					sprite: "spr_marble",
@@ -367,17 +370,17 @@ function scr_setup_tower_stats(){
 					speed: 6,
 					direction: 30,
 					lifespan: 90,
-					friction: 0.2
+					friction: 0.2,
+					image_angle: 0
 				}
 			],
 			upgrades: [
+				[],
 				[
 					{
 						keyword: "bigger marbles",
-						upgrade_cost: 250
-					}
-				],
-				[
+						upgrade_cost: 350
+					},
 					{
 						keyword: "bigger bag",
 						upgrade_cost: 450

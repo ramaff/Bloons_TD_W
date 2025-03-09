@@ -242,31 +242,94 @@ function scr_setup_upgrade_stats(){
 		},
 		"marbles_monkey": {
 			"bigger marbles": {
-				pierce: 3,
-				lifespan: 120,
-				upgrade_string: "Marbles pop more bloons, and last longer"
-			},
-			"marble bag": {
-				fire_rate_multiplier: 0.5,
+				projectile_replacement: true,
 				projectile_stats: [
 					{
-						sprite: "spr_marble",
-						speed: 6
+						sprite: "spr_bigger_marble",
+						pierce: 5,
+						damage: 1,
+						speed: 8,
+						lifespan: 180,
+						friction: 0.2,
+						image_angle: 0
 					},
 					{
-						sprite: "spr_marble",
-						speed: 10
+						sprite: "spr_bigger_marble",
+						pierce: 5,
+						damage: 1,
+						speed: 6,
+						lifespan: 180,
+						direction: -30,
+						friction: 0.2,
+						image_angle: 0
 					},
 					{
-						sprite: "spr_marble",
-						speed: 10
-					},
-					{
-						sprite: "spr_marble",
-						speed: 6
+						sprite: "spr_bigger_marble",
+						pierce: 5,
+						damage: 1,
+						speed: 6,
+						lifespan: 180,
+						direction: 30,
+						friction: 0.2,
+						image_angle: 0
 					}
 				],
-				upgrade_string: "Throws out 5 marbles at once, less often."
+				upgrade_string: "Marbles pop more bloons, and last longer"
+			},
+			"bigger bag": {
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_bigger_marble",
+						pierce: 5,
+						damage: 1,
+						speed: 8,
+						lifespan: 180,
+						friction: 0.2,
+						image_angle: 0
+					},
+					{
+						sprite: "spr_bigger_marble",
+						pierce: 5,
+						damage: 1,
+						speed: 5,
+						lifespan: 180,
+						direction: -20,
+						friction: 0.2,
+						image_angle: 0
+					},
+					{
+						sprite: "spr_bigger_marble",
+						pierce: 5,
+						damage: 1,
+						speed: 5,
+						lifespan: 180,
+						direction: 20,
+						friction: 0.2,
+						image_angle: 0
+					},
+					{
+						sprite: "spr_bigger_marble",
+						pierce: 5,
+						damage: 1,
+						speed: 6.75,
+						lifespan: 180,
+						direction: -30,
+						friction: 0.2,
+						image_angle: 0
+					},
+					{
+						sprite: "spr_bigger_marble",
+						pierce: 5,
+						damage: 1,
+						speed: 6.75,
+						lifespan: 180,
+						direction: 30,
+						friction: 0.2,
+						image_angle: 0
+					}
+				],
+				upgrade_string: "Throws out 5 marbles at once."
 			}
 		},
 		"pogo_stick_monkey": {

@@ -3,5 +3,5 @@
 
 parent_id = id
 
-alarm[1] = 20;
+alarm[1] = 15;
 
