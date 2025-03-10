@@ -277,6 +277,7 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Marbles pop more bloons, and last longer"
 			},
 			"bigger bag": {
+				range: 10,
 				projectile_replacement: true,
 				projectile_stats: [
 					{
@@ -330,6 +331,72 @@ function scr_setup_upgrade_stats(){
 					}
 				],
 				upgrade_string: "Throws out 5 marbles at once."
+			},
+			"Spinning Tops": {
+				range: 20,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_spinning_top",
+						pierce: 18,
+						damage: 1,
+						speed: 8,
+						min_speed: 0.5,
+						lifespan: 360,
+						tick_frequency: 60,
+						friction: 0.2,
+						image_angle: 0
+					},
+					{
+						sprite: "spr_spinning_top",
+						pierce: 18,
+						damage: 1,
+						speed: 5,
+						min_speed: 0.5,
+						lifespan: 360,
+						tick_frequency: 60,
+						direction: -20,
+						friction: 0.2,
+						image_angle: 0
+					},
+					{
+						sprite: "spr_spinning_top",
+						pierce: 18,
+						damage: 1,
+						speed: 5,
+						min_speed: 0.5,
+						lifespan: 360,
+						tick_frequency: 60,
+						direction: 20,
+						friction: 0.2,
+						image_angle: 0
+					},
+					{
+						sprite: "spr_spinning_top",
+						pierce: 18,
+						damage: 1,
+						speed: 6.75,
+						min_speed: 0.5,
+						lifespan: 360,
+						tick_frequency: 60,
+						direction: -30,
+						friction: 0.2,
+						image_angle: 0
+					},
+					{
+						sprite: "spr_spinning_top",
+						pierce: 18,
+						damage: 1,
+						speed: 6.75,
+						min_speed: 0.5,
+						lifespan: 360,
+						tick_frequency: 60,
+						direction: 30,
+						friction: 0.2,
+						image_angle: 0
+					}
+				],
+				upgrade_string: "Throws spinning tops instead of marbles that pop much more bloons and can hit multiple times each."
 			}
 		},
 		"pogo_stick_monkey": {

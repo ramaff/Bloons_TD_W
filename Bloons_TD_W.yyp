@@ -196,6 +196,7 @@
     {"id":{"name":"spr_tack_the_ripper","path":"sprites/spr_tack_the_ripper/spr_tack_the_ripper.yy",},},
     {"id":{"name":"spr_haunted_monkey","path":"sprites/spr_haunted_monkey/spr_haunted_monkey.yy",},},
     {"id":{"name":"spr_ceramic_bloon","path":"sprites/spr_ceramic_bloon/spr_ceramic_bloon.yy",},},
+    {"id":{"name":"spr_spinning_top","path":"sprites/spr_spinning_top/spr_spinning_top.yy",},},
     {"id":{"name":"spr_dart","path":"sprites/spr_dart/spr_dart.yy",},},
     {"id":{"name":"obj_go_button","path":"objects/obj_go_button/obj_go_button.yy",},},
     {"id":{"name":"spr_spinning_top_monkey","path":"sprites/spr_spinning_top_monkey/spr_spinning_top_monkey.yy",},},

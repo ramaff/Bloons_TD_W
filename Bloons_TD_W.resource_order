@@ -159,6 +159,7 @@
     {"name":"spr_tack_the_ripper","order":8,"path":"sprites/spr_tack_the_ripper/spr_tack_the_ripper.yy",},
     {"name":"spr_haunted_monkey","order":18,"path":"sprites/spr_haunted_monkey/spr_haunted_monkey.yy",},
     {"name":"spr_ceramic_bloon","order":8,"path":"sprites/spr_ceramic_bloon/spr_ceramic_bloon.yy",},
+    {"name":"spr_spinning_top","order":32,"path":"sprites/spr_spinning_top/spr_spinning_top.yy",},
     {"name":"obj_go_button","order":7,"path":"objects/obj_go_button/obj_go_button.yy",},
     {"name":"spr_spinning_top_monkey","order":22,"path":"sprites/spr_spinning_top_monkey/spr_spinning_top_monkey.yy",},
     {"name":"obj_peek_a_bloon","order":2,"path":"objects/obj_peek_a_bloon/obj_peek_a_bloon.yy",},

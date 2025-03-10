@@ -340,7 +340,7 @@ function scr_setup_tower_stats(){
 			total_cost: 450,
 			upgrade_cost: 0,
 			range: 95,
-			delay: 60,
+			delay: 72,
 			attack_cooldown: 0,
 	
 			projectile_stats: [
@@ -384,6 +384,18 @@ function scr_setup_tower_stats(){
 					{
 						keyword: "bigger bag",
 						upgrade_cost: 450
+					}
+				]
+			],
+			split_upgrades: [
+				[
+					{
+						keyword: "Spinning Tops",
+						upgrade_cost: 1800
+					},
+					{
+						keyword: "Jet Jumbo",
+						upgrade_cost: 3900
 					}
 				]
 			]

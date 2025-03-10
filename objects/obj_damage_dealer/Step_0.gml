@@ -13,9 +13,15 @@ if variable_struct_exists(projectile_stats, "lobbing") {
 }
 if variable_struct_exists(projectile_stats, "friction") {
 	
+	var _min_speed = 0;
+	if variable_struct_exists(projectile_stats, "min_speed") {
+		_min_speed = projectile_stats.min_speed	
+	}
+	
 	projectile_stats.speed -= projectile_stats.friction;
-	projectile_stats.speed = max(projectile_stats.speed, 0);
+	projectile_stats.speed = max(projectile_stats.speed, _min_speed);
 	speed = projectile_stats.speed;
+	
 }
 if variable_struct_exists(projectile_stats, "angular_velocity") {
 	
