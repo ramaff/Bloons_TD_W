@@ -146,7 +146,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
+			"round_icon_sprite": "spr_camo_bloon",
 			"round_icon_index": 2
 		},
 		{

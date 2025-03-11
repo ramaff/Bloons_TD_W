@@ -251,6 +251,7 @@
     {"name":"spr_marbles_monkey","order":3,"path":"sprites/spr_marbles_monkey/spr_marbles_monkey.yy",},
     {"name":"spr_bloon_target","order":1,"path":"sprites/spr_bloon_target/spr_bloon_target.yy",},
     {"name":"spr_upgrade_butt","order":5,"path":"sprites/spr_upgrade_butt/spr_upgrade_butt.yy",},
+    {"name":"spr_camo_bloon","order":22,"path":"sprites/spr_camo_bloon/spr_camo_bloon.yy",},
     {"name":"spr_world_map_info_panel","order":8,"path":"sprites/spr_world_map_info_panel/spr_world_map_info_panel.yy",},
     {"name":"obj_bloon","order":5,"path":"objects/obj_bloon/obj_bloon.yy",},
     {"name":"spr_pineapple_express_monkey","order":17,"path":"sprites/spr_pineapple_express_monkey/spr_pineapple_express_monkey.yy",},

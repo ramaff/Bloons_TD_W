@@ -296,6 +296,7 @@
     {"id":{"name":"spr_marbles_monkey","path":"sprites/spr_marbles_monkey/spr_marbles_monkey.yy",},},
     {"id":{"name":"spr_bloon_target","path":"sprites/spr_bloon_target/spr_bloon_target.yy",},},
     {"id":{"name":"spr_upgrade_butt","path":"sprites/spr_upgrade_butt/spr_upgrade_butt.yy",},},
+    {"id":{"name":"spr_camo_bloon","path":"sprites/spr_camo_bloon/spr_camo_bloon.yy",},},
     {"id":{"name":"spr_world_map_info_panel","path":"sprites/spr_world_map_info_panel/spr_world_map_info_panel.yy",},},
     {"id":{"name":"obj_bloon","path":"objects/obj_bloon/obj_bloon.yy",},},
     {"id":{"name":"spr_pineapple_express_monkey","path":"sprites/spr_pineapple_express_monkey/spr_pineapple_express_monkey.yy",},},

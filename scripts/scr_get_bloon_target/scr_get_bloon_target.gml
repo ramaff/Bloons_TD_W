@@ -1,40 +1,43 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-function scr_check_if_bloon_invisible(_bloon) {
+function scr_check_if_bloon_invisible(_bloon, _tower_stats) {
 	if _bloon.object_index = obj_peek_a_bloon || _bloon.object_index = obj_tack_the_ripper {
 		if _bloon.image_alpha <= 0 {
 			return false;	
 		}
 	}
+	if variable_struct_exists(_bloon.bloon_stats, "camo") and !variable_struct_exists(_tower_stats, "camo_detection") {
+		return false;
+	}
 	return true;
 }
 
-function scr_first_targeting(_bloon, _best_target_info) {
+function scr_first_targeting(_bloon, _best_target_info, _tower_stats) {
 	var _check = false
 	//var _target_position = min(_bloon.path_position, 0)
 	_check = _bloon.path_position >= _best_target_info.path_position
 	
-	if _check and scr_check_if_bloon_invisible(_bloon) {
+	if _check and scr_check_if_bloon_invisible(_bloon, _tower_stats) {
 		_best_target_info.path_position = _bloon.path_position
 	}
 	
 	return _check
 }
 
-function scr_last_targeting(_bloon, _best_target_info) {
+function scr_last_targeting(_bloon, _best_target_info, _tower_stats) {
 	var _check = false
 	//var _target_position = min(_bloon.path_position, 0)
 	_check = _bloon.path_position <= _best_target_info.path_position
 	
-	if _check and scr_check_if_bloon_invisible(_bloon) {
+	if _check and scr_check_if_bloon_invisible(_bloon, _tower_stats) {
 		_best_target_info.path_position = _bloon.path_position
 	}
 	
 	return _check
 }
 
-function scr_strong_targeting(_bloon, _best_target_info) {
+function scr_strong_targeting(_bloon, _best_target_info, _tower_stats) {
 	var _check = false
 	var _layers = 1;
 	var _power_level = 1;
@@ -49,20 +52,20 @@ function scr_strong_targeting(_bloon, _best_target_info) {
 	
 	_check = _power_level > _best_target_info.bloon_power_level
 	
-	if _check and scr_check_if_bloon_invisible(_bloon) {
+	if _check and scr_check_if_bloon_invisible(_bloon, _tower_stats) {
 		_best_target_info.bloon_power_level = _power_level
 	} else if _power_level = _best_target_info.bloon_power_level {
-		return scr_first_targeting(_bloon, _best_target_info)
+		return scr_first_targeting(_bloon, _best_target_info, _tower_stats)
 	}
 	
 	return _check
 }
 
-function scr_close_targeting(_bloon, _best_target_info, _p_dist) {
+function scr_close_targeting(_bloon, _best_target_info, _tower_stats, _p_dist) {
 	var _check = false
 	_check = _p_dist < _best_target_info.bloon_distance
 	
-	if _check and scr_check_if_bloon_invisible(_bloon) {
+	if _check and scr_check_if_bloon_invisible(_bloon, _tower_stats) {
 		_best_target_info.bloon_distance = _p_dist
 	}
 	
@@ -95,7 +98,7 @@ function scr_get_bloon_target(_tower_stats, _xx = x, _yy = y, _targeting = "firs
 	with (obj_bloon) {
 		var _p_dist = distance_to_point(_xx, _yy)
 		if _p_dist <= _total_range {
-			if script_execute(_targeting_script, id, _best_target_info, _p_dist) {
+			if script_execute(_targeting_script, id, _best_target_info, _tower_stats, _p_dist) {
 				_target = id;
 			}
 		}

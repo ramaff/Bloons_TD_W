@@ -48,6 +48,12 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 			_bloon.bloon_stats.sprite = "spr_regrow_splitter_bloon"
 		}
 	}
+	if variable_struct_exists(_bloon.bloon_stats, "camo")  {
+		_bloon.bloon_stats.sprite = "spr_camo_bloon"
+		if _class = "splitter" {
+			_bloon.bloon_stats.sprite = "spr_regrow_splitter_bloon"
+		}
+	}
 	if variable_struct_exists(_bloon.bloon_stats, "sprite") {
 		_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.sprite);
 	}
