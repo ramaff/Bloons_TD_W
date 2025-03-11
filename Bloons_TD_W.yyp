@@ -454,6 +454,7 @@
     {"id":{"name":"spr_mission_info_panel_xl","path":"sprites/spr_mission_info_panel_xl/spr_mission_info_panel_xl.yy",},},
     {"id":{"name":"spr_the_party_tank","path":"sprites/spr_the_party_tank/spr_the_party_tank.yy",},},
     {"id":{"name":"pth_the_bridge_1","path":"paths/pth_the_bridge_1/pth_the_bridge_1.yy",},},
+    {"id":{"name":"spr_spinning_blade_top","path":"sprites/spr_spinning_blade_top/spr_spinning_blade_top.yy",},},
     {"id":{"name":"spr_green_bully","path":"sprites/spr_green_bully/spr_green_bully.yy",},},
     {"id":{"name":"scr_wave","path":"scripts/scr_wave/scr_wave.yy",},},
     {"id":{"name":"spr_hot_air_bloon","path":"sprites/spr_hot_air_bloon/spr_hot_air_bloon.yy",},},

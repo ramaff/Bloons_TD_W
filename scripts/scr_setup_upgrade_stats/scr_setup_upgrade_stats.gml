@@ -397,6 +397,72 @@ function scr_setup_upgrade_stats(){
 					}
 				],
 				upgrade_string: "Throws spinning tops instead of marbles that pop much more bloons and can hit multiple times each."
+			},
+			"Razor Blades": {
+				range: 20,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_spinning_blade_top",
+						pierce: 75,
+						damage: 1,
+						speed: 8,
+						min_speed: 0.5,
+						lifespan: 360,
+						tick_frequency: 15,
+						friction: 0.2,
+						image_angle: 0
+					},
+					{
+						sprite: "spr_spinning_blade_top",
+						pierce: 75,
+						damage: 1,
+						speed: 5,
+						min_speed: 0.5,
+						lifespan: 360,
+						tick_frequency: 15,
+						direction: -20,
+						friction: 0.2,
+						image_angle: 0
+					},
+					{
+						sprite: "spr_spinning_blade_top",
+						pierce: 75,
+						damage: 1,
+						speed: 5,
+						min_speed: 0.5,
+						lifespan: 360,
+						tick_frequency: 15,
+						direction: 20,
+						friction: 0.2,
+						image_angle: 0
+					},
+					{
+						sprite: "spr_spinning_blade_top",
+						pierce: 75,
+						damage: 1,
+						speed: 6.75,
+						min_speed: 0.5,
+						lifespan: 360,
+						tick_frequency: 15,
+						direction: -30,
+						friction: 0.2,
+						image_angle: 0
+					},
+					{
+						sprite: "spr_spinning_blade_top",
+						pierce: 75,
+						damage: 1,
+						speed: 6.75,
+						min_speed: 0.5,
+						lifespan: 360,
+						tick_frequency: 15,
+						direction: 30,
+						friction: 0.2,
+						image_angle: 0
+					}
+				],
+				upgrade_string: "Throws spinning tops instead of marbles that pop much more bloons and can hit multiple times each."
 			}
 		},
 		"pogo_stick_monkey": {

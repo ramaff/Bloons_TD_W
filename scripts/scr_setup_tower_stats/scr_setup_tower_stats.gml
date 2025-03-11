@@ -340,8 +340,9 @@ function scr_setup_tower_stats(){
 			total_cost: 450,
 			upgrade_cost: 0,
 			range: 95,
-			delay: 72,
+			delay: 81,
 			attack_cooldown: 0,
+			camo_detection: true,
 	
 			projectile_stats: [
 				{
@@ -391,11 +392,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Spinning Tops",
-						upgrade_cost: 1800
+						upgrade_cost: 2100
 					},
 					{
-						keyword: "Jet Jumbo",
-						upgrade_cost: 3900
+						keyword: "Razor Blades",
+						upgrade_cost: 5900
 					}
 				]
 			]

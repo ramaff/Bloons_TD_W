@@ -20,9 +20,10 @@ function scr_first_targeting(_bloon, _best_target_info, _tower_stats) {
 	
 	if _check and scr_check_if_bloon_invisible(_bloon, _tower_stats) {
 		_best_target_info.path_position = _bloon.path_position
+		return true
 	}
 	
-	return _check
+	return false
 }
 
 function scr_last_targeting(_bloon, _best_target_info, _tower_stats) {
@@ -32,9 +33,10 @@ function scr_last_targeting(_bloon, _best_target_info, _tower_stats) {
 	
 	if _check and scr_check_if_bloon_invisible(_bloon, _tower_stats) {
 		_best_target_info.path_position = _bloon.path_position
+		return true
 	}
 	
-	return _check
+	return false
 }
 
 function scr_strong_targeting(_bloon, _best_target_info, _tower_stats) {
@@ -54,11 +56,12 @@ function scr_strong_targeting(_bloon, _best_target_info, _tower_stats) {
 	
 	if _check and scr_check_if_bloon_invisible(_bloon, _tower_stats) {
 		_best_target_info.bloon_power_level = _power_level
+		return true
 	} else if _power_level = _best_target_info.bloon_power_level {
 		return scr_first_targeting(_bloon, _best_target_info, _tower_stats)
 	}
 	
-	return _check
+	return false
 }
 
 function scr_close_targeting(_bloon, _best_target_info, _tower_stats, _p_dist) {
@@ -67,9 +70,10 @@ function scr_close_targeting(_bloon, _best_target_info, _tower_stats, _p_dist) {
 	
 	if _check and scr_check_if_bloon_invisible(_bloon, _tower_stats) {
 		_best_target_info.bloon_distance = _p_dist
+		return true
 	}
 	
-	return _check
+	return false
 }
 
 function scr_get_bloon_target(_tower_stats, _xx = x, _yy = y, _targeting = "first", _range_boost = 0) {
