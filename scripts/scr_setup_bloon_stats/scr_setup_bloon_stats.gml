@@ -1418,11 +1418,11 @@ function scr_setup_bloon_stats(){
 		},
 		"bloom": {
 			"object": "obj_bloom_bloon",
-			"sprite": "spr_bloom_bloon",
 			"big_bloon_tier": 1,
 			"height": 5,
 			"remaining_value": 1,
 			"bloom": {
+				sprite: "spr_bloom_bloon",
 				layers: 8,
 				index: 0,
 				rbe: 14,
@@ -1433,7 +1433,51 @@ function scr_setup_bloon_stats(){
 				children: [
 					{"class": "splitter", "layer": "lime"},
 				]
+			},
+			"spring": {
+				layers: 12,
+				sprite: "spr_spring_bloom_bloon",
+				index: 0,
+				rbe: 23,
+				health: 6,
+				max_health: 6,
+				density: 1,
+				speed: 2.3,
+				children: [
+					{"class": "splitter", "layer": "purple"},
+				]
 			}
-		}
+		},
+		"pot": {
+			"object": "obj_pot_ceramic",
+			"ceramic": {
+				sprite: "spr_pot_ceramic_bloon",
+				layers: 27,
+				index: 0,
+				rbe: 107,
+				health: 15,
+				max_health: 15,
+				density: 1,
+				speed: 2.75,
+				children: [
+					{
+						"class": "bloom",
+						"layer": "spring"
+					},
+					{
+						"class": "bloom",
+						"layer": "spring"
+					},
+					{
+						"class": "bloom",
+						"layer": "spring"
+					},
+					{
+						"class": "bloom",
+						"layer": "spring"
+					}
+				]
+			}
+		},
 	}
 }

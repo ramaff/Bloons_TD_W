@@ -21,6 +21,9 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 		if _round > 30 {
 			_cash_flow = _cash_flow * 0.4;
 		}
+		if _round > 40 {
+			_cash_flow = _cash_flow * 0.2;
+		}
 		if _bloon_stats.remaining_value > 0 {
 			global.money += _cash_flow;
 		}

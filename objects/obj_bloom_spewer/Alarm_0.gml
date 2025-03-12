@@ -12,8 +12,15 @@ var _path = path
 var _properties = ["stay_floating"]
 var _round = -1
 
+if bloom_type = "spring" {
+	_layer = "green"	
+}
+
 if alarm[1] < 19 {
-	_layer = "yellow"	
+	_layer = "yellow"
+	if bloom_type = "spring" {
+		_layer = "pink"
+	}
 }
 
 var _pos = path_position;

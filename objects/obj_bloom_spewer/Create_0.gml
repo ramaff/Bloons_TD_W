@@ -10,3 +10,5 @@ start_y = y;
 ang_offset = 1;
 
 speed = 14;
+
+bloom_type = "bloom"

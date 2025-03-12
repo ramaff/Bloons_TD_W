@@ -476,9 +476,29 @@
 		},
 		{
 			"class": "bloom",
-			"layer": "bloom",
-			"count": 40,
-			"spread": 20,
+			"layer": "spring",
+			"count": 20,
+			"spread": 40,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_pot_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "pot",
+			"layer": "ceramic",
+			"count": 8,
+			"spread": 150,
+			"cooldown": 0
+		},
+		{
+			"class": "bee",
+			"layer": "bee",
+			"count": 50,
+			"spread": 25,
 			"cooldown": 0
 		}
 	],
