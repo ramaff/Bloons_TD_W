@@ -1414,6 +1414,19 @@ function scr_setup_bloon_stats(){
 					{"class": "normal", "layer": "black", "properties": ["float to track"]},
 					{"class": "normal", "layer": "yellow", "properties": ["float to track"]}
 				]
+			},
+			"sturdy bee": {
+				layers: 18,
+				index: 0,
+				rbe: 27,
+				health: 12,
+				max_health: 12,
+				density: 1,
+				speed: 2.3,
+				children: [
+					{"class": "normal", "layer": "black", "properties": ["float to track"]},
+					{"class": "normal", "layer": "yellow", "properties": ["float to track"]}
+				]
 			}
 		},
 		"bloom": {
@@ -1477,7 +1490,52 @@ function scr_setup_bloon_stats(){
 						"layer": "spring"
 					}
 				]
-			}
+			},
 		},
+		"beehive": {
+			"object": "obj_beehive_bloon",
+			"bee": {
+				sprite: "spr_beehive_bloon",
+				layers: 312,
+				index: 0,
+				rbe: 930,
+				health: 300,
+				max_health: 300,
+				density: 1,
+				speed: 0.8,
+				children: [
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"}
+				]
+			}
+		}
 	}
 }

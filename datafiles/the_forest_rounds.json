@@ -550,6 +550,26 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_mini_moab_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab",
+			"layer": "moab",
+			"count": 2,
+			"spread": 750,
+			"cooldown": 150
+		},
+		{
+			"class": "bloom",
+			"layer": "spring",
+			"count": 35,
+			"spread": 30,
+			"cooldown": 0
+		}
+	],
+	[
+		{
 			"round_icon_sprite": "spr_non_specified_bounty_icon",
 			"round_icon_index": 0
 		},
