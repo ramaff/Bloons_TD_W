@@ -134,6 +134,7 @@
     {"id":{"name":"obj_heal_bloon_aura","path":"objects/obj_heal_bloon_aura/obj_heal_bloon_aura.yy",},},
     {"id":{"name":"spr_water_part","path":"sprites/spr_water_part/spr_water_part.yy",},},
     {"id":{"name":"obj_outline_particle","path":"objects/obj_outline_particle/obj_outline_particle.yy",},},
+    {"id":{"name":"spr_beehive","path":"sprites/spr_beehive/spr_beehive.yy",},},
     {"id":{"name":"scr_merge_struct","path":"scripts/scr_merge_struct/scr_merge_struct.yy",},},
     {"id":{"name":"obj_pogo_stick_monkey","path":"objects/obj_pogo_stick_monkey/obj_pogo_stick_monkey.yy",},},
     {"id":{"name":"spr_knife","path":"sprites/spr_knife/spr_knife.yy",},},

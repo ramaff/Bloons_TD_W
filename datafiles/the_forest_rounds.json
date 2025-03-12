@@ -432,7 +432,7 @@
 	[
 		{
 			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 8
+			"round_icon_index": 7
 		},
 		{
 			"class": "bloom",
@@ -499,6 +499,52 @@
 			"layer": "bee",
 			"count": 50,
 			"spread": 25,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_pot_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "pot",
+			"layer": "ceramic",
+			"count": 16,
+			"spread": 105,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_brick_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic",
+			"layer": "brick",
+			"count": 5,
+			"spread": 180,
+			"cooldown": 0
+		},
+		{
+			"class": "bee",
+			"layer": "bee",
+			"count": 60,
+			"spread": 20,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_beehive_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "beehive",
+			"layer": "bee",
+			"count": 1,
+			"spread": 0,
 			"cooldown": 0
 		}
 	],
