@@ -752,6 +752,26 @@ function scr_setup_bloon_stats(){
 						"layer": "ceramic"
 					}
 				]
+			},
+			"brc": {
+				sprite: "spr_brc",
+				layers: 558,
+				"big_bloon_tier": 3,
+				index: 0,
+				rbe: 2404,
+				health: 500,
+				density: 1,
+				speed: 0.75,
+				children: [
+					{"class": "moab","layer": "mini"},
+					{"class": "moab","layer": "mini"},
+					{"class": "moab","layer": "mini"},
+					{"class": "moab","layer": "mini"},
+					{"class": "moab","layer": "mini"},
+					{"class": "moab","layer": "mini"},
+					{"class": "moab","layer": "mini"},
+					{"class": "moab","layer": "mini"}
+				]
 			}
 		},
 		"bully": {

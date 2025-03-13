@@ -457,7 +457,7 @@
 		{
 			"class": "ceramic",
 			"layer": "ceramic",
-			"count": 20,
+			"count": 15,
 			"spread": 5,
 			"cooldown": 0
 		}
@@ -471,14 +471,14 @@
 			"class": "moab",
 			"layer": "mini",
 			"count": 2,
-			"spread": 600,
+			"spread": 750,
 			"cooldown": 150
 		},
 		{
 			"class": "bloom",
 			"layer": "spring",
 			"count": 20,
-			"spread": 40,
+			"spread": 50,
 			"cooldown": 0
 		}
 	],
@@ -537,7 +537,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_beehive_bloon",
+			"round_icon_sprite": "spr_beehive_bloon_icon",
 			"round_icon_index": 0
 		},
 		{
@@ -565,6 +565,92 @@
 			"layer": "spring",
 			"count": 35,
 			"spread": 30,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_pot_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "pot",
+			"layer": "ceramic",
+			"count": 16,
+			"spread": 110,
+			"cooldown": 0
+		},
+		{
+			"class": "bee",
+			"layer": "bee",
+			"count": 200,
+			"spread": 10,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic",
+			"layer": "ceramic",
+			"count": 30,
+			"spread": 40,
+			"cooldown": 0
+		},
+		{
+			"class": "pot",
+			"layer": "ceramic",
+			"count": 6,
+			"spread": 10,
+			"cooldown": 1250
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_beehive_bloon_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "beehive",
+			"layer": "bee",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		},
+		{
+			"class": "bloom",
+			"layer": "spring",
+			"count": 40,
+			"spread": 20,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_brc_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab",
+			"layer": "brc",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bfb_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab",
+			"layer": "bfb",
+			"count": 1,
+			"spread": 0,
 			"cooldown": 0
 		}
 	],
