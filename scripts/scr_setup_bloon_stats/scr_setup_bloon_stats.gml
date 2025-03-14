@@ -772,6 +772,22 @@ function scr_setup_bloon_stats(){
 					{"class": "moab","layer": "mini"},
 					{"class": "moab","layer": "mini"}
 				]
+			},
+			"bfb": {
+				sprite: "spr_bfb",
+				layers: 918,
+				"big_bloon_tier": 4,
+				index: 0,
+				rbe: 3164,
+				health: 700,
+				density: 1,
+				speed: 0.85,
+				children: [
+					{"class": "moab","layer": "moab"},
+					{"class": "moab","layer": "moab"},
+					{"class": "moab","layer": "moab"},
+					{"class": "moab","layer": "moab"},
+				]
 			}
 		},
 		"bully": {
@@ -1555,6 +1571,19 @@ function scr_setup_bloon_stats(){
 					{"class": "bee", "layer": "bee"},
 					{"class": "bee", "layer": "bee"}
 				]
+			}
+		},
+		"bear": {
+			"object": "obj_bear_bloon",
+			"big_bloon_tier": 7,
+			"beekeeper": {
+				sprite: "spr_bear_bloon",
+				layers: 6600,
+				rbe: 6600,
+				damage: 60,
+				health: 6600,
+				density: 1,
+				speed: 1.6,
 			}
 		}
 	}

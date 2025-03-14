@@ -749,12 +749,12 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_sprite": "spr_bfb_icon",
 			"round_icon_index": 0
 		},
 		{
-			"class": "bear",
-			"layer": "beekeeper",
+			"class": "moab",
+			"layer": "bfb",
 			"count": 1,
 			"spread": 0,
 			"cooldown": 0
@@ -762,12 +762,94 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bfb_icon",
+			"round_icon_sprite": "spr_brc_icon",
 			"round_icon_index": 0
 		},
 		{
 			"class": "moab",
-			"layer": "bfb",
+			"layer": "brc",
+			"count": 2,
+			"spread": 600,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_camo_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab",
+			"layer": "moab",
+			"count": 4,
+			"spread": 200,
+			"cooldown": 0
+		},
+		{
+			"class": "ceramic",
+			"layer": "ceramic",
+			"count": 20,
+			"spread": 10,
+			"cooldown": 900,
+			"properties": [
+				"camo", "splitter"
+			]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_regrow_bloon",
+			"round_icon_index": 7
+		},
+		{
+			"class": "normal",
+			"layer": "rainbow",
+			"count": 60,
+			"spread": 2,
+			"cooldown": 0,
+			"properties": [
+				"regrow"
+			]
+		},
+		{
+			"class": "ceramic",
+			"layer": "ceramic",
+			"count": 20,
+			"spread": 10,
+			"cooldown": 0,
+			"properties": [
+				"regrow"
+			]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_beehive_bloon_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "beehive",
+			"layer": "bee",
+			"count": 4,
+			"spread": 450,
+			"cooldown": 0
+		},
+		{
+			"class": "pot",
+			"layer": "ceramic",
+			"count": 30,
+			"spread": 60,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "bear",
+			"layer": "beekeeper",
 			"count": 1,
 			"spread": 0,
 			"cooldown": 0
