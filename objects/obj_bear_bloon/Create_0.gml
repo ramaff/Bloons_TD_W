@@ -7,4 +7,4 @@ event_inherited();
 
 alarm[4] = 450 / bloon_stats.speed;
 
-hive_spawn = 3;
+hive_spawn = 0;

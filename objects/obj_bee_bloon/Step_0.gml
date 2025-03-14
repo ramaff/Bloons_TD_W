@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if !instance_exists(target) {
+	instance_destroy()	
+}
+
 if target.object_index = obj_bloon_target {
 	path_position = target.path_position;
 }
