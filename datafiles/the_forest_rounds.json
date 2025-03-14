@@ -533,8 +533,8 @@
 		{
 			"class": "ceramic",
 			"layer": "brick",
-			"count": 5,
-			"spread": 180,
+			"count": 3,
+			"spread": 360,
 			"cooldown": 0
 		},
 		{
