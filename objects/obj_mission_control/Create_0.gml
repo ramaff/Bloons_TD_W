@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.money = 650
+global.money = 16650
 global.lives = 200
 
 global.round = 0;

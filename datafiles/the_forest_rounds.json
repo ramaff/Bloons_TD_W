@@ -366,6 +366,16 @@
 			"properties": [
 				"regrow"
 			]
+		},
+		{
+			"class": "splitter",
+			"layer": "lime",
+			"count": 20,
+			"spread": 20,
+			"cooldown": 650,
+			"properties": [
+				"camo"
+			]
 		}
 	],
 	[
@@ -533,6 +543,16 @@
 			"count": 60,
 			"spread": 20,
 			"cooldown": 0
+		},
+		{
+			"class": "normal",
+			"layer": "black",
+			"count": 20,
+			"spread": 20,
+			"cooldown": 1250,
+			"properties": [
+				"camo"
+			]
 		}
 	],
 	[
@@ -643,14 +663,87 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bfb_icon",
+			"round_icon_sprite": "spr_beehive_bloon_icon",
 			"round_icon_index": 0
 		},
 		{
-			"class": "moab",
-			"layer": "bfb",
-			"count": 1,
-			"spread": 0,
+			"class": "beehive",
+			"layer": "bee",
+			"count": 2,
+			"spread": 900,
+			"cooldown": 0
+		},
+		{
+			"class": "pot",
+			"layer": "ceramic",
+			"count": 16,
+			"spread": 80,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic",
+			"layer": "ceramic",
+			"count": 20,
+			"spread": 5,
+			"cooldown": 400
+		},
+		{
+			"class": "normal",
+			"layer": "zebra",
+			"count": 80,
+			"spread": 15,
+			"cooldown": 0,
+			"properties": [
+				"camo"
+			]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_brick_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic",
+			"layer": "brick",
+			"count": 15,
+			"spread": 90,
+			"cooldown": 0
+		},
+		{
+			"class": "bee",
+			"layer": "bee",
+			"count": 200,
+			"spread": 1,
+			"cooldown": 800
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_camo_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic",
+			"layer": "ceramic",
+			"count": 16,
+			"spread": 10,
+			"cooldown": 500,
+			"properties": [
+				"camo"
+			]
+		},
+		{
+			"class": "pot",
+			"layer": "ceramic",
+			"count": 25,
+			"spread": 50,
 			"cooldown": 0
 		}
 	],
@@ -662,6 +755,19 @@
 		{
 			"class": "bear",
 			"layer": "beekeeper",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bfb_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab",
+			"layer": "bfb",
 			"count": 1,
 			"spread": 0,
 			"cooldown": 0

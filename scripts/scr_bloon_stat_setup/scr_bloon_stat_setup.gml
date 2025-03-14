@@ -51,7 +51,10 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	if variable_struct_exists(_bloon.bloon_stats, "camo")  {
 		_bloon.bloon_stats.sprite = "spr_camo_bloon"
 		if _class = "splitter" {
-			_bloon.bloon_stats.sprite = "spr_regrow_splitter_bloon"
+			_bloon.bloon_stats.sprite = "spr_camo_splitter_bloon"
+		}
+		if _class = "ceramic" and _layer = "ceramic" {
+			_bloon.bloon_stats.sprite = "spr_camo_ceramic_bloon"
 		}
 	}
 	if variable_struct_exists(_bloon.bloon_stats, "sprite") {
