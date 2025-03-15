@@ -154,6 +154,11 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		instance_destroy()
 		exit;
 	}
+	if variable_struct_exists(_bloon.bloon_stats, "camo") {
+		if !variable_struct_exists(_projectile_stats, "camo_detection") {
+			exit;
+		}
+	}
 	
 	if variable_struct_exists(_projectile_stats, "freeze")  {
 		_bloon.bloon_stats.freeze = _projectile_stats.freeze;

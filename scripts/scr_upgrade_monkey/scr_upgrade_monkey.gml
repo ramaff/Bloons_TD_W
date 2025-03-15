@@ -87,6 +87,9 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 		if variable_struct_exists(_upgrade_stats, "lifespan") {
 			_tower_stats.projectile_stats[_i].lifespan += _upgrade_stats.lifespan;
 		}
+		if variable_struct_exists(_upgrade_stats, "camo_detection") {
+			_tower_stats.projectile_stats[_i].camo_detection = _upgrade_stats.camo_detection;
+		}
 	}
 	
 	if variable_struct_exists(_upgrade_stats, "additional_attacks") {

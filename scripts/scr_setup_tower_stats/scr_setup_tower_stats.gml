@@ -131,7 +131,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Lingering Flame",
-						upgrade_cost: 900
+						upgrade_cost: 800
 					}
 				],
 				[
@@ -340,7 +340,7 @@ function scr_setup_tower_stats(){
 			total_cost: 450,
 			upgrade_cost: 0,
 			range: 95,
-			delay: 81,
+			delay: 72,
 			attack_cooldown: 0,
 			camo_detection: true,
 	
@@ -352,7 +352,8 @@ function scr_setup_tower_stats(){
 					speed: 8,
 					lifespan: 90,
 					friction: 0.2,
-					image_angle: 0
+					image_angle: 0,
+					camo_detection: true
 				},
 				{
 					sprite: "spr_marble",
@@ -362,7 +363,8 @@ function scr_setup_tower_stats(){
 					direction: -30,
 					lifespan: 90,
 					friction: 0.2,
-					image_angle: 0
+					image_angle: 0,
+					camo_detection: true
 				},
 				{
 					sprite: "spr_marble",
@@ -372,7 +374,8 @@ function scr_setup_tower_stats(){
 					direction: 30,
 					lifespan: 90,
 					friction: 0.2,
-					image_angle: 0
+					image_angle: 0,
+					camo_detection: true
 				}
 			],
 			upgrades: [

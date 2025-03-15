@@ -521,7 +521,7 @@
 			"class": "pot",
 			"layer": "ceramic",
 			"count": 16,
-			"spread": 105,
+			"spread": 120,
 			"cooldown": 0
 		}
 	],
@@ -541,8 +541,8 @@
 			"class": "bee",
 			"layer": "bee",
 			"count": 60,
-			"spread": 20,
-			"cooldown": 0
+			"spread": 10,
+			"cooldown": 600
 		},
 		{
 			"class": "normal",
@@ -577,14 +577,14 @@
 			"class": "moab",
 			"layer": "moab",
 			"count": 2,
-			"spread": 750,
-			"cooldown": 150
+			"spread": 600,
+			"cooldown": 350
 		},
 		{
 			"class": "bloom",
 			"layer": "spring",
 			"count": 35,
-			"spread": 30,
+			"spread": 35,
 			"cooldown": 0
 		}
 	],

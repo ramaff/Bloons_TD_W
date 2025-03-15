@@ -124,7 +124,7 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "The squirrel has 100 more health, and throws acorns twice as hard!"
 			},
 			"Venting": {
-				upgrade_string: "The squirrel regains some of its health whenever it gets angry",
+				upgrade_string: "The squirrel regains some of its health whenever it gets angry.",
 			},
 			"Acorn Assault": {
 				upgrade_string: "While angry, release a massively increased amount of acorns.",
@@ -251,7 +251,8 @@ function scr_setup_upgrade_stats(){
 						speed: 8,
 						lifespan: 180,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					},
 					{
 						sprite: "spr_bigger_marble",
@@ -261,7 +262,8 @@ function scr_setup_upgrade_stats(){
 						lifespan: 180,
 						direction: -30,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					},
 					{
 						sprite: "spr_bigger_marble",
@@ -271,7 +273,8 @@ function scr_setup_upgrade_stats(){
 						lifespan: 180,
 						direction: 30,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					}
 				],
 				upgrade_string: "Marbles pop more bloons, and last longer"
@@ -287,7 +290,8 @@ function scr_setup_upgrade_stats(){
 						speed: 8,
 						lifespan: 180,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					},
 					{
 						sprite: "spr_bigger_marble",
@@ -297,7 +301,8 @@ function scr_setup_upgrade_stats(){
 						lifespan: 180,
 						direction: -20,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					},
 					{
 						sprite: "spr_bigger_marble",
@@ -307,7 +312,8 @@ function scr_setup_upgrade_stats(){
 						lifespan: 180,
 						direction: 20,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					},
 					{
 						sprite: "spr_bigger_marble",
@@ -317,7 +323,8 @@ function scr_setup_upgrade_stats(){
 						lifespan: 180,
 						direction: -30,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					},
 					{
 						sprite: "spr_bigger_marble",
@@ -327,7 +334,8 @@ function scr_setup_upgrade_stats(){
 						lifespan: 180,
 						direction: 30,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					}
 				],
 				upgrade_string: "Throws out 5 marbles at once."
@@ -345,7 +353,8 @@ function scr_setup_upgrade_stats(){
 						lifespan: 360,
 						tick_frequency: 60,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					},
 					{
 						sprite: "spr_spinning_top",
@@ -357,7 +366,8 @@ function scr_setup_upgrade_stats(){
 						tick_frequency: 60,
 						direction: -20,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					},
 					{
 						sprite: "spr_spinning_top",
@@ -369,7 +379,8 @@ function scr_setup_upgrade_stats(){
 						tick_frequency: 60,
 						direction: 20,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					},
 					{
 						sprite: "spr_spinning_top",
@@ -381,7 +392,8 @@ function scr_setup_upgrade_stats(){
 						tick_frequency: 60,
 						direction: -30,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					},
 					{
 						sprite: "spr_spinning_top",
@@ -393,7 +405,8 @@ function scr_setup_upgrade_stats(){
 						tick_frequency: 60,
 						direction: 30,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					}
 				],
 				upgrade_string: "Throws spinning tops instead of marbles that pop much more bloons and can hit multiple times each."
@@ -411,7 +424,8 @@ function scr_setup_upgrade_stats(){
 						lifespan: 360,
 						tick_frequency: 15,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					},
 					{
 						sprite: "spr_spinning_blade_top",
@@ -423,7 +437,8 @@ function scr_setup_upgrade_stats(){
 						tick_frequency: 15,
 						direction: -20,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					},
 					{
 						sprite: "spr_spinning_blade_top",
@@ -435,7 +450,8 @@ function scr_setup_upgrade_stats(){
 						tick_frequency: 15,
 						direction: 20,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					},
 					{
 						sprite: "spr_spinning_blade_top",
@@ -447,7 +463,8 @@ function scr_setup_upgrade_stats(){
 						tick_frequency: 15,
 						direction: -30,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					},
 					{
 						sprite: "spr_spinning_blade_top",
@@ -459,7 +476,8 @@ function scr_setup_upgrade_stats(){
 						tick_frequency: 15,
 						direction: 30,
 						friction: 0.2,
-						image_angle: 0
+						image_angle: 0,
+						camo_detection: true
 					}
 				],
 				upgrade_string: "Throws spinning tops instead of marbles that pop much more bloons and can hit multiple times each."

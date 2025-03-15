@@ -1474,12 +1474,13 @@ function scr_setup_bloon_stats(){
 				sprite: "spr_bloom_bloon",
 				layers: 8,
 				index: 0,
-				rbe: 14,
+				rbe: 24,
 				health: 4,
 				max_health: 4,
 				density: 1,
 				speed: 1.9,
 				children: [
+					{"class": "splitter", "layer": "lime"},
 					{"class": "splitter", "layer": "lime"},
 				]
 			},
@@ -1487,12 +1488,13 @@ function scr_setup_bloon_stats(){
 				layers: 12,
 				sprite: "spr_spring_bloom_bloon",
 				index: 0,
-				rbe: 23,
+				rbe: 39,
 				health: 6,
 				max_health: 6,
 				density: 1,
 				speed: 2.3,
 				children: [
+					{"class": "splitter", "layer": "purple"},
 					{"class": "splitter", "layer": "purple"},
 				]
 			}
@@ -1503,11 +1505,11 @@ function scr_setup_bloon_stats(){
 				sprite: "spr_pot_ceramic_bloon",
 				layers: 27,
 				index: 0,
-				rbe: 107,
+				rbe: 171,
 				health: 15,
 				max_health: 15,
 				density: 1,
-				speed: 2.75,
+				speed: 2.35,
 				children: [
 					{
 						"class": "bloom",
