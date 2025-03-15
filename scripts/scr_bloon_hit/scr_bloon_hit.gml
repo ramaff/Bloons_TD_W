@@ -14,6 +14,7 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 	}
 	
 	if _bloon_stats.health <= 0 {
+		
 		var _cash_flow = 1;
 		if _round > 20 {
 			_cash_flow = _cash_flow * 0.6;
@@ -179,7 +180,6 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 	var _xx = _bloon.x
 	var _yy = _bloon.y
 	
-	instance_create_depth(_xx, _yy, depth - 10, obj_pop)
 	scr_play_sound(snd_pop)
 	
 	var _tower = noone;
@@ -269,6 +269,7 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 	
 	if _bloon.bloon_stats.health <= 0 {
 		instance_destroy(_bloon)
+		instance_create_depth(_xx, _yy, depth - 10, obj_pop)
 		exit;
 	}
 	

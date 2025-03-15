@@ -17,7 +17,7 @@ if global.round > saved_round {
 	var _class = "animal"
 	var _xx = x;
 	var _yy = y;
-	var _bloon_object = obj_bloon
+	var _bloon_object = obj_bloon_animal_bloon
 	var _path = global.paths[irandom(array_length(global.paths) - 1)]
 	var _properties = ["float to track"]
 	var _round = -1
@@ -48,7 +48,6 @@ if global.round > saved_round {
 					target.path_position = 0;
 					target.x = path_get_x(bloon_stats.path, path_position);
 					target.y = path_get_y(bloon_stats.path, path_position);
-				
 				}
 			}
 		}

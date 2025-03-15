@@ -13,7 +13,8 @@ var _projectile_stats = [
 		pierce: 60,
 		size: 0.65,
 		freeze: 1,
-		freeze_time: 45
+		freeze_time: 45,
+		camo_detection: true
 	}
 ]
 

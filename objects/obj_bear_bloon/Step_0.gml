@@ -16,7 +16,7 @@ if leak_frame {
 	bloon_stats.speed = bloon_stats.speed * 1.15;
 	speed = bloon_stats.speed;
 	path_speed = speed;
-	hive_spawn = 3;
+	hive_spawn = 2;
 	
 	alarm[4] = 750 / bloon_stats.speed;
 	

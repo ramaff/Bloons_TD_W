@@ -1435,10 +1435,10 @@ function scr_setup_bloon_stats(){
 		},
 		"bee": {
 			"object": "obj_bee_bloon",
-			"sprite": "spr_bee_bloon",
 			"big_bloon_tier": 1,
 			"height": 5,
 			"bee": {
+				"sprite": "spr_bee_bloon",
 				layers: 12,
 				index: 0,
 				rbe: 21,
@@ -1452,16 +1452,17 @@ function scr_setup_bloon_stats(){
 				]
 			},
 			"sturdy bee": {
-				layers: 18,
+				"sprite": "spr_sturdy_bee_bloon",
+				layers: 24,
 				index: 0,
-				rbe: 27,
+				rbe: 54,
 				health: 12,
 				max_health: 12,
 				density: 1,
-				speed: 2.3,
+				speed: 1.6,
 				children: [
-					{"class": "normal", "layer": "black", "properties": ["float to track"]},
-					{"class": "normal", "layer": "yellow", "properties": ["float to track"]}
+					{"class": "bee", "layer": "bee"},
+					{"class": "bee", "layer": "bee"}
 				]
 			}
 		},
@@ -1488,7 +1489,7 @@ function scr_setup_bloon_stats(){
 				layers: 12,
 				sprite: "spr_spring_bloom_bloon",
 				index: 0,
-				rbe: 39,
+				rbe: 38,
 				health: 6,
 				max_health: 6,
 				density: 1,
@@ -1505,11 +1506,11 @@ function scr_setup_bloon_stats(){
 				sprite: "spr_pot_ceramic_bloon",
 				layers: 27,
 				index: 0,
-				rbe: 171,
-				health: 15,
-				max_health: 15,
+				rbe: 134,
+				health: 10,
+				max_health: 10,
 				density: 1,
-				speed: 2.35,
+				speed: 2.6,
 				children: [
 					{
 						"class": "bloom",
@@ -1517,11 +1518,11 @@ function scr_setup_bloon_stats(){
 					},
 					{
 						"class": "bloom",
-						"layer": "spring"
+						"layer": "bloom"
 					},
 					{
 						"class": "bloom",
-						"layer": "spring"
+						"layer": "bloom"
 					},
 					{
 						"class": "bloom",
@@ -1534,44 +1535,34 @@ function scr_setup_bloon_stats(){
 			"object": "obj_beehive_bloon",
 			"bee": {
 				sprite: "spr_beehive_bloon",
-				layers: 312,
+				layers: 324,
 				index: 0,
-				rbe: 930,
+				rbe: 1380,
 				health: 300,
 				max_health: 300,
 				density: 1,
 				speed: 0.8,
 				children: [
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"},
-					{"class": "bee", "layer": "bee"}
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
+					{"class": "bee", "layer": "sturdy bee"},
 				]
 			}
 		},
@@ -1585,7 +1576,7 @@ function scr_setup_bloon_stats(){
 				damage: 60,
 				health: 6600,
 				density: 1,
-				speed: 1.6,
+				speed: 1.3,
 			}
 		}
 	}

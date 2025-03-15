@@ -10,7 +10,8 @@ var _projectile_stats = [
 		pierce: 1,
 		damage: 1,
 		speed: 15,
-		lifespan: 15
+		lifespan: 15,
+		camo_detection: true
 	}
 ]
 

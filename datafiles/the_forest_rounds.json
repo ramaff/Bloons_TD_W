@@ -93,7 +93,7 @@
 			"class": "bloom",
 			"layer": "bloom",
 			"count": 3,
-			"spread": 150,
+			"spread": 300,
 			"cooldown": 0
 		}
 	],
@@ -126,7 +126,7 @@
 			"class": "bloom",
 			"layer": "bloom",
 			"count": 3,
-			"spread": 240,
+			"spread": 300,
 			"cooldown": 0
 		},
 		{
@@ -222,13 +222,13 @@
 			"class": "bloom",
 			"layer": "bloom",
 			"count": 8,
-			"spread": 200,
+			"spread": 240,
 			"cooldown": 0
 		},
 		{
 			"class": "bee",
 			"layer": "bee",
-			"count": 12,
+			"count": 16,
 			"spread": 120,
 			"cooldown": 0
 		}
@@ -321,13 +321,13 @@
 			"class": "bloom",
 			"layer": "bloom",
 			"count": 15,
-			"spread": 60,
+			"spread": 90,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 3,
+			"count": 5,
 			"spread": 90,
 			"cooldown": 600
 		}
@@ -354,7 +354,7 @@
 			"class": "bloom",
 			"layer": "bloom",
 			"count": 12,
-			"spread": 60,
+			"spread": 80,
 			"cooldown": 0
 		},
 		{
@@ -372,7 +372,7 @@
 			"layer": "lime",
 			"count": 20,
 			"spread": 20,
-			"cooldown": 650,
+			"cooldown": 1000,
 			"properties": [
 				"camo"
 			]
@@ -448,7 +448,7 @@
 			"class": "bloom",
 			"layer": "bloom",
 			"count": 24,
-			"spread": 10,
+			"spread": 15,
 			"cooldown": 0
 		},
 		{
@@ -488,7 +488,7 @@
 			"class": "bloom",
 			"layer": "spring",
 			"count": 20,
-			"spread": 50,
+			"spread": 60,
 			"cooldown": 0
 		}
 	],
@@ -539,9 +539,9 @@
 		},
 		{
 			"class": "bee",
-			"layer": "bee",
-			"count": 60,
-			"spread": 10,
+			"layer": "sturdy bee",
+			"count": 30,
+			"spread": 30,
 			"cooldown": 600
 		},
 		{
@@ -578,13 +578,13 @@
 			"layer": "moab",
 			"count": 2,
 			"spread": 600,
-			"cooldown": 350
+			"cooldown": 600
 		},
 		{
 			"class": "bloom",
 			"layer": "spring",
-			"count": 35,
-			"spread": 35,
+			"count": 32,
+			"spread": 42,
 			"cooldown": 0
 		}
 	],
@@ -602,9 +602,9 @@
 		},
 		{
 			"class": "bee",
-			"layer": "bee",
-			"count": 200,
-			"spread": 10,
+			"layer": "sturdy bee",
+			"count": 100,
+			"spread": 20,
 			"cooldown": 0
 		}
 	],
@@ -718,8 +718,8 @@
 		},
 		{
 			"class": "bee",
-			"layer": "bee",
-			"count": 200,
+			"layer": "sturdy bee",
+			"count": 100,
 			"spread": 1,
 			"cooldown": 800
 		}
