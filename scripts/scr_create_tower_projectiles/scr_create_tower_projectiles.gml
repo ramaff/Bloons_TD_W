@@ -34,7 +34,7 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 		
 		repeat(_shot_count) {
 		
-			with instance_create_depth(x,y,depth, _projectile) {
+			with instance_create_depth(x,y,0, _projectile) {
 				projectile_stats = variable_clone(_projectile_stats[_i])
 				projectile_stats.tower_id = _tower_id
 				
@@ -85,7 +85,7 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 					image_angle = direction
 				}
 				if variable_struct_exists(projectile_stats, "relative_depth") {
-					depth += relative_depth
+					depth += projectile_stats.relative_depth
 				}
 				if variable_struct_exists(projectile_stats, "size") {
 					image_xscale = projectile_stats.size

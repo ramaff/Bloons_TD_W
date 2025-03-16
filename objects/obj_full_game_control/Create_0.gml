@@ -62,6 +62,12 @@ global.towers_progress = {
 	},
 	"goonkey": {
 		"unlocked": false	
+	},
+	"marbles_monkey": {
+		"unlocked": false	
+	},
+	"caster_monkey": {
+		"unlocked": false	
 	}
 }
 

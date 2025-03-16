@@ -88,8 +88,8 @@ function scr_setup_tower_stats(){
 						upgrade_cost: 2700
 					},
 					{
-						keyword: "darterer",
-						upgrade_cost: 3900
+						keyword: "darterest darts",
+						upgrade_cost: 5700
 					}
 				]
 			]
@@ -340,7 +340,7 @@ function scr_setup_tower_stats(){
 			total_cost: 450,
 			upgrade_cost: 0,
 			range: 95,
-			delay: 72,
+			delay: 65,
 			attack_cooldown: 0,
 			camo_detection: true,
 	

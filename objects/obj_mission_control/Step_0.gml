@@ -72,27 +72,21 @@ if global.round >= array_length(global.bloon_sends) and !_bloons_remaining and i
 			var _tower = global.added_towers[_i]
 			var _tower_prog = variable_struct_get(global.towers_progress, _tower)
 			variable_struct_set(_tower_prog, "unlocked", true)
+			
+			with instance_create_depth(480, 600, -500, obj_world_map_note) {
+				text = "The " + _tower + " has joined your party"	
+			}
 		}
 		
 		for(var _i = 0; _i < array_length(global.added_heroes); _i++) {
 			var _hero = global.added_heroes[_i]
 			var _hero_prog = variable_struct_get(global.heroes_progress, _hero)
 			variable_struct_set(_hero_prog, "unlocked", true)
+			with instance_create_depth(480, 600, -500, obj_world_map_note) {
+				text = "The " + _hero + " has joined your party"	
+			}
 		}
 		
-		/*
-		if global.mission = "bloon_academia" {
-			global.heroes_progress.angry_squirrel.unlocked = true
-		}
-		if global.mission = "autumn_acres" {
-			global.towers_progress.assassin_monkey.unlocked = true
-		}
-		if global.mission = "graveyard" {
-			global.towers_progress.haunted_monkey.unlocked = true
-		}
-		if global.mission = "parade" {
-			global.heroes_progress.clown_monkey.unlocked = true
-		} */
 		
 		//show_debug_message(_current_stage_prog)
 		_current_stage_prog.best_time = min(global.total_time, _current_stage_prog.best_time)

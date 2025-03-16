@@ -2,7 +2,8 @@
 // You can write your code in this editor
 
 if !instance_exists(target) {
-	instance_destroy()	
+	instance_destroy()
+	exit;
 }
 
 if target.object_index = obj_bloon_target {

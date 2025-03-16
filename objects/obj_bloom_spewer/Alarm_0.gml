@@ -34,5 +34,6 @@ with instance_create_depth(_xx, _yy, depth, _bloon_object) {
 	y = _yy
 	speed = 0;
 	bloon_stats.speed = 0;
+	path_speed = 0;
 	bloon_stats.remaining_value = 0;
 }

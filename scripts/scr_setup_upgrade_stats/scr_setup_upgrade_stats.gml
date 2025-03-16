@@ -45,12 +45,48 @@ function scr_setup_upgrade_stats(){
 				],
 				upgrade_string: "Darts split into 4 more darts. Jim gets more HP and range."
 			},
-			"darterer": {
-				range: 15,
-				shot_count: 4,
+			"darterest darts": {
+				range: 45,
 				health: 50,
 				max_health: 50,
-				upgrade_string: "shoots so many more darts."
+				fire_rate_multiplier: 1.333,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_dartest_dart",
+						pierce: 4,
+						projectile_count: 2,
+						projectile_spread: 30,
+						damage: 1,
+						speed: 12,
+						lifespan: 30,
+						air_burst_range: 40,
+						projectile_burst: [
+							{
+								sprite: "spr_dart",
+								pierce: 4,
+								projectile_count: 4,
+								projectile_spread: 15,
+								damage: 1,
+								speed: 12,
+								lifespan: 30,
+								expire_burst_activation: true,
+								projectile_burst: [
+									{
+										projectile_count: 4,
+										projectile_spread: 90,
+										sprite: "spr_dart",
+										pierce: 4,
+										damage: 1,
+										speed: 12,
+										lifespan: 30,
+									},
+								]
+							}
+						]
+					}
+				],
+				upgrade_string: "darts that shoot darts into more darts."
 			},
 		},
 		"sling_shot_monkey": {
@@ -837,12 +873,13 @@ function scr_setup_upgrade_stats(){
 								direction: 0,
 								friction: 2.5,
 								damage: 1,
-								pierce: 40,
+								pierce: 100,
 								tick_frequency: 120,
 								goop: 1,
 								goop_time: 180,
 								image_angle: 0,
-								relative_depth: -10
+								relative_depth: 30,
+								camo_detection: true
 							},
 							{
 								sprite: "spr_goo_pool",
@@ -853,12 +890,13 @@ function scr_setup_upgrade_stats(){
 								direction: 0,
 								friction: 4,
 								damage: 1,
-								pierce: 40,
+								pierce: 100,
 								tick_frequency: 120,
 								goop: 1,
 								goop_time: 180,
 								image_angle: 0,
-								relative_depth: -10
+								relative_depth: 30,
+								camo_detection: true
 							}
 						]
 					}
