@@ -148,6 +148,7 @@
     {"id":{"name":"scr_pogo_stick_monkey_upgrades","path":"scripts/scr_pogo_stick_monkey_upgrades/scr_pogo_stick_monkey_upgrades.yy",},},
     {"id":{"name":"spr_bear_bloon_maul","path":"sprites/spr_bear_bloon_maul/spr_bear_bloon_maul.yy",},},
     {"id":{"name":"track_parent","path":"rooms/track_parent/track_parent.yy",},},
+    {"id":{"name":"obj_tower_collider","path":"objects/obj_tower_collider/obj_tower_collider.yy",},},
     {"id":{"name":"scr_bloon_regen","path":"scripts/scr_bloon_regen/scr_bloon_regen.yy",},},
     {"id":{"name":"obj_moab_class","path":"objects/obj_moab_class/obj_moab_class.yy",},},
     {"id":{"name":"obj_tower_butt","path":"objects/obj_tower_butt/obj_tower_butt.yy",},},

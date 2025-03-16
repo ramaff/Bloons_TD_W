@@ -819,6 +819,7 @@ function scr_setup_upgrade_stats(){
 			},
 			"Goo Pool": {
 				fire_rate_multiplier: 1.666,
+				camo_detection: true,
 				range: 20,
 				upgrade_string: "Covers the nearby track with a goo pool that causes projectiles to stick to the ground for a long time.",
 				additional_attacks: [
@@ -840,7 +841,8 @@ function scr_setup_upgrade_stats(){
 								tick_frequency: 120,
 								goop: 1,
 								goop_time: 180,
-								image_angle: 0
+								image_angle: 0,
+								relative_depth: -10
 							},
 							{
 								sprite: "spr_goo_pool",
@@ -855,7 +857,8 @@ function scr_setup_upgrade_stats(){
 								tick_frequency: 120,
 								goop: 1,
 								goop_time: 180,
-								image_angle: 0
+								image_angle: 0,
+								relative_depth: -10
 							}
 						]
 					}

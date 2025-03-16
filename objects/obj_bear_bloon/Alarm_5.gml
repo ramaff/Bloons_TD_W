@@ -17,10 +17,15 @@ with(obj_monkey) {
 }
 
 with(_target) {
-	stun += 300;	
-	speed = 11;
-	friction = 1;
-	direction = point_direction(x, y, other.x, other.y) + 180;
+	stun += 300;
+	var _dir = point_direction(x, y, other.x, other.y) + 180;
+	with instance_create_depth(x, y, depth, obj_tower_collider) {
+		speed = 8;
+		direction = _dir
+		alarm[0] = 180;
+		target = _target
+		//sprite_index = _target.sprite_index
+	}
 }
 
 

@@ -84,6 +84,9 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 				if !variable_struct_exists(projectile_stats, "image_angle") {
 					image_angle = direction
 				}
+				if variable_struct_exists(projectile_stats, "relative_depth") {
+					depth += relative_depth
+				}
 				if variable_struct_exists(projectile_stats, "size") {
 					image_xscale = projectile_stats.size
 					image_yscale = projectile_stats.size

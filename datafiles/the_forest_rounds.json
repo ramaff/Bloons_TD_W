@@ -133,7 +133,7 @@
 			"class": "splitter",
 			"layer": "orange",
 			"count": 40,
-			"spread": 20,
+			"spread": 30,
 			"cooldown": 0
 		},
 		{
@@ -141,7 +141,7 @@
 			"layer": "amber",
 			"count": 4,
 			"spread": 60,
-			"cooldown": 880
+			"cooldown": 1280
 		}
 	],
 	[

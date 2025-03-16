@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if stun > 0 || global.round <= 0 {
+	x = og_x
+	y = og_y
+	exit;
+}
+
 
 // NOTE There is a better way to write this in the future:
 if variable_struct_exists(tower_stats, "stat_boosts") {
