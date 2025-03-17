@@ -693,6 +693,26 @@ function scr_setup_bloon_stats(){
 						"layer": "ceramic"
 					}
 				]
+			},
+			"tower": {
+				sprite: "spr_tower_bloon",
+				layers: 198,
+				index: 0,
+				rbe: 626,
+				health: 150,
+				max_health: 150,
+				density: 1,
+				speed: 1.5,
+				children: [
+					{
+						"class": "ceramic",
+						"layer": "brick"
+					},
+					{
+						"class": "ceramic",
+						"layer": "brick"
+					}
+				]
 			}
 		},
 		"moab": {
@@ -1533,6 +1553,7 @@ function scr_setup_bloon_stats(){
 		},
 		"beehive": {
 			"object": "obj_beehive_bloon",
+			"big_bloon_tier": 3,
 			"bee": {
 				sprite: "spr_beehive_bloon",
 				layers: 324,
@@ -1577,6 +1598,36 @@ function scr_setup_bloon_stats(){
 				health: 6600,
 				density: 1,
 				speed: 1.3,
+			}
+		},
+		"rune": {
+			"object": "obj_rune_bloon",
+			"big_bloon_tier": 1,
+			"height": 5,
+			"rune": {
+				sprite: "spr_rune_bloon",
+				layers: 16,
+				index: 0,
+				rbe: 54,
+				health: 10,
+				max_health: 10,
+				density: 1,
+				speed: 1.6,
+				children: [
+					{"class": "splitter", "layer": "purple"},
+					{"class": "splitter", "layer": "purple"},
+					{"class": "splitter", "layer": "purple"},
+				]
+			},
+			"barrier": {
+				sprite: "spr_magic_barrier_bloon",
+				layers: 10,
+				index: 0,
+				rbe: 10,
+				health: 10,
+				max_health: 10,
+				density: 10,
+				speed: 3
 			}
 		}
 	}

@@ -36,4 +36,13 @@ if variable_struct_exists(projectile_stats, "air_burst_range") {
 	}
 }
 
+if variable_struct_exists(projectile_stats, "spiral_homing_offset") {
+	if !instance_exists(target) {
+		target = scr_get_bloon_target({"camo_detection": variable_struct_exists(projectile_stats, "camo_detection"), "range": 9999}, x, y, projectile_stats.targeting, 0, real(id))
+	}
+	if instance_exists(target) {
+		direction = point_direction(x, y, target.x, target.y) + projectile_stats.spiral_homing_offset
+	}
+}
+
 

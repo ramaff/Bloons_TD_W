@@ -74,7 +74,7 @@ if tower_stats.attack_cooldown > 0 {
 attacked = false;
 
 if tower_stats.attack_cooldown <= 0 {	
-	attacked = scr_tower_attack(tower_stats, tower_stats.projectile_stats, current_boosts, range_boost) || attacked
+	attacked = scr_tower_attack(tower_stats, tower_stats.projectile_stats, current_boosts, range_boost, targeting) || attacked
 	if variable_struct_exists(tower_stats, "attack_barrages") {
 		tower_stats.barrage_count = tower_stats.attack_barrages
 		alarm[1] = tower_stats.barrage_delay

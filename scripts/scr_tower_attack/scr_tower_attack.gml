@@ -24,7 +24,7 @@ function scr_tower_attack(_tower_stats = tower_stats, _projectile_stats = tower_
 		_angle_offset += _tower_stats.attack_angle_offset
 	}
 	
-	scr_create_tower_projectiles(_projectile_stats, x, y, target, _angle_offset, _current_boosts, _id)
+	scr_create_tower_projectiles(_projectile_stats, x, y, target, _angle_offset, _current_boosts, _id, _targeting)
 
 	return true;
 	

@@ -721,6 +721,55 @@ function scr_setup_tower_stats(){
 				]
 			]
 		},
+		"caster_monkey": {
+			tower_sprite: "spr_caster_monkey",
+			butt_sprite: "spr_caster_monkey_butt",
+			total_cost: 510,
+			upgrade_cost: 0,
+			range: 125,
+			delay: 35,
+			attack_cooldown: 0,
+	
+			projectile_stats: [
+				{
+					sprite: "spr_caster_shot",
+					pierce: 4,
+					damage: 1,
+					speed: 13,
+					lifespan: 45,
+					spiral_homing_offset: 60,
+					lead_hit: true
+				}
+			],
+			upgrades: [
+				[
+				],
+				[
+					{
+						keyword: "Pop Markings",
+						upgrade_cost: 350
+					},
+					{
+						keyword: "Double Cast",
+						upgrade_cost: 530
+					}
+				]
+			],
+			split_upgrades: [
+				[
+				],
+				[
+					{
+						keyword: "Goo Cube",
+						upgrade_cost: 1200
+					},
+					{
+						keyword: "Goo Pool",
+						upgrade_cost: 4200
+					}
+				]
+			]
+		},
 	}
 
 }

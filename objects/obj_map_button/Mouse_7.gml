@@ -38,6 +38,9 @@ if _track = "rm_the_bridge" {
 if _track = "rm_the_forest" {
 	global.added_towers = ["marbles_monkey"]	
 }
+if _track = "rm_tower_defense" {
+	global.added_towers = ["caster_monkey"]	
+}
 
 global.pickable_tower_slots = 6 - array_length(global.added_towers)
 global.pickable_hero_slots = 3 - array_length(global.added_heroes)

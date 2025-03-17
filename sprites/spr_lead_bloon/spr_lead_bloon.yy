@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Base Classes",
-    "path": "folders/Sprites/bloons/Base Classes.yy",
+    "name": "Armoured Class Bloons",
+    "path": "folders/Sprites/bloons/Armoured Class Bloons.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

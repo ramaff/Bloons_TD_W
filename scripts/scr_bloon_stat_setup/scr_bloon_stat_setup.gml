@@ -16,9 +16,6 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	
 	target = noone;
 	
-	var _xx = x;
-	var _yy = y;
-	
 	if variable_struct_exists(_class_stats, "properties") {
 		_bloon.bloon_stats.properties = array_concat(_properties, _class_stats.properties)
 	} else {
@@ -79,6 +76,9 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		path_start(_path, bloon_stats.speed, path_action_stop, true);
 	}
 	
+	var _xx = path_get_x(_path, 0)
+	var _yy = path_get_y(_path, 0)
+	
 	if variable_struct_exists(_bloon.bloon_stats, "tattered") {
 		_bloon.bloon_stats.speed = _bloon.bloon_stats.speed * 2
 		//variable_struct_set(_bloon.bloon_stats, "tattered_sprite", _class_stats.tattered_sprite)
@@ -131,6 +131,24 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		if !variable_struct_exists(_bloon.bloon_stats, "zombie_stats") {
 			_bloon.bloon_stats.zombie_stats = variable_clone(_bloon.bloon_stats)	
 		} 
+	}
+	
+	if _class = "rune" and _layer = "rune" {
+
+		with instance_create_depth(_xx, _yy, depth, obj_orbital_bloon) {
+			scr_bloon_stat_setup(id, "rune", "barrier", pth_og_cba, [], -1)
+			path_end()
+			path_position = 0
+			x = _xx;
+			y = _yy;
+				
+			if instance_exists(target) {
+				instance_destroy(target)	
+			}
+		
+			target = _bloon.id
+			bloon_stats.remaining_value = 0;
+		}	
 	}
 
 }

@@ -76,7 +76,7 @@ function scr_close_targeting(_bloon, _best_target_info, _tower_stats, _p_dist) {
 	return false
 }
 
-function scr_get_bloon_target(_tower_stats, _xx = x, _yy = y, _targeting = "first", _range_boost = 0) {
+function scr_get_bloon_target(_tower_stats, _xx = x, _yy = y, _targeting = "first", _range_boost = 0, _projectile_id = -1) {
 
 	var _target = noone
 	var _best_target_info = {
@@ -101,8 +101,9 @@ function scr_get_bloon_target(_tower_stats, _xx = x, _yy = y, _targeting = "firs
 	
 	with (obj_bloon) {
 		var _p_dist = distance_to_point(_xx, _yy)
+		var _prev_hit = variable_struct_exists(bloon_stats.projectile_hits, _projectile_id)
 		if _p_dist <= _total_range {
-			if script_execute(_targeting_script, id, _best_target_info, _tower_stats, _p_dist) {
+			if !_prev_hit and script_execute(_targeting_script, id, _best_target_info, _tower_stats, _p_dist) {
 				_target = id;
 			}
 		}

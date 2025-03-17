@@ -1,0 +1,402 @@
+[
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "red", "count": 15, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "red", "count": 15, "spread": 60, "cooldown": 20
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 15, "spread": 60, "cooldown": 40
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "red", "count": 18, "spread": 40, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 18, "spread": 40, "cooldown": 20
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 30, "spread": 30, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 6, "spread": 5, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 6, "spread": 5, "cooldown": 120
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 6, "spread": 5, "cooldown": 240
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 6, "spread": 5, "cooldown": 360
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 6, "spread": 5, "cooldown": 480
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 6, "spread": 5, "cooldown": 600
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_shielded_splitter_bloon_icon",
+			"round_icon_index": 4
+		},
+		{
+			"class": "splitter", "layer": "purple", "count": 1, "spread": 0, "cooldown": 0,
+			"properties": ["shielded"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_shielded_bloon_icon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 25, "spread": 40, "cooldown": 0,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 15, "spread": 5, "cooldown": 1080
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_regrow_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 50, "spread": 10, "cooldown": 0,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "splitter", "layer": "cyan", "count": 4, "spread": 5, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "cyan", "count": 4, "spread": 5, "cooldown": 180
+		},
+		{
+			"class": "splitter", "layer": "cyan", "count": 4, "spread": 5, "cooldown": 360
+		},
+		{
+			"class": "splitter", "layer": "cyan", "count": 4, "spread": 5, "cooldown": 540
+		},
+		{
+			"class": "splitter", "layer": "cyan", "count": 4, "spread": 5, "cooldown": 720
+		},
+		{
+			"class": "splitter", "layer": "cyan", "count": 4, "spread": 5, "cooldown": 900
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 4
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 4, "spread": 5, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 4, "spread": 5, "cooldown": 120
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 4, "spread": 5, "cooldown": 240
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 4, "spread": 5, "cooldown": 360
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 4, "spread": 5, "cooldown": 480
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 4, "spread": 5, "cooldown": 600
+		},
+		{
+			"class": "splitter", "layer": "purple", "count": 2, "spread": 5, "cooldown": 720
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_rune_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "rune", "layer": "rune", "count": 1, "spread": 0, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_shielded_splitter_bloon_icon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "splitter", "layer": "cyan", "count": 20, "spread": 50, "cooldown": 0,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "splitter", "layer": "cyan", "count": 15, "spread": 5, "cooldown": 1080
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_stuffed_bloon_icon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "stuffed", "layer": "blue", "count": 15, "spread": 65, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 4
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 35, "spread": 40, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_regrow_splitter_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "splitter", "layer": "cyan", "count": 15, "spread": 70, "cooldown": 0,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "splitter", "layer": "cyan", "count": 15, "spread": 70, "cooldown": 10,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "lead", "layer": "lead", "count": 3, "spread": 50, "cooldown": 1120
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_block_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "lead", "layer": "block", "count": 1, "spread": 0, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 4
+		},
+		{
+			"class": "splitter", "layer": "purple", "count": 20, "spread": 60, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_regrow_bloon",
+			"round_icon_index": 4
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 40, "spread": 30, "cooldown": 0,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_stuffed_bloon_icon",
+			"round_icon_index": 4
+		},
+		{
+			"class": "stuffed", "layer": "pink", "count": 15, "spread": 50, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "cyan", "count": 10, "spread": 30, "cooldown": 800,
+			"properties": ["camo"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_rune_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "rune", "layer": "rune", "count": 3, "spread": 120, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_brick_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 1, "spread": 0, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 7
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 20, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 4, "spread": 60, "cooldown": 1260,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_rune_bloon",
+			"round_icon_index":0
+		},
+		{
+			"class": "rune", "layer": "rune", "count": 7, "spread": 180, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "cyan", "count": 40, "spread": 30, "cooldown": 800,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_lead_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "lead", "layer": "lead", "count": 15, "spread": 70, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "purple", "count": 20, "spread": 30, "cooldown": 300,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "ceramic", "count": 5, "spread": 120, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_tower_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "tower", "count": 1, "spread": 0, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_block_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "lead", "layer": "block", "count": 5, "spread": 120, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "purple", "count": 20, "spread": 30, "cooldown": 300,
+			"properties": ["camo"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_deflation_bloon_icon",
+			"round_icon_index": 4
+		},
+		{
+			"class": "deflation",
+			"layer": "pink",
+			"count": 30,
+			"spread": 30,
+			"cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 20, "spread": 20, "cooldown": 300,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 7, "spread": 180, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_tower_bloon_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "tower", "count": 2, "spread": 800, "cooldown": 0
+		},
+		{
+			"class": "rune", "layer": "rune", "count": 25, "spread": 60, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_hta_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "hta", "layer": "hta", "count": 1, "spread": 0, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "wizard",
+			"layer": "blue",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_shielded_moab_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "moab", "count": 2, "spread": 300, "cooldown": 0,
+			"properties": ["shielded"]
+		}
+	]
+]

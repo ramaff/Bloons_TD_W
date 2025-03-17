@@ -36,14 +36,20 @@ tracks_info = {
 	"rm_the_bridge": {
 		"paths": [pth_the_bridge_1, pth_the_bridge_2],
 		"round_data": "the_bridge_rounds.json",
-		"name": "the_bridge",
+		"name": "the bridge",
 		"requirement": "parade"
 	},
 	"rm_the_forest": {
 		"paths": [pth_the_forest_1, pth_the_forest_2, pth_the_forest_3],
 		"round_data": "the_forest_rounds.json",
-		"name": "the_forest",
+		"name": "the forest",
 		"requirement": "the_bridge"
+	},
+	"rm_tower_defense": {
+		"paths": [pth_tower_defense],
+		"round_data": "tower_defense_rounds.json",
+		"name": "tower defense",
+		"requirement": "the_forest"
 	}
 }
 global.mission = "training_room"

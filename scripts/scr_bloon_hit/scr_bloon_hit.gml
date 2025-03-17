@@ -170,9 +170,15 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		_bloon.bloon_stats.goop_time = _projectile_stats.goop_time;
 	}
 
-	_projectile_stats.pierce -= _bloon.bloon_stats.density;
 	
 	var _damage = _projectile_stats.damage;
+	
+	if _damage * _projectile_stats.pierce < _bloon.bloon_stats.density {
+		instance_destroy();
+		exit;
+	}
+	
+	_projectile_stats.pierce -= _bloon.bloon_stats.density;
 	
 	var _pos = _bloon.path_position
 	var _parent_id = _bloon.parent_id
