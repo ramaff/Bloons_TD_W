@@ -26,7 +26,7 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 			_cash_flow = _cash_flow * 0.2;
 		}
 		if _bloon_stats.remaining_value > 0 {
-			global.money += _cash_flow;
+			global.money += min(_cash_flow, _cash_flow * _bloon_stats.remaining_value);
 		}
 		_bloon_stats.remaining_value--;
 		if instance_exists(_tower) {
@@ -169,16 +169,25 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		_bloon.bloon_stats.goop = _projectile_stats.goop;
 		_bloon.bloon_stats.goop_time = _projectile_stats.goop_time;
 	}
+	if variable_struct_exists(_projectile_stats, "magic_marking") {
+		_bloon.bloon_stats.magic_marking = _projectile_stats.magic_marking;
+		_bloon.bloon_stats.magic_marking_time = _projectile_stats.magic_marking_time;
+	}
 
 	
 	var _damage = _projectile_stats.damage;
+	var _density = _bloon.bloon_stats.density;
 	
-	if _damage * _projectile_stats.pierce < _bloon.bloon_stats.density {
+	if variable_struct_exists(_bloon.bloon_stats, "magic_marking") {
+		_density = max(0, _density - _bloon.bloon_stats.magic_marking);
+	}
+	
+	if _damage * _projectile_stats.pierce < _density {
 		instance_destroy();
 		exit;
 	}
 	
-	_projectile_stats.pierce -= _bloon.bloon_stats.density;
+	_projectile_stats.pierce -= _density;
 	
 	var _pos = _bloon.path_position
 	var _parent_id = _bloon.parent_id
@@ -214,6 +223,7 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		var _layer = variable_struct_get(_resulting_bloons[_i], "layer")
 		var _child_class = variable_struct_get(_resulting_bloons[_i], "class")
 		var _child_properties = variable_struct_get(_resulting_bloons[_i], "properties")
+		var _child_remaining_value = variable_struct_get(_resulting_bloons[_i], "remaining_value")
 		
 		var _bloon_object = scr_bloon_class_to_object(_child_class);
 
@@ -251,9 +261,13 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 				bloon_stats.goop = _bloon.bloon_stats.goop;
 				bloon_stats.goop_time = _bloon.bloon_stats.goop_time;
 			}
+			if variable_struct_exists(_bloon.bloon_stats, "magic_marking") {
+				bloon_stats.magic_marking = _bloon.bloon_stats.magic_marking;
+				bloon_stats.magic_marking_time = _bloon.bloon_stats.magic_marking_time;
+			}
 			
 			bloon_stats.projectile_hits = variable_clone(_bloon.bloon_stats.projectile_hits)
-			bloon_stats.remaining_value = _bloon.bloon_stats.remaining_value;
+			bloon_stats.remaining_value = _child_remaining_value;
 			
 			alarm[0] = _bloon.alarm[0];
 			if alarm[0] > 90 {

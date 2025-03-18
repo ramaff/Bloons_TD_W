@@ -347,20 +347,18 @@ function scr_setup_bloon_stats(){
 			"object": "obj_bloon",
 			"sprite": "spr_stuffed_bloon",
 			"big_bloon_tier": 1,
-			"remaining_value": 1,
 			"red": {
 				layers: 3,
 				index: 0,
-				rbe: 14,
+				rbe: 15,
 				health: 1,
 				density: 1,
 				speed: 1.2,
+				"remaining_value": 6, // all children get 1 remaining value
 				children: [
 					{"class": "splitter", "layer": "orange", "properties": ["float to track"]},
 					{"class": "splitter", "layer": "orange", "properties": ["float to track"]},
-					{"class": "normal", "layer": "red", "properties": ["float to track"]},
-					{"class": "normal", "layer": "red", "properties": ["float to track"]},
-					{"class": "normal", "layer": "red", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "orange", "properties": ["float to track"]},
 					{"class": "normal", "layer": "red", "properties": ["float to track"]},
 					{"class": "normal", "layer": "red", "properties": ["float to track"]}
 				]
@@ -368,16 +366,15 @@ function scr_setup_bloon_stats(){
 			"blue": {
 				layers: 4,
 				index: 1,
-				rbe: 25,
+				rbe: 26,
 				health: 1,
 				density: 1,
 				speed: 1.4,
+				"remaining_value": 11, // all children get 2 remaining value
 				children: [
 					{"class": "splitter", "layer": "cyan", "properties": ["float to track"]},
 					{"class": "splitter", "layer": "cyan", "properties": ["float to track"]},
-					{"class": "normal", "layer": "blue", "properties": ["float to track"]},
-					{"class": "normal", "layer": "blue", "properties": ["float to track"]},
-					{"class": "normal", "layer": "blue", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "cyan", "properties": ["float to track"]},
 					{"class": "normal", "layer": "blue", "properties": ["float to track"]},
 					{"class": "normal", "layer": "blue", "properties": ["float to track"]}
 				]
@@ -385,16 +382,15 @@ function scr_setup_bloon_stats(){
 			"green": {
 				layers: 5,
 				index: 2,
-				rbe: 36,
+				rbe: 37,
 				health: 1,
 				density: 1,
 				speed: 1.6,
+				"remaining_value": 16, // all children get 3 remaining value
 				children: [
 					{"class": "splitter", "layer": "lime", "properties": ["float to track"]},
 					{"class": "splitter", "layer": "lime", "properties": ["float to track"]},
-					{"class": "normal", "layer": "green", "properties": ["float to track"]},
-					{"class": "normal", "layer": "green", "properties": ["float to track"]},
-					{"class": "normal", "layer": "green", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "lime", "properties": ["float to track"]},
 					{"class": "normal", "layer": "green", "properties": ["float to track"]},
 					{"class": "normal", "layer": "green", "properties": ["float to track"]}
 				]
@@ -402,16 +398,15 @@ function scr_setup_bloon_stats(){
 			"yellow": {
 				layers: 6,
 				index: 3,
-				rbe: 47,
+				rbe: 48,
 				health: 1,
 				density: 1,
 				speed: 2.2,
+				"remaining_value": 21, // all children get 4 remaining value
 				children: [
 					{"class": "splitter", "layer": "amber", "properties": ["float to track"]},
 					{"class": "splitter", "layer": "amber", "properties": ["float to track"]},
-					{"class": "normal", "layer": "yellow", "properties": ["float to track"]},
-					{"class": "normal", "layer": "yellow", "properties": ["float to track"]},
-					{"class": "normal", "layer": "yellow", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "amber", "properties": ["float to track"]},
 					{"class": "normal", "layer": "yellow", "properties": ["float to track"]},
 					{"class": "normal", "layer": "yellow", "properties": ["float to track"]}
 				]
@@ -419,16 +414,15 @@ function scr_setup_bloon_stats(){
 			"pink": {
 				layers: 7,
 				index: 4,
-				rbe: 58,
+				rbe: 59,
 				health: 1,
 				density: 1,
 				speed: 2.4,
+				"remaining_value": 26, // all children get 5 remaining value
 				children: [
 					{"class": "splitter", "layer": "purple", "properties": ["float to track"]},
 					{"class": "splitter", "layer": "purple", "properties": ["float to track"]},
-					{"class": "normal", "layer": "pink", "properties": ["float to track"]},
-					{"class": "normal", "layer": "pink", "properties": ["float to track"]},
-					{"class": "normal", "layer": "pink", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "purple", "properties": ["float to track"]},
 					{"class": "normal", "layer": "pink", "properties": ["float to track"]},
 					{"class": "normal", "layer": "pink", "properties": ["float to track"]}
 				]
@@ -677,6 +671,7 @@ function scr_setup_bloon_stats(){
 			"brick": {
 				sprite: "spr_brick_bloon",
 				layers: 48,
+				"big_bloon_tier": 1,
 				index: 0,
 				rbe: 238,
 				health: 30,
@@ -697,6 +692,7 @@ function scr_setup_bloon_stats(){
 			"tower": {
 				sprite: "spr_tower_bloon",
 				layers: 198,
+				"big_bloon_tier": 2,
 				index: 0,
 				rbe: 626,
 				health: 150,

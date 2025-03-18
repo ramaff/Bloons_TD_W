@@ -30,6 +30,9 @@ if variable_struct_exists(bloon_stats, "goop") {
 		draw_sprite(asset_get_index(bloon_stats.goop_sprite), image_index, x, y)	
 	} 
 }
+if variable_struct_exists(bloon_stats, "magic_marking") {
+	draw_sprite(spr_bloon_marking, image_index, x, y)
+}
 
 
 

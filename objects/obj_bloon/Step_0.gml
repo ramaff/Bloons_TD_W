@@ -72,6 +72,15 @@ if variable_struct_exists(bloon_stats, "goop") {
 	path_speed = bloon_stats.speed * _move_percent;
 }
 
+if variable_struct_exists(bloon_stats, "magic_marking") {
+	bloon_stats.magic_marking_time--;
+	
+	if bloon_stats.magic_marking_time <= 0 {
+		variable_struct_remove(bloon_stats, "magic_marking")
+		variable_struct_remove(bloon_stats, "magic_marking_time")
+	}
+}
+
 leak_frame = scr_track_end_bloon_check()
 
 

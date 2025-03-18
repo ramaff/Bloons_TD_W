@@ -726,7 +726,7 @@ function scr_setup_tower_stats(){
 			butt_sprite: "spr_caster_monkey_butt",
 			total_cost: 510,
 			upgrade_cost: 0,
-			range: 125,
+			range: 135,
 			delay: 35,
 			attack_cooldown: 0,
 	
@@ -738,7 +738,8 @@ function scr_setup_tower_stats(){
 					speed: 13,
 					lifespan: 45,
 					spiral_homing_offset: 60,
-					lead_hit: true
+					lead_hit: true,
+					projectile_spread: 30
 				}
 			],
 			upgrades: [
@@ -751,7 +752,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Double Cast",
-						upgrade_cost: 530
+						upgrade_cost: 590
 					}
 				]
 			],
@@ -760,12 +761,12 @@ function scr_setup_tower_stats(){
 				],
 				[
 					{
-						keyword: "Goo Cube",
-						upgrade_cost: 1200
+						keyword: "Adept Magic",
+						upgrade_cost: 2600
 					},
 					{
-						keyword: "Goo Pool",
-						upgrade_cost: 4200
+						keyword: "Spiral Zone",
+						upgrade_cost: 6300
 					}
 				]
 			]

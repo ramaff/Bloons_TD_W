@@ -1,6 +1,15 @@
 [
 	[
 		{
+			"round_icon_sprite": "spr_stuffed_bloon_icon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "stuffed", "layer": "blue", "count": 15, "spread": 650, "cooldown": 0
+		}
+	],
+	[
+		{
 			"round_icon_sprite": "spr_bloon",
 			"round_icon_index": 1
 		},
@@ -357,7 +366,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_tower_bloon_icon",
+			"round_icon_sprite": "spr_tower_icon",
 			"round_icon_index": 0
 		},
 		{

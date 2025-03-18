@@ -842,9 +842,9 @@ function scr_setup_upgrade_stats(){
 										speed: 3,
 										friction: 1,
 										lifespan: 600,
-										tick_frequency: 15,
+										tick_frequency: 20,
 										image_angle: 0,
-										bloon_pushback: 0.05
+										bloon_pushback: 0.03
 									}
 								]
 							}
@@ -901,6 +901,38 @@ function scr_setup_upgrade_stats(){
 						]
 					}
 				]
+			}
+		},
+		"caster_monkey": {
+			"Pop Markings": {
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_caster_shot",
+						projectile_spread: 30,
+						pierce: 4,
+						damage: 1,
+						speed: 13,
+						lifespan: 45,
+						spiral_homing_offset: 60,
+						lead_hit: true,
+						magic_marking: 1,
+						magic_marking_time: 120
+					}
+				],
+				upgrade_string: "Applies a magic mark to bloons, causing them to eat up 1 less pierce when hit."
+			},
+			"Double Cast": {
+				shot_count: 1,
+				upgrade_string: "Shoot two cast shots at once"
+			},
+			"Multi-Strikes": {
+				attack_barrages: 2,
+				upgrade_string: "Strike bloons multiple times."
+			},
+			"Shadow Clones": {
+				fire_rate_multiplier: 1.25,
+				upgrade_string: "Attacks faster with 2 additional shadow clones."
 			}
 		},
 	}
