@@ -716,6 +716,7 @@ function scr_setup_bloon_stats(){
 			"mini": {
 				sprite: "spr_mini_moab",
 				"big_bloon_tier": 1,
+				"shielded_sprite": "spr_mini_moab_shielded",
 				layers: 58,
 				index: 0,
 				rbe: 238,
@@ -741,10 +742,33 @@ function scr_setup_bloon_stats(){
 					}
 				]
 			},
+			"hta": {
+				sprite: "spr_hta",
+				"big_bloon_tier": 2,
+				layers: 69,
+				index: 0,
+				rbe: 344,
+				health: 60,
+				density: 10,
+				speed: 1.4,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "prismatic",
+						"properties": ["shielded"]
+					},
+					{
+						"class": "splitter",
+						"layer": "prismatic",
+						"properties": ["shielded"]
+					}
+				]
+			},
 			"moab": {
 				sprite: "spr_moab",
 				layers: 218,
 				"big_bloon_tier": 2,
+				"shielded_sprite": "spr_moab_shielded",
 				index: 0,
 				rbe: 616,
 				health: 200,
@@ -1594,6 +1618,19 @@ function scr_setup_bloon_stats(){
 				health: 6600,
 				density: 1,
 				speed: 1.3,
+			}
+		},
+		"wizard": {
+			"object": "obj_wizard_bloon",
+			"big_bloon_tier": 7,
+			"blue": {
+				sprite: "spr_wizard_bloon",
+				layers: 3500,
+				rbe: 3500,
+				damage: 65,
+				health: 3500,
+				density: 1,
+				speed: 0.85,
 			}
 		},
 		"rune": {

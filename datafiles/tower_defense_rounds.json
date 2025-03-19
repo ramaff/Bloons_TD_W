@@ -1,15 +1,6 @@
 [
 	[
 		{
-			"round_icon_sprite": "spr_stuffed_bloon_icon",
-			"round_icon_index": 1
-		},
-		{
-			"class": "stuffed", "layer": "blue", "count": 15, "spread": 650, "cooldown": 0
-		}
-	],
-	[
-		{
 			"round_icon_sprite": "spr_bloon",
 			"round_icon_index": 1
 		},
@@ -66,6 +57,9 @@
 		},
 		{
 			"class": "normal", "layer": "blue", "count": 6, "spread": 5, "cooldown": 600
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 6, "spread": 5, "cooldown": 720
 		}
 	],
 	[
@@ -331,7 +325,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "lead", "layer": "block", "count": 5, "spread": 120, "cooldown": 0
+			"class": "lead", "layer": "block", "count": 5, "spread": 200, "cooldown": 0
 		},
 		{
 			"class": "splitter", "layer": "purple", "count": 20, "spread": 30, "cooldown": 300,
@@ -382,7 +376,55 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "hta", "layer": "hta", "count": 1, "spread": 0, "cooldown": 0
+			"class": "moab", "layer": "hta", "count": 1, "spread": 0, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 5
+		},
+		{
+			"class": "splitter", "layer": "prismatic", "count": 15, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 15, "spread": 30, "cooldown": 400,
+			"properties": ["shielded"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_block_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "lead", "layer": "block", "count": 15, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "purple", "count": 20, "spread": 30, "cooldown": 300,
+			"properties": ["camo"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_shielded_mini_moab_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "mini", "count": 4, "spread": 300, "cooldown": 0,
+			"properties": ["shielded"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_tower_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "tower", "count": 4, "spread": 400, "cooldown": 0
+		},
+		{
+			"class": "rune", "layer": "rune", "count": 40, "spread": 30, "cooldown": 0
 		}
 	],
 	[
@@ -396,6 +438,57 @@
 			"count": 1,
 			"spread": 0,
 			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_deflation_bloon_icon",
+			"round_icon_index": 5
+		},
+		{
+			"class": "deflation",
+			"layer": "pink",
+			"count": 50,
+			"spread": 30,
+			"cooldown": 0
+		},
+		{
+			"class": "deflation",
+			"layer": "rainbow",
+			"count": 6,
+			"spread": 100,
+			"cooldown": 1600
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_shielded_splitter_bloon",
+			"round_icon_index": 5
+		},
+		{
+			"class": "splitter", "layer": "prismatic", "count": 30, "spread": 50, "cooldown": 0,
+			"properties": ["shielded"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_tower_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "tower", "count": 6, "spread": 300, "cooldown": 0
+		},
+		{
+			"class": "rune", "layer": "rune", "count": 60, "spread": 25, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_hta_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "hta", "layer": "hta", "count": 3, "spread": 600, "cooldown": 0
 		}
 	],
 	[

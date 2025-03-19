@@ -747,12 +747,12 @@ function scr_setup_tower_stats(){
 				],
 				[
 					{
-						keyword: "Pop Markings",
-						upgrade_cost: 350
+						keyword: "Double Cast",
+						upgrade_cost: 450
 					},
 					{
-						keyword: "Double Cast",
-						upgrade_cost: 590
+						keyword: "Pop Markings",
+						upgrade_cost: 650
 					}
 				]
 			],
