@@ -6,7 +6,7 @@ path_speed = 0;
 
 alarm[5] = 90 / bloon_stats.speed;
 
-sprite_index = spr_bear_bloon_maul
+sprite_index = spr_wizard_bloon_staff_use
 image_index = 0;
 
 

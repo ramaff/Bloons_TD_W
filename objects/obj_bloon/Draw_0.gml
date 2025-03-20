@@ -31,7 +31,11 @@ if variable_struct_exists(bloon_stats, "goop") {
 	} 
 }
 if variable_struct_exists(bloon_stats, "magic_marking") {
-	draw_sprite(spr_bloon_marking, image_index, x, y)
+	if bloon_stats.magic_marking >= 5 {
+		draw_sprite(spr_deep_bloon_marking, image_index, x, y)
+	} else {
+		draw_sprite(spr_bloon_marking, image_index, x, y)
+	}
 }
 
 

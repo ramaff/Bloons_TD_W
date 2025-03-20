@@ -34,7 +34,7 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 		
 		repeat(_shot_count) {
 		
-			with instance_create_depth(x,y,0, _projectile) {
+			with instance_create_depth(_xx,_yy,0, _projectile) {
 				projectile_stats = variable_clone(_projectile_stats[_i])
 				projectile_stats.tower_id = _tower_id
 				
@@ -78,6 +78,9 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 				alarm[0] = projectile_stats.lifespan
 				if variable_struct_exists(projectile_stats, "tick_frequency") {
 					alarm[1] = projectile_stats.tick_frequency;
+				}
+				if variable_struct_exists(projectile_stats, "extra_shots") {
+					alarm[2] = projectile_stats.extra_shots[0].shot_frequency;
 				}
 			
 				projectile_stats.bloons_hit = {}

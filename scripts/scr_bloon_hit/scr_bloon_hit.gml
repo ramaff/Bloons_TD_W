@@ -169,17 +169,22 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		_bloon.bloon_stats.goop = _projectile_stats.goop;
 		_bloon.bloon_stats.goop_time = _projectile_stats.goop_time;
 	}
-	if variable_struct_exists(_projectile_stats, "magic_marking") {
-		_bloon.bloon_stats.magic_marking = _projectile_stats.magic_marking;
-		_bloon.bloon_stats.magic_marking_time = _projectile_stats.magic_marking_time;
-	}
-
 	
 	var _damage = _projectile_stats.damage;
 	var _density = _bloon.bloon_stats.density;
 	
 	if variable_struct_exists(_bloon.bloon_stats, "magic_marking") {
 		_density = max(0, _density - _bloon.bloon_stats.magic_marking);
+	}
+	
+	if variable_struct_exists(_projectile_stats, "magic_marking") {
+		if !variable_struct_exists(_bloon.bloon_stats, "magic_marking") {
+			_bloon.bloon_stats.magic_marking = 0;
+		}
+		if _projectile_stats.magic_marking >= _bloon.bloon_stats.magic_marking {
+			_bloon.bloon_stats.magic_marking = _projectile_stats.magic_marking;
+			_bloon.bloon_stats.magic_marking_time = _projectile_stats.magic_marking_time;
+		}
 	}
 	
 	if _damage * _projectile_stats.pierce < _density {

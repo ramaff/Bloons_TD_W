@@ -218,7 +218,7 @@
 			"round_icon_index": 4
 		},
 		{
-			"class": "splitter", "layer": "purple", "count": 20, "spread": 60, "cooldown": 0
+			"class": "splitter", "layer": "purple", "count": 30, "spread": 50, "cooldown": 0
 		}
 	],
 	[
@@ -227,7 +227,7 @@
 			"round_icon_index": 4
 		},
 		{
-			"class": "normal", "layer": "pink", "count": 40, "spread": 30, "cooldown": 0,
+			"class": "normal", "layer": "pink", "count": 60, "spread": 25, "cooldown": 0,
 			"properties": ["regrow"]
 		}
 	],
@@ -237,7 +237,7 @@
 			"round_icon_index": 4
 		},
 		{
-			"class": "stuffed", "layer": "pink", "count": 15, "spread": 50, "cooldown": 0
+			"class": "stuffed", "layer": "pink", "count": 20, "spread": 40, "cooldown": 0
 		},
 		{
 			"class": "splitter", "layer": "cyan", "count": 10, "spread": 30, "cooldown": 800,
@@ -250,7 +250,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "rune", "layer": "rune", "count": 3, "spread": 120, "cooldown": 0
+			"class": "rune", "layer": "rune", "count": 5, "spread": 120, "cooldown": 0
 		}
 	],
 	[
@@ -281,7 +281,7 @@
 			"round_icon_index":0
 		},
 		{
-			"class": "rune", "layer": "rune", "count": 7, "spread": 180, "cooldown": 0
+			"class": "rune", "layer": "rune", "count": 12, "spread": 120, "cooldown": 0
 		},
 		{
 			"class": "splitter", "layer": "cyan", "count": 40, "spread": 30, "cooldown": 800,
@@ -340,12 +340,12 @@
 		{
 			"class": "deflation",
 			"layer": "pink",
-			"count": 30,
+			"count": 40,
 			"spread": 30,
 			"cooldown": 0
 		},
 		{
-			"class": "normal", "layer": "rainbow", "count": 20, "spread": 20, "cooldown": 300,
+			"class": "normal", "layer": "rainbow", "count": 20, "spread": 20, "cooldown": 600,
 			"properties": ["regrow"]
 		}
 	],
@@ -367,7 +367,7 @@
 			"class": "ceramic", "layer": "tower", "count": 2, "spread": 800, "cooldown": 0
 		},
 		{
-			"class": "rune", "layer": "rune", "count": 25, "spread": 60, "cooldown": 0
+			"class": "rune", "layer": "rune", "count": 30, "spread": 50, "cooldown": 0
 		}
 	],
 	[
@@ -424,7 +424,7 @@
 			"class": "ceramic", "layer": "tower", "count": 4, "spread": 400, "cooldown": 0
 		},
 		{
-			"class": "rune", "layer": "rune", "count": 40, "spread": 30, "cooldown": 0
+			"class": "rune", "layer": "rune", "count": 50, "spread": 25, "cooldown": 0
 		}
 	],
 	[
@@ -448,26 +448,28 @@
 		{
 			"class": "deflation",
 			"layer": "pink",
-			"count": 50,
-			"spread": 30,
+			"count": 80,
+			"spread": 25,
 			"cooldown": 0
 		},
 		{
 			"class": "deflation",
 			"layer": "rainbow",
-			"count": 6,
-			"spread": 100,
-			"cooldown": 1600
+			"count": 10,
+			"spread": 80,
+			"cooldown": 2000
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_shielded_splitter_bloon",
-			"round_icon_index": 5
+			"round_icon_sprite": "spr_rune_bloon",
+			"round_icon_index": 0
 		},
 		{
-			"class": "splitter", "layer": "prismatic", "count": 30, "spread": 50, "cooldown": 0,
-			"properties": ["shielded"]
+			"class": "stuffed", "layer": "pink", "count": 100, "spread": 20, "cooldown": 0
+		},
+		{
+			"class": "rune", "layer": "rune", "count": 80, "spread": 18, "cooldown": 0
 		}
 	],
 	[
@@ -479,7 +481,7 @@
 			"class": "ceramic", "layer": "tower", "count": 6, "spread": 300, "cooldown": 0
 		},
 		{
-			"class": "rune", "layer": "rune", "count": 60, "spread": 25, "cooldown": 0
+			"class": "rune", "layer": "rune", "count": 80, "spread": 18, "cooldown": 0
 		}
 	],
 	[
@@ -497,7 +499,11 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "moab", "layer": "moab", "count": 2, "spread": 300, "cooldown": 0,
+			"class": "moab", "layer": "moab", "count": 3, "spread": 150, "cooldown": 1650,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "splitter", "layer": "prismatic", "count": 30, "spread": 50, "cooldown": 0,
 			"properties": ["shielded"]
 		}
 	]

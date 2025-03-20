@@ -910,14 +910,16 @@ function scr_setup_upgrade_stats(){
 					{
 						sprite: "spr_caster_shot",
 						projectile_spread: 30,
-						pierce: 4,
+						projectile_count: 2,
+						stay_pointed: true,
+						pierce: 3,
 						damage: 1,
-						speed: 13,
-						lifespan: 45,
+						speed: 10,
+						lifespan: 60,
 						spiral_homing_offset: 60,
 						lead_hit: true,
 						magic_marking: 1,
-						magic_marking_time: 120
+						magic_marking_time: 60
 					}
 				],
 				upgrade_string: "Applies a magic mark to bloons, causing them to eat up 1 less pierce when hit."
@@ -926,13 +928,61 @@ function scr_setup_upgrade_stats(){
 				shot_count: 1,
 				upgrade_string: "Shoot two cast shots at once"
 			},
-			"Multi-Strikes": {
-				attack_barrages: 2,
-				upgrade_string: "Strike bloons multiple times."
+			"Deep Engravement": {
+				range: 20,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_caster_shot",
+						projectile_spread: 30,
+						projectile_count: 2,
+						stay_pointed: true,
+						pierce: 13,
+						damage: 1,
+						speed: 10,
+						lifespan: 75,
+						spiral_homing_offset: 60,
+						lead_hit: true,
+						magic_marking: 10,
+						magic_marking_time: 120
+					}
+				],
+				upgrade_string: "Applies deeper engravement, which causes bloons to eat up 10 less pierce when hit. Also gives +10 pierce to caster shots."
 			},
-			"Shadow Clones": {
-				fire_rate_multiplier: 1.25,
-				upgrade_string: "Attacks faster with 2 additional shadow clones."
+			"Death Spiral": {
+				range: 40,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_mega_caster_shot",
+						projectile_spread: 30,
+						projectile_count: 1,
+						stay_pointed: true,
+						pierce: 80,
+						damage: 1,
+						speed: 12,
+						lifespan: 180,
+						spiral_homing_offset: 85,
+						lead_hit: true,
+						magic_marking: 10,
+						magic_marking_time: 120,
+						extra_shots: [
+							{
+								sprite: "spr_caster_shot",
+								pierce: 3,
+								damage: 1,
+								speed: 24,
+								lifespan: 10,
+								lead_hit: true,
+								aim_at_target: true,
+								shot_frequency: 10,
+								magic_marking: 10,
+								magic_marking_time: 120,
+							}
+						]
+					}
+				],
+				upgrade_string: "Applies deeper engravement, which causes bloons to eat up 10 less pierce when hit. Also gives +10 pierce to caster shots."
 			}
 		},
 	}

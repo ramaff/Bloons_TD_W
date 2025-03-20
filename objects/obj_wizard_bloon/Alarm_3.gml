@@ -5,10 +5,6 @@ speed = bloon_stats.speed;
 path_speed = speed;
 
 
-sprite_index = spr_bear_bloon
+sprite_index = spr_wizard_bloon
 
-if hive_spawn > 0 {
-	alarm[1] = 60 / bloon_stats.speed;
-} else {
-	alarm[4] = 450 / bloon_stats.speed;
-}
+alarm[4] = 450 / bloon_stats.speed;

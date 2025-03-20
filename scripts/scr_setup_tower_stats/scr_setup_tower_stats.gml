@@ -733,13 +733,14 @@ function scr_setup_tower_stats(){
 			projectile_stats: [
 				{
 					sprite: "spr_caster_shot",
-					pierce: 4,
+					pierce: 3,
 					damage: 1,
-					speed: 13,
-					lifespan: 45,
+					speed: 10,
+					lifespan: 60,
 					spiral_homing_offset: 60,
 					lead_hit: true,
-					projectile_spread: 30
+					projectile_spread: 30,
+					stay_pointed: true,
 				}
 			],
 			upgrades: [
@@ -761,11 +762,11 @@ function scr_setup_tower_stats(){
 				],
 				[
 					{
-						keyword: "Adept Magic",
-						upgrade_cost: 2600
+						keyword: "Deep Engravement",
+						upgrade_cost: 2300
 					},
 					{
-						keyword: "Spiral Zone",
+						keyword: "Death Spiral",
 						upgrade_cost: 6300
 					}
 				]

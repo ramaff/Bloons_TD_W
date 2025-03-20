@@ -1654,11 +1654,11 @@ function scr_setup_bloon_stats(){
 			},
 			"barrier": {
 				sprite: "spr_magic_barrier_bloon",
-				layers: 10,
+				layers: 50,
 				index: 0,
-				rbe: 10,
-				health: 10,
-				max_health: 10,
+				rbe: 50,
+				health: 50,
+				max_health: 50,
 				density: 10,
 				speed: 3
 			}
