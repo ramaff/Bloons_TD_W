@@ -490,7 +490,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "hta", "layer": "hta", "count": 3, "spread": 600, "cooldown": 0
+			"class": "moab", "layer": "hta", "count": 3, "spread": 600, "cooldown": 0
 		}
 	],
 	[

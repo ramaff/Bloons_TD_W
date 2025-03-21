@@ -40,7 +40,9 @@ if _hitable {
 			other.path_position = 0.01	
 		}
 		if instance_exists(other.target) {
-			other.target.path_position = other.path_position
+			if other.bloon_stats.big_bloon_tier >= other.target.bloon_stats.big_bloon_tier {
+				other.target.path_position = other.path_position
+			}
 		}
 	}
 	
