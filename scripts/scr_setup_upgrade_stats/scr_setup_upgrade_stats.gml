@@ -379,6 +379,7 @@ function scr_setup_upgrade_stats(){
 			"Spinning Tops": {
 				range: 20,
 				projectile_replacement: true,
+				tower_sprite: "spr_spinning_top_monkey",
 				projectile_stats: [
 					{
 						sprite: "spr_spinning_top",

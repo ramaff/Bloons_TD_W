@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-function scr_check_if_bloon_invisible(_bloon, _tower_stats) {
+function scr_check_if_bloon_targetable(_bloon, _tower_stats) {
 	if _bloon.object_index = obj_peek_a_bloon || _bloon.object_index = obj_tack_the_ripper {
 		if _bloon.image_alpha <= 0 {
 			return false;	
@@ -18,7 +18,7 @@ function scr_first_targeting(_bloon, _best_target_info, _tower_stats) {
 	//var _target_position = min(_bloon.path_position, 0)
 	_check = _bloon.path_position >= _best_target_info.path_position
 	
-	if _check and scr_check_if_bloon_invisible(_bloon, _tower_stats) {
+	if _check and scr_check_if_bloon_targetable(_bloon, _tower_stats) {
 		_best_target_info.path_position = _bloon.path_position
 		return true
 	}
@@ -31,7 +31,7 @@ function scr_last_targeting(_bloon, _best_target_info, _tower_stats) {
 	//var _target_position = min(_bloon.path_position, 0)
 	_check = _bloon.path_position <= _best_target_info.path_position
 	
-	if _check and scr_check_if_bloon_invisible(_bloon, _tower_stats) {
+	if _check and scr_check_if_bloon_targetable(_bloon, _tower_stats) {
 		_best_target_info.path_position = _bloon.path_position
 		return true
 	}
@@ -54,7 +54,7 @@ function scr_strong_targeting(_bloon, _best_target_info, _tower_stats) {
 	
 	_check = _power_level > _best_target_info.bloon_power_level
 	
-	if _check and scr_check_if_bloon_invisible(_bloon, _tower_stats) {
+	if _check and scr_check_if_bloon_targetable(_bloon, _tower_stats) {
 		_best_target_info.bloon_power_level = _power_level
 		return true
 	} else if _power_level = _best_target_info.bloon_power_level {
@@ -68,7 +68,7 @@ function scr_close_targeting(_bloon, _best_target_info, _tower_stats, _p_dist) {
 	var _check = false
 	_check = _p_dist < _best_target_info.bloon_distance
 	
-	if _check and scr_check_if_bloon_invisible(_bloon, _tower_stats) {
+	if _check and scr_check_if_bloon_targetable(_bloon, _tower_stats) {
 		_best_target_info.bloon_distance = _p_dist
 		return true
 	}

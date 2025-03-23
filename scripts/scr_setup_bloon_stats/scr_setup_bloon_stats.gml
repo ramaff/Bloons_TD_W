@@ -1622,7 +1622,7 @@ function scr_setup_bloon_stats(){
 		},
 		"wizard": {
 			"object": "obj_wizard_bloon",
-			"big_bloon_tier": 7,
+			"big_bloon_tier": 6,
 			"blue": {
 				sprite: "spr_wizard_bloon",
 				layers: 3500,
@@ -1661,6 +1661,19 @@ function scr_setup_bloon_stats(){
 				max_health: 50,
 				density: 10,
 				speed: 3
+			}
+		},
+		"chess": {
+			"pawn": {
+				"object": "obj_pawn_chess_bloon",
+				"big_bloon_tier": 5,
+				sprite: "spr_pawn_chess_bloon",
+				layers: 1000,
+				rbe: 1000,
+				damage: 40,
+				health: 1000,
+				density: 1,
+				speed: 1,
 			}
 		}
 	}
