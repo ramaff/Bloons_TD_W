@@ -50,6 +50,12 @@ tracks_info = {
 		"round_data": "tower_defense_rounds.json",
 		"name": "tower defense",
 		"requirement": "the_forest"
+	},
+	"rm_the_stronghold": {
+		"paths": [pth_the_stronghold_1, pth_the_stronghold_2],
+		"round_data": "the_stronghold_rounds.json",
+		"name": "the stronghold",
+		"requirement": "tower_defense"
 	}
 }
 global.mission = "training_room"
