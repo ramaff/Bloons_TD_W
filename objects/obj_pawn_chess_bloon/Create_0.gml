@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-scr_bloon_stat_setup(id, "chess", "pawn", pth_the_stronghold_1, [], -1);
+scr_bloon_stat_setup(id, "chess", "pawn", -1, [], -1);
