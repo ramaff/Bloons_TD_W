@@ -13,8 +13,8 @@
     "path": "folders/Objects/Bloons/Bounties.yy",
   },
   "parentObjectId": {
-    "name": "obj_bounty",
-    "path": "objects/obj_bounty/obj_bounty.yy",
+    "name": "obj_chess_piece_bloon",
+    "path": "objects/obj_chess_piece_bloon/obj_chess_piece_bloon.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

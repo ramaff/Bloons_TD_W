@@ -51,9 +51,7 @@ if !_bloons_remaining and global.round < array_length(global.bloon_sends) {
 		global.round++;
 		global.round_gap = 480;
 		_bloons_remaining = true;
-		//if global.round >= array_length(global.bloon_sends) {
-		//	global.round_gap = 0;	
-		//}
+
 		if global.round < array_length(global.bloon_sends) {
 			with instance_create_depth(x, y, depth, obj_round_check) {
 				round_number = global.round;

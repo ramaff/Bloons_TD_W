@@ -1,9 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_rook_chess_bloon",
+  "name": "obj_chess_piece_bloon",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
@@ -13,8 +13,8 @@
     "path": "folders/Objects/Bloons/Bounties.yy",
   },
   "parentObjectId": {
-    "name": "obj_chess_piece_bloon",
-    "path": "objects/obj_chess_piece_bloon/obj_chess_piece_bloon.yy",
+    "name": "obj_bounty",
+    "path": "objects/obj_bounty/obj_bounty.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_rook_chess_bloon",
-    "path": "sprites/spr_rook_chess_bloon/spr_rook_chess_bloon.yy",
+    "name": "spr_pawn_chess_bloon",
+    "path": "sprites/spr_pawn_chess_bloon/spr_pawn_chess_bloon.yy",
   },
   "spriteMaskId": null,
   "visible": true,
