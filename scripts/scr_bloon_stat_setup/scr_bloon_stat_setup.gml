@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", _path = pth_bloon_academia, _properties = [], _round = 0) {
+function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", _path = pth_bloon_academia, _properties = [], _round = 0, _xx = x, _yy = y) {
 
 	var _class_stats = struct_get(global.bloon_stats, _class)
 	
@@ -15,9 +15,6 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	_bloon.bloon_stats.projectile_hits = {}
 	
 	target = noone;
-	
-	var _xx = x
-	var _yy = y
 	
 	if variable_struct_exists(_class_stats, "properties") {
 		_bloon.bloon_stats.properties = array_concat(_properties, _class_stats.properties)
@@ -77,8 +74,8 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		_bloon.target = _target
 	} else if _path != -1 {
 		path_start(_path, bloon_stats.speed, path_action_stop, true);
-		var _xx = path_get_x(_path, 0)
-		var _yy = path_get_y(_path, 0)
+		_xx = path_get_x(_path, 0)
+		_yy = path_get_y(_path, 0)
 	}
 	
 	
