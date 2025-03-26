@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if variable_struct_exists(other.bloon_stats, "damage_keys") {
+	if !array_contains_ext(other.bloon_stats.damage_keys, projectile_stats.damage_keys, true) {
+		exit;	
+	}
+}
+
 if variable_struct_exists(projectile_stats, "projectile_burst") {
 	event_perform(ev_alarm, 0)
 	exit;

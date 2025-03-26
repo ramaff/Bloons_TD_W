@@ -1664,6 +1664,7 @@ function scr_setup_bloon_stats(){
 			}
 		},
 		"chess": {
+			"damage_keys": ["chess_board"],
 			"pawn": {
 				"object": "obj_pawn_chess_bloon",
 				"big_bloon_tier": 4,

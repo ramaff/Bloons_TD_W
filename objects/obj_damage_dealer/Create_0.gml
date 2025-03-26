@@ -6,7 +6,8 @@ alarm[0] = 30;
 projectile_stats = {
 	bloons_hit: {},
 	size: 1,
-	targeting: "first"
+	targeting: "first",
+	damage_keys: []
 }
 
 target = noone;

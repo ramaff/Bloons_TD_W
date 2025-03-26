@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+with(obj_monkey) {
+	if x > 208 and x < 592 and y > 136 and y < 456 {
+		tower_stats.damage_keys = ["chess_board"]
+	}
+}
+
 if global.round = 0 {
 	with(obj_monkey) {
 		if x > 208 and x < 592 and y > 136 and y < 456 {

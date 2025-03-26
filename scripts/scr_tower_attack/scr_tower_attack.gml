@@ -24,7 +24,12 @@ function scr_tower_attack(_tower_stats = tower_stats, _projectile_stats = tower_
 		_angle_offset += _tower_stats.attack_angle_offset
 	}
 	
-	scr_create_tower_projectiles(_projectile_stats, x, y, target, _angle_offset, _current_boosts, _id, _targeting)
+	var _damage_keys = []
+	if variable_struct_exists(_tower_stats, "damage_keys") {
+		_damage_keys = _tower_stats.damage_keys	
+	}
+	
+	scr_create_tower_projectiles(_projectile_stats, x, y, target, _angle_offset, _current_boosts, _id, _targeting, _damage_keys)
 
 	return true;
 	
