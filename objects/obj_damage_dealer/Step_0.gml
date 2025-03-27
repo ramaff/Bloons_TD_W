@@ -34,7 +34,7 @@ if variable_struct_exists(projectile_stats, "angular_velocity") {
 if variable_struct_exists(projectile_stats, "air_burst_range") {
 	if distance_to_object(obj_bloon) < projectile_stats.air_burst_range {
 		var _angle_offset = direction;
-		scr_create_tower_projectiles(projectile_stats.projectile_burst, x, y, noone, _angle_offset, {}, projectile_stats.tower_id)
+		scr_create_tower_projectiles(projectile_stats.projectile_burst, x, y, noone, _angle_offset, {}, projectile_stats.tower_id, projectile_stats.targeting, projectile_stats.damage_keys)
 		instance_destroy();
 	}
 }

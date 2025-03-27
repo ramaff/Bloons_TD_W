@@ -44,6 +44,9 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		if _class = "splitter" {
 			_bloon.bloon_stats.sprite = "spr_regrow_splitter_bloon"
 		}
+		if _class = "ceramic" and _layer = "ceramic" {
+			_bloon.bloon_stats.sprite = "spr_regrow_ceramic_bloon"
+		}
 	}
 	if variable_struct_exists(_bloon.bloon_stats, "camo")  {
 		_bloon.bloon_stats.sprite = "spr_camo_bloon"
@@ -130,7 +133,7 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		x = _xx;
 		y = _yy;
 		speed = 0;
-		bloon_stats.speed = 0;
+		//bloon_stats.speed = 0;
 		path_speed = 0;	
 	}
 	

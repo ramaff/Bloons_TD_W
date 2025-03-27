@@ -1663,6 +1663,42 @@ function scr_setup_bloon_stats(){
 				speed: 3
 			}
 		},
+		"rubber": {
+			"big_bloon_tier": 1,
+			"block": {
+				"object": "obj_rubber_bloon",
+				sprite: "spr_rubber_block_bloon",
+				layers: 16,
+				index: 0,
+				rbe: 63,
+				health: 30,
+				max_health: 30,
+				density: 1,
+				speed: 0.5,
+				children: [
+					{"class": "normal", "layer": "black"},
+					{"class": "normal", "layer": "black"},
+					{"class": "normal", "layer": "black"},
+				]
+			},
+			"tire": {
+				"object": "obj_tire_bloon",
+				sprite: "spr_tire_bloon",
+				layers: 16,
+				index: 0,
+				rbe: 74,
+				health: 30,
+				max_health: 30,
+				density: 1,
+				speed: 1,
+				children: [
+					{"class": "normal", "layer": "black", "properties": ["float to track"]},
+					{"class": "normal", "layer": "black", "properties": ["float to track"]},
+					{"class": "normal", "layer": "black", "properties": ["float to track"]},
+					{"class": "normal", "layer": "black", "properties": ["float to track"]},
+				]
+			}
+		},
 		"chess": {
 			"damage_keys": ["chess_board"],
 			"pawn": {

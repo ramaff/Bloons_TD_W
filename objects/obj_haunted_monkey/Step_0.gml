@@ -21,10 +21,15 @@ var _oy = y
 if variable_struct_exists(tower_stats.active_upgrades, "Chase Scene") {
 	var _target = scr_get_bloon_target(tower_stats, x, y, targeting, 99999)
 	if instance_exists(_target) {
-		var _p_pos = _target.path_position;
-		_p_pos += 0.05
-		_ox = path_get_x(_target.bloon_stats.path, _p_pos)
-		_oy = path_get_y(_target.bloon_stats.path, _p_pos)
+		if path_exists(_target.bloon_stats.path) {
+			var _p_pos = _target.path_position;
+			_p_pos += 0.05
+			_ox = path_get_x(_target.bloon_stats.path, _p_pos)
+			_oy = path_get_y(_target.bloon_stats.path, _p_pos)
+		} else {
+			_ox = _target.x;
+			_oy = _target.y;
+		}
 	}
 }
 	
