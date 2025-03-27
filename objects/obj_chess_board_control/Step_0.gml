@@ -44,7 +44,12 @@ if global.round > saved_round + _offset {
 	_picked_piece.y += 64;
 	
 	if _picked_piece.y > 456 {
-		_picked_piece.activated = true;	
+		if _picked_piece.activated = false {
+			with(_picked_piece) {
+				event_perform(ev_other, ev_user0)	
+			}
+		}
+		_picked_piece.activated = true;
 	}
 	
 	with(obj_monkey) {

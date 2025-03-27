@@ -16,6 +16,9 @@ function scr_create_tower(_tower_id, _tower_stats){
 		}
 		tower_stats.upgrade_count = [0, 0, 0, 0]
 		tower_stats.active_upgrades = {}
+		if !variable_struct_exists(tower_stats, "damage_keys") {
+			tower_stats.damage_keys = []
+		}
 		
 		_id = id;
 		

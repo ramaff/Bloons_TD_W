@@ -33,7 +33,8 @@ tower_stats = {
 			}
 		]
 	],
-	active_upgrades: {}
+	active_upgrades: {},
+	damage_keys: []
 }
 
 all_bases = false

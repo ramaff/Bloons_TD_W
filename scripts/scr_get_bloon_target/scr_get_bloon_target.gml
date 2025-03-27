@@ -10,6 +10,11 @@ function scr_check_if_bloon_targetable(_bloon, _tower_stats) {
 	if variable_struct_exists(_bloon.bloon_stats, "camo") and !variable_struct_exists(_tower_stats, "camo_detection") {
 		return false;
 	}
+	if variable_struct_exists(_bloon.bloon_stats, "damage_keys") {
+		if !array_contains_ext(_tower_stats.damage_keys, _bloon.bloon_stats.damage_keys, true) {
+			return false
+		}
+	}
 	return true;
 }
 
@@ -85,19 +90,7 @@ function scr_get_bloon_target(_tower_stats, _xx = x, _yy = y, _targeting = "firs
 		"bloon_distance": 0
 	}
 	var _total_range = _tower_stats.range + _range_boost
-	var _targeting_script = scr_first_targeting
-	
-	if _targeting = "last" {
-		_targeting_script = scr_last_targeting
-		_best_target_info.path_position = 1;
-	}
-	if _targeting = "strong" {
-		_targeting_script = scr_strong_targeting
-	}
-	if _targeting = "close" {
-		_targeting_script = scr_close_targeting
-		_best_target_info.bloon_distance = 9999;
-	}
+	var _targeting_script = scr_get_targeting_script(_targeting, _best_target_info)
 	
 	with (obj_bloon) {
 		var _p_dist = distance_to_point(_xx, _yy)
