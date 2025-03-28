@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_world_1_and_2_map",
-  "bbox_bottom": 1619,
+  "name": "spr_world_1_map",
+  "bbox_bottom": 539,
   "bbox_left": 0,
-  "bbox_right": 1919,
+  "bbox_right": 959,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 1620,
+  "height": 540,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9c660971-ceb2-467a-a401-9c66c533cdf3","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":true,},
@@ -26,14 +26,14 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "tracks",
-    "path": "folders/Sprites/tracks.yy",
+    "name": "world map",
+    "path": "folders/Sprites/world map.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_world_1_and_2_map",
+    "name": "spr_world_1_map",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -55,7 +55,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c1cdd6d1-9bc1-46cf-8c21-4d7cc306041e","path":"sprites/spr_world_1_and_2_map/spr_world_1_and_2_map.yy",},},},"Disabled":false,"id":"82c4f9f7-5315-4a91-a419-c9b5d1bc9981","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c1cdd6d1-9bc1-46cf-8c21-4d7cc306041e","path":"sprites/spr_world_1_map/spr_world_1_map.yy",},},},"Disabled":false,"id":"ae1cdd12-7526-45ad-bab0-4f0d3cc10621","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -71,5 +71,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1920,
+  "width": 960,
 }

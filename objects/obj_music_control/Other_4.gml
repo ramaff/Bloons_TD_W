@@ -4,7 +4,7 @@
 if room = rm_game_start {
 	audio_play_sound(snd_letter_from_tim, 1000, true);
 }
-if room = rm_world_map {
+if room = rm_world_1_map {
 	audio_play_sound(snd_world_map, 1000, true);
 }
 if room = rm_training_room {

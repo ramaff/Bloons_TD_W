@@ -3,6 +3,6 @@
 
 instance_destroy()
 
-room_goto(rm_world_map)
+room_goto(rm_world_1_map)
 
 

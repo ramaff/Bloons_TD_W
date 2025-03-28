@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-room_goto(rm_world_1_map)
+starting_x = x;
+starting_y = y;
 
 
 
