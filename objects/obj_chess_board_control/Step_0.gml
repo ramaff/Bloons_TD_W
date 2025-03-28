@@ -18,14 +18,13 @@ if global.round = 0 {
 	}
 }
 
-var _offset = 0;
-if global.round < 20 {
-	_offset += 1;	
-}
 
-if global.round > saved_round + _offset {
+if global.round > saved_round {
 
 	saved_round++;
+	if global.round < 25 {
+		saved_round++;	
+	}
 	
 	// pick the closest bloon to the bottom
 	
@@ -38,7 +37,8 @@ if global.round > saved_round + _offset {
 		}
 	}
 	
-	_picked_piece = _picked_pieces[irandom(array_length(_picked_pieces)-1)]
+	//_picked_piece = _picked_pieces[irandom(array_length(_picked_pieces)-1)]
+	_picked_piece = _picked_pieces[saved_round mod array_length(_picked_pieces)]
 	
 	// move it down 64 px, if a tower is there then it moves up 64 px and gets perma stunned
 	_picked_piece.y += 64;

@@ -4,6 +4,5 @@
 // Inherit the parent event
 event_inherited();
 
-scr_bloon_stat_setup(id, "chess", "bishop", -1, [], -1, x, y);
+alarm[1] = 300;
 
-alarm[0] = 300;

@@ -47,6 +47,12 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		if _class = "ceramic" and _layer = "ceramic" {
 			_bloon.bloon_stats.sprite = "spr_regrow_ceramic_bloon"
 		}
+		if _class = "lead" and _layer = "lead" {
+			_bloon.bloon_stats.sprite = "spr_regrow_lead_bloon"
+		}
+		if _class = "lead" and _layer = "block" {
+			_bloon.bloon_stats.sprite = "spr_regrow_block_bloon"
+		}
 	}
 	if variable_struct_exists(_bloon.bloon_stats, "camo")  {
 		_bloon.bloon_stats.sprite = "spr_camo_bloon"
@@ -148,6 +154,7 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 
 		with instance_create_depth(_xx, _yy, depth, obj_orbital_bloon) {
 			scr_bloon_stat_setup(id, "rune", "barrier", -1, [], -1)
+			speed = bloon_stats.speed;
 				
 			if instance_exists(target) {
 				instance_destroy(target)	

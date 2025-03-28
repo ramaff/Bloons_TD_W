@@ -1739,11 +1739,15 @@ function scr_setup_bloon_stats(){
 				"big_bloon_tier": 5,
 				sprite: "spr_rook_chess_bloon",
 				layers: 2500,
-				rbe: 2500,
-				damage: 40,
+				rbe: 3752,
+				damage: 100,
 				health: 2500,
 				density: 1,
-				speed: 1,
+				speed: 0.25,
+				children: [
+					{"class": "ceramic", "layer": "tower"},
+					{"class": "ceramic", "layer": "tower"},
+				]
 			},
 			"queen": {
 				"object": "obj_queen_chess_bloon",
@@ -1762,7 +1766,7 @@ function scr_setup_bloon_stats(){
 				sprite: "spr_king_chess_bloon",
 				layers: 7500,
 				rbe: 7500,
-				damage: 100,
+				damage: 400,
 				health: 7500,
 				density: 1,
 				speed: 0.5,

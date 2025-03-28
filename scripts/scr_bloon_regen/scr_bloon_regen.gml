@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_bloon_regen(_bloon = self, _bloon_stats = bloon_stats){
+function scr_bloon_regen(_bloon = self, _bloon_stats = bloon_stats, _heal_amount = 1){
 	
 	if _bloon_stats.health < _bloon_stats.max_health {
 		_bloon_stats.health += 1;
