@@ -81,10 +81,36 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 			y = path_get_y(_path, 0)
 		}
 		_bloon.target = _target
+	} else if variable_struct_exists(_bloon.bloon_stats, "float to track") {
+		var _target = instance_create_depth(_bloon.x, _bloon.y, depth, obj_bloon_target);
+		with(_target) {
+			path_start(_path, _bloon.path_speed / 10, path_action_stop, true);
+			path_position = _bloon.path_position * 0.8
+			//speed = _bloon.speed / 5;
+			path_speed = _bloon.bloon_stats.speed / 10;
+			speed = path_speed
+			x = path_get_x(_path, 0)
+			y = path_get_y(_path, 0)
+		}
+		with(_bloon) {
+			target = _target
+			speed = 0;
+			path_position = _bloon.path_position * 0.8
+			bloon_stats.float_height = 10;
+			bloon_stats.vertical_speed = (1 + random(3));
+			bloon_stats.float_gravity = 0.1;
+			bloon_stats.vertical_direction = 60 + random(120);
+			//path_end()
+			//x = _xx;
+			//y = _yy;
+		}
 	} else if _path != -1 {
 		path_start(_path, bloon_stats.speed, path_action_stop, true);
 		_xx = path_get_x(_path, 0)
 		_yy = path_get_y(_path, 0)
+		
+		_bloon.speed = _bloon.bloon_stats.speed
+		_bloon.path_speed = _bloon.speed
 	}
 	
 	
@@ -98,37 +124,15 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		_bloon.bloon_stats.shield_health = floor(_bloon.bloon_stats.layers + sqrt(_bloon.bloon_stats.rbe - _bloon.bloon_stats.layers))
 	}
 	
-	_bloon.speed = _bloon.bloon_stats.speed
-	_bloon.path_speed = _bloon.speed
-	_bloon.depth = -_bloon.bloon_stats.layers
+	_bloon.depth = -sqrt(_bloon.bloon_stats.layers)
+	if variable_struct_exists(_bloon.bloon_stats, "big_bloon_tier") {
+		_bloon.depth = -(10 * _bloon.bloon_stats.big_bloon_tier)
+	}
 	if !variable_struct_exists(_bloon.bloon_stats, "max_health") {
 		_bloon.bloon_stats.max_health = _bloon.bloon_stats.health;
 	}
 	//_bloon.bloon_stats.max_health = _bloon.bloon_stats.health;
 	
-	if variable_struct_exists(_bloon.bloon_stats, "float to track") {
-		var _target = instance_create_depth(_bloon.x, _bloon.y, depth, obj_bloon_target);
-		with(_target) {
-			path_start(_path, 0, path_action_stop, true);
-			path_position = _bloon.path_position * 0.8
-			//speed = _bloon.speed / 5;
-			path_speed = _bloon.path_speed / 10;
-			x = path_get_x(_path, 0)
-			y = path_get_y(_path, 0)
-		}
-		with(_bloon) {
-			target = _target
-			speed = 0;
-			path_position = _bloon.path_position * 0.8
-			bloon_stats.float_height = 10;
-			bloon_stats.vertical_speed = (1 + random(3));
-			bloon_stats.float_gravity = 0.1;
-			bloon_stats.vertical_direction = 60 + random(120);
-			path_end()
-			x = _xx;
-			y = _yy;
-		}
-	}
 	if variable_struct_exists(_bloon.bloon_stats, "stay_floating") {
 		speed = 0;
 		bloon_stats.speed = 0;

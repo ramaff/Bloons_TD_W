@@ -79,6 +79,14 @@ function scr_setup_tower_stats(){
 			],
 			split_upgrades: [
 				[
+					{
+						keyword: "splodey darts",
+						upgrade_cost: 3100
+					},
+					{
+						keyword: "carpet bombing",
+						upgrade_cost: 9300
+					}
 				],
 				[
 				],

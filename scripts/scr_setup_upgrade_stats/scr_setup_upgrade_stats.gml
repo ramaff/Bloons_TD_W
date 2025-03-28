@@ -88,6 +88,84 @@ function scr_setup_upgrade_stats(){
 				],
 				upgrade_string: "darts that shoot darts into more darts."
 			},
+			"splodey darts": {
+				range: 20,
+				health: 50,
+				max_health: 50,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_dart",
+						pierce: 4,
+						projectile_count: 4,
+						projectile_spread: 15,
+						damage: 1,
+						speed: 12,
+						lifespan: 30,
+						expire_burst_activation: true,
+						projectile_burst: [
+							{
+								object: "obj_explosion_projectile",
+								sprite: "spr_explosion",
+								lead_hit: true,
+								lifespan: 20,
+								speed: 0,
+								direction: 0,
+								damage: 1,
+								pierce: 20,
+								size: 0.4
+							},
+						]
+					}
+				],
+				upgrade_string: "Darts explode into explosions. Jim gets more HP and range."
+			},
+			"carpet bombing": {
+				range: 50,
+				health: 50,
+				max_health: 50,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_dart",
+						pierce: 20,
+						projectile_count: 4,
+						projectile_spread: 15,
+						damage: 1,
+						speed: 12,
+						lifespan: 30,
+						extra_shots: [
+							{
+								object: "obj_no_hit",
+								lead_hit: true,
+								sprite: "spr_small_bomb",
+								pierce: 20,
+								damage: 1,
+								speed: 0,
+								image_angle: 0,
+								lifespan: 15,
+								lead_hit: true,
+								shot_frequency: 6,
+								expire_burst_activation: true,
+								projectile_burst: [
+									{
+										object: "obj_explosion_projectile",
+										sprite: "spr_explosion",
+										lead_hit: true,
+										lifespan: 20,
+										speed: 0,
+										direction: 0,
+										damage: 1,
+										pierce: 20,
+										size: 0.4
+									}
+								]
+							}
+						]
+					}
+				],
+				upgrade_string: "Darts explode into explosions. Jim gets more HP and range."
+			},
 		},
 		"sling_shot_monkey": {
 			"stone skipping": {
