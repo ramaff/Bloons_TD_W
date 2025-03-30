@@ -1,12 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_ghost_monkey",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":8,"eventType":6,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-  ],
+  "name": "obj_turret",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -14,8 +10,8 @@
     "path": "folders/Objects/Towers.yy",
   },
   "parentObjectId": {
-    "name": "obj_turret",
-    "path": "objects/obj_turret/obj_turret.yy",
+    "name": "obj_monkey",
+    "path": "objects/obj_monkey/obj_monkey.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_ghost_monkey",
-    "path": "sprites/spr_ghost_monkey/spr_ghost_monkey.yy",
+    "name": "spr_monkey",
+    "path": "sprites/spr_monkey/spr_monkey.yy",
   },
   "spriteMaskId": null,
   "visible": true,

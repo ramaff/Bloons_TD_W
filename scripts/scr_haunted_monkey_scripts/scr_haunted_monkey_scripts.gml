@@ -6,6 +6,11 @@ function scr_spawn_ghost_monkey(_tower_stats = tower_stats){
 		tower_stats = variable_clone(_tower_stats)
 		_ghost_id = id;
 		parent_id = tower_stats.id;
+		if variable_struct_exists(tower_stats, "damage_keys") {
+			tower_stats.damage_keys = array_concat(tower_stats.damage_keys, _tower_stats.damage_keys)	
+		} else {
+			tower_stats.damage_keys = _tower_stats.damage_keys;
+		}
 	}
 	variable_struct_set(ghosts, _ghost_id, _ghost_id)
 }

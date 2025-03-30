@@ -88,6 +88,7 @@ if variable_struct_exists(tower_stats, "additional_attacks") {
 
 for(var _i = 0; _i < array_length(_additional_attacks); _i++) {
 	var _attack = _additional_attacks[_i];
+	_attack.damage_keys = tower_stats.damage_keys
 	
 	if _attack.attack_cooldown > 0 {
 		_attack.attack_cooldown -= tick_down;

@@ -647,7 +647,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_mini_moab_bloon",
+			"round_icon_sprite": "spr_mini_moab_icon",
 			"round_icon_index": 0
 		},
 		{
@@ -725,7 +725,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_tower_bloon_icon",
+			"round_icon_sprite": "spr_tower_icon",
 			"round_icon_index": 0
 		},
 		{

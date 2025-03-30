@@ -292,6 +292,7 @@
     {"id":{"name":"spr_targetting_butt","path":"sprites/spr_targetting_butt/spr_targetting_butt.yy",},},
     {"id":{"name":"obj_bridge_monkey","path":"objects/obj_bridge_monkey/obj_bridge_monkey.yy",},},
     {"id":{"name":"obj_pawn_chess_bloon","path":"objects/obj_pawn_chess_bloon/obj_pawn_chess_bloon.yy",},},
+    {"id":{"name":"obj_turret","path":"objects/obj_turret/obj_turret.yy",},},
     {"id":{"name":"spr_the_stronghold_track","path":"sprites/spr_the_stronghold_track/spr_the_stronghold_track.yy",},},
     {"id":{"name":"scr_get_tower_stats","path":"scripts/scr_get_tower_stats/scr_get_tower_stats.yy",},},
     {"id":{"name":"spr_you_win_butt_cba","path":"sprites/spr_you_win_butt_cba/spr_you_win_butt_cba.yy",},},

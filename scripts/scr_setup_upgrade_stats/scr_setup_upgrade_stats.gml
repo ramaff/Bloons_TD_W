@@ -127,6 +127,7 @@ function scr_setup_upgrade_stats(){
 				projectile_replacement: true,
 				projectile_stats: [
 					{
+						object: "obj_no_hit",
 						sprite: "spr_dart",
 						pierce: 20,
 						projectile_count: 4,
@@ -812,7 +813,7 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "The ghosts jump scare bloons, causing them to quickly move backwards.",
 				additional_attacks: [
 					{
-						delay: 75,
+						delay: 60,
 						attack_cooldown: 0,
 						range: 40,
 						projectile_stats: [

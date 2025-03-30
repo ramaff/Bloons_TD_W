@@ -11,6 +11,11 @@ if variable_struct_exists(other.bloon_stats, "damage_keys") {
 		exit;	
 	}
 }
+if variable_struct_exists(other.bloon_stats, "camo") {
+	if !variable_struct_exists(projectile_stats, "camo_detection") {
+		exit;
+	}
+}
 
 if variable_struct_exists(projectile_stats, "projectile_burst") {
 	event_perform(ev_alarm, 0)

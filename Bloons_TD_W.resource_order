@@ -247,6 +247,7 @@
     {"name":"spr_targetting_butt","order":27,"path":"sprites/spr_targetting_butt/spr_targetting_butt.yy",},
     {"name":"obj_bridge_monkey","order":11,"path":"objects/obj_bridge_monkey/obj_bridge_monkey.yy",},
     {"name":"obj_pawn_chess_bloon","order":11,"path":"objects/obj_pawn_chess_bloon/obj_pawn_chess_bloon.yy",},
+    {"name":"obj_turret","order":13,"path":"objects/obj_turret/obj_turret.yy",},
     {"name":"spr_the_stronghold_track","order":24,"path":"sprites/spr_the_stronghold_track/spr_the_stronghold_track.yy",},
     {"name":"scr_get_tower_stats","order":4,"path":"scripts/scr_get_tower_stats/scr_get_tower_stats.yy",},
     {"name":"spr_you_win_butt_cba","order":7,"path":"sprites/spr_you_win_butt_cba/spr_you_win_butt_cba.yy",},
