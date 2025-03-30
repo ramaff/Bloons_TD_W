@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_pawn_chess_bloon",
-  "bbox_bottom": 115,
-  "bbox_left": 21,
-  "bbox_right": 77,
-  "bbox_top": 25,
+  "name": "spr_queen_chess_bloon",
+  "bbox_bottom": 109,
+  "bbox_left": 18,
+  "bbox_right": 83,
+  "bbox_top": 14,
   "bboxMode": 0,
   "collisionKind": 4,
   "collisionTolerance": 0,
@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c1689813-ef26-4ddf-ae45-0d3352c0def2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e1a12834-28f0-43bc-b5f8-a927f0247587",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_pawn_chess_bloon",
+    "name": "spr_queen_chess_bloon",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c1689813-ef26-4ddf-ae45-0d3352c0def2","path":"sprites/spr_pawn_chess_bloon/spr_pawn_chess_bloon.yy",},},},"Disabled":false,"id":"64b1c966-cc89-4bb2-a2bd-fe2fc2c9f4e8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e1a12834-28f0-43bc-b5f8-a927f0247587","path":"sprites/spr_queen_chess_bloon/spr_queen_chess_bloon.yy",},},},"Disabled":false,"id":"9c085c0f-a194-487d-852c-1e1b2b72db84","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

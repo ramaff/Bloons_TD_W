@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_rook_chess_bloon",
-  "bbox_bottom": 116,
-  "bbox_left": 10,
-  "bbox_right": 85,
-  "bbox_top": 2,
+  "bbox_bottom": 134,
+  "bbox_left": 11,
+  "bbox_right": 109,
+  "bbox_top": 9,
   "bboxMode": 0,
   "collisionKind": 4,
   "collisionTolerance": 0,
@@ -13,11 +13,11 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"60007644-dc3d-49bc-aaa2-0b4122dfac51",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0cd8579e-e71e-470d-98df-f7ec1f166228",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 128,
+  "height": 144,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9eb4e6c3-2615-4f09-9b1b-0711fa73a5b5","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "bosses",
-    "path": "folders/Sprites/bloons/bosses.yy",
+    "name": "chess bloons advanced",
+    "path": "folders/Sprites/bloons/bosses/chess bloons advanced.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"60007644-dc3d-49bc-aaa2-0b4122dfac51","path":"sprites/spr_rook_chess_bloon/spr_rook_chess_bloon.yy",},},},"Disabled":false,"id":"77a72582-60ff-4f6d-adeb-ffeadf09d9e3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0cd8579e-e71e-470d-98df-f7ec1f166228","path":"sprites/spr_rook_chess_bloon/spr_rook_chess_bloon.yy",},},},"Disabled":false,"id":"243a7432-f45d-4076-b609-a26613a7659e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 47,
-    "yorigin": 84,
+    "xorigin": 54,
+    "yorigin": 100,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 96,
+  "width": 112,
 }

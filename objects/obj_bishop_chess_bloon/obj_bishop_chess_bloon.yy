@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Bounties",
-    "path": "folders/Objects/Bloons/Bounties.yy",
+    "name": "chess bloon advanced",
+    "path": "folders/Objects/Bloons/Bounties/chess bloon advanced.yy",
   },
   "parentObjectId": {
     "name": "obj_chess_piece_bloon",

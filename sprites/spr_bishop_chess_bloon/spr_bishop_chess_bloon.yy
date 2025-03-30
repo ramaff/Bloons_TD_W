@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "bosses",
-    "path": "folders/Sprites/bloons/bosses.yy",
+    "name": "chess bloons advanced",
+    "path": "folders/Sprites/bloons/bosses/chess bloons advanced.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

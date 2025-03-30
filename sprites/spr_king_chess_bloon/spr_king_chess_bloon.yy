@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_pawn_chess_bloon",
-  "bbox_bottom": 115,
-  "bbox_left": 21,
-  "bbox_right": 77,
-  "bbox_top": 25,
+  "name": "spr_king_chess_bloon",
+  "bbox_bottom": 121,
+  "bbox_left": 13,
+  "bbox_right": 87,
+  "bbox_top": 22,
   "bboxMode": 0,
   "collisionKind": 4,
   "collisionTolerance": 0,
@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c1689813-ef26-4ddf-ae45-0d3352c0def2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5073ff51-e467-4ae8-8835-ba499f2b8aa6",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_pawn_chess_bloon",
+    "name": "spr_king_chess_bloon",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c1689813-ef26-4ddf-ae45-0d3352c0def2","path":"sprites/spr_pawn_chess_bloon/spr_pawn_chess_bloon.yy",},},},"Disabled":false,"id":"64b1c966-cc89-4bb2-a2bd-fe2fc2c9f4e8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5073ff51-e467-4ae8-8835-ba499f2b8aa6","path":"sprites/spr_king_chess_bloon/spr_king_chess_bloon.yy",},},},"Disabled":false,"id":"e467dfb7-b974-4a42-878d-c6d374a8c8ce","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
