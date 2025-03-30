@@ -47,7 +47,7 @@ if global.round > saved_round {
 		}
 		add_if_possible(id, _picked_pieces_moveable, 0, 1, false, false)
 	}
-	if global.round >= 20 {
+	if global.round >= 10 {
 		with(obj_knight_chess_bloon) {
 			if activated {
 				continue;
@@ -91,6 +91,102 @@ if global.round > saved_round {
 				continue;	
 			}
 			if add_if_possible(id, _picked_pieces_moveable, -5, 5, false, false) {
+				continue;
+			}
+		}
+		with(obj_rook_chess_bloon) {
+			if activated {
+				continue;
+			}
+			if add_if_possible(id, _picked_pieces_attackable, 5, 0, true, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_attackable, -5, 0, true, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_attackable, 0, 5, true, false) {
+				continue;	
+			}
+			
+			if add_if_possible(id, _picked_pieces_moveable, 5, 0, false, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_moveable, -5, 0, false, false) {
+				continue;
+			}
+			if add_if_possible(id, _picked_pieces_moveable, 0, 5, false, false) {
+				continue;	
+			}
+		}
+		with(obj_queen_chess_bloon) {
+			if activated {
+				continue;
+			}
+			if add_if_possible(id, _picked_pieces_attackable, 5, 0, true, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_attackable, -5, 0, true, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_attackable, 0, 5, true, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_attackable, 5, 5, true, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_attackable, -5, 5, true, false) {
+				continue;	
+			}
+			
+			if add_if_possible(id, _picked_pieces_moveable, 5, 0, false, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_moveable, -5, 0, false, false) {
+				continue;
+			}
+			if add_if_possible(id, _picked_pieces_moveable, 0, 5, false, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_moveable, 5, 5, false, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_moveable, -5, 5, false, false) {
+				continue;
+			}
+		}
+		with(obj_king_chess_bloon) {
+			if activated {
+				continue;
+			}
+			if add_if_possible(id, _picked_pieces_attackable, 1, 0, true, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_attackable, -1, 0, true, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_attackable, 0, 1, true, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_attackable, 1, 1, true, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_attackable, -1, 1, true, false) {
+				continue;	
+			}
+			
+			if add_if_possible(id, _picked_pieces_moveable, 1, 0, false, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_moveable, -1, 0, false, false) {
+				continue;
+			}
+			if add_if_possible(id, _picked_pieces_moveable, 0, 1, false, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_moveable, 1, 1, false, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_moveable, -1, 1, false, false) {
 				continue;
 			}
 		}
