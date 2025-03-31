@@ -238,8 +238,10 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 				y = _yy;
 				speed = 0;
 			} else {
-				x = path_get_x(_bloon.bloon_stats.path, path_position);
-				y = path_get_y(_bloon.bloon_stats.path, path_position);
+				if _bloon.bloon_stats.path != -1 {
+					x = path_get_x(_bloon.bloon_stats.path, path_position);
+					y = path_get_y(_bloon.bloon_stats.path, path_position);
+				}
 			}
 			parent_id = _parent_id
 			_pos -= 0.01

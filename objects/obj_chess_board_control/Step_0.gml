@@ -34,10 +34,10 @@ if global.round >= 49 {
 if global.round > saved_round {
 
 	saved_round++;
-	if global.round < 16 {
+	if global.round < 20 {
 		saved_round++;	
 	}
-	if global.round > 40 {
+	if global.round > 35 {
 		saved_round -= 0.5;	
 	}
 	saved_round = min(saved_round, 48);
@@ -60,7 +60,7 @@ if global.round > saved_round {
 		}
 		add_if_possible(id, _picked_pieces_moveable, 0, 1, false, false)
 	}
-	if global.round >= 20 {
+	if global.round >= 25 {
 		with(obj_knight_chess_bloon) {
 			if activated {
 				continue;
@@ -128,7 +128,7 @@ if global.round > saved_round {
 			}
 		}
 	}
-	if global.round >= 40 {
+	if global.round >= 35 {
 		with(obj_queen_chess_bloon) {
 			if activated {
 				continue;

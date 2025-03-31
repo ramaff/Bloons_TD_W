@@ -121,5 +121,13 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 	
 	_tower_stats.total_cost += _upgrade_stats.upgrade_cost
 	_tower_stats.upgrade_count[_path]++;
+	if _monkey.all_bases {
+		for(var _j = 0; _j < array_length(_tower_stats.upgrades); _j++) {
+			if _j = _path {
+				continue;	
+			}
+			_tower_stats.upgrades[_j] = [];
+		}
+	}
 
 }

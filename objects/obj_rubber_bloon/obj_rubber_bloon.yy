@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Base Bloons",
-    "path": "folders/Objects/Bloons/Base Bloons.yy",
+    "name": "Special Class Bloons",
+    "path": "folders/Objects/Bloons/Special Class Bloons.yy",
   },
   "parentObjectId": {
     "name": "obj_bloon",
