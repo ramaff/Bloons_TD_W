@@ -10,3 +10,9 @@ if leak_frame {
 	
 }
 
+if direction < 90 || direction > 270 {
+	image_xscale = -1;
+} else {
+	image_xscale = 1;	
+}
+

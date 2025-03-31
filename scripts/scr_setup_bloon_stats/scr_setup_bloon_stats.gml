@@ -1662,6 +1662,16 @@ function scr_setup_bloon_stats(){
 				max_health: 50,
 				density: 10,
 				speed: 3
+			},
+			"magic_shot": {
+				sprite: "spr_magic_shot_bloon",
+				layers: 20,
+				index: 0,
+				rbe: 20,
+				health: 20,
+				max_health: 20,
+				density: 10,
+				speed: 6
 			}
 		},
 		"rubber": {
@@ -1704,7 +1714,7 @@ function scr_setup_bloon_stats(){
 			"damage_keys": ["chess_board"],
 			"pawn": {
 				"object": "obj_pawn_chess_bloon",
-				"big_bloon_tier": 4,
+				"big_bloon_tier": 3,
 				sprite: "spr_pawn_chess_bloon",
 				layers: 1500,
 				rbe: 1500,
@@ -1722,7 +1732,7 @@ function scr_setup_bloon_stats(){
 				damage: 40,
 				health: 2500,
 				density: 1,
-				speed: 2.7,
+				speed: 3.7,
 			},
 			"bishop": {
 				"object": "obj_bishop_chess_bloon",

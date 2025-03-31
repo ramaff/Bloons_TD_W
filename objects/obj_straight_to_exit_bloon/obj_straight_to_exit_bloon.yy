@@ -1,21 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_queen_chess_bloon",
+  "name": "obj_straight_to_exit_bloon",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "chess bloon advanced",
-    "path": "folders/Objects/Bloons/Bounties/chess bloon advanced.yy",
+    "name": "Base Bloons",
+    "path": "folders/Objects/Bloons/Base Bloons.yy",
   },
   "parentObjectId": {
-    "name": "obj_chess_piece_bloon",
-    "path": "objects/obj_chess_piece_bloon/obj_chess_piece_bloon.yy",
+    "name": "obj_bloon",
+    "path": "objects/obj_bloon/obj_bloon.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_queen_chess_bloon",
-    "path": "sprites/spr_queen_chess_bloon/spr_queen_chess_bloon.yy",
+    "name": "spr_bloon",
+    "path": "sprites/spr_bloon/spr_bloon.yy",
   },
   "spriteMaskId": null,
   "visible": true,

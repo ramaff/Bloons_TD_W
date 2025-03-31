@@ -1,7 +1,15 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_track_end_bloon_check(_bloon_stats = bloon_stats){
-	if path_position >= 1 {
+	
+	var _straight_to_target_end = false
+	if variable_struct_exists(bloon_stats, "straight_to_exit") {
+		if point_distance(x, y, path_get_x(bloon_stats.path, 1), path_get_y(bloon_stats.path, 1)) < 10 {
+			_straight_to_target_end = true;
+		}
+	}
+	
+	if path_position >= 1 || _straight_to_target_end {
 	
 		var _hero_number = irandom(instance_number(obj_hero) - 1)
 	
@@ -46,12 +54,19 @@ function scr_track_end_bloon_check(_bloon_stats = bloon_stats){
 			}
 		}
 	
-		path_position = 0;
-		if instance_exists(target) {
-			x = path_get_point_x(bloon_stats.path, 0)
-			y = path_get_point_x(bloon_stats.path, 0)
+		if _straight_to_target_end {
+			x = path_get_x(bloon_stats.path, 0)
+			y = path_get_y(bloon_stats.path, 0)
+			
+			direction = point_direction(x, y, path_get_x(bloon_stats.path, 1), path_get_y(bloon_stats.path, 1))
 		} else {
-			path_start(bloon_stats.path, _bloon_stats.speed, path_action_stop, true);
+			path_position = 0;
+			if instance_exists(target) {
+				x = path_get_x(bloon_stats.path, 0)
+				y = path_get_y(bloon_stats.path, 0)
+			} else {
+				path_start(bloon_stats.path, _bloon_stats.speed, path_action_stop, true);
+			}
 		}
 		
 		return true;

@@ -1,8 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-other.stun += 2;
-
+if activated {
+	other.stun += 2;
+}
 
 
 

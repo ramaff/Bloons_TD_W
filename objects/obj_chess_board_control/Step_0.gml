@@ -20,14 +20,27 @@ if global.round = 0 {
 	}
 }
 
+if global.round >= 49 {
+	with(obj_chess_piece_bloon) {
+		if !activated {
+			event_perform(ev_other, ev_user0)
+			activated = true;
+			bloon_stats.damage_keys = [];
+		}
+	}
+}
+
 
 if global.round > saved_round {
 
 	saved_round++;
-	if global.round < 20 {
+	if global.round < 16 {
 		saved_round++;	
 	}
-	saved_round = min(saved_round, 49);
+	if global.round > 40 {
+		saved_round -= 0.5;	
+	}
+	saved_round = min(saved_round, 48);
 	
 	// pick the closest bloon to the bottom
 	
@@ -47,7 +60,7 @@ if global.round > saved_round {
 		}
 		add_if_possible(id, _picked_pieces_moveable, 0, 1, false, false)
 	}
-	if global.round >= 10 {
+	if global.round >= 20 {
 		with(obj_knight_chess_bloon) {
 			if activated {
 				continue;
@@ -77,6 +90,26 @@ if global.round > saved_round {
 				continue;	
 			}
 		}
+		with(obj_rook_chess_bloon) {
+			if activated {
+				continue;
+			}
+			if add_if_possible(id, _picked_pieces_attackable, 5, 0, true, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_attackable, -5, 0, true, false) {
+				continue;	
+			}
+			if add_if_possible(id, _picked_pieces_attackable, 0, 5, true, false) {
+				continue;	
+			}
+			
+			if add_if_possible(id, _picked_pieces_moveable, 0, 5, false, false) {
+				continue;	
+			}
+		}
+	}
+	if global.round >= 30 {
 		with(obj_bishop_chess_bloon) {
 			if activated {
 				continue;
@@ -94,30 +127,8 @@ if global.round > saved_round {
 				continue;
 			}
 		}
-		with(obj_rook_chess_bloon) {
-			if activated {
-				continue;
-			}
-			if add_if_possible(id, _picked_pieces_attackable, 5, 0, true, false) {
-				continue;	
-			}
-			if add_if_possible(id, _picked_pieces_attackable, -5, 0, true, false) {
-				continue;	
-			}
-			if add_if_possible(id, _picked_pieces_attackable, 0, 5, true, false) {
-				continue;	
-			}
-			
-			if add_if_possible(id, _picked_pieces_moveable, 5, 0, false, false) {
-				continue;	
-			}
-			if add_if_possible(id, _picked_pieces_moveable, -5, 0, false, false) {
-				continue;
-			}
-			if add_if_possible(id, _picked_pieces_moveable, 0, 5, false, false) {
-				continue;	
-			}
-		}
+	}
+	if global.round >= 40 {
 		with(obj_queen_chess_bloon) {
 			if activated {
 				continue;
@@ -138,12 +149,6 @@ if global.round > saved_round {
 				continue;	
 			}
 			
-			if add_if_possible(id, _picked_pieces_moveable, 5, 0, false, false) {
-				continue;	
-			}
-			if add_if_possible(id, _picked_pieces_moveable, -5, 0, false, false) {
-				continue;
-			}
 			if add_if_possible(id, _picked_pieces_moveable, 0, 5, false, false) {
 				continue;	
 			}
@@ -174,12 +179,6 @@ if global.round > saved_round {
 				continue;	
 			}
 			
-			if add_if_possible(id, _picked_pieces_moveable, 1, 0, false, false) {
-				continue;	
-			}
-			if add_if_possible(id, _picked_pieces_moveable, -1, 0, false, false) {
-				continue;
-			}
 			if add_if_possible(id, _picked_pieces_moveable, 0, 1, false, false) {
 				continue;	
 			}
@@ -222,7 +221,7 @@ if global.round > saved_round {
 	
 	with(obj_monkey) {
 		if point_distance(x, y, _picked_piece.id.x, _picked_piece.id.y) < 40 {
-			stun += 10000;
+			stun += 1500;
 			y -= _picked_piece.y
 			x -= _picked_piece.x
 		}
