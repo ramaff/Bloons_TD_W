@@ -31,8 +31,6 @@ if hop_height <= 0 {
 direction = point_direction(x, y, _target.x, _target.y - hop_height);
 speed = min(6, point_distance(x, y, _target.x, _target.y - hop_height))
 
-if y - hop_height < 0 {
-	y = 0
-}
+
 
 

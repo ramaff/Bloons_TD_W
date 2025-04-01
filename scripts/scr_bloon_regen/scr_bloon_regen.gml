@@ -29,7 +29,7 @@ function scr_bloon_regen(_bloon = self, _bloon_stats = bloon_stats, _heal_amount
 		y = _yy;
 		path_position = _pos;
 		
-		_bloon_stats.parents = _parents
+		bloon_stats.parents = _parents
 			
 		alarm[0] = _bloon.alarm[0];
 		if alarm[0] > 90 {
