@@ -599,7 +599,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_block_bloon",
+			"round_icon_sprite": "spr_regrow_block_bloon",
 			"round_icon_index": 0
 		},
 		{
@@ -610,7 +610,7 @@
 			"properties": ["tattered"]
 		},
 		{
-			"class": "lead", "layer": "block", "count": 20, "spread": 20, "cooldown": 1500,
+			"class": "lead", "layer": "block", "count": 20, "spread": 30, "cooldown": 1500,
 			"properties": ["regrow"]
 		}
 	],

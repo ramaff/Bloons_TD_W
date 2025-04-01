@@ -30,5 +30,5 @@
     "path": "sprites/spr_bloon_target/spr_bloon_target.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

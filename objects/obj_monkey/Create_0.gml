@@ -54,3 +54,6 @@ current_boosts = {
 	"speed_boost": 0,
 	"puncture": 0
 }
+
+original_x = x;
+original_y = y;

@@ -630,7 +630,7 @@ function scr_setup_bloon_stats(){
 			},
 			"rainbow": {
 				layers: 99,
-				index: 4,
+				index: 5,
 				rbe: 232,
 				health: 90,
 				density: 1,

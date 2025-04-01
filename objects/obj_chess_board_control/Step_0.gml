@@ -3,7 +3,7 @@
 
 with(obj_monkey) {
 	if object_get_parent(object_index) != obj_turret {
-		if x > 208 and x < 592 and y > 136 and y < 456 {
+		if original_x > 208 and original_x < 592 and original_y > 136 and original_y < 456 {
 			tower_stats.damage_keys = ["chess_board"]
 		}
 	}
@@ -221,7 +221,7 @@ if global.round > saved_round {
 	
 	with(obj_monkey) {
 		if point_distance(x, y, _picked_piece.id.x, _picked_piece.id.y) < 40 {
-			stun += 1500;
+			stun += _picked_piece.id.bloon_stats.max_health;
 			y -= _picked_piece.y
 			x -= _picked_piece.x
 		}

@@ -165,7 +165,7 @@ function scr_setup_upgrade_stats(){
 						]
 					}
 				],
-				upgrade_string: "Darts explode into explosions. Jim gets more HP and range."
+				upgrade_string: "Darts leave a trail of bombs that explode. Jim gets more HP and range."
 			},
 		},
 		"sling_shot_monkey": {
