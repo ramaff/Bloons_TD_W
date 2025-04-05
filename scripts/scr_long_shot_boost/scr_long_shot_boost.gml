@@ -3,7 +3,7 @@
 function scr_long_shot_boost(_tower_stats = tower_stats) {
 
 	var _long_shot_boost = {
-		range_boost: 0.4,
+		range_boost: 0.6,
 		damage_boost: 0,
 		pierce_boost: 0,
 		speed_boost: 0,
@@ -16,7 +16,7 @@ function scr_long_shot_boost(_tower_stats = tower_stats) {
 	var _max_charge = 10;
 	if variable_struct_exists(_tower_stats, "active_upgrades") {
 		if variable_struct_exists(_tower_stats.active_upgrades, "Goliath Shot") {
-			_long_shot_boost.range_boost = 1
+			_long_shot_boost.range_boost = 1.5
 			_max_charge = 20;
 		}
 	}

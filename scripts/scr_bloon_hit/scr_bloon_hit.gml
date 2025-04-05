@@ -164,6 +164,11 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		_bloon.bloon_stats.goop = _projectile_stats.goop;
 		_bloon.bloon_stats.goop_time = _projectile_stats.goop_time;
 	}
+	if variable_struct_exists(_projectile_stats, "fire") {
+		_bloon.bloon_stats.fire = _projectile_stats.fire;
+		_bloon.bloon_stats.fire_time = _projectile_stats.fire_time;
+		_bloon.bloon_stats.fire_og_tower_id = _projectile_stats.tower_id;
+	}
 	
 	var _damage = _projectile_stats.damage;
 	var _density = _bloon.bloon_stats.density;
@@ -262,6 +267,11 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			if variable_struct_exists(_bloon.bloon_stats, "goop") {
 				bloon_stats.goop = _bloon.bloon_stats.goop;
 				bloon_stats.goop_time = _bloon.bloon_stats.goop_time;
+			}
+			if variable_struct_exists(_bloon.bloon_stats, "fire") {
+				bloon_stats.fire = _bloon.bloon_stats.fire;
+				bloon_stats.fire_time = _bloon.bloon_stats.fire_time;
+				bloon_stats.fire_og_tower_id = _bloon.bloon_stats.fire_og_tower_id;
 			}
 			if variable_struct_exists(_bloon.bloon_stats, "magic_marking") {
 				bloon_stats.magic_marking = _bloon.bloon_stats.magic_marking;

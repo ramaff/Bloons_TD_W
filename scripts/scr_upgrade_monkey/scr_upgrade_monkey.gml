@@ -103,6 +103,14 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 		_tower_stats.delay = _tower_stats.delay / _upgrade_stats.fire_rate_multiplier
 	}
 	
+	if variable_struct_exists(_upgrade_stats, "ability_charge_multiplier") {
+		if variable_struct_exists(_tower_stats, "ability_charge_rate") {
+			_tower_stats.ability_charge_rate = _tower_stats.ability_charge_rate * _upgrade_stats.ability_charge_multiplier
+		} else {
+			_tower_stats.ability_charge_rate = _upgrade_stats.ability_charge_multiplier
+		}
+	}
+	
 	if variable_struct_exists(_upgrade_stats, "range") {
 		_tower_stats.range += _upgrade_stats.range;
 	}

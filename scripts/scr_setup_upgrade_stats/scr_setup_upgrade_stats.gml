@@ -9,11 +9,12 @@ function scr_setup_upgrade_stats(){
 			},
 			"faster": {
 				fire_rate_multiplier: 1.167,
+				ability_charge_multiplier: 1.167,
 				upgrade_string: "shoots more often."
 			},
 			"stronger": {
 				pierce: 1,
-				upgrade_string: "shoots more poppier darts."
+				upgrade_string: "shoots poppier darts."
 			},
 			"split dart monkey": {
 				range: 15,
@@ -246,6 +247,25 @@ function scr_setup_upgrade_stats(){
 				health: 50,
 				max_health: 50,
 				range: 15,
+			},
+			"Fiery Rage": {
+				upgrade_string: "Acorns set bloons on fire. Fire burns through lead and does damage over time",
+				health: 50,
+				max_health: 50,
+				range: 15,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_bigger_acorn_on_fire",
+						pierce: 6,
+						damage: 2,
+						speed: 18,
+						lifespan: 60,
+						fire: 1,
+						fire_time: 120,
+						lead_hit: true
+					}
+				],
 			}
 		},
 		"clown_monkey": {
@@ -596,7 +616,7 @@ function scr_setup_upgrade_stats(){
 						camo_detection: true
 					}
 				],
-				upgrade_string: "Throws spinning tops instead of marbles that pop much more bloons and can hit multiple times each."
+				upgrade_string: "Spinning tops have blades now which rapidly shred bloons."
 			}
 		},
 		"pogo_stick_monkey": {

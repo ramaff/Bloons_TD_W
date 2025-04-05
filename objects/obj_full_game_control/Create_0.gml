@@ -88,3 +88,23 @@ scr_load_game()
 
 scr_setup_global_vars()
 
+
+var _req_mission_prog = variable_struct_get(global.missions_complete, "bloon_academia")
+if _req_mission_prog.complete {
+	variable_struct_set(global.heroes_progress.angry_squirrel, "unlocked", true)
+}
+
+_req_mission_prog = variable_struct_get(global.missions_complete, "autumn_acres")
+if _req_mission_prog.complete {
+	variable_struct_set(global.towers_progress.assassin_monkey, "unlocked", true)
+}
+
+_req_mission_prog = variable_struct_get(global.missions_complete, "graveyard")
+if _req_mission_prog.complete {
+	variable_struct_set(global.towers_progress.haunted_monkey, "unlocked", true)
+}
+
+_req_mission_prog = variable_struct_get(global.missions_complete, "parade")
+if _req_mission_prog.complete {
+	variable_struct_set(global.heroes_progress.clown_monkey, "unlocked", true)
+}

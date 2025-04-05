@@ -1337,12 +1337,12 @@ function scr_setup_bloon_stats(){
 			"big_bloon_tier": 7,
 			"mini": {
 				sprite: "spr_moaby_dick",
-				layers: 6500,
-				rbe: 6500,
+				layers: 7000,
+				rbe: 7000,
 				damage: 500,
-				health: 8500,
+				health: 7000,
 				density: 1,
-				speed: 0.06,
+				speed: 0.03,
 			}
 		},
 		"animal": {

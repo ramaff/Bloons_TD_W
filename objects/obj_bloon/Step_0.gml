@@ -81,6 +81,26 @@ if variable_struct_exists(bloon_stats, "magic_marking") {
 	}
 }
 
+if variable_struct_exists(bloon_stats, "fire") {
+	bloon_stats.fire_time--;
+	
+	if bloon_stats.fire_time mod 30 = 0 {
+		var _projectile_stats = {
+			damage: 1,
+			pierce: 10,
+			tower_id: bloon_stats.fire_og_tower_id
+		}
+	
+		scr_bloon_hit(id, bloon_stats.class, _projectile_stats);
+	}
+	
+	if bloon_stats.fire_time <= 0 {
+		variable_struct_remove(bloon_stats, "fire")
+		variable_struct_remove(bloon_stats, "fire_time")
+		variable_struct_remove(bloon_stats, "fire_og_tower_id")
+	}
+}
+
 leak_frame = scr_track_end_bloon_check()
 
 

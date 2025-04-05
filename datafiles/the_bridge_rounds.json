@@ -7,8 +7,8 @@
 		{
 			"class": "normal",
 			"layer": "blue",
-			"count": 22,
-			"spread": 51,
+			"count": 30,
+			"spread": 54,
 			"cooldown": 0
 		}
 	],
@@ -20,58 +20,58 @@
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 12,
+			"count": 18,
 			"spread": 5,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 12,
+			"count": 18,
 			"spread": 5,
-			"cooldown": 120
+			"cooldown": 150
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 12,
+			"count": 18,
 			"spread": 5,
-			"cooldown": 240
+			"cooldown": 300
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 12,
+			"count": 18,
 			"spread": 5,
-			"cooldown": 360
+			"cooldown": 450
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 12,
-			"spread": 5,
-			"cooldown": 480
-		},
-		{
-			"class": "normal",
-			"layer": "red",
-			"count": 12,
+			"count": 18,
 			"spread": 5,
 			"cooldown": 600
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 12,
+			"count": 18,
 			"spread": 5,
-			"cooldown": 720
+			"cooldown": 750
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 12,
+			"count": 18,
 			"spread": 5,
-			"cooldown": 840
+			"cooldown": 900
+		},
+		{
+			"class": "normal",
+			"layer": "red",
+			"count": 18,
+			"spread": 5,
+			"cooldown": 1050
 		}
 	],
 	[
@@ -89,23 +89,23 @@
 		{
 			"class": "normal",
 			"layer": "blue",
-			"count": 8,
+			"count": 10,
 			"spread": 10,
-			"cooldown": 240
+			"cooldown": 300
 		},
 		{
 			"class": "normal",
 			"layer": "blue",
-			"count": 10,
+			"count": 12,
 			"spread": 10,
-			"cooldown": 480
+			"cooldown": 600
 		},
 		{
 			"class": "normal",
 			"layer": "blue",
-			"count": 10,
+			"count": 14,
 			"spread": 10,
-			"cooldown": 720
+			"cooldown": 900
 		},
 		{
 			"class": "water",
@@ -123,7 +123,7 @@
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 80,
+			"count": 100,
 			"spread": 15,
 			"cooldown": 0,
 			"properties": [
@@ -146,7 +146,7 @@
 		{
 			"class": "normal",
 			"layer": "blue",
-			"count": 40,
+			"count": 50,
 			"spread": 2,
 			"cooldown": 0,
 			"properties": [
@@ -162,35 +162,35 @@
 		{
 			"class": "normal",
 			"layer": "blue",
-			"count": 20,
+			"count": 25,
 			"spread": 2,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "blue",
-			"count": 20,
+			"count": 25,
 			"spread": 2,
 			"cooldown": 360
 		},
 		{
 			"class": "normal",
 			"layer": "blue",
-			"count": 20,
+			"count": 25,
 			"spread": 2,
 			"cooldown": 720
 		},
 		{
 			"class": "normal",
 			"layer": "green",
-			"count": 10,
+			"count": 20,
 			"spread": 2,
 			"cooldown": 1080
 		},
 		{
 			"class": "normal",
 			"layer": "blue",
-			"count": 30,
+			"count": 40,
 			"spread": 2,
 			"cooldown": 1440
 		}
@@ -203,8 +203,8 @@
 		{
 			"class": "splitter",
 			"layer": "cyan",
-			"count": 28,
-			"spread": 50,
+			"count": 35,
+			"spread": 54,
 			"cooldown": 0
 		},
 		{
@@ -223,7 +223,7 @@
 		{
 			"class": "normal",
 			"layer": "blue",
-			"count": 80,
+			"count": 120,
 			"spread": 20,
 			"cooldown": 0,
 			"properties": [
@@ -246,14 +246,14 @@
 		{
 			"class": "deflation",
 			"layer": "blue",
-			"count": 10,
+			"count": 12,
 			"spread": 120,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "blue",
-			"count": 90,
+			"count": 120,
 			"spread": 18,
 			"cooldown": 0
 		},
@@ -273,7 +273,7 @@
 		{
 			"class": "splitter",
 			"layer": "cyan",
-			"count": 30,
+			"count": 35,
 			"spread": 3,
 			"cooldown": 0,
 			"properties": [
@@ -289,23 +289,23 @@
 		{
 			"class": "normal",
 			"layer": "yellow",
-			"count": 15,
+			"count": 20,
 			"spread": 4,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "yellow",
-			"count": 15,
+			"count": 20,
 			"spread": 4,
-			"cooldown": 400
+			"cooldown": 450
 		},
 		{
 			"class": "normal",
 			"layer": "yellow",
-			"count": 15,
+			"count": 20,
 			"spread": 4,
-			"cooldown": 800
+			"cooldown": 900
 		},
 		{
 			"class": "water",
@@ -323,15 +323,15 @@
 		{
 			"class": "deflation",
 			"layer": "blue",
-			"count": 20,
+			"count": 30,
 			"spread": 90,
 			"cooldown": 0
 		},
 		{
 			"class": "splitter",
 			"layer": "cyan",
-			"count": 80,
-			"spread": 23,
+			"count": 100,
+			"spread": 27,
 			"cooldown": 0
 		},
 		{
@@ -357,8 +357,8 @@
 		{
 			"class": "splitter",
 			"layer": "lime",
-			"count": 45,
-			"spread": 28,
+			"count": 55,
+			"spread": 30,
 			"cooldown": 0
 		},
 		{
@@ -377,15 +377,15 @@
 		{
 			"class": "splitter",
 			"layer": "amber",
-			"count": 25,
+			"count": 33,
 			"spread": 40,
 			"cooldown": 0
 		},
 		{
 			"class": "deflation",
 			"layer": "blue",
-			"count": 15,
-			"spread": 30,
+			"count": 18,
+			"spread": 35,
 			"cooldown": 1080
 		}
 	],
@@ -397,7 +397,7 @@
 		{
 			"class": "deflation",
 			"layer": "blue",
-			"count": 30,
+			"count": 35,
 			"spread": 10,
 			"cooldown": 0
 		}
@@ -410,23 +410,23 @@
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 20,
+			"count": 25,
 			"spread": 10,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 30,
+			"count": 35,
 			"spread": 10,
-			"cooldown": 400
+			"cooldown": 450
 		},
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 40,
+			"count": 45,
 			"spread": 10,
-			"cooldown": 800
+			"cooldown": 900
 		},
 		{
 			"class": "water",
@@ -444,23 +444,23 @@
 		{
 			"class": "normal",
 			"layer": "zebra",
-			"count": 10,
-			"spread": 5,
+			"count": 12,
+			"spread": 10,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "zebra",
-			"count": 12,
-			"spread": 5,
-			"cooldown": 400
+			"count": 14,
+			"spread": 10,
+			"cooldown": 500
 		},
 		{
 			"class": "normal",
 			"layer": "zebra",
-			"count": 14,
-			"spread": 5,
-			"cooldown": 800
+			"count": 16,
+			"spread": 10,
+			"cooldown": 1000
 		},
 		{
 			"class": "water",
@@ -478,14 +478,14 @@
 		{
 			"class": "splitter",
 			"layer": "purple",
-			"count": 30,
-			"spread": 40,
+			"count": 35,
+			"spread": 45,
 			"cooldown": 0
 		},
 		{
 			"class": "deflation",
 			"layer": "green",
-			"count": 12,
+			"count": 18,
 			"spread": 30,
 			"cooldown": 1280
 		}
@@ -498,28 +498,28 @@
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 4,
+			"count": 5,
 			"spread": 45,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 5,
+			"count": 6,
 			"spread": 45,
-			"cooldown": 400
+			"cooldown": 600
 		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 5,
+			"count": 7,
 			"spread": 45,
-			"cooldown": 800
+			"cooldown": 1200
 		},
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 100,
+			"count": 150,
 			"spread": 8,
 			"cooldown": 1300,
 			"properties": [
@@ -555,7 +555,7 @@
 		{
 			"class": "deflation",
 			"layer": "yellow",
-			"count": 20,
+			"count": 25,
 			"spread": 40,
 			"cooldown": 0
 		}
@@ -568,7 +568,7 @@
 		{
 			"class": "normal",
 			"layer": "yellow",
-			"count": 180,
+			"count": 240,
 			"spread": 2,
 			"cooldown": 0,
 			"properties": [
@@ -584,8 +584,8 @@
 		{
 			"class": "normal",
 			"layer": "zebra",
-			"count": 45,
-			"spread": 18,
+			"count": 55,
+			"spread": 15,
 			"cooldown": 0
 		},
 		{
@@ -618,7 +618,7 @@
 		{
 			"class": "splitter",
 			"layer": "amber",
-			"count": 48,
+			"count": 60,
 			"spread": 5,
 			"cooldown": 1350,
 			"properties": [
@@ -654,8 +654,8 @@
 		{
 			"class": "deflation",
 			"layer": "pink",
-			"count": 35,
-			"spread": 45,
+			"count": 45,
+			"spread": 40,
 			"cooldown": 0
 		},
 		{
@@ -694,7 +694,7 @@
 		{
 			"class": "normal",
 			"layer": "zebra",
-			"count": 90,
+			"count": 100,
 			"spread": 12,
 			"cooldown": 0,
 			"properties": [
@@ -717,7 +717,7 @@
 		{
 			"class": "deflation",
 			"layer": "pink",
-			"count": 60,
+			"count": 75,
 			"spread": 20,
 			"cooldown": 0
 		},

@@ -116,6 +116,8 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	
 	if variable_struct_exists(_bloon.bloon_stats, "tattered") {
 		_bloon.bloon_stats.speed = _bloon.bloon_stats.speed * 2
+		_bloon.speed = _bloon.bloon_stats.speed
+		_bloon.path_speed = _bloon.speed
 		//variable_struct_set(_bloon.bloon_stats, "tattered_sprite", _class_stats.tattered_sprite)
 	}
 	if variable_struct_exists(_bloon.bloon_stats, "shielded") {

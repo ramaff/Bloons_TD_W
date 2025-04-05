@@ -3,8 +3,8 @@
 function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 
 	var _anger_boost = {
-		fire_rate_boost_multiplier: 4,
-		range_boost: 30,
+		fire_rate_boost_multiplier: 5,
+		range_boost: 45,
 		boost_duration: 180,
 		sprite: "spr_angry_squirrel_angry",
 		sprite_priority: 2

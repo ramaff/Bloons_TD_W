@@ -30,6 +30,9 @@ if variable_struct_exists(bloon_stats, "goop") {
 		draw_sprite(asset_get_index(bloon_stats.goop_sprite), image_index, x, y)	
 	} 
 }
+if variable_struct_exists(bloon_stats, "fire") {
+	draw_sprite(spr_bloon_on_fire, round((bloon_stats.fire_time / 5) mod 2), x, y)	
+}
 if variable_struct_exists(bloon_stats, "magic_marking") {
 	if bloon_stats.magic_marking >= 5 {
 		draw_sprite(spr_deep_bloon_marking, image_index, x, y)

@@ -16,7 +16,7 @@ function scr_setup_tower_stats(){
 			max_health: 200,
 			abilities: {
 				"Power Dart": {
-					"charge_time": 20,
+					"charge_time": 30,
 					"charge": 0,
 					"max_charges": 3,
 					"charges": 3,
@@ -37,15 +37,15 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "stronger",
-						upgrade_cost: 120
-					}, 
-					{
-						keyword: "stronger",
 						upgrade_cost: 140
 					}, 
 					{
 						keyword: "stronger",
 						upgrade_cost: 170
+					}, 
+					{
+						keyword: "stronger",
+						upgrade_cost: 200
 					}
 				],
 				[
@@ -153,7 +153,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Venting",
-						upgrade_cost: 600
+						upgrade_cost: 400
 					}
 				]
 			],
@@ -165,7 +165,7 @@ function scr_setup_tower_stats(){
 					},
 					{	
 						keyword: "Fiery Rage",
-						upgrade_cost: 5400
+						upgrade_cost: 3900
 					}
 				],
 				[
@@ -244,7 +244,7 @@ function scr_setup_tower_stats(){
 			total_cost: 175,
 			upgrade_cost: 0,
 			range: 105,
-			delay: 60,
+			delay: 45,
 			attack_cooldown: 0,
 	
 			projectile_stats: [
