@@ -5,4 +5,5 @@
 // Inherit the parent event
 event_inherited();
 
-event_user(0)
+
+stored_health = 99999;

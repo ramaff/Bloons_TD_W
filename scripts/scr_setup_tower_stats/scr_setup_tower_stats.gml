@@ -221,7 +221,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Special Deliveries",
-						upgrade_cost: 750
+						upgrade_cost: 1500
 					}
 				]
 			],

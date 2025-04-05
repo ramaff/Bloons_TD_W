@@ -1422,11 +1422,11 @@ function scr_setup_bloon_stats(){
 				]
 			}
 		},
-		"tack": {
-			"sprite": "spr_tack_bloon",
-			"object": "obj_tack_bloon",
-			max_health: 1,
-			"pink": {
+		"clown": {
+			"tack": {
+				"sprite": "spr_tack_bloon",
+				"object": "obj_tack_bloon",
+				max_health: 1,
 				layers: 1,
 				index: 0,
 				rbe: 1,
@@ -1434,12 +1434,10 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 2
 			},
-		},
-		"bomb": {
-			"sprite": "spr_bomb_bloon",
-			"object": "obj_bomb_bloon",
-			max_health: 1,
-			"red": {
+			"bomb": {
+				"sprite": "spr_bomb_bloon",
+				"object": "obj_bomb_bloon",
+				max_health: 1,
 				layers: 1,
 				index: 0,
 				rbe: 1,
@@ -1447,12 +1445,10 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 2.5
 			},
-		},
-		"ice": {
-			"sprite": "spr_ice_bloon",
-			"object": "obj_ice_bloon",
-			max_health: 1,
-			"blue": {
+			"ice": {
+				"sprite": "spr_ice_bloon",
+				"object": "obj_ice_bloon",
+				max_health: 1,
 				layers: 1,
 				index: 0,
 				rbe: 1,
@@ -1460,6 +1456,17 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 1.5
 			},
+			"special_delivery": {
+				"sprite": "spr_special_deliveries_moab",
+				"object": "obj_special_deliveries_moab",
+				max_health: 50,
+				layers: 50,
+				index: 0,
+				rbe: 100,
+				health: 50,
+				density: 1,
+				speed: 2
+			}
 		},
 		"water": {
 			"sprite": "spr_water_bloon",

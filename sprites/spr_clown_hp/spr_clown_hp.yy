@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_clown_hp",
-  "bbox_bottom": 51,
+  "bbox_bottom": 55,
   "bbox_left": 0,
   "bbox_right": 124,
   "bbox_top": 8,

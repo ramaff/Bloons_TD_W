@@ -10,8 +10,8 @@ if stun > 0 {
 	exit;
 }
 
-var _class = "ice"
-var _layer = "blue"
+var _class = "clown"
+var _layer = "ice"
 var _path = global.paths[irandom(array_length(global.paths) - 1)]
 var _properties = []
 var _round_number = -1

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_beehive_bloon",
+  "name": "obj_special_deliveries_moab",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Special Class Bloons",
-    "path": "folders/Objects/Bloons/Special Class Bloons.yy",
+    "name": "Clown Bloons",
+    "path": "folders/Objects/Bloons/Clown Bloons.yy",
   },
   "parentObjectId": {
     "name": "obj_bloon",
@@ -35,8 +35,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_beehive_bloon",
-    "path": "sprites/spr_beehive_bloon/spr_beehive_bloon.yy",
+    "name": "spr_special_deliveries_moab",
+    "path": "sprites/spr_special_deliveries_moab/spr_special_deliveries_moab.yy",
   },
   "spriteMaskId": null,
   "visible": true,

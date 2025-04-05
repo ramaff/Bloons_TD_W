@@ -287,6 +287,18 @@ function scr_setup_upgrade_stats(){
 			"Increased Bloon Flow": {
 				upgrade_string: "Doubles bloon production."
 			},
+			"Special Deliveries": {
+				upgrade_string: "Spawn a special delivery moab that spawns lots of clown bloons.",
+				abilities: {
+					"Special Delivery": {
+						"charge_time": 45,
+						"charge": 45,
+						"max_charges": 1,
+						"charges": 0,
+						"ability_script": scr_special_delivery
+					}
+				}
+			}
 		},
 		"cactus_monkey": {
 			"pointy-er needles": {
