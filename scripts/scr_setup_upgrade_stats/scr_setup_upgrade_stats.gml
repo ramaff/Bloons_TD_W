@@ -16,7 +16,7 @@ function scr_setup_upgrade_stats(){
 				pierce: 1,
 				upgrade_string: "shoots poppier darts."
 			},
-			"split dart monkey": {
+			"Split Darts": {
 				range: 15,
 				health: 50,
 				max_health: 50,
@@ -89,7 +89,7 @@ function scr_setup_upgrade_stats(){
 				],
 				upgrade_string: "darts that shoot darts into more darts."
 			},
-			"splodey darts": {
+			"Splodey Darts": {
 				range: 20,
 				health: 50,
 				max_health: 50,
@@ -180,7 +180,7 @@ function scr_setup_upgrade_stats(){
 				range: 40,
 				upgrade_string: "Allows the sling monkey to pop camo bloons, and target further."
 			},
-			"long shot": {
+			"Long Shot": {
 				fire_rate_multiplier: 1.333,
 				range: -40,
 				tower_attack_script: scr_long_shot_boost,
@@ -309,7 +309,7 @@ function scr_setup_upgrade_stats(){
 				fire_rate_multiplier: 1.666,
 				upgrade_string: "Shoots out needles a lot faster."
 			},
-			"bandito": {
+			"Bandito": {
 				upgrade_script: scr_bandito,
 				fire_rate_multiplier: 1.333,
 				projectile_replacement: true,
@@ -705,7 +705,7 @@ function scr_setup_upgrade_stats(){
 				fire_rate_multiplier: 1.5,
 				upgrade_string: "Throws pineapples 50% faster."
 			},
-			"pineapple express": {
+			"Pineapple Express": {
 				upgrade_string: "Tosses a bunch of pineapples without aiming.",
 				attack_angle_offset: 0,
 				fire_rate_multiplier: 1.33,
@@ -991,7 +991,8 @@ function scr_setup_upgrade_stats(){
 								goop_time: 180,
 								image_angle: 0,
 								relative_depth: 30,
-								camo_detection: true
+								camo_detection: true,
+								lead_hit: true
 							},
 							{
 								sprite: "spr_goo_pool",
@@ -1008,7 +1009,8 @@ function scr_setup_upgrade_stats(){
 								goop_time: 180,
 								image_angle: 0,
 								relative_depth: 30,
-								camo_detection: true
+								camo_detection: true,
+								lead_hit: true
 							}
 						]
 					}

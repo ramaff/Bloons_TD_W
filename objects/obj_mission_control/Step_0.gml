@@ -71,7 +71,7 @@ if global.round >= array_length(global.bloon_sends) and !_bloons_remaining and i
 			var _tower_prog = variable_struct_get(global.towers_progress, _tower)
 			variable_struct_set(_tower_prog, "unlocked", true)
 			
-			with instance_create_depth(480, 600, -500, obj_world_map_note) {
+			with instance_create_depth(480, 600, -600, obj_world_map_note) {
 				text = "The " + _tower + " has joined your party"	
 			}
 		}
@@ -80,7 +80,7 @@ if global.round >= array_length(global.bloon_sends) and !_bloons_remaining and i
 			var _hero = global.added_heroes[_i]
 			var _hero_prog = variable_struct_get(global.heroes_progress, _hero)
 			variable_struct_set(_hero_prog, "unlocked", true)
-			with instance_create_depth(480, 600, -500, obj_world_map_note) {
+			with instance_create_depth(480, 600, -600, obj_world_map_note) {
 				text = "The " + _hero + " has joined your party"	
 			}
 		}

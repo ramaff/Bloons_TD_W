@@ -59,6 +59,23 @@ function scr_select_monkey(){
 			tower_stats.upgrade_count = [0, 0, 0]
 			all_bases = true;
 			
+			var _upgrades_progress = {}
+			
+			if variable_struct_exists(global.upgrades_progress, base_tower_id) {
+				_upgrades_progress = variable_struct_get(global.upgrades_progress, base_tower_id);
+			}
+			if variable_struct_exists(_upgrades_progress, "unlocked_paths") {
+				for(var _j = 0; _j < array_length(tower_stats.upgrades); _j++) {
+					var _current_path_upgrades = tower_stats.upgrades[_j]
+					if array_length(_current_path_upgrades) > 0 {
+						if !variable_struct_exists(_upgrades_progress.unlocked_paths, _current_path_upgrades[0].keyword) {
+							tower_stats.upgrades[_j] = [];
+						}
+					}
+				}
+			}
+			
+			
 			scr_select_monkey()
 		}
 	}

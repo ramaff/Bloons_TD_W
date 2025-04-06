@@ -41,6 +41,14 @@ if _track = "rm_the_forest" {
 if _track = "rm_tower_defense" {
 	global.added_towers = ["caster_monkey"]	
 }
+if _track = "rm_the_stronghold" {
+	var _req_mission_prog = variable_struct_get(global.missions_complete, "the_stronghold")
+	if !_req_mission_prog.complete {
+		if variable_struct_exists(global.upgrades_progress.jim, "unlocked_paths") {
+			variable_struct_set(global.upgrades_progress.jim.unlocked_paths, "Splodey Darts", {"unlocked_upgrades": 2})
+		}
+	}
+}
 
 global.pickable_tower_slots = 6 - array_length(global.added_towers)
 global.pickable_hero_slots = 3 - array_length(global.added_heroes)
@@ -50,20 +58,6 @@ global.pickable_hero_slots = 3 - array_length(global.added_heroes)
 
 global.towers_progress.selected = [];
 global.heroes_progress.selected = [];
-
-/*for(var _i = 0; _i < array_length(global.added_towers); _i++) {
-	var _ind = array_get_index(global.towers_progress.selected, global.added_towers[_i])
-	if _ind != 1 {
-		array_delete(global.towers_progress.selected, _ind, 1)
-	}
-}
-
-for(var _i = 0; _i < array_length(global.added_heroes); _i++) {
-	var _ind = array_get_index(global.heroes_progress.selected, global.added_heroes[_i])
-	if _ind != 1 {
-		array_delete(global.heroes_progress.selected, _ind, 1)
-	}
-} */
 
 with instance_create_depth(0, 0, depth - 1, obj_mission_briefing_menu) {
 	track_room = _track_room

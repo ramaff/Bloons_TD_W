@@ -28,7 +28,7 @@ function scr_power_dart(){
 			
 			if variable_struct_exists(tower_stats, "active_upgrades") {
 				for(var _j = 0; _j < _burst_count; _j++) {
-					if variable_struct_exists(tower_stats.active_upgrades, "splodey darts") {
+					if variable_struct_exists(tower_stats.active_upgrades, "Splodey Darts") {
 						_ability_stats_burst[_j].damage = _ability_stats_burst[_j].damage * _damage_multiplier;
 						_ability_stats_burst[_j].pierce = _ability_stats_burst[_j].pierce * 10;
 						_ability_stats_burst[_j].size = _ability_stats_burst[_j].size * 2.5;

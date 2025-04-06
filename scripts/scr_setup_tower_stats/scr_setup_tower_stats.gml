@@ -80,7 +80,7 @@ function scr_setup_tower_stats(){
 			split_upgrades: [
 				[
 					{
-						keyword: "splodey darts",
+						keyword: "Splodey Darts",
 						upgrade_cost: 3100
 					},
 					{
@@ -92,7 +92,7 @@ function scr_setup_tower_stats(){
 				],
 				[
 					{
-						keyword: "split dart monkey",
+						keyword: "Split Darts",
 						upgrade_cost: 2700
 					},
 					{
@@ -159,12 +159,12 @@ function scr_setup_tower_stats(){
 			],
 			split_upgrades: [
 				[
-					{
-						keyword: "Acorn Assault",
-						upgrade_cost: 2400
-					},
 					{	
 						keyword: "Fiery Rage",
+						upgrade_cost: 2400
+					},
+					{
+						keyword: "Acorn Assault",
 						upgrade_cost: 3900
 					}
 				],
@@ -277,7 +277,7 @@ function scr_setup_tower_stats(){
 			split_upgrades: [
 				[
 					{
-						keyword: "long shot",
+						keyword: "Long Shot",
 						upgrade_cost: 600
 					},
 					{
@@ -332,7 +332,7 @@ function scr_setup_tower_stats(){
 			split_upgrades: [
 				[
 					{
-						keyword: "bandito",
+						keyword: "Bandito",
 						upgrade_cost: 1200
 					},
 					{
@@ -572,7 +572,7 @@ function scr_setup_tower_stats(){
 				],
 				[
 					{
-						keyword: "pineapple express",
+						keyword: "Pineapple Express",
 						upgrade_cost: 900
 					},
 					{
