@@ -49,6 +49,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"bloon objects","folderPath":"folders/Sprites/bloons/bloon objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"bosses","folderPath":"folders/Sprites/bloons/bosses.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"chess bloons advanced","folderPath":"folders/Sprites/bloons/bosses/chess bloons advanced.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"clown","folderPath":"folders/Sprites/bloons/clown.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Effects","folderPath":"folders/Sprites/bloons/Effects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"icons","folderPath":"folders/Sprites/bloons/icons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Moab Class","folderPath":"folders/Sprites/bloons/Moab Class.yy",},
@@ -63,7 +64,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"world map","folderPath":"folders/Sprites/world map.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"clown","folderPath":"folders/Sprites/bloons/clown.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"autumn_acres_rounds.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -286,6 +286,7 @@
     {"id":{"name":"spr_angry_squirrel_angry","path":"sprites/spr_angry_squirrel_angry/spr_angry_squirrel_angry.yy",},},
     {"id":{"name":"scr_cactus_monkey_upgrades","path":"scripts/scr_cactus_monkey_upgrades/scr_cactus_monkey_upgrades.yy",},},
     {"id":{"name":"spr_jump_scare_explosion","path":"sprites/spr_jump_scare_explosion/spr_jump_scare_explosion.yy",},},
+    {"id":{"name":"spr_special_delivery_box","path":"sprites/spr_special_delivery_box/spr_special_delivery_box.yy",},},
     {"id":{"name":"spr_clown_monkey_hero_butt","path":"sprites/spr_clown_monkey_hero_butt/spr_clown_monkey_hero_butt.yy",},},
     {"id":{"name":"obj_straight_to_exit_bloon","path":"objects/obj_straight_to_exit_bloon/obj_straight_to_exit_bloon.yy",},},
     {"id":{"name":"obj_assassin_monkey","path":"objects/obj_assassin_monkey/obj_assassin_monkey.yy",},},

@@ -29,7 +29,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_special_delivery_box",
+    "path": "sprites/spr_special_delivery_box/spr_special_delivery_box.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

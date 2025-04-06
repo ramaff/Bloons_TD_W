@@ -1459,11 +1459,11 @@ function scr_setup_bloon_stats(){
 			"special_delivery": {
 				"sprite": "spr_special_deliveries_moab",
 				"object": "obj_special_deliveries_moab",
-				max_health: 50,
-				layers: 50,
+				max_health: 60,
+				layers: 60,
 				index: 0,
-				rbe: 100,
-				health: 50,
+				rbe: 60,
+				health: 60,
 				density: 1,
 				speed: 2
 			}
