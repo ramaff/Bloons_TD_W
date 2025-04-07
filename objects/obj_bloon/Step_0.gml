@@ -28,11 +28,13 @@ if variable_struct_exists(bloon_stats, "float to track") {
 			array_delete(bloon_stats.properties, _index, 1)
 		}
 		
-		path_start(bloon_stats.path, bloon_stats.speed, path_action_stop, true)
-		path_position = target.path_position
-		x = path_get_x(bloon_stats.path, path_position);
-		y = path_get_y(bloon_stats.path, path_position);
-		path_speed = bloon_stats.speed
+		if bloon_stats.path != -1 {
+			path_start(bloon_stats.path, bloon_stats.speed, path_action_stop, true)
+			path_position = target.path_position
+			x = path_get_x(bloon_stats.path, path_position);
+			y = path_get_y(bloon_stats.path, path_position);
+			path_speed = bloon_stats.speed
+		}
 		
 		if instance_exists(target) {
 			instance_destroy(target)	

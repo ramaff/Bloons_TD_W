@@ -84,13 +84,18 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	} else if variable_struct_exists(_bloon.bloon_stats, "float to track") {
 		var _target = instance_create_depth(_bloon.x, _bloon.y, depth, obj_bloon_target);
 		with(_target) {
-			path_start(_path, _bloon.path_speed / 10, path_action_stop, true);
-			path_position = _bloon.path_position * 0.8
-			//speed = _bloon.speed / 5;
-			path_speed = _bloon.bloon_stats.speed / 10;
-			speed = path_speed
-			x = path_get_x(_path, 0)
-			y = path_get_y(_path, 0)
+			if _path != -1 {
+				path_start(_path, _bloon.path_speed / 10, path_action_stop, true);
+				path_position = _bloon.path_position * 0.8
+				//speed = _bloon.speed / 5;
+				path_speed = _bloon.bloon_stats.speed / 10;
+				speed = path_speed
+				x = path_get_x(_path, 0)
+				y = path_get_y(_path, 0)
+			} else {
+				x = _xx;
+				y = _yy;
+			}
 		}
 		with(_bloon) {
 			target = _target

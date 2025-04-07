@@ -28,18 +28,18 @@ if instance_exists(target) {
 	var _pos = target.path_position;
 	
 	with instance_create_depth(_xx, _yy, depth, _bloon_object) {
-		scr_bloon_stat_setup(id, _class, _layer, _path, _properties, _round)
+		scr_bloon_stat_setup(id, _class, _layer, _path, _properties, _round, _xx, _yy)
 		path_position = _pos
-		x = path_get_x(_path, path_position);
-		y = path_get_y(_path, path_position);
 		bloon_stats.vertical_speed += 2 + random(4);
 		bloon_stats.float_height += 10;
 		
 		if instance_exists(target) {
 			target.path_position = _pos	* 0.7;
-			target.x = path_get_x(bloon_stats.path, path_position);
-			target.y = path_get_y(bloon_stats.path, path_position);
-				
+			if bloon_stats.path != -1 {
+				target.x = path_get_x(bloon_stats.path, path_position);
+				target.y = path_get_y(bloon_stats.path, path_position);
+			}
+			
 			x = _xx;
 			y = _yy
 		}

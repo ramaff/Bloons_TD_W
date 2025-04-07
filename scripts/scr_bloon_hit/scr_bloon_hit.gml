@@ -288,8 +288,10 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			
 			if instance_exists(target) {
 				target.path_position = _pos	
-				target.x = path_get_x(_bloon.bloon_stats.path, path_position);
-				target.y = path_get_y(_bloon.bloon_stats.path, path_position);
+				if _bloon.bloon_stats.path != -1 {
+					target.x = path_get_x(_bloon.bloon_stats.path, path_position);
+					target.y = path_get_y(_bloon.bloon_stats.path, path_position);
+				}
 				
 				x = _xx;
 				y = _yy
