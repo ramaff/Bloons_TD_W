@@ -25,7 +25,13 @@ if !instance_exists(_target) {
 if hop_height <= 0 {
 	hop_height = 0;
 	hop_speed = max_hop_speed
-	scr_create_tower_projectiles(tower_stats.projectile_stats, x, y, _target, 0, {}, id)
+	
+	var _damage_keys = []
+	if variable_struct_exists(tower_stats, "damage_keys") {
+		_damage_keys = tower_stats.damage_keys	
+	}
+	
+	scr_create_tower_projectiles(tower_stats.projectile_stats, x, y, _target, 0, {}, id, targeting, _damage_keys)
 }
 
 direction = point_direction(x, y, _target.x, _target.y - hop_height);

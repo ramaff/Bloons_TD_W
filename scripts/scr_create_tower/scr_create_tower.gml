@@ -21,6 +21,7 @@ function scr_create_tower(_tower_id, _tower_stats){
 		}
 		
 		_id = id;
+		tower_base = noone;
 		
 		if variable_struct_exists(_tower_stats, "tower_base") {
 			with instance_create_depth(x, y, depth, obj_tower_base) {

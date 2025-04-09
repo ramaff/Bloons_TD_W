@@ -37,6 +37,7 @@ tower_stats = {
 	damage_keys: []
 }
 
+tower_base = noone;
 all_bases = false
 stun = 0;
 targeting = "first";

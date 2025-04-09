@@ -220,7 +220,13 @@ if global.round > saved_round {
 	}
 	
 	with(obj_monkey) {
-		if point_distance(x, y, _picked_piece.id.x, _picked_piece.id.y) < 40 {
+		if instance_exists(tower_base) {
+			if point_distance(tower_base.x, tower_base.y, _picked_piece.id.x, _picked_piece.id.y) < 40 {
+				stun += _picked_piece.id.bloon_stats.max_health;
+				tower_base.y -= _picked_piece.y
+				tower_base.x -= _picked_piece.x
+			}
+		} else if point_distance(x, y, _picked_piece.id.x, _picked_piece.id.y) < 40 {
 			stun += _picked_piece.id.bloon_stats.max_health;
 			y -= _picked_piece.y
 			x -= _picked_piece.x

@@ -51,6 +51,7 @@ if _hitable {
 	
 	if variable_struct_exists(projectile_stats, "bloon_pushback") and other.path_position < 1 {
 		var _backoff = projectile_stats.bloon_pushback / power(2, other.bloon_stats.big_bloon_tier);
+		_backoff = clamp(_backoff, 0, 1)
 		other.path_position -= _backoff;
 		if other.path_position < 0.01 {
 			other.path_position = 0.01	
