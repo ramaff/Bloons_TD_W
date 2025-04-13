@@ -23,6 +23,8 @@
     {"name":"inst_697F07BE","path":"rooms/rm_the_stronghold/rm_the_stronghold.yy",},
     {"name":"inst_454BD20C","path":"rooms/rm_the_stronghold/rm_the_stronghold.yy",},
     {"name":"inst_786EF47E","path":"rooms/rm_the_stronghold/rm_the_stronghold.yy",},
+    {"name":"inst_5A4D5077","path":"rooms/rm_the_stronghold/rm_the_stronghold.yy",},
+    {"name":"inst_3CA38A5D","path":"rooms/rm_the_stronghold/rm_the_stronghold.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -43,6 +45,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_71ABB2AF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pawn_chess_bloon","path":"objects/obj_pawn_chess_bloon/obj_pawn_chess_bloon.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":432.0,"y":304.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6BBB5079","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pawn_chess_bloon","path":"objects/obj_pawn_chess_bloon/obj_pawn_chess_bloon.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":496.0,"y":240.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1C7A6730","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pawn_chess_bloon","path":"objects/obj_pawn_chess_bloon/obj_pawn_chess_bloon.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":560.0,"y":240.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5A4D5077","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_non_placeable_tile","path":"objects/obj_non_placeable_tile/obj_non_placeable_tile.yy",},"properties":[],"rotation":0.0,"scaleX":24.0,"scaleY":9.0,"x":208.0,"y":128.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3CA38A5D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_non_placeable_tile","path":"objects/obj_non_placeable_tile/obj_non_placeable_tile.yy",},"properties":[],"rotation":0.0,"scaleX":8.0,"scaleY":4.0,"x":336.0,"y":272.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_28B6E27F","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_the_stronghold_track","path":"sprites/spr_the_stronghold_track/spr_the_stronghold_track.yy",},"x":0.0,"y":60.0,},

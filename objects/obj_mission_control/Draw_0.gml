@@ -9,13 +9,13 @@ draw_text_ext_color(880, 24, floor(global.money), 18, 128, c_black, c_black, c_b
 //draw_sprite(spr_lives_icon, 0, 816, 48)
 //draw_text_ext_color(880, 64, global.lives, 18, 128, c_black, c_black, c_black, c_black, 1)
 
-scr_draw_outline_text(16, 4, "Round")
-scr_draw_outline_text(72, 4, string(global.round) + "/" + string(array_length(global.bloon_sends)))
-scr_draw_outline_text(16, 32, scr_timer_string(global.total_time))
+scr_draw_outline_text(144, 4, "Round")
+scr_draw_outline_text(200, 4, string(global.round) + "/" + string(array_length(global.bloon_sends)))
+scr_draw_outline_text(144, 32, scr_timer_string(global.total_time))
 
 var _panels = min(5, array_length(global.bloon_sends) - global.round);
 var _gap = global.round_gap / 6;
-var _xx = 100;
+var _xx = 228;
 
 if global.round = 0 {
 	_gap = 80;	
