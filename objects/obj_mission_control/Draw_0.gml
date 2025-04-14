@@ -10,7 +10,7 @@ draw_text_ext_color(880, 24, floor(global.money), 18, 128, c_black, c_black, c_b
 //draw_text_ext_color(880, 64, global.lives, 18, 128, c_black, c_black, c_black, c_black, 1)
 
 scr_draw_outline_text(144, 4, "Round")
-scr_draw_outline_text(200, 4, string(global.round) + "/" + string(array_length(global.bloon_sends)))
+scr_draw_outline_text(208, 4, string(global.round) + "/" + string(array_length(global.bloon_sends)))
 scr_draw_outline_text(144, 32, scr_timer_string(global.total_time))
 
 var _panels = min(5, array_length(global.bloon_sends) - global.round);

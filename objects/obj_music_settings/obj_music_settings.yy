@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_sfx_settings",
+  "name": "obj_music_settings",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_sound_setting",
-    "path": "sprites/spr_sound_setting/spr_sound_setting.yy",
+    "name": "spr_music_setting",
+    "path": "sprites/spr_music_setting/spr_music_setting.yy",
   },
   "spriteMaskId": null,
   "visible": true,

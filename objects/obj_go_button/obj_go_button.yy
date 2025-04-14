@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Menu UI",
-    "path": "folders/Objects/Menu UI.yy",
+    "name": "settings",
+    "path": "folders/Objects/Menu UI/settings.yy",
   },
   "parentObjectId": null,
   "persistent": false,
