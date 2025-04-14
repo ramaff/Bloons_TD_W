@@ -135,6 +135,9 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	if variable_struct_exists(_bloon.bloon_stats, "big_bloon_tier") {
 		_bloon.depth = -(10 * _bloon.bloon_stats.big_bloon_tier)
 	}
+	if variable_struct_exists(_bloon.bloon_stats, "depth") {
+		_bloon.depth = _bloon.bloon_stats.depth
+	}
 	if !variable_struct_exists(_bloon.bloon_stats, "max_health") {
 		_bloon.bloon_stats.max_health = _bloon.bloon_stats.health;
 	}

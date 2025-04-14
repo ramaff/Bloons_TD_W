@@ -1729,6 +1729,7 @@ function scr_setup_bloon_stats(){
 				health: 1500,
 				density: 1,
 				speed: 1,
+				depth: -40
 			},
 			"knight": {
 				"object": "obj_knight_chess_bloon",
@@ -1740,6 +1741,7 @@ function scr_setup_bloon_stats(){
 				health: 2500,
 				density: 1,
 				speed: 3.7,
+				depth: -40
 			},
 			"bishop": {
 				"object": "obj_bishop_chess_bloon",
@@ -1751,6 +1753,7 @@ function scr_setup_bloon_stats(){
 				health: 3500,
 				density: 1,
 				speed: 0.8,
+				depth: -40
 			},
 			"rook": {
 				"object": "obj_rook_chess_bloon",
@@ -1762,6 +1765,7 @@ function scr_setup_bloon_stats(){
 				health: 3500,
 				density: 1,
 				speed: 0.25,
+				depth: -40,
 				children: [
 					{"class": "ceramic", "layer": "tower"},
 					{"class": "ceramic", "layer": "tower"},
@@ -1777,6 +1781,7 @@ function scr_setup_bloon_stats(){
 				health: 3000,
 				density: 1,
 				speed: 1,
+				depth: -40
 			},
 			"king": {
 				"object": "obj_king_chess_bloon",
@@ -1788,6 +1793,7 @@ function scr_setup_bloon_stats(){
 				health: 7500,
 				density: 1,
 				speed: 0.5,
+				depth: -40
 			}
 		}
 	}
