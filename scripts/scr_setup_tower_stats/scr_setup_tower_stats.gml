@@ -627,7 +627,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Shadow Clones",
-						upgrade_cost: 2900
+						upgrade_cost: 2990
 					}
 				]
 			]

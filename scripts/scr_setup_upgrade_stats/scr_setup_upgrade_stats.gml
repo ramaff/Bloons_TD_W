@@ -5,16 +5,16 @@ function scr_setup_upgrade_stats(){
 		"jim": {
 			"darter": {
 				shot_count: 1,
-				upgrade_string: "shoots more darts."
+				upgrade_string: "Shoots one more dart and one more super dart."
 			},
 			"faster": {
 				fire_rate_multiplier: 1.167,
 				ability_charge_multiplier: 1.167,
-				upgrade_string: "shoots more often."
+				upgrade_string: "Shoots 16% faster. Super Dart recharges 16% faster."
 			},
 			"stronger": {
 				pierce: 1,
-				upgrade_string: "shoots poppier darts."
+				upgrade_string: "Darts pop 1 extra bloon. Super Dart pops 50 extra bloons and does +1 damage."
 			},
 			"Split Darts": {
 				range: 15,
@@ -87,7 +87,7 @@ function scr_setup_upgrade_stats(){
 						]
 					}
 				],
-				upgrade_string: "darts that shoot darts into more darts."
+				upgrade_string: "Darts that shoot darts into more darts."
 			},
 			"Splodey Darts": {
 				range: 20,
@@ -173,7 +173,7 @@ function scr_setup_upgrade_stats(){
 			"stone skipping": {
 				pierce: 2,
 				lifespan: 32,
-				upgrade_string: "stones skip and pop 2 more bloons."
+				upgrade_string: "Stones skip and pop 2 more bloons."
 			},
 			"sharp sight": {
 				camo_detection: true,
@@ -291,8 +291,8 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Spawn a special delivery moab that spawns lots of clown bloons.",
 				abilities: {
 					"Special Delivery": {
-						"charge_time": 45,
-						"charge": 45,
+						"charge_time": 30,
+						"charge": 30,
 						"max_charges": 1,
 						"charges": 0,
 						"ability_script": scr_special_delivery
@@ -346,7 +346,7 @@ function scr_setup_upgrade_stats(){
 						}
 					}
 				],
-				upgrade_string: "Shoots from a gun"
+				upgrade_string: "Shoots from two guns. Increased range and firerate."
 			},
 			"needle storm": {
 				fire_rate_multiplier: 6,
@@ -384,7 +384,7 @@ function scr_setup_upgrade_stats(){
 						}
 					}
 				],
-				upgrade_string: "Shoots from a gun"
+				upgrade_string: "Shoots very rapidly from it's guns."
 			}
 		},
 		"marbles_monkey": {
@@ -650,7 +650,7 @@ function scr_setup_upgrade_stats(){
 			"Drill": {
 				tower_sprite: "spr_drill_monkey",
 				upgrade_script: scr_drill,
-				upgrade_string: "Shreds everything under it",
+				upgrade_string: "Shreds everything under it. Can also pop lead.",
 				projectile_replacement: true,
 				projectile_stats: [
 					{
@@ -836,13 +836,13 @@ function scr_setup_upgrade_stats(){
 				fire_rate_multiplier: 1.333,
 				range: 40,
 				upgrade_script: scr_upgrade_ghost_monkeys,
-				upgrade_string: "The monkey gets haunted by three ghosts."
+				upgrade_string: "Ghosts chase after bloons across the entire track."
 			},
 			"Jump Scare": {
 				fire_rate_multiplier: 1.666,
 				range: 40,
 				upgrade_script: scr_upgrade_ghost_monkeys,
-				upgrade_string: "The ghosts jump scare bloons, causing them to quickly move backwards.",
+				upgrade_string: "The ghosts jump scare bloons in a small area, causing them to quickly move backwards. The jumpscares can pop lead.",
 				additional_attacks: [
 					{
 						delay: 60,
@@ -969,7 +969,7 @@ function scr_setup_upgrade_stats(){
 				fire_rate_multiplier: 1.666,
 				camo_detection: true,
 				range: 20,
-				upgrade_string: "Covers the nearby track with a goo pool that causes projectiles to stick to the ground for a long time.",
+				upgrade_string: "Covers the nearby track with a goo pool that causes projectiles to stick to the ground for a long time. Pools pop camo and lead.",
 				additional_attacks: [
 					{
 						delay: 240,

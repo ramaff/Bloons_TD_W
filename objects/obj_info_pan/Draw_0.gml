@@ -4,7 +4,7 @@
 
 draw_self()
 
-draw_text_ext_color(x + 64, y + 48, text, 18, 128, c_black, c_black, c_black, c_black, 1)
+draw_text_ext_color(x + 64, y + 48, text, 18, 176, c_black, c_black, c_black, c_black, 1)
 
 
 
