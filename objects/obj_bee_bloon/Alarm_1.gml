@@ -3,8 +3,10 @@
 
 alarm[1] = 15;
 
-var _tar_angle = point_direction(x, y, target.x, target.y)
-direction = _tar_angle - 60 + random(120);
+if instance_exists(target) {
+	var _tar_angle = point_direction(x, y, target.x, target.y)
+	direction = _tar_angle - 60 + random(120);
+}
 
 var _speed_fac = 3 + (3 - (3 * (bloon_stats.health / bloon_stats.max_health)))
 

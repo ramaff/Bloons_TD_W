@@ -348,7 +348,7 @@ function scr_setup_tower_stats(){
 			total_cost: 450,
 			upgrade_cost: 0,
 			range: 95,
-			delay: 65,
+			delay: 59,
 			attack_cooldown: 0,
 			camo_detection: true,
 	
