@@ -347,7 +347,7 @@ function scr_setup_tower_stats(){
 			butt_sprite: "spr_marbles_monkey_tower_butt",
 			total_cost: 450,
 			upgrade_cost: 0,
-			range: 95,
+			range: 155,
 			delay: 59,
 			attack_cooldown: 0,
 			camo_detection: true,
@@ -358,7 +358,7 @@ function scr_setup_tower_stats(){
 					pierce: 2,
 					damage: 1,
 					speed: 8,
-					lifespan: 90,
+					lifespan: 120,
 					friction: 0.2,
 					image_angle: 0,
 					camo_detection: true
@@ -369,7 +369,7 @@ function scr_setup_tower_stats(){
 					damage: 1,
 					speed: 6,
 					direction: -30,
-					lifespan: 90,
+					lifespan: 120,
 					friction: 0.2,
 					image_angle: 0,
 					camo_detection: true
@@ -380,7 +380,7 @@ function scr_setup_tower_stats(){
 					damage: 1,
 					speed: 6,
 					direction: 30,
-					lifespan: 90,
+					lifespan: 120,
 					friction: 0.2,
 					image_angle: 0,
 					camo_detection: true
