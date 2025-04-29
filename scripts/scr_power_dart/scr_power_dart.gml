@@ -22,27 +22,28 @@ function scr_power_dart(){
 			_ability_stats[_i].sprite = "spr_big_dartest_dart"
 		}
 		_ability_stats[_i].lifespan = _ability_stats[_i].lifespan * 2;
-		if variable_struct_exists(_ability_stats[_i], "projectile_burst") {
-			var _ability_stats_burst = _ability_stats[_i].projectile_burst
-			var _burst_count = array_length(_ability_stats_burst)
+		if variable_struct_exists(tower_stats, "active_upgrades") {
+			if variable_struct_exists(tower_stats.active_upgrades, "carpet bombing") {
+				var _ability_stats_burst_extra = _ability_stats[_i].extra_shots[0]
+				_ability_stats_burst_extra.sprite = "spr_bomb"
+				_ability_stats_burst_extra.pierce = _ability_stats_burst_extra.pierce * 50;
+				var _ability_stats_burst_burst = _ability_stats_burst_extra.projectile_burst[0]
+				_ability_stats_burst_burst.damage = _ability_stats_burst_burst.damage * _damage_multiplier;
+				_ability_stats_burst_burst.pierce = _ability_stats_burst_burst.pierce * 50;
+				_ability_stats_burst_burst.size = _ability_stats_burst_burst.size * 3.25;
+			}
+			if variable_struct_exists(_ability_stats[_i], "projectile_burst") {
+				var _ability_stats_burst = _ability_stats[_i].projectile_burst
+				var _burst_count = array_length(_ability_stats_burst)
 			
-			if variable_struct_exists(tower_stats, "active_upgrades") {
-				for(var _j = 0; _j < _burst_count; _j++) {
-					if variable_struct_exists(tower_stats.active_upgrades, "Splodey Darts") {
-						_ability_stats_burst[_j].damage = _ability_stats_burst[_j].damage * _damage_multiplier;
-						_ability_stats_burst[_j].pierce = _ability_stats_burst[_j].pierce * 10;
-						_ability_stats_burst[_j].size = _ability_stats_burst[_j].size * 2.5;
-						if variable_struct_exists(tower_stats.active_upgrades, "carpet bombing") {
-							_ability_stats_burst[_j].sprite = "spr_bomb"
-							var _ability_stats_burst_burst = _ability_stats_burst[_j].projectile_burst
-							var _burst_burst_count = array_length(_ability_stats_burst_burst)
-							for(var _k = 0; _k < _burst_burst_count; _k++) {
-								_ability_stats_burst[_j].damage = _ability_stats_burst[_j].damage * _damage_multiplier;
-								_ability_stats_burst[_j].pierce = _ability_stats_burst[_j].pierce * 10;
-								_ability_stats_burst[_j].size = _ability_stats_burst[_j].size * 2.5;
-							}
-						}
-					} else {
+
+				if variable_struct_exists(tower_stats.active_upgrades, "Splodey Darts") {
+					var _j = 0;
+					_ability_stats_burst[_j].damage = _ability_stats_burst[_j].damage * _damage_multiplier;
+					_ability_stats_burst[_j].pierce = _ability_stats_burst[_j].pierce * 50;
+					_ability_stats_burst[_j].size = _ability_stats_burst[_j].size * 3.25;
+				} else {
+					for(var _j = 0; _j < _burst_count; _j++) {
 						_ability_stats_burst[_j].damage = _ability_stats_burst[_j].damage * _damage_multiplier;
 						_ability_stats_burst[_j].pierce = _ability_stats_burst[_j].pierce * 50;
 						_ability_stats_burst[_j].sprite = "spr_big_dart"

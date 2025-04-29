@@ -14,6 +14,6 @@ if variable_struct_exists(projectile_stats.extra_shots[0], "aim_at_target") {
 	}
 }
 
-scr_create_tower_projectiles(projectile_stats.extra_shots, x, y, noone, _angle_offset, {}, projectile_stats.tower_id)
+scr_create_tower_projectiles(projectile_stats.extra_shots, x, y, noone, _angle_offset, {}, projectile_stats.tower_id, projectile_stats.targeting, projectile_stats.damage_keys)
 
 
