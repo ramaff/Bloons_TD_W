@@ -40,7 +40,6 @@ if global.round > saved_round {
 	if global.round > 35 {
 		saved_round -= 0.5;	
 	}
-	saved_round = min(saved_round, 48);
 	
 	// pick the closest bloon to the bottom
 	
@@ -194,12 +193,14 @@ if global.round > saved_round {
 	//_picked_piece = _picked_pieces[irandom(array_length(_picked_pieces)-1)]
 	if array_length(_picked_pieces_attackable) > 0 {
 		_picked_piece = _picked_pieces_attackable[saved_round mod array_length(_picked_pieces_attackable)]
-	}
-	if !instance_exists(_picked_piece) and array_length(_picked_pieces_moveable) > 0 {
+	} else if array_length(_picked_pieces_moveable) > 0 {
 		_picked_piece = _picked_pieces_moveable[saved_round mod array_length(_picked_pieces_moveable)]
 	}
 	
-	if !instance_exists(_picked_piece) {
+	if _picked_piece = noone {
+		exit	
+	}
+	if !instance_exists(_picked_piece.id) {
 		exit;
 	}
 	

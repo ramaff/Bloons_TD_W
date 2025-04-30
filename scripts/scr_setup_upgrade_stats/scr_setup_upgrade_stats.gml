@@ -1096,7 +1096,7 @@ function scr_setup_upgrade_stats(){
 						]
 					}
 				],
-				upgrade_string: "Applies deeper engravement, which causes bloons to eat up 10 less pierce when hit. Also gives +10 pierce to caster shots."
+				upgrade_string: "Shoots a mega caster bolt that spirals around for a long time, and rapidly shoots bolts at bloons."
 			}
 		},
 	}

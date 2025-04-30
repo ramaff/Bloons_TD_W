@@ -10,14 +10,26 @@ with instance_create_depth(x, y, depth, obj_heal_bloon_aura) {
 	image_xscale = 1.3;
 	image_yscale = 1.3;
 
-	heal_amount = 50;
+	heal_amount = 30;
 	heal_range = 70;
 
-	with(obj_bloon) {
-		if distance_to_point(other.x, other.y) < other.heal_range {
-			scr_bloon_regen(self, bloon_stats, other.heal_amount)	
+	if other.activated {
+		image_xscale = 2;
+		image_yscale = 2;
+
+		heal_range = 110;
+		with(obj_bloon) {
+			if distance_to_point(other.x, other.y) < other.heal_range {
+				scr_bloon_regen(self, bloon_stats, other.heal_amount)	
+			}
 		}
-	}	
+	} else {
+		with(obj_chess_piece_bloon) {
+			if distance_to_point(other.x, other.y) < other.heal_range {
+				scr_bloon_regen(self, bloon_stats, other.heal_amount)	
+			}
+		}	
+	}
 }
 
 

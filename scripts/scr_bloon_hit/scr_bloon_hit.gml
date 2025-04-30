@@ -302,6 +302,9 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 	}
 	
 	if _bloon.bloon_stats.health <= 0 {
+		if instance_exists(_bloon.target) {
+			instance_destroy(_bloon.target)	
+		}
 		instance_destroy(_bloon)
 		instance_create_depth(_xx, _yy, depth - 10, obj_pop)
 		exit;

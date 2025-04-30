@@ -7,7 +7,9 @@ if variable_struct_exists(bloon_stats, "float to track") {
 	
 	bloon_stats.float_height = abs(y - target.y)
 	
-	bloon_stats.vertical_speed -= bloon_stats.float_gravity
+	bloon_stats.vertical_speed -= max(bloon_stats.float_gravity, 0.01);
+	
+	//show_debug_message($"x: {x}, y: {y}, float_height: {bloon_stats.float_height}, bloon_stats.vertical_speed: {bloon_stats.vertical_speed}")
 	
 	if bloon_stats.vertical_speed <= 0 {
 		var _tar_angle = point_direction(x, y, target.x, target.y)

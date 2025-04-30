@@ -412,43 +412,6 @@ function scr_setup_tower_stats(){
 				]
 			]
 		},
-		"assassin_monkey": {
-			tower_sprite: "spr_cactus_monkey",
-			total_cost: 350,
-			upgrade_cost: 0,
-			range: 105,
-			delay: 60,
-			attack_cooldown: 0,
-	
-			projectile_stats: [
-				{
-					sprite: "spr_stone",
-					pierce: 2,
-					damage: 1,
-					speed: 8,
-					lifespan: 32,
-					height: 21,
-					lobbing: {
-						gravity: 1,
-						speed: 5
-					}
-				}
-			],
-			upgrades: [
-				[
-					{
-						keyword: "stone skipping",
-						upgrade_cost: 100
-					}
-				],
-				[
-					{
-						keyword: "sharp sight",
-						upgrade_cost: 150
-					}
-				]
-			]
-		},
 		"pogo_stick_monkey": {
 			tower_sprite: "spr_pogo_stick_monkey",
 			tower_object: "obj_pogo_stick_monkey",
@@ -586,7 +549,7 @@ function scr_setup_tower_stats(){
 			tower_sprite: "spr_assassin_monkey",
 			tower_object: "obj_assassin_monkey",
 			butt_sprite: "spr_assassin_tower_butt",
-			total_cost: 490,
+			total_cost: 590,
 			upgrade_cost: 0,
 			range: 240,
 			delay: 210,
@@ -600,7 +563,7 @@ function scr_setup_tower_stats(){
 				{
 					sprite: "spr_knife",
 					pierce: 25,
-					damage: 3,
+					damage: 4,
 					speed: 9,
 					friction: 1,
 					lifespan: 30
@@ -611,11 +574,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Twin Blades",
-						upgrade_cost: 400
+						upgrade_cost: 490
 					},
 					{
 						keyword: "Shadowy Sight",
-						upgrade_cost: 330
+						upgrade_cost: 420
 					}
 				]
 			],
@@ -623,11 +586,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Multi-Strikes",
-						upgrade_cost: 1330
+						upgrade_cost: 1590
 					},
 					{
 						keyword: "Shadow Clones",
-						upgrade_cost: 2990
+						upgrade_cost: 3990
 					}
 				]
 			]
