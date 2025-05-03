@@ -4,7 +4,7 @@ function scr_track_end_bloon_check(_bloon_stats = bloon_stats){
 	
 	var _straight_to_target_end = false
 	if variable_struct_exists(bloon_stats, "straight_to_exit") {
-		if point_distance(x, y, path_get_x(bloon_stats.path, 1), path_get_y(bloon_stats.path, 1)) < 10 {
+		if point_distance(x, y, path_get_x(bloon_stats.path, 1), path_get_y(bloon_stats.path, 1)) < (10 + speed) {
 			_straight_to_target_end = true;
 		}
 	}

@@ -14,10 +14,10 @@ with instance_create_depth(x, y, depth, obj_heal_bloon_aura) {
 	heal_range = 70;
 
 	if other.activated {
-		image_xscale = 2;
-		image_yscale = 2;
+		image_xscale = 3;
+		image_yscale = 3;
 
-		heal_range = 110;
+		heal_range = 170;
 		with(obj_bloon) {
 			if distance_to_point(other.x, other.y) < other.heal_range {
 				scr_bloon_regen(self, bloon_stats, other.heal_amount)	
