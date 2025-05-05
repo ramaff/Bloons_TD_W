@@ -17,6 +17,8 @@ with (selected_monkey) {
 	instance_destroy()
 }
 
+scr_play_sound(sell_tower)
+
 instance_destroy(obj_upgrade_butt)
 scr_create_tower_buttons()
 

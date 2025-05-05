@@ -11,6 +11,9 @@ if !instance_exists(selected_monkey) {
 if global.money >= upgrade_stats.upgrade_cost {
 	scr_upgrade_monkey(selected_monkey, upgrade_stats, path)
 	global.money -= upgrade_stats.upgrade_cost
+	
+	scr_play_sound(upgrade)
+	
 }
 
 with (selected_monkey) {

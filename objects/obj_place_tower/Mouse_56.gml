@@ -33,31 +33,9 @@ with instance_create_depth(x, y, depth, obj_tower_tile) {
 	y_offet = y - _tower_id.y;
 }
 
-//for(var _i = 0; _i < 4; _i++) {
-//	for(var _j = 0; _j < 4; _j++) {
-		/*with instance_create_depth(x - 32 + (_i * 16), y - 32 + (_j * 16), depth, obj_tower_tile) {
-			tower_id = _tower_id
-			x_offset = x - _tower_id.x;
-			y_offet = y - _tower_id.y;
-		}*/
-//	}
-//}
-
-/*repeat(25) {
-	var _tile = collision_rectangle(x - 31, y - 31, x + 17, y + 17, obj_placeable_tile, false, false) 
-	if _tile {
-		with(_tile) {
-			with instance_create_depth(x, y, depth, obj_tower_tile) {
-				tower_id = _tower_id
-				x_offset = x - _tower_id.x;
-				y_offet = y - _tower_id.y;
-			}
-			instance_destroy()
-		}
-	}
-} */
-
 global.money -= tower_stats.total_cost
+
+scr_play_sound(tower_place)
 
 if hero {
 	if instance_exists(button_id) {

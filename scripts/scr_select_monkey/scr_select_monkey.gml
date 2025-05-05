@@ -6,6 +6,8 @@ function scr_select_monkey(){
 		exit;
 	}
 	
+	scr_play_sound(tower_select)
+	
 	instance_destroy(obj_tower_butt)
 	instance_destroy(obj_upgrade_butt)
 	instance_destroy(obj_place_tower)
