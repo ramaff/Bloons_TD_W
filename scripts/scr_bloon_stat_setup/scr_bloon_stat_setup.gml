@@ -169,10 +169,10 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		with instance_create_depth(_xx, _yy, depth, obj_orbital_bloon) {
 			scr_bloon_stat_setup(id, "rune", "barrier", -1, [], -1)
 			speed = bloon_stats.speed;
-				
-			if instance_exists(target) {
-				instance_destroy(target)	
-			}
+			
+			//if instance_exists(target) {
+			//	instance_destroy(target)	
+			//}
 		
 			target = _bloon.id
 			bloon_stats.remaining_value = 0;

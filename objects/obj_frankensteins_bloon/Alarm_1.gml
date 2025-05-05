@@ -10,7 +10,9 @@ image_index = 1;
 
 var _projectile_stats = {
 	damage: 1,
-	pierce: 999999999
+	pierce: 999999999,
+	camo_detection: true,
+	lead_hit: true
 }
 
 //show_debug_message(bloon_stats.health)

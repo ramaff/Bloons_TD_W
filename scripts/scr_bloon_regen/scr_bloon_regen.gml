@@ -18,9 +18,7 @@ function scr_bloon_regen(_bloon = self, _bloon_stats = bloon_stats, _heal_amount
 			var _xx = x;
 			var _yy = y;
 			var _pos = path_position
-			if instance_exists(_bloon.target) {
-				instance_destroy(_bloon.target)	
-			}
+			
 			scr_bloon_stat_setup(_bloon, _class, _layer, _bloon_stats.path, _bloon_stats.properties, _bloon_stats.round)
 			
 			

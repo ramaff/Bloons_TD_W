@@ -92,7 +92,9 @@ if variable_struct_exists(bloon_stats, "fire") {
 		var _projectile_stats = {
 			damage: 1,
 			pierce: 10,
-			tower_id: bloon_stats.fire_og_tower_id
+			tower_id: bloon_stats.fire_og_tower_id,
+			camo_detection: true,
+			lead_hit: true
 		}
 	
 		scr_bloon_hit(id, bloon_stats.class, _projectile_stats);

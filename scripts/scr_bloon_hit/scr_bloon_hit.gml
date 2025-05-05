@@ -3,15 +3,13 @@
 
 function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone, _tower = noone) {
 	var _resulting_bloons = []
+	_damage = max(0, _damage)
+	if instance_exists(_tower) {
+		_tower.pop_count += min(_damage, _bloon_stats.health)
+	}
 	_bloon_stats.health -= _damage
 	
 	//show_debug_message("bloon stats:" + string(_bloon_stats))
-	
-	if _bloon_stats.health > 0 {
-		if instance_exists(_tower) {
-			_tower.pop_count += _damage
-		}	
-	}
 	
 	if _bloon_stats.health <= 0 {
 		
@@ -113,7 +111,7 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 	return _resulting_bloons
 }
 
-function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = projectile_stats) {
+function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = projectile_stats, _projectile = noone) {
 	
 	if variable_struct_exists(_bloon.bloon_stats, "shielded") {
 		if _bloon.bloon_stats.shielded {
@@ -124,7 +122,9 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			}
 			_projectile_stats.pierce -= 10;
 			if _projectile_stats.pierce <= 0 {
-				instance_destroy();	
+				if instance_exists(_projectile) {
+					instance_destroy(_projectile)
+				}
 			}
 			exit;
 		}
@@ -152,7 +152,9 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		}
 	}
 	if _stopped_by_lead {
-		instance_destroy()
+		if instance_exists(_projectile) {
+			instance_destroy(_projectile)
+		}
 		exit;
 	}
 	
@@ -188,7 +190,9 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 	}
 	
 	if _damage * _projectile_stats.pierce < _density {
-		instance_destroy();
+		if instance_exists(_projectile) {
+			instance_destroy(_projectile)
+		}
 		exit;
 	}
 	
@@ -302,9 +306,6 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 	}
 	
 	if _bloon.bloon_stats.health <= 0 {
-		if instance_exists(_bloon.target) {
-			instance_destroy(_bloon.target)	
-		}
 		instance_destroy(_bloon)
 		instance_create_depth(_xx, _yy, depth - 10, obj_pop)
 		exit;

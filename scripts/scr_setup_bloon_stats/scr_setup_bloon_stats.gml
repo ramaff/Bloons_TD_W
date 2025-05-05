@@ -697,7 +697,6 @@ function scr_setup_bloon_stats(){
 				index: 0,
 				rbe: 626,
 				health: 150,
-				max_health: 150,
 				density: 1,
 				speed: 1.5,
 				children: [

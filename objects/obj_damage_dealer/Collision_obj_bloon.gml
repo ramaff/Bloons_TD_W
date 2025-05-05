@@ -47,7 +47,7 @@ if variable_struct_get(other.bloon_stats.projectile_hits, id) != (real(id) + pro
 if _hitable {
 	variable_struct_set(other.bloon_stats.projectile_hits, id, real(id) + projectile_stats.id_offset)
 	//show_debug_message("damage dealer, other projectile hits: " + string(other.bloon_stats.projectile_hits))
-	scr_bloon_hit(other, other.bloon_stats.class, projectile_stats);
+	scr_bloon_hit(other, other.bloon_stats.class, projectile_stats, id);
 	
 	if variable_struct_exists(projectile_stats, "bloon_pushback") and other.path_position < 1 {
 		var _backoff = projectile_stats.bloon_pushback / power(2, other.bloon_stats.big_bloon_tier);

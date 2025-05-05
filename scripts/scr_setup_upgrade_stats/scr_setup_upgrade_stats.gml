@@ -932,7 +932,36 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Goo balls split when hitting bloons."
 			},
 			"Goo Cube": {
-				range: 10,
+				range: 20,
+				camo_detection: true,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						sprite: "spr_goop",
+						pierce: 4,
+						damage: 1,
+						speed: 13,
+						lifespan: 20,
+						goop: 1,
+						goop_time: 180,
+						camo_detection: true,
+						expire_burst_activation: true,
+						projectile_burst: [
+							{
+								projectile_count: 4,
+								projectile_spread: 90,
+								camo_detection: true,
+								sprite: "spr_goop",
+								pierce: 4,
+								damage: 1,
+								speed: 13,
+								lifespan: 10,
+								goop: 1,
+								goop_time: 180
+							},
+						]
+					}
+				],
 				additional_attacks: [
 					{
 						delay: 180,
@@ -945,10 +974,12 @@ function scr_setup_upgrade_stats(){
 								damage: 0,
 								speed: 20,
 								lifespan: 20,
+								camo_detection: true,
 								expire_burst_activation: true,
 								projectile_burst: [
 									{
 										sprite: "spr_goo_cube",
+										camo_detection: true,
 										pierce: 60,
 										damage: 1,
 										speed: 3,
@@ -963,7 +994,7 @@ function scr_setup_upgrade_stats(){
 						]
 					}
 				],
-				upgrade_string: "Puts bloons into goo cubes that block bloons from progressing further into the track."
+				upgrade_string: "Puts bloons into goo cubes that block bloons from progressing further into the track. Goo cubes block camo as well."
 			},
 			"Goo Pool": {
 				fire_rate_multiplier: 1.666,
