@@ -6,11 +6,8 @@ function scr_power_dart(){
 	var _proj_count = array_length(_ability_stats)
 	var _damage_multiplier = 3;
 	if variable_struct_exists(tower_stats, "active_upgrades") {
-		var _upgrades = array_length(tower_stats.active_upgrades)
-		for(var _k = 0; _k < _upgrades; _k++) {
-			if _tower_stats.active_upgrades[_k] == "stronger" {
-				_damage_multiplier += 1;	
-			}
+		if variable_struct_exists(tower_stats.active_upgrades, "stronger") {
+			_damage_multiplier += variable_struct_get(tower_stats.active_upgrades, "stronger");
 		}
 	}
 	

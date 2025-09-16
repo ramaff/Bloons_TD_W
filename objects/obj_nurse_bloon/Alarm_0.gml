@@ -3,7 +3,21 @@
 
 alarm[0] = 150;
 
-instance_create_depth(x, y, depth, obj_heal_bloon_aura)
+with instance_create_depth(x, y, depth, obj_heal_bloon_aura) {
+	alarm[0] = 20;
+
+	image_xscale = 2;
+	image_yscale = 2;
+
+	heal_amount = 1;
+	heal_range = 110;
+
+	with(obj_bloon) {
+		if distance_to_point(other.x, other.y) < other.heal_range {
+			scr_bloon_regen(self, bloon_stats, other.heal_amount)	
+		}
+	}
+}
 
 
 

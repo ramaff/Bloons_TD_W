@@ -9,10 +9,10 @@ image_yscale = 2;
 heal_amount = 1;
 heal_range = 110;
 
-with(obj_bloon) {
+/*with(obj_bloon) {
 	if distance_to_point(other.x, other.y) < other.heal_range {
 		scr_bloon_regen(self, bloon_stats, other.heal_amount)	
 	}
-}
+}*/
 
 

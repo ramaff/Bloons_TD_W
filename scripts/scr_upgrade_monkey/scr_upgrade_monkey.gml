@@ -10,7 +10,12 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 	if !variable_struct_exists(_tower_stats, "active_upgrades") {
 		_tower_stats.active_upgrades = {}
 	}
-	variable_struct_set(_tower_stats.active_upgrades, _upgrade_stats.keyword, true)
+	var _up_count = 1;
+	if variable_struct_exists(_tower_stats.active_upgrades, _upgrade_stats.keyword) {
+		_up_count = variable_struct_get(_tower_stats.active_upgrades, _upgrade_stats.keyword) + 1;
+	}
+	variable_struct_set(_tower_stats.active_upgrades, _upgrade_stats.keyword, _up_count)
+
 	
 	if !variable_struct_exists(_tower_stats, "abilities") {
 		_tower_stats.abilities = {}
