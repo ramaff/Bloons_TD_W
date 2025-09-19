@@ -14,9 +14,10 @@ bloon_send_number = 0;
 depth = -99999;
 
 instance_create_depth(x, y, depth, obj_tower_control)
-instance_create_depth(0, 0, depth, obj_pause_button)
-instance_create_depth(32, 0, depth, obj_settings_button)
-instance_create_depth(96, 0, depth, obj_round_go_button)
+instance_create_depth(0, 0, depth - 100, obj_pause_button)
+instance_create_depth(0, 32, depth - 100, obj_fast_forward_button)
+instance_create_depth(32, 0, depth - 100, obj_settings_button)
+instance_create_depth(96, 0, depth - 100, obj_round_go_button)
 
 alarm[0] = 1;
 

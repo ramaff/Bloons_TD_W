@@ -1,19 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_place_tower",
+  "name": "obj_fast_forward_button",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":56,"eventType":6,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Menu UI",
-    "path": "folders/Objects/Menu UI.yy",
+    "name": "settings",
+    "path": "folders/Objects/Menu UI/settings.yy",
   },
   "parentObjectId": {
     "name": "obj_menu_button_parent",
@@ -35,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_monkey",
-    "path": "sprites/spr_monkey/spr_monkey.yy",
+    "name": "spr_fast_forward_butt",
+    "path": "sprites/spr_fast_forward_butt/spr_fast_forward_butt.yy",
   },
   "spriteMaskId": null,
   "visible": true,

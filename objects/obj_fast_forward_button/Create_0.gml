@@ -1,9 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-paused = false;
+fast_forward = false;
 
-pause_surf = -1;
-pause_surf_buffer = -1;
-
+game_set_speed(60, gamespeed_fps)
 

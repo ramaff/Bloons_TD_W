@@ -17,7 +17,10 @@
     "name": "Menu UI",
     "path": "folders/Objects/Menu UI.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_menu_button_parent",
+    "path": "objects/obj_menu_button_parent/obj_menu_button_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
