@@ -49,6 +49,9 @@ if _track = "rm_the_stronghold" {
 		}
 	}
 }
+if _track = "rm_desert_road" {
+	global.added_towers = ["marbles_monkey"]	
+}
 
 global.pickable_tower_slots = 6 - array_length(global.added_towers)
 global.pickable_hero_slots = 3 - array_length(global.added_heroes)

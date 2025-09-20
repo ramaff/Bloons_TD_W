@@ -39,6 +39,14 @@ global.missions_complete = {
 	"the_stronghold": {
 		"complete": false,
 		"best_time": 999999	
+	},
+	"desert_road": {
+		"complete": false,
+		"best_time": 999999	
+	},
+	"traffic_jam": {
+		"complete": false,
+		"best_time": 999999	
 	}
 }
 

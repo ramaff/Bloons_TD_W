@@ -56,6 +56,12 @@ tracks_info = {
 		"round_data": "the_stronghold_rounds.json",
 		"name": "the stronghold",
 		"requirement": "tower_defense"
+	},
+	"rm_desert_road": {
+		"paths": [pth_desert_road_1, pth_desert_road_2],
+		"round_data": "desert_road_rounds.json",
+		"name": "desert road",
+		"requirement": "the_stronghold"
 	}
 }
 global.mission = "training_room"
