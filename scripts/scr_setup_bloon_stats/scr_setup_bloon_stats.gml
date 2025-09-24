@@ -1794,6 +1794,19 @@ function scr_setup_bloon_stats(){
 				speed: 0.5,
 				depth: -40
 			}
+		},
+		"cactus": {
+			"small": {
+				"sprite": "spr_cactus_bloon",
+				"object": "obj_cactus_bloon",
+				max_health: 1,
+				layers: 1,
+				index: 0,
+				rbe: 1,
+				health: 1,
+				density: 1,
+				speed: 2
+			}	
 		}
 	}
 }
