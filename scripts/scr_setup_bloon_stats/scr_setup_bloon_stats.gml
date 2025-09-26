@@ -1685,7 +1685,7 @@ function scr_setup_bloon_stats(){
 			"block": {
 				"object": "obj_rubber_bloon",
 				sprite: "spr_rubber_block_bloon",
-				layers: 16,
+				layers: 36,
 				index: 0,
 				rbe: 63,
 				health: 30,
@@ -1701,7 +1701,7 @@ function scr_setup_bloon_stats(){
 			"tire": {
 				"object": "obj_tire_bloon",
 				sprite: "spr_tire_bloon",
-				layers: 16,
+				layers: 36,
 				index: 0,
 				rbe: 74,
 				health: 30,
@@ -1799,13 +1799,32 @@ function scr_setup_bloon_stats(){
 			"small": {
 				"sprite": "spr_cactus_bloon",
 				"object": "obj_cactus_bloon",
-				max_health: 1,
-				layers: 1,
+				max_health: 3,
+				layers: 3,
 				index: 0,
-				rbe: 1,
-				health: 1,
+				rbe: 3,
+				health: 3,
 				density: 1,
 				speed: 2
+			}	
+		},
+		"catapult": {
+			"orange": {
+				"object": "obj_catapult_bloon",
+				sprite: "spr_catapult_bloon",
+				layers: 336,
+				index: 0,
+				rbe: 596,
+				health: 300,
+				max_health: 300,
+				density: 1,
+				speed: 0.5,
+				children: [
+					{"class": "rubber", "layer": "tire", "properties": ["float to track"]},
+					{"class": "rubber", "layer": "tire", "properties": ["float to track"]},
+					{"class": "rubber", "layer": "tire", "properties": ["float to track"]},
+					{"class": "rubber", "layer": "tire", "properties": ["float to track"]},
+				]
 			}	
 		}
 	}

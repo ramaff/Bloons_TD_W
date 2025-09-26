@@ -50,7 +50,8 @@ if _track = "rm_the_stronghold" {
 	}
 }
 if _track = "rm_desert_road" {
-	global.added_towers = ["marbles_monkey"]	
+	global.added_towers = ["marbles_monkey"]
+	global.added_cash = 500;
 }
 
 global.pickable_tower_slots = 6 - array_length(global.added_towers)
