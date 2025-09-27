@@ -5,7 +5,7 @@ leak_frame = false;
 
 if variable_struct_exists(bloon_stats, "float to track") {
 	
-	bloon_stats.float_height = abs(y - target.y)
+	bloon_stats.float_height = floor(lerp(bloon_stats.float_height, abs(y - target.y), 0.05))
 	
 	bloon_stats.vertical_speed -= max(bloon_stats.float_gravity, 0.01);
 	

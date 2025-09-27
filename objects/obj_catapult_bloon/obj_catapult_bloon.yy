@@ -14,8 +14,8 @@
     "path": "folders/Objects/Bloons/Special Class Bloons.yy",
   },
   "parentObjectId": {
-    "name": "obj_bloon",
-    "path": "objects/obj_bloon/obj_bloon.yy",
+    "name": "obj_ceramic_class",
+    "path": "objects/obj_ceramic_class/obj_ceramic_class.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

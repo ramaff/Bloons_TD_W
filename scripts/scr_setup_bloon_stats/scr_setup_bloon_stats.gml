@@ -828,6 +828,35 @@ function scr_setup_bloon_stats(){
 					{"class": "moab","layer": "moab"},
 					{"class": "moab","layer": "moab"},
 				]
+			},
+			"rocket": {
+				sprite: "spr_rocket_moab",
+				layers: 218,
+				"big_bloon_tier": 2,
+				"shielded_sprite": "spr_moab_shielded",
+				index: 0,
+				rbe: 616,
+				health: 200,
+				density: 1,
+				speed: 6,
+				children: [
+					{
+						"class": "ceramic", "layer": "ceramic",
+						"properties": ["tattered"]
+					},
+					{
+						"class": "ceramic", "layer": "ceramic",
+						"properties": ["tattered"]
+					},
+					{
+						"class": "ceramic", "layer": "ceramic",
+						"properties": ["tattered"]
+					},
+					{
+						"class": "ceramic", "layer": "ceramic",
+						"properties": ["tattered"]
+					}
+				]
 			}
 		},
 		"bully": {
@@ -1809,7 +1838,7 @@ function scr_setup_bloon_stats(){
 			}	
 		},
 		"catapult": {
-			"orange": {
+			"ceramic": {
 				"object": "obj_catapult_bloon",
 				sprite: "spr_catapult_bloon",
 				layers: 336,
