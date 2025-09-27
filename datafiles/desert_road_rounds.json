@@ -1,14 +1,6 @@
 [
 	[
 		{
-			"round_icon_sprite": "spr_catapult_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "moab", "layer": "rocket", "count": 1, "spread": 0, "cooldown": 0
-		}
-	],[
-		{
 			"round_icon_sprite": "spr_bloon",
 			"round_icon_index": 0
 		},
@@ -340,7 +332,10 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "rubber", "layer": "tire", "count": 20, "spread": 60, "cooldown": 0
+			"class": "rubber", "layer": "tire", "count": 15, "spread": 90, "cooldown": 0
+		},
+		{
+			"class": "rubber", "layer": "tire", "count": 5, "spread": 90, "cooldown": 945
 		}
 	],
 	[
@@ -389,7 +384,43 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "catapult", "layer": "ceramic", "count": 3, "spread": 240, "cooldown": 0
+			"class": "catapult", "layer": "ceramic", "count": 3, "spread": 480, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_regrow_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "ceramic", "count": 24, "spread": 90, "cooldown": 0,
+			"properties": ["tattered"]
+		},
+		{
+			"class": "deflation", "layer": "yellow", "count": 40, "spread": 50, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_regrow_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 12, "spread": 150, "cooldown": 0,
+			"properties": ["tattered"]
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 40, "spread": 10, "cooldown": 800,
+			"properties": ["tattered"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_catapult_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "rocket", "count": 2, "spread": 480, "cooldown": 0
 		}
 	],
 	[
@@ -398,11 +429,57 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "bear",
-			"layer": "beekeeper",
+			"class": "monster_truck",
+			"layer": "bfb",
 			"count": 1,
 			"spread": 0,
 			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_catapult_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "catapult", "layer": "ceramic", "count": 5, "spread": 480, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_cactus_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "cactus", "layer": "small", "count": 80, "spread": 40, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_regrow_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 30, "spread": 70, "cooldown": 0,
+			"properties": ["tattered"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_cactus_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "cactus", "layer": "small", "count": 60, "spread": 10, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_catapult_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "rocket", "count": 4, "spread": 240, "cooldown": 0
 		}
 	]
 ]

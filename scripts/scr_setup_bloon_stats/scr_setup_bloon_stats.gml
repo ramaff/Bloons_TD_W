@@ -671,6 +671,7 @@ function scr_setup_bloon_stats(){
 			},
 			"brick": {
 				sprite: "spr_brick_bloon",
+				"tattered_sprite": "spr_brick_tattered",
 				layers: 48,
 				"big_bloon_tier": 1,
 				index: 0,
@@ -831,6 +832,7 @@ function scr_setup_bloon_stats(){
 			},
 			"rocket": {
 				sprite: "spr_rocket_moab",
+				object: "obj_rocket_moab",
 				layers: 218,
 				"big_bloon_tier": 2,
 				"shielded_sprite": "spr_moab_shielded",
@@ -838,7 +840,7 @@ function scr_setup_bloon_stats(){
 				rbe: 616,
 				health: 200,
 				density: 1,
-				speed: 6,
+				speed: 5,
 				children: [
 					{
 						"class": "ceramic", "layer": "ceramic",
@@ -1855,6 +1857,20 @@ function scr_setup_bloon_stats(){
 					{"class": "rubber", "layer": "tire", "properties": ["float to track"]},
 				]
 			}	
+		},
+		"monster_truck": {
+			"object": "obj_monster_truck",
+			"big_bloon_tier": 5,
+			"bfb": {
+				sprite: "spr_monster_truck",
+				layers: 7300,
+				rbe: 7300,
+				damage: 100,
+				health: 7300,
+				density: 1,
+				speed: 0.1,
+			}
 		}
+		
 	}
 }

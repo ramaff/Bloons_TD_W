@@ -18,7 +18,10 @@ if variable_struct_exists(other.bloon_stats, "camo") {
 }
 
 if variable_struct_exists(projectile_stats, "projectile_burst") {
-	event_perform(ev_alarm, 0)
+	var _angle_offset = direction;
+	scr_create_tower_projectiles(projectile_stats.projectile_burst, x, y, noone, _angle_offset, {}, projectile_stats.tower_id, projectile_stats.targeting, projectile_stats.damage_keys)
+	instance_destroy()
+	//event_perform(ev_alarm, 0)
 	exit;
 }
 

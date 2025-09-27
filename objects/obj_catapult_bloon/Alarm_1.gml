@@ -27,7 +27,7 @@ repeat(5) {
 		bloon_stats.remaining_value = 1;
 		
 		if instance_exists(target) {
-			target.path_position = mean(1, _pos);
+			target.path_position = mean(0.8, _pos);
 			target.x = path_get_x(bloon_stats.path, target.path_position);
 			target.y = path_get_y(bloon_stats.path, target.path_position);
 				

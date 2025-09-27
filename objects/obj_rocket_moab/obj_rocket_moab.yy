@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_moab_icon",
-    "path": "sprites/spr_moab_icon/spr_moab_icon.yy",
+    "name": "spr_rocket_moab_on",
+    "path": "sprites/spr_rocket_moab_on/spr_rocket_moab_on.yy",
   },
   "spriteMaskId": null,
   "visible": true,
