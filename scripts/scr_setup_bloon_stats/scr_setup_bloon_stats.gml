@@ -1843,6 +1843,7 @@ function scr_setup_bloon_stats(){
 			"ceramic": {
 				"object": "obj_catapult_bloon",
 				sprite: "spr_catapult_bloon",
+				big_bloon_tier: 2,
 				layers: 336,
 				index: 0,
 				rbe: 596,

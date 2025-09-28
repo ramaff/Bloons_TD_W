@@ -7,6 +7,9 @@ function scr_create_tower(_tower_id, _tower_stats){
 	}
 	var _id = noone;
 	
+	var _xx = x;
+	var _yy = y;
+	
 	with instance_create_depth(x, y, depth, _tower) {
 		base_tower_id = _tower_id
 		tower_stats = variable_clone(_tower_stats)
@@ -24,7 +27,7 @@ function scr_create_tower(_tower_id, _tower_stats){
 		tower_base = noone;
 		
 		if variable_struct_exists(_tower_stats, "tower_base") {
-			with instance_create_depth(x, y, depth, obj_tower_base) {
+			with instance_create_depth(_xx, _yy, depth, obj_tower_base) {
 				monkey_base = _id;
 				_id.tower_base = id;
 				

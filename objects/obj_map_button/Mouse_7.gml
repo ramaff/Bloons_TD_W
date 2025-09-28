@@ -30,16 +30,20 @@ if _track = "rm_graveyard" {
 	global.added_towers = ["haunted_monkey"]	
 }
 if _track = "rm_parade" {
-	global.added_heroes = ["clown_monkey"]	
+	global.added_heroes = ["clown_monkey"]
+	global.added_cash = 100;
 }
 if _track = "rm_the_bridge" {
-	global.added_towers = ["goonkey"]	
+	global.added_towers = ["goonkey"]
+	global.added_cash = 200;
 }
 if _track = "rm_the_forest" {
-	global.added_towers = ["marbles_monkey"]	
+	global.added_towers = ["marbles_monkey"]
+	global.added_cash = 200;
 }
 if _track = "rm_tower_defense" {
-	global.added_towers = ["caster_monkey"]	
+	global.added_towers = ["caster_monkey"]
+	global.added_cash = 300;
 }
 if _track = "rm_the_stronghold" {
 	var _req_mission_prog = variable_struct_get(global.missions_complete, "the_stronghold")
@@ -48,10 +52,11 @@ if _track = "rm_the_stronghold" {
 			variable_struct_set(global.upgrades_progress.jim.unlocked_paths, "Splodey Darts", {"unlocked_upgrades": 2})
 		}
 	}
+	global.added_cash = 400;
 }
 if _track = "rm_desert_road" {
-	global.added_towers = ["marbles_monkey"]
-	global.added_cash = 500;
+	global.added_towers = ["skateboard_monkey"]
+	global.added_cash = 50000;
 }
 
 global.pickable_tower_slots = 6 - array_length(global.added_towers)

@@ -4,6 +4,7 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 	
 
 	var _proj_count = array_length(_projectile_stats)
+	var _proj_ids = []
 	
 	for(var _i = 0; _i < _proj_count; _i++) {
 		var _shot_count = 1;
@@ -37,6 +38,8 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 			with instance_create_depth(_xx,_yy,0, _projectile) {
 				projectile_stats = variable_clone(_projectile_stats[_i])
 				projectile_stats.tower_id = _tower_id
+				
+				array_push(_proj_ids, id)
 				
 				projectile_stats.id_offset = 0;
 				projectile_stats.targeting = _targeting
@@ -124,5 +127,7 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 		}
 		
 	}
+	
+	return _proj_ids
 
 }

@@ -743,6 +743,65 @@ function scr_setup_tower_stats(){
 				]
 			]
 		},
+		"skateboard_monkey": {
+			tower_sprite: "spr_skateboard_monkey",
+			tower_object: "obj_skateboard_monkey",
+			butt_sprite: "spr_skateboard_monkey_butt",
+			tower_base: true,
+			tower_base_sprite: "spr_grind_rail",
+			total_cost: 570,
+			upgrade_cost: 0,
+			range: 160,
+			delay: 60,
+			attack_cooldown: 0,
+	
+			projectile_stats: [
+				{
+					object: "obj_stick_to_tower_proj",
+					sprite: "spr_skateboard_monkey",
+					pierce: 1000000,
+					damage: 1,
+					speed: 0,
+					lifespan: 9999
+				}
+			],
+			upgrades: [
+				[
+				],
+				[
+					{
+						keyword: "Littering",
+						upgrade_cost: 260
+					},
+					{
+						keyword: "Pro Skater",
+						upgrade_cost: 390
+					}
+				]
+			],
+			split_upgrades: [
+				[
+					{
+						keyword: "Jumbo Jump",
+						upgrade_cost: 1800
+					},
+					{
+						keyword: "Jet Jumbo",
+						upgrade_cost: 3900
+					}
+				],
+				[
+					{
+						keyword: "Scooter",
+						upgrade_cost: 1300
+					},
+					{
+						keyword: "Motorbike",
+						upgrade_cost: 5900
+					}
+				]
+			]
+		},
 	}
 
 }

@@ -1130,5 +1130,100 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Shoots a mega caster bolt that spirals around for a long time, and rapidly shoots bolts at bloons."
 			}
 		},
+		"skateboard_monkey": {
+			"Littering": {
+				upgrade_string: "The skateboarder has zero regard for laws. Drops a banana peel on the track occasionally that knocks bloons back.",
+				additional_attacks: [
+					{
+						delay: 135,
+						attack_cooldown: 0,
+						range: 99999,
+						projectile_stats: [
+							{
+								sprite: "spr_banana_peel",
+								lead_hit: true,
+								lifespan: 240,
+								speed: 0,
+								direction: 0,
+								damage: 0,
+								pierce: 6,
+								bloon_pushback: 0.2
+							}
+						]
+					}
+				]
+			},
+			"Pro Skater": {
+				fire_rate_multiplier: 1.5,
+				upgrade_string: "Moves through the track and litters 50% faster than normal."
+			},
+			"Scooter": {
+				upgrade_string: "Does double damage and litters twice as often",
+				fire_rate_multiplier: 2,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						object: "obj_stick_to_tower_proj",
+						sprite: "spr_skateboard_monkey",
+						pierce: 1000000,
+						damage: 2,
+						speed: 0,
+						lifespan: 9999
+					}
+				]
+			},
+			"Motorbike": {
+				upgrade_string: "Moves exceptionally fast and leaves a trail of fire.",
+				additional_attacks: [
+					{
+						delay: 20,
+						attack_cooldown: 0,
+						range: 99999,
+						projectile_stats: [
+							{
+								sprite: "spr_banana_peel",
+								lead_hit: true,
+								lifespan: 240,
+								speed: 0,
+								direction: 0,
+								damage: 0,
+								pierce: 6,
+								bloon_pushback: 0.2
+							}
+						]
+					},
+					{
+						delay: 3,
+						attack_cooldown: 0,
+						range: 99999,
+						projectile_stats: [
+							{
+								sprite: "spr_bloon_on_fire",
+								lead_hit: true,
+								lifespan: 36,
+								speed: 0,
+								direction: 0,
+								damage: 1,
+								fire: 1,
+								fire_time: 120,
+								pierce: 3
+							}
+						]
+					}
+				],
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						object: "obj_stick_to_tower_proj",
+						sprite: "spr_skateboard_monkey",
+						lead_hit: true,
+						pierce: 1000000,
+						damage: 3,
+						speed: 0,
+						lifespan: 9999
+					}
+				]
+			}
+		},
 	}
 }
