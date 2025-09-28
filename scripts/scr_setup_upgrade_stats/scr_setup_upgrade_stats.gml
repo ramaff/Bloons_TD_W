@@ -1159,12 +1159,13 @@ function scr_setup_upgrade_stats(){
 			},
 			"Scooter": {
 				upgrade_string: "Does double damage and litters twice as often",
+				tower_sprite: "spr_scooter_monkey",
 				fire_rate_multiplier: 2,
 				projectile_replacement: true,
 				projectile_stats: [
 					{
 						object: "obj_stick_to_tower_proj",
-						sprite: "spr_skateboard_monkey",
+						sprite: "spr_scooter_monkey",
 						pierce: 1000000,
 						damage: 2,
 						speed: 0,
@@ -1174,6 +1175,7 @@ function scr_setup_upgrade_stats(){
 			},
 			"Motorbike": {
 				upgrade_string: "Moves exceptionally fast and leaves a trail of fire.",
+				tower_sprite: "spr_motorbike_monkey",
 				additional_attacks: [
 					{
 						delay: 20,

@@ -7,7 +7,7 @@ if sprite_index = spr_monster_truck_on {
 	other.x += lengthdir_x(other.speed + 20, other.direction)
 	other.y += lengthdir_y(other.speed + 20, other.direction)
 
-	added_speed = max(0, added_speed - (0.005 * other.projectile_stats.damage));
+	added_speed = max(0, added_speed - (0.0025 * other.projectile_stats.damage));
 }
 
 
