@@ -78,6 +78,9 @@ global.towers_progress = {
 	},
 	"caster_monkey": {
 		"unlocked": false	
+	},
+	"skateboard_monkey": {
+		"unlocked": false	
 	}
 }
 
@@ -90,6 +93,9 @@ global.heroes_progress = {
 		"unlocked": false	
 	},
 	"clown_monkey": {
+		"unlocked": false	
+	},
+	"trickster": {
 		"unlocked": false	
 	}
 }
@@ -130,6 +136,9 @@ global.upgrades_progress = {
 	},
 	"caster_monkey": {
 		"unlocked_paths": {"Deep Engravement": {"unlocked_upgrades": 2}}
+	},
+	"skateboard_monkey": {
+		"unlocked_paths": {"Scooter": {"unlocked_upgrades": 2}}
 	},
 }
 
