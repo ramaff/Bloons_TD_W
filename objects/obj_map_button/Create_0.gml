@@ -62,6 +62,12 @@ tracks_info = {
 		"round_data": "desert_road_rounds.json",
 		"name": "desert road",
 		"requirement": "the_stronghold"
+	},
+	"rm_traffic_jam": {
+		"paths": [pth_traffic_jam_1, pth_traffic_jam_2],
+		"round_data": "traffic_jam_rounds.json",
+		"name": "traffic jam",
+		"requirement": "desert_road"
 	}
 }
 global.mission = "training_room"

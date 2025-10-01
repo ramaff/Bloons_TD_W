@@ -47,6 +47,14 @@ global.missions_complete = {
 	"traffic_jam": {
 		"complete": false,
 		"best_time": 999999	
+	},
+	"wall_street": {
+		"complete": false,
+		"best_time": 999999	
+	},
+	"city_hall": {
+		"complete": false,
+		"best_time": 999999	
 	}
 }
 

@@ -19,6 +19,7 @@ var _menu = noone;
 
 global.added_heroes = []
 global.added_towers = []
+global.added_cash = 0;
 
 if _track = "rm_bloon_academia" {
 	global.added_heroes = ["angry_squirrel"]	
@@ -55,6 +56,10 @@ if _track = "rm_the_stronghold" {
 	global.added_cash = 400;
 }
 if _track = "rm_desert_road" {
+	global.added_towers = ["skateboard_monkey"]
+	global.added_cash = 500;
+}
+if _track = "rm_traffic_jam" {
 	global.added_towers = ["skateboard_monkey"]
 	global.added_cash = 500;
 }
