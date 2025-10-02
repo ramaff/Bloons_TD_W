@@ -238,6 +238,73 @@ function scr_setup_tower_stats(){
 				]
 			]
 		},
+		"trickster": {
+			tower_object: "obj_trickster",
+			tower_sprite: "spr_trickster",
+			butt_sprite: "spr_clown_monkey_hero_butt",
+			total_cost: 600,
+			upgrade_cost: 0,
+			range: 150,
+			delay: 30,
+			attack_cooldown: 0,
+			health: 250,
+			max_health: 250,
+			stat_boosts: {},
+	
+			projectile_stats: [
+				{
+					object: "obj_yoyo",
+					sprite: "spr_yoyo",
+					pierce: 100,
+					damage: 1,
+					speed: 8,
+					lifespan: 999999,
+					tick_frequency: 30
+				}
+			],
+			upgrades: [
+				[
+					{
+						keyword: "Walk the Bloon",
+						upgrade_cost: 300
+					},
+					{
+						keyword: "Around the World",
+						upgrade_cost: 300
+					},
+					{
+						keyword: "Professional Grade Yoyos",
+						upgrade_cost: 600
+					}
+				],
+				[
+					{
+						keyword: "Red Spray Paint",
+						upgrade_cost: 300
+					},
+					{
+						keyword: "Anti Property Spray Paint",
+						upgrade_cost: 600
+					},
+					{
+						keyword: "Rainbow Spray Pain",
+						upgrade_cost: 900
+					}
+				]
+			],
+			split_upgrades: [
+				[
+				],
+				[
+				],
+				[
+					{
+						keyword: "Piñata",
+						upgrade_cost: 3000
+					}
+				]
+			]
+		},
 		"sling_shot_monkey": {
 			tower_sprite: "spr_pebble_monkey",
 			butt_sprite: "spr_sling_shot_tower_butt",
@@ -709,6 +776,7 @@ function scr_setup_tower_stats(){
 					speed: 10,
 					lifespan: 60,
 					spiral_homing_offset: 60,
+					homing: true,
 					lead_hit: true,
 					projectile_spread: 30,
 					stay_pointed: true,

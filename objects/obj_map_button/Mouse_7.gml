@@ -60,7 +60,7 @@ if _track = "rm_desert_road" {
 	global.added_cash = 500;
 }
 if _track = "rm_traffic_jam" {
-	global.added_towers = ["skateboard_monkey"]
+	global.added_heroes = ["trickster"]
 	global.added_cash = 500;
 }
 

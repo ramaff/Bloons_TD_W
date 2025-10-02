@@ -300,6 +300,14 @@ function scr_setup_upgrade_stats(){
 				}
 			}
 		},
+		"trickster": {
+			"Walk the Bloon": {
+				upgrade_string: "Additional yoyo that performs the 'Walk the Bloon' trick."
+			},
+			"Around the World": {
+				upgrade_string: "Additional yoyo that performs the 'Around the World' trick."
+			}
+		},
 		"cactus_monkey": {
 			"pointy-er needles": {
 				pierce: 1,
@@ -1062,6 +1070,7 @@ function scr_setup_upgrade_stats(){
 						speed: 10,
 						lifespan: 60,
 						spiral_homing_offset: 60,
+						homing: true,
 						lead_hit: true,
 						magic_marking: 1,
 						magic_marking_time: 60
@@ -1087,6 +1096,7 @@ function scr_setup_upgrade_stats(){
 						speed: 10,
 						lifespan: 75,
 						spiral_homing_offset: 60,
+						homing: true,
 						lead_hit: true,
 						magic_marking: 10,
 						magic_marking_time: 120
@@ -1108,6 +1118,7 @@ function scr_setup_upgrade_stats(){
 						speed: 12,
 						lifespan: 180,
 						spiral_homing_offset: 85,
+						homing: true,
 						lead_hit: true,
 						magic_marking: 10,
 						magic_marking_time: 120,

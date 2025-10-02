@@ -39,12 +39,16 @@ if variable_struct_exists(projectile_stats, "air_burst_range") {
 	}
 }
 
-if variable_struct_exists(projectile_stats, "spiral_homing_offset") {
+if variable_struct_exists(projectile_stats, "homing") {
+	var _offset = 0;
+	if variable_struct_exists(projectile_stats, "spiral_homing_offset") {
+		_offset = projectile_stats.spiral_homing_offset
+	}
 	if !instance_exists(target) {
 		target = scr_get_bloon_target({"camo_detection": variable_struct_exists(projectile_stats, "camo_detection"), "range": 200, "damage_keys": projectile_stats.damage_keys}, x, y, projectile_stats.targeting, 0, id)
 	}
 	if instance_exists(target) {
-		direction = scr_angle_converge(point_direction(x, y, target.x, target.y) + projectile_stats.spiral_homing_offset, direction, 20);
+		direction = scr_angle_converge(point_direction(x, y, target.x, target.y) + _offset, direction, 20);
 	}
 }
 
