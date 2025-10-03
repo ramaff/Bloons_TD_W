@@ -241,7 +241,7 @@ function scr_setup_tower_stats(){
 		"trickster": {
 			tower_object: "obj_trickster",
 			tower_sprite: "spr_trickster",
-			butt_sprite: "spr_clown_monkey_hero_butt",
+			butt_sprite: "spr_trickster_hero_butt",
 			total_cost: 600,
 			upgrade_cost: 0,
 			range: 150,

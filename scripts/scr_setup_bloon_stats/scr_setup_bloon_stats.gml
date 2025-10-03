@@ -344,6 +344,36 @@ function scr_setup_bloon_stats(){
 				]
 			}
 		},
+		"static": {
+			"object": "obj_static_bloon",
+			"properties": ["shielded"],
+			"red": {
+				"sprite": "spr_red_static_bloon",
+				layers: 1,
+				index: 0,
+				rbe: 1,
+				health: 1,
+				density: 1,
+				speed: 1.15,
+				children: [
+					{"class": "normal", "layer": "red"}
+				]
+			},
+			"blue": {
+				layers: 2,
+				index: 1,
+				rbe: 2,
+				health: 1,
+				density: 1,
+				speed: 2,
+				children: [
+					{
+						"class": "normal",
+						"layer": "red"
+					}
+				]
+			}
+		},
 		"stuffed": {
 			"object": "obj_bloon",
 			"sprite": "spr_stuffed_bloon",

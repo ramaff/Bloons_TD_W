@@ -1,20 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_yoyo",
+  "name": "obj_static_bloon",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Projectiles",
-    "path": "folders/Objects/Projectiles.yy",
+    "name": "Base Bloons",
+    "path": "folders/Objects/Bloons/Base Bloons.yy",
   },
   "parentObjectId": {
-    "name": "obj_damage_dealer",
-    "path": "objects/obj_damage_dealer/obj_damage_dealer.yy",
+    "name": "obj_bloon",
+    "path": "objects/obj_bloon/obj_bloon.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -32,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_yoyo",
-    "path": "sprites/spr_yoyo/spr_yoyo.yy",
+    "name": "spr_red_static_bloon",
+    "path": "sprites/spr_red_static_bloon/spr_red_static_bloon.yy",
   },
   "spriteMaskId": null,
   "visible": true,
