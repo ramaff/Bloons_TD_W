@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_graveyard_6",
+  "$GMPath": "",
+  "%Name": "pth_graveyard_6",
   "closed": false,
   "kind": 0,
+  "name": "pth_graveyard_6",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -16,4 +16,6 @@
     {"speed":100.0,"x":640.7935,"y":580.034,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

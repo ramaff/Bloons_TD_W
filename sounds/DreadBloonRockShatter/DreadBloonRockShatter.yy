@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "DreadBloonRockShatter",
+  "$GMSound": "",
+  "%Name": "DreadBloonRockShatter",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 1.190385,
+  "name": "DreadBloonRockShatter",
   "parent": {
     "name": "single_sound_effects",
     "path": "folders/Sounds/single_sound_effects.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "DreadBloonRockShatter.wav",
   "type": 0,

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_bloon_stat_setup",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "bloons",
-    "path": "folders/Scripts/bloons.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_bloon_stat_setup",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_bloon_stat_setup",
+  "parent":{
+    "name":"bloons",
+    "path":"folders/Scripts/bloons.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

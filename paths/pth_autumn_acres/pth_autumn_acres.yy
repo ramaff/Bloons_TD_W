@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_autumn_acres",
+  "$GMPath": "",
+  "%Name": "pth_autumn_acres",
   "closed": false,
   "kind": 0,
+  "name": "pth_autumn_acres",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -21,4 +21,6 @@
     {"speed":100.0,"x":603.7154,"y":580.67834,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

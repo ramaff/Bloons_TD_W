@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "challenge_door_open",
+  "$GMSound": "",
+  "%Name": "challenge_door_open",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 1.707937,
+  "name": "challenge_door_open",
   "parent": {
     "name": "single_sound_effects",
     "path": "folders/Sounds/single_sound_effects.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "challenge_door_open.wav",
   "type": 0,

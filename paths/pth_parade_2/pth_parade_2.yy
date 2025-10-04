@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_parade_2",
+  "$GMPath": "",
+  "%Name": "pth_parade_2",
   "closed": false,
   "kind": 0,
+  "name": "pth_parade_2",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -23,4 +23,6 @@
     {"speed":100.0,"x":866.69635,"y":182.87595,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

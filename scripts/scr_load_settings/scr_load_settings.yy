@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_load_settings",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "save load",
-    "path": "folders/Scripts/save load.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_load_settings",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_load_settings",
+  "parent":{
+    "name":"save load",
+    "path":"folders/Scripts/save load.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

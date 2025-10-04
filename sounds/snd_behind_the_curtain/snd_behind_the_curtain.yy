@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_behind_the_curtain",
+  "$GMSound": "",
+  "%Name": "snd_behind_the_curtain",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 1,
   "conversionMode": 0,
   "duration": 47.751835,
+  "name": "snd_behind_the_curtain",
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "snd_behind_the_curtain.mp3",
   "type": 0,

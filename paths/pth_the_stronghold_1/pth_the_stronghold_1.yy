@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_the_stronghold_1",
+  "$GMPath": "",
+  "%Name": "pth_the_stronghold_1",
   "closed": false,
   "kind": 0,
+  "name": "pth_the_stronghold_1",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -20,4 +20,6 @@
     {"speed":100.0,"x":-61.0,"y":485.25,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

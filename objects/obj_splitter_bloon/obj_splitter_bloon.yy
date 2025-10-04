@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_splitter_bloon",
+  "$GMObject": "",
+  "%Name": "obj_splitter_bloon",
   "eventList": [],
   "managed": true,
+  "name": "obj_splitter_bloon",
   "overriddenProperties": [],
   "parent": {
     "name": "Base Bloons",
@@ -27,6 +27,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
+  "resourceType": "GMObject",
+  "resourceVersion": "2.0",
   "solid": false,
   "spriteId": {
     "name": "spr_splitter_bloon",

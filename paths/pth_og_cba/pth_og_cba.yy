@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_og_cba",
+  "$GMPath": "",
+  "%Name": "pth_og_cba",
   "closed": false,
   "kind": 0,
+  "name": "pth_og_cba",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -19,4 +19,6 @@
     {"speed":100.0,"x":-56.0,"y":469.0,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

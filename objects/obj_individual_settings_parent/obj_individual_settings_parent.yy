@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_individual_settings_parent",
+  "$GMObject": "",
+  "%Name": "obj_individual_settings_parent",
   "eventList": [],
   "managed": true,
+  "name": "obj_individual_settings_parent",
   "overriddenProperties": [],
   "parent": {
     "name": "settings",
@@ -24,6 +24,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
+  "resourceType": "GMObject",
+  "resourceVersion": "2.0",
   "solid": false,
   "spriteId": null,
   "spriteMaskId": null,

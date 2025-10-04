@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_bloon_target",
+  "$GMObject": "",
+  "%Name": "obj_bloon_target",
   "eventList": [],
   "managed": true,
+  "name": "obj_bloon_target",
   "overriddenProperties": [],
   "parent": {
     "name": "Bloon Objects",
@@ -24,6 +24,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
+  "resourceType": "GMObject",
+  "resourceVersion": "2.0",
   "solid": false,
   "spriteId": {
     "name": "spr_bloon_target",

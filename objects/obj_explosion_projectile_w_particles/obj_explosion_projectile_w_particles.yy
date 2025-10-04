@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_explosion_projectile_w_particles",
+  "$GMObject": "",
+  "%Name": "obj_explosion_projectile_w_particles",
   "eventList": [],
   "managed": true,
+  "name": "obj_explosion_projectile_w_particles",
   "overriddenProperties": [],
   "parent": {
     "name": "Projectiles",
@@ -27,6 +27,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
+  "resourceType": "GMObject",
+  "resourceVersion": "2.0",
   "solid": false,
   "spriteId": {
     "name": "spr_explosion_damage",

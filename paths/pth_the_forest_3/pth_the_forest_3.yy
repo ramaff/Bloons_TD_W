@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_the_forest_3",
+  "$GMPath": "",
+  "%Name": "pth_the_forest_3",
   "closed": false,
   "kind": 0,
+  "name": "pth_the_forest_3",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -18,4 +18,6 @@
     {"speed":100.0,"x":860.1343,"y":117.5611,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

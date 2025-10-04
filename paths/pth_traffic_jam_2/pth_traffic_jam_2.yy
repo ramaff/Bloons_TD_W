@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_traffic_jam_2",
+  "$GMPath": "",
+  "%Name": "pth_traffic_jam_2",
   "closed": false,
   "kind": 0,
+  "name": "pth_traffic_jam_2",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -19,4 +19,6 @@
     {"speed":100.0,"x":465.1978,"y":-7.313183,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

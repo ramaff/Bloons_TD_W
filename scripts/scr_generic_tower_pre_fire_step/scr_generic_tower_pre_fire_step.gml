@@ -62,7 +62,7 @@ function scr_generic_tower_pre_fire_step(){
 	}
 
 	if stun > 0 {
-		stun -= sqrt(tower_stats.total_cost) / 60;	
+		stun -= tower_stats.total_cost / 6000;	
 		exit;
 	}
 

@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_bloon_academia",
+  "$GMPath": "",
+  "%Name": "pth_bloon_academia",
   "closed": false,
   "kind": 0,
+  "name": "pth_bloon_academia",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -23,4 +23,6 @@
     {"speed":100.0,"x":868.3907,"y":369.68378,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_the_bridge_2",
+  "$GMPath": "",
+  "%Name": "pth_the_bridge_2",
   "closed": false,
   "kind": 1,
+  "name": "pth_the_bridge_2",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -21,4 +21,6 @@
     {"speed":100.0,"x":864.7412,"y":327.6858,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

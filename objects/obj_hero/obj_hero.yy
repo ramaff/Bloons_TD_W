@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_hero",
+  "$GMObject": "",
+  "%Name": "obj_hero",
   "eventList": [],
   "managed": true,
+  "name": "obj_hero",
   "overriddenProperties": [],
   "parent": {
     "name": "Towers",
@@ -27,6 +27,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
+  "resourceType": "GMObject",
+  "resourceVersion": "2.0",
   "solid": false,
   "spriteId": {
     "name": "spr_monkey",

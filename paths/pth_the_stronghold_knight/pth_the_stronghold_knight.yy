@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_the_stronghold_knight",
+  "$GMPath": "",
+  "%Name": "pth_the_stronghold_knight",
   "closed": false,
   "kind": 0,
+  "name": "pth_the_stronghold_knight",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -26,4 +26,6 @@
     {"speed":100.0,"x":-117.84451,"y":600.7399,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

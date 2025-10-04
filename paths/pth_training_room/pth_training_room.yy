@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_training_room",
+  "$GMPath": "",
+  "%Name": "pth_training_room",
   "closed": false,
   "kind": 1,
+  "name": "pth_training_room",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -24,4 +24,6 @@
     {"speed":100.0,"x":-56.0,"y":469.0,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

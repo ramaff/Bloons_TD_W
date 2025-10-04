@@ -5,6 +5,15 @@
 			"round_icon_index": 0
 		},
 		{
+			"class": "static", "layer": "blue", "count": 20, "spread": 10, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "normal", "layer": "blue", "count": 18, "spread": 75, "cooldown": 0
 		},
 		{
@@ -74,7 +83,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "static", "layer": "red", "count": 20, "spread": 5, "cooldown": 0
+			"class": "static", "layer": "blue", "count": 20, "spread": 10, "cooldown": 0
 		}
 	],
 	[

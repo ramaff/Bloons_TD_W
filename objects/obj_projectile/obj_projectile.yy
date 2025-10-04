@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_projectile",
+  "$GMObject": "",
+  "%Name": "obj_projectile",
   "eventList": [],
   "managed": true,
+  "name": "obj_projectile",
   "overriddenProperties": [],
   "parent": {
     "name": "Projectiles",
@@ -27,6 +27,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
+  "resourceType": "GMObject",
+  "resourceVersion": "2.0",
   "solid": false,
   "spriteId": {
     "name": "spr_dart",

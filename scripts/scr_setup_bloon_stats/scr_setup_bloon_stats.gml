@@ -355,22 +355,61 @@ function scr_setup_bloon_stats(){
 				health: 1,
 				density: 1,
 				speed: 1.15,
+				stun_color: make_color_rgb(255, 0, 0),
 				children: [
 					{"class": "normal", "layer": "red"}
 				]
 			},
 			"blue": {
+				"sprite": "spr_blue_static_bloon",
 				layers: 2,
 				index: 1,
 				rbe: 2,
 				health: 1,
 				density: 1,
-				speed: 2,
+				speed: 1.2,
+				stun_color: make_color_rgb(0, 0, 255),
 				children: [
-					{
-						"class": "normal",
-						"layer": "red"
-					}
+					{"class": "normal", "layer": "blue"}
+				]
+			},
+			"green": {
+				"sprite": "spr_green_static_bloon",
+				layers: 3,
+				index: 2,
+				rbe: 3,
+				health: 1,
+				density: 1,
+				speed: 1.25,
+				stun_color: make_color_rgb(0, 255, 0),
+				children: [
+					{"class": "normal", "layer": "green"}
+				]
+			},
+			"yellow": {
+				"sprite": "spr_yellow_static_bloon",
+				layers: 4,
+				index: 3,
+				rbe: 4,
+				health: 1,
+				density: 1,
+				speed: 1.45,
+				stun_color: make_color_rgb(255, 255, 0),
+				children: [
+					{"class": "normal", "layer": "yellow"}
+				]
+			},
+			"pink": {
+				"sprite": "spr_pink_static_bloon",
+				layers: 5,
+				index: 4,
+				rbe: 5,
+				health: 1,
+				density: 1,
+				speed: 1.5,
+				stun_color: make_color_rgb(255, 0, 255),
+				children: [
+					{"class": "normal", "layer": "pink"}
 				]
 			}
 		},

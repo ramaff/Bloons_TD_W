@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_desert_road_1",
+  "$GMPath": "",
+  "%Name": "pth_desert_road_1",
   "closed": false,
   "kind": 1,
+  "name": "pth_desert_road_1",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -21,4 +21,6 @@
     {"speed":100.0,"x":-60.422546,"y":302.57745,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

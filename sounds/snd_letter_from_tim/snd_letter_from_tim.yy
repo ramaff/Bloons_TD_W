@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_letter_from_tim",
+  "$GMSound": "",
+  "%Name": "snd_letter_from_tim",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 1,
   "conversionMode": 0,
   "duration": 136.31844,
+  "name": "snd_letter_from_tim",
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "snd_letter_from_tim.wav",
   "type": 0,
