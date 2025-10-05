@@ -5,6 +5,18 @@
 			"round_icon_index": 0
 		},
 		{
+			"class": "barrier", "layer": "red", "count": 5, "spread": 180, "cooldown": 120
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 200, "spread": 10, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "normal", "layer": "blue", "count": 18, "spread": 75, "cooldown": 0
 		},
 		{
@@ -274,6 +286,60 @@
 		},
 		{
 			"class": "rubber", "layer": "tire", "count": 8, "spread": 120, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 8
+		},
+		{
+			"class": "stuffed", "layer": "red", "count": 15, "spread": 80, "cooldown": 0
+		},
+		{
+			"class": "stuffed", "layer": "yellow", "count": 15, "spread": 80, "cooldown": 5
+		},
+		{
+			"class": "stuffed", "layer": "green", "count": 15, "spread": 80, "cooldown": 10
+		},
+		{
+			"class": "lead", "layer": "block", "count": 4, "spread": 240, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "barrier", "layer": "red", "count": 15, "spread": 180, "cooldown": 120
+		},
+		{
+			"class": "normal", "layer": "yellow", "count": 200, "spread": 10, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "patrol", "layer": "normal", "count": 2, "spread": 300, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 200, "spread": 10, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "barrier", "layer": "green", "count": 10, "spread": 200, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "black", "count": 80, "spread": 25, "cooldown": 0
 		}
 	],
 	[

@@ -715,6 +715,109 @@ function scr_setup_bloon_stats(){
 				]
 			}
 		},
+		"barrier": {
+			"object": "obj_barrier_bloon",
+			"sprite": "spr_barrier_bloon",
+			"big_bloon_tier": 1,
+			"red": {
+				layers: 12,
+				index: 0,
+				rbe: 19,
+				health: 9,
+				density: 1,
+				speed: 1.2,
+				children: [
+					{"class": "splitter", "layer": "orange", "properties": ["float to track", "shielded"]},
+					{"class": "normal", "layer": "red", "properties": ["float to track", "shielded"]},
+					{"class": "normal", "layer": "red", "properties": ["float to track", "shielded"]}
+				]
+			},
+			"blue": {
+				layers: 21,
+				index: 1,
+				rbe: 25,
+				health: 18,
+				density: 1,
+				speed: 1.5,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "cyan",
+						"properties": [
+							"regrow"
+						]
+					}
+				]
+			},
+			"green": {
+				layers: 31,
+				index: 2,
+				rbe: 37,
+				health: 27,
+				density: 1,
+				speed: 1.8,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "lime",
+						"properties": [
+							"regrow"
+						]
+					}
+				]
+			},
+			"yellow": {
+				layers: 41,
+				index: 3,
+				rbe: 49,
+				health: 36,
+				density: 1,
+				speed: 2.7,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "amber",
+						"properties": [
+							"regrow"
+						]
+					}
+				]
+			},
+			"pink": {
+				layers: 51,
+				index: 4,
+				rbe: 61,
+				health: 45,
+				density: 1,
+				speed: 3,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "purple",
+						"properties": [
+							"regrow"
+						]
+					}
+				]
+			},
+			"rainbow": {
+				layers: 99,
+				index: 5,
+				rbe: 232,
+				health: 90,
+				density: 1,
+				speed: 2.4,
+				children: [
+					{
+						"class": "splitter",
+						"layer": "prismatic",
+						"properties": [
+							"regrow"
+						]
+					}
+				]
+			}
+		},
 		"ceramic": {
 			"object": "obj_ceramic_class",
 			"ceramic": {
@@ -1941,6 +2044,5 @@ function scr_setup_bloon_stats(){
 				speed: 0.1,
 			}
 		}
-		
 	}
 }
