@@ -5,18 +5,6 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "barrier", "layer": "red", "count": 5, "spread": 180, "cooldown": 120
-		},
-		{
-			"class": "normal", "layer": "blue", "count": 200, "spread": 10, "cooldown": 0
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 0
-		},
-		{
 			"class": "normal", "layer": "blue", "count": 18, "spread": 75, "cooldown": 0
 		},
 		{

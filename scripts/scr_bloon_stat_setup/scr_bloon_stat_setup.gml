@@ -4,6 +4,7 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 
 	var _class_stats = struct_get(global.bloon_stats, _class)
 	
+
 	_bloon.bloon_stats = variable_clone(struct_get(_class_stats, _layer))
 	_bloon.bloon_stats.round = _round;
 	
@@ -179,6 +180,16 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 			target = _bloon.id
 			bloon_stats.remaining_value = 0;
 		}	
+	}
+	
+	if _class = "patrol" {
+		_path = pth_the_stronghold_knight;
+		bloon_stats.path = _path
+		path_position = 0;
+		path_start(_path, bloon_stats.speed, path_action_stop, true);
+		speed = bloon_stats.speed;
+		path_speed = speed;
+	
 	}
 
 }

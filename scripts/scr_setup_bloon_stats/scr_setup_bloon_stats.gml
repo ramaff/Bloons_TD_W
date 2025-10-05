@@ -2043,6 +2043,27 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 0.1,
 			}
+		},
+		"patrol": {
+			"normal": {
+				"sprite": "spr_patrol_bloon",
+				"object": "obj_patrol_bloon",
+				max_health: 50,
+				layers: 50,
+				index: 0,
+				rbe: 50,
+				health: 50,
+				density: 1,
+				speed: 4,
+				children: [
+					{"class": "static", "layer": "red", "properties": ["float to track"]},
+					{"class": "static", "layer": "red", "properties": ["float to track"]},
+					{"class": "static", "layer": "red", "properties": ["float to track"]},
+					{"class": "static", "layer": "blue", "properties": ["float to track"]},
+					{"class": "static", "layer": "blue", "properties": ["float to track"]},
+					{"class": "static", "layer": "blue", "properties": ["float to track"]}
+				]
+			}	
 		}
 	}
 }
