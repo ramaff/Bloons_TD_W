@@ -545,6 +545,7 @@
     {"name":"spr_shielded_splitter_bloon_icon","order":14,"path":"sprites/spr_shielded_splitter_bloon_icon/spr_shielded_splitter_bloon_icon.yy",},
     {"name":"spr_skateboard_monkey_butt","order":12,"path":"sprites/spr_skateboard_monkey_butt/spr_skateboard_monkey_butt.yy",},
     {"name":"spr_skateboard_monkey","order":19,"path":"sprites/spr_skateboard_monkey/spr_skateboard_monkey.yy",},
+    {"name":"spr_skyscraper_bloon","order":17,"path":"sprites/spr_skyscraper_bloon/spr_skyscraper_bloon.yy",},
     {"name":"spr_slash","order":3,"path":"sprites/spr_slash/spr_slash.yy",},
     {"name":"spr_small_bomb","order":39,"path":"sprites/spr_small_bomb/spr_small_bomb.yy",},
     {"name":"spr_small_pineapple","order":12,"path":"sprites/spr_small_pineapple/spr_small_pineapple.yy",},

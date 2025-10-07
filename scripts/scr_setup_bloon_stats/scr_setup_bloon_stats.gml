@@ -342,6 +342,35 @@ function scr_setup_bloon_stats(){
 						"layer": "lead"
 					}
 				]
+			},
+			"skyscraper": {
+				"sprite": "spr_skyscraper_bloon",
+				"tattered_sprite": "spr_lead_tattered",
+				layers: 167,
+				index: 0,
+				rbe: 566,
+				health: 150,
+				max_health: 150,
+				density: 1,
+				speed: 0.75,
+				children: [
+					{
+						"class": "lead",
+						"layer": "block"
+					},
+					{
+						"class": "lead",
+						"layer": "block"
+					},
+					{
+						"class": "lead",
+						"layer": "block"
+					},
+					{
+						"class": "lead",
+						"layer": "block"
+					}
+				]
 			}
 		},
 		"static": {
@@ -2053,6 +2082,7 @@ function scr_setup_bloon_stats(){
 				index: 0,
 				rbe: 50,
 				health: 50,
+				stun_color: c_red,
 				density: 1,
 				speed: 4,
 				children: [

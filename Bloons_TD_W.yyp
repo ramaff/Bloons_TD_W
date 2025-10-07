@@ -617,6 +617,7 @@
     {"id":{"name":"spr_shielded_splitter_bloon_icon","path":"sprites/spr_shielded_splitter_bloon_icon/spr_shielded_splitter_bloon_icon.yy",},},
     {"id":{"name":"spr_skateboard_monkey_butt","path":"sprites/spr_skateboard_monkey_butt/spr_skateboard_monkey_butt.yy",},},
     {"id":{"name":"spr_skateboard_monkey","path":"sprites/spr_skateboard_monkey/spr_skateboard_monkey.yy",},},
+    {"id":{"name":"spr_skyscraper_bloon","path":"sprites/spr_skyscraper_bloon/spr_skyscraper_bloon.yy",},},
     {"id":{"name":"spr_slash","path":"sprites/spr_slash/spr_slash.yy",},},
     {"id":{"name":"spr_sling_shot_tower_butt","path":"sprites/spr_sling_shot_tower_butt/spr_sling_shot_tower_butt.yy",},},
     {"id":{"name":"spr_small_bomb","path":"sprites/spr_small_bomb/spr_small_bomb.yy",},},
