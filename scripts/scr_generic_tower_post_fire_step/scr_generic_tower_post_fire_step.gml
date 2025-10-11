@@ -3,7 +3,6 @@
 function scr_generic_tower_post_fire_step(){
 
 	if attacked {
-		tower_stats.attack_cooldown += tower_stats.delay
 		if variable_struct_exists(tower_stats, "stat_boosts") {
 			var _boosts = variable_struct_get_names(tower_stats.stat_boosts);
 			for(var _i = 0; _i < array_length(_boosts); _i++) {

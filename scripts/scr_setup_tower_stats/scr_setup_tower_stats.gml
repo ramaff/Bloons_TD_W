@@ -221,7 +221,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Special Deliveries",
-						upgrade_cost: 1500
+						upgrade_cost: 1000
 					}
 				]
 			],
@@ -232,8 +232,12 @@ function scr_setup_tower_stats(){
 				],
 				[
 					{
+						keyword: "Clown Moab",
+						upgrade_cost: 1500
+					},
+					{
 						keyword: "Piñata",
-						upgrade_cost: 3000
+						upgrade_cost: 6000
 					}
 				]
 			]
@@ -245,7 +249,7 @@ function scr_setup_tower_stats(){
 			total_cost: 600,
 			upgrade_cost: 0,
 			range: 150,
-			delay: 30,
+			delay: 120,
 			attack_cooldown: 0,
 			health: 250,
 			max_health: 250,
@@ -266,28 +270,28 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Walk the Bloon",
-						upgrade_cost: 300
+						upgrade_cost: 450
 					},
 					{
 						keyword: "Around the World",
 						upgrade_cost: 300
 					},
 					{
-						keyword: "Professional Grade Yoyos",
+						keyword: "Finishing Performance",
 						upgrade_cost: 600
 					}
 				],
 				[
 					{
-						keyword: "Red Spray Paint",
+						keyword: "Faster Setup",
 						upgrade_cost: 300
 					},
 					{
-						keyword: "Anti Property Spray Paint",
-						upgrade_cost: 600
+						keyword: "Hand Eye Coordination",
+						upgrade_cost: 450
 					},
 					{
-						keyword: "Rainbow Spray Pain",
+						keyword: "Professional Grade Yoyos",
 						upgrade_cost: 900
 					}
 				]

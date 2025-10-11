@@ -58,6 +58,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_angry_squirrel","order":4,"path":"objects/obj_angry_squirrel/obj_angry_squirrel.yy",},
+    {"name":"obj_around_the_world_yoyo","order":11,"path":"objects/obj_around_the_world_yoyo/obj_around_the_world_yoyo.yy",},
     {"name":"obj_assassin_monkey","order":10,"path":"objects/obj_assassin_monkey/obj_assassin_monkey.yy",},
     {"name":"obj_autumn_acres_button","order":3,"path":"objects/obj_autumn_acres_button/obj_autumn_acres_button.yy",},
     {"name":"obj_barrier_bloon","order":15,"path":"objects/obj_barrier_bloon/obj_barrier_bloon.yy",},
@@ -186,6 +187,7 @@
     {"name":"obj_turret","order":12,"path":"objects/obj_turret/obj_turret.yy",},
     {"name":"obj_tutorial_note","order":9,"path":"objects/obj_tutorial_note/obj_tutorial_note.yy",},
     {"name":"obj_upgrade_butt","order":1,"path":"objects/obj_upgrade_butt/obj_upgrade_butt.yy",},
+    {"name":"obj_walk_the_bloon_yoyo","order":10,"path":"objects/obj_walk_the_bloon_yoyo/obj_walk_the_bloon_yoyo.yy",},
     {"name":"obj_water_bloon","order":6,"path":"objects/obj_water_bloon/obj_water_bloon.yy",},
     {"name":"obj_water_guzzler","order":9,"path":"objects/obj_water_guzzler/obj_water_guzzler.yy",},
     {"name":"obj_water_particle","order":2,"path":"objects/obj_water_particle/obj_water_particle.yy",},

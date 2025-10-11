@@ -11,6 +11,7 @@ if tower_stats.attack_cooldown <= 0 {
 		tower_stats.barrage_count = tower_stats.attack_barrages
 		alarm[1] = tower_stats.barrage_delay
 	}
+	tower_stats.attack_cooldown += tower_stats.delay
 }
 
 var _additional_attacks = []
