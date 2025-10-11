@@ -342,6 +342,33 @@ function scr_setup_upgrade_stats(){
 						]
 					}
 				]
+			},
+			"Professional Grade Yoyos": {
+				upgrade_string: "Yoyos pop twice as many bloons before needing to be refreshed.",
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						object: "obj_yoyo", sprite: "spr_pro_yoyo", pierce: 200, damage: 1, speed: 8, lifespan: 999999, tick_frequency: 30
+					}
+				],
+				additional_attacks: [
+					{
+						delay: 120, attack_cooldown: 0, range: 150,
+						projectile_stats: [
+							{
+								object: "obj_around_the_world_yoyo", sprite: "spr_pro_yoyo", pierce: 200, damage: 1, speed: 8, lifespan: 999999, tick_frequency: 30
+							}
+						]
+					},
+					{
+						delay: 120, attack_cooldown: 0, range: 150,
+						projectile_stats: [
+							{
+								object: "obj_walk_the_bloon_yoyo", sprite: "spr_pro_yoyo", pierce: 200, damage: 1, speed: 8, lifespan: 999999, tick_frequency: 30
+							}
+						]
+					}
+				]
 			}
 		},
 		"cactus_monkey": {

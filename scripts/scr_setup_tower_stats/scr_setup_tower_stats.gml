@@ -277,8 +277,8 @@ function scr_setup_tower_stats(){
 						upgrade_cost: 300
 					},
 					{
-						keyword: "Finishing Performance",
-						upgrade_cost: 600
+						keyword: "Professional Grade Yoyos",
+						upgrade_cost: 900
 					}
 				],
 				[
@@ -291,8 +291,8 @@ function scr_setup_tower_stats(){
 						upgrade_cost: 450
 					},
 					{
-						keyword: "Professional Grade Yoyos",
-						upgrade_cost: 900
+						keyword: "Finishing Performance",
+						upgrade_cost: 600
 					}
 				]
 			],

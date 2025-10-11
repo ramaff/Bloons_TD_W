@@ -519,6 +519,7 @@
     {"name":"spr_pointer","order":19,"path":"sprites/spr_pointer/spr_pointer.yy",},
     {"name":"spr_pop","order":11,"path":"sprites/spr_pop/spr_pop.yy",},
     {"name":"spr_pot_ceramic_bloon","order":6,"path":"sprites/spr_pot_ceramic_bloon/spr_pot_ceramic_bloon.yy",},
+    {"name":"spr_pro_yoyo","order":44,"path":"sprites/spr_pro_yoyo/spr_pro_yoyo.yy",},
     {"name":"spr_puncture","order":17,"path":"sprites/spr_puncture/spr_puncture.yy",},
     {"name":"spr_queen_chess_bloon","order":4,"path":"sprites/spr_queen_chess_bloon/spr_queen_chess_bloon.yy",},
     {"name":"spr_range_circle","order":8,"path":"sprites/spr_range_circle/spr_range_circle.yy",},

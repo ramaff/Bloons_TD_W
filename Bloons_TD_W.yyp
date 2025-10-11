@@ -590,6 +590,7 @@
     {"id":{"name":"spr_pointer","path":"sprites/spr_pointer/spr_pointer.yy",},},
     {"id":{"name":"spr_pop","path":"sprites/spr_pop/spr_pop.yy",},},
     {"id":{"name":"spr_pot_ceramic_bloon","path":"sprites/spr_pot_ceramic_bloon/spr_pot_ceramic_bloon.yy",},},
+    {"id":{"name":"spr_pro_yoyo","path":"sprites/spr_pro_yoyo/spr_pro_yoyo.yy",},},
     {"id":{"name":"spr_puncture","path":"sprites/spr_puncture/spr_puncture.yy",},},
     {"id":{"name":"spr_queen_chess_bloon","path":"sprites/spr_queen_chess_bloon/spr_queen_chess_bloon.yy",},},
     {"id":{"name":"spr_range_circle","path":"sprites/spr_range_circle/spr_range_circle.yy",},},
