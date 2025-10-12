@@ -22,6 +22,18 @@ function scr_create_tower(_tower_id, _tower_stats){
 		if !variable_struct_exists(tower_stats, "damage_keys") {
 			tower_stats.damage_keys = []
 		}
+		tower_stats.total_upgrade_stats = {
+			"pierce": 0,
+			"delay": 99999,
+			"pierce_add": 0,
+			"pierce_multiplier": 1,
+			"shot_count_multiplier": 1,
+			"fire_rate_multiplier": 1,
+			"range": 0,
+			"lifespan": 0,
+			"camo_detection": false,
+			"lead_hit": false
+		}
 		
 		_id = id;
 		tower_base = noone;

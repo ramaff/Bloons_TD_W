@@ -13,7 +13,7 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Shoots 16% faster. Super Dart recharges 16% faster."
 			},
 			"stronger": {
-				pierce: 1,
+				pierce_add: 1,
 				upgrade_string: "Darts pop 1 extra bloon. Super Dart pops 50 extra bloons and does +1 damage."
 			},
 			"Split Darts": {
@@ -171,7 +171,7 @@ function scr_setup_upgrade_stats(){
 		},
 		"sling_shot_monkey": {
 			"stone skipping": {
-				pierce: 2,
+				pierce_add: 2,
 				lifespan: 32,
 				upgrade_string: "Stones skip and pop 2 more bloons."
 			},
@@ -305,18 +305,10 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Additional yoyo that performs the 'Walk the Bloon' trick.",
 				additional_attacks: [
 					{
-						delay: 120,
-						attack_cooldown: 0,
-						range: 150,
+						delay: 180, attack_cooldown: 0, range: 150,
 						projectile_stats: [
 							{
-								object: "obj_walk_the_bloon_yoyo",
-								sprite: "spr_yoyo",
-								pierce: 100,
-								damage: 1,
-								speed: 8,
-								lifespan: 999999,
-								tick_frequency: 30
+								object: "obj_walk_the_bloon_yoyo", sprite: "spr_yoyo", pierce: 100, damage: 1, speed: 8, lifespan: 999999, tick_frequency: 45
 							}
 						]
 					}
@@ -326,25 +318,17 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Additional yoyo that performs the 'Around the World' trick.",
 				additional_attacks: [
 					{
-						delay: 120,
-						attack_cooldown: 0,
-						range: 150,
+						delay: 180, attack_cooldown: 0, range: 150,
 						projectile_stats: [
 							{
-								object: "obj_around_the_world_yoyo",
-								sprite: "spr_yoyo",
-								pierce: 100,
-								damage: 1,
-								speed: 8,
-								lifespan: 999999,
-								tick_frequency: 30
+								object: "obj_around_the_world_yoyo", sprite: "spr_yoyo", pierce: 100, damage: 1, speed: 8, lifespan: 999999, tick_frequency: 45
 							}
 						]
 					}
 				]
 			},
 			"Professional Grade Yoyos": {
-				upgrade_string: "Yoyos pop twice as many bloons before needing to be refreshed.",
+				upgrade_string: "Yoyos pop twice as many bloons before needing to be refreshed. They also pop bloons 50% more often.",
 				projectile_replacement: true,
 				projectile_stats: [
 					{
@@ -353,7 +337,7 @@ function scr_setup_upgrade_stats(){
 				],
 				additional_attacks: [
 					{
-						delay: 120, attack_cooldown: 0, range: 150,
+						delay: 180, attack_cooldown: 0, range: 150,
 						projectile_stats: [
 							{
 								object: "obj_around_the_world_yoyo", sprite: "spr_pro_yoyo", pierce: 200, damage: 1, speed: 8, lifespan: 999999, tick_frequency: 30
@@ -361,7 +345,7 @@ function scr_setup_upgrade_stats(){
 						]
 					},
 					{
-						delay: 120, attack_cooldown: 0, range: 150,
+						delay: 180, attack_cooldown: 0, range: 150,
 						projectile_stats: [
 							{
 								object: "obj_walk_the_bloon_yoyo", sprite: "spr_pro_yoyo", pierce: 200, damage: 1, speed: 8, lifespan: 999999, tick_frequency: 30
@@ -369,11 +353,32 @@ function scr_setup_upgrade_stats(){
 						]
 					}
 				]
-			}
+			},
+			"Faster Setup": {
+				upgrade_string: "Refresh yoyos 50% faster",
+				fire_rate_multiplier: 1.5
+			},
+			"Hand Eye Coordination": {
+				upgrade_string: "Increases yoyo range and detects camo.",
+				range: 40,
+				camo_detection: true
+			},
+			"Finishing Performance": {
+				upgrade_string: "Spawn an extra set of strong yoyos.",
+				abilities: {
+					"Finishing Performance": {
+						"charge_time": 60,
+						"charge": 60,
+						"max_charges": 1,
+						"charges": 0,
+						"ability_script": scr_special_delivery
+					}
+				}
+			},
 		},
 		"cactus_monkey": {
 			"pointy-er needles": {
-				pierce: 1,
+				pierce_add: 1,
 				upgrade_string: "Needles pop an additional bloon"
 			},
 			"faster unload": {

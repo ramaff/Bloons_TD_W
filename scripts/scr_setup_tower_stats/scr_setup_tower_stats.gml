@@ -249,7 +249,7 @@ function scr_setup_tower_stats(){
 			total_cost: 600,
 			upgrade_cost: 0,
 			range: 150,
-			delay: 120,
+			delay: 180,
 			attack_cooldown: 0,
 			health: 250,
 			max_health: 250,
@@ -263,7 +263,7 @@ function scr_setup_tower_stats(){
 					damage: 1,
 					speed: 8,
 					lifespan: 999999,
-					tick_frequency: 30
+					tick_frequency: 45
 				}
 			],
 			upgrades: [
@@ -278,7 +278,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Professional Grade Yoyos",
-						upgrade_cost: 900
+						upgrade_cost: 600
 					}
 				],
 				[

@@ -4,6 +4,7 @@
 if instance_exists(projectile_stats.tower_id) {
 	var _xx = projectile_stats.tower_id.x + 15
 	var _yy = projectile_stats.tower_id.y - 35
+	var _range = projectile_stats.tower_id.tower_stats.range + 10
 	
 	var _dist = point_distance(x, y, _xx, _yy)
 	
@@ -18,7 +19,7 @@ if instance_exists(projectile_stats.tower_id) {
 		_offset = projectile_stats.spiral_homing_offset
 	}
 	if !instance_exists(target) {
-		target = scr_get_bloon_target({"camo_detection": variable_struct_exists(projectile_stats, "camo_detection"), "range": 160, "damage_keys": projectile_stats.damage_keys}, _xx, _yy, projectile_stats.targeting, 0, real(id) + projectile_stats.id_offset)
+		target = scr_get_bloon_target({"camo_detection": variable_struct_exists(projectile_stats, "camo_detection"), "range": _range, "damage_keys": projectile_stats.damage_keys}, _xx, _yy, projectile_stats.targeting, 0, real(id) + projectile_stats.id_offset)
 	}
 	if instance_exists(target) {
 		var _tx = target.x

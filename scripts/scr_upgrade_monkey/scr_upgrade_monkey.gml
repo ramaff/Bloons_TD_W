@@ -1,5 +1,79 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
+function scr_update_tower_stats(_original_stat, _upgrade_stats) {
+	
+	if !variable_struct_exists(_original_stat, "fire_rate_multiplier") {
+		_original_stat.fire_rate_multiplier = 1;
+	}
+	
+	if variable_struct_exists(_upgrade_stats, "fire_rate_multiplier") {
+		_original_stat.delay = _original_stat.delay / _upgrade_stats.fire_rate_multiplier
+		_original_stat.fire_rate_multiplier = _original_stat.fire_rate_multiplier * _upgrade_stats.fire_rate_multiplier
+		/*if variable_struct_exists(_tower_stats, "additional_attacks") {
+			for(_i = 0; _i < array_length(_tower_stats.additional_attacks); _i++) {
+				var _attack = _tower_stats.additional_attacks[_i];
+				_attack.delay = _attack.delay / _upgrade_stats.fire_rate_multiplier
+			}
+		} */
+	}
+	if variable_struct_exists(_upgrade_stats, "range") {
+		_original_stat.range += _upgrade_stats.range;
+	}
+	
+	if variable_struct_exists(_upgrade_stats, "camo_detection") {
+		_original_stat.camo_detection = _upgrade_stats.camo_detection;
+	}
+	
+}
+
+function scr_update_projectile_stats(_original_stat, _upgrade_stats) {
+	
+	
+	if !variable_struct_exists(_original_stat, "projectile_count") {
+		_original_stat.projectile_count = 1;
+	}
+	if !variable_struct_exists(_original_stat, "pierce_add") {
+		_original_stat.pierce_add = 0;
+	}
+	if !variable_struct_exists(_original_stat, "pierce_multiplier") {
+		_original_stat.pierce_multiplier = 1;
+	}
+	if !variable_struct_exists(_original_stat, "shot_count_multiplier") {
+		_original_stat.shot_count_multiplier = 1;
+	}
+	if !variable_struct_exists(_original_stat, "projectile_spread") {
+		_original_stat.projectile_spread = 15;
+	}
+	
+	if variable_struct_exists(_upgrade_stats, "projectile_sprite") {
+		_original_stat.sprite = _upgrade_stats.projectile_sprite
+	}
+	if variable_struct_exists(_upgrade_stats, "pierce_multiplier") {
+		_original_stat.pierce = _original_stat.pierce * _upgrade_stats.pierce_multiplier
+		_original_stat.pierce_multipler = _original_stat.pierce_multiplier * _upgrade_stats.pierce_multiplier
+	}
+	if variable_struct_exists(_upgrade_stats, "shot_count_multiplier") {
+		_original_stat.projectile_count = _original_stat.projectile_count * _upgrade_stats.shot_count_multiplier
+		_original_stat.shot_count_multiplier = _original_stat.shot_count_multiplier * _upgrade_stats.shot_count_multiplier
+	}
+	if variable_struct_exists(_upgrade_stats, "shot_count") {
+		_original_stat.projectile_count += _upgrade_stats.shot_count
+	}
+		
+	if variable_struct_exists(_upgrade_stats, "pierce_add") {
+		_original_stat.pierce += _upgrade_stats.pierce_add;
+		_original_stat.pierce_add += _upgrade_stats.pierce_add;
+	}
+	if variable_struct_exists(_upgrade_stats, "lifespan") {
+		_original_stat.lifespan += _upgrade_stats.lifespan;
+	}
+	if variable_struct_exists(_upgrade_stats, "camo_detection") {
+		_original_stat.camo_detection = _upgrade_stats.camo_detection;
+	}
+	
+}
+
 function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 
 	var _original_value = _monkey.tower_stats.total_cost
@@ -46,13 +120,21 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 	
 	var _projectile_count = array_length(_tower_stats.projectile_stats)
 	
+	scr_update_projectile_stats(_tower_stats.total_upgrade_stats, _upgrade_stats);
+	scr_update_tower_stats(_tower_stats.total_upgrade_stats, _upgrade_stats);
+	
+	var _replace_all = false
+	if variable_struct_exists(_upgrade_stats, "projectile_replacement") {
+		if _upgrade_stats.projectile_replacement {
+			_replace_all = true
+		}
+	}
+	
 	if variable_struct_exists(_upgrade_stats, "projectile_stats") {
 		var _starting_index = _projectile_count;
-		if variable_struct_exists(_upgrade_stats, "projectile_replacement") {
-			if _upgrade_stats.projectile_replacement {
-				_tower_stats.projectile_stats = []	
-				_starting_index = 0;
-			}
+		if _replace_all {
+			_tower_stats.projectile_stats = []	
+			_starting_index = 0;
 		}
 		var _upgrade_projectile_count = array_length(_upgrade_stats.projectile_stats)
 		for(var _i = 0; _i < _upgrade_projectile_count; _i++) {
@@ -60,56 +142,47 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 			_tower_stats.projectile_stats[_starting_index + _i].speed = _upgrade_stats.projectile_stats[_i].speed
 		}
 	}
-	
+	var _i = 0;
+	var _j = 0;
 	// Here we update the stats for all the projectiles
-	for(var _i = 0; _i < _projectile_count; _i++) {
-		
-		if variable_struct_exists(_upgrade_stats, "projectile_sprite") {
-			_tower_stats.projectile_stats[_i].sprite = _upgrade_stats.projectile_sprite
-		}
-		if variable_struct_exists(_upgrade_stats, "pierce_multiplier") {
-			_tower_stats.projectile_stats[_i].pierce = _tower_stats.projectile_stats[_i].pierce * _upgrade_stats.pierce_multiplier
-		}
-		if !variable_struct_exists(_tower_stats.projectile_stats[_i], "projectile_count") {
-			_tower_stats.projectile_stats[_i].projectile_count = 1;
-		}
-		if variable_struct_exists(_upgrade_stats, "shot_count_multiplier") {
-			_tower_stats.projectile_stats[_i].projectile_count = _tower_stats.projectile_stats[_i].projectile_count * _upgrade_stats.shot_count_multiplier
-			if !variable_struct_exists(_tower_stats.projectile_stats[_i], "projectile_spread") {
-				_tower_stats.projectile_stats[_i].projetile_spread = 15;
-			}
-		}
-		if variable_struct_exists(_upgrade_stats, "shot_count") {
-			_tower_stats.projectile_stats[_i].projectile_count += _upgrade_stats.shot_count
-			if !variable_struct_exists(_tower_stats.projectile_stats[_i], "projectile_spread") {
-				_tower_stats.projectile_stats[_i].projetile_spread = 15;
-			}
-		}
-		
-		if variable_struct_exists(_upgrade_stats, "pierce") {
-			_tower_stats.projectile_stats[_i].pierce += _upgrade_stats.pierce;
-		}
-		if variable_struct_exists(_upgrade_stats, "lifespan") {
-			_tower_stats.projectile_stats[_i].lifespan += _upgrade_stats.lifespan;
-		}
-		if variable_struct_exists(_upgrade_stats, "camo_detection") {
-			_tower_stats.projectile_stats[_i].camo_detection = _upgrade_stats.camo_detection;
+	for(_i = 0; _i < _projectile_count; _i++) {
+		if _replace_all {
+			scr_update_projectile_stats(_tower_stats.projectile_stats[_i], _tower_stats.total_upgrade_stats)	
+		} else {
+			scr_update_projectile_stats(_tower_stats.projectile_stats[_i], _upgrade_stats)
 		}
 	}
 	
+	
+	//if _replace_all {
+	//	scr_update_tower_stats(_tower_stats, _tower_stats.total_upgrade_stats)	
+	//} else {
+		scr_update_tower_stats(_tower_stats, _upgrade_stats)
+	//}
+	
 	if variable_struct_exists(_upgrade_stats, "additional_attacks") {
-		if !variable_struct_exists(_tower_stats, "additional_attacks") {
+		if !variable_struct_exists(_tower_stats, "additional_attacks") || _replace_all {
 			_tower_stats.additional_attacks = []
 		}
 		_tower_stats.additional_attacks = array_concat(_tower_stats.additional_attacks, _upgrade_stats.additional_attacks)
-	}
-	
-	if variable_struct_exists(_upgrade_stats, "fire_rate_multiplier") {
-		_tower_stats.delay = _tower_stats.delay / _upgrade_stats.fire_rate_multiplier
-		if variable_struct_exists(_tower_stats, "additional_attacks") {
-			for(var _i = 0; _i < array_length(_tower_stats.additional_attacks); _i++) {
-				var _attack = _tower_stats.additional_attacks[_i];
-				_attack.delay = _attack.delay / _upgrade_stats.fire_rate_multiplier
+		
+		var _additional_attack_count = array_length(_tower_stats.additional_attacks)
+		for (_i = 0; _i < _additional_attack_count; _i++) {
+			var _add_projectile_count = array_length(_tower_stats.additional_attacks[_i].projectile_stats)
+			var _add_attack = _tower_stats.additional_attacks[_i]
+			
+			if _replace_all {
+				scr_update_tower_stats(_add_attack, _tower_stats.total_upgrade_stats)	
+			} else {
+				scr_update_tower_stats(_add_attack, _upgrade_stats)
+			}
+			
+			for(_j = 0; _j < _add_projectile_count; _j++) {
+				if _replace_all {
+					scr_update_projectile_stats(_add_attack.projectile_stats[_j], _tower_stats.total_upgrade_stats)	
+				} else {
+					scr_update_projectile_stats(_add_attack.projectile_stats[_j], _upgrade_stats)
+				}
 			}
 		}
 	}
@@ -120,14 +193,6 @@ function scr_upgrade_monkey(_monkey, _upgrade_stats, _path) {
 		} else {
 			_tower_stats.ability_charge_rate = _upgrade_stats.ability_charge_multiplier
 		}
-	}
-	
-	if variable_struct_exists(_upgrade_stats, "range") {
-		_tower_stats.range += _upgrade_stats.range;
-	}
-	
-	if variable_struct_exists(_upgrade_stats, "camo_detection") {
-		_tower_stats.camo_detection = _upgrade_stats.camo_detection;
 	}
 	
 	if variable_struct_exists(_upgrade_stats, "upgrade_script") {
