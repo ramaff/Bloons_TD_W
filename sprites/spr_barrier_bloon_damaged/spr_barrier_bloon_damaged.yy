@@ -17,13 +17,14 @@
     {"$GMSpriteFrame":"","%Name":"7da7f327-4aba-4016-a8ad-c65f3e2a3516","name":"7da7f327-4aba-4016-a8ad-c65f3e2a3516","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"b551d2a3-7cd9-49a1-94d0-ab07ec70bebe","name":"b551d2a3-7cd9-49a1-94d0-ab07ec70bebe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"bf648b48-967b-483b-b8f6-8b09637080eb","name":"bf648b48-967b-483b-b8f6-8b09637080eb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"2d39ab10-a022-4c37-977b-d9c5ed063ed5","name":"2d39ab10-a022-4c37-977b-d9c5ed063ed5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":104,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"e9f3f8de-ada0-46da-8e2a-344368fd39cd","blendMode":0,"displayName":"default","isLocked":false,"name":"e9f3f8de-ada0-46da-8e2a-344368fd39cd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"c8d773b7-6d3d-44fd-a257-92703155c740","blendMode":0,"displayName":"default","isLocked":false,"name":"c8d773b7-6d3d-44fd-a257-92703155c740","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_barrier_bloon_damaged",
   "nineSlice":null,
@@ -53,7 +54,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":5.0,
+    "length":6.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -89,6 +90,9 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bf648b48-967b-483b-b8f6-8b09637080eb","path":"sprites/spr_barrier_bloon_damaged/spr_barrier_bloon_damaged.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"d64f9a87-f828-4af4-8681-60a14065cc42","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2d39ab10-a022-4c37-977b-d9c5ed063ed5","path":"sprites/spr_barrier_bloon_damaged/spr_barrier_bloon_damaged.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"091a224f-96d4-4e49-b24c-45a0a34077fe","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
