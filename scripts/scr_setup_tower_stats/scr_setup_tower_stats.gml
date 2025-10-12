@@ -249,7 +249,7 @@ function scr_setup_tower_stats(){
 			total_cost: 600,
 			upgrade_cost: 0,
 			range: 150,
-			delay: 180,
+			delay: 240,
 			attack_cooldown: 0,
 			health: 250,
 			max_health: 250,
@@ -278,7 +278,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Professional Grade Yoyos",
-						upgrade_cost: 600
+						upgrade_cost: 750
 					}
 				],
 				[
@@ -298,14 +298,18 @@ function scr_setup_tower_stats(){
 			],
 			split_upgrades: [
 				[
-				],
-				[
-				],
-				[
 					{
-						keyword: "Piñata",
+						keyword: "Hot Streak",
 						upgrade_cost: 3000
+					},
+					{
+						keyword: "Morningstar",
+						upgrade_cost: 7500
 					}
+				],
+				[
+				],
+				[
 				]
 			]
 		},

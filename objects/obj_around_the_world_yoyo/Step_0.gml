@@ -22,7 +22,7 @@ if instance_exists(projectile_stats.tower_id) {
 	}
 	var _tx = _xx + lengthdir_x(orbit_dist, orbit_angle)
 	var _ty = _yy + lengthdir_y(orbit_dist, orbit_angle)
-	orbit_angle += 800 / orbit_dist;
+	orbit_angle += 100 * projectile_stats.speed / orbit_dist;
 	direction = point_direction(x, y, _tx, _ty)
 	speed = min(speed + 0.5, point_distance(x, y, _tx, _ty))
 }

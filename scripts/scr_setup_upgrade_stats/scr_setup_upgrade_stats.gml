@@ -305,7 +305,7 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Additional yoyo that performs the 'Walk the Bloon' trick.",
 				additional_attacks: [
 					{
-						delay: 180, attack_cooldown: 0, range: 150,
+						delay: 240, attack_cooldown: 0, range: 150,
 						projectile_stats: [
 							{
 								object: "obj_walk_the_bloon_yoyo", sprite: "spr_yoyo", pierce: 100, damage: 1, speed: 8, lifespan: 999999, tick_frequency: 45
@@ -318,7 +318,7 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Additional yoyo that performs the 'Around the World' trick.",
 				additional_attacks: [
 					{
-						delay: 180, attack_cooldown: 0, range: 150,
+						delay: 240, attack_cooldown: 0, range: 150,
 						projectile_stats: [
 							{
 								object: "obj_around_the_world_yoyo", sprite: "spr_yoyo", pierce: 100, damage: 1, speed: 8, lifespan: 999999, tick_frequency: 45
@@ -330,6 +330,7 @@ function scr_setup_upgrade_stats(){
 			"Professional Grade Yoyos": {
 				upgrade_string: "Yoyos pop twice as many bloons before needing to be refreshed. They also pop bloons 50% more often.",
 				projectile_replacement: true,
+				upgrade_script: scr_trickster_projectile_replace,
 				projectile_stats: [
 					{
 						object: "obj_yoyo", sprite: "spr_pro_yoyo", pierce: 200, damage: 1, speed: 8, lifespan: 999999, tick_frequency: 30
@@ -337,7 +338,7 @@ function scr_setup_upgrade_stats(){
 				],
 				additional_attacks: [
 					{
-						delay: 180, attack_cooldown: 0, range: 150,
+						delay: 240, attack_cooldown: 0, range: 150,
 						projectile_stats: [
 							{
 								object: "obj_around_the_world_yoyo", sprite: "spr_pro_yoyo", pierce: 200, damage: 1, speed: 8, lifespan: 999999, tick_frequency: 30
@@ -345,10 +346,66 @@ function scr_setup_upgrade_stats(){
 						]
 					},
 					{
-						delay: 180, attack_cooldown: 0, range: 150,
+						delay: 240, attack_cooldown: 0, range: 150,
 						projectile_stats: [
 							{
 								object: "obj_walk_the_bloon_yoyo", sprite: "spr_pro_yoyo", pierce: 200, damage: 1, speed: 8, lifespan: 999999, tick_frequency: 30
+							}
+						]
+					}
+				]
+			},
+			"Hot Streak": {
+				upgrade_string: "Yoyos pop twice as many bloons, pop twice as often, and can pop lead",
+				projectile_replacement: true,
+				upgrade_script: scr_trickster_projectile_replace,
+				projectile_stats: [
+					{
+						object: "obj_yoyo", sprite: "spr_hot_yoyo", pierce: 400, damage: 1, speed: 10, lifespan: 999999, tick_frequency: 15, lead_hit: true
+					}
+				],
+				additional_attacks: [
+					{
+						delay: 240, attack_cooldown: 0, range: 150,
+						projectile_stats: [
+							{
+								object: "obj_around_the_world_yoyo", sprite: "spr_hot_yoyo", pierce: 400, damage: 1, speed: 10, lifespan: 999999, tick_frequency: 15, lead_hit: true
+							}
+						]
+					},
+					{
+						delay: 240, attack_cooldown: 0, range: 150,
+						projectile_stats: [
+							{
+								object: "obj_walk_the_bloon_yoyo", sprite: "spr_hot_yoyo", pierce: 400, damage: 1, speed: 10, lifespan: 999999, tick_frequency: 15, lead_hit: true
+							}
+						]
+					}
+				]
+			},
+			"Morningstar": {
+				upgrade_string: "Morningstars do double damage, pop way more bloons, and knock them back.",
+				projectile_replacement: true,
+				upgrade_script: scr_trickster_projectile_replace,
+				projectile_stats: [
+					{
+						object: "obj_yoyo", sprite: "spr_morningstar", pierce: 750, damage: 2, speed: 12, lifespan: 999999, tick_frequency: 15, lead_hit: true, bloon_pushback: 0.03
+					}
+				],
+				additional_attacks: [
+					{
+						delay: 240, attack_cooldown: 0, range: 150,
+						projectile_stats: [
+							{
+								object: "obj_around_the_world_yoyo", sprite: "spr_morningstar", pierce: 750, damage: 2, speed: 12, lifespan: 999999, tick_frequency: 15, lead_hit: true, bloon_pushback: 0.03
+							}
+						]
+					},
+					{
+						delay: 240, attack_cooldown: 0, range: 150,
+						projectile_stats: [
+							{
+								object: "obj_walk_the_bloon_yoyo", sprite: "spr_morningstar", pierce: 750, damage: 2, speed: 12, lifespan: 999999, tick_frequency: 15, lead_hit: true, bloon_pushback: 0.03
 							}
 						]
 					}
@@ -364,14 +421,14 @@ function scr_setup_upgrade_stats(){
 				camo_detection: true
 			},
 			"Finishing Performance": {
-				upgrade_string: "Spawn an extra set of strong yoyos.",
+				upgrade_string: "Spawn two extra sets of yoyos. Can be charged up twice.",
 				abilities: {
 					"Finishing Performance": {
-						"charge_time": 60,
-						"charge": 60,
-						"max_charges": 1,
+						"charge_time": 40,
+						"charge": 40,
+						"max_charges": 2,
 						"charges": 0,
-						"ability_script": scr_special_delivery
+						"ability_script": scr_finishing_performance
 					}
 				}
 			},
