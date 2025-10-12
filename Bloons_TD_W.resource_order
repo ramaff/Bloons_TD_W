@@ -594,6 +594,7 @@
     {"name":"spr_tower_info_butt","order":4,"path":"sprites/spr_tower_info_butt/spr_tower_info_butt.yy",},
     {"name":"spr_tower_stun","order":9,"path":"sprites/spr_tower_stun/spr_tower_stun.yy",},
     {"name":"spr_tower_tiles","order":11,"path":"sprites/spr_tower_tiles/spr_tower_tiles.yy",},
+    {"name":"spr_traffic_cop_bloon","order":28,"path":"sprites/spr_traffic_cop_bloon/spr_traffic_cop_bloon.yy",},
     {"name":"spr_traffic_jam_track","order":27,"path":"sprites/spr_traffic_jam_track/spr_traffic_jam_track.yy",},
     {"name":"spr_training_room_track","order":1,"path":"sprites/spr_training_room_track/spr_training_room_track.yy",},
     {"name":"spr_training_tent_track_old","order":7,"path":"sprites/spr_training_tent_track_old/spr_training_tent_track_old.yy",},

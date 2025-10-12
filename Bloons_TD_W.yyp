@@ -668,6 +668,7 @@
     {"id":{"name":"spr_tower_info_butt","path":"sprites/spr_tower_info_butt/spr_tower_info_butt.yy",},},
     {"id":{"name":"spr_tower_stun","path":"sprites/spr_tower_stun/spr_tower_stun.yy",},},
     {"id":{"name":"spr_tower_tiles","path":"sprites/spr_tower_tiles/spr_tower_tiles.yy",},},
+    {"id":{"name":"spr_traffic_cop_bloon","path":"sprites/spr_traffic_cop_bloon/spr_traffic_cop_bloon.yy",},},
     {"id":{"name":"spr_traffic_jam_track","path":"sprites/spr_traffic_jam_track/spr_traffic_jam_track.yy",},},
     {"id":{"name":"spr_training_room_track","path":"sprites/spr_training_room_track/spr_training_room_track.yy",},},
     {"id":{"name":"spr_training_tent_track_old","path":"sprites/spr_training_tent_track_old/spr_training_tent_track_old.yy",},},
