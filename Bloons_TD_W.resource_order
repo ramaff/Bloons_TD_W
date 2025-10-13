@@ -181,6 +181,7 @@
     {"name":"obj_tower_info_pan","order":4,"path":"objects/obj_tower_info_pan/obj_tower_info_pan.yy",},
     {"name":"obj_tower_projectile","order":5,"path":"objects/obj_tower_projectile/obj_tower_projectile.yy",},
     {"name":"obj_tower_tile","order":7,"path":"objects/obj_tower_tile/obj_tower_tile.yy",},
+    {"name":"obj_traffic_cop_bloon","order":18,"path":"objects/obj_traffic_cop_bloon/obj_traffic_cop_bloon.yy",},
     {"name":"obj_traffic_jam_button","order":25,"path":"objects/obj_traffic_jam_button/obj_traffic_jam_button.yy",},
     {"name":"obj_training_tent_button","order":1,"path":"objects/obj_training_tent_button/obj_training_tent_button.yy",},
     {"name":"obj_trickster","order":15,"path":"objects/obj_trickster/obj_trickster.yy",},

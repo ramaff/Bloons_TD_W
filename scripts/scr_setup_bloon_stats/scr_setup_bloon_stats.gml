@@ -2062,7 +2062,7 @@ function scr_setup_bloon_stats(){
 		},
 		"monster_truck": {
 			"object": "obj_monster_truck",
-			"big_bloon_tier": 5,
+			"big_bloon_tier": 6,
 			"bfb": {
 				sprite: "spr_monster_truck",
 				layers: 7300,
@@ -2083,6 +2083,7 @@ function scr_setup_bloon_stats(){
 				rbe: 50,
 				health: 50,
 				stun_color: c_red,
+				big_bloon_tier: 1,
 				density: 1,
 				speed: 4,
 				children: [
@@ -2093,7 +2094,20 @@ function scr_setup_bloon_stats(){
 					{"class": "static", "layer": "blue", "properties": ["float to track"]},
 					{"class": "static", "layer": "blue", "properties": ["float to track"]}
 				]
-			}	
+			}
+		},
+		"traffic cop": {
+			"blue": {
+				sprite: "spr_traffic_cop_bloon",
+				"object": "obj_traffic_cop_bloon",
+				layers: 8000,
+				rbe: 8000,
+				damage: 100,
+				health: 8000,
+				big_bloon_tier: 7,
+				density: 1,
+				speed: 2,
+			}
 		}
 	}
 }
