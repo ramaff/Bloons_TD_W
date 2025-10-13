@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 alarm[2] = 600;
-alarm[1] = 1200;
+alarm[1] = 900;
 
 sprite_index = spr_traffic_cop_bloon_sign_up
 

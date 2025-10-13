@@ -132,6 +132,9 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 			_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.shielded_sprite);
 		}
 		_bloon.bloon_stats.shield_health = floor(_bloon.bloon_stats.layers + sqrt(_bloon.bloon_stats.rbe - _bloon.bloon_stats.layers))
+		if _class == "static" {
+			_bloon.bloon_stats.shield_health += _bloon.bloon_stats.shield_health
+		}
 	}
 	
 	_bloon.depth = -sqrt(_bloon.bloon_stats.layers)
@@ -182,8 +185,8 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		}	
 	}
 	
-	if _class = "patrol" {
-		_path = pth_the_stronghold_knight;
+	if variable_struct_exists(_bloon.bloon_stats, "specific_path") {
+		_path = _bloon.bloon_stats.specific_path;
 		bloon_stats.path = _path
 		path_position = 0;
 		path_start(_path, bloon_stats.speed, path_action_stop, true);

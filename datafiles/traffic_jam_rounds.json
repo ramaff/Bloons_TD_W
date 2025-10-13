@@ -1,6 +1,88 @@
 [
 	[
 		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "traffic cop",
+			"layer": "blue",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_catapult_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "zap", "count": 1, "spread": 0, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 8
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 24, "spread": 75, "cooldown": 0,
+			"properties": ["tattered"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "lead", "layer": "skyscraper", "count": 4, "spread": 450, "cooldown": 0
+		},
+		{
+			"class": "moab", "layer": "mini", "count": 18, "spread": 100, "cooldown": 0,
+			"properties": ["shielded"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "moab", "count": 8, "spread": 250, "cooldown": 0,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "barrier", "layer": "rainbow", "count": 20, "spread": 80, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_catapult_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "bfb", "count": 2, "spread": 250, "cooldown": 0
+		},
+		{
+			"class": "moab", "layer": "rocket", "count": 9, "spread": 100, "cooldown": 750
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_catapult_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "zap", "count": 3, "spread": 450, "cooldown": 0
+		},
+		{
+			"class": "deflation", "layer": "rainbow", "count": 120, "spread": 15, "cooldown": 0
+		}
+	],
+	[
+		{
 			"round_icon_sprite": "spr_bloon",
 			"round_icon_index": 0
 		},

@@ -18,7 +18,7 @@ if sign_direction != "none" {
 
 	with(obj_projectile) {
 	
-		if abs(x - _xx) < 150 {
+		if abs(x - _xx) < 200 {
 			if _sign_dir = "left" {
 				if hspeed >= 0 {
 					x -= hspeed + 2

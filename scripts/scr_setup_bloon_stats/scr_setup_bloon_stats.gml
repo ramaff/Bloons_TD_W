@@ -440,6 +440,33 @@ function scr_setup_bloon_stats(){
 				children: [
 					{"class": "normal", "layer": "pink"}
 				]
+			},
+			"rainbow": {
+				"sprite": "spr_rainbow_static_bloon",
+				layers: 8,
+				index: 8,
+				rbe: 47,
+				health: 1,
+				density: 1,
+				speed: 1.425,
+				stun_color: make_color_rgb(255, 0, 255),
+				children: [
+					{"class": "normal", "layer": "rainbow"}
+				]
+			},
+			"ceramic": {
+				sprite: "spr_ceramic_static_bloon",
+				layers: 18,
+				index: 0,
+				rbe: 114,
+				health: 10,
+				max_health: 10,
+				stun_color: make_color_rgb(255, 155, 0),
+				density: 1,
+				speed: 1.375,
+				children: [
+					{"class": "ceramic", "layer": "ceramic"}
+				]
 			}
 		},
 		"stuffed": {
@@ -1043,7 +1070,9 @@ function scr_setup_bloon_stats(){
 			},
 			"zap": {
 				sprite: "spr_zap",
+				object: "obj_zap",
 				layers: 218,
+				stun_color: c_aqua,
 				"big_bloon_tier": 3,
 				"shielded_sprite": "spr_zap_shielded",
 				index: 0,
@@ -2079,6 +2108,7 @@ function scr_setup_bloon_stats(){
 				"object": "obj_patrol_bloon",
 				max_health: 50,
 				layers: 50,
+				specific_path: pth_the_stronghold_knight,
 				index: 0,
 				rbe: 50,
 				health: 50,
@@ -2100,6 +2130,7 @@ function scr_setup_bloon_stats(){
 			"blue": {
 				sprite: "spr_traffic_cop_bloon",
 				"object": "obj_traffic_cop_bloon",
+				specific_path: pth_left_to_right,
 				layers: 8000,
 				rbe: 8000,
 				damage: 100,

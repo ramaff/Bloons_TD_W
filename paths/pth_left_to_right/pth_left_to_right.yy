@@ -1,0 +1,18 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_left_to_right",
+  "closed":false,
+  "kind":0,
+  "name":"pth_left_to_right",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":-61.0,"y":322.25,},
+    {"speed":100.0,"x":862.0,"y":321.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
