@@ -1,34 +1,14 @@
 [
 	[
 		{
-			"round_icon_sprite": "spr_non_specified_bounty_icon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "traffic cop",
-			"layer": "blue",
-			"count": 1,
-			"spread": 0,
-			"cooldown": 0
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_catapult_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "moab", "layer": "zap", "count": 1, "spread": 0, "cooldown": 0
-		}
-	],
-	[
-		{
 			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 8
+			"round_icon_index": 0
 		},
 		{
-			"class": "ceramic", "layer": "brick", "count": 24, "spread": 75, "cooldown": 0,
-			"properties": ["tattered"]
+			"class": "normal", "layer": "blue", "count": 25, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 25, "spread": 60, "cooldown": 5
 		}
 	],
 	[
@@ -37,11 +17,25 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "lead", "layer": "skyscraper", "count": 4, "spread": 450, "cooldown": 0
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 0
 		},
 		{
-			"class": "moab", "layer": "mini", "count": 18, "spread": 100, "cooldown": 0,
-			"properties": ["shielded"]
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 5
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 10
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 15
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 20
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 25
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 30
 		}
 	],
 	[
@@ -50,35 +44,16 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "moab", "layer": "moab", "count": 8, "spread": 250, "cooldown": 0,
-			"properties": ["shielded"]
+			"class": "normal", "layer": "red", "count": 25, "spread": 30, "cooldown": 0
 		},
 		{
-			"class": "barrier", "layer": "rainbow", "count": 20, "spread": 80, "cooldown": 0
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_catapult_bloon",
-			"round_icon_index": 0
+			"class": "normal", "layer": "blue", "count": 25, "spread": 30, "cooldown": 0
 		},
 		{
-			"class": "moab", "layer": "bfb", "count": 2, "spread": 250, "cooldown": 0
+			"class": "normal", "layer": "blue", "count": 25, "spread": 30, "cooldown": 800
 		},
 		{
-			"class": "moab", "layer": "rocket", "count": 9, "spread": 100, "cooldown": 750
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_catapult_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "moab", "layer": "zap", "count": 3, "spread": 450, "cooldown": 0
-		},
-		{
-			"class": "deflation", "layer": "rainbow", "count": 120, "spread": 15, "cooldown": 0
+			"class": "normal", "layer": "red", "count": 25, "spread": 30, "cooldown": 800
 		}
 	],
 	[
@@ -87,10 +62,13 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "normal", "layer": "blue", "count": 18, "spread": 75, "cooldown": 0
+			"class": "normal", "layer": "red", "count": 25, "spread": 100, "cooldown": 0
 		},
 		{
-			"class": "normal", "layer": "blue", "count": 18, "spread": 75, "cooldown": 5
+			"class": "normal", "layer": "blue", "count": 25, "spread": 100, "cooldown": 5
+		},
+		{
+			"class": "normal", "layer": "green", "count": 25, "spread": 100, "cooldown": 10
 		}
 	],
 	[
@@ -99,22 +77,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 0
-		},
-		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 5
-		},
-		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 10
-		},
-		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 15
-		},
-		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 20
-		},
-		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 25
+			"class": "static", "layer": "blue", "count": 10, "spread": 20, "cooldown": 0
 		}
 	],
 	[
@@ -123,55 +86,13 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 40, "cooldown": 0
+			"class": "normal", "layer": "red", "count": 25, "spread": 100, "cooldown": 0
 		},
 		{
-			"class": "normal", "layer": "blue", "count": 20, "spread": 40, "cooldown": 0
+			"class": "normal", "layer": "yellow", "count": 25, "spread": 100, "cooldown": 5
 		},
 		{
-			"class": "normal", "layer": "blue", "count": 20, "spread": 40, "cooldown": 800
-		},
-		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 40, "cooldown": 800
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 0
-		},
-		{
-			"class": "normal", "layer": "blue", "count": 20, "spread": 120, "cooldown": 5
-		},
-		{
-			"class": "normal", "layer": "green", "count": 20, "spread": 120, "cooldown": 10
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "static", "layer": "blue", "count": 20, "spread": 10, "cooldown": 0
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 0
-		},
-		{
-			"class": "normal", "layer": "yellow", "count": 20, "spread": 120, "cooldown": 5
-		},
-		{
-			"class": "normal", "layer": "green", "count": 20, "spread": 120, "cooldown": 10
+			"class": "normal", "layer": "green", "count": 25, "spread": 100, "cooldown": 10
 		}
 	],
 	[
@@ -195,10 +116,10 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "normal", "layer": "red", "count": 50, "spread": 30, "cooldown": 0
+			"class": "normal", "layer": "red", "count": 60, "spread": 25, "cooldown": 0
 		},
 		{
-			"class": "normal", "layer": "yellow", "count": 50, "spread": 30, "cooldown": 5
+			"class": "normal", "layer": "yellow", "count": 60, "spread": 25, "cooldown": 5
 		}
 	],
 	[
@@ -207,10 +128,10 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "static", "layer": "red", "count": 40, "spread": 35, "cooldown": 0
+			"class": "static", "layer": "red", "count": 20, "spread": 20, "cooldown": 0
 		},
 		{
-			"class": "normal", "layer": "yellow", "count": 40, "spread": 35, "cooldown": 15
+			"class": "normal", "layer": "yellow", "count": 45, "spread": 30, "cooldown": 15
 		}
 	],
 	[
@@ -219,13 +140,13 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "static", "layer": "red", "count": 20, "spread": 10, "cooldown": 0
+			"class": "static", "layer": "red", "count": 10, "spread": 20, "cooldown": 0
 		},
 		{
-			"class": "static", "layer": "yellow", "count": 20, "spread": 10, "cooldown": 480
+			"class": "static", "layer": "yellow", "count": 10, "spread": 20, "cooldown": 480
 		},
 		{
-			"class": "static", "layer": "green", "count": 40, "spread": 10, "cooldown": 960
+			"class": "static", "layer": "green", "count": 20, "spread": 20, "cooldown": 960
 		}
 	],
 	[
@@ -252,10 +173,10 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "normal", "layer": "white", "count": 10, "spread": 50, "cooldown": 0
+			"class": "normal", "layer": "white", "count": 12, "spread": 50, "cooldown": 0
 		},
 		{
-			"class": "normal", "layer": "white", "count": 8, "spread": 50, "cooldown": 640,
+			"class": "normal", "layer": "white", "count": 12, "spread": 50, "cooldown": 640,
 			"properties": ["tattered"]
 		}
 	],
@@ -265,7 +186,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "lead", "layer": "lead", "count": 10, "spread": 60, "cooldown": 0
+			"class": "lead", "layer": "lead", "count": 6, "spread": 90, "cooldown": 0
 		}
 	],
 	[
@@ -277,15 +198,15 @@
 			"class": "rubber", "layer": "block", "count": 6, "spread": 240, "cooldown": 200
 		},
 		{
-			"class": "normal", "layer": "red", "count": 30, "spread": 60, "cooldown": 0,
+			"class": "normal", "layer": "red", "count": 40, "spread": 45, "cooldown": 0,
 			"properties": ["tattered"]
 		},
 		{
-			"class": "normal", "layer": "yellow", "count": 30, "spread": 60, "cooldown": 5,
+			"class": "normal", "layer": "yellow", "count": 40, "spread": 45, "cooldown": 5,
 			"properties": ["tattered"]
 		},
 		{
-			"class": "normal", "layer": "green", "count": 30, "spread": 60, "cooldown": 10,
+			"class": "normal", "layer": "green", "count": 40, "spread": 45, "cooldown": 10,
 			"properties": ["tattered"]
 		}
 	],
@@ -296,10 +217,10 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "static", "layer": "yellow", "count": 40, "spread": 10, "cooldown": 0
+			"class": "static", "layer": "yellow", "count": 20, "spread": 20, "cooldown": 0
 		},
 		{
-			"class": "static", "layer": "pink", "count": 40, "spread": 10, "cooldown": 720
+			"class": "static", "layer": "pink", "count": 20, "spread": 20, "cooldown": 720
 		}
 	],
 	[
@@ -332,15 +253,15 @@
 			"class": "rubber", "layer": "block", "count": 8, "spread": 180, "cooldown": 200
 		},
 		{
-			"class": "normal", "layer": "red", "count": 30, "spread": 60, "cooldown": 0,
+			"class": "normal", "layer": "red", "count": 40, "spread": 45, "cooldown": 0,
 			"properties": ["shielded"]
 		},
 		{
-			"class": "normal", "layer": "yellow", "count": 30, "spread": 60, "cooldown": 5,
+			"class": "normal", "layer": "yellow", "count": 40, "spread": 45, "cooldown": 5,
 			"properties": ["shielded"]
 		},
 		{
-			"class": "normal", "layer": "green", "count": 30, "spread": 60, "cooldown": 10,
+			"class": "normal", "layer": "green", "count": 40, "spread": 45, "cooldown": 10,
 			"properties": ["shielded"]
 		}
 	],
@@ -444,7 +365,7 @@
 			"class": "patrol", "layer": "normal", "count": 8, "spread": 100, "cooldown": 0
 		},
 		{
-			"class": "static", "layer": "pink", "count": 200, "spread": 10, "cooldown": 0
+			"class": "static", "layer": "pink", "count": 100, "spread": 20, "cooldown": 0
 		},
 		{
 			"class": "moab", "layer": "mini", "count": 2, "spread": 480, "cooldown": 1200
@@ -498,7 +419,7 @@
 			"class": "patrol", "layer": "normal", "count": 16, "spread": 50, "cooldown": 0
 		},
 		{
-			"class": "static", "layer": "pink", "count": 300, "spread": 4, "cooldown": 0
+			"class": "static", "layer": "pink", "count": 100, "spread": 12, "cooldown": 0
 		}
 	],
 	[
@@ -540,7 +461,7 @@
 			"class": "patrol", "layer": "normal", "count": 20, "spread": 100, "cooldown": 0
 		},
 		{
-			"class": "static", "layer": "pink", "count": 400, "spread": 5, "cooldown": 0
+			"class": "static", "layer": "rainbow", "count": 40, "spread": 50, "cooldown": 0
 		},
 		{
 			"class": "moab", "layer": "moab", "count": 4, "spread": 400, "cooldown": 600
@@ -555,7 +476,7 @@
 			"class": "barrier", "layer": "pink", "count": 20, "spread": 100, "cooldown": 0
 		},
 		{
-			"class": "normal", "layer": "rainbow", "count": 80, "spread": 25, "cooldown": 0
+			"class": "normal", "layer": "rainbow", "count": 100, "spread": 20, "cooldown": 0
 		}
 	],
 	[

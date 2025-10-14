@@ -20,7 +20,7 @@ if instance_exists(_target) {
 		speed = 6;
 		image_blend = other.bloon_stats.stun_color;
 		alarm[1] = 300;
-		image_xscale = 0.1 + (sqrt(sqrt(_potency)) / 10);
+		image_xscale = 0.1 + (sqrt(sqrt(_potency)) / 5);
 		image_yscale = image_xscale;
 	}
 }

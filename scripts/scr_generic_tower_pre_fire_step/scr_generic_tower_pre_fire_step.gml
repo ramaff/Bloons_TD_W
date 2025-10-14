@@ -11,7 +11,8 @@ function scr_generic_tower_pre_fire_step(){
 		"shot_count": 0,
 		"shot_spread": 0,
 		"angular_velocity": 0,
-		"puncture": 0
+		"puncture": 0,
+		"stun_heal_fac": 1
 	}
 
 	// NOTE There is a better way to write this in the future:
@@ -44,6 +45,9 @@ function scr_generic_tower_pre_fire_step(){
 				if variable_struct_exists(_current_boost, "shot_spread") {
 					current_boosts.shot_spread = _current_boost.shot_spread;
 				}
+				if variable_struct_exists(_current_boost, "stun_heal_fac") {
+					current_boosts.stun_heal_fac = _current_boost.stun_heal_fac;
+				}
 				if variable_struct_exists(_current_boost, "alternating_angular_velocity") {
 					var _ang_vel = _current_boost.alternating_angular_velocity;
 					if _current_boost.boost_duration mod 30 < 15 {
@@ -62,7 +66,7 @@ function scr_generic_tower_pre_fire_step(){
 	}
 
 	if stun > 0 {
-		stun -= tower_stats.total_cost / 6000;	
+		stun -= current_boosts.stun_heal_fac * tower_stats.total_cost / 6000;	
 		exit;
 	}
 

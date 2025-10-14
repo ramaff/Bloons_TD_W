@@ -7,7 +7,8 @@ function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 		range_boost: 45,
 		boost_duration: 180,
 		sprite: "spr_angry_squirrel_angry",
-		sprite_priority: 2
+		sprite_priority: 2,
+		stun_heal_fac: 5
 	}
 	if !variable_struct_exists(_tower_stats, "stat_boosts") {
 		_tower_stats.stat_boosts = {}
@@ -34,7 +35,8 @@ function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 				boost_duration: 1200,
 				range_boost: 15,
 				sprite: "spr_angry_squirrel_lingering_flame",
-				sprite_priority: 1
+				sprite_priority: 1,
+				stun_heal_fac: 2
 			}
 			if variable_struct_exists(_tower_stats.active_upgrades, "Acorn Assault") {
 				_lingering_flame_boost.shot_count = 1;
