@@ -128,7 +128,7 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	}
 	if variable_struct_exists(_bloon.bloon_stats, "shielded") {
 		//variable_struct_set(_bloon.bloon_stats, "shielded_sprite", _class_stats.shielded_sprite)
-		if variable_struct_exists(_bloon.bloon_stats, "shielded_sprite)") {
+		if variable_struct_exists(_bloon.bloon_stats, "shielded_sprite") {
 			_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.shielded_sprite);
 		}
 		_bloon.bloon_stats.shield_health = floor(_bloon.bloon_stats.layers + sqrt(_bloon.bloon_stats.rbe - _bloon.bloon_stats.layers))

@@ -5,7 +5,7 @@ function scr_setup_tower_stats(){
 	return {
 		"jim": {
 			tower_object: "obj_hero",
-			tower_sprite: "spr_monkey",
+			tower_sprite: "spr_jim",
 			butt_sprite: "spr_jim_hero_butt",
 			total_cost: 300,
 			upgrade_cost: 0,

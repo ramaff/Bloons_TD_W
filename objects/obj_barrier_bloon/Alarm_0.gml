@@ -5,11 +5,13 @@ alarm[0] = 240;
 
 with instance_create_depth(x, y, depth, obj_heal_bloon_aura) {
 	alarm[0] = 20;
+	
+	sprite_index = spr_barrier_bloon_aura
 
-	image_xscale = 2;
-	image_yscale = 2;
+	image_xscale = 2.5;
+	image_yscale = 2.5;
 
-	shield_range = 110;
+	shield_range = 140;
 
 	with(obj_bloon) {
 		if distance_to_point(other.x, other.y) < other.shield_range {

@@ -10,7 +10,7 @@ path_speed = added_speed + 1
 
 
 if added_speed < 10 {
-	added_speed += 0.15;
-	speed += 0.15;
-	path_speed += 0.15;
+	added_speed += 0.1;
+	speed += 0.1;
+	path_speed += 0.1;
 }
