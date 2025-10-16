@@ -4,8 +4,8 @@ function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 
 	var _anger_boost = {
 		fire_rate_boost_multiplier: 5,
-		range_boost: 45,
-		boost_duration: 180,
+		range_boost: 60,
+		boost_duration: 360,
 		sprite: "spr_angry_squirrel_angry",
 		sprite_priority: 2,
 		stun_heal_fac: 5
@@ -14,12 +14,12 @@ function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 		_tower_stats.stat_boosts = {}
 	}
 	if variable_struct_exists(_tower_stats, "active_upgrades") {
-		if variable_struct_exists(_tower_stats.active_upgrades, "Anger Mismanagement") {
+		/*if variable_struct_exists(_tower_stats.active_upgrades, "Anger Mismanagement") {
 			_anger_boost.boost_duration = _anger_boost.boost_duration * 2;
-		}
+		} */
 		if variable_struct_exists(_tower_stats.active_upgrades, "Venting") {
 			if !variable_struct_exists(_tower_stats.stat_boosts, "angry_boost") {
-				_tower_stats.health += 5;
+				_tower_stats.health += floor(_tower_stats.max_health / 20);
 				if _tower_stats.health > _tower_stats.max_health {
 					_tower_stats.health = _tower_stats.max_health	
 				}
@@ -44,6 +44,14 @@ function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 				_lingering_flame_boost.alternating_angular_velocity = 5;
 			}
 			variable_struct_set(_tower_stats.stat_boosts, "lingering_flame", _lingering_flame_boost)
+		}
+		if variable_struct_exists(_tower_stats.active_upgrades, "Instigator") {
+			if !variable_struct_exists(_tower_stats.stat_boosts, "angry_boost") {
+				var _instigation = {
+					boost_duration: 180,
+				}
+				variable_struct_set(_tower_stats.stat_boosts, "instigation", _instigation)
+			}
 		}
 	}
 	//var _boost_length = array_length(_tower_stats.stat_boosts)

@@ -11,7 +11,7 @@ function scr_track_end_bloon_check(_bloon_stats = bloon_stats){
 	
 	if path_position >= 1 || _straight_to_target_end {
 	
-		var _hero_number = irandom(instance_number(obj_hero) - 1)
+		var _hero_number = global.hero_hit mod (instance_number(obj_hero))
 	
 		if !instance_exists(obj_hero) {
 			if !instance_exists(obj_lose_indication) {
@@ -30,6 +30,14 @@ function scr_track_end_bloon_check(_bloon_stats = bloon_stats){
 		}
 	
 		with (obj_hero) {
+			if variable_struct_exists(tower_stats, "stat_boosts") {
+				if variable_struct_exists(tower_stats.active_upgrades, "Instigator") {
+					if !variable_struct_exists(tower_stats.stat_boosts, "angry_boost") || variable_struct_exists(tower_stats.stat_boosts, "instigation") {
+						_hero_number = 0
+						global.hero_hit--;
+					}
+				}
+			}
 			if _hero_number = 0 {
 				tower_stats.health -= _damage
 				with instance_create_depth(x, y, -100, obj_text) {
@@ -40,6 +48,7 @@ function scr_track_end_bloon_check(_bloon_stats = bloon_stats){
 						script_execute(tower_stats.damage_scripts[_i])
 					}
 				}
+				global.hero_hit++;
 			}
 			_hero_number--;
 			if tower_stats.health <= 0 {

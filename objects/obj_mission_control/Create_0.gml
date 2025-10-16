@@ -3,6 +3,7 @@
 
 global.money = STARTING_CASH + global.added_cash
 global.lives = 200
+global.hero_hit = 0;
 
 global.round = 0;
 global.bloon_sends = scr_import_json(global.round_data, json_parse);

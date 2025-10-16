@@ -106,13 +106,13 @@ function scr_setup_tower_stats(){
 			tower_object: "obj_hero",
 			tower_sprite: "spr_angry_squirrel",
 			butt_sprite: "spr_angry_squirrel_hero_butt",
-			total_cost: 300,
+			total_cost: 450,
 			upgrade_cost: 0,
 			range: 115,
-			delay: 32,
+			delay: 24,
 			attack_cooldown: 0,
-			health: 150,
-			max_health: 150,
+			health: 200,
+			max_health: 200,
 			stat_boosts: {},
 			damage_scripts: [
 				scr_angry_squirrel_anger
@@ -130,8 +130,8 @@ function scr_setup_tower_stats(){
 			upgrades: [
 				[
 					{
-						keyword: "Anger Mismanagement",
-						upgrade_cost: 150
+						keyword: "Instigator",
+						upgrade_cost: 100
 					},
 					{
 						keyword: "Poke",
@@ -144,16 +144,16 @@ function scr_setup_tower_stats(){
 				],
 				[
 					{
+						keyword: "Venting",
+						upgrade_cost: 150
+					},
+					{
 						keyword: "Bigger Acorns",
 						upgrade_cost: 200
 					},
 					{
 						keyword: "Beefed-Up Squirrel",
 						upgrade_cost: 1050
-					},
-					{
-						keyword: "Venting",
-						upgrade_cost: 400
 					}
 				]
 			],
@@ -582,7 +582,7 @@ function scr_setup_tower_stats(){
 							direction: 0,
 							damage: 1,
 							pierce: 40,
-							size: 0.5,
+							size: 0.6,
 							particles: 3
 						}
 					]
@@ -593,11 +593,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "bigger pineapples",
-						upgrade_cost: 300
+						upgrade_cost: 325
 					},
 					{
 						keyword: "faster growth",
-						upgrade_cost: 300
+						upgrade_cost: 350
 					},
 				]
 			],
@@ -611,11 +611,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Pineapple Express",
-						upgrade_cost: 900
+						upgrade_cost: 950
 					},
 					{
 						keyword: "pineapple split",
-						upgrade_cost: 3000
+						upgrade_cost: 3500
 					}
 				]
 			]

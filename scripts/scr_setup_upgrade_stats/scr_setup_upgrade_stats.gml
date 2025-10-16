@@ -195,6 +195,11 @@ function scr_setup_upgrade_stats(){
 			"Anger Mismanagement": {
 				upgrade_string: "The squirrel stays mad twice as long."
 			},
+			"Instigator": {
+				upgrade_string: "If the squirrel isn't angry yet and a bloon leaks, then it becomes the target of all incoming damage for three seconds. Also increases max health by 50.",
+				health: 50,
+				max_health: 50
+			},
 			"Poke": {
 				upgrade_string: "Poke the squirrel to make it angry.",
 				abilities: {
@@ -828,7 +833,7 @@ function scr_setup_upgrade_stats(){
 								direction: 0,
 								damage: 1,
 								pierce: 60,
-								size: 0.65
+								size: 0.75
 							}
 						]
 					}
@@ -841,7 +846,7 @@ function scr_setup_upgrade_stats(){
 			"Pineapple Express": {
 				upgrade_string: "Tosses a bunch of pineapples without aiming.",
 				attack_angle_offset: 0,
-				fire_rate_multiplier: 1.33,
+				fire_rate_multiplier: 1.16,
 				tower_attack_script: scr_pineapple_juggling,
 				projectile_replacement: true,
 				tower_sprite: "spr_pineapple_express_monkey",
@@ -875,7 +880,7 @@ function scr_setup_upgrade_stats(){
 								direction: 0,
 								damage: 1,
 								pierce: 60,
-								size: 0.65,
+								size: 0.75,
 								particles: 5
 							}
 						]
@@ -893,7 +898,7 @@ function scr_setup_upgrade_stats(){
 						object: "obj_no_hit",
 						sprite: "spr_large_pineapple",
 						lead_hit: true,
-						pierce: 80,
+						pierce: 120,
 						damage: 1,
 						speed: 5,
 						direction: 0,
@@ -915,7 +920,7 @@ function scr_setup_upgrade_stats(){
 								direction: 0,
 								damage: 1,
 								pierce: 80,
-								size: 0.75,
+								size: 0.9,
 								particles: 7
 							},
 							{
@@ -924,7 +929,7 @@ function scr_setup_upgrade_stats(){
 								object: "obj_no_hit",
 								sprite: "spr_pineapple",
 								lead_hit: true,
-								pierce: 30,
+								pierce: 60,
 								damage: 1,
 								speed: 2,
 								direction: 0,
@@ -945,8 +950,8 @@ function scr_setup_upgrade_stats(){
 										speed: 0,
 										direction: 0,
 										damage: 1,
-										pierce: 40,
-										size: 0.5,
+										pierce: 60,
+										size: 0.75,
 										particles: 3
 									}
 								]
