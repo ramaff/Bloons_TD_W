@@ -11,7 +11,7 @@ function scr_track_end_bloon_check(_bloon_stats = bloon_stats){
 	
 	if path_position >= 1 || _straight_to_target_end {
 	
-		var _hero_number = global.hero_hit mod (instance_number(obj_hero))
+		var _hero_number = global.hero_hit mod max(1, (instance_number(obj_hero)))
 	
 		if !instance_exists(obj_hero) {
 			if !instance_exists(obj_lose_indication) {

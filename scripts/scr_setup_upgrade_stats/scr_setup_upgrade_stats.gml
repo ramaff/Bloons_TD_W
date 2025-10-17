@@ -249,8 +249,8 @@ function scr_setup_upgrade_stats(){
 			},
 			"Acorn Assault": {
 				upgrade_string: "While angry, release a massively increased amount of acorns.",
-				health: 50,
-				max_health: 50,
+				health: 100,
+				max_health: 100,
 				range: 15,
 			},
 			"Fiery Rage": {
@@ -394,7 +394,7 @@ function scr_setup_upgrade_stats(){
 				upgrade_script: scr_trickster_projectile_replace,
 				projectile_stats: [
 					{
-						object: "obj_yoyo", sprite: "spr_morningstar", pierce: 750, damage: 2, speed: 12, lifespan: 999999, tick_frequency: 15, lead_hit: true, bloon_pushback: 0.02
+						object: "obj_yoyo", sprite: "spr_morningstar", pierce: 750, damage: 2, speed: 12, lifespan: 999999, tick_frequency: 15, lead_hit: true, bloon_pushback: 0.0125
 					}
 				],
 				additional_attacks: [
@@ -402,7 +402,7 @@ function scr_setup_upgrade_stats(){
 						delay: 240, attack_cooldown: 0, range: 150,
 						projectile_stats: [
 							{
-								object: "obj_around_the_world_yoyo", sprite: "spr_morningstar", pierce: 750, damage: 2, speed: 12, lifespan: 999999, tick_frequency: 15, lead_hit: true, bloon_pushback: 0.02
+								object: "obj_around_the_world_yoyo", sprite: "spr_morningstar", pierce: 750, damage: 2, speed: 12, lifespan: 999999, tick_frequency: 15, lead_hit: true, bloon_pushback: 0.0125
 							}
 						]
 					},
@@ -410,7 +410,7 @@ function scr_setup_upgrade_stats(){
 						delay: 240, attack_cooldown: 0, range: 150,
 						projectile_stats: [
 							{
-								object: "obj_walk_the_bloon_yoyo", sprite: "spr_morningstar", pierce: 750, damage: 2, speed: 12, lifespan: 999999, tick_frequency: 15, lead_hit: true, bloon_pushback: 0.02
+								object: "obj_walk_the_bloon_yoyo", sprite: "spr_morningstar", pierce: 750, damage: 2, speed: 12, lifespan: 999999, tick_frequency: 15, lead_hit: true, bloon_pushback: 0.0125
 							}
 						]
 					}
@@ -971,10 +971,10 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "The monkey gets haunted by three ghosts."
 			},
 			"Chase Scene": {
-				fire_rate_multiplier: 1.333,
+				fire_rate_multiplier: 1.666,
 				range: 40,
 				upgrade_script: scr_upgrade_ghost_monkeys,
-				upgrade_string: "Ghosts chase after bloons across the entire track."
+				upgrade_string: "Ghosts chase after bloons across the entire track. Also shoots faster."
 			},
 			"Jump Scare": {
 				fire_rate_multiplier: 1.666,

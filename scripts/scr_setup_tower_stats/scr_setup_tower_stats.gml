@@ -709,11 +709,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Chase Scene",
-						upgrade_cost: 900
+						upgrade_cost: 1300
 					},
 					{
 						keyword: "Jump Scare",
-						upgrade_cost: 3500
+						upgrade_cost: 5100
 					}
 				]
 			]

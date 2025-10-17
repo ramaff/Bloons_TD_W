@@ -690,6 +690,7 @@
     {"id":{"name":"spr_upgrade_butt_old_too_big","path":"sprites/spr_upgrade_butt_old_too_big/spr_upgrade_butt_old_too_big.yy",},},
     {"id":{"name":"spr_upgrade_butt","path":"sprites/spr_upgrade_butt/spr_upgrade_butt.yy",},},
     {"id":{"name":"spr_useless_long_butt","path":"sprites/spr_useless_long_butt/spr_useless_long_butt.yy",},},
+    {"id":{"name":"spr_wall_street_track","path":"sprites/spr_wall_street_track/spr_wall_street_track.yy",},},
     {"id":{"name":"spr_water_bloon","path":"sprites/spr_water_bloon/spr_water_bloon.yy",},},
     {"id":{"name":"spr_water_part_outline","path":"sprites/spr_water_part_outline/spr_water_part_outline.yy",},},
     {"id":{"name":"spr_water_part","path":"sprites/spr_water_part/spr_water_part.yy",},},

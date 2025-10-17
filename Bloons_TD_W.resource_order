@@ -616,6 +616,7 @@
     {"name":"spr_upgrade_butt_old_too_big","order":26,"path":"sprites/spr_upgrade_butt_old_too_big/spr_upgrade_butt_old_too_big.yy",},
     {"name":"spr_upgrade_butt","order":5,"path":"sprites/spr_upgrade_butt/spr_upgrade_butt.yy",},
     {"name":"spr_useless_long_butt","order":6,"path":"sprites/spr_useless_long_butt/spr_useless_long_butt.yy",},
+    {"name":"spr_wall_street_track","order":28,"path":"sprites/spr_wall_street_track/spr_wall_street_track.yy",},
     {"name":"spr_water_part_outline","order":2,"path":"sprites/spr_water_part_outline/spr_water_part_outline.yy",},
     {"name":"spr_water_part","order":1,"path":"sprites/spr_water_part/spr_water_part.yy",},
     {"name":"spr_wizard_bloon_staff_use","order":24,"path":"sprites/spr_wizard_bloon_staff_use/spr_wizard_bloon_staff_use.yy",},
