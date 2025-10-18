@@ -293,17 +293,23 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Doubles bloon production."
 			},
 			"Special Deliveries": {
-				upgrade_string: "Spawn a special delivery moab that spawns lots of clown bloons.",
+				upgrade_string: "Send in a box that generates a large number of extra clown bloons. Bloon type is determined by the Clown's current targetting option.",
 				abilities: {
 					"Special Delivery": {
 						"charge_time": 30,
 						"charge": 30,
-						"max_charges": 1,
-						"charges": 0,
+						"max_charges": 2,
+						"charges": 1,
 						"ability_script": scr_special_delivery
 					}
 				}
-			}
+			},
+			"Clown Moab": {
+				upgrade_string: "Instead of bloon animals, spawn a clown moab that contains a large number of bloon animals. Also doubles the number of delievery boxes delivered.",
+				tower_sprite: "spr_party_clown_monkey",
+				health: 50,
+				max_health: 50,
+			},
 		},
 		"trickster": {
 			"Walk the Bloon": {
@@ -1319,7 +1325,7 @@ function scr_setup_upgrade_stats(){
 				tower_sprite: "spr_motorbike_monkey",
 				additional_attacks: [
 					{
-						delay: 20,
+						delay: 60,
 						attack_cooldown: 0,
 						range: 99999,
 						projectile_stats: [
@@ -1336,7 +1342,7 @@ function scr_setup_upgrade_stats(){
 						]
 					},
 					{
-						delay: 3,
+						delay: 9,
 						attack_cooldown: 0,
 						range: 99999,
 						projectile_stats: [

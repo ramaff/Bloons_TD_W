@@ -93,6 +93,7 @@ function scr_select_monkey(){
 	with instance_create_depth(800, 64, depth, obj_targetting_butt) {
 		
 		selected_monkey = other.id;
+		targeting_options_order = selected_monkey.targeting_options_order;
 		
 	}
 	

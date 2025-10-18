@@ -116,7 +116,7 @@ global.upgrades_progress = {
 		"unlocked_paths": {"Fiery Rage": {"unlocked_upgrades": 2}}
 	},
 	"clown_monkey": {
-		"unlocked_paths": {"Piñata": {"unlocked_upgrades": 2}}
+		"unlocked_paths": {"Clown Moab": {"unlocked_upgrades": 2}}
 	},
 	"sling_shot_monkey": {
 		"unlocked_paths": {"Long Shot": {"unlocked_upgrades": 2}}	

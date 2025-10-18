@@ -221,15 +221,13 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Special Deliveries",
-						upgrade_cost: 1000
+						upgrade_cost: 750
 					}
 				]
 			],
 			split_upgrades: [
-				[
-				],
-				[
-				],
+				[],
+				[],
 				[
 					{
 						keyword: "Clown Moab",

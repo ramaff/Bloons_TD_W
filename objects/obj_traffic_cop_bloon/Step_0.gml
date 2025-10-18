@@ -21,12 +21,14 @@ if sign_direction != "none" {
 		if abs(x - _xx) < 200 {
 			if _sign_dir = "left" {
 				if hspeed >= 0 {
-					x -= hspeed + 2
+					x -= hspeed + 4
 				}
+				x -= 6;
 			} else {
 				if hspeed <= 0 {
-					x += hspeed + 2
+					x += hspeed + 4
 				}
+				x += 6;
 			}
 		}
 	

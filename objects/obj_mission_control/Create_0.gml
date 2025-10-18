@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.money = STARTING_CASH + global.added_cash
+global.money = STARTING_CASH + global.added_cash + 10000
 global.lives = 200
 global.hero_hit = 0;
 

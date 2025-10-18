@@ -41,6 +41,12 @@ tower_base = noone;
 all_bases = false
 stun = 0;
 targeting = "first";
+targeting_options_order = {
+	"first": "last",
+	"last": "strong",
+	"strong": "close",
+	"close": "first"
+}
 pop_count = 0;
 attacked = false;
 target = noone;
