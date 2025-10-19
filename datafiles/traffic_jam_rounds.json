@@ -2,7 +2,7 @@
 	[
 		{
 			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 0
+			"round_icon_index": 1
 		},
 		{
 			"class": "normal", "layer": "blue", "count": 25, "spread": 60, "cooldown": 0
@@ -47,7 +47,7 @@
 	[
 		{
 			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 0
+			"round_icon_index": 1
 		},
 		{
 			"class": "normal", "layer": "red", "count": 25, "spread": 30, "cooldown": 0
@@ -65,7 +65,7 @@
 	[
 		{
 			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 0
+			"round_icon_index": 2
 		},
 		{
 			"class": "normal", "layer": "red", "count": 20, "spread": 100, "cooldown": 0
@@ -88,7 +88,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
+			"round_icon_sprite": "spr_blue_static_bloon",
 			"round_icon_index": 0
 		},
 		{
@@ -98,7 +98,7 @@
 	[
 		{
 			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 0
+			"round_icon_index": 3
 		},
 		{
 			"class": "normal", "layer": "blue", "count": 30, "spread": 80, "cooldown": 0
@@ -113,7 +113,7 @@
 	[
 		{
 			"round_icon_sprite": "spr_deflation_bloon_icon",
-			"round_icon_index": 1
+			"round_icon_index": 2
 		},
 		{
 			"class": "deflation", "layer": "red", "count": 12, "spread": 60, "cooldown": 0
@@ -128,7 +128,7 @@
 	[
 		{
 			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 0
+			"round_icon_index": 3
 		},
 		{
 			"class": "normal", "layer": "red", "count": 70, "spread": 25, "cooldown": 0
@@ -139,7 +139,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
+			"round_icon_sprite": "spr_red_static_bloon",
 			"round_icon_index": 0
 		},
 		{
@@ -151,7 +151,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
+			"round_icon_sprite": "spr_yellow_static_bloon",
 			"round_icon_index": 0
 		},
 		{
@@ -166,26 +166,26 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_tire_bloon",
+			"round_icon_sprite": "spr_rubber_block_bloon",
 			"round_icon_index": 0
 		},
 		{
 			"class": "rubber", "layer": "block", "count": 6, "spread": 240, "cooldown": 200
 		},
 		{
-			"class": "normal", "layer": "blue", "count": 35, "spread": 60, "cooldown": 0
+			"class": "normal", "layer": "blue", "count": 45, "spread": 45, "cooldown": 0
 		},
 		{
-			"class": "normal", "layer": "yellow", "count": 35, "spread": 60, "cooldown": 5
+			"class": "normal", "layer": "yellow", "count": 45, "spread": 45, "cooldown": 5
 		},
 		{
-			"class": "normal", "layer": "green", "count": 35, "spread": 60, "cooldown": 10
+			"class": "normal", "layer": "green", "count": 45, "spread": 45, "cooldown": 10
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_tattered_bloon_icon",
+			"round_icon_index": 6
 		},
 		{
 			"class": "normal", "layer": "white", "count": 15, "spread": 40, "cooldown": 0
@@ -206,7 +206,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_tire_bloon",
+			"round_icon_sprite": "spr_rubber_block_bloon",
 			"round_icon_index": 0
 		},
 		{
@@ -228,7 +228,7 @@
 	
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
+			"round_icon_sprite": "spr_pink_static_bloon",
 			"round_icon_index": 0
 		},
 		{
@@ -261,7 +261,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_tire_bloon",
+			"round_icon_sprite": "spr_rubber_block_bloon",
 			"round_icon_index": 0
 		},
 		{
@@ -282,17 +282,17 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 8
+			"round_icon_sprite": "spr_lead_bloon",
+			"round_icon_index": 0
 		},
 		{
-			"class": "stuffed", "layer": "red", "count": 15, "spread": 80, "cooldown": 0
+			"class": "stuffed", "layer": "red", "count": 20, "spread": 60, "cooldown": 0
 		},
 		{
-			"class": "stuffed", "layer": "yellow", "count": 15, "spread": 80, "cooldown": 5
+			"class": "stuffed", "layer": "yellow", "count": 20, "spread": 60, "cooldown": 5
 		},
 		{
-			"class": "stuffed", "layer": "green", "count": 15, "spread": 80, "cooldown": 10
+			"class": "stuffed", "layer": "green", "count": 20, "spread": 60, "cooldown": 10
 		},
 		{
 			"class": "lead", "layer": "lead", "count": 16, "spread": 60, "cooldown": 0
@@ -300,32 +300,32 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
+			"round_icon_sprite": "spr_barrier_bloon",
 			"round_icon_index": 0
 		},
 		{
 			"class": "barrier", "layer": "red", "count": 15, "spread": 180, "cooldown": 120
 		},
 		{
-			"class": "normal", "layer": "yellow", "count": 200, "spread": 10, "cooldown": 0
+			"class": "normal", "layer": "yellow", "count": 250, "spread": 8, "cooldown": 0
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
+			"round_icon_sprite": "spr_patrol_bloon",
 			"round_icon_index": 0
 		},
 		{
 			"class": "patrol", "layer": "normal", "count": 2, "spread": 300, "cooldown": 0
 		},
 		{
-			"class": "normal", "layer": "pink", "count": 200, "spread": 10, "cooldown": 0
+			"class": "normal", "layer": "pink", "count": 250, "spread": 8, "cooldown": 0
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_barrier_bloon",
+			"round_icon_index": 2
 		},
 		{
 			"class": "barrier", "layer": "green", "count": 10, "spread": 200, "cooldown": 0
@@ -345,8 +345,8 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 8
+			"round_icon_sprite": "spr_block_bloon",
+			"round_icon_index": 0
 		},
 		{
 			"class": "deflation", "layer": "yellow", "count": 15, "spread": 40, "cooldown": 0
@@ -360,20 +360,20 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_regrow_ceramic_bloon",
+			"round_icon_sprite": "spr_tattered_ceramic_bloon",
 			"round_icon_index": 0
 		},
 		{
-			"class": "ceramic", "layer": "ceramic", "count": 5, "spread": 150, "cooldown": 0
+			"class": "ceramic", "layer": "ceramic", "count": 6, "spread": 150, "cooldown": 0
 		},
 		{
-			"class": "ceramic", "layer": "ceramic", "count": 5, "spread": 150, "cooldown": 750,
+			"class": "ceramic", "layer": "ceramic", "count": 6, "spread": 150, "cooldown": 1000,
 			"properties": ["tattered"]
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
+			"round_icon_sprite": "spr_patrol_bloon",
 			"round_icon_index": 0
 		},
 		{
@@ -388,7 +388,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_regrow_ceramic_bloon",
+			"round_icon_sprite": "spr_brick_bloon",
 			"round_icon_index": 0
 		},
 		{
@@ -400,20 +400,20 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_barrier_bloon",
+			"round_icon_index": 2
 		},
 		{
 			"class": "barrier", "layer": "green", "count": 20, "spread": 100, "cooldown": 0
 		},
 		{
-			"class": "normal", "layer": "zebra", "count": 110, "spread": 20, "cooldown": 0
+			"class": "normal", "layer": "zebra", "count": 150, "spread": 15, "cooldown": 0
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 8
+			"round_icon_sprite": "spr_block_bloon",
+			"round_icon_index": 0
 		},
 		{
 			"class": "deflation", "layer": "pink", "count": 30, "spread": 50, "cooldown": 0
@@ -439,7 +439,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
+			"round_icon_sprite": "spr_skyscraper_icon",
 			"round_icon_index": 8
 		},
 		{
@@ -448,7 +448,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_catapult_bloon",
+			"round_icon_sprite": "spr_catapult_bloon_icon",
 			"round_icon_index": 0
 		},
 		{
@@ -460,16 +460,19 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_catapult_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_barrier_bloon",
+			"round_icon_index": 4
 		},
 		{
-			"class": "moab", "layer": "rocket", "count": 2, "spread": 450, "cooldown": 0
+			"class": "barrier", "layer": "pink", "count": 20, "spread": 100, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 150, "spread": 15, "cooldown": 0
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
+			"round_icon_sprite": "spr_rainbow_static_bloon",
 			"round_icon_index": 0
 		},
 		{
@@ -484,14 +487,11 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
+			"round_icon_sprite": "spr_rocket_moab_icon",
 			"round_icon_index": 0
 		},
 		{
-			"class": "barrier", "layer": "pink", "count": 20, "spread": 100, "cooldown": 0
-		},
-		{
-			"class": "normal", "layer": "rainbow", "count": 100, "spread": 20, "cooldown": 0
+			"class": "moab", "layer": "rocket", "count": 2, "spread": 450, "cooldown": 0
 		}
 	],
 	[
@@ -509,8 +509,8 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 8
+			"round_icon_sprite": "spr_brick_bloon",
+			"round_icon_index": 0
 		},
 		{
 			"class": "ceramic", "layer": "brick", "count": 16, "spread": 100, "cooldown": 100
@@ -518,23 +518,23 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
+			"round_icon_sprite": "spr_skyscraper_icon",
 			"round_icon_index": 0
 		},
 		{
 			"class": "lead", "layer": "skyscraper", "count": 2, "spread": 450, "cooldown": 900
 		},
 		{
-			"class": "moab", "layer": "mini", "count": 18, "spread": 100, "cooldown": 0
+			"class": "moab", "layer": "mini", "count": 25, "spread": 80, "cooldown": 0
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 8
+			"round_icon_sprite": "spr_deflation_bloon_icon",
+			"round_icon_index": 5
 		},
 		{
-			"class": "deflation", "layer": "rainbow", "count": 60, "spread": 30, "cooldown": 0
+			"class": "deflation", "layer": "rainbow", "count": 40, "spread": 40, "cooldown": 0
 		},
 		{
 			"class": "catapult", "layer": "ceramic", "count": 4, "spread": 350, "cooldown": 200
@@ -542,7 +542,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_catapult_bloon",
+			"round_icon_sprite": "spr_rocket_moab_icon",
 			"round_icon_index": 0
 		},
 		{
@@ -554,7 +554,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_catapult_bloon",
+			"round_icon_sprite": "spr_zap_icon",
 			"round_icon_index": 0
 		},
 		{
@@ -563,8 +563,8 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 8
+			"round_icon_sprite": "spr_tattered_brick_bloon",
+			"round_icon_index": 0
 		},
 		{
 			"class": "ceramic", "layer": "brick", "count": 24, "spread": 75, "cooldown": 0,
@@ -573,7 +573,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
+			"round_icon_sprite": "spr_skyscraper_icon",
 			"round_icon_index": 0
 		},
 		{
@@ -586,8 +586,8 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_barrier_bloon",
+			"round_icon_index": 5
 		},
 		{
 			"class": "moab", "layer": "moab", "count": 8, "spread": 250, "cooldown": 0,
@@ -599,7 +599,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_catapult_bloon",
+			"round_icon_sprite": "spr_rocket_moab_icon",
 			"round_icon_index": 0
 		},
 		{
@@ -611,14 +611,14 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_catapult_bloon",
+			"round_icon_sprite": "spr_zap_icon",
 			"round_icon_index": 0
 		},
 		{
 			"class": "moab", "layer": "zap", "count": 3, "spread": 450, "cooldown": 0
 		},
 		{
-			"class": "deflation", "layer": "rainbow", "count": 120, "spread": 15, "cooldown": 0
+			"class": "deflation", "layer": "rainbow", "count": 100, "spread": 18, "cooldown": 0
 		}
 	]
 ]

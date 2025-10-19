@@ -305,7 +305,7 @@ function scr_setup_upgrade_stats(){
 				}
 			},
 			"Clown Moab": {
-				upgrade_string: "Instead of bloon animals, spawn a clown moab that contains a large number of bloon animals. Also doubles the number of delievery boxes delivered.",
+				upgrade_string: "Instead of bloon animals, spawn a clown moab that contains a large number of bloon animals. Also doubles the number of special delivery boxes.",
 				tower_sprite: "spr_party_clown_monkey",
 				health: 50,
 				max_health: 50,
