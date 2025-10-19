@@ -1,0 +1,97 @@
+[
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "normal", "layer": "green", "count": 20, "spread": 60, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "normal", "layer": "green", "count": 15, "spread": 70, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "green", "count": 15, "spread": 70, "cooldown": 5
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 5
+		},
+		{
+			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 10
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_regrow_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 0,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 5,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 10,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_camo_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "normal", "layer": "green", "count": 20, "spread": 60, "cooldown": 0,
+			"properties": ["camo"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_tattered_bloon_icon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 0,
+			"properties": ["tattered"]
+		},
+		{
+			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 5,
+			"properties": ["tattered"]
+		},
+		{
+			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 10,
+			"properties": ["tattered"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "tack_the_ripper",
+			"layer": "blue",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
+	]
+]

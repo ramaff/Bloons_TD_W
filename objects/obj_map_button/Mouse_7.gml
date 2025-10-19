@@ -63,6 +63,10 @@ if _track = "rm_traffic_jam" {
 	global.added_heroes = ["trickster"]
 	global.added_cash = 500;
 }
+if _track = "rm_wall_street" {
+	global.added_heroes = ["trickster"]
+	global.added_cash = 600;
+}
 
 global.pickable_tower_slots = 6 - array_length(global.added_towers)
 global.pickable_hero_slots = 3 - array_length(global.added_heroes)

@@ -1,0 +1,20 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_wall_street",
+  "closed":false,
+  "kind":0,
+  "name":"pth_wall_street",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":863.0,"y":290.25,},
+    {"speed":100.0,"x":-66.0,"y":290.25,},
+    {"speed":100.0,"x":-65.0,"y":403.25,},
+    {"speed":100.0,"x":868.0,"y":402.25,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

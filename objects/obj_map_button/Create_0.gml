@@ -68,6 +68,12 @@ tracks_info = {
 		"round_data": "traffic_jam_rounds.json",
 		"name": "traffic jam",
 		"requirement": "desert_road"
+	},
+	"rm_wall_street": {
+		"paths": [pth_wall_street],
+		"round_data": "wall_street_rounds.json",
+		"name": "wall street",
+		"requirement": "traffic_jam"
 	}
 }
 global.mission = "training_room"
