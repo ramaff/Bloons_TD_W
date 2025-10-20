@@ -36,7 +36,7 @@ function scr_long_shot_boost(_tower_stats = tower_stats) {
 			_long_shot_boost.range_boost = _max_range_charge;	
 		}
 		_long_shot_boost.damage_boost = floor(_long_shot_boost.range_boost / 10);
-		_long_shot_boost.pierce_boost = floor(_long_shot_boost.range_boost / 10);
+		_long_shot_boost.pierce_boost = floor(_long_shot_boost.range_boost / 5);
 		_long_shot_boost.speed_boost = floor(_long_shot_boost.range_boost / 10);
 	}
 	

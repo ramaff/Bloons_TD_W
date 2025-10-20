@@ -29,6 +29,11 @@ function scr_tower_attack(_tower_stats = tower_stats, _projectile_stats = tower_
 		_damage_keys = _tower_stats.damage_keys	
 	}
 	
+	// In case the tower_attack_script adds a boost
+	if variable_struct_exists(_tower_stats, "stat_boosts") {
+		scr_merge_struct(_current_boosts, _tower_stats.stat_boosts)
+	}
+	
 	scr_create_tower_projectiles(_projectile_stats, x, y, target, _angle_offset, _current_boosts, _id, _targeting, _damage_keys)
 
 	return true;

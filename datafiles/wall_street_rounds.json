@@ -14,10 +14,10 @@
 			"round_icon_index": 2
 		},
 		{
-			"class": "normal", "layer": "green", "count": 15, "spread": 70, "cooldown": 0
+			"class": "normal", "layer": "green", "count": 20, "spread": 70, "cooldown": 0
 		},
 		{
-			"class": "normal", "layer": "green", "count": 15, "spread": 70, "cooldown": 5
+			"class": "normal", "layer": "green", "count": 20, "spread": 70, "cooldown": 5
 		}
 	],
 	[
@@ -26,13 +26,13 @@
 			"round_icon_index": 2
 		},
 		{
-			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 0
+			"class": "normal", "layer": "green", "count": 20, "spread": 75, "cooldown": 0
 		},
 		{
-			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 5
+			"class": "normal", "layer": "green", "count": 20, "spread": 75, "cooldown": 5
 		},
 		{
-			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 10
+			"class": "normal", "layer": "green", "count": 20, "spread": 75, "cooldown": 10
 		}
 	],
 	[
@@ -41,15 +41,15 @@
 			"round_icon_index": 2
 		},
 		{
-			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 0,
+			"class": "normal", "layer": "green", "count": 20, "spread": 75, "cooldown": 0,
 			"properties": ["regrow"]
 		},
 		{
-			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 5,
+			"class": "normal", "layer": "green", "count": 20, "spread": 75, "cooldown": 5,
 			"properties": ["regrow"]
 		},
 		{
-			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 10,
+			"class": "normal", "layer": "green", "count": 20, "spread": 75, "cooldown": 10,
 			"properties": ["regrow"]
 		}
 	],
@@ -69,16 +69,198 @@
 			"round_icon_index": 2
 		},
 		{
-			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 0,
+			"class": "normal", "layer": "green", "count": 25, "spread": 60, "cooldown": 0,
 			"properties": ["tattered"]
 		},
 		{
-			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 5,
+			"class": "normal", "layer": "green", "count": 25, "spread": 60, "cooldown": 5,
 			"properties": ["tattered"]
 		},
 		{
-			"class": "normal", "layer": "green", "count": 15, "spread": 75, "cooldown": 10,
+			"class": "normal", "layer": "green", "count": 25, "spread": 60, "cooldown": 10,
 			"properties": ["tattered"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 20, "spread": 75, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 20, "spread": 75, "cooldown": 5
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 20, "spread": 75, "cooldown": 10
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_tattered_bloon_icon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "normal", "layer": "green", "count": 25, "spread": 60, "cooldown": 0,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "normal", "layer": "green", "count": 25, "spread": 60, "cooldown": 5,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "normal", "layer": "green", "count": 25, "spread": 60, "cooldown": 10,
+			"properties": ["shielded"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 15, "spread": 75, "cooldown": 0,
+			"properties": ["camo"]
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 15, "spread": 75, "cooldown": 5,
+			"properties": ["camo"]
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 15, "spread": 75, "cooldown": 10,
+			"properties": ["camo"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_tattered_bloon_icon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "static", "layer": "green", "count": 15, "spread": 150, "cooldown": 0
+		},
+		{
+			"class": "static", "layer": "green", "count": 15, "spread": 150, "cooldown": 5
+		},
+		{
+			"class": "static", "layer": "green", "count": 15, "spread": 150, "cooldown": 10
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 30, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 30, "spread": 60, "cooldown": 5
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 30, "spread": 60, "cooldown": 10
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 30, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 30, "spread": 60, "cooldown": 5
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 30, "spread": 60, "cooldown": 10,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_regrow_splitter_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 15, "spread": 75, "cooldown": 0,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 15, "spread": 75, "cooldown": 5,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 15, "spread": 75, "cooldown": 10,
+			"properties": ["shielded"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_deflation_bloon_icon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "deflation", "layer": "green", "count": 30, "spread": 75, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "buisness",
+			"layer": "blue",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_stuffed_bloon_icon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "stuffed", "layer": "green", "count": 30, "spread": 60, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 30, "spread": 60, "cooldown": 0,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 30, "spread": 60, "cooldown": 5,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "splitter", "layer": "lime", "count": 30, "spread": 60, "cooldown": 10,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_nurse_bloon_icon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "nurse", "layer": "green", "count": 20, "spread": 90, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_barrier_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "barrier", "layer": "green", "count": 30, "spread": 75, "cooldown": 0
 		}
 	],
 	[

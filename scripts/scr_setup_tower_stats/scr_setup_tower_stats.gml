@@ -316,7 +316,7 @@ function scr_setup_tower_stats(){
 			butt_sprite: "spr_sling_shot_tower_butt",
 			total_cost: 175,
 			upgrade_cost: 0,
-			range: 105,
+			range: 115,
 			delay: 45,
 			attack_cooldown: 0,
 	

@@ -2149,6 +2149,19 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 2,
 			}
+		},
+		"buisness": {
+			"blue": {
+				sprite: "spr_buisness_bloon",
+				"object": "obj_buisness_bloon",
+				layers: 5000,
+				rbe: 5000,
+				damage: 1,
+				health: 5000,
+				big_bloon_tier: 5,
+				density: 1,
+				speed: 0.5,
+			}
 		}
 	}
 }
