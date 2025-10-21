@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_tower_stats_setup",
+  "%Name":"scr_multiply_tower_prices",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_tower_stats_setup",
+  "name":"scr_multiply_tower_prices",
   "parent":{
     "name":"tower generic",
     "path":"folders/Scripts/tower generic.yy",

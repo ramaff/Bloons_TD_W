@@ -1,6 +1,19 @@
 [
 	[
 		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "buisness",
+			"layer": "blue",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
+	],
+	[
+		{
 			"round_icon_sprite": "spr_bloon",
 			"round_icon_index": 2
 		},
