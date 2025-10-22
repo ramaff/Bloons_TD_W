@@ -5,7 +5,7 @@ var _i = 0;
 
 var _total_investments = array_length(tower_investments)
 
-var _mult = 0.95 + random(0.125);
+var _mult = 0.95 + random(0.1125);
 
 for(_i = 0; _i < _total_investments; _i++) {
 	var _tower = tower_investments[_i].id;

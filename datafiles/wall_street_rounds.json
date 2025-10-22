@@ -1,19 +1,6 @@
 [
 	[
 		{
-			"round_icon_sprite": "spr_non_specified_bounty_icon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "buisness",
-			"layer": "blue",
-			"count": 1,
-			"spread": 0,
-			"cooldown": 0
-		}
-	],
-	[
-		{
 			"round_icon_sprite": "spr_bloon",
 			"round_icon_index": 2
 		},
@@ -278,6 +265,204 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_brick_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 1, "spread": 1, "cooldown": 0
+		},
+		{
+			"class": "buisness",
+			"layer": "blue",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 300
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "splitter", "layer": "purple", "count": 30, "spread": 60, "cooldown": 0,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "splitter", "layer": "purple", "count": 30, "spread": 60, "cooldown": 5,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "splitter", "layer": "purple", "count": 30, "spread": 60, "cooldown": 10,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_patrol_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "patrol", "layer": "normal", "count": 5, "spread": 300, "cooldown": 0
+		},
+		{
+			"class": "static", "layer": "green", "count": 80, "spread": 30, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "ceramic", "count": 12, "spread": 135, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_pot_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "pot", "layer": "ceramic", "count": 8, "spread": 150, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "tax_collector",
+			"layer": "red",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 30, "spread": 60, "cooldown": 0,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 30, "spread": 60, "cooldown": 5,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 30, "spread": 60, "cooldown": 10,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "splitter", "layer": "purple", "count": 30, "spread": 60, "cooldown": 0,
+			"properties": ["camo"]
+		},
+		{
+			"class": "splitter", "layer": "purple", "count": 30, "spread": 60, "cooldown": 5,
+			"properties": ["camo"]
+		},
+		{
+			"class": "splitter", "layer": "purple", "count": 30, "spread": 60, "cooldown": 10,
+			"properties": ["camo"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_brick_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 12, "spread": 135, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_tower_bloon_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "tower", "count": 3, "spread": 450, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "buisness",
+			"layer": "blue",
+			"count": 3,
+			"spread": 300,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "splitter", "layer": "prismatic", "count": 30, "spread": 60, "cooldown": 0,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "splitter", "layer": "prismatic", "count": 30, "spread": 60, "cooldown": 5,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "splitter", "layer": "prismatic", "count": 30, "spread": 60, "cooldown": 10,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "ceramic", "layer": "ceramic", "count": 15, "spread": 90, "cooldown": 0,
+			"properties": ["camo"]
+		},
+		{
+			"class": "ceramic", "layer": "ceramic", "count": 15, "spread": 90, "cooldown": 5,
+			"properties": ["camo"]
+		},
+		{
+			"class": "ceramic", "layer": "ceramic", "count": 15, "spread": 90, "cooldown": 10,
+			"properties": ["camo"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_brick_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 24, "spread": 75, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_tower_bloon_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "tower", "count": 8, "spread": 200, "cooldown": 0
+		}
+	],
+	[
+		{
 			"round_icon_sprite": "spr_non_specified_bounty_icon",
 			"round_icon_index": 0
 		},
@@ -287,6 +472,73 @@
 			"count": 1,
 			"spread": 0,
 			"cooldown": 0
+		}
+	],
+	,
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 15, "spread": 120, "cooldown": 0,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 15, "spread": 120, "cooldown": 5,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 15, "spread": 120, "cooldown": 10,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 15, "spread": 90, "cooldown": 0,
+			"properties": ["camo"]
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 15, "spread": 90, "cooldown": 5,
+			"properties": ["camo"]
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 15, "spread": 90, "cooldown": 10,
+			"properties": ["camo"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_brick_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 40, "spread": 5, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_tower_bloon_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "tower", "count": 20, "spread": 100, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_catapult_bloon_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "catapult", "layer": "ceramic", "count": 10, "spread": 300, "cooldown": 0
+		},
+		{
+			"class": "patrol", "layer": "normal", "count": 50, "spread": 60, "cooldown": 0
 		}
 	]
 ]

@@ -10,7 +10,7 @@ with(obj_monkey) {
 		_picked_id = id;
 		break;
 	} else {
-		_picked_i--;	
+		_i++;	
 	}
 }
 
@@ -22,4 +22,7 @@ if instance_exists(_picked_id) {
 	}
 	
 	array_push(tower_investments, _picked_tower)
+	with(obj_wall_street_control) {
+		array_push(tower_investments, _picked_tower)
+	}
 }

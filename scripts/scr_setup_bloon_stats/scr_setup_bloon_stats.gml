@@ -1347,7 +1347,7 @@ function scr_setup_bloon_stats(){
 				speed: 1.9,
 			},
 			"blue": {
-				sprite: "spr_tack_the_ripper",
+				sprite: "spr_tack_the_ripper_blue",
 				layers: 3000,
 				rbe: 3000,
 				"big_bloon_tier": 5,
@@ -2161,6 +2161,19 @@ function scr_setup_bloon_stats(){
 				big_bloon_tier: 5,
 				density: 1,
 				speed: 0.5,
+			}
+		},
+		"tax_collector": {
+			"red": {
+				sprite: "spr_tax_collector",
+				"object": "obj_tax_collector_bloon",
+				layers: 9000,
+				rbe: 9000,
+				damage: 1,
+				health: 9000,
+				big_bloon_tier: 6,
+				density: 1,
+				speed: 0.1,
 			}
 		}
 	}
