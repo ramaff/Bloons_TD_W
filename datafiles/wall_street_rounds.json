@@ -1,4 +1,18 @@
 [
+	
+	[
+		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "tax_collector",
+			"layer": "red",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
+		}
+	],
 	[
 		{
 			"round_icon_sprite": "spr_bloon",
@@ -474,7 +488,6 @@
 			"cooldown": 0
 		}
 	],
-	,
 	[
 		{
 			"round_icon_sprite": "spr_splitter_bloon",

@@ -4,6 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-draw_circle(x, y, 200, true)
-
-scr_draw_outline_text(x, y, $"{capital} tax collected")
+capital = 0;

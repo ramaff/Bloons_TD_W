@@ -391,6 +391,7 @@
     {"name":"spr_bloon_animal","order":18,"path":"sprites/spr_bloon_animal/spr_bloon_animal.yy",},
     {"name":"spr_bloon_freeze","order":7,"path":"sprites/spr_bloon_freeze/spr_bloon_freeze.yy",},
     {"name":"spr_bloon_goop","order":9,"path":"sprites/spr_bloon_goop/spr_bloon_goop.yy",},
+    {"name":"spr_bloon_housing","order":21,"path":"sprites/spr_bloon_housing/spr_bloon_housing.yy",},
     {"name":"spr_bloon_marking","order":10,"path":"sprites/spr_bloon_marking/spr_bloon_marking.yy",},
     {"name":"spr_bloon_on_fire","order":41,"path":"sprites/spr_bloon_on_fire/spr_bloon_on_fire.yy",},
     {"name":"spr_bloon_shielded","order":3,"path":"sprites/spr_bloon_shielded/spr_bloon_shielded.yy",},

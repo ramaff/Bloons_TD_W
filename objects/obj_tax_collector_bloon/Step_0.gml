@@ -12,6 +12,28 @@ if leak_frame {
 	
 }
 
+if capital > 1000 {
+	capital -= 1000;
+	
+	var _class = "ceramic"
+	//var _layer = _layers[floor(abs((stored_health - _lost_hp) mod 25) / 5)]
+	var _xx = x;
+	var _yy = y;
+	var _bloon_object = obj_ceramic_class
+	var _path = bloon_stats.path
+	var _properties = []
+	var _round = -1
+	
+	var _pos = path_position;
+
+	var _layer = "housing"
+	with instance_create_depth(_xx, _yy, depth, _bloon_object) {
+		scr_bloon_stat_setup(id, _class, _layer, _path, _properties, _round)
+		path_position = _pos
+	}
+	
+}
+
 
 
 

@@ -918,6 +918,26 @@ function scr_setup_bloon_stats(){
 						"layer": "brick"
 					}
 				]
+			},
+			"housing": {
+				sprite: "spr_bloon_housing",
+				layers: 1698,
+				"big_bloon_tier": 4,
+				index: 0,
+				rbe: 2752,
+				health: 1500,
+				density: 1,
+				speed: 0.5,
+				children: [
+					{
+						"class": "ceramic",
+						"layer": "tower"
+					},
+					{
+						"class": "ceramic",
+						"layer": "tower"
+					}
+				]
 			}
 		},
 		"moab": {
@@ -2165,7 +2185,7 @@ function scr_setup_bloon_stats(){
 		},
 		"tax_collector": {
 			"red": {
-				sprite: "spr_tax_collector",
+				sprite: "spr_tax_collector_bloon",
 				"object": "obj_tax_collector_bloon",
 				layers: 9000,
 				rbe: 9000,
@@ -2173,7 +2193,7 @@ function scr_setup_bloon_stats(){
 				health: 9000,
 				big_bloon_tier: 6,
 				density: 1,
-				speed: 0.1,
+				speed: 0.02,
 			}
 		}
 	}

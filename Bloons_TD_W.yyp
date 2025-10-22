@@ -453,6 +453,7 @@
     {"id":{"name":"spr_bloon_animal","path":"sprites/spr_bloon_animal/spr_bloon_animal.yy",},},
     {"id":{"name":"spr_bloon_freeze","path":"sprites/spr_bloon_freeze/spr_bloon_freeze.yy",},},
     {"id":{"name":"spr_bloon_goop","path":"sprites/spr_bloon_goop/spr_bloon_goop.yy",},},
+    {"id":{"name":"spr_bloon_housing","path":"sprites/spr_bloon_housing/spr_bloon_housing.yy",},},
     {"id":{"name":"spr_bloon_marking","path":"sprites/spr_bloon_marking/spr_bloon_marking.yy",},},
     {"id":{"name":"spr_bloon_on_fire","path":"sprites/spr_bloon_on_fire/spr_bloon_on_fire.yy",},},
     {"id":{"name":"spr_bloon_shielded","path":"sprites/spr_bloon_shielded/spr_bloon_shielded.yy",},},

@@ -13,7 +13,23 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 	
 	if _bloon_stats.health <= 0 {
 		
+		var _cash_sucked = false 
 		var _cash_flow = 1;
+		
+		if instance_exists(obj_tax_collector_bloon) {
+			var _ogxx = x;
+			var _ogyy = y
+			with (obj_tax_collector_bloon) {
+				if point_distance(x, y, _ogxx, _ogyy) < 200 {
+					_cash_flow = 0
+					capital++;
+					//with instance_create_depth(x - 100 + random(200), y - 100 + random(200), -100, obj_text) {
+					//	text = "+1 tax collected";
+					//}
+				}
+			}
+		}
+		
 		if _round > 20 {
 			_cash_flow = _cash_flow * 0.6;
 		}
@@ -23,9 +39,13 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 		if _round > 40 {
 			_cash_flow = _cash_flow * 0.2;
 		}
-		if _bloon_stats.remaining_value > 0 {
-			global.money += min(_cash_flow, _cash_flow * _bloon_stats.remaining_value);
-		}
+		
+		//if !_cash_sucked {
+			if _bloon_stats.remaining_value > 0 {
+				global.money += min(_cash_flow, _cash_flow * _bloon_stats.remaining_value);
+			}
+		//}
+
 		_bloon_stats.remaining_value--;
 		if instance_exists(_tower) {
 			_tower.pop_count++;
