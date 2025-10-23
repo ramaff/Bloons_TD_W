@@ -3,7 +3,7 @@
 function scr_long_shot_boost(_tower_stats = tower_stats) {
 
 	var _long_shot_boost = {
-		range_boost: 0.6,
+		range_boost: 0.75,
 		damage_boost: 0,
 		pierce_boost: 0,
 		speed_boost: 0,
@@ -13,19 +13,19 @@ function scr_long_shot_boost(_tower_stats = tower_stats) {
 	if !variable_struct_exists(_tower_stats, "stat_boosts") {
 		_tower_stats.stat_boosts = {}
 	}
-	var _max_charge = 10;
+	var _max_charge = 15;
 	if variable_struct_exists(_tower_stats, "active_upgrades") {
 		if variable_struct_exists(_tower_stats.active_upgrades, "Goliath Shot") {
-			_long_shot_boost.range_boost = 1.5
-			_max_charge = 20;
+			_long_shot_boost.range_boost = 2
+			_max_charge = 30;
 		}
 	}
 	if variable_struct_exists(_tower_stats.stat_boosts, "Long Shot Boost") {
 		var _current_long_shot_boost = variable_struct_get(_tower_stats.stat_boosts, "Long Shot Boost")
 		if variable_struct_exists(_tower_stats, "active_upgrades") {
 			if variable_struct_exists(_tower_stats.active_upgrades, "Goliath Shot") {
-				if _current_long_shot_boost.damage_boost > 10 {
-					_long_shot_boost.puncture = ceil(_current_long_shot_boost.damage_boost / 4)
+				if _current_long_shot_boost.damage_boost > 15 {
+					_long_shot_boost.puncture = ceil(_current_long_shot_boost.damage_boost / 6)
 				}
 			}
 		}

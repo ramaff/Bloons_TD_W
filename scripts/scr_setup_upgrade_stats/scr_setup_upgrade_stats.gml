@@ -171,9 +171,9 @@ function scr_setup_upgrade_stats(){
 		},
 		"sling_shot_monkey": {
 			"stone skipping": {
-				pierce_add: 2,
+				pierce_add: 3,
 				lifespan: 32,
-				upgrade_string: "Stones skip and pop 2 more bloons."
+				upgrade_string: "Stones skip and pop 3 more bloons."
 			},
 			"sharp sight": {
 				camo_detection: true,
@@ -182,7 +182,7 @@ function scr_setup_upgrade_stats(){
 			},
 			"Long Shot": {
 				fire_rate_multiplier: 1.333,
-				range: -40,
+				range: -80,
 				tower_attack_script: scr_long_shot_boost,
 				upgrade_string: "The range and damage of the sling shot increases over time the longer a shot is prepared."
 			},
@@ -429,6 +429,7 @@ function scr_setup_upgrade_stats(){
 			"Hand Eye Coordination": {
 				upgrade_string: "Increases yoyo range and detects camo.",
 				range: 40,
+				upgrade_script: scr_trickster_projectile_replace,
 				camo_detection: true
 			},
 			"Finishing Performance": {

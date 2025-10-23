@@ -16,7 +16,14 @@ if instance_exists(projectile_stats.tower_id) {
 	}
 	
 	if instance_exists(target) {
-	orbit_dist = scr_converge(orbit_dist, point_distance(_xx, _yy, target.x, target.y), 1)
+		if point_distance(_xx, _yy, target.x, target.y) > (_range + 10) {
+			target = noone;
+			if !instance_exists(target) {
+				target = scr_get_bloon_target({"camo_detection": variable_struct_exists(projectile_stats, "camo_detection"), "range": _range, "damage_keys": projectile_stats.damage_keys}, _xx, _yy, projectile_stats.targeting, 0, real(id) + projectile_stats.id_offset)
+			}
+		} else {
+			orbit_dist = scr_converge(orbit_dist, point_distance(_xx, _yy, target.x, target.y), 1)
+		}
 	} else {
 		orbit_dist = scr_converge(orbit_dist, 100, 1)	
 	}

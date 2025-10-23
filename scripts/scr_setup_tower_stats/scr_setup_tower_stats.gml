@@ -314,16 +314,16 @@ function scr_setup_tower_stats(){
 		"sling_shot_monkey": {
 			tower_sprite: "spr_pebble_monkey",
 			butt_sprite: "spr_sling_shot_tower_butt",
-			total_cost: 175,
+			total_cost: 250,
 			upgrade_cost: 0,
-			range: 115,
-			delay: 45,
+			range: 120,
+			delay: 36,
 			attack_cooldown: 0,
 	
 			projectile_stats: [
 				{
 					sprite: "spr_stone",
-					pierce: 2,
+					pierce: 3,
 					damage: 1,
 					speed: 8,
 					lifespan: 32,
@@ -339,7 +339,7 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "stone skipping",
-						upgrade_cost: 100
+						upgrade_cost: 150
 					},
 					{
 						keyword: "sharp sight",
@@ -351,11 +351,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Long Shot",
-						upgrade_cost: 600
+						upgrade_cost: 750
 					},
 					{
 						keyword: "Goliath Shot",
-						upgrade_cost: 2500
+						upgrade_cost: 3000
 					}
 				]
 			]
