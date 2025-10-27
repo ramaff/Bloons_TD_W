@@ -12,8 +12,8 @@ if leak_frame {
 	
 }
 
-if capital > 1000 {
-	capital -= 1000;
+if capital > 2500 {
+	capital -= 2500;
 	
 	var _class = "ceramic"
 	//var _layer = _layers[floor(abs((stored_health - _lost_hp) mod 25) / 5)]

@@ -87,36 +87,36 @@
 			"round_icon_index": 2
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 25, "spread": 75, "cooldown": 0
+			"class": "splitter", "layer": "lime", "count": 30, "spread": 75, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 25, "spread": 75, "cooldown": 5
+			"class": "splitter", "layer": "lime", "count": 30, "spread": 75, "cooldown": 5
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 25, "spread": 75, "cooldown": 10
+			"class": "splitter", "layer": "lime", "count": 30, "spread": 75, "cooldown": 10
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_tattered_bloon_icon",
+			"round_icon_sprite": "spr_shielded_splitter_bloon_icon",
 			"round_icon_index": 2
 		},
 		{
-			"class": "normal", "layer": "green", "count": 25, "spread": 75, "cooldown": 0,
+			"class": "normal", "layer": "green", "count": 30, "spread": 75, "cooldown": 0,
 			"properties": ["shielded"]
 		},
 		{
-			"class": "normal", "layer": "green", "count": 25, "spread": 75, "cooldown": 5,
+			"class": "normal", "layer": "green", "count": 30, "spread": 75, "cooldown": 5,
 			"properties": ["shielded"]
 		},
 		{
-			"class": "normal", "layer": "green", "count": 25, "spread": 75, "cooldown": 10,
+			"class": "normal", "layer": "green", "count": 30, "spread": 75, "cooldown": 10,
 			"properties": ["shielded"]
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_sprite": "spr_camo_splitter_bloon",
 			"round_icon_index": 2
 		},
 		{
@@ -134,17 +134,17 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_tattered_bloon_icon",
+			"round_icon_sprite": "spr_green_static_bloon",
 			"round_icon_index": 2
 		},
 		{
-			"class": "static", "layer": "green", "count": 10, "spread": 240, "cooldown": 0
+			"class": "static", "layer": "green", "count": 15, "spread": 240, "cooldown": 0
 		},
 		{
-			"class": "static", "layer": "green", "count": 10, "spread": 240, "cooldown": 5
+			"class": "static", "layer": "green", "count": 15, "spread": 240, "cooldown": 5
 		},
 		{
-			"class": "static", "layer": "green", "count": 10, "spread": 240, "cooldown": 10
+			"class": "static", "layer": "green", "count": 15, "spread": 240, "cooldown": 10
 		}
 	],
 	[
@@ -153,18 +153,18 @@
 			"round_icon_index": 2
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 40, "spread": 50, "cooldown": 0
+			"class": "splitter", "layer": "lime", "count": 45, "spread": 45, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 40, "spread": 50, "cooldown": 5
+			"class": "splitter", "layer": "lime", "count": 45, "spread": 45, "cooldown": 5
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 40, "spread": 50, "cooldown": 10
+			"class": "splitter", "layer": "lime", "count": 45, "spread": 45, "cooldown": 10
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_sprite": "spr_regrow_splitter_bloon",
 			"round_icon_index": 2
 		},
 		{
@@ -180,19 +180,19 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_regrow_splitter_bloon",
+			"round_icon_sprite": "spr_shielded_splitter_bloon_icon",
 			"round_icon_index": 2
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 15, "spread": 90, "cooldown": 0,
+			"class": "splitter", "layer": "lime", "count": 25, "spread": 90, "cooldown": 0,
 			"properties": ["shielded"]
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 15, "spread": 90, "cooldown": 5,
+			"class": "splitter", "layer": "lime", "count": 25, "spread": 90, "cooldown": 5,
 			"properties": ["shielded"]
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 15, "spread": 90, "cooldown": 10,
+			"class": "splitter", "layer": "lime", "count": 25, "spread": 90, "cooldown": 10,
 			"properties": ["shielded"]
 		}
 	],
@@ -229,7 +229,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_sprite": "spr_regrow_splitter_bloon",
 			"round_icon_index": 2
 		},
 		{
@@ -281,8 +281,8 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_splitter_bloon",
-			"round_icon_index": 2
+			"round_icon_sprite": "spr_regrow_splitter_bloon",
+			"round_icon_index": 4
 		},
 		{
 			"class": "splitter", "layer": "purple", "count": 25, "spread": 120, "cooldown": 0,
@@ -295,6 +295,10 @@
 		{
 			"class": "splitter", "layer": "purple", "count": 25, "spread": 120, "cooldown": 10,
 			"properties": ["regrow"]
+		},
+		{
+			"class": "splitter", "layer": "purple", "count": 25, "spread": 120, "cooldown": 1550,
+			"properties": ["regrow"]
 		}
 	],
 	[
@@ -306,7 +310,10 @@
 			"class": "patrol", "layer": "normal", "count": 5, "spread": 300, "cooldown": 0
 		},
 		{
-			"class": "static", "layer": "green", "count": 80, "spread": 30, "cooldown": 0
+			"class": "static", "layer": "green", "count": 150, "spread": 20, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "green", "count": 150, "spread": 20, "cooldown": 10
 		}
 	],
 	[
@@ -315,7 +322,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "ceramic", "layer": "ceramic", "count": 12, "spread": 135, "cooldown": 0
+			"class": "ceramic", "layer": "ceramic", "count": 24, "spread": 105, "cooldown": 0
 		}
 	],
 	[
@@ -324,7 +331,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "pot", "layer": "ceramic", "count": 8, "spread": 150, "cooldown": 0
+			"class": "pot", "layer": "ceramic", "count": 15, "spread": 165, "cooldown": 0
 		}
 	],
 	[
@@ -338,30 +345,15 @@
 			"count": 1,
 			"spread": 0,
 			"cooldown": 0
+		},
+		{
+			"class": "ceramic", "layer": "tower", "count": 2, "spread": 450, "cooldown": 450
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_splitter_bloon",
-			"round_icon_index": 2
-		},
-		{
-			"class": "normal", "layer": "rainbow", "count": 30, "spread": 60, "cooldown": 0,
-			"properties": ["regrow"]
-		},
-		{
-			"class": "normal", "layer": "rainbow", "count": 30, "spread": 60, "cooldown": 5,
-			"properties": ["regrow"]
-		},
-		{
-			"class": "normal", "layer": "rainbow", "count": 30, "spread": 60, "cooldown": 10,
-			"properties": ["regrow"]
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_splitter_bloon",
-			"round_icon_index": 2
+			"round_icon_sprite": "spr_camo_splitter_bloon",
+			"round_icon_index": 4
 		},
 		{
 			"class": "splitter", "layer": "purple", "count": 30, "spread": 60, "cooldown": 0,
@@ -378,11 +370,29 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_regrow_bloon",
+			"round_icon_index": 8
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 30, "spread": 105, "cooldown": 0,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 30, "spread": 105, "cooldown": 5,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 30, "spread": 105, "cooldown": 10,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
 			"round_icon_sprite": "spr_brick_bloon",
 			"round_icon_index": 0
 		},
 		{
-			"class": "ceramic", "layer": "brick", "count": 12, "spread": 135, "cooldown": 0
+			"class": "ceramic", "layer": "brick", "count": 18, "spread": 125, "cooldown": 0
 		}
 	],
 	[
@@ -391,7 +401,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "ceramic", "layer": "tower", "count": 3, "spread": 450, "cooldown": 0
+			"class": "ceramic", "layer": "tower", "count": 5, "spread": 450, "cooldown": 0
 		}
 	],
 	[
@@ -409,38 +419,38 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_sprite": "spr_camo_ceramic_bloon",
 			"round_icon_index": 2
 		},
 		{
-			"class": "splitter", "layer": "prismatic", "count": 30, "spread": 60, "cooldown": 0,
-			"properties": ["regrow"]
+			"class": "ceramic", "layer": "ceramic", "count": 15, "spread": 120, "cooldown": 0,
+			"properties": ["camo"]
 		},
 		{
-			"class": "splitter", "layer": "prismatic", "count": 30, "spread": 60, "cooldown": 5,
-			"properties": ["regrow"]
+			"class": "ceramic", "layer": "ceramic", "count": 15, "spread": 120, "cooldown": 5,
+			"properties": ["camo"]
 		},
 		{
-			"class": "splitter", "layer": "prismatic", "count": 30, "spread": 60, "cooldown": 10,
-			"properties": ["regrow"]
+			"class": "ceramic", "layer": "ceramic", "count": 15, "spread": 120, "cooldown": 10,
+			"properties": ["camo"]
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_splitter_bloon",
-			"round_icon_index": 2
+			"round_icon_sprite": "spr_regrow_splitter_bloon",
+			"round_icon_index": 5
 		},
 		{
-			"class": "ceramic", "layer": "ceramic", "count": 15, "spread": 90, "cooldown": 0,
-			"properties": ["camo"]
+			"class": "ceramic", "layer": "ceramic", "count": 30, "spread": 120, "cooldown": 0,
+			"properties": ["regrow"]
 		},
 		{
-			"class": "ceramic", "layer": "ceramic", "count": 15, "spread": 90, "cooldown": 5,
-			"properties": ["camo"]
+			"class": "ceramic", "layer": "ceramic", "count": 30, "spread": 120, "cooldown": 5,
+			"properties": ["regrow"]
 		},
 		{
-			"class": "ceramic", "layer": "ceramic", "count": 15, "spread": 90, "cooldown": 10,
-			"properties": ["camo"]
+			"class": "ceramic", "layer": "ceramic", "count": 30, "spread": 120, "cooldown": 10,
+			"properties": ["regrow"]
 		}
 	],
 	[
@@ -449,7 +459,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "ceramic", "layer": "brick", "count": 24, "spread": 75, "cooldown": 0
+			"class": "ceramic", "layer": "brick", "count": 30, "spread": 75, "cooldown": 0
 		}
 	],
 	[
@@ -458,7 +468,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "ceramic", "layer": "tower", "count": 8, "spread": 200, "cooldown": 0
+			"class": "ceramic", "layer": "tower", "count": 12, "spread": 200, "cooldown": 0
 		}
 	],
 	[
@@ -476,25 +486,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_splitter_bloon",
-			"round_icon_index": 2
-		},
-		{
-			"class": "ceramic", "layer": "brick", "count": 15, "spread": 120, "cooldown": 0,
-			"properties": ["regrow"]
-		},
-		{
-			"class": "ceramic", "layer": "brick", "count": 15, "spread": 120, "cooldown": 5,
-			"properties": ["regrow"]
-		},
-		{
-			"class": "ceramic", "layer": "brick", "count": 15, "spread": 120, "cooldown": 10,
-			"properties": ["regrow"]
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_splitter_bloon",
+			"round_icon_sprite": "spr_camo_brick_bloon",
 			"round_icon_index": 2
 		},
 		{
@@ -512,11 +504,29 @@
 	],
 	[
 		{
+			"round_icon_sprite": "spr_regrow_brick_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 15, "spread": 120, "cooldown": 0,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 15, "spread": 120, "cooldown": 5,
+			"properties": ["regrow"]
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 15, "spread": 120, "cooldown": 10,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
 			"round_icon_sprite": "spr_brick_bloon",
 			"round_icon_index": 0
 		},
 		{
-			"class": "ceramic", "layer": "brick", "count": 40, "spread": 5, "cooldown": 0
+			"class": "ceramic", "layer": "brick", "count": 45, "spread": 5, "cooldown": 0
 		}
 	],
 	[
