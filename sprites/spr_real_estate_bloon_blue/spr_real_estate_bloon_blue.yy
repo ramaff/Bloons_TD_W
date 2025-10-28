@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_tax_collector_bloon",
+  "%Name":"spr_real_estate_bloon_blue",
   "bboxMode":0,
   "bbox_bottom":231,
   "bbox_left":68,
@@ -22,7 +22,7 @@
     {"$GMImageLayer":"","%Name":"7827481d-13d3-42aa-8dc1-575414ecbcc8","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"7827481d-13d3-42aa-8dc1-575414ecbcc8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"638636ae-81a2-4c3c-88cb-0d7545790802","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"638636ae-81a2-4c3c-88cb-0d7545790802","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_tax_collector_bloon",
+  "name":"spr_real_estate_bloon_blue",
   "nineSlice":null,
   "origin":4,
   "parent":{
@@ -34,7 +34,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_tax_collector_bloon",
+    "%Name":"spr_real_estate_bloon_blue",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -58,7 +58,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_tax_collector_bloon",
+    "name":"spr_real_estate_bloon_blue",
     "playback":1,
     "playbackSpeed":0.0,
     "playbackSpeedType":0,
@@ -72,7 +72,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9164ac8e-2236-4c81-8c7c-d336233b9ccf","path":"sprites/spr_tax_collector_bloon/spr_tax_collector_bloon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9164ac8e-2236-4c81-8c7c-d336233b9ccf","path":"sprites/spr_real_estate_bloon_blue/spr_real_estate_bloon_blue.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"5ed6b875-3409-4b43-9d84-48a94606739a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

@@ -29,3 +29,13 @@ for(_i = 0; _i < _total_investments; _i++) {
 		
 	}
 }
+
+if instance_exists(obj_upgrade_butt) {
+	with (obj_upgrade_butt) {
+		if instance_exists(selected_monkey) {
+			with (selected_monkey) {
+				scr_select_monkey()
+			}	
+		}
+	}
+}

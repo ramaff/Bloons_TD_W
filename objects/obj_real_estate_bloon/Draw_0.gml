@@ -6,4 +6,4 @@ event_inherited();
 
 draw_circle(x, y, 200, true)
 
-scr_draw_outline_text(x, y, $"{capital} tax collected")
+scr_draw_outline_text(x, y, $"{capital} funds embezzled")

@@ -922,7 +922,7 @@ function scr_setup_bloon_stats(){
 			"housing": {
 				sprite: "spr_bloon_housing",
 				layers: 1698,
-				"big_bloon_tier": 4,
+				"big_bloon_tier": 5,
 				index: 0,
 				rbe: 2752,
 				health: 1500,
@@ -2103,7 +2103,7 @@ function scr_setup_bloon_stats(){
 			"ceramic": {
 				"object": "obj_catapult_bloon",
 				sprite: "spr_catapult_bloon",
-				big_bloon_tier: 2,
+				big_bloon_tier: 3,
 				layers: 336,
 				index: 0,
 				rbe: 596,
@@ -2180,20 +2180,42 @@ function scr_setup_bloon_stats(){
 				health: 5000,
 				big_bloon_tier: 5,
 				density: 1,
-				speed: 0.5,
+				speed: 0.75,
+			},
+			"yellow": {
+				sprite: "spr_buisness_bloon_yellow",
+				"object": "obj_buisness_bloon",
+				layers: 10000,
+				rbe: 10000,
+				damage: 1,
+				health: 5000,
+				big_bloon_tier: 6,
+				density: 1,
+				speed: 2.25,
 			}
 		},
-		"tax_collector": {
+		"real_estate": {
 			"red": {
-				sprite: "spr_tax_collector_bloon",
-				"object": "obj_tax_collector_bloon",
+				sprite: "spr_real_estate_bloon",
+				"object": "obj_real_estate_bloon",
 				layers: 9000,
 				rbe: 9000,
 				damage: 1,
 				health: 9000,
 				big_bloon_tier: 6,
 				density: 1,
-				speed: 0.02,
+				speed: 0.05,
+			},
+			"blue": {
+				sprite: "spr_real_estate_bloon_blue",
+				"object": "obj_real_estate_bloon",
+				layers: 14000,
+				rbe: 14000,
+				damage: 1,
+				health: 14000,
+				big_bloon_tier: 7,
+				density: 1,
+				speed: 0.08,
 			}
 		}
 	}

@@ -48,6 +48,9 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		if _class = "ceramic" and _layer = "ceramic" {
 			_bloon.bloon_stats.sprite = "spr_regrow_ceramic_bloon"
 		}
+		if _class = "ceramic" and _layer = "brick" {
+			_bloon.bloon_stats.sprite = "spr_regrow_brick_bloon"
+		}
 		if _class = "lead" and _layer = "lead" {
 			_bloon.bloon_stats.sprite = "spr_regrow_lead_bloon"
 		}

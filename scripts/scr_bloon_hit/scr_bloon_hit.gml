@@ -16,10 +16,10 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 		var _cash_sucked = false 
 		var _cash_flow = 1;
 		
-		if instance_exists(obj_tax_collector_bloon) {
+		if instance_exists(obj_real_estate_bloon) {
 			var _ogxx = x;
 			var _ogyy = y
-			with (obj_tax_collector_bloon) {
+			with (obj_real_estate_bloon) {
 				if point_distance(x, y, _ogxx, _ogyy) < 200 {
 					_cash_flow = 0
 					capital++;

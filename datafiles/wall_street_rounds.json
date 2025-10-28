@@ -340,7 +340,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "tax_collector",
+			"class": "real_estate",
 			"layer": "red",
 			"count": 1,
 			"spread": 0,
@@ -420,7 +420,7 @@
 	[
 		{
 			"round_icon_sprite": "spr_camo_ceramic_bloon",
-			"round_icon_index": 2
+			"round_icon_index": 0
 		},
 		{
 			"class": "ceramic", "layer": "ceramic", "count": 15, "spread": 120, "cooldown": 0,
@@ -437,8 +437,8 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_regrow_splitter_bloon",
-			"round_icon_index": 5
+			"round_icon_sprite": "spr_regrow_ceramic_bloon",
+			"round_icon_index": 0
 		},
 		{
 			"class": "ceramic", "layer": "ceramic", "count": 30, "spread": 120, "cooldown": 0,
@@ -477,17 +477,24 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "tack_the_ripper",
-			"layer": "blue",
+			"class": "real_estate",
+			"layer": "red",
 			"count": 1,
-			"spread": 0,
+			"spread": 600,
+			"cooldown": 0
+		},
+		{
+			"class": "buisness",
+			"layer": "yellow",
+			"count": 2,
+			"spread": 300,
 			"cooldown": 0
 		}
 	],
 	[
 		{
 			"round_icon_sprite": "spr_camo_brick_bloon",
-			"round_icon_index": 2
+			"round_icon_index": 0
 		},
 		{
 			"class": "ceramic", "layer": "brick", "count": 15, "spread": 90, "cooldown": 0,
@@ -505,18 +512,18 @@
 	[
 		{
 			"round_icon_sprite": "spr_regrow_brick_bloon",
-			"round_icon_index": 2
+			"round_icon_index": 0
 		},
 		{
-			"class": "ceramic", "layer": "brick", "count": 15, "spread": 120, "cooldown": 0,
+			"class": "ceramic", "layer": "brick", "count": 15, "spread": 150, "cooldown": 0,
 			"properties": ["regrow"]
 		},
 		{
-			"class": "ceramic", "layer": "brick", "count": 15, "spread": 120, "cooldown": 5,
+			"class": "ceramic", "layer": "brick", "count": 15, "spread": 150, "cooldown": 5,
 			"properties": ["regrow"]
 		},
 		{
-			"class": "ceramic", "layer": "brick", "count": 15, "spread": 120, "cooldown": 10,
+			"class": "ceramic", "layer": "brick", "count": 15, "spread": 150, "cooldown": 10,
 			"properties": ["regrow"]
 		}
 	],
@@ -526,7 +533,10 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "ceramic", "layer": "brick", "count": 45, "spread": 5, "cooldown": 0
+			"class": "ceramic", "layer": "brick", "count": 20, "spread": 5, "cooldown": 0
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 25, "spread": 5, "cooldown": 720
 		}
 	],
 	[

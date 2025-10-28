@@ -9,7 +9,6 @@ if leak_frame {
 	speed = bloon_stats.speed;
 	path_speed = speed;
 
-	
 }
 
 if capital > 2500 {
