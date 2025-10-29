@@ -15,6 +15,11 @@ if _yy < 60 || _yy > 540 {
 	y += vspeed * 2
 }
 
+if alarm[0] < 30 {
+	direction = point_direction(x, y, start_x, start_y);
+	speed = point_distance(x, y, start_x, start_y) / alarm[0]
+}
+
 x = clamp(x, 0, 800)
 y = clamp(y, 60, 540)
 

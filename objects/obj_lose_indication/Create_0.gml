@@ -16,4 +16,12 @@ if global.mission = "the_stronghold" {
 	}
 }
 
+if global.mission = "wall_street" {
+	if !_current_stage_prog.complete {
+		if variable_struct_exists(global.upgrades_progress.angry_squirrel, "unlocked_paths") {
+			variable_struct_remove(global.upgrades_progress.angry_squirrel.unlocked_paths, "Tree Tosser")
+		}
+	}
+}
+
 

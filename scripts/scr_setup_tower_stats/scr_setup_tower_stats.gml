@@ -81,7 +81,7 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Splodey Darts",
-						upgrade_cost: 3100
+						upgrade_cost: 2800
 					},
 					{
 						keyword: "carpet bombing",
@@ -123,7 +123,7 @@ function scr_setup_tower_stats(){
 					sprite: "spr_acorn",
 					pierce: 2,
 					damage: 1,
-					speed: 12,
+					speed: 15,
 					lifespan: 30
 				}
 			],
@@ -149,7 +149,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Bigger Acorns",
-						upgrade_cost: 200
+						upgrade_cost: 250
 					},
 					{
 						keyword: "Beefed-Up Squirrel",
@@ -165,17 +165,17 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Acorn Assault",
-						upgrade_cost: 3900
+						upgrade_cost: 4400
 					}
 				],
 				[
 					{
-						keyword: "Tree Tossing",
-						upgrade_cost: 2500
+						keyword: "Tree Tosser",
+						upgrade_cost: 3500
 					},
 					{
 						keyword: "Rampage",
-						upgrade_cost: 7500
+						upgrade_cost: 7000
 					}
 				],
 				[]

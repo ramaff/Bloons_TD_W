@@ -222,7 +222,7 @@ function scr_setup_upgrade_stats(){
 						sprite: "spr_big_acorn",
 						pierce: 4,
 						damage: 1,
-						speed: 12,
+						speed: 15,
 						lifespan: 60
 					}
 				],
@@ -235,7 +235,7 @@ function scr_setup_upgrade_stats(){
 						sprite: "spr_bigger_acorn",
 						pierce: 6,
 						damage: 2,
-						speed: 18,
+						speed: 21,
 						lifespan: 60
 					}
 				],
@@ -264,13 +264,36 @@ function scr_setup_upgrade_stats(){
 						sprite: "spr_bigger_acorn_on_fire",
 						pierce: 6,
 						damage: 2,
-						speed: 18,
+						speed: 21,
 						lifespan: 60,
 						fire: 1,
 						fire_time: 120,
 						lead_hit: true
 					}
 				],
+			},
+			"Tree Tosser": {
+				projectile_replacement: true,
+				fire_rate_multiplier: 0.3,
+				projectile_stats: [
+					{
+						sprite: "spr_acorn_tree",
+						pierce: 50,
+						damage: 7,
+						speed: 24,
+						lifespan: 60
+					}
+				],
+				range: 30,
+				health: 150,
+				max_health: 150,
+				upgrade_string: "Insanely strong squirrel throws an entire tree now which does huge damage to a large number of bloons."
+			},
+			"Rampage": {
+				fire_rate_multiplier: 2,
+				health: 350,
+				max_health: 350,
+				upgrade_string: "Doubles firerate. When provoked if there is a nearby tower, throws it at the bloons, causing it to do massive damage. Also regenerates a lot of health if a tower was thrown."
 			}
 		},
 		"clown_monkey": {
