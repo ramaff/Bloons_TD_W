@@ -4,3 +4,5 @@
 alarm[0] = 60;
 
 tower_investments = []
+
+global.tower_investment_index = 0;

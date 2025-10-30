@@ -2204,7 +2204,7 @@ function scr_setup_bloon_stats(){
 				health: 9000,
 				big_bloon_tier: 6,
 				density: 1,
-				speed: 0.05,
+				speed: 0.075,
 			},
 			"blue": {
 				sprite: "spr_real_estate_bloon_blue",

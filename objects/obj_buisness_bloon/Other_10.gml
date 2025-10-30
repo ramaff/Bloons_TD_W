@@ -5,13 +5,21 @@ var _i = 0;
 var _picked_i = irandom(instance_number(obj_monkey)) + 1
 var _picked_id = noone;
 
-with(obj_monkey) {
-	_i++;
-	if _i = _picked_i {
-		_picked_id = id;
-		break;
+if instance_number(obj_monkey) <= 0 {
+	exit;
+}
+
+while(_picked_id == noone) {
+	with(obj_monkey) {
+		if _i = global.tower_investment_index {
+			_picked_id = id;
+			break;
+		}
+		_i++;
 	}
 }
+
+global.tower_investment_index++;
 
 if instance_exists(_picked_id) {
 	
