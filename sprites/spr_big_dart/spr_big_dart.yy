@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_big_dart",
   "bboxMode":2,
   "bbox_bottom":81,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"171675ab-5edf-40dd-beb4-c0e5100fbc6b","name":"171675ab-5edf-40dd-beb4-c0e5100fbc6b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"171675ab-5edf-40dd-beb4-c0e5100fbc6b","name":"171675ab-5edf-40dd-beb4-c0e5100fbc6b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

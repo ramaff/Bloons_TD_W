@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_king_chess_bloon",
   "bboxMode":0,
   "bbox_bottom":121,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5073ff51-e467-4ae8-8835-ba499f2b8aa6","name":"5073ff51-e467-4ae8-8835-ba499f2b8aa6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5073ff51-e467-4ae8-8835-ba499f2b8aa6","name":"5073ff51-e467-4ae8-8835-ba499f2b8aa6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

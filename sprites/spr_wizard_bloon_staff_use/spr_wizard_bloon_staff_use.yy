@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_wizard_bloon_staff_use",
   "bboxMode":0,
   "bbox_bottom":209,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"96e9ecbe-7e9a-4094-8419-8832dc8e126f","name":"96e9ecbe-7e9a-4094-8419-8832dc8e126f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"96e9ecbe-7e9a-4094-8419-8832dc8e126f","name":"96e9ecbe-7e9a-4094-8419-8832dc8e126f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

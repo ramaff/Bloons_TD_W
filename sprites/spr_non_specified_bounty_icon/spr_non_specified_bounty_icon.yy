@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_non_specified_bounty_icon",
   "bboxMode":0,
   "bbox_bottom":59,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8c6661e2-53e2-41b5-bfc5-769011b79a11","name":"8c6661e2-53e2-41b5-bfc5-769011b79a11","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8c6661e2-53e2-41b5-bfc5-769011b79a11","name":"8c6661e2-53e2-41b5-bfc5-769011b79a11","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

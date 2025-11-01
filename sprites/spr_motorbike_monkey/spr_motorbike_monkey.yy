@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_motorbike_monkey",
   "bboxMode":2,
   "bbox_bottom":103,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c54054e6-3b43-41d2-8837-77d4c0d6138f","name":"c54054e6-3b43-41d2-8837-77d4c0d6138f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c54054e6-3b43-41d2-8837-77d4c0d6138f","name":"c54054e6-3b43-41d2-8837-77d4c0d6138f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

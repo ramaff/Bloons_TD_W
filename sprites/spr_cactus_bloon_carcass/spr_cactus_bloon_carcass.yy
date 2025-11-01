@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_cactus_bloon_carcass",
   "bboxMode":0,
   "bbox_bottom":73,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f57c4b36-9749-4bff-801f-3349331b73f3","name":"f57c4b36-9749-4bff-801f-3349331b73f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"042b863b-7d20-49a8-806f-0a3500dbff2c","name":"042b863b-7d20-49a8-806f-0a3500dbff2c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f57c4b36-9749-4bff-801f-3349331b73f3","name":"f57c4b36-9749-4bff-801f-3349331b73f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"042b863b-7d20-49a8-806f-0a3500dbff2c","name":"042b863b-7d20-49a8-806f-0a3500dbff2c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

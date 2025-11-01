@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_bigger_marble",
   "bboxMode":0,
   "bbox_bottom":49,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c5ab0cdf-9381-4d86-9ec2-a40d3b3be1c8","name":"c5ab0cdf-9381-4d86-9ec2-a40d3b3be1c8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c5ab0cdf-9381-4d86-9ec2-a40d3b3be1c8","name":"c5ab0cdf-9381-4d86-9ec2-a40d3b3be1c8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

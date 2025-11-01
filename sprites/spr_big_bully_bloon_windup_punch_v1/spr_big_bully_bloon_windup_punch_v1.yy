@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_big_bully_bloon_windup_punch_v1",
   "bboxMode":0,
   "bbox_bottom":203,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"480f5980-fa6c-437d-9fc0-6c4435c8f60a","name":"480f5980-fa6c-437d-9fc0-6c4435c8f60a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"0ef8eb5b-c0d0-4d44-9c0c-cf3e9c248680","name":"0ef8eb5b-c0d0-4d44-9c0c-cf3e9c248680","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"480f5980-fa6c-437d-9fc0-6c4435c8f60a","name":"480f5980-fa6c-437d-9fc0-6c4435c8f60a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0ef8eb5b-c0d0-4d44-9c0c-cf3e9c248680","name":"0ef8eb5b-c0d0-4d44-9c0c-cf3e9c248680","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

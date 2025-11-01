@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_pogo_stick_monkey",
   "bboxMode":0,
   "bbox_bottom":101,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2d62bf8c-381c-44e0-ac70-5381bdd59d5a","name":"2d62bf8c-381c-44e0-ac70-5381bdd59d5a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2d62bf8c-381c-44e0-ac70-5381bdd59d5a","name":"2d62bf8c-381c-44e0-ac70-5381bdd59d5a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

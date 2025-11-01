@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_you_lose_butt",
   "bboxMode":0,
   "bbox_bottom":383,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"45aa1d81-13cf-4880-9e70-a3a269a96ef8","name":"45aa1d81-13cf-4880-9e70-a3a269a96ef8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"45aa1d81-13cf-4880-9e70-a3a269a96ef8","name":"45aa1d81-13cf-4880-9e70-a3a269a96ef8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

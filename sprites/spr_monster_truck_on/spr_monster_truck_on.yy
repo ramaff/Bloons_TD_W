@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_monster_truck_on",
   "bboxMode":0,
   "bbox_bottom":261,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"703a809d-6af0-49b5-a890-ac276917297d","name":"703a809d-6af0-49b5-a890-ac276917297d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"9246da84-9927-4452-bb20-3d83f7e2e6e9","name":"9246da84-9927-4452-bb20-3d83f7e2e6e9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"703a809d-6af0-49b5-a890-ac276917297d","name":"703a809d-6af0-49b5-a890-ac276917297d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9246da84-9927-4452-bb20-3d83f7e2e6e9","name":"9246da84-9927-4452-bb20-3d83f7e2e6e9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_pinata",
   "bboxMode":2,
   "bbox_bottom":948,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"50c9224d-569f-4b9f-9a33-f6711dfa5c69","name":"50c9224d-569f-4b9f-9a33-f6711dfa5c69","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"50c9224d-569f-4b9f-9a33-f6711dfa5c69","name":"50c9224d-569f-4b9f-9a33-f6711dfa5c69","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

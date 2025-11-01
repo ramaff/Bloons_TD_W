@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_world_1_and_2_map_old",
   "bboxMode":0,
   "bbox_bottom":1619,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c1cdd6d1-9bc1-46cf-8c21-4d7cc306041e","name":"c1cdd6d1-9bc1-46cf-8c21-4d7cc306041e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c1cdd6d1-9bc1-46cf-8c21-4d7cc306041e","name":"c1cdd6d1-9bc1-46cf-8c21-4d7cc306041e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

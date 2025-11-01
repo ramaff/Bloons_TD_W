@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_skateboard_monkey",
   "bboxMode":2,
   "bbox_bottom":103,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"17a2c79f-98f4-4d28-9c45-7eac24e76a33","name":"17a2c79f-98f4-4d28-9c45-7eac24e76a33","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"17a2c79f-98f4-4d28-9c45-7eac24e76a33","name":"17a2c79f-98f4-4d28-9c45-7eac24e76a33","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_catapult_bloon_shooting",
   "bboxMode":0,
   "bbox_bottom":158,
@@ -12,9 +12,9 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b71e4c57-3733-45d7-8f0e-607ffe8f57d6","name":"b71e4c57-3733-45d7-8f0e-607ffe8f57d6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"ae5b3dee-fffa-4cbc-8016-b0ea8ecc65dc","name":"ae5b3dee-fffa-4cbc-8016-b0ea8ecc65dc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"3ac76856-7d7a-40a6-b235-8c0572b766af","name":"3ac76856-7d7a-40a6-b235-8c0572b766af","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b71e4c57-3733-45d7-8f0e-607ffe8f57d6","name":"b71e4c57-3733-45d7-8f0e-607ffe8f57d6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ae5b3dee-fffa-4cbc-8016-b0ea8ecc65dc","name":"ae5b3dee-fffa-4cbc-8016-b0ea8ecc65dc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3ac76856-7d7a-40a6-b235-8c0572b766af","name":"3ac76856-7d7a-40a6-b235-8c0572b766af","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

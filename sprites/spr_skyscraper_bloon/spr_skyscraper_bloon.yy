@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_skyscraper_bloon",
   "bboxMode":0,
   "bbox_bottom":182,
@@ -12,9 +12,9 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"deaf844f-7332-4cca-89fe-5aad3ec2698d","name":"deaf844f-7332-4cca-89fe-5aad3ec2698d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"bc83b65a-f53e-4c42-a1c4-b5d2ee3bd3c9","name":"bc83b65a-f53e-4c42-a1c4-b5d2ee3bd3c9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"851ecd93-0faa-4bfd-87a5-8d614171c75d","name":"851ecd93-0faa-4bfd-87a5-8d614171c75d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"deaf844f-7332-4cca-89fe-5aad3ec2698d","name":"deaf844f-7332-4cca-89fe-5aad3ec2698d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bc83b65a-f53e-4c42-a1c4-b5d2ee3bd3c9","name":"bc83b65a-f53e-4c42-a1c4-b5d2ee3bd3c9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"851ecd93-0faa-4bfd-87a5-8d614171c75d","name":"851ecd93-0faa-4bfd-87a5-8d614171c75d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -73,15 +73,9 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"deaf844f-7332-4cca-89fe-5aad3ec2698d","path":"sprites/spr_skyscraper_bloon/spr_skyscraper_bloon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6ee7e284-0304-458b-87be-f8f39fd69581","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc83b65a-f53e-4c42-a1c4-b5d2ee3bd3c9","path":"sprites/spr_skyscraper_bloon/spr_skyscraper_bloon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5c35fe73-dfad-4164-a8c6-32bb1564d710","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"851ecd93-0faa-4bfd-87a5-8d614171c75d","path":"sprites/spr_skyscraper_bloon/spr_skyscraper_bloon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7d2fabe1-2ab1-44f2-ada1-593db9a7c046","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"deaf844f-7332-4cca-89fe-5aad3ec2698d","path":"sprites/spr_skyscraper_bloon/spr_skyscraper_bloon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"6ee7e284-0304-458b-87be-f8f39fd69581","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc83b65a-f53e-4c42-a1c4-b5d2ee3bd3c9","path":"sprites/spr_skyscraper_bloon/spr_skyscraper_bloon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"5c35fe73-dfad-4164-a8c6-32bb1564d710","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"851ecd93-0faa-4bfd-87a5-8d614171c75d","path":"sprites/spr_skyscraper_bloon/spr_skyscraper_bloon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"7d2fabe1-2ab1-44f2-ada1-593db9a7c046","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

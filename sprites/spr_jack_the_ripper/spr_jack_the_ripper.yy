@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_jack_the_ripper",
   "bboxMode":0,
   "bbox_bottom":130,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9f80e50c-211f-435b-8fe8-b07fb53b3e61","name":"9f80e50c-211f-435b-8fe8-b07fb53b3e61","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9f80e50c-211f-435b-8fe8-b07fb53b3e61","name":"9f80e50c-211f-435b-8fe8-b07fb53b3e61","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

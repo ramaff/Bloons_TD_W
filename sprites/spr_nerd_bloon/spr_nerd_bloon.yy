@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_nerd_bloon",
   "bboxMode":0,
   "bbox_bottom":107,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"43bd2286-29f7-4173-b2c4-fb6bb4fb1743","name":"43bd2286-29f7-4173-b2c4-fb6bb4fb1743","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"43bd2286-29f7-4173-b2c4-fb6bb4fb1743","name":"43bd2286-29f7-4173-b2c4-fb6bb4fb1743","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

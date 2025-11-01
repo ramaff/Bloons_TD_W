@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_mission_start_button",
   "bboxMode":0,
   "bbox_bottom":108,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"851e42a5-70a6-4579-81d8-ac9eebd0d1b2","name":"851e42a5-70a6-4579-81d8-ac9eebd0d1b2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"1a31cc26-140e-4ba1-af69-c74b94a5db64","name":"1a31cc26-140e-4ba1-af69-c74b94a5db64","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"851e42a5-70a6-4579-81d8-ac9eebd0d1b2","name":"851e42a5-70a6-4579-81d8-ac9eebd0d1b2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1a31cc26-140e-4ba1-af69-c74b94a5db64","name":"1a31cc26-140e-4ba1-af69-c74b94a5db64","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

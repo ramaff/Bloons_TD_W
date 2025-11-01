@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_letter_from_the_bloons",
   "bboxMode":0,
   "bbox_bottom":129,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c2b4eea2-3870-4229-a359-2c12b39ef236","name":"c2b4eea2-3870-4229-a359-2c12b39ef236","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c2b4eea2-3870-4229-a359-2c12b39ef236","name":"c2b4eea2-3870-4229-a359-2c12b39ef236","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

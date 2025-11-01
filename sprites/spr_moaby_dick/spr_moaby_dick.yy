@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_moaby_dick",
   "bboxMode":0,
   "bbox_bottom":311,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e1d6d319-8ac3-4adc-9ed0-04a88144a9dd","name":"e1d6d319-8ac3-4adc-9ed0-04a88144a9dd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e1d6d319-8ac3-4adc-9ed0-04a88144a9dd","name":"e1d6d319-8ac3-4adc-9ed0-04a88144a9dd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

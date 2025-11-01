@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_bigger_acorn_on_fire",
   "bboxMode":0,
   "bbox_bottom":96,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b69ca94c-8f27-4180-823c-a66706b17fb0","name":"b69ca94c-8f27-4180-823c-a66706b17fb0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"dd09b5a4-575f-42aa-ac37-dcd81c7bba0c","name":"dd09b5a4-575f-42aa-ac37-dcd81c7bba0c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b69ca94c-8f27-4180-823c-a66706b17fb0","name":"b69ca94c-8f27-4180-823c-a66706b17fb0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dd09b5a4-575f-42aa-ac37-dcd81c7bba0c","name":"dd09b5a4-575f-42aa-ac37-dcd81c7bba0c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

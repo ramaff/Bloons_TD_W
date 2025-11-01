@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_ice_bloon",
   "bboxMode":0,
   "bbox_bottom":63,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6726a97e-660c-4a8d-8e1e-fc6a95409f45","name":"6726a97e-660c-4a8d-8e1e-fc6a95409f45","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"cad8affa-625f-4c38-9b70-6520b5ccb4ed","name":"cad8affa-625f-4c38-9b70-6520b5ccb4ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6726a97e-660c-4a8d-8e1e-fc6a95409f45","name":"6726a97e-660c-4a8d-8e1e-fc6a95409f45","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cad8affa-625f-4c38-9b70-6520b5ccb4ed","name":"cad8affa-625f-4c38-9b70-6520b5ccb4ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

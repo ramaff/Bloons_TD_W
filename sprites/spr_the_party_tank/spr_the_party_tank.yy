@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_the_party_tank",
   "bboxMode":0,
   "bbox_bottom":306,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cce6aa33-edb3-4e1d-93eb-9574fdd26009","name":"cce6aa33-edb3-4e1d-93eb-9574fdd26009","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cce6aa33-edb3-4e1d-93eb-9574fdd26009","name":"cce6aa33-edb3-4e1d-93eb-9574fdd26009","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

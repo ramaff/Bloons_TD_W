@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_shielded_mini_moab_icon",
   "bboxMode":0,
   "bbox_bottom":59,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"56dbf66c-fdc0-44b1-a8e2-80ad91ff079d","name":"56dbf66c-fdc0-44b1-a8e2-80ad91ff079d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"56dbf66c-fdc0-44b1-a8e2-80ad91ff079d","name":"56dbf66c-fdc0-44b1-a8e2-80ad91ff079d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

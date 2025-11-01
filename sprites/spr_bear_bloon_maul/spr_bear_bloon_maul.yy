@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_bear_bloon_maul",
   "bboxMode":0,
   "bbox_bottom":236,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4f3dfcb7-2575-4505-84ee-cbc62b727d6c","name":"4f3dfcb7-2575-4505-84ee-cbc62b727d6c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"ba649836-d989-412c-a316-a0fe208c9b51","name":"ba649836-d989-412c-a316-a0fe208c9b51","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4f3dfcb7-2575-4505-84ee-cbc62b727d6c","name":"4f3dfcb7-2575-4505-84ee-cbc62b727d6c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ba649836-d989-412c-a316-a0fe208c9b51","name":"ba649836-d989-412c-a316-a0fe208c9b51","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

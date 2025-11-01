@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_moab_shielded",
   "bboxMode":0,
   "bbox_bottom":130,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cc9a0d48-9991-4dad-8171-edcd3dd0dfeb","name":"cc9a0d48-9991-4dad-8171-edcd3dd0dfeb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cc9a0d48-9991-4dad-8171-edcd3dd0dfeb","name":"cc9a0d48-9991-4dad-8171-edcd3dd0dfeb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

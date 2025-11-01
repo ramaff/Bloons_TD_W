@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_rook_chess_bloon",
   "bboxMode":0,
   "bbox_bottom":134,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"0cd8579e-e71e-470d-98df-f7ec1f166228","name":"0cd8579e-e71e-470d-98df-f7ec1f166228","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0cd8579e-e71e-470d-98df-f7ec1f166228","name":"0cd8579e-e71e-470d-98df-f7ec1f166228","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

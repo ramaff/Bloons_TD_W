@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_bloon_on_fire",
   "bboxMode":0,
   "bbox_bottom":70,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ffd068e0-24bc-4925-a59f-cec31f9d9530","name":"ffd068e0-24bc-4925-a59f-cec31f9d9530","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"9878af3e-7ccd-4621-9b8e-245108dc3c79","name":"9878af3e-7ccd-4621-9b8e-245108dc3c79","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ffd068e0-24bc-4925-a59f-cec31f9d9530","name":"ffd068e0-24bc-4925-a59f-cec31f9d9530","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9878af3e-7ccd-4621-9b8e-245108dc3c79","name":"9878af3e-7ccd-4621-9b8e-245108dc3c79","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

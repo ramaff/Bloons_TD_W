@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_bear_bloon_hive_throw",
   "bboxMode":0,
   "bbox_bottom":251,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"17fb7bc3-a94a-410b-befc-14a048f1c7d1","name":"17fb7bc3-a94a-410b-befc-14a048f1c7d1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"43fe9ea2-f00d-4b20-91a5-c197781a988d","name":"43fe9ea2-f00d-4b20-91a5-c197781a988d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"17fb7bc3-a94a-410b-befc-14a048f1c7d1","name":"17fb7bc3-a94a-410b-befc-14a048f1c7d1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"43fe9ea2-f00d-4b20-91a5-c197781a988d","name":"43fe9ea2-f00d-4b20-91a5-c197781a988d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

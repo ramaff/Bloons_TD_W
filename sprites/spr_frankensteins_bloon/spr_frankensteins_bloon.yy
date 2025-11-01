@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_frankensteins_bloon",
   "bboxMode":0,
   "bbox_bottom":181,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"829fb3a5-5872-4a72-a648-7f03249ca620","name":"829fb3a5-5872-4a72-a648-7f03249ca620","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"829fb3a5-5872-4a72-a648-7f03249ca620","name":"829fb3a5-5872-4a72-a648-7f03249ca620","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

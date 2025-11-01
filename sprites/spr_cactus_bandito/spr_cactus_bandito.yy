@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_cactus_bandito",
   "bboxMode":0,
   "bbox_bottom":96,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"fbd3fbb7-0f95-45c2-af22-2a1e8959cf7c","name":"fbd3fbb7-0f95-45c2-af22-2a1e8959cf7c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fbd3fbb7-0f95-45c2-af22-2a1e8959cf7c","name":"fbd3fbb7-0f95-45c2-af22-2a1e8959cf7c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

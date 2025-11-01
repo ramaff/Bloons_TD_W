@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_mission_briefing_panel",
   "bboxMode":0,
   "bbox_bottom":521,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b3ca5fd3-c1fb-4063-ad6a-f6339ad94df4","name":"b3ca5fd3-c1fb-4063-ad6a-f6339ad94df4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b3ca5fd3-c1fb-4063-ad6a-f6339ad94df4","name":"b3ca5fd3-c1fb-4063-ad6a-f6339ad94df4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

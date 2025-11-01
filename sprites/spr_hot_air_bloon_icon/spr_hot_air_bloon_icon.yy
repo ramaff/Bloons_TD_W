@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_hot_air_bloon_icon",
   "bboxMode":0,
   "bbox_bottom":59,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bdf0cf13-a2de-4001-9357-8c5535ea4183","name":"bdf0cf13-a2de-4001-9357-8c5535ea4183","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bdf0cf13-a2de-4001-9357-8c5535ea4183","name":"bdf0cf13-a2de-4001-9357-8c5535ea4183","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

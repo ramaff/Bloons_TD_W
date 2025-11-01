@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_grind_rail",
   "bboxMode":1,
   "bbox_bottom":79,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1dd436e6-04a4-4ff3-a440-08ad8c502367","name":"1dd436e6-04a4-4ff3-a440-08ad8c502367","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1dd436e6-04a4-4ff3-a440-08ad8c502367","name":"1dd436e6-04a4-4ff3-a440-08ad8c502367","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
