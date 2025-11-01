@@ -74,6 +74,12 @@ tracks_info = {
 		"round_data": "wall_street_rounds.json",
 		"name": "wall street",
 		"requirement": "traffic_jam"
+	},
+	"rm_the_high_court": {
+		"paths": [pth_the_high_court_1],
+		"round_data": "the_high_court_rounds.json",
+		"name": "the high court",
+		"requirement": "wall_street"
 	}
 }
 global.mission = "training_room"

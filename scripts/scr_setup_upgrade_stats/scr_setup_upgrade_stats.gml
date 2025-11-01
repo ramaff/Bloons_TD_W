@@ -1398,5 +1398,20 @@ function scr_setup_upgrade_stats(){
 				]
 			}
 		},
+		"bongo_monkey": {
+			"Louder Music": {
+				range: 30,
+				upgrade_string: "Increases the range of the bongo."
+			},
+			"Inspiring Music": {
+				upgrade_string: "Towers within the bongo's range have their attack speed increased by 15%."
+			},
+			"Spray Paint Artist": {
+				upgrade_string: "Paints over camo and tattered bloons, turning them into normal bloons instead."
+			},
+			"Complete Makeover": {
+				upgrade_string: "Converts bloons within range into a different color. The color is determined by the targetting of the tower."
+			}
+		},
 	}
 }

@@ -1,0 +1,22 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_the_high_court_1",
+  "closed":false,
+  "kind":0,
+  "name":"pth_the_high_court_1",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":63.166626,"y":-66.666504,},
+    {"speed":100.0,"x":66.166626,"y":205.3335,},
+    {"speed":100.0,"x":745.1666,"y":205.3335,},
+    {"speed":100.0,"x":746.1666,"y":318.3335,},
+    {"speed":100.0,"x":400.16663,"y":319.3335,},
+    {"speed":100.0,"x":400.16663,"y":604.3335,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

@@ -52,7 +52,7 @@ global.missions_complete = {
 		"complete": false,
 		"best_time": 999999	
 	},
-	"city_hall": {
+	"the_high_court": {
 		"complete": false,
 		"best_time": 999999	
 	}
@@ -147,6 +147,9 @@ global.upgrades_progress = {
 	},
 	"skateboard_monkey": {
 		"unlocked_paths": {"Scooter": {"unlocked_upgrades": 2}}
+	},
+	"bongo_monkey": {
+		"unlocked_paths": {"Spray Paint Artist": {"unlocked_upgrades": 2}}
 	},
 }
 
