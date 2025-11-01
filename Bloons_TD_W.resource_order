@@ -78,6 +78,7 @@
     {"name":"obj_bloon_zap_from_above","order":4,"path":"objects/obj_bloon_zap_from_above/obj_bloon_zap_from_above.yy",},
     {"name":"obj_bloon","order":5,"path":"objects/obj_bloon/obj_bloon.yy",},
     {"name":"obj_bomb_bloon","order":1,"path":"objects/obj_bomb_bloon/obj_bomb_bloon.yy",},
+    {"name":"obj_bongo_monkey","order":16,"path":"objects/obj_bongo_monkey/obj_bongo_monkey.yy",},
     {"name":"obj_bridge_monkey","order":11,"path":"objects/obj_bridge_monkey/obj_bridge_monkey.yy",},
     {"name":"obj_buisness_bloon","order":19,"path":"objects/obj_buisness_bloon/obj_buisness_bloon.yy",},
     {"name":"obj_bully","order":5,"path":"objects/obj_bully/obj_bully.yy",},

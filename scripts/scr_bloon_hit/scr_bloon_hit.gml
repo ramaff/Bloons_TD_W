@@ -41,9 +41,23 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 		}
 		
 		//if !_cash_sucked {
-			if _bloon_stats.remaining_value > 0 {
-				global.money += min(_cash_flow, _cash_flow * _bloon_stats.remaining_value);
+		if _bloon_stats.remaining_value > 0 {
+			var _gimme = min(_cash_flow, _cash_flow * _bloon_stats.remaining_value)
+			global.money += _gimme
+			if instance_exists(obj_bongo_monkey) {
+				var _ogxx = x;
+				var _ogyy = y
+				with (obj_bongo_monkey) {
+					if point_distance(x, y, _ogxx, _ogyy) < tower_stats.range {
+						global.money += _gimme
+						with instance_create_depth(x - 10 + random(20), y - 10 + random(20), -100, obj_text) {
+							text = "+$1";
+						}
+						break;
+					}
+				}
 			}
+		}
 		//}
 
 		_bloon_stats.remaining_value--;

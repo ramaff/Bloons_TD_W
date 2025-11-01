@@ -64,7 +64,11 @@ if _track = "rm_traffic_jam" {
 	global.added_cash = 500;
 }
 if _track = "rm_wall_street" {
-	var _req_mission_prog = variable_struct_get(global.missions_complete, "wall_street")
+	global.added_towers = ["bongo_monkey"]
+	global.added_cash = 600;
+}
+if _track = "rm_the_high_court" {
+	var _req_mission_prog = variable_struct_get(global.missions_complete, "the_high_court")
 	if !_req_mission_prog.complete {
 		if variable_struct_exists(global.upgrades_progress.angry_squirrel, "unlocked_paths") {
 			variable_struct_set(global.upgrades_progress.angry_squirrel.unlocked_paths, "Tree Tosser", {"unlocked_upgrades": 2})

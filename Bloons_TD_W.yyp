@@ -116,6 +116,7 @@
     {"id":{"name":"obj_bloon_zap_from_above","path":"objects/obj_bloon_zap_from_above/obj_bloon_zap_from_above.yy",},},
     {"id":{"name":"obj_bloon","path":"objects/obj_bloon/obj_bloon.yy",},},
     {"id":{"name":"obj_bomb_bloon","path":"objects/obj_bomb_bloon/obj_bomb_bloon.yy",},},
+    {"id":{"name":"obj_bongo_monkey","path":"objects/obj_bongo_monkey/obj_bongo_monkey.yy",},},
     {"id":{"name":"obj_bounty","path":"objects/obj_bounty/obj_bounty.yy",},},
     {"id":{"name":"obj_bridge_monkey","path":"objects/obj_bridge_monkey/obj_bridge_monkey.yy",},},
     {"id":{"name":"obj_buisness_bloon","path":"objects/obj_buisness_bloon/obj_buisness_bloon.yy",},},
