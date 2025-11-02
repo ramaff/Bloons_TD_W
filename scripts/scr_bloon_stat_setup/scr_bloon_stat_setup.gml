@@ -59,16 +59,7 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		}
 	}
 	if variable_struct_exists(_bloon.bloon_stats, "camo")  {
-		_bloon.bloon_stats.sprite = "spr_camo_bloon"
-		if _class = "splitter" {
-			_bloon.bloon_stats.sprite = "spr_camo_splitter_bloon"
-		}
-		if _class = "ceramic" and _layer = "ceramic" {
-			_bloon.bloon_stats.sprite = "spr_camo_ceramic_bloon"
-		}
-		if _class = "ceramic" and _layer = "brick" {
-			_bloon.bloon_stats.sprite = "spr_camo_brick_bloon"
-		}
+		scr_bloon_set_camo(_bloon)
 	}
 	if variable_struct_exists(_bloon.bloon_stats, "sprite") {
 		_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.sprite);
@@ -78,6 +69,12 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	}
 	
 	_bloon.bloon_stats.path = _path
+	
+	if variable_struct_exists(_bloon.bloon_stats, "tattered") {
+		scr_bloon_set_tattered(_bloon);
+		//variable_struct_set(_bloon.bloon_stats, "tattered_sprite", _class_stats.tattered_sprite)
+	}
+	
 	if _class = "deflation" || _class = "bee" {
 		//_bloon.sprite_index = spr_big_deflation_bloon;
 		var _target = instance_create_depth(x, y, depth, obj_bloon_target);
@@ -117,7 +114,7 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 			//y = _yy;
 		}
 	} else if _path != -1 {
-		path_start(_path, bloon_stats.speed, path_action_stop, true);
+		path_start(_path, _bloon.bloon_stats.speed, path_action_stop, true);
 		_xx = path_get_x(_path, 0)
 		_yy = path_get_y(_path, 0)
 		
@@ -126,12 +123,6 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	}
 	
 	
-	if variable_struct_exists(_bloon.bloon_stats, "tattered") {
-		_bloon.bloon_stats.speed = _bloon.bloon_stats.speed * 2
-		_bloon.speed = _bloon.bloon_stats.speed
-		_bloon.path_speed = _bloon.speed
-		//variable_struct_set(_bloon.bloon_stats, "tattered_sprite", _class_stats.tattered_sprite)
-	}
 	if variable_struct_exists(_bloon.bloon_stats, "shielded") {
 		//variable_struct_set(_bloon.bloon_stats, "shielded_sprite", _class_stats.shielded_sprite)
 		if variable_struct_exists(_bloon.bloon_stats, "shielded_sprite") {

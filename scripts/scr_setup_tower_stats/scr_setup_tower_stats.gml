@@ -879,7 +879,7 @@ function scr_setup_tower_stats(){
 		"bongo_monkey": {
 			tower_sprite: "spr_bongo_monkey",
 			tower_object: "obj_bongo_monkey",
-			butt_sprite: "spr_skateboard_monkey_butt",
+			butt_sprite: "spr_bongo_tower_butt",
 			total_cost: 750,
 			upgrade_cost: 0,
 			range: 90,

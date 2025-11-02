@@ -559,6 +559,7 @@ function scr_setup_bloon_stats(){
 			"sprite": "spr_big_deflation_bloon",
 			"big_bloon_tier": 1,
 			"height": 5,
+			tattered: true,
 			"red": {
 				layers: 5,
 				index: 0,
@@ -566,7 +567,7 @@ function scr_setup_bloon_stats(){
 				health: 3,
 				max_health: 3,
 				density: 1,
-				speed: 3.3,
+				speed: 1.65,
 				children: [
 					{
 						"class": "splitter",
@@ -584,7 +585,7 @@ function scr_setup_bloon_stats(){
 				health: 6,
 				max_health: 6,
 				density: 1,
-				speed: 4.4,
+				speed: 2.2,
 				children: [
 					{
 						"class": "splitter",
@@ -601,7 +602,7 @@ function scr_setup_bloon_stats(){
 				rbe: 19,
 				health: 9,
 				density: 1,
-				speed: 5.5,
+				speed: 2.75,
 				children: [
 					{
 						"class": "splitter",
@@ -618,7 +619,7 @@ function scr_setup_bloon_stats(){
 				rbe: 25,
 				health: 12,
 				density: 1,
-				speed: 6.6,
+				speed: 3.3,
 				children: [
 					{
 						"class": "splitter",
@@ -635,7 +636,7 @@ function scr_setup_bloon_stats(){
 				rbe: 31,
 				health: 15,
 				density: 1,
-				speed: 7.7,
+				speed: 3.85,
 				children: [
 					{
 						"class": "splitter",

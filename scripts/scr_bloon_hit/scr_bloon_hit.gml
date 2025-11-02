@@ -210,6 +210,11 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		_bloon.bloon_stats.paint_time = _projectile_stats.paint_time;
 		if variable_struct_exists(_bloon.bloon_stats, "camo") {
 			variable_struct_remove(_bloon.bloon_stats, "camo")
+			var _index = array_get_index(_bloon.bloon_stats.properties, "camo")
+			if _index != -1 {
+				array_delete(_bloon.bloon_stats.properties, _index, 1)
+			}
+			
 			_bloon.bloon_stats.camo_paint_over = true;
 			_bloon.bloon_stats.sprite = "spr_bloon"
 			if _class = "splitter" {
@@ -226,9 +231,22 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		if variable_struct_exists(_bloon.bloon_stats, "tattered") {
 			_bloon.bloon_stats.tattered_paint_over = true;
 			variable_struct_remove(_bloon.bloon_stats, "tattered")
+			var _index = array_get_index(_bloon.bloon_stats.properties, "tattered")
+			if _index != -1 {
+				array_delete(_bloon.bloon_stats.properties, _index, 1)
+			}
+			
 			_bloon.bloon_stats.speed = _bloon.bloon_stats.speed * 0.5
 			_bloon.speed = _bloon.bloon_stats.speed
 			_bloon.path_speed = _bloon.speed
+		}
+		if variable_struct_exists(_projectile_stats, "make_over") and !variable_struct_exists(_bloon.bloon_stats, "make_over") {
+			var _target_layer = _projectile_stats.targeting
+			var _class_stats = struct_get(global.bloon_stats, _class)
+			if variable_struct_exists(_class_stats, _target_layer) {
+				scr_bloon_stat_setup(_bloon, _class, _target_layer, _bloon.bloon_stats.path, _bloon.bloon_stats.properties, _bloon.bloon_stats.round, _bloon.x, _bloon.y)
+			}
+			variable_struct_set(_bloon.bloon_stats, "make_over", _target_layer)
 		}
 	}
 	
@@ -346,9 +364,12 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 				}
 				if variable_struct_exists(_bloon.bloon_stats, "tattered_paint_over") {
 					bloon_stats.tattered_paint_over = _bloon.bloon_stats.tattered_paint_over;
-				}  
+				} 
 				bloon_stats.paint_time = _bloon.bloon_stats.paint_time;
 			}
+			if variable_struct_exists(_bloon.bloon_stats, "make_over") {
+				bloon_stats.make_over = _bloon.bloon_stats.make_over;
+			}  
 			
 			bloon_stats.projectile_hits = variable_clone(_bloon.bloon_stats.projectile_hits)
 			bloon_stats.remaining_value = _child_remaining_value;
