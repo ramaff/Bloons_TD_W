@@ -883,8 +883,9 @@ function scr_setup_tower_stats(){
 			total_cost: 750,
 			upgrade_cost: 0,
 			range: 90,
-			delay: 60,
+			delay: 2,
 			attack_cooldown: 0,
+			attack_angle_offset: 0,
 	
 			projectile_stats: [
 			],
@@ -910,7 +911,7 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Spray Paint Artist",
-						upgrade_cost: 1500
+						upgrade_cost: 1200
 					},
 					{
 						keyword: "Complete Makeover",

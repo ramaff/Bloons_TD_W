@@ -1407,7 +1407,44 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Towers within the bongo's range have their attack speed increased by 15%."
 			},
 			"Spray Paint Artist": {
-				upgrade_string: "Paints over camo and tattered bloons, turning them into normal bloons instead."
+				upgrade_string: "Paints over camo and tattered bloons, turning them into normal bloons instead. Paint lasts a layer and fades after 6 seconds.",
+				projectile_replacement: true,
+				tower_attack_script: scr_spray_paint_spray,
+				camo_detection: true,
+				projectile_stats: [
+					{
+						sprite: "spr_spray_paint",
+						pierce: 4,
+						damage: 0,
+						speed: 13,
+						lifespan: 10,
+						camo_detection: true,
+						paint: 1,
+						paint_time: 180
+					},
+					{
+						sprite: "spr_spray_paint",
+						pierce: 4,
+						damage: 0,
+						speed: 13,
+						direction: 120,
+						lifespan: 10,
+						camo_detection: true,
+						paint: 1,
+						paint_time: 180
+					},
+					{
+						sprite: "spr_spray_paint",
+						pierce: 4,
+						damage: 0,
+						speed: 13,
+						direction: 240,
+						lifespan: 10,
+						camo_detection: true,
+						paint: 1,
+						paint_time: 180
+					}
+				]
 			},
 			"Complete Makeover": {
 				upgrade_string: "Converts bloons within range into a different color. The color is determined by the targetting of the tower."

@@ -205,6 +205,32 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		_bloon.bloon_stats.fire_time = _projectile_stats.fire_time;
 		_bloon.bloon_stats.fire_og_tower_id = _projectile_stats.tower_id;
 	}
+	if variable_struct_exists(_projectile_stats, "paint") {
+		_bloon.bloon_stats.paint = _projectile_stats.paint;
+		_bloon.bloon_stats.paint_time = _projectile_stats.paint_time;
+		if variable_struct_exists(_bloon.bloon_stats, "camo") {
+			variable_struct_remove(_bloon.bloon_stats, "camo")
+			_bloon.bloon_stats.camo_paint_over = true;
+			_bloon.bloon_stats.sprite = "spr_bloon"
+			if _class = "splitter" {
+				_bloon.bloon_stats.sprite = "spr_splitter_bloon"
+			}
+			if _class = "ceramic" and _bloon.bloon_stats.layer = "ceramic" {
+				_bloon.bloon_stats.sprite = "spr_ceramic_bloon"
+			}
+			if _class = "ceramic" and _bloon.bloon_stats.layer = "brick" {
+				_bloon.bloon_stats.sprite = "spr_brick_bloon"
+			}
+			_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.sprite);
+		}
+		if variable_struct_exists(_bloon.bloon_stats, "tattered") {
+			_bloon.bloon_stats.tattered_paint_over = true;
+			variable_struct_remove(_bloon.bloon_stats, "tattered")
+			_bloon.bloon_stats.speed = _bloon.bloon_stats.speed * 0.5
+			_bloon.speed = _bloon.bloon_stats.speed
+			_bloon.path_speed = _bloon.speed
+		}
+	}
 	
 	var _damage = _projectile_stats.damage;
 	var _density = _bloon.bloon_stats.density;
@@ -312,6 +338,16 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			if variable_struct_exists(_bloon.bloon_stats, "magic_marking") {
 				bloon_stats.magic_marking = _bloon.bloon_stats.magic_marking;
 				bloon_stats.magic_marking_time = _bloon.bloon_stats.magic_marking_time;
+			}
+			if variable_struct_exists(_bloon.bloon_stats, "paint") {
+				bloon_stats.paint = _bloon.bloon_stats.paint;
+				if variable_struct_exists(_bloon.bloon_stats, "camo_paint_over") {
+					bloon_stats.camo_paint_over = _bloon.bloon_stats.camo_paint_over;
+				}
+				if variable_struct_exists(_bloon.bloon_stats, "tattered_paint_over") {
+					bloon_stats.tattered_paint_over = _bloon.bloon_stats.tattered_paint_over;
+				}  
+				bloon_stats.paint_time = _bloon.bloon_stats.paint_time;
 			}
 			
 			bloon_stats.projectile_hits = variable_clone(_bloon.bloon_stats.projectile_hits)

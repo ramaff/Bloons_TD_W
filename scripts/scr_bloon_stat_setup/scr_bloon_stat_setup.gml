@@ -66,6 +66,9 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		if _class = "ceramic" and _layer = "ceramic" {
 			_bloon.bloon_stats.sprite = "spr_camo_ceramic_bloon"
 		}
+		if _class = "ceramic" and _layer = "brick" {
+			_bloon.bloon_stats.sprite = "spr_camo_brick_bloon"
+		}
 	}
 	if variable_struct_exists(_bloon.bloon_stats, "sprite") {
 		_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.sprite);
