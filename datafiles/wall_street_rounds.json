@@ -87,13 +87,13 @@
 			"round_icon_index": 2
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 30, "spread": 75, "cooldown": 0
+			"class": "splitter", "layer": "green", "count": 30, "spread": 75, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 30, "spread": 75, "cooldown": 5
+			"class": "splitter", "layer": "green", "count": 30, "spread": 75, "cooldown": 5
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 30, "spread": 75, "cooldown": 10
+			"class": "splitter", "layer": "green", "count": 30, "spread": 75, "cooldown": 10
 		}
 	],
 	[
@@ -120,15 +120,15 @@
 			"round_icon_index": 2
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 5, "spread": 125, "cooldown": 0,
+			"class": "splitter", "layer": "green", "count": 5, "spread": 125, "cooldown": 0,
 			"properties": ["camo"]
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 5, "spread": 125, "cooldown": 5,
+			"class": "splitter", "layer": "green", "count": 5, "spread": 125, "cooldown": 5,
 			"properties": ["camo"]
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 5, "spread": 125, "cooldown": 10,
+			"class": "splitter", "layer": "green", "count": 5, "spread": 125, "cooldown": 10,
 			"properties": ["camo"]
 		}
 	],
@@ -153,13 +153,13 @@
 			"round_icon_index": 2
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 45, "spread": 45, "cooldown": 0
+			"class": "splitter", "layer": "green", "count": 45, "spread": 45, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 45, "spread": 45, "cooldown": 5
+			"class": "splitter", "layer": "green", "count": 45, "spread": 45, "cooldown": 5
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 45, "spread": 45, "cooldown": 10
+			"class": "splitter", "layer": "green", "count": 45, "spread": 45, "cooldown": 10
 		}
 	],
 	[
@@ -168,13 +168,13 @@
 			"round_icon_index": 2
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 30, "spread": 90, "cooldown": 0
+			"class": "splitter", "layer": "green", "count": 30, "spread": 90, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 30, "spread": 90, "cooldown": 5
+			"class": "splitter", "layer": "green", "count": 30, "spread": 90, "cooldown": 5
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 30, "spread": 90, "cooldown": 10,
+			"class": "splitter", "layer": "green", "count": 30, "spread": 90, "cooldown": 10,
 			"properties": ["regrow"]
 		}
 	],
@@ -184,15 +184,15 @@
 			"round_icon_index": 2
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 25, "spread": 90, "cooldown": 0,
+			"class": "splitter", "layer": "green", "count": 25, "spread": 90, "cooldown": 0,
 			"properties": ["shielded"]
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 25, "spread": 90, "cooldown": 5,
+			"class": "splitter", "layer": "green", "count": 25, "spread": 90, "cooldown": 5,
 			"properties": ["shielded"]
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 25, "spread": 90, "cooldown": 10,
+			"class": "splitter", "layer": "green", "count": 25, "spread": 90, "cooldown": 10,
 			"properties": ["shielded"]
 		}
 	],
@@ -233,15 +233,15 @@
 			"round_icon_index": 2
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 30, "spread": 90, "cooldown": 0,
+			"class": "splitter", "layer": "green", "count": 30, "spread": 90, "cooldown": 0,
 			"properties": ["regrow"]
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 30, "spread": 90, "cooldown": 5,
+			"class": "splitter", "layer": "green", "count": 30, "spread": 90, "cooldown": 5,
 			"properties": ["regrow"]
 		},
 		{
-			"class": "splitter", "layer": "lime", "count": 30, "spread": 90, "cooldown": 10,
+			"class": "splitter", "layer": "green", "count": 30, "spread": 90, "cooldown": 10,
 			"properties": ["regrow"]
 		}
 	],
@@ -285,19 +285,19 @@
 			"round_icon_index": 4
 		},
 		{
-			"class": "splitter", "layer": "purple", "count": 25, "spread": 120, "cooldown": 0,
+			"class": "splitter", "layer": "pink", "count": 25, "spread": 120, "cooldown": 0,
 			"properties": ["regrow"]
 		},
 		{
-			"class": "splitter", "layer": "purple", "count": 25, "spread": 120, "cooldown": 5,
+			"class": "splitter", "layer": "pink", "count": 25, "spread": 120, "cooldown": 5,
 			"properties": ["regrow"]
 		},
 		{
-			"class": "splitter", "layer": "purple", "count": 25, "spread": 120, "cooldown": 10,
+			"class": "splitter", "layer": "pink", "count": 25, "spread": 120, "cooldown": 10,
 			"properties": ["regrow"]
 		},
 		{
-			"class": "splitter", "layer": "purple", "count": 25, "spread": 120, "cooldown": 1550,
+			"class": "splitter", "layer": "pink", "count": 25, "spread": 120, "cooldown": 1550,
 			"properties": ["regrow"]
 		}
 	],
@@ -356,15 +356,15 @@
 			"round_icon_index": 4
 		},
 		{
-			"class": "splitter", "layer": "purple", "count": 30, "spread": 60, "cooldown": 0,
+			"class": "splitter", "layer": "pink", "count": 30, "spread": 60, "cooldown": 0,
 			"properties": ["camo"]
 		},
 		{
-			"class": "splitter", "layer": "purple", "count": 30, "spread": 60, "cooldown": 5,
+			"class": "splitter", "layer": "pink", "count": 30, "spread": 60, "cooldown": 5,
 			"properties": ["camo"]
 		},
 		{
-			"class": "splitter", "layer": "purple", "count": 30, "spread": 60, "cooldown": 10,
+			"class": "splitter", "layer": "pink", "count": 30, "spread": 60, "cooldown": 10,
 			"properties": ["camo"]
 		}
 	],

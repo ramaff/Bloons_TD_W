@@ -41,15 +41,15 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "splitter", "layer": "orange", "count": 8, "spread": 5, "cooldown": 0,
+			"class": "splitter", "layer": "red", "count": 8, "spread": 5, "cooldown": 0,
 			"properties": ["tattered"]
 		},
 		{
-			"class": "splitter", "layer": "orange", "count": 8, "spread": 5, "cooldown": 480,
+			"class": "splitter", "layer": "red", "count": 8, "spread": 5, "cooldown": 480,
 			"properties": ["tattered"]
 		},
 		{
-			"class": "splitter", "layer": "orange", "count": 8, "spread": 5, "cooldown": 960,
+			"class": "splitter", "layer": "red", "count": 8, "spread": 5, "cooldown": 960,
 			"properties": ["tattered"]
 		}
 	],
@@ -77,15 +77,15 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "splitter", "layer": "orange", "count": 15, "spread": 5, "cooldown": 0,
+			"class": "splitter", "layer": "red", "count": 15, "spread": 5, "cooldown": 0,
 			"properties": ["tattered"]
 		},
 		{
-			"class": "splitter", "layer": "orange", "count": 15, "spread": 5, "cooldown": 480,
+			"class": "splitter", "layer": "red", "count": 15, "spread": 5, "cooldown": 480,
 			"properties": ["tattered"]
 		},
 		{
-			"class": "splitter", "layer": "orange", "count": 15, "spread": 5, "cooldown": 960,
+			"class": "splitter", "layer": "red", "count": 15, "spread": 5, "cooldown": 960,
 			"properties": ["tattered"]
 		}
 	],
@@ -107,10 +107,10 @@
 			"round_icon_index": 3
 		},
 		{
-			"class": "splitter", "layer": "amber", "count": 6, "spread": 5, "cooldown": 0
+			"class": "splitter", "layer": "yellow", "count": 6, "spread": 5, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "amber", "count": 6, "spread": 5, "cooldown": 480
+			"class": "splitter", "layer": "yellow", "count": 6, "spread": 5, "cooldown": 480
 		}
 	],
 	[
@@ -137,17 +137,17 @@
 			"round_icon_index": 3
 		},
 		{
-			"class": "splitter", "layer": "amber", "count": 8, "spread": 5, "cooldown": 0
+			"class": "splitter", "layer": "yellow", "count": 8, "spread": 5, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "amber", "count": 8, "spread": 5, "cooldown": 480
+			"class": "splitter", "layer": "yellow", "count": 8, "spread": 5, "cooldown": 480
 		},
 		{
-			"class": "splitter", "layer": "amber", "count": 8, "spread": 5, "cooldown": 960,
+			"class": "splitter", "layer": "yellow", "count": 8, "spread": 5, "cooldown": 960,
 			"properties": ["tattered"]
 		},
 		{
-			"class": "splitter", "layer": "amber", "count": 8, "spread": 5, "cooldown": 1440,
+			"class": "splitter", "layer": "yellow", "count": 8, "spread": 5, "cooldown": 1440,
 			"properties": ["tattered"]
 		}
 	],
@@ -169,15 +169,15 @@
 			"round_icon_index": 3
 		},
 		{
-			"class": "splitter", "layer": "amber", "count": 15, "spread": 5, "cooldown": 0,
+			"class": "splitter", "layer": "yellow", "count": 15, "spread": 5, "cooldown": 0,
 			"properties": ["tattered"]
 		},
 		{
-			"class": "splitter", "layer": "amber", "count": 15, "spread": 5, "cooldown": 480,
+			"class": "splitter", "layer": "yellow", "count": 15, "spread": 5, "cooldown": 480,
 			"properties": ["tattered"]
 		},
 		{
-			"class": "splitter", "layer": "amber", "count": 15, "spread": 5, "cooldown": 960,
+			"class": "splitter", "layer": "yellow", "count": 15, "spread": 5, "cooldown": 960,
 			"properties": ["tattered"]
 		}
 	],
@@ -208,7 +208,7 @@
 			"class": "deflation", "layer": "red", "count": 40, "spread": 50, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "amber", "count": 30, "spread": 60, "cooldown": 0
+			"class": "splitter", "layer": "yellow", "count": 30, "spread": 60, "cooldown": 0
 		}
 	],
 	[
@@ -220,7 +220,7 @@
 			"class": "deflation", "layer": "yellow", "count": 15, "spread": 140, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "orange", "count": 120, "spread": 15, "cooldown": 0
+			"class": "splitter", "layer": "red", "count": 120, "spread": 15, "cooldown": 0
 			
 		}
 	],
@@ -290,7 +290,7 @@
 			"class": "ceramic", "layer": "ceramic", "count": 12, "spread": 135, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "amber", "count": 50, "spread": 40, "cooldown": 0,
+			"class": "splitter", "layer": "yellow", "count": 50, "spread": 40, "cooldown": 0,
 			"properties": ["tattered"]
 		}
 	],
@@ -304,7 +304,7 @@
 			"properties": ["tattered"]
 		},
 		{
-			"class": "splitter", "layer": "orange", "count": 200, "spread": 10, "cooldown": 0,
+			"class": "splitter", "layer": "red", "count": 200, "spread": 10, "cooldown": 0,
 			"properties": ["tattered"]
 		}
 	],

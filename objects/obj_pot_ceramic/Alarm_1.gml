@@ -4,7 +4,7 @@
 alarm[1] = 30
 
 var _class = "splitter"
-var _layers = ["orange", "cyan", "lime", "amber", "purple"]
+var _layers = ["red", "blue", "green", "yellow", "pink"]
 //var _layer = _layers[floor(abs((stored_health - _lost_hp) mod 25) / 5)]
 var _xx = x;
 var _yy = y;

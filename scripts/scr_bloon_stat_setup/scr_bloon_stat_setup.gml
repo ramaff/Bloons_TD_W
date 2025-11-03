@@ -148,7 +148,7 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	
 	if variable_struct_exists(_bloon.bloon_stats, "stay_floating") {
 		speed = 0;
-		bloon_stats.speed = 0;
+		_bloon.bloon_stats.speed = 0;
 		path_speed = 0;	
 	}
 	if _path = -1 {

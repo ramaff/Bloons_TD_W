@@ -147,6 +147,12 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 
 function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = projectile_stats, _projectile = noone) {
 	
+	var _pos = _bloon.path_position
+	var _parent_id = _bloon.parent_id
+	
+	var _xx = _bloon.x
+	var _yy = _bloon.y
+	
 	if variable_struct_exists(_bloon.bloon_stats, "shielded") {
 		if _bloon.bloon_stats.shielded {
 			_bloon.bloon_stats.shield_health -= _projectile_stats.damage
@@ -244,9 +250,11 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			var _target_layer = _projectile_stats.targeting
 			var _class_stats = struct_get(global.bloon_stats, _class)
 			if variable_struct_exists(_class_stats, _target_layer) {
-				scr_bloon_stat_setup(_bloon, _class, _target_layer, _bloon.bloon_stats.path, _bloon.bloon_stats.properties, _bloon.bloon_stats.round, _bloon.x, _bloon.y)
+				scr_bloon_stat_setup(_bloon, _class, _target_layer, _bloon.bloon_stats.path, _bloon.bloon_stats.properties, _bloon.bloon_stats.round, _xx, _yy)
+				path_position = _pos;
 			}
 			variable_struct_set(_bloon.bloon_stats, "make_over", _target_layer)
+			// need to also set up the health if a bloon gets swapped (or not idk whatever)
 		}
 	}
 	
@@ -267,7 +275,7 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		}
 	}
 	
-	if _damage * _projectile_stats.pierce < _density {
+	if _damage * _projectile_stats.pierce < _density and _damage > 0 {
 		if instance_exists(_projectile) {
 			instance_destroy(_projectile)
 		}
@@ -275,12 +283,6 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 	}
 	
 	_projectile_stats.pierce -= _density;
-	
-	var _pos = _bloon.path_position
-	var _parent_id = _bloon.parent_id
-	
-	var _xx = _bloon.x
-	var _yy = _bloon.y
 	
 	var _tower = noone;
 	if variable_struct_exists(_projectile_stats, "tower_id") {
@@ -369,7 +371,7 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			}
 			if variable_struct_exists(_bloon.bloon_stats, "make_over") {
 				bloon_stats.make_over = _bloon.bloon_stats.make_over;
-			}  
+			}
 			
 			bloon_stats.projectile_hits = variable_clone(_bloon.bloon_stats.projectile_hits)
 			bloon_stats.remaining_value = _child_remaining_value;

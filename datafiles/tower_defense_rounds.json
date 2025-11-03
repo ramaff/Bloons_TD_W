@@ -68,7 +68,7 @@
 			"round_icon_index": 4
 		},
 		{
-			"class": "splitter", "layer": "purple", "count": 1, "spread": 0, "cooldown": 0,
+			"class": "splitter", "layer": "pink", "count": 1, "spread": 0, "cooldown": 0,
 			"properties": ["shielded"]
 		}
 	],
@@ -101,22 +101,22 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "splitter", "layer": "cyan", "count": 4, "spread": 5, "cooldown": 0
+			"class": "splitter", "layer": "blue", "count": 4, "spread": 5, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "cyan", "count": 4, "spread": 5, "cooldown": 180
+			"class": "splitter", "layer": "blue", "count": 4, "spread": 5, "cooldown": 180
 		},
 		{
-			"class": "splitter", "layer": "cyan", "count": 4, "spread": 5, "cooldown": 360
+			"class": "splitter", "layer": "blue", "count": 4, "spread": 5, "cooldown": 360
 		},
 		{
-			"class": "splitter", "layer": "cyan", "count": 4, "spread": 5, "cooldown": 540
+			"class": "splitter", "layer": "blue", "count": 4, "spread": 5, "cooldown": 540
 		},
 		{
-			"class": "splitter", "layer": "cyan", "count": 4, "spread": 5, "cooldown": 720
+			"class": "splitter", "layer": "blue", "count": 4, "spread": 5, "cooldown": 720
 		},
 		{
-			"class": "splitter", "layer": "cyan", "count": 4, "spread": 5, "cooldown": 900
+			"class": "splitter", "layer": "blue", "count": 4, "spread": 5, "cooldown": 900
 		}
 	],
 	[
@@ -143,7 +143,7 @@
 			"class": "normal", "layer": "pink", "count": 4, "spread": 5, "cooldown": 600
 		},
 		{
-			"class": "splitter", "layer": "purple", "count": 2, "spread": 5, "cooldown": 720
+			"class": "splitter", "layer": "pink", "count": 2, "spread": 5, "cooldown": 720
 		}
 	],
 	[
@@ -161,11 +161,11 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "splitter", "layer": "cyan", "count": 20, "spread": 50, "cooldown": 0,
+			"class": "splitter", "layer": "blue", "count": 20, "spread": 50, "cooldown": 0,
 			"properties": ["shielded"]
 		},
 		{
-			"class": "splitter", "layer": "cyan", "count": 15, "spread": 5, "cooldown": 1080
+			"class": "splitter", "layer": "blue", "count": 15, "spread": 5, "cooldown": 1080
 		}
 	],
 	[
@@ -192,11 +192,11 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "splitter", "layer": "cyan", "count": 15, "spread": 70, "cooldown": 0,
+			"class": "splitter", "layer": "blue", "count": 15, "spread": 70, "cooldown": 0,
 			"properties": ["regrow"]
 		},
 		{
-			"class": "splitter", "layer": "cyan", "count": 15, "spread": 70, "cooldown": 10,
+			"class": "splitter", "layer": "blue", "count": 15, "spread": 70, "cooldown": 10,
 			"properties": ["regrow"]
 		},
 		{
@@ -218,7 +218,7 @@
 			"round_icon_index": 4
 		},
 		{
-			"class": "splitter", "layer": "purple", "count": 30, "spread": 50, "cooldown": 0
+			"class": "splitter", "layer": "pink", "count": 30, "spread": 50, "cooldown": 0
 		}
 	],
 	[
@@ -240,7 +240,7 @@
 			"class": "stuffed", "layer": "pink", "count": 20, "spread": 40, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "cyan", "count": 10, "spread": 30, "cooldown": 800,
+			"class": "splitter", "layer": "blue", "count": 10, "spread": 30, "cooldown": 800,
 			"properties": ["camo"]
 		}
 	],
@@ -284,7 +284,7 @@
 			"class": "rune", "layer": "rune", "count": 12, "spread": 120, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "cyan", "count": 40, "spread": 30, "cooldown": 800,
+			"class": "splitter", "layer": "blue", "count": 40, "spread": 30, "cooldown": 800,
 			"properties": ["regrow"]
 		}
 	],
@@ -297,7 +297,7 @@
 			"class": "lead", "layer": "lead", "count": 15, "spread": 70, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "purple", "count": 20, "spread": 30, "cooldown": 300,
+			"class": "splitter", "layer": "pink", "count": 20, "spread": 30, "cooldown": 300,
 			"properties": ["regrow"]
 		}
 	],
@@ -328,7 +328,7 @@
 			"class": "lead", "layer": "block", "count": 5, "spread": 200, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "purple", "count": 20, "spread": 30, "cooldown": 300,
+			"class": "splitter", "layer": "pink", "count": 20, "spread": 30, "cooldown": 300,
 			"properties": ["camo"]
 		}
 	],
@@ -385,7 +385,7 @@
 			"round_icon_index": 5
 		},
 		{
-			"class": "splitter", "layer": "prismatic", "count": 15, "spread": 60, "cooldown": 0
+			"class": "splitter", "layer": "rainbow", "count": 15, "spread": 60, "cooldown": 0
 		},
 		{
 			"class": "normal", "layer": "rainbow", "count": 15, "spread": 30, "cooldown": 400,
@@ -401,7 +401,7 @@
 			"class": "lead", "layer": "block", "count": 15, "spread": 60, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "purple", "count": 20, "spread": 30, "cooldown": 300,
+			"class": "splitter", "layer": "pink", "count": 20, "spread": 30, "cooldown": 300,
 			"properties": ["camo"]
 		}
 	],
@@ -503,7 +503,7 @@
 			"properties": ["shielded"]
 		},
 		{
-			"class": "splitter", "layer": "prismatic", "count": 30, "spread": 50, "cooldown": 0,
+			"class": "splitter", "layer": "rainbow", "count": 30, "spread": 50, "cooldown": 0,
 			"properties": ["shielded"]
 		}
 	]

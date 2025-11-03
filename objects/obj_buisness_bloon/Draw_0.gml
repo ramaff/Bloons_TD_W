@@ -22,14 +22,14 @@ if alarm[2] mod 5 = 0 {
 		var _cur_x = x;
 		var _cur_y = y;
 		var _dist = point_distance(_cur_x, _cur_y, _tx, _ty)
-		var _col = c_lime
+		var _col = c_green
 		
 		while _dist > 50 {
 			var _ang_var = -60 + random(120)
 			if _ang_var < 0 {
 				_col = c_red	
 			} else {
-				_col = c_lime	
+				_col = c_green	
 			}
 			var _tar_dir = point_direction(_cur_x, _cur_y, _tx, _ty) - _ang_var;
 			var _new_x = _cur_x + lengthdir_x(50, _tar_dir);

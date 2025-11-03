@@ -154,7 +154,7 @@ function scr_setup_bloon_stats(){
 			"tattered_sprite": "spr_splitter_tattered",
 			"freeze_sprite": "spr_splitter_freeze",
 			max_health: 1,
-			"orange": {
+			"red": {
 				layers: 2,
 				index: 0,
 				rbe: 4,
@@ -177,7 +177,7 @@ function scr_setup_bloon_stats(){
 					}
 				]
 			},
-			"cyan": {
+			"blue": {
 				layers: 3,
 				index: 1,
 				rbe: 7,
@@ -200,7 +200,7 @@ function scr_setup_bloon_stats(){
 					}
 				]
 			},
-			"lime": {
+			"green": {
 				layers: 4,
 				index: 2,
 				rbe: 10,
@@ -222,7 +222,7 @@ function scr_setup_bloon_stats(){
 					}
 				]
 			},
-			"amber": {
+			"yellow": {
 				layers: 5,
 				index: 3,
 				rbe: 13,
@@ -244,7 +244,7 @@ function scr_setup_bloon_stats(){
 					}
 				]
 			},
-			"purple": {
+			"pink": {
 				layers: 6,
 				index: 4,
 				rbe: 16,
@@ -266,7 +266,7 @@ function scr_setup_bloon_stats(){
 					}
 				]
 			},
-			"prismatic": {
+			"rainbow": {
 				layers: 9,
 				index: 5,
 				rbe: 142,
@@ -482,9 +482,9 @@ function scr_setup_bloon_stats(){
 				speed: 1.2,
 				"remaining_value": 6, // all children get 1 remaining value
 				children: [
-					{"class": "splitter", "layer": "orange", "properties": ["float to track"]},
-					{"class": "splitter", "layer": "orange", "properties": ["float to track"]},
-					{"class": "splitter", "layer": "orange", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "red", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "red", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "red", "properties": ["float to track"]},
 					{"class": "normal", "layer": "red", "properties": ["float to track"]},
 					{"class": "normal", "layer": "red", "properties": ["float to track"]}
 				]
@@ -498,9 +498,9 @@ function scr_setup_bloon_stats(){
 				speed: 1.4,
 				"remaining_value": 11, // all children get 2 remaining value
 				children: [
-					{"class": "splitter", "layer": "cyan", "properties": ["float to track"]},
-					{"class": "splitter", "layer": "cyan", "properties": ["float to track"]},
-					{"class": "splitter", "layer": "cyan", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "blue", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "blue", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "blue", "properties": ["float to track"]},
 					{"class": "normal", "layer": "blue", "properties": ["float to track"]},
 					{"class": "normal", "layer": "blue", "properties": ["float to track"]}
 				]
@@ -514,9 +514,9 @@ function scr_setup_bloon_stats(){
 				speed: 1.6,
 				"remaining_value": 16, // all children get 3 remaining value
 				children: [
-					{"class": "splitter", "layer": "lime", "properties": ["float to track"]},
-					{"class": "splitter", "layer": "lime", "properties": ["float to track"]},
-					{"class": "splitter", "layer": "lime", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "green", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "green", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "green", "properties": ["float to track"]},
 					{"class": "normal", "layer": "green", "properties": ["float to track"]},
 					{"class": "normal", "layer": "green", "properties": ["float to track"]}
 				]
@@ -530,9 +530,9 @@ function scr_setup_bloon_stats(){
 				speed: 2.2,
 				"remaining_value": 21, // all children get 4 remaining value
 				children: [
-					{"class": "splitter", "layer": "amber", "properties": ["float to track"]},
-					{"class": "splitter", "layer": "amber", "properties": ["float to track"]},
-					{"class": "splitter", "layer": "amber", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "yellow", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "yellow", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "yellow", "properties": ["float to track"]},
 					{"class": "normal", "layer": "yellow", "properties": ["float to track"]},
 					{"class": "normal", "layer": "yellow", "properties": ["float to track"]}
 				]
@@ -546,9 +546,9 @@ function scr_setup_bloon_stats(){
 				speed: 2.4,
 				"remaining_value": 26, // all children get 5 remaining value
 				children: [
-					{"class": "splitter", "layer": "purple", "properties": ["float to track"]},
-					{"class": "splitter", "layer": "purple", "properties": ["float to track"]},
-					{"class": "splitter", "layer": "purple", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "pink", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "pink", "properties": ["float to track"]},
+					{"class": "splitter", "layer": "pink", "properties": ["float to track"]},
 					{"class": "normal", "layer": "pink", "properties": ["float to track"]},
 					{"class": "normal", "layer": "pink", "properties": ["float to track"]}
 				]
@@ -571,7 +571,7 @@ function scr_setup_bloon_stats(){
 				children: [
 					{
 						"class": "splitter",
-						"layer": "orange",
+						"layer": "red",
 						"properties": [
 							"tattered", "float to track"
 						]
@@ -589,7 +589,7 @@ function scr_setup_bloon_stats(){
 				children: [
 					{
 						"class": "splitter",
-						"layer": "cyan",
+						"layer": "blue",
 						"properties": [
 							"tattered", "float to track"
 						]
@@ -606,7 +606,7 @@ function scr_setup_bloon_stats(){
 				children: [
 					{
 						"class": "splitter",
-						"layer": "lime",
+						"layer": "green",
 						"properties": [
 							"tattered", "float to track"
 						]
@@ -623,7 +623,7 @@ function scr_setup_bloon_stats(){
 				children: [
 					{
 						"class": "splitter",
-						"layer": "amber",
+						"layer": "yellow",
 						"properties": [
 							"tattered", "float to track"
 						]
@@ -640,7 +640,7 @@ function scr_setup_bloon_stats(){
 				children: [
 					{
 						"class": "splitter",
-						"layer": "purple",
+						"layer": "pink",
 						"properties": [
 							"tattered", "float to track"
 						]
@@ -653,11 +653,11 @@ function scr_setup_bloon_stats(){
 				rbe: 187,
 				health: 45,
 				density: 1,
-				speed: 6.3,
+				speed: 3.15,
 				children: [
 					{
 						"class": "splitter",
-						"layer": "prismatic",
+						"layer": "rainbow",
 						"properties": [
 							"tattered", "float to track"
 						]
@@ -679,7 +679,7 @@ function scr_setup_bloon_stats(){
 				children: [
 					{
 						"class": "splitter",
-						"layer": "orange",
+						"layer": "red",
 						"properties": [
 							"regrow"
 						]
@@ -696,7 +696,7 @@ function scr_setup_bloon_stats(){
 				children: [
 					{
 						"class": "splitter",
-						"layer": "cyan",
+						"layer": "blue",
 						"properties": [
 							"regrow"
 						]
@@ -713,7 +713,7 @@ function scr_setup_bloon_stats(){
 				children: [
 					{
 						"class": "splitter",
-						"layer": "lime",
+						"layer": "green",
 						"properties": [
 							"regrow"
 						]
@@ -730,7 +730,7 @@ function scr_setup_bloon_stats(){
 				children: [
 					{
 						"class": "splitter",
-						"layer": "amber",
+						"layer": "yellow",
 						"properties": [
 							"regrow"
 						]
@@ -747,7 +747,7 @@ function scr_setup_bloon_stats(){
 				children: [
 					{
 						"class": "splitter",
-						"layer": "purple",
+						"layer": "pink",
 						"properties": [
 							"regrow"
 						]
@@ -764,7 +764,7 @@ function scr_setup_bloon_stats(){
 				children: [
 					{
 						"class": "splitter",
-						"layer": "prismatic",
+						"layer": "rainbow",
 						"properties": [
 							"regrow"
 						]
@@ -784,7 +784,7 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 1.2,
 				children: [
-					{"class": "splitter", "layer": "orange", "properties": ["float to track", "shielded"]},
+					{"class": "splitter", "layer": "red", "properties": ["float to track", "shielded"]},
 					{"class": "normal", "layer": "red", "properties": ["float to track", "shielded"]},
 					{"class": "normal", "layer": "red", "properties": ["float to track", "shielded"]}
 				]
@@ -797,7 +797,7 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 1.5,
 				children: [
-					{"class": "splitter", "layer": "cyan", "properties": ["float to track", "shielded"]},
+					{"class": "splitter", "layer": "blue", "properties": ["float to track", "shielded"]},
 					{"class": "normal", "layer": "blue", "properties": ["float to track", "shielded"]},
 					{"class": "normal", "layer": "blue", "properties": ["float to track", "shielded"]}
 				]
@@ -810,7 +810,7 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 1.8,
 				children: [
-					{"class": "splitter", "layer": "lime", "properties": ["float to track", "shielded"]},
+					{"class": "splitter", "layer": "green", "properties": ["float to track", "shielded"]},
 					{"class": "normal", "layer": "green", "properties": ["float to track", "shielded"]},
 					{"class": "normal", "layer": "green", "properties": ["float to track", "shielded"]}
 				]
@@ -823,7 +823,7 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 2.7,
 				children: [
-					{"class": "splitter", "layer": "amber", "properties": ["float to track", "shielded"]},
+					{"class": "splitter", "layer": "yellow", "properties": ["float to track", "shielded"]},
 					{"class": "normal", "layer": "yellow", "properties": ["float to track", "shielded"]},
 					{"class": "normal", "layer": "yellow", "properties": ["float to track", "shielded"]}
 				]
@@ -836,7 +836,7 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 3,
 				children: [
-					{"class": "splitter", "layer": "purple", "properties": ["float to track", "shielded"]},
+					{"class": "splitter", "layer": "pink", "properties": ["float to track", "shielded"]},
 					{"class": "normal", "layer": "pink", "properties": ["float to track", "shielded"]},
 					{"class": "normal", "layer": "pink", "properties": ["float to track", "shielded"]}
 				]
@@ -849,7 +849,7 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 2.4,
 				children: [
-					{"class": "splitter", "layer": "prismatic", "properties": ["float to track", "shielded"]},
+					{"class": "splitter", "layer": "rainbow", "properties": ["float to track", "shielded"]},
 					{"class": "normal", "layer": "rainbow", "properties": ["float to track", "shielded"]},
 					{"class": "normal", "layer": "rainbow", "properties": ["float to track", "shielded"]}
 				]
@@ -984,12 +984,12 @@ function scr_setup_bloon_stats(){
 				children: [
 					{
 						"class": "splitter",
-						"layer": "prismatic",
+						"layer": "rainbow",
 						"properties": ["shielded"]
 					},
 					{
 						"class": "splitter",
-						"layer": "prismatic",
+						"layer": "rainbow",
 						"properties": ["shielded"]
 					}
 				]
@@ -1820,8 +1820,8 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 1.9,
 				children: [
-					{"class": "splitter", "layer": "lime"},
-					{"class": "splitter", "layer": "lime"},
+					{"class": "splitter", "layer": "green"},
+					{"class": "splitter", "layer": "green"},
 				]
 			},
 			"spring": {
@@ -1834,8 +1834,8 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 2.3,
 				children: [
-					{"class": "splitter", "layer": "purple"},
-					{"class": "splitter", "layer": "purple"},
+					{"class": "splitter", "layer": "pink"},
+					{"class": "splitter", "layer": "pink"},
 				]
 			}
 		},
@@ -1946,9 +1946,9 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 1.6,
 				children: [
-					{"class": "splitter", "layer": "purple"},
-					{"class": "splitter", "layer": "purple"},
-					{"class": "splitter", "layer": "purple"},
+					{"class": "splitter", "layer": "pink"},
+					{"class": "splitter", "layer": "pink"},
+					{"class": "splitter", "layer": "pink"},
 				]
 			},
 			"barrier": {

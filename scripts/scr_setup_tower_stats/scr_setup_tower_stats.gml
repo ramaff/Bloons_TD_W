@@ -81,7 +81,7 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Splodey Darts",
-						upgrade_cost: 2800
+						upgrade_cost: 2500
 					},
 					{
 						keyword: "carpet bombing",
@@ -97,7 +97,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "darterest darts",
-						upgrade_cost: 5700
+						upgrade_cost: 6300
 					}
 				]
 			]

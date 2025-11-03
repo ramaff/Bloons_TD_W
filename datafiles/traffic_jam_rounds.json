@@ -395,7 +395,7 @@
 			"class": "ceramic", "layer": "brick", "count": 6, "spread": 300, "cooldown": 200
 		},
 		{
-			"class": "splitter", "layer": "purple", "count": 200, "spread": 10, "cooldown": 0
+			"class": "splitter", "layer": "pink", "count": 200, "spread": 10, "cooldown": 0
 		}
 	],
 	[
