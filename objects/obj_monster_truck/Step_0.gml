@@ -5,9 +5,7 @@ event_inherited();
 
 if leak_frame {
 
-	bloon_stats.speed = bloon_stats.speed * 1.15;
-	//speed = bloon_stats.speed;
-	//path_speed = speed;
+	scr_bloon_set_speed(bloon_stats.speed * 1.1);
 }
 
 if added_speed < 3 and sprite_index = spr_monster_truck_on {

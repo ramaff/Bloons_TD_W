@@ -18,10 +18,7 @@ event_inherited();
 if leak_frame {
 	
 	
-	bloon_stats.speed = bloon_stats.speed * 1.15;
-	path_speed = speed;
-	speed = bloon_stats.speed;
-	path_speed = speed;
+	scr_bloon_set_speed(bloon_stats.speed * 1.1);
 	
 }
 

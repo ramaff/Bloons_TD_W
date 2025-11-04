@@ -419,12 +419,12 @@ function scr_setup_upgrade_stats(){
 				]
 			},
 			"Morningstar": {
-				upgrade_string: "Morningstars do double damage, pop way more bloons, and knock them back.",
+				upgrade_string: "Morningstars do triple damage, pop way more bloons, and knock them back.",
 				projectile_replacement: true,
 				upgrade_script: scr_trickster_projectile_replace,
 				projectile_stats: [
 					{
-						object: "obj_yoyo", sprite: "spr_morningstar", pierce: 750, damage: 2, speed: 12, lifespan: 999999, tick_frequency: 15, lead_hit: true, bloon_pushback: 0.0125
+						object: "obj_yoyo", sprite: "spr_morningstar", pierce: 750, damage: 3, speed: 15, lifespan: 999999, tick_frequency: 15, lead_hit: true, bloon_pushback: 0.0075
 					}
 				],
 				additional_attacks: [
@@ -432,7 +432,7 @@ function scr_setup_upgrade_stats(){
 						delay: 240, attack_cooldown: 0, range: 150,
 						projectile_stats: [
 							{
-								object: "obj_around_the_world_yoyo", sprite: "spr_morningstar", pierce: 750, damage: 2, speed: 12, lifespan: 999999, tick_frequency: 15, lead_hit: true, bloon_pushback: 0.0125
+								object: "obj_around_the_world_yoyo", sprite: "spr_morningstar", pierce: 750, damage: 3, speed: 15, lifespan: 999999, tick_frequency: 15, lead_hit: true, bloon_pushback: 0.0075
 							}
 						]
 					},
@@ -440,7 +440,7 @@ function scr_setup_upgrade_stats(){
 						delay: 240, attack_cooldown: 0, range: 150,
 						projectile_stats: [
 							{
-								object: "obj_walk_the_bloon_yoyo", sprite: "spr_morningstar", pierce: 750, damage: 2, speed: 12, lifespan: 999999, tick_frequency: 15, lead_hit: true, bloon_pushback: 0.0125
+								object: "obj_walk_the_bloon_yoyo", sprite: "spr_morningstar", pierce: 750, damage: 3, speed: 15, lifespan: 999999, tick_frequency: 15, lead_hit: true, bloon_pushback: 0.0075
 							}
 						]
 					}

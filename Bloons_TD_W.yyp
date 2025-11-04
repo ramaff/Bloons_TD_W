@@ -317,6 +317,7 @@
     {"id":{"name":"scr_bloon_hit","path":"scripts/scr_bloon_hit/scr_bloon_hit.yy",},},
     {"id":{"name":"scr_bloon_regen","path":"scripts/scr_bloon_regen/scr_bloon_regen.yy",},},
     {"id":{"name":"scr_bloon_set_camo","path":"scripts/scr_bloon_set_camo/scr_bloon_set_camo.yy",},},
+    {"id":{"name":"scr_bloon_set_speed","path":"scripts/scr_bloon_set_speed/scr_bloon_set_speed.yy",},},
     {"id":{"name":"scr_bloon_set_tattered","path":"scripts/scr_bloon_set_tattered/scr_bloon_set_tattered.yy",},},
     {"id":{"name":"scr_bloon_stat_setup","path":"scripts/scr_bloon_stat_setup/scr_bloon_stat_setup.yy",},},
     {"id":{"name":"scr_cactus_monkey_scripts","path":"scripts/scr_cactus_monkey_scripts/scr_cactus_monkey_scripts.yy",},},

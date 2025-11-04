@@ -895,7 +895,7 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Louder Music",
-						upgrade_cost: 500
+						upgrade_cost: 300
 					},
 					{
 						keyword: "Inspiring Music",
@@ -915,7 +915,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Complete Makeover",
-						upgrade_cost: 1500
+						upgrade_cost: 2000
 					}
 				]
 			]

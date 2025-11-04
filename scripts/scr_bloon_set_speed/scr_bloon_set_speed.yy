@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_bloon_set_speed",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_bloon_set_speed",
+  "parent":{
+    "name":"bloons",
+    "path":"folders/Scripts/bloons.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
