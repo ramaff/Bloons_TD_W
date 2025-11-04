@@ -115,11 +115,11 @@ if variable_struct_exists(bloon_stats, "paint") {
 		variable_struct_remove(bloon_stats, "paint_time")
 		if variable_struct_exists(bloon_stats, "camo_paint_over") {
 			variable_struct_remove(bloon_stats, "camo_paint_over")
-			scr_bloon_set_camo(id)
+			scr_bloon_set_camo(self)
 		}
 		if variable_struct_exists(bloon_stats, "tattered_paint_over") {
 			variable_struct_remove(bloon_stats, "tattered_paint_over")
-			scr_bloon_set_tattered(id)
+			scr_bloon_set_tattered(self)
 		}
 	}
 }

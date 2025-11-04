@@ -89,6 +89,9 @@ global.towers_progress = {
 	},
 	"skateboard_monkey": {
 		"unlocked": false	
+	},
+	"bongo_monkey": {
+		"unlocked": false	
 	}
 }
 

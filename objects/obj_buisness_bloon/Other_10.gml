@@ -12,6 +12,11 @@ if instance_number(obj_monkey) <= 0 {
 while(_picked_id == noone) {
 	with(obj_monkey) {
 		if _i = global.tower_investment_index {
+			if object_get_parent(object_index) = obj_turret {
+				//_i++;
+				global.tower_investment_index++;
+				continue;	
+			}
 			_picked_id = id;
 			break;
 		}

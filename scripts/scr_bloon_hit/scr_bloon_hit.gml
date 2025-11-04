@@ -252,6 +252,16 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			if variable_struct_exists(_class_stats, _target_layer) {
 				scr_bloon_stat_setup(_bloon, _class, _target_layer, _bloon.bloon_stats.path, _bloon.bloon_stats.properties, _bloon.bloon_stats.round, _xx, _yy)
 				path_position = _pos;
+				path_speed = _bloon.bloon_stats.speed;
+				speed = _bloon.bloon_stats.speed;
+				x = _xx
+				y = _yy
+		
+				if instance_exists(target) {
+					target.path_position = _pos;
+					target.x = path_get_x(_bloon.bloon_stats.path, _pos);
+					target.y = path_get_y(_bloon.bloon_stats.path, _pos);
+				}
 			}
 			variable_struct_set(_bloon.bloon_stats, "make_over", _target_layer)
 			// need to also set up the health if a bloon gets swapped (or not idk whatever)
