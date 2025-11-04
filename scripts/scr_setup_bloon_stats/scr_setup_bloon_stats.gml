@@ -2218,6 +2218,41 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 0.08,
 			}
+		},
+		"lawyer": {
+			"red": {
+				sprite: "spr_lawyer_bloon",
+				"object": "obj_lawyer_bloon",
+				layers: 9000,
+				rbe: 9000,
+				damage: 1,
+				health: 9000,
+				big_bloon_tier: 6,
+				density: 1,
+				speed: 0.075,
+			},
+			"blue": {
+				sprite: "spr_lawyer_bloon_blue",
+				"object": "obj_lawyer_bloon_blue",
+				layers: 10000,
+				rbe: 10000,
+				damage: 1,
+				health: 10000,
+				big_bloon_tier: 6,
+				density: 1,
+				speed: 0.08,
+			},
+			"green": {
+				sprite: "spr_lawyer_bloon_green",
+				"object": "obj_lawyer_bloon_green",
+				layers: 11000,
+				rbe: 11000,
+				damage: 1,
+				health: 11000,
+				big_bloon_tier: 6,
+				density: 1,
+				speed: 0.085,
+			}
 		}
 	}
 }
