@@ -30,27 +30,25 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 			}
 		}
 		
-		if _round > 20 {
-			_cash_flow = _cash_flow * 0.6;
-		}
-		if _round > 30 {
-			_cash_flow = _cash_flow * 0.4;
-		}
 		if _round > 40 {
 			_cash_flow = _cash_flow * 0.2;
+		} else if _round > 30 {
+			_cash_flow = _cash_flow * 0.4;
+		} else if _round > 20 {
+			_cash_flow = _cash_flow * 0.6;
 		}
 		
 		//if !_cash_sucked {
 		if _bloon_stats.remaining_value > 0 {
-			var _gimme = min(_cash_flow, _cash_flow * _bloon_stats.remaining_value) / 2
+			var _gimme = min(_cash_flow, _cash_flow * _bloon_stats.remaining_value)
 			global.money += _gimme
 			if instance_exists(obj_bongo_monkey) and _gimme > 0 {
 				var _ogxx = x;
 				var _ogyy = y
-				if random(1 / _gimme) <= 1 {
+				if random(2 / _gimme) <= 1 {
 					with (obj_bongo_monkey) {
 						if point_distance(x, y, _ogxx, _ogyy) < tower_stats.range {
-							global.money += _gimme
+							global.money += _gimme / 2
 							with instance_create_depth(x - 10 + random(20), y - 10 + random(20), depth - 10, obj_text) {
 								text = "+$1";
 							}
@@ -154,6 +152,24 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 	
 	var _xx = _bloon.x
 	var _yy = _bloon.y
+	
+	var _tower = noone;
+	if variable_struct_exists(_projectile_stats, "tower_id") {
+		_tower = _projectile_stats.tower_id
+	}
+	
+	if instance_exists(obj_lawyer_bloon) {
+		if _bloon.path_position < 0.33 {
+			exit;	
+		}
+	}
+	if instance_exists(obj_the_high_court_control) {
+		if instance_exists(_tower) {
+			if variable_struct_exists(obj_the_high_court_control.blocked_towers, string(_tower.id)) {	
+				exit;
+			}
+		}
+	}
 	
 	if variable_struct_exists(_bloon.bloon_stats, "shielded") {
 		if _bloon.bloon_stats.shielded {
@@ -295,11 +311,6 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 	}
 	
 	_projectile_stats.pierce -= _density;
-	
-	var _tower = noone;
-	if variable_struct_exists(_projectile_stats, "tower_id") {
-		_tower = _projectile_stats.tower_id
-	}
 	
 	var _resulting_bloons = scr_apply_damage_to_bloon(_bloon.bloon_stats, _damage, _bloon.bloon_stats.round, _bloon, _tower)
 	
