@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lawyer_bloon_green",
+  "%Name":"obj_lawyer_bloon_yellow",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_lawyer_bloon_green",
+  "name":"obj_lawyer_bloon_yellow",
   "overriddenProperties":[],
   "parent":{
     "name":"legal system",
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_lawyer_bloon_green",
-    "path":"sprites/spr_lawyer_bloon_green/spr_lawyer_bloon_green.yy",
+    "name":"spr_lawyer_bloon_yellow",
+    "path":"sprites/spr_lawyer_bloon_yellow/spr_lawyer_bloon_yellow.yy",
   },
   "spriteMaskId":null,
   "visible":true,

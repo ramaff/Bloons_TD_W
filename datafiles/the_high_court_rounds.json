@@ -312,11 +312,15 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_brc_icon",
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
 			"round_icon_index": 0
 		},
 		{
-			"class": "moab", "layer": "brc", "count": 1, "spread": 120, "cooldown": 0
+			"class": "lawyer",
+			"layer": "yellow",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
 		}
 	],
 	[
@@ -395,6 +399,95 @@
 		},
 		{
 			"class": "moab", "layer": "hta", "count": 2, "spread": 600, "cooldown": 60
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_brc_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "brc", "count": 1, "spread": 120, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_shielded_splitter_bloon_icon",
+			"round_icon_index": 3
+		},
+		{
+			"class": "splitter", "layer": "pink", "count": 30, "spread": 90, "cooldown": 0,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "splitter", "layer": "pink", "count": 30, "spread": 90, "cooldown": 5,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "splitter", "layer": "pink", "count": 30, "spread": 90, "cooldown": 5,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "splitter", "layer": "pink", "count": 30, "spread": 90, "cooldown": 5,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "splitter", "layer": "pink", "count": 30, "spread": 90, "cooldown": 5,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "splitter", "layer": "pink", "count": 30, "spread": 90, "cooldown": 5,
+			"properties": ["shielded"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_block_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "deflation", "layer": "yellow", "count": 15, "spread": 40, "cooldown": 0
+		},
+		{
+			"class": "deflation", "layer": "pink", "count": 10, "spread": 60, "cooldown": 700
+		},
+		{
+			"class": "lead", "layer": "block", "count": 4, "spread": 360, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_regrow_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "ceramic", "count": 30, "spread": 5, "cooldown": 0,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_brc_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "brc", "count": 2, "spread": 600, "cooldown": 0
+		},
+		{
+			"class": "moab", "layer": "brc", "count": 2, "spread": 600, "cooldown": 60
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "lawyer",
+			"layer": "the judge",
+			"count": 1,
+			"spread": 0,
+			"cooldown": 0
 		}
 	],
 	[

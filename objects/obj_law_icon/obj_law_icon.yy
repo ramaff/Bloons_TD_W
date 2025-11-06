@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lawyer_bloon_green",
+  "%Name":"obj_law_icon",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_lawyer_bloon_green",
+  "name":"obj_law_icon",
   "overriddenProperties":[],
   "parent":{
-    "name":"legal system",
-    "path":"folders/Objects/Bloons/Bounties/legal system.yy",
+    "name":"Menu UI",
+    "path":"folders/Objects/Menu UI.yy",
   },
-  "parentObjectId":{
-    "name":"obj_bounty",
-    "path":"objects/obj_bounty/obj_bounty.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_lawyer_bloon_green",
-    "path":"sprites/spr_lawyer_bloon_green/spr_lawyer_bloon_green.yy",
+    "name":"spr_law_icon",
+    "path":"sprites/spr_law_icon/spr_law_icon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -2252,6 +2252,28 @@ function scr_setup_bloon_stats(){
 				big_bloon_tier: 6,
 				density: 1,
 				speed: 0.085,
+			},
+			"yellow": {
+				sprite: "spr_lawyer_bloon_yellow",
+				"object": "obj_lawyer_bloon_yellow",
+				layers: 12000,
+				rbe: 12000,
+				damage: 1,
+				health: 12000,
+				big_bloon_tier: 6,
+				density: 1,
+				speed: 0.09,
+			},
+			"the judge": {
+				sprite: "spr_judge_bloon",
+				"object": "obj_judge_bloon",
+				layers: 30000,
+				rbe: 30000,
+				damage: 1,
+				health: 30000,
+				big_bloon_tier: 9,
+				density: 1,
+				speed: 0.09,
 			}
 		}
 	}
