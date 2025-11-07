@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"bosses",
-    "path":"folders/Sprites/bloons/bosses.yy",
+    "name":"the law",
+    "path":"folders/Sprites/bloons/bosses/the law.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

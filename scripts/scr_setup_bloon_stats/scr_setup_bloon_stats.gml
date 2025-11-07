@@ -1110,6 +1110,42 @@ function scr_setup_bloon_stats(){
 					{"class": "static","layer": "ceramic"},
 					{"class": "static","layer": "ceramic"}
 				]
+			},
+			"mbrc": {
+				sprite: "spr_mbrc",
+				layers: 2218,
+				"big_bloon_tier": 5,
+				index: 0,
+				rbe: 6928,
+				health: 2500,
+				density: 1,
+				speed: 0.4,
+				children: [
+					{"class": "moab","layer": "moab", "properties": ["float to track"]},
+					{"class": "moab","layer": "moab", "properties": ["float to track"]},
+					{"class": "moab","layer": "moab", "properties": ["float to track"]},
+					{"class": "moab","layer": "moab", "properties": ["float to track"]},
+					{"class": "moab","layer": "moab", "properties": ["float to track"]},
+					{"class": "moab","layer": "moab", "properties": ["float to track"]},
+					{"class": "moab","layer": "moab", "properties": ["float to track"]},
+					{"class": "moab","layer": "moab", "properties": ["float to track"]}
+				]
+			},
+			"zomg": {
+				sprite: "spr_zomg",
+				layers: 4918,
+				"big_bloon_tier": 6,
+				index: 0,
+				rbe: 16656,
+				health: 4000,
+				density: 1,
+				speed: 0.7,
+				children: [
+					{"class": "moab","layer": "bfb"},
+					{"class": "moab","layer": "bfb"},
+					{"class": "moab","layer": "bfb"},
+					{"class": "moab","layer": "bfb"},
+				]
 			}
 		},
 		"bully": {
@@ -2274,6 +2310,17 @@ function scr_setup_bloon_stats(){
 				big_bloon_tier: 9,
 				density: 1,
 				speed: 0.09,
+			},
+			"juror": {
+				sprite: "spr_angry_juror",
+				"object": "obj_juror_bloon",
+				layers: 2000,
+				rbe: 2000,
+				damage: 1,
+				health: 2000,
+				big_bloon_tier: 5,
+				density: 1,
+				speed: 0.15,
 			}
 		}
 	}

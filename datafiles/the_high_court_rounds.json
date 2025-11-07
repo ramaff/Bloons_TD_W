@@ -289,7 +289,7 @@
 	[
 		{
 			"round_icon_sprite": "spr_barrier_bloon",
-			"round_icon_index": 1
+			"round_icon_index": 4
 		},
 		{
 			"class": "barrier", "layer": "pink", "count": 15, "spread": 180, "cooldown": 120
@@ -446,13 +446,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "deflation", "layer": "yellow", "count": 15, "spread": 40, "cooldown": 0
-		},
-		{
-			"class": "deflation", "layer": "pink", "count": 10, "spread": 60, "cooldown": 700
-		},
-		{
-			"class": "lead", "layer": "block", "count": 4, "spread": 360, "cooldown": 0
+			"class": "lead", "layer": "block", "count": 15, "spread": 120, "cooldown": 0
 		}
 	],
 	[
@@ -488,15 +482,210 @@
 			"count": 1,
 			"spread": 0,
 			"cooldown": 0
+		},
+		{
+			"class": "lawyer",
+			"layer": "juror",
+			"count": 3,
+			"spread": 300,
+			"cooldown": 300
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_brc_icon",
+			"round_icon_sprite": "spr_patrol_bloon",
 			"round_icon_index": 0
 		},
 		{
-			"class": "moab", "layer": "brc", "count": 200, "spread": 120, "cooldown": 0
+			"class": "patrol", "layer": "normal", "count": 16, "spread": 100, "cooldown": 0
+		},
+		{
+			"class": "static", "layer": "pink", "count": 100, "spread": 20, "cooldown": 0
+		},
+		{
+			"class": "moab", "layer": "moab", "count": 2, "spread": 1200, "cooldown": 0
+		},
+		{
+			"class": "moab", "layer": "moab", "count": 2, "spread": 1200, "cooldown": 120
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_skyscraper_icon",
+			"round_icon_index": 8
+		},
+		{
+			"class": "lead", "layer": "skyscraper", "count": 2, "spread": 240, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_camo_ceramic_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "ceramic", "count": 30, "spread": 5, "cooldown": 0,
+			"properties": ["camo"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_rocket_moab_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "rocket", "count": 4, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "moab", "layer": "rocket", "count": 4, "spread": 60, "cooldown": 900
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "lawyer",
+			"layer": "juror",
+			"count": 3,
+			"spread": 300,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_shielded_splitter_bloon_icon",
+			"round_icon_index": 3
+		},
+		{
+			"class": "splitter", "layer": "rainbow", "count": 30, "spread": 90, "cooldown": 0,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "splitter", "layer": "rainbow", "count": 30, "spread": 90, "cooldown": 5,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "splitter", "layer": "rainbow", "count": 30, "spread": 90, "cooldown": 5,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "splitter", "layer": "rainbow", "count": 30, "spread": 90, "cooldown": 5,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "splitter", "layer": "rainbow", "count": 30, "spread": 90, "cooldown": 5,
+			"properties": ["shielded"]
+		},
+		{
+			"class": "splitter", "layer": "rainbow", "count": 30, "spread": 90, "cooldown": 5,
+			"properties": ["shielded"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_barrier_bloon",
+			"round_icon_index": 5
+		},
+		{
+			"class": "barrier", "layer": "rainbow", "count": 30, "spread": 90, "cooldown": 120
+		},
+		{
+			"class": "splitter", "layer": "rainbow", "count": 70, "spread": 20, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_regrow_brick_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 30, "spread": 5, "cooldown": 0,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_mbrc_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "mbrc", "count": 2, "spread": 600, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_non_specified_bounty_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "lawyer",
+			"layer": "juror",
+			"count": 6,
+			"spread": 200,
+			"cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_patrol_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "patrol", "layer": "normal", "count": 50, "spread": 50, "cooldown": 0
+		},
+		{
+			"class": "static", "layer": "rainbow", "count": 100, "spread": 20, "cooldown": 0
+		},
+		{
+			"class": "moab", "layer": "bfb", "count": 2, "spread": 1200, "cooldown": 0
+		},
+		{
+			"class": "moab", "layer": "bfb", "count": 2, "spread": 1200, "cooldown": 120
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_skyscraper_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "lead", "layer": "skyscraper", "count": 2, "spread": 240, "cooldown": 0
+		},
+		{
+			"class": "ceramic", "layer": "housing", "count": 2, "spread": 240, "cooldown": 300
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_camo_brick_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 30, "spread": 5, "cooldown": 0,
+			"properties": ["camo"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_zap_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "zap", "count": 3, "spread": 120, "cooldown": 0
+		},
+		{
+			"class": "moab", "layer": "zap", "count": 3, "spread": 120, "cooldown": 900
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_zomg_icon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "zomg", "count": 2, "spread": 750, "cooldown": 0
 		}
 	]
 ]

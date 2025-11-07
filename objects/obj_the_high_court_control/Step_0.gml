@@ -38,7 +38,7 @@ for(_i = 0; _i < _tracked_towers_count; _i++) {
 	}
 	
 	if _max_10k_pops = true {
-		if _tower.pop_count >= 10000 {
+		if _tower.pop_count >= 15000 {
 			variable_struct_set(_blocked_towers, string(_tower.id), _tower.id)
 		}
 	}
