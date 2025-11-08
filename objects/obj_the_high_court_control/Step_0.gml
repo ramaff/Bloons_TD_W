@@ -48,7 +48,7 @@ for(_i = 0; _i < _tracked_towers_count; _i++) {
 	} else {
 		if variable_struct_exists(_blocked_towers, string(_tower.id)) {
 			var _block_tower_inf = variable_struct_get(_blocked_towers, string(_tower.id));
-			if _block_tower_inf.pop_count {
+			if variable_struct_get(_block_tower_inf, "block_type") == "pop_count" {
 				variable_struct_remove(_blocked_towers, string(_tower.id))	
 			}
 		}
@@ -64,7 +64,7 @@ for(_i = 0; _i < _tracked_towers_count; _i++) {
 	} else {
 		if variable_struct_exists(_blocked_towers, string(_tower.id)) {
 			var _block_tower_inf = variable_struct_get(_blocked_towers, string(_tower.id));
-			if _block_tower_inf.odd_rounds {
+			if variable_struct_get(_block_tower_inf, "block_type") == "odd_rounds" {
 				variable_struct_remove(_blocked_towers, string(_tower.id))	
 			}
 		}

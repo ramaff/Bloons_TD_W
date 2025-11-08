@@ -10,6 +10,14 @@ if leak_frame {
 
 }
 
+if path_position >= 0.45 {
+	speed = 0;	
+	path_speed = 0;
+} else {
+	speed = 2;
+	path_speed = 2;
+}
+
 if guilt > 50 {
 	guilt -= 50;
 	

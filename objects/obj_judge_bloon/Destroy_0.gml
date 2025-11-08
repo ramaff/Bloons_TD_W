@@ -4,7 +4,10 @@
 // Inherit the parent event
 event_inherited();
 
-guilt = 0;
+with(obj_juror_bloon) {
+	instance_destroy()	
+}
 
-alarm[1] = 1200;
-//alarm[2] = 3300;
+with(obj_executioner) {
+	instance_destroy()	
+}

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_angry_juror",
-    "path":"sprites/spr_angry_juror/spr_angry_juror.yy",
+    "name":"spr_executioner_bloon",
+    "path":"sprites/spr_executioner_bloon/spr_executioner_bloon.yy",
   },
   "spriteMaskId":null,
   "visible":true,
