@@ -39,12 +39,34 @@ for(_i = 0; _i < _tracked_towers_count; _i++) {
 	
 	if _max_10k_pops = true {
 		if _tower.pop_count >= 15000 {
-			variable_struct_set(_blocked_towers, string(_tower.id), _tower.id)
+			var _block_dict = {
+				tower_id: _tower.id,
+				block_type: "pop_count"
+			}
+			variable_struct_set(_blocked_towers, string(_tower.id), _block_dict)
+		}
+	} else {
+		if variable_struct_exists(_blocked_towers, string(_tower.id)) {
+			var _block_tower_inf = variable_struct_get(_blocked_towers, string(_tower.id));
+			if _block_tower_inf.pop_count {
+				variable_struct_remove(_blocked_towers, string(_tower.id))	
+			}
 		}
 	}
 	if _no_odd_round_towers = true {
 		if _tracked_tower.round mod 2 = 1 {
-			variable_struct_set(_blocked_towers, string(_tower.id), _tower.id)
+			var _block_dict = {
+				tower_id: _tower.id,
+				block_type: "odd_rounds"
+			}
+			variable_struct_set(_blocked_towers, string(_tower.id), _block_dict)
+		}
+	} else {
+		if variable_struct_exists(_blocked_towers, string(_tower.id)) {
+			var _block_tower_inf = variable_struct_get(_blocked_towers, string(_tower.id));
+			if _block_tower_inf.odd_rounds {
+				variable_struct_remove(_blocked_towers, string(_tower.id))	
+			}
 		}
 	}
 }

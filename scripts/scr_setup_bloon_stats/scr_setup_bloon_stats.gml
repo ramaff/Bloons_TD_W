@@ -2305,6 +2305,7 @@ function scr_setup_bloon_stats(){
 				"object": "obj_judge_bloon",
 				layers: 30000,
 				rbe: 30000,
+				specific_path: pth_left_to_right_higher_up,
 				damage: 1,
 				health: 30000,
 				big_bloon_tier: 9,
@@ -2321,6 +2322,17 @@ function scr_setup_bloon_stats(){
 				big_bloon_tier: 5,
 				density: 1,
 				speed: 0.15,
+			},
+			"the executioner": {
+				sprite: "spr_judge_bloon",
+				"object": "obj_executioner",
+				layers: 30000,
+				rbe: 30000,
+				damage: 999,
+				health: 30000,
+				big_bloon_tier: 9,
+				density: 1,
+				speed: 1,
 			}
 		}
 	}
