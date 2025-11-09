@@ -9,7 +9,8 @@ var _track_info = menu.track_info
 
 global.paths = _track_info.paths
 global.round_data = _track_info.round_data
-global.mission = string_replace(_track_info.name, " ", "_")
+
+global.mission = string_replace_all(_track_info.name, " ", "_")
 
 room_goto(menu.track_room)
 
