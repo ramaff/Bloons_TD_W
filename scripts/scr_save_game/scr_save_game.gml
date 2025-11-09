@@ -13,6 +13,8 @@ function scr_save_game(){
 	ini_write_string("Progress", "towers_progress", string_replace_all(json_stringify(global.towers_progress), "\"", "'"));
 	ini_write_string("Progress", "heroes_progress", string_replace_all(json_stringify(global.heroes_progress), "\"", "'"));
 	ini_write_string("Progress", "upgrades_progress", string_replace_all(json_stringify(global.upgrades_progress), "\"", "'"));
+	ini_write_string("Progress", "current_world", room_get_name(room));
+	ini_write_real("Progress", "full_game_time", global.full_game_time)
 
 	ini_close();
 	

@@ -7,6 +7,3 @@ if instance_exists(obj_mission_briefing_menu) {
 
 room_goto(rm_world_1_map)
 
-
-
-

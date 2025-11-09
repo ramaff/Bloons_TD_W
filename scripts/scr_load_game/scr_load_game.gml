@@ -25,11 +25,14 @@ function scr_load_game(){
 		var _towers_progress = json_parse(ini_read_string("Progress", "towers_progress", "{}"));
 		var _heroes_progress = json_parse(ini_read_string("Progress", "heroes_progress", "{}"));
 		var _upgrades_progress = json_parse(ini_read_string("Progress", "upgrades_progress", "{}"));
+		global.start_room = asset_get_index(ini_read_string("Progress", "current_world", "rm_world_1_map"))
+		global.full_game_time = ini_read_real("Progress", "full_game_time", 0)
 		
 		global.missions_complete = scr_merge_struct(global.missions_complete, _missions_complete)
 		global.towers_progress = scr_merge_struct(global.towers_progress, _towers_progress)
 		global.heroes_progress = scr_merge_struct(global.heroes_progress, _heroes_progress)
 		global.upgrades_progress = scr_merge_struct(global.upgrades_progress, _upgrades_progress)
+		
 
 	    ini_close();
 

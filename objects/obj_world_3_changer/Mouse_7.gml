@@ -5,6 +5,7 @@ if instance_exists(obj_mission_briefing_menu) {
 	exit;
 }
 
-room_goto(rm_world_2_map)
+room_goto(rm_world_3_map)
+
 
 

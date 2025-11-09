@@ -156,6 +156,9 @@ global.upgrades_progress = {
 	},
 }
 
+global.start_room = rm_world_1_map
+global.full_game_time = 0;
+
 scr_load_game()
 
 scr_setup_global_vars()

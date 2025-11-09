@@ -1,20 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_world_map_control",
+  "%Name":"obj_world_2_5_changer",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_world_map_control",
+  "name":"obj_world_2_5_changer",
   "overriddenProperties":[],
   "parent":{
     "name":"World Map",
     "path":"folders/Objects/World Map.yy",
   },
-  "parentObjectId":null,
-  "persistent":true,
+  "parentObjectId":{
+    "name":"obj_world_map_changer",
+    "path":"objects/obj_world_map_changer/obj_world_map_changer.yy",
+  },
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -31,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_world_map_area_mover",
+    "path":"sprites/spr_world_map_area_mover/spr_world_map_area_mover.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
