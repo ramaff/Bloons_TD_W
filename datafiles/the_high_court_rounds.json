@@ -633,16 +633,16 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "patrol", "layer": "normal", "count": 50, "spread": 50, "cooldown": 0
+			"class": "patrol", "layer": "normal", "count": 40, "spread": 70, "cooldown": 0
 		},
 		{
-			"class": "static", "layer": "rainbow", "count": 100, "spread": 20, "cooldown": 0
+			"class": "static", "layer": "rainbow", "count": 40, "spread": 70, "cooldown": 0
 		},
 		{
-			"class": "moab", "layer": "bfb", "count": 2, "spread": 1200, "cooldown": 0
+			"class": "moab", "layer": "bfb", "count": 2, "spread": 1800, "cooldown": 0
 		},
 		{
-			"class": "moab", "layer": "bfb", "count": 2, "spread": 1200, "cooldown": 120
+			"class": "moab", "layer": "bfb", "count": 2, "spread": 1800, "cooldown": 120
 		}
 	],
 	[

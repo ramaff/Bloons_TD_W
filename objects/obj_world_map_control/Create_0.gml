@@ -49,5 +49,6 @@ if global.heroes_progress.clown_monkey.unlocked and !variable_struct_exists(_sel
 */
 
 
-
-scr_save_game()
+if string_pos("world_map", room_get_name(room)) != -1 {
+	scr_save_game()
+}
