@@ -2316,13 +2316,14 @@ function scr_setup_bloon_stats(){
 			"juror": {
 				sprite: "spr_angry_juror",
 				"object": "obj_juror_bloon",
+				specific_path: pth_the_high_court_2,
 				layers: 2000,
 				rbe: 2000,
 				damage: 0,
 				health: 2000,
 				big_bloon_tier: 5,
 				density: 1,
-				speed: 0.7,
+				speed: 0.25,
 			},
 			"the executioner": {
 				sprite: "spr_executioner_bloon",
