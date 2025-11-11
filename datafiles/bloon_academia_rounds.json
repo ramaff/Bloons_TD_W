@@ -7,14 +7,14 @@
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 20,
+			"count": 25,
 			"spread": 45,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 5,
+			"count": 10,
 			"spread": 45,
 			"cooldown": 697
 		}
@@ -27,14 +27,14 @@
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 35,
+			"count": 45,
 			"spread": 40,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 20,
+			"count": 30,
 			"spread": 40,
 			"cooldown": 620
 		}
@@ -47,7 +47,7 @@
 		{
 			"class": "normal",
 			"layer": "blue",
-			"count": 25,
+			"count": 30,
 			"spread": 40,
 			"cooldown": 0
 		},
@@ -70,7 +70,7 @@
 		{
 			"class": "normal",
 			"layer": "green",
-			"count": 25,
+			"count": 35,
 			"spread": 40,
 			"cooldown": 0
 		}
@@ -96,8 +96,8 @@
 		{
 			"class": "normal",
 			"layer": "blue",
-			"count": 30,
-			"spread": 45,
+			"count": 40,
+			"spread": 40,
 			"cooldown": 0
 		},
 		{
@@ -119,7 +119,7 @@
 		{
 			"class": "normal",
 			"layer": "green",
-			"count": 30,
+			"count": 35,
 			"spread": 45,
 			"cooldown": 0
 		},
@@ -165,21 +165,21 @@
 		{
 			"class": "normal",
 			"layer": "yellow",
-			"count": 10,
-			"spread": 60,
+			"count": 12,
+			"spread": 50,
 			"cooldown": 0
 		},
 		{
 			"class": "splitter",
 			"layer": "blue",
-			"count": 20,
-			"spread": 30,
+			"count": 24,
+			"spread": 25,
 			"cooldown": 600
 		},
 		{
 			"class": "normal",
 			"layer": "yellow",
-			"count": 10,
+			"count": 12,
 			"spread": 30,
 			"cooldown": 1200
 		}
@@ -205,28 +205,28 @@
 		{
 			"class": "normal",
 			"layer": "green",
-			"count": 75,
-			"spread": 30,
+			"count": 90,
+			"spread": 25,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "yellow",
-			"count": 6,
+			"count": 8,
 			"spread": 30,
 			"cooldown": 415
 		},
 		{
 			"class": "normal",
 			"layer": "yellow",
-			"count": 6,
+			"count": 8,
 			"spread": 30,
 			"cooldown": 1015
 		},
 		{
 			"class": "normal",
 			"layer": "yellow",
-			"count": 6,
+			"count": 8,
 			"spread": 30,
 			"cooldown": 1615
 		}
@@ -265,14 +265,14 @@
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 15,
+			"count": 20,
 			"spread": 40,
 			"cooldown": 0
 		},
 		{
 			"class": "splitter",
 			"layer": "green",
-			"count": 20,
+			"count": 25,
 			"spread": 30,
 			"cooldown": 300
 		}
@@ -285,14 +285,14 @@
 		{
 			"class": "normal",
 			"layer": "black",
-			"count": 5,
+			"count": 8,
 			"spread": 60,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "white",
-			"count": 5,
+			"count": 8,
 			"spread": 60,
 			"cooldown": 400
 		}
@@ -332,14 +332,14 @@
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 40,
+			"count": 50,
 			"spread": 40,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 20,
+			"count": 30,
 			"spread": 40,
 			"cooldown": 820
 		}
@@ -352,7 +352,7 @@
 		{
 			"class": "normal",
 			"layer": "zebra",
-			"count": 12,
+			"count": 15,
 			"spread": 75,
 			"cooldown": 0
 		},
@@ -375,14 +375,14 @@
 		{
 			"class": "normal",
 			"layer": "black",
-			"count": 25,
+			"count": 30,
 			"spread": 60,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "white",
-			"count": 25,
+			"count": 30,
 			"spread": 60,
 			"cooldown": 30
 		},
@@ -412,14 +412,14 @@
 		{
 			"class": "normal",
 			"layer": "yellow",
-			"count": 40,
+			"count": 50,
 			"spread": 5,
 			"cooldown": 450
 		},
 		{
 			"class": "splitter",
 			"layer": "yellow",
-			"count": 20,
+			"count": 25,
 			"spread": 15,
 			"cooldown": 1150
 		}
@@ -445,28 +445,28 @@
 		{
 			"class": "normal",
 			"layer": "red",
-			"count": 300,
+			"count": 400,
 			"spread": 3,
 			"cooldown": 0
 		},
 		{
 			"class": "splitter",
 			"layer": "pink",
-			"count": 6,
+			"count": 8,
 			"spread": 15,
 			"cooldown": 200
 		},
 		{
 			"class": "splitter",
 			"layer": "pink",
-			"count": 6,
+			"count": 8,
 			"spread": 15,
 			"cooldown": 500
 		},
 		{
 			"class": "splitter",
 			"layer": "pink",
-			"count": 12,
+			"count": 15,
 			"spread": 15,
 			"cooldown": 800
 		}
@@ -522,21 +522,21 @@
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 8,
+			"count": 10,
 			"spread": 100,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 100,
+			"count": 120,
 			"spread": 10,
 			"cooldown": 400
 		},
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 20,
+			"count": 25,
 			"spread": 10,
 			"cooldown": 1205
 		}
@@ -598,7 +598,7 @@
 		{
 			"class": "normal",
 			"layer": "zebra",
-			"count": 40,
+			"count": 45,
 			"spread": 33,
 			"cooldown": 0
 		},
@@ -641,7 +641,7 @@
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 30,
+			"count": 35,
 			"spread": 40,
 			"cooldown": 0
 		},
@@ -677,21 +677,21 @@
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 36,
+			"count": 40,
 			"spread": 42,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 12,
+			"count": 15,
 			"spread": 42,
 			"cooldown": 878
 		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 12,
+			"count": 15,
 			"spread": 42,
 			"cooldown": 892
 		}
@@ -737,35 +737,35 @@
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 10,
+			"count": 12,
 			"spread": 5,
 			"cooldown": 0
 		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 10,
+			"count": 12,
 			"spread": 5,
 			"cooldown": 240
 		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 10,
+			"count": 12,
 			"spread": 5,
 			"cooldown": 480
 		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 10,
+			"count": 12,
 			"spread": 5,
 			"cooldown": 720
 		},
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 10,
+			"count": 12,
 			"spread": 30,
 			"cooldown": 960,
 			"properties": [
@@ -834,7 +834,7 @@
 		{
 			"class": "normal",
 			"layer": "rainbow",
-			"count": 40,
+			"count": 45,
 			"spread": 20,
 			"cooldown": 1500
 		}
@@ -867,7 +867,7 @@
 		{
 			"class": "normal",
 			"layer": "pink",
-			"count": 300,
+			"count": 350,
 			"spread": 7,
 			"cooldown": 0
 		},

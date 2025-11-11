@@ -28,7 +28,8 @@ if _track = "rm_autumn_acres" {
 	global.added_towers = ["assassin_monkey"]	
 }
 if _track = "rm_graveyard" {
-	global.added_towers = ["haunted_monkey"]	
+	global.added_towers = ["haunted_monkey"]
+	global.added_cash = 100;
 }
 if _track = "rm_parade" {
 	global.added_heroes = ["clown_monkey"]
