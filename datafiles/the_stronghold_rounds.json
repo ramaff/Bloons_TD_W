@@ -382,7 +382,7 @@
 	[
 		{
 			"round_icon_sprite": "spr_deflation_bloon_icon",
-			"round_icon_index": 1
+			"round_icon_index": 3
 		},
 		{
 			"class": "deflation", "layer": "yellow", "count": 20, "spread": 100, "cooldown": 0
@@ -400,7 +400,7 @@
 	[
 		{
 			"round_icon_sprite": "spr_nurse_bloon_icon",
-			"round_icon_index": 1
+			"round_icon_index": 3
 		},
 		{
 			"class": "nurse", "layer": "yellow", "count": 20, "spread": 100, "cooldown": 0
@@ -555,7 +555,7 @@
 	[
 		{
 			"round_icon_sprite": "spr_deflation_bloon_icon",
-			"round_icon_index": 1
+			"round_icon_index": 5
 		},
 		{
 			"class": "deflation", "layer": "rainbow", "count": 16, "spread": 150, "cooldown": 0
@@ -573,7 +573,7 @@
 	[
 		{
 			"round_icon_sprite": "spr_nurse_bloon_icon",
-			"round_icon_index": 1
+			"round_icon_index": 5
 		},
 		{
 			"class": "nurse", "layer": "rainbow", "count": 16, "spread": 150, "cooldown": 0

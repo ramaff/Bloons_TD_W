@@ -1061,37 +1061,40 @@ function scr_setup_upgrade_stats(){
 				projectile_stats: [
 					{
 						sprite: "spr_goop",
-						pierce: 4,
+						pierce: 8,
 						damage: 1,
 						speed: 13,
 						lifespan: 20,
 						goop: 1,
-						goop_time: 180
+						goop_time: 180,
+						lead_hit: true
 					}
 				],
-				upgrade_string: "Goo balls hit 2 more bloons and pop bloons that are hit."
+				upgrade_string: "Goo balls hit 4 more bloons and pop bloons that are hit."
 			},
 			"Split Splatter": {
 				projectile_replacement: true,
 				projectile_stats: [
 					{
 						sprite: "spr_goop",
-						pierce: 4,
+						pierce: 8,
 						damage: 1,
 						speed: 13,
 						lifespan: 20,
 						goop: 1,
 						goop_time: 180,
+						lead_hit: true,
 						expire_burst_activation: true,
 						projectile_burst: [
 							{
 								projectile_count: 4,
 								projectile_spread: 90,
 								sprite: "spr_goop",
-								pierce: 4,
+								pierce: 8,
 								damage: 1,
 								speed: 13,
 								lifespan: 10,
+								lead_hit: true,
 								goop: 1,
 								goop_time: 180
 							},
@@ -1107,13 +1110,14 @@ function scr_setup_upgrade_stats(){
 				projectile_stats: [
 					{
 						sprite: "spr_goop",
-						pierce: 4,
+						pierce: 8,
 						damage: 1,
 						speed: 13,
 						lifespan: 20,
 						goop: 1,
 						goop_time: 180,
 						camo_detection: true,
+						lead_hit: true,
 						expire_burst_activation: true,
 						projectile_burst: [
 							{
@@ -1121,7 +1125,7 @@ function scr_setup_upgrade_stats(){
 								projectile_spread: 90,
 								camo_detection: true,
 								sprite: "spr_goop",
-								pierce: 4,
+								pierce: 8,
 								damage: 1,
 								speed: 13,
 								lifespan: 10,
@@ -1144,6 +1148,7 @@ function scr_setup_upgrade_stats(){
 								speed: 20,
 								lifespan: 20,
 								camo_detection: true,
+								lead_hit: true,
 								expire_burst_activation: true,
 								projectile_burst: [
 									{

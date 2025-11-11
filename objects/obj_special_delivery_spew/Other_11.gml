@@ -3,8 +3,6 @@
 
 var _class = "clown"
 //var _layer = _layers[floor(abs((stored_health - _lost_hp) mod 25) / 5)]
-var _xx = x - 50 + random(100);
-var _yy = y - 50 + random(100);
 var _bloon_object = obj_tack_bloon
 var _path = global.paths[irandom(array_length(global.paths) - 1)]
 var _round = -1
@@ -22,7 +20,9 @@ if _layer = "ice" {
 	_bloon_object = obj_ice_bloon
 }
 
-repeat(3) {
+repeat(5) {
+	var _xx = x - 50 + random(100);
+	var _yy = y - 50 + random(100);
 	with instance_create_depth(_xx, _yy, depth, _bloon_object) {
 		scr_bloon_stat_setup(id, _class, _layer, _path, _properties, _round)
 		path_position = _pos

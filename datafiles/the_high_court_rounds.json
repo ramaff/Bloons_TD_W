@@ -524,7 +524,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "ceramic", "layer": "ceramic", "count": 30, "spread": 5, "cooldown": 0,
+			"class": "ceramic", "layer": "ceramic", "count": 25, "spread": 10, "cooldown": 0,
 			"properties": ["camo"]
 		}
 	],
@@ -663,7 +663,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "ceramic", "layer": "brick", "count": 30, "spread": 5, "cooldown": 0,
+			"class": "ceramic", "layer": "brick", "count": 20, "spread": 10, "cooldown": 0,
 			"properties": ["camo"]
 		}
 	],

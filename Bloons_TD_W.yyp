@@ -760,6 +760,7 @@
     {"id":{"name":"spr_training_room_track","path":"sprites/spr_training_room_track/spr_training_room_track.yy",},},
     {"id":{"name":"spr_training_tent_track_old","path":"sprites/spr_training_tent_track_old/spr_training_tent_track_old.yy",},},
     {"id":{"name":"spr_trickster_hero_butt","path":"sprites/spr_trickster_hero_butt/spr_trickster_hero_butt.yy",},},
+    {"id":{"name":"spr_trickster_hp","path":"sprites/spr_trickster_hp/spr_trickster_hp.yy",},},
     {"id":{"name":"spr_trickster","path":"sprites/spr_trickster/spr_trickster.yy",},},
     {"id":{"name":"spr_unpause_butt","path":"sprites/spr_unpause_butt/spr_unpause_butt.yy",},},
     {"id":{"name":"spr_upgrade_butt_old_too_big","path":"sprites/spr_upgrade_butt_old_too_big/spr_upgrade_butt_old_too_big.yy",},},

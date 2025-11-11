@@ -4,9 +4,9 @@
 event_inherited();
 
 hop_height = 0;
-hop_speed = 5;
-max_hop_speed = 5;
-hop_gravity = 0.25;
+hop_speed = 6;
+max_hop_speed = 6;
+hop_gravity = 0.4;
 
 all_bases = false
 

@@ -231,7 +231,7 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Clown Moab",
-						upgrade_cost: 1500
+						upgrade_cost: 2000
 					},
 					{
 						keyword: "Piñata",
@@ -491,7 +491,7 @@ function scr_setup_tower_stats(){
 			butt_sprite: "spr_pogo_stick_monkey_tower_butt",
 			tower_base: true,
 			tower_base_sprite: "spr_pogo_pad",
-			total_cost: 390,
+			total_cost: 430,
 			upgrade_cost: 0,
 			range: 160,
 			delay: 60,
@@ -512,11 +512,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Heavy Hops",
-						upgrade_cost: 210
+						upgrade_cost: 260
 					},
 					{
 						keyword: "Quick Hops",
-						upgrade_cost: 260
+						upgrade_cost: 290
 					}
 				]
 			],
@@ -534,11 +534,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Jackhammer",
-						upgrade_cost: 1160
+						upgrade_cost: 1330
 					},
 					{
 						keyword: "Drill",
-						upgrade_cost: 3150
+						upgrade_cost: 3850
 					}
 				]
 			]
@@ -613,7 +613,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "pineapple split",
-						upgrade_cost: 3500
+						upgrade_cost: 3800
 					}
 				]
 			]
@@ -659,11 +659,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Multi-Strikes",
-						upgrade_cost: 1590
+						upgrade_cost: 1790
 					},
 					{
 						keyword: "Shadow Clones",
-						upgrade_cost: 3990
+						upgrade_cost: 4590
 					}
 				]
 			]
@@ -728,12 +728,13 @@ function scr_setup_tower_stats(){
 			projectile_stats: [
 				{
 					sprite: "spr_goop",
-					pierce: 2,
+					pierce: 4,
 					damage: 0,
 					speed: 13,
 					lifespan: 20,
 					goop: 1,
-					goop_time: 180
+					goop_time: 180,
+					lead_hit: true
 				}
 			],
 			upgrades: [
