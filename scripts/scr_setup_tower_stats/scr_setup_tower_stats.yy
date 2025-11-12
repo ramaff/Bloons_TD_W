@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_setup_tower_stats",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"global stats",
+    "path":"folders/Scripts/global stats.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

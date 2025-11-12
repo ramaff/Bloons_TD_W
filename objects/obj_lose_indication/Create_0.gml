@@ -6,8 +6,13 @@ alarm[0] = 180;
 speed = 11;
 direction = 90;
 
-var _current_stage_prog = variable_struct_get(global.missions_complete, global.mission)
 
+var _current_stage_prog = variable_struct_get(global.missions_complete, global.mission)
+var _current_mission_stats = variable_struct_get(global.mission_unlocks, "rm_" + global.mission);
+		
+scr_remove_temporary_unlocks(_current_mission_stats,  _current_stage_prog.complete);
+
+/*
 if global.mission = "the_stronghold" {
 	if !_current_stage_prog.complete {
 		if variable_struct_exists(global.upgrades_progress.jim, "unlocked_paths") {

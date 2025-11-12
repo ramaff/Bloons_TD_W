@@ -165,17 +165,17 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Acorn Assault",
-						upgrade_cost: 4400
+						upgrade_cost: 4900
 					}
 				],
 				[
 					{
 						keyword: "Tree Tosser",
-						upgrade_cost: 3500
+						upgrade_cost: 3200
 					},
 					{
 						keyword: "Rampage",
-						upgrade_cost: 7000
+						upgrade_cost: 6800
 					}
 				],
 				[]

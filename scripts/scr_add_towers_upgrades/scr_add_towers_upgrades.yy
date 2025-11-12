@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_setup_bloon_stats",
+  "%Name":"scr_add_towers_upgrades",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_setup_bloon_stats",
+  "name":"scr_add_towers_upgrades",
   "parent":{
     "name":"global stats",
     "path":"folders/Scripts/global stats.yy",

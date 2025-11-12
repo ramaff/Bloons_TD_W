@@ -21,32 +21,16 @@ global.added_heroes = []
 global.added_towers = []
 global.added_cash = 0;
 
-if _track = "rm_bloon_academia" {
-	global.added_heroes = ["angry_squirrel"]	
+var _current_mission_stats = variable_struct_get(global.mission_unlocks, _track);
+var _mission_prog = variable_struct_get(global.missions_complete, string_delete(_track, 0, 3))
+var _complete = _mission_prog.complete
+
+scr_add_towers_upgrades(_current_mission_stats, _complete, true)
+if variable_struct_exists(_current_mission_stats, "added_cash") {
+	global.added_cash = variable_struct_get(_current_mission_stats, "added_cash")
 }
-if _track = "rm_autumn_acres" {
-	global.added_towers = ["assassin_monkey"]	
-}
-if _track = "rm_graveyard" {
-	global.added_towers = ["haunted_monkey"]
-	global.added_cash = 100;
-}
-if _track = "rm_parade" {
-	global.added_heroes = ["clown_monkey"]
-	global.added_cash = 100;
-}
-if _track = "rm_the_bridge" {
-	global.added_towers = ["goonkey"]
-	global.added_cash = 200;
-}
-if _track = "rm_the_forest" {
-	global.added_towers = ["marbles_monkey"]
-	global.added_cash = 200;
-}
-if _track = "rm_tower_defense" {
-	global.added_towers = ["caster_monkey"]
-	global.added_cash = 300;
-}
+
+/*
 if _track = "rm_the_stronghold" {
 	var _req_mission_prog = variable_struct_get(global.missions_complete, "the_stronghold")
 	if !_req_mission_prog.complete {
@@ -56,27 +40,8 @@ if _track = "rm_the_stronghold" {
 	}
 	global.added_cash = 400;
 }
-if _track = "rm_desert_road" {
-	global.added_towers = ["skateboard_monkey"]
-	global.added_cash = 500;
-}
-if _track = "rm_traffic_jam" {
-	global.added_heroes = ["trickster"]
-	global.added_cash = 500;
-}
-if _track = "rm_wall_street" {
-	global.added_towers = ["bongo_monkey"]
-	global.added_cash = 600;
-}
-if _track = "rm_the_high_court" {
-	var _req_mission_prog = variable_struct_get(global.missions_complete, "the_high_court")
-	if !_req_mission_prog.complete {
-		if variable_struct_exists(global.upgrades_progress.angry_squirrel, "unlocked_paths") {
-			variable_struct_set(global.upgrades_progress.angry_squirrel.unlocked_paths, "Tree Tosser", {"unlocked_upgrades": 2})
-		}
-	}
-	global.added_cash = 600;
-}
+*/
+
 
 global.pickable_tower_slots = 6 - array_length(global.added_towers)
 global.pickable_hero_slots = 3 - array_length(global.added_heroes)

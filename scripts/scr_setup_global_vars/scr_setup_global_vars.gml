@@ -7,5 +7,7 @@ function scr_setup_global_vars(){
 	global.upgrade_stats = scr_setup_upgrade_stats();
 
 	global.bloon_stats = scr_setup_bloon_stats();
+	
+	global.mission_unlocks = scr_setup_mission_unlocks();
 
 }

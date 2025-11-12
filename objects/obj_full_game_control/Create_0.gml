@@ -163,35 +163,7 @@ scr_load_game()
 
 scr_setup_global_vars()
 
-// Backwards Compatibility:
-// If something was added after it could be unlocked by beating a mission and players already beat the mission then it will force them to replay the mission to get it. This is to prevent that:
-// We don't need to do this for everything, also we can remove all of this code for 1.0 probably
-
-var _req_mission_prog = variable_struct_get(global.missions_complete, "bloon_academia")
-if _req_mission_prog.complete {
-	variable_struct_set(global.heroes_progress.angry_squirrel, "unlocked", true)
+if global.start_room = rm_game_start {
+	global.start_room = rm_world_1_map	
 }
 
-_req_mission_prog = variable_struct_get(global.missions_complete, "autumn_acres")
-if _req_mission_prog.complete {
-	variable_struct_set(global.towers_progress.assassin_monkey, "unlocked", true)
-}
-
-_req_mission_prog = variable_struct_get(global.missions_complete, "graveyard")
-if _req_mission_prog.complete {
-	variable_struct_set(global.towers_progress.haunted_monkey, "unlocked", true)
-}
-
-_req_mission_prog = variable_struct_get(global.missions_complete, "parade")
-if _req_mission_prog.complete {
-	variable_struct_set(global.heroes_progress.clown_monkey, "unlocked", true)
-}
-
-_req_mission_prog = variable_struct_get(global.missions_complete, "the_stronghold")
-if _req_mission_prog.complete {
-	if variable_struct_exists(global.upgrades_progress.jim, "unlocked_paths") {
-		variable_struct_set(global.upgrades_progress.jim.unlocked_paths, "Splodey Darts", {"unlocked_upgrades": 2})
-	}
-}
-
-// End Backwards Compatibility Section
