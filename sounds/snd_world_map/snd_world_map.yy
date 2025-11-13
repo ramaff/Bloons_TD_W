@@ -10,7 +10,7 @@
   "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":90.749374,
+  "duration":90.74939,
   "exportDir":"",
   "name":"snd_world_map",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_world_map.mp3",
-  "volume":0.8,
+  "volume":0.6,
 }
