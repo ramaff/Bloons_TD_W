@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":73.8,
+  "duration":73.6,
   "exportDir":"",
   "name":"snd_the_high_court",
   "parent":{

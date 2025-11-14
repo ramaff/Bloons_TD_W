@@ -268,7 +268,7 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Walk the Bloon",
-						upgrade_cost: 450
+						upgrade_cost: 400
 					},
 					{
 						keyword: "Around the World",
@@ -286,7 +286,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Hand Eye Coordination",
-						upgrade_cost: 450
+						upgrade_cost: 400
 					},
 					{
 						keyword: "Finishing Performance",
@@ -298,7 +298,7 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Hot Streak",
-						upgrade_cost: 3000
+						upgrade_cost: 2800
 					},
 					{
 						keyword: "Morningstar",

@@ -22,22 +22,24 @@ if instance_exists(projectile_stats.tower_id) {
 		target = scr_get_bloon_target({"camo_detection": variable_struct_exists(projectile_stats, "camo_detection"), "range": _range, "damage_keys": projectile_stats.damage_keys}, _xx, _yy, projectile_stats.targeting, 0, real(id) + projectile_stats.id_offset)
 	}
 	if instance_exists(target) {
-		var _tx = target.x
-		var _ty = target.y
-		if target.bloon_stats.path != -1 {
-			var _tpos = clamp(target.path_position + scr_wave(-0.1, 0.1, 1, 0), 0, 1)
-			_tx = path_get_x(target.bloon_stats.path, _tpos)
-			_ty = path_get_y(target.bloon_stats.path, _tpos)
-		}
+		tar_path = target.bloon_stats.path;
+		tar_position = target.path_position;
 		if point_distance(_xx, _yy, target.x, target.y) > (_range + 10) {
 			target = noone;	
 			if !instance_exists(target) {
 				target = scr_get_bloon_target({"camo_detection": variable_struct_exists(projectile_stats, "camo_detection"), "range": _range, "damage_keys": projectile_stats.damage_keys}, _xx, _yy, projectile_stats.targeting, 0, real(id) + projectile_stats.id_offset)
 			}
-		} else {
-			direction = scr_angle_converge(point_direction(x, y, target.x, target.y) + _offset, direction, 20);
 		}
 	}
+}
+
+if tar_path != -1 {
+			
+	var _tpos = clamp(tar_position + scr_wave(-0.1, 0.1, 1, 0), 0, 1)
+	var _tx = path_get_x(tar_path, _tpos)
+	var _ty = path_get_y(tar_path, _tpos)
+	
+	direction = scr_angle_converge(point_direction(x, y, _tx, _ty), direction, 20);
 }
 
 
