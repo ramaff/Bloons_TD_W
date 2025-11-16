@@ -221,18 +221,37 @@ if global.round > saved_round {
 	}
 	
 	with(obj_monkey) {
+		
+		var _tower_id = id;
+		var _picked = false;
 		if instance_exists(tower_base) {
 			if point_distance(tower_base.x, tower_base.y, _picked_piece.id.x, _picked_piece.id.y) < 40 {
-				stun += _picked_piece.id.bloon_stats.max_health;
+				stun += _picked_piece.id.bloon_stats.max_health * 2;
 				tower_base.y -= _picked_piece.y
 				tower_base.x -= _picked_piece.x
+				
+				_picked = true;
 			}
 		} else if point_distance(x, y, _picked_piece.id.x, _picked_piece.id.y) < 40 {
-			stun += _picked_piece.id.bloon_stats.max_health;
+			stun += _picked_piece.id.bloon_stats.max_health * 2;
 			y -= _picked_piece.y
 			x -= _picked_piece.x
+			
+			_picked = true;
+		}
+		
+		if _picked = true {
+			with (obj_tower_tile) {
+				if instance_exists(tower_id) {
+					if tower_id = _tower_id {
+						x -= _picked_piece.x;
+						y -= _picked_piece.y;
+					}
+				}
+			}	
 		}
 	}
+	
 	
 	// if chess piece reaches end of board, trigger the pieces actual movement
 

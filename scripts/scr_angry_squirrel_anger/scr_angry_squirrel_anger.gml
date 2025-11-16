@@ -99,10 +99,11 @@ function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 						damage: 50,
 						speed: 0,
 						lifespan: 300,
-						tick_frequency: 5
+						tick_frequency: 5,
+						tower_stick_id: _target.id
 					}]
 
-					scr_create_tower_projectiles(_projectile_stats, x, y, noone, 0, {}, _target.id, targeting, _damage_keys)
+					scr_create_tower_projectiles(_projectile_stats, x, y, noone, 0, {}, id, targeting, _damage_keys)
 					
 					_tower_stats.health += floor(_tower_stats.max_health / 20);
 					if _tower_stats.health > _tower_stats.max_health {

@@ -38,6 +38,9 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 			with instance_create_depth(_xx,_yy,0, _projectile) {
 				projectile_stats = variable_clone(_projectile_stats[_i])
 				projectile_stats.tower_id = _tower_id
+				if !variable_struct_exists(projectile_stats, "tower_stick_id") {
+					projectile_stats.tower_stick_id = projectile_stats.tower_id;
+				}
 				
 				array_push(_proj_ids, id)
 				

@@ -391,6 +391,7 @@
     {"name":"spr_angry_squirrel_hero_butt","order":5,"path":"sprites/spr_angry_squirrel_hero_butt/spr_angry_squirrel_hero_butt.yy",},
     {"name":"spr_angry_squirrel_lingering_flame","order":11,"path":"sprites/spr_angry_squirrel_lingering_flame/spr_angry_squirrel_lingering_flame.yy",},
     {"name":"spr_angry_squirrel","order":3,"path":"sprites/spr_angry_squirrel/spr_angry_squirrel.yy",},
+    {"name":"spr_assassin_monkey_base","order":28,"path":"sprites/spr_assassin_monkey_base/spr_assassin_monkey_base.yy",},
     {"name":"spr_assassin_monkey","order":15,"path":"sprites/spr_assassin_monkey/spr_assassin_monkey.yy",},
     {"name":"spr_assassin_tower_butt","order":7,"path":"sprites/spr_assassin_tower_butt/spr_assassin_tower_butt.yy",},
     {"name":"spr_banana_peel","order":42,"path":"sprites/spr_banana_peel/spr_banana_peel.yy",},

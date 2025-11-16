@@ -1,9 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if !instance_exists(tower_base) {
+	instance_destroy()
+	exit;
+}
+
+tower_base.depth = depth + 1;
+
 if stun > 0 || global.round <= 0 {
-	x = og_x
-	y = og_y
+	x = tower_base.x
+	y = tower_base.y
 	exit;
 }
 
@@ -55,8 +62,8 @@ if tower_stats.barrage_count > 0 {
 	}
 	alarm[1] = tower_stats.barrage_delay
 	if tower_stats.barrage_count = 0 {
-		x = og_x
-		y = og_y
+		x = tower_base.x
+		y = tower_base.y
 		repeat(3) {
 			_cx = lerp(_cx, x, 0.4)
 			_cy = lerp(_cy, y, 0.4)

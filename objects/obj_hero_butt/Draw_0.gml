@@ -11,7 +11,7 @@ if !hero_placed {
 		if hero_id.tower_stats.tower_sprite = "spr_angry_squirrel" {
 			_hero_hp_sprite = spr_squirrel_hp	
 		}
-		if hero_id.tower_stats.tower_sprite = "spr_clown_monkey" {
+		if hero_id.tower_stats.tower_sprite = "spr_clown_monkey" || hero_id.tower_stats.tower_sprite = "spr_party_clown_monkey" {
 			_hero_hp_sprite = spr_clown_hp	
 		}
 		if hero_id.tower_stats.tower_sprite = "spr_trickster" {

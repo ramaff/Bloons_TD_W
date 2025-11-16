@@ -317,6 +317,7 @@ function scr_setup_bloon_stats(){
 			"block": {
 				"sprite": "spr_block_bloon",
 				"tattered_sprite": "spr_lead_tattered",
+				"big_bloon_tier": 1,
 				layers: 17,
 				index: 0,
 				rbe: 104,
@@ -346,6 +347,7 @@ function scr_setup_bloon_stats(){
 			"skyscraper": {
 				"sprite": "spr_skyscraper_bloon",
 				"tattered_sprite": "spr_lead_tattered",
+				"big_bloon_tier": 2,
 				layers: 167,
 				index: 0,
 				rbe: 566,
@@ -1845,7 +1847,6 @@ function scr_setup_bloon_stats(){
 			"object": "obj_bloom_bloon",
 			"big_bloon_tier": 1,
 			"height": 5,
-			"remaining_value": 1,
 			"bloom": {
 				sprite: "spr_bloom_bloon",
 				layers: 8,
@@ -2088,6 +2089,7 @@ function scr_setup_bloon_stats(){
 				"object": "obj_rook_chess_bloon",
 				"big_bloon_tier": 5,
 				sprite: "spr_rook_chess_bloon",
+				child_path: -1,
 				layers: 4500,
 				rbe: 5752,
 				damage: 100,
@@ -2096,8 +2098,8 @@ function scr_setup_bloon_stats(){
 				speed: 0.25,
 				depth: -40,
 				children: [
-					{"class": "ceramic", "layer": "tower"},
-					{"class": "ceramic", "layer": "tower"},
+					{"class": "ceramic", "layer": "tower", "properties": ["float to track"]},
+					{"class": "ceramic", "layer": "tower", "properties": ["float to track"]},
 				]
 			},
 			"queen": {

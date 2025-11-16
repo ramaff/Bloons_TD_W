@@ -42,6 +42,10 @@ if variable_struct_exists(bloon_stats, "float to track") {
 			instance_destroy(target)	
 		}
 	}
+} else if path_index == -1 and !instance_exists(target){
+	x = clamp(x, 0, 800)
+	y = clamp(y, 60, 540);
+	speed = 0;
 }
 
 if variable_struct_exists(bloon_stats, "freeze") {

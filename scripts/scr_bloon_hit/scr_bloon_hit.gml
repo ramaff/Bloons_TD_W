@@ -265,23 +265,26 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			_bloon.path_speed = _bloon.speed
 		}
 		if variable_struct_exists(_projectile_stats, "make_over") and !variable_struct_exists(_bloon.bloon_stats, "make_over") {
-			var _target_layer = _projectile_stats.targeting
-			var _class_stats = struct_get(global.bloon_stats, _class)
-			if variable_struct_exists(_class_stats, _target_layer) {
-				scr_bloon_stat_setup(_bloon, _class, _target_layer, _bloon.bloon_stats.path, _bloon.bloon_stats.properties, _bloon.bloon_stats.round, _xx, _yy)
-				path_position = _pos;
-				path_speed = _bloon.bloon_stats.speed;
-				speed = _bloon.bloon_stats.speed;
-				x = _xx
-				y = _yy
+			if _bloon.bloon_stats.big_bloon_tier <= 2 {
+				var _target_layer = _projectile_stats.targeting
+				var _class_stats = struct_get(global.bloon_stats, _class)
+				if variable_struct_exists(_class_stats, _target_layer) {
+					scr_bloon_stat_setup(_bloon, _class, _target_layer, _bloon.bloon_stats.path, _bloon.bloon_stats.properties, _bloon.bloon_stats.round, _xx, _yy)
 		
-				if instance_exists(target) {
-					target.path_position = _pos;
-					target.x = path_get_x(_bloon.bloon_stats.path, _pos);
-					target.y = path_get_y(_bloon.bloon_stats.path, _pos);
+					if instance_exists(target) {
+						target.path_position = _pos;
+						target.x = path_get_x(_bloon.bloon_stats.path, _pos);
+						target.y = path_get_y(_bloon.bloon_stats.path, _pos);
+					} else if path_index != -1 {
+						path_position = _pos;
+						path_speed = _bloon.bloon_stats.speed;
+						speed = _bloon.bloon_stats.speed;
+						x = _xx
+						y = _yy
+					}
 				}
+				variable_struct_set(_bloon.bloon_stats, "make_over", _target_layer)
 			}
-			variable_struct_set(_bloon.bloon_stats, "make_over", _target_layer)
 			// need to also set up the health if a bloon gets swapped (or not idk whatever)
 		}
 	}
@@ -336,9 +339,18 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		var _child_remaining_value = variable_struct_get(_resulting_bloons[_i], "remaining_value")
 		
 		var _bloon_object = scr_bloon_class_to_object(_child_class);
+		
+		var _child_path = _bloon.bloon_stats.path
+		if variable_struct_exists(_bloon.bloon_stats, "child_path") {
+			if _bloon.bloon_stats.child_path = -1 {
+				_child_path = global.paths[irandom(array_length(global.paths) - 1)]
+			} else {
+				_child_path = _bloon.child_path	
+			}
+		}
 
 		with instance_create_depth(_xx, _yy, depth, _bloon_object) {
-			scr_bloon_stat_setup(id, _child_class, _layer, _bloon.bloon_stats.path, _child_properties, _bloon.bloon_stats.round)
+			scr_bloon_stat_setup(id, _child_class, _layer, _child_path, _child_properties, _bloon.bloon_stats.round)
 			
 			path_position = _pos
 			if variable_struct_exists(_bloon.bloon_stats, "stay_floating") {

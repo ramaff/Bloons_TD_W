@@ -7,6 +7,7 @@ function scr_setup_tower_stats(){
 			tower_object: "obj_hero",
 			tower_sprite: "spr_jim",
 			butt_sprite: "spr_jim_hero_butt",
+			flavor_text: "The first monkey to wield darts against bloons.",
 			total_cost: 300,
 			upgrade_cost: 0,
 			range: 110,
@@ -268,7 +269,7 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Walk the Bloon",
-						upgrade_cost: 400
+						upgrade_cost: 450
 					},
 					{
 						keyword: "Around the World",
@@ -286,7 +287,7 @@ function scr_setup_tower_stats(){
 					},
 					{
 						keyword: "Hand Eye Coordination",
-						upgrade_cost: 400
+						upgrade_cost: 450
 					},
 					{
 						keyword: "Finishing Performance",
@@ -298,11 +299,11 @@ function scr_setup_tower_stats(){
 				[
 					{
 						keyword: "Hot Streak",
-						upgrade_cost: 2800
+						upgrade_cost: 3000
 					},
 					{
 						keyword: "Morningstar",
-						upgrade_cost: 7500
+						upgrade_cost: 8500
 					}
 				],
 				[
@@ -626,6 +627,8 @@ function scr_setup_tower_stats(){
 			upgrade_cost: 0,
 			range: 240,
 			delay: 210,
+			tower_base: true,
+			tower_base_sprite: "spr_assassin_monkey_base",
 			attack_cooldown: 0,
 			attack_barrages: 1,
 			barrage_count: 0,

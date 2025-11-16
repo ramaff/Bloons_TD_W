@@ -5,6 +5,3 @@
 
 // Inherit the parent event
 event_inherited();
-
-og_x = x;
-og_y = y;
