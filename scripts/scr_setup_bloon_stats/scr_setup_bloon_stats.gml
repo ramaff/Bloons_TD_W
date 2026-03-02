@@ -1950,6 +1950,7 @@ function scr_setup_bloon_stats(){
 			"big_bloon_tier": 7,
 			"beekeeper": {
 				sprite: "spr_bear_bloon",
+				specific_path: pth_the_forest_3,
 				layers: 6600,
 				rbe: 6600,
 				damage: 60,

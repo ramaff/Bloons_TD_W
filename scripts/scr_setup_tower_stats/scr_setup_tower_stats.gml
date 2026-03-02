@@ -832,12 +832,14 @@ function scr_setup_tower_stats(){
 			range: 160,
 			delay: 60,
 			attack_cooldown: 0,
+			camo_detection: true,
 	
 			projectile_stats: [
 				{
 					object: "obj_stick_to_tower_proj",
 					sprite: "spr_skateboard_monkey",
 					pierce: 1000000,
+					camo_detection: true,
 					damage: 1,
 					speed: 0,
 					lifespan: 9999

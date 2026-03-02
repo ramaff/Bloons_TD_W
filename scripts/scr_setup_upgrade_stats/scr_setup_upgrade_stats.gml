@@ -1319,6 +1319,7 @@ function scr_setup_upgrade_stats(){
 							{
 								sprite: "spr_banana_peel",
 								lead_hit: true,
+								camo_detection: true,
 								lifespan: 240,
 								speed: 0,
 								direction: 0,
@@ -1344,6 +1345,7 @@ function scr_setup_upgrade_stats(){
 						object: "obj_stick_to_tower_proj",
 						sprite: "spr_scooter_monkey",
 						pierce: 1000000,
+						camo_detection: true,
 						damage: 2,
 						speed: 0,
 						lifespan: 9999
@@ -1362,6 +1364,7 @@ function scr_setup_upgrade_stats(){
 							{
 								sprite: "spr_banana_peel",
 								lead_hit: true,
+								camo_detection: true,
 								lifespan: 240,
 								speed: 0,
 								direction: 0,
@@ -1379,6 +1382,7 @@ function scr_setup_upgrade_stats(){
 							{
 								sprite: "spr_bloon_on_fire",
 								lead_hit: true,
+								camo_detection: true,
 								lifespan: 36,
 								speed: 0,
 								direction: 0,
@@ -1396,6 +1400,7 @@ function scr_setup_upgrade_stats(){
 						object: "obj_stick_to_tower_proj",
 						sprite: "spr_skateboard_monkey",
 						lead_hit: true,
+						camo_detection: true,
 						pierce: 1000000,
 						damage: 3,
 						speed: 0,
