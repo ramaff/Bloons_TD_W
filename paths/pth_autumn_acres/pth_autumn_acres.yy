@@ -1,14 +1,14 @@
 {
-  "$GMPath": "",
-  "%Name": "pth_autumn_acres",
-  "closed": false,
-  "kind": 0,
-  "name": "pth_autumn_acres",
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
+  "$GMPath":"",
+  "%Name":"pth_autumn_acres",
+  "closed":false,
+  "kind":0,
+  "name":"pth_autumn_acres",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":-28.0,"y":370.0,},
     {"speed":100.0,"x":347.1443,"y":363.37973,},
     {"speed":100.0,"x":366.91382,"y":103.88075,},
@@ -20,7 +20,7 @@
     {"speed":100.0,"x":602.6132,"y":112.311615,},
     {"speed":100.0,"x":603.7154,"y":580.67834,},
   ],
-  "precision": 4,
-  "resourceType": "GMPath",
-  "resourceVersion": "2.0",
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

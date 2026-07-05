@@ -1,14 +1,14 @@
 {
-  "$GMPath": "",
-  "%Name": "pth_the_stronghold_knight",
-  "closed": false,
-  "kind": 0,
-  "name": "pth_the_stronghold_knight",
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
+  "$GMPath":"",
+  "%Name":"pth_the_stronghold_knight",
+  "closed":false,
+  "kind":0,
+  "name":"pth_the_stronghold_knight",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":-119.377045,"y":62.283707,},
     {"speed":100.0,"x":922.3768,"y":103.2262,},
     {"speed":100.0,"x":-118.14778,"y":138.61963,},
@@ -25,7 +25,7 @@
     {"speed":100.0,"x":926.53564,"y":555.4199,},
     {"speed":100.0,"x":-117.84451,"y":600.7399,},
   ],
-  "precision": 4,
-  "resourceType": "GMPath",
-  "resourceVersion": "2.0",
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

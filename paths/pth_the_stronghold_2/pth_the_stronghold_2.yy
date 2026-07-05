@@ -1,14 +1,14 @@
 {
-  "$GMPath": "",
-  "%Name": "pth_the_stronghold_2",
-  "closed": false,
-  "kind": 0,
-  "name": "pth_the_stronghold_2",
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
+  "$GMPath":"",
+  "%Name":"pth_the_stronghold_2",
+  "closed":false,
+  "kind":0,
+  "name":"pth_the_stronghold_2",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":678.0,"y":-4.0,},
     {"speed":100.0,"x":680.1096,"y":104.84612,},
     {"speed":100.0,"x":47.56732,"y":105.18842,},
@@ -19,7 +19,7 @@
     {"speed":100.0,"x":41.775024,"y":480.0384,},
     {"speed":100.0,"x":862.9173,"y":482.3807,},
   ],
-  "precision": 4,
-  "resourceType": "GMPath",
-  "resourceVersion": "2.0",
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

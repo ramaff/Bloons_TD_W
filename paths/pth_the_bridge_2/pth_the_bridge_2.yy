@@ -1,14 +1,14 @@
 {
-  "$GMPath": "",
-  "%Name": "pth_the_bridge_2",
-  "closed": false,
-  "kind": 1,
-  "name": "pth_the_bridge_2",
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
+  "$GMPath":"",
+  "%Name":"pth_the_bridge_2",
+  "closed":false,
+  "kind":1,
+  "name":"pth_the_bridge_2",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":-59.0,"y":270.0,},
     {"speed":100.0,"x":56.956833,"y":272.6422,},
     {"speed":100.0,"x":138.21783,"y":339.46838,},
@@ -20,7 +20,7 @@
     {"speed":100.0,"x":780.74097,"y":344.46838,},
     {"speed":100.0,"x":864.7412,"y":327.6858,},
   ],
-  "precision": 4,
-  "resourceType": "GMPath",
-  "resourceVersion": "2.0",
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

@@ -1,14 +1,14 @@
 {
-  "$GMPath": "",
-  "%Name": "pth_desert_road_2",
-  "closed": false,
-  "kind": 1,
-  "name": "pth_desert_road_2",
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
+  "$GMPath":"",
+  "%Name":"pth_desert_road_2",
+  "closed":false,
+  "kind":1,
+  "name":"pth_desert_road_2",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":867.0,"y":329.0,},
     {"speed":100.0,"x":661.6902,"y":300.45068,},
     {"speed":100.0,"x":626.0141,"y":259.25354,},
@@ -20,7 +20,7 @@
     {"speed":100.0,"x":170.81693,"y":313.12677,},
     {"speed":100.0,"x":-60.422546,"y":346.57745,},
   ],
-  "precision": 4,
-  "resourceType": "GMPath",
-  "resourceVersion": "2.0",
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

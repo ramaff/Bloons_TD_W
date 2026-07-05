@@ -1,14 +1,14 @@
 {
-  "$GMPath": "",
-  "%Name": "pth_training_room",
-  "closed": false,
-  "kind": 1,
-  "name": "pth_training_room",
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
+  "$GMPath":"",
+  "%Name":"pth_training_room",
+  "closed":false,
+  "kind":1,
+  "name":"pth_training_room",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":-27.0,"y":161.0,},
     {"speed":100.0,"x":223.5,"y":167.5,},
     {"speed":100.0,"x":296.0,"y":243.0,},
@@ -23,7 +23,7 @@
     {"speed":100.0,"x":186.84091,"y":460.31818,},
     {"speed":100.0,"x":-56.0,"y":469.0,},
   ],
-  "precision": 4,
-  "resourceType": "GMPath",
-  "resourceVersion": "2.0",
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

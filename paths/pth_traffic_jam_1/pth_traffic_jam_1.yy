@@ -1,14 +1,14 @@
 {
-  "$GMPath": "",
-  "%Name": "pth_traffic_jam_1",
-  "closed": false,
-  "kind": 0,
-  "name": "pth_traffic_jam_1",
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
+  "$GMPath":"",
+  "%Name":"pth_traffic_jam_1",
+  "closed":false,
+  "kind":0,
+  "name":"pth_traffic_jam_1",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":-61.0,"y":373.25,},
     {"speed":100.0,"x":94.0,"y":380.0,},
     {"speed":100.0,"x":101.0,"y":256.0,},
@@ -22,7 +22,7 @@
     {"speed":100.0,"x":719.0,"y":239.0,},
     {"speed":100.0,"x":862.0,"y":238.0,},
   ],
-  "precision": 4,
-  "resourceType": "GMPath",
-  "resourceVersion": "2.0",
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

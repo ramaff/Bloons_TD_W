@@ -1,21 +1,21 @@
 {
-  "$GMPath": "",
-  "%Name": "pth_the_forest_1",
-  "closed": false,
-  "kind": 0,
-  "name": "pth_the_forest_1",
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
+  "$GMPath":"",
+  "%Name":"pth_the_forest_1",
+  "closed":false,
+  "kind":0,
+  "name":"pth_the_forest_1",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":114.0,"y":600.0,},
     {"speed":100.0,"x":116.0,"y":314.0,},
     {"speed":100.0,"x":299.0,"y":315.0,},
     {"speed":100.0,"x":298.0,"y":482.0,},
     {"speed":100.0,"x":860.0,"y":485.0,},
   ],
-  "precision": 4,
-  "resourceType": "GMPath",
-  "resourceVersion": "2.0",
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

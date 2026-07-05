@@ -1,14 +1,14 @@
 {
-  "$GMPath": "",
-  "%Name": "pth_parade_2",
-  "closed": false,
-  "kind": 0,
-  "name": "pth_parade_2",
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
+  "$GMPath":"",
+  "%Name":"pth_parade_2",
+  "closed":false,
+  "kind":0,
+  "name":"pth_parade_2",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":-59.0,"y":422.0,},
     {"speed":100.0,"x":122.0,"y":421.0,},
     {"speed":100.0,"x":122.0,"y":176.0,},
@@ -22,7 +22,7 @@
     {"speed":100.0,"x":711.69635,"y":182.87595,},
     {"speed":100.0,"x":866.69635,"y":182.87595,},
   ],
-  "precision": 4,
-  "resourceType": "GMPath",
-  "resourceVersion": "2.0",
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

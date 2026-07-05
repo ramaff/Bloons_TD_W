@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"Bloons_TD_W",
+  "%Name":"Bloons_TD_W_0.6.1",
   "AudioGroups":[
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -90,9 +90,9 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.14.2.213",
   },
-  "name":"Bloons_TD_W",
+  "name":"Bloons_TD_W_0.6.1",
   "resources":[
     {"id":{"name":"fnt_oetztype","path":"fonts/fnt_oetztype/fnt_oetztype.yy",},},
     {"id":{"name":"obj_after_image","path":"objects/obj_after_image/obj_after_image.yy",},},
