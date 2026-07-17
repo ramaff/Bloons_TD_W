@@ -8,6 +8,6 @@ function scr_setup_global_vars(){
 
 	global.bloon_stats = scr_setup_bloon_stats();
 	
-	global.mission_unlocks = scr_setup_mission_unlocks();
+	global.mission_unlocks = scr_import_json("mission_info.json", json_parse);
 
 }
