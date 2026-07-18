@@ -56,6 +56,22 @@
         "added_cash": 500,
         "difficulty": "advanced"
     },
+    "rm_zen_garden": {
+        "towers": ["green_monkey"],
+        "added_cash": 400,
+        "difficulty": "intermediate"
+    },
+    "rm_snow_field": {
+        "towers": ["ice_monkey"],
+        "added_cash": 400,
+        "difficulty": "intermediate"
+    },
+    "rm_abandoned_house_on_the_hill": {
+        "towers": [],
+        "heroes": [],
+        "added_cash": 0,
+        "difficulty": "advanced"
+    },
     "rm_wall_street": {
         "towers": ["bongo_monkey"],
         "added_cash": 600,
@@ -65,6 +81,12 @@
         "heroes": ["angry_squirrel"],
         "paths": [{"angry_squirrel": ["Tree Tosser"]}],
         "added_cash": 600,
-        "difficulty": "advanced"
+        "difficulty": "expert"
+    },
+    "rm_rubber_valley": {
+        "heroes": ["clown_monkey"],
+        "paths": [{"clown_monkey": ["Triple Shot Bloons"]}],
+        "added_cash": 600,
+        "difficulty": "expert"
     }
 }
