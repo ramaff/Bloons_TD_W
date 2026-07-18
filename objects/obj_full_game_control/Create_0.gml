@@ -55,6 +55,22 @@ global.missions_complete = {
 	"the_high_court": {
 		"complete": false,
 		"best_time": 999999	
+	},
+	"zen_garden": {
+		"complete": false,
+		"best_time": 999999	
+	},
+	"snow_field": {
+		"complete": false,
+		"best_time": 999999	
+	},
+	"abandoned_house_on_the_hill": {
+		"complete": false,
+		"best_time": 999999	
+	},
+	"rubber_valley": {
+		"complete": false,
+		"best_time": 999999	
 	}
 }
 

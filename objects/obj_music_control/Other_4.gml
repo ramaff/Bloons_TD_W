@@ -6,7 +6,7 @@ var _song = snd_letter_from_tim;
 if room = rm_game_start {
 	_song = snd_letter_from_tim
 }
-if room = rm_world_1_map || room = rm_world_1_5_map || room = rm_world_2_map || room = rm_world_2_5_map {
+if room = rm_world_1_map || room = rm_world_1b_map || room = rm_world_1_5_map || room = rm_world_2_map || room = rm_world_2_5_map {
 	_song = snd_world_map
 }
 if room = rm_world_3_map {

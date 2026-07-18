@@ -31,7 +31,7 @@ tracks_info = {
 		"paths": [pth_parade_1, pth_parade_2],
 		"round_data": "parade_rounds.json",
 		"name": "parade",
-		"requirement": "autumn_acres"
+		"requirement": "training_room"
 	},
 	"rm_the_bridge": {
 		"paths": [pth_the_bridge_1, pth_the_bridge_2],
