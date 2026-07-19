@@ -12,6 +12,13 @@ if room = rm_world_1_map || room = rm_world_1b_map || room = rm_world_1_5_map ||
 if room = rm_world_3_map {
 	_song = snd_world_map_2
 }
+if room = rm_menu {
+	if global.previous_room == rm_world_3_map {
+		_song = snd_world_map_2	
+	} else {
+		_song = snd_world_map
+	}
+}
 if room = rm_training_room {
 	_song = snd_training_room
 }

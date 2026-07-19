@@ -1,0 +1,1 @@
+y = lerp(y, start_y, 0.1)

@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+global.previous_room = rm_world_1_map
+
 var _heroes_selected_amt = array_length(global.heroes_progress.selected)
 var _towers_selected_amt = array_length(global.towers_progress.selected)
 

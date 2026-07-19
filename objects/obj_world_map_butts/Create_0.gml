@@ -1,0 +1,5 @@
+instance_create_depth(x, y, depth, obj_world_map_butt)
+instance_create_depth(x+64, y, depth, obj_tower_menu_butt)
+instance_create_depth(x+128, y, depth, obj_bloon_menu_butt)
+instance_create_depth(x+192, y, depth, obj_settings_menu_butt)
+instance_create_depth(x+256, y, depth, obj_credits_menu_butt)
