@@ -1,0 +1,1 @@
+icon_sprite = spr_menu_item_icon

@@ -283,6 +283,7 @@
     {"id":{"name":"obj_world_map_butts","path":"objects/obj_world_map_butts/obj_world_map_butts.yy",},},
     {"id":{"name":"obj_world_map_changer","path":"objects/obj_world_map_changer/obj_world_map_changer.yy",},},
     {"id":{"name":"obj_world_map_control","path":"objects/obj_world_map_control/obj_world_map_control.yy",},},
+    {"id":{"name":"obj_world_map_menu_control","path":"objects/obj_world_map_menu_control/obj_world_map_menu_control.yy",},},
     {"id":{"name":"obj_world_map_menu_parent","path":"objects/obj_world_map_menu_parent/obj_world_map_menu_parent.yy",},},
     {"id":{"name":"obj_world_map_note","path":"objects/obj_world_map_note/obj_world_map_note.yy",},},
     {"id":{"name":"obj_yoyo","path":"objects/obj_yoyo/obj_yoyo.yy",},},
