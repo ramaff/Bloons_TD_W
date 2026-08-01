@@ -6,8 +6,8 @@
   "name":"obj_menu_button_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu UI",
-    "path":"folders/Objects/Menu UI.yy",
+    "name":"Mission UI",
+    "path":"folders/Objects/Mission UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,

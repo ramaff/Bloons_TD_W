@@ -9,8 +9,8 @@
   "name":"obj_law_icon",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu UI",
-    "path":"folders/Objects/Menu UI.yy",
+    "name":"Mission UI",
+    "path":"folders/Objects/Mission UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,

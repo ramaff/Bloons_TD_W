@@ -13,8 +13,8 @@
   "name":"obj_sell_butt",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu UI",
-    "path":"folders/Objects/Menu UI.yy",
+    "name":"Mission UI",
+    "path":"folders/Objects/Mission UI.yy",
   },
   "parentObjectId":{
     "name":"obj_upgrade_butt",

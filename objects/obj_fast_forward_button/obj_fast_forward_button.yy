@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"settings",
-    "path":"folders/Objects/Menu UI/settings.yy",
+    "path":"folders/Objects/Mission UI/settings.yy",
   },
   "parentObjectId":{
     "name":"obj_menu_button_parent",

@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cancel_tower",
+  "%Name":"obj_menu_info_page",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_cancel_tower",
+  "name":"obj_menu_info_page",
   "overriddenProperties":[],
   "parent":{
-    "name":"Mission UI",
-    "path":"folders/Objects/Mission UI.yy",
+    "name":"World Map Menus",
+    "path":"folders/Objects/World Map Menus.yy",
   },
-  "parentObjectId":{
-    "name":"obj_menu_button_parent",
-    "path":"objects/obj_menu_button_parent/obj_menu_button_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cancel_tower",
-    "path":"sprites/spr_cancel_tower/spr_cancel_tower.yy",
+    "name":"spr_menu_info_page",
+    "path":"sprites/spr_menu_info_page/spr_menu_info_page.yy",
   },
   "spriteMaskId":null,
   "visible":true,

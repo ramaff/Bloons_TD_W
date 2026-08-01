@@ -8,8 +8,8 @@
   "name":"obj_world_map_butt",
   "overriddenProperties":[],
   "parent":{
-    "name":"menus",
-    "path":"folders/Objects/World Map/menus.yy",
+    "name":"World Map Menus",
+    "path":"folders/Objects/World Map Menus.yy",
   },
   "parentObjectId":{
     "name":"obj_world_map_menu_parent",

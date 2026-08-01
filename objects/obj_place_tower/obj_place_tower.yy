@@ -12,8 +12,8 @@
   "name":"obj_place_tower",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu UI",
-    "path":"folders/Objects/Menu UI.yy",
+    "name":"Mission UI",
+    "path":"folders/Objects/Mission UI.yy",
   },
   "parentObjectId":{
     "name":"obj_menu_button_parent",

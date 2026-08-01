@@ -10,6 +10,11 @@ _ind = array_get_index(_heroes, "selected")
 array_delete(_heroes, _ind, 1)
 var _tower_count = array_length(_towers)
 
+// create 16 buttons
+// if an entry is bigger than 1x1, then only the leftmost button has a sprite and is selectable for those coords
+// when scrolling update the entry of the buttons by sliding the window
+// don't delete or move the buttons
+
 var _m = 2
 var _n = 2
 
@@ -20,6 +25,11 @@ for (var _i = 0; _i < _m; _i++) {
 		with instance_create_depth(16 + (160 * _i), 96 + (80 * _j), depth, obj_menu_info_butt) {
 			sprite_index = asset_get_index(_hero.butt_sprite)
 			icon_sprite = sprite_index
+			_entry_text = "something"
+			if variable_struct_exists(_hero, "flavor_text") {
+				_entry_text = _hero.flavor_text
+			}
+			entry_text = _entry_text
 		}
 	}
 }
@@ -36,6 +46,11 @@ for (var _i = 0; _i < _m; _i++) {
 			with instance_create_depth(16 + (80 * _i), 256 + (80 * _j), depth, obj_menu_info_butt) {
 				sprite_index = asset_get_index(_tower.butt_sprite)
 				icon_sprite = sprite_index
+				_entry_text = "something"
+				if variable_struct_exists(_tower, "flavor_text") {
+					_entry_text = _tower.flavor_text
+				}
+				entry_text = _entry_text
 			}
 		}
 	}
