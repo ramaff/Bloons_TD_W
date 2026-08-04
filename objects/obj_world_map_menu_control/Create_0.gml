@@ -25,10 +25,11 @@ for (var _i = 0; _i < _m; _i++) {
 		with instance_create_depth(16 + (160 * _i), 96 + (80 * _j), depth, obj_menu_info_butt) {
 			sprite_index = asset_get_index(_hero.butt_sprite)
 			icon_sprite = sprite_index
-			_entry_text = "something"
+			var _entry_text = "something"
 			if variable_struct_exists(_hero, "flavor_text") {
 				_entry_text = _hero.flavor_text
 			}
+			entry_sprite = asset_get_index(_hero.tower_sprite)
 			entry_text = _entry_text
 		}
 	}
@@ -46,11 +47,14 @@ for (var _i = 0; _i < _m; _i++) {
 			with instance_create_depth(16 + (80 * _i), 256 + (80 * _j), depth, obj_menu_info_butt) {
 				sprite_index = asset_get_index(_tower.butt_sprite)
 				icon_sprite = sprite_index
-				_entry_text = "something"
+				var _entry_text = "something"
 				if variable_struct_exists(_tower, "flavor_text") {
 					_entry_text = _tower.flavor_text
 				}
+				entry_sprite = asset_get_index(_tower.tower_sprite)
 				entry_text = _entry_text
+				tower_stats = _tower
+				upgrade_stats = variable_struct_get(global.upgrade_stats, _tower_name)
 			}
 		}
 	}
