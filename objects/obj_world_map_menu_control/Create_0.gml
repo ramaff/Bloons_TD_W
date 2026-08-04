@@ -31,6 +31,8 @@ for (var _i = 0; _i < _m; _i++) {
 			}
 			entry_sprite = asset_get_index(_hero.tower_sprite)
 			entry_text = _entry_text
+			tower_stats = _hero
+			upgrade_stats = variable_struct_get(global.upgrade_stats, _hero_name)
 		}
 	}
 }
