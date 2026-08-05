@@ -1,0 +1,26 @@
+var _classes = struct_get_names(global.bloon_stats)
+
+var _m = 4
+var _n = 4
+var _ind;
+
+for (var _i = 0; _i < _m; _i++) {
+	for (var _j = 0; _j < _n; _j++) {
+		_ind = (_i * 3) + _j
+		if _ind < array_length(_classes) {
+			var _class_name = _classes[(_i * 3) + _j]
+			var _class = struct_get(global.bloon_stats, _class_name)
+			show_debug_message(_class_name)
+			show_debug_message(_class)
+			with instance_create_depth(16 + (80 * _i), 256 + (80 * _j), depth, obj_menu_info_butt) {
+				sprite_index = spr_menu_item_icon
+				var _entry_text = "something"
+				if variable_struct_exists(_class, "flavor_text") {
+					_entry_text = _class.flavor_text
+				}
+				entry_sprite = asset_get_index(_class.sprite)
+				entry_text = _entry_text
+			}
+		}
+	}
+}

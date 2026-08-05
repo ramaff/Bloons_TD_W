@@ -376,6 +376,7 @@ function scr_setup_bloon_stats(){
 			}
 		},
 		"static": {
+			"sprite": "spr_red_static_bloon",
 			"object": "obj_static_bloon",
 			"properties": ["shielded"],
 			"red": {
@@ -858,6 +859,7 @@ function scr_setup_bloon_stats(){
 			}
 		},
 		"ceramic": {
+			sprite: "spr_ceramic_bloon",
 			"object": "obj_ceramic_class",
 			"ceramic": {
 				sprite: "spr_ceramic_bloon",
@@ -944,6 +946,7 @@ function scr_setup_bloon_stats(){
 			}
 		},
 		"moab": {
+			sprite: "spr_moab",
 			"object": "obj_moab_class",
 			"mini": {
 				sprite: "spr_mini_moab",
@@ -1151,6 +1154,7 @@ function scr_setup_bloon_stats(){
 			}
 		},
 		"bully": {
+			sprite: "spr_bully_bloon",
 			"object": "obj_bully",
 			"bully": {
 				sprite: "spr_bully_bloon",
@@ -1752,6 +1756,7 @@ function scr_setup_bloon_stats(){
 			}
 		},
 		"clown": {
+			"sprite": "spr_special_deliveries_moab",
 			"tack": {
 				"sprite": "spr_tack_bloon",
 				"object": "obj_tack_bloon",
@@ -1811,6 +1816,7 @@ function scr_setup_bloon_stats(){
 			},
 		},
 		"bee": {
+			"sprite": "spr_bee_bloon",
 			"object": "obj_bee_bloon",
 			"big_bloon_tier": 1,
 			"height": 5,
@@ -1845,6 +1851,7 @@ function scr_setup_bloon_stats(){
 		},
 		"bloom": {
 			"object": "obj_bloom_bloon",
+			sprite: "spr_bloom_bloon",
 			"big_bloon_tier": 1,
 			"height": 5,
 			"bloom": {
@@ -1880,6 +1887,7 @@ function scr_setup_bloon_stats(){
 		},
 		"pot": {
 			"object": "obj_pot_ceramic",
+			sprite: "spr_pot_ceramic_bloon",
 			"ceramic": {
 				sprite: "spr_pot_ceramic_bloon",
 				layers: 27,
@@ -1911,6 +1919,7 @@ function scr_setup_bloon_stats(){
 		},
 		"beehive": {
 			"object": "obj_beehive_bloon",
+			sprite: "spr_beehive_bloon",
 			"big_bloon_tier": 3,
 			"bee": {
 				sprite: "spr_beehive_bloon",
@@ -1947,6 +1956,7 @@ function scr_setup_bloon_stats(){
 		},
 		"bear": {
 			"object": "obj_bear_bloon",
+			sprite: "spr_bear_bloon",
 			"big_bloon_tier": 7,
 			"beekeeper": {
 				sprite: "spr_bear_bloon",
@@ -1961,6 +1971,7 @@ function scr_setup_bloon_stats(){
 		},
 		"wizard": {
 			"object": "obj_wizard_bloon",
+			sprite: "spr_wizard_bloon",
 			"big_bloon_tier": 6,
 			"blue": {
 				sprite: "spr_wizard_bloon",
@@ -1974,6 +1985,7 @@ function scr_setup_bloon_stats(){
 		},
 		"rune": {
 			"object": "obj_rune_bloon",
+			sprite: "spr_rune_bloon",
 			"big_bloon_tier": 1,
 			"height": 5,
 			"rune": {
@@ -2142,6 +2154,7 @@ function scr_setup_bloon_stats(){
 			}	
 		},
 		"catapult": {
+			sprite: "spr_catapult_bloon",
 			"ceramic": {
 				"object": "obj_catapult_bloon",
 				sprite: "spr_catapult_bloon",
@@ -2163,6 +2176,7 @@ function scr_setup_bloon_stats(){
 		},
 		"monster_truck": {
 			"object": "obj_monster_truck",
+			sprite: "spr_monster_truck",
 			"big_bloon_tier": 6,
 			"bfb": {
 				sprite: "spr_monster_truck",
@@ -2175,6 +2189,7 @@ function scr_setup_bloon_stats(){
 			}
 		},
 		"patrol": {
+			"sprite": "spr_patrol_bloon",
 			"normal": {
 				"sprite": "spr_patrol_bloon",
 				"object": "obj_patrol_bloon",
@@ -2199,6 +2214,7 @@ function scr_setup_bloon_stats(){
 			}
 		},
 		"traffic cop": {
+			sprite: "spr_traffic_cop_bloon",
 			"blue": {
 				sprite: "spr_traffic_cop_bloon",
 				"object": "obj_traffic_cop_bloon",
@@ -2213,6 +2229,7 @@ function scr_setup_bloon_stats(){
 			}
 		},
 		"buisness": {
+			sprite: "spr_buisness_bloon",
 			"blue": {
 				sprite: "spr_buisness_bloon",
 				"object": "obj_buisness_bloon",
@@ -2237,6 +2254,7 @@ function scr_setup_bloon_stats(){
 			}
 		},
 		"real_estate": {
+			sprite: "spr_real_estate_bloon",
 			"red": {
 				sprite: "spr_real_estate_bloon",
 				"object": "obj_real_estate_bloon",
@@ -2261,6 +2279,7 @@ function scr_setup_bloon_stats(){
 			}
 		},
 		"lawyer": {
+			sprite: "spr_lawyer_bloon",
 			"red": {
 				sprite: "spr_lawyer_bloon",
 				"object": "obj_lawyer_bloon",
