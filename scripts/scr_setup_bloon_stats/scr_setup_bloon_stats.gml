@@ -2155,6 +2155,7 @@ function scr_setup_bloon_stats(){
 		},
 		"catapult": {
 			sprite: "spr_catapult_bloon",
+			"icon_sprite": "spr_catapult_bloon_icon",
 			"ceramic": {
 				"object": "obj_catapult_bloon",
 				sprite: "spr_catapult_bloon",
@@ -2177,6 +2178,7 @@ function scr_setup_bloon_stats(){
 		"monster_truck": {
 			"object": "obj_monster_truck",
 			sprite: "spr_monster_truck",
+			"icon_sprite": "spr_non_specified_bounty_icon",
 			"big_bloon_tier": 6,
 			"bfb": {
 				sprite: "spr_monster_truck",
