@@ -41,9 +41,9 @@ _n = 4
 
 for (var _i = 0; _i < _m; _i++) {
 	for (var _j = 0; _j < _n; _j++) {
-		_ind = (_i * 3) + _j
+		_ind = (_j * _m) + _i
 		if _ind < array_length(_towers) {
-			var _tower_name = _towers[(_i * 3) + _j]
+			var _tower_name = _towers[(_j * _m) + _i]
 			var _tower = struct_get(global.tower_stats, _tower_name)
 			with instance_create_depth(16 + (80 * _i), 256 + (80 * _j), depth, obj_menu_info_butt) {
 				sprite_index = asset_get_index(_tower.butt_sprite)

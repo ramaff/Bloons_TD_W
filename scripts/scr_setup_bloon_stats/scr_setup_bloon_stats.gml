@@ -290,6 +290,7 @@ function scr_setup_bloon_stats(){
 			},
 		},
 		"lead": {
+			"sprite": "spr_lead_bloon",
 			"properties": [
 				"metallic"
 			],
@@ -1155,6 +1156,7 @@ function scr_setup_bloon_stats(){
 		},
 		"bully": {
 			sprite: "spr_bully_bloon",
+			"icon_sprite": "spr_non_specified_bounty_icon",
 			"object": "obj_bully",
 			"bully": {
 				sprite: "spr_bully_bloon",
@@ -1399,6 +1401,7 @@ function scr_setup_bloon_stats(){
 		},
 		"tack_the_ripper": {
 			"object": "obj_tack_the_ripper",
+			"icon_sprite": "spr_non_specified_bounty_icon",
 			"red": {
 				sprite: "spr_tack_the_ripper",
 				layers: 1500,
@@ -1422,6 +1425,7 @@ function scr_setup_bloon_stats(){
 		},
 		"frankensteins_bloon": {
 			"object": "obj_frankensteins_bloon",
+			"icon_sprite": "spr_non_specified_bounty_icon",
 			"green": {
 				sprite: "spr_frankensteins_bloon",
 				"big_bloon_tier": 4,
@@ -1654,6 +1658,7 @@ function scr_setup_bloon_stats(){
 		},
 		"the_party_tank": {
 			"object": "obj_the_party_tank",
+			"icon_sprite": "spr_non_specified_bounty_icon",
 			"big_bloon_tier": 7,
 			"the_party_tank": {
 				sprite: "spr_the_party_tank",
@@ -1667,6 +1672,7 @@ function scr_setup_bloon_stats(){
 		},
 		"moaby_dick": {
 			"object": "obj_moaby_dick",
+			"icon_sprite": "spr_non_specified_bounty_icon",
 			"big_bloon_tier": 7,
 			"mini": {
 				sprite: "spr_moaby_dick",
@@ -1956,6 +1962,7 @@ function scr_setup_bloon_stats(){
 		},
 		"bear": {
 			"object": "obj_bear_bloon",
+			"icon_sprite": "spr_non_specified_bounty_icon",
 			sprite: "spr_bear_bloon",
 			"big_bloon_tier": 7,
 			"beekeeper": {
@@ -1971,6 +1978,7 @@ function scr_setup_bloon_stats(){
 		},
 		"wizard": {
 			"object": "obj_wizard_bloon",
+			"icon_sprite": "spr_non_specified_bounty_icon",
 			sprite: "spr_wizard_bloon",
 			"big_bloon_tier": 6,
 			"blue": {
@@ -2062,6 +2070,7 @@ function scr_setup_bloon_stats(){
 		},
 		"chess": {
 			"damage_keys": ["chess_board"],
+			"icon_sprite": "spr_non_specified_bounty_icon",
 			"pawn": {
 				"object": "obj_pawn_chess_bloon",
 				"big_bloon_tier": 3,
@@ -2217,6 +2226,7 @@ function scr_setup_bloon_stats(){
 		},
 		"traffic cop": {
 			sprite: "spr_traffic_cop_bloon",
+			"icon_sprite": "spr_non_specified_bounty_icon",
 			"blue": {
 				sprite: "spr_traffic_cop_bloon",
 				"object": "obj_traffic_cop_bloon",
@@ -2232,6 +2242,7 @@ function scr_setup_bloon_stats(){
 		},
 		"buisness": {
 			sprite: "spr_buisness_bloon",
+			"icon_sprite": "spr_non_specified_bounty_icon",
 			"blue": {
 				sprite: "spr_buisness_bloon",
 				"object": "obj_buisness_bloon",
@@ -2257,6 +2268,7 @@ function scr_setup_bloon_stats(){
 		},
 		"real_estate": {
 			sprite: "spr_real_estate_bloon",
+			"icon_sprite": "spr_non_specified_bounty_icon",
 			"red": {
 				sprite: "spr_real_estate_bloon",
 				"object": "obj_real_estate_bloon",
@@ -2282,6 +2294,7 @@ function scr_setup_bloon_stats(){
 		},
 		"lawyer": {
 			sprite: "spr_lawyer_bloon",
+			"icon_sprite": "spr_non_specified_bounty_icon",
 			"red": {
 				sprite: "spr_lawyer_bloon",
 				"object": "obj_lawyer_bloon",

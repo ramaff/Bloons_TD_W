@@ -139,6 +139,7 @@
     {"id":{"name":"obj_coming_btdx2_afterwards_control","path":"objects/obj_coming_btdx2_afterwards_control/obj_coming_btdx2_afterwards_control.yy",},},
     {"id":{"name":"obj_control_parent","path":"objects/obj_control_parent/obj_control_parent.yy",},},
     {"id":{"name":"obj_credits_menu_butt","path":"objects/obj_credits_menu_butt/obj_credits_menu_butt.yy",},},
+    {"id":{"name":"obj_credits_menu","path":"objects/obj_credits_menu/obj_credits_menu.yy",},},
     {"id":{"name":"obj_damage_dealer","path":"objects/obj_damage_dealer/obj_damage_dealer.yy",},},
     {"id":{"name":"obj_deflation_bloon","path":"objects/obj_deflation_bloon/obj_deflation_bloon.yy",},},
     {"id":{"name":"obj_desert_road_button","path":"objects/obj_desert_road_button/obj_desert_road_button.yy",},},
