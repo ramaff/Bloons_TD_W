@@ -12,5 +12,7 @@ text = [
 	"Thanks for coming to the training room, have fun!"
 ]
 page = 0;
-
+mission = global.mission
+key = "0"
+icon = noone;
 

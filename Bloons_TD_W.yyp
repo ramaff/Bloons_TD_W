@@ -365,6 +365,7 @@
     {"id":{"name":"scr_clown_monkey_scripts","path":"scripts/scr_clown_monkey_scripts/scr_clown_monkey_scripts.yy",},},
     {"id":{"name":"scr_converge","path":"scripts/scr_converge/scr_converge.yy",},},
     {"id":{"name":"scr_copy_backup_to_save","path":"scripts/scr_copy_backup_to_save/scr_copy_backup_to_save.yy",},},
+    {"id":{"name":"scr_create_note","path":"scripts/scr_create_note/scr_create_note.yy",},},
     {"id":{"name":"scr_create_tower_buttons","path":"scripts/scr_create_tower_buttons/scr_create_tower_buttons.yy",},},
     {"id":{"name":"scr_create_tower_projectiles","path":"scripts/scr_create_tower_projectiles/scr_create_tower_projectiles.yy",},},
     {"id":{"name":"scr_create_tower","path":"scripts/scr_create_tower/scr_create_tower.yy",},},
