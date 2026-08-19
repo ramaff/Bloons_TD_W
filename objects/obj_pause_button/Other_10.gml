@@ -1,5 +1,12 @@
 
 if !paused {
+	scr_pause()
+} else {
+	scr_unpause()
+}
+
+/*
+if !paused {
 	instance_deactivate_all(true)
 	instance_activate_object(obj_menu_button_parent)
 	instance_activate_object(obj_tutorial_note)

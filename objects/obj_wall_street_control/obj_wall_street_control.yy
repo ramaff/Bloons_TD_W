@@ -13,7 +13,10 @@
     "name":"Controllers",
     "path":"folders/Objects/Controllers.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_in_mission_controllers",
+    "path":"objects/obj_in_mission_controllers/obj_in_mission_controllers.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

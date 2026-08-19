@@ -17,8 +17,8 @@
     "path":"folders/Objects/Controllers.yy",
   },
   "parentObjectId":{
-    "name":"obj_control_parent",
-    "path":"objects/obj_control_parent/obj_control_parent.yy",
+    "name":"obj_in_mission_controllers",
+    "path":"objects/obj_in_mission_controllers/obj_in_mission_controllers.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_round_check",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_in_mission_controllers",
+  "eventList":[],
   "managed":true,
-  "name":"obj_round_check",
+  "name":"obj_in_mission_controllers",
   "overriddenProperties":[],
   "parent":{
     "name":"Controllers",
     "path":"folders/Objects/Controllers.yy",
   },
   "parentObjectId":{
-    "name":"obj_in_mission_controllers",
-    "path":"objects/obj_in_mission_controllers/obj_in_mission_controllers.yy",
+    "name":"obj_control_parent",
+    "path":"objects/obj_control_parent/obj_control_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

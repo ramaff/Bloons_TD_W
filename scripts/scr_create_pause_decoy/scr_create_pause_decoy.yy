@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_create_pause_decoy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_create_pause_decoy",
+  "parent":{
+    "name":"misc",
+    "path":"folders/Scripts/misc.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
