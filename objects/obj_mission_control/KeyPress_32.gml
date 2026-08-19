@@ -27,3 +27,5 @@ with instance_create_depth(x, y, depth, obj_round_check) {
 	round_number = global.round;
 	alarm[0] = other.round_properties[global.round - 1].sends_end_time;
 }
+
+event_user(0)

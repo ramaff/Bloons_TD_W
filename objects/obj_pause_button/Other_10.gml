@@ -2,6 +2,7 @@
 if !paused {
 	instance_deactivate_all(true)
 	instance_activate_object(obj_menu_button_parent)
+	instance_activate_object(obj_tutorial_note)
 	
 	pause_surf = surface_create(960, 540)
 	surface_set_target(pause_surf)

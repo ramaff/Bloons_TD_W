@@ -58,6 +58,7 @@ if !_bloons_remaining and global.round < array_length(global.bloon_sends) {
 				alarm[0] = other.round_properties[global.round - 1].sends_end_time;
 			}
 		}
+		event_user(0)
 	}
 }
 

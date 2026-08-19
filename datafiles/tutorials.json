@@ -11,6 +11,17 @@
                 "You can also buy upgrades with the hot keys 'z', 'x', and 'c'. These correspond to the top to bottom upgrade paths.",
                 "Thanks for coming to the training room, have fun!"
             ]
+        },
+        "5": {
+            "text": [
+                "Every 5th round will be particularly hard, so stay alert."
+            ]
+        },
+        "15": {
+            "text": [
+                "A boss is spawning, use it for target practice.",
+                "When bloons reach the end of the track, they do a set amount of damage and then loop back around to the start of the track."
+            ]
         }
     }
 }
