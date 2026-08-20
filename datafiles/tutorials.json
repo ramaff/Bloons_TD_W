@@ -161,28 +161,180 @@
         }
     },
     "the_bridge": {
-
+        "3": {
+            "icon": "spr_water_bloon",
+            "text": [
+                "Water Bloons shoot out water when popped that push projectiles away."
+            ]
+        },
+        "30": {
+            "icon": "spr_non_specified_bounty_icon",
+            "text": [
+                "On the horizon... It's MOAB-y Dick!"
+            ]
+        }
     },
     "the_forest": {
-
+        "5": {
+            "icon": "spr_bee_bloon",
+            "text": [
+                "Bee Bloons buzz around instead of moving directly on the track."
+            ]
+        },
+        "7": {
+            "icon": "spr_bloom_bloon",
+            "text": [
+                "Bloom Bloons create beautiful flower arrangements when popped."
+            ]
+        },
+        "10": {
+            "icon": "spr_camo_bloon",
+            "text": [
+                "Camo Bloons sneak by and are not targetable while other bloons are in range."
+            ]
+        },
+        "45": {
+            "icon": "spr_non_specified_bounty_icon",
+            "text": [
+                "You have alerted the Beekeeper."
+            ]
+        }
     },
     "tower_defense": {
-
+        "10": {
+            "icon": "spr_rune_bloon",
+            "text": [
+                "Rune Bloons are protected by a magic shield with 10 density."
+            ]
+        },
+        "25": {
+            "icon": "spr_tower_icon",
+            "text": [
+                "Tower Bloons take 150 hits to pop, and drop 2 bricks."
+            ]
+        },
+        "30": {
+            "icon": "spr_hta_icon",
+            "text": [
+                "HTAs take 60 hits to pop, and have 10 density."
+            ]
+        },
+        "35": {
+            "icon": "spr_non_specified_bounty_icon",
+            "text": [
+                "The wizard of this tower is heading out."
+            ]
+        }
     },
     "the_stronghold": {
-
+        "0": {
+            "icon": "spr_non_specified_bounty_icon",
+            "text": [
+                "It's time to play chess bloons advanced.",
+                "Bloons on the chess board can only be damaged by towers placed on the chess board.",
+                "However you must be careful, as towers on the chess board can be captured and stunned by chess bloons.",
+                "Additionally if a chess board bloon reaches the bottom of the board, it will begin to travel in the normal path."
+            ]
+        },
+        "22": {
+            "icon": "spr_rubber_block_bloon",
+            "text": [
+                "Rubber Block Bloons redirect projectiles that hit them."
+            ]
+        },
+        "24": {
+            "icon": "spr_tire_bloon",
+            "text": [
+                "Tire Bloons accelerate rapidly. When hit their speed is dropped. They also redirect projectiles that hit them."
+            ]
+        }
     },
     "desert_road": {
-
+        "5": {
+            "icon": "spr_cactus_bloon",
+            "text": [
+                "Cactus Bloons rapidly shoot needles when popped, that damage bloons or stun towers."
+            ]
+        },
+        "25": {
+            "icon": "spr_catapult_bloon_icon",
+            "text": [
+                "The catapult launches ceramic bloons forward along the track. Drops 4 tires when popped."
+            ]
+        },
+        "30": {
+            "icon": "spr_rocket_moab_icon",
+            "text": [
+                "The rocket moab moves insanely fast. It drops speed after traversing 50% of the path. When popped it drops 4 tattered ceramics."
+            ]
+        },
+        "35": {
+            "icon": "spr_non_specified_bounty_icon",
+            "text": [
+                "Woah! It's a Monster Truck!"
+            ]
+        }
     },
     "traffic_jam": {
-
+        "5": {
+            "icon": "spr_blue_static_bloon",
+            "text": [
+                "Static Bloons are shielded, and shoot electricity which stun nearby towers."
+            ]
+        },
+        "19": {
+            "icon": "spr_barrier_bloon",
+            "text": [
+                "Barrier Bloons apply shields to all nearby bloons."
+            ]
+        },
+        "20": {
+            "icon": "spr_patrol_bloon",
+            "text": [
+                "Uh oh someone called the police."
+            ]
+        },
+        "30": {
+            "icon": "spr_skyscraper_icon",
+            "text": [
+                "The Skyscraper takes 250 hits to pop, and is metallic. When popped it drops 4 Iron Blocks."
+            ]
+        },
+        "35": {
+            "icon": "spr_non_specified_bounty_icon",
+            "text": [
+                "Traffic Laws must now be obeyed!"
+            ]
+        }
     },
     "wall_street": {
-
+        "15": {
+            "icon": "spr_non_specified_bounty_icon",
+            "text": [
+                "The stock prices of towers are about to be manipulated."
+            ]
+        },
+        "25": {
+            "icon": "spr_non_specified_bounty_icon",
+            "text": [
+                "Funds are about to be embezzled, and new bloon real estate is about to be purchased."
+            ]
+        }
     },
     "the_high_court": {
-
+        "10": {
+            "icon": "spr_non_specified_bounty_icon",
+            "text": [
+                "Each Lawyer Bloon upholds a separate law. The bloon must be popped in order to end the law."
+            ]
+        },
+        "35": {
+            "icon": "spr_non_specified_bounty_icon",
+            "text": [
+                "The judge, the jury, and the executioner...",
+                "If the scales of justice tip too far in one direction, you will be found guilty and punished accordingly!"
+            ]
+        }
     },
     "zen_garden": {
 
