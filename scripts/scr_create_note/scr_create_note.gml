@@ -9,6 +9,11 @@ function scr_create_note(_note_info, _note_prog, _key){
 				icon = variable_struct_get(_specific_tutorial, "icon")
 				icon = asset_get_index(icon)
 				image_index = 1
+				icon_index = 0
+				if variable_struct_exists(_specific_tutorial, "icon_index") {
+					icon_index = variable_struct_get(_specific_tutorial, "icon_index")
+				}
+				image_speed = 0
 			}
 			page = 0;
 			mission = global.mission

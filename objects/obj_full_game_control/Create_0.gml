@@ -173,7 +173,8 @@ global.upgrades_progress = {
 }
 
 global.tutorials_progress = {
-	"training_room": {}
+	"training_room": {},
+	"bloon_academia": {}
 }
 
 global.start_room = rm_world_1_map

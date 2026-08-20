@@ -1,7 +1,7 @@
 {
     "training_room": {
         "0": {
-            "icon": "spr_non_specified_bounty_icon",
+            "icon": "spr_big_dart",
             "text": [
                 "Hi, welcome to the training room. Here is some important information that may be valuable.",
                 "You can buy heroes and towers on the right side of the screen. Each tower has upgrades that can be bought by left clicking on them.",
@@ -13,14 +13,74 @@
             ]
         },
         "5": {
+            "icon": "spr_bloon",
+            "icon_index": 8,
             "text": [
-                "Every 5th round will be particularly hard, so stay alert."
+                "Rainbow Bloons contain a lot of bloons inside them."
+            ]
+        },
+        "10": {
+            "icon": "spr_bloon",
+            "icon_index": 8,
+            "text": [
+                "Every 5th round will be particularly hard, with elevated bloon types, so stay alert."
             ]
         },
         "15": {
+            "icon": "spr_non_specified_bounty_icon",
             "text": [
                 "A boss is spawning, use it for target practice.",
                 "When bloons reach the end of the track, they do a set amount of damage and then loop back around to the start of the track."
+            ]
+        },
+        "20": {
+            "icon": "spr_mini_moab_icon",
+            "text": [
+                "Mini MOABs require 50 hits to pop. Then they drop 4 rainbow bloons!"
+            ]
+        }
+    },
+    "bloon_academia": {
+        "3": {
+            "icon": "spr_shielded_bloon_icon",
+            "text": [
+                "Shielded Bloons have a high density barrier that absorbs extra damage. \nDensity 10: Shields absorb as much pierce as hitting 10 bloons."
+            ]
+        },
+        "5": {
+            "icon": "spr_lead_bloon",
+            "text": [
+                "Lead bloons are metallic. They resist sharp projectiles and can be damaged by explosions and other types of damage. \nMetallic: Can only be damaged by certain projectiles."
+            ]
+        },
+        "10": {
+            "icon": "spr_ceramic_bloon",
+            "text": [
+                "Ceramic Bloons take 10 hits to pop. Then they drop 2 rainbow bloons."
+            ]
+        },
+        "36": {
+            "icon": "spr_block_bloon",
+            "text": [
+                "Block bloons are metallic and require 15 hits to pop. They drop 4 leads. \nMetallic: Can only be damaged by certain projectiles."
+            ]
+        },
+        "38": {
+            "icon": "spr_brick_bloon",
+            "text": [
+                "Bricks take 30 hits to pop and drop 2 ceramics."
+            ]
+        },
+        "39": {
+            "icon": "spr_moab_icon",
+            "text": [
+                "Moabs take 200 hits to pop and drop 4 ceramics."
+            ]
+        },
+        "40": {
+            "icon": "spr_non_specified_bounty_icon",
+            "text": [
+                "A huge bully is spawning."
             ]
         }
     }

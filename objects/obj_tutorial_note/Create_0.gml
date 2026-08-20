@@ -15,4 +15,5 @@ page = 0;
 mission = global.mission
 key = "0"
 icon = noone;
+icon_index = 0
 
