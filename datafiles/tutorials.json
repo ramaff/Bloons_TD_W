@@ -83,5 +83,120 @@
                 "A huge bully is spawning."
             ]
         }
+    },
+    "autumn_acres": {
+        "3": {
+            "icon": "spr_tattered_bloon_icon",
+            "text": [
+                "Tattered Bloons move twice as fast. Applies to a single layer."
+            ]
+        },
+        "5": {
+            "icon": "spr_deflation_bloon_icon",
+            "text": [
+                "Deflation Bloons are an advanced form of tattered bloon. They move so fast they can't move straight through the path."
+            ]
+        },
+        "11": {
+            "text": [
+                "Watch out, something peculiar is sneaking through."
+            ]
+        },
+        "12": {
+            "text": [
+                "Peek-a-Bloons stay hidden and unpoppable while other bloons are nearby."
+            ]
+        },
+        "25": {
+            "icon": "spr_non_specified_bounty_icon",
+            "text": [
+                "It's Tack the Ripper!"
+            ]
+        }
+    },
+    "graveyard": {
+        "5": {
+            "icon": "spr_zombie_bloon",
+            "text": [
+                "Zombie Bloons eventually come back to life after they have been fully popped."
+            ]
+        },
+        "6": {
+            "icon": "spr_regrow_bloon",
+            "text": [
+                "Regrow Bloons regain lost layers every few seconds."
+            ]
+        },
+        "12": {
+            "icon": "spr_nurse_bloon_icon",
+            "text": [
+                "Nurse Bloons are an advanced form of regrow bloon. They constantly heal all bloons in a small area."
+            ]
+        },
+        "30": {
+            "icon": "spr_non_specified_bounty_icon",
+            "text": [
+                "Frankenstein's Bloon approaches"
+            ]
+        }
+    },
+    "parade": {
+        "6": {
+            "icon": "spr_stuffed_bloon_icon",
+            "text": [
+                "Stuffed Bloons are an advanced form of splitter bloon. They explode into a huge number of bloons when popped."
+            ]
+        },
+        "19": {
+            "icon": "spr_hot_air_bloon_icon",
+            "text": [
+                "Hot Air Bloons kidnap a random tower, stunning them until the bloon is fully popped."
+            ]
+        },
+        "40": {
+            "icon": "spr_non_specified_bounty_icon",
+            "text": [
+                "The Party Tank is here!"
+            ]
+        }
+    },
+    "the_bridge": {
+
+    },
+    "the_forest": {
+
+    },
+    "tower_defense": {
+
+    },
+    "the_stronghold": {
+
+    },
+    "desert_road": {
+
+    },
+    "traffic_jam": {
+
+    },
+    "wall_street": {
+
+    },
+    "the_high_court": {
+
+    },
+    "zen_garden": {
+
+    },
+    "snow_field": {
+
+    },
+    "the_house_on_the_hill": {
+        "0": {
+            "icon": "spr_non_specified_bounty_icon",
+            "text": [
+                "Being back here instills Jim with a deep melancholy..."
+            ]
+        }
     }
+
 }

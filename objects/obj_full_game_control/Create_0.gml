@@ -174,7 +174,21 @@ global.upgrades_progress = {
 
 global.tutorials_progress = {
 	"training_room": {},
-	"bloon_academia": {}
+	"bloon_academia": {},
+	"autumn_acres": {},
+	"graveyard": {},
+	"parade": {},
+    "the_bridge": {},
+    "the_forest": {},
+    "tower_defense": {},
+    "the_stronghold": {},
+    "desert_road": {},
+    "traffic_jam": {},
+    "wall_street": {},
+    "the_high_court": {},
+    "zen_garden": {},
+    "snow_field": {},
+    "the_house_on_the_hill": {}
 }
 
 global.start_room = rm_world_1_map
