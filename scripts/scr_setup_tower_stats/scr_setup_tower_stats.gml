@@ -926,6 +926,24 @@ function scr_setup_tower_stats(){
 				]
 			]
 		},
+		"road_spikes": {
+			tower_sprite: "spr_road_spikes",
+			tower_object: "obj_road_spikes",
+			butt_sprite: "spr_bongo_tower_butt",
+			road_item: true,
+			total_cost: 30,
+			upgrade_cost: 0,
+			
+		},
+		"exploding_pineapple": {
+			tower_sprite: "spr_road_spikes",
+			tower_object: "obj_road_spikes",
+			butt_sprite: "spr_pineapple",
+			road_item: true,
+			total_cost: 30,
+			upgrade_cost: 0,
+			
+		},
 	}
 
 }

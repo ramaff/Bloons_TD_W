@@ -219,6 +219,7 @@
     {"id":{"name":"obj_puncture","path":"objects/obj_puncture/obj_puncture.yy",},},
     {"id":{"name":"obj_queen_chess_bloon","path":"objects/obj_queen_chess_bloon/obj_queen_chess_bloon.yy",},},
     {"id":{"name":"obj_real_estate_bloon","path":"objects/obj_real_estate_bloon/obj_real_estate_bloon.yy",},},
+    {"id":{"name":"obj_road_spikes","path":"objects/obj_road_spikes/obj_road_spikes.yy",},},
     {"id":{"name":"obj_rocket_moab","path":"objects/obj_rocket_moab/obj_rocket_moab.yy",},},
     {"id":{"name":"obj_rook_chess_bloon","path":"objects/obj_rook_chess_bloon/obj_rook_chess_bloon.yy",},},
     {"id":{"name":"obj_round_check","path":"objects/obj_round_check/obj_round_check.yy",},},

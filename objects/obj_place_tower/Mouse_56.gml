@@ -12,6 +12,17 @@ if mouse_y < 60 || mouse_y > 540 {
 	exit;	
 }
 
+if variable_struct_exists(tower_stats, "road_item") {
+	global.money -= tower_stats.total_cost
+
+	if variable_struct_exists(tower_stats, "tower_object") {
+		var _tower = asset_get_index(tower_stats.tower_object)
+		instance_create_depth(x, y, depth, _tower)
+	}
+
+	scr_play_sound(tower_place)	
+}
+
 x = floor(mouse_x / 16) * 16;
 y = (floor((mouse_y - 60) / 16) * 16) + 60;
 

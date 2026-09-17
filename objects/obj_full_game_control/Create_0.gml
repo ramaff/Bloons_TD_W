@@ -106,6 +106,12 @@ global.towers_progress = {
 	"skateboard_monkey": {
 		"unlocked": false	
 	},
+	"road_spikes": {
+		"unlocked": true	
+	},
+	"exploding_pineapple": {
+		"unlocked": true	
+	},
 	"bongo_monkey": {
 		"unlocked": false	
 	}
