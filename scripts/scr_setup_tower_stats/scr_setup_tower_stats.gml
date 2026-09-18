@@ -929,20 +929,64 @@ function scr_setup_tower_stats(){
 		"road_spikes": {
 			tower_sprite: "spr_road_spikes",
 			tower_object: "obj_road_spikes",
-			butt_sprite: "spr_bongo_tower_butt",
+			butt_sprite: "spr_road_spikes_butt",
 			road_item: true,
 			total_cost: 30,
 			upgrade_cost: 0,
 			
 		},
 		"exploding_pineapple": {
-			tower_sprite: "spr_road_spikes",
-			tower_object: "obj_road_spikes",
-			butt_sprite: "spr_pineapple",
+			tower_sprite: "spr_pineapple",
+			tower_object: "obj_exploding_pineapple",
+			butt_sprite: "spr_pineapple_butt",
 			road_item: true,
 			total_cost: 30,
 			upgrade_cost: 0,
 			
+		},
+		"supply_drop": {
+			tower_object: "obj_monkey",
+			tower_sprite: "spr_pogo_pad",
+			butt_sprite: "spr_pineapple_butt",
+			total_cost: 0,
+			upgrade_cost: 0,
+			range: 150,
+			delay: 30,
+			attack_cooldown: 0,
+			stat_boosts: {},
+	
+			projectile_stats: [],
+			abilities: {
+				"Supply Drop": {
+					"charge_time": 120,
+					"charge": 0,
+					"max_charges": 1,
+					"charges": 1,
+					"ability_script": scr_supply_drop
+				}
+			},
+		},
+		"golden_bloon_jar": {
+			tower_object: "obj_monkey",
+			tower_sprite: "spr_pogo_pad",
+			butt_sprite: "spr_pineapple_butt",
+			total_cost: 0,
+			upgrade_cost: 0,
+			range: 150,
+			delay: 30,
+			attack_cooldown: 0,
+			stat_boosts: {},
+	
+			projectile_stats: [],
+			abilities: {
+				"Summon Golden Bloon": {
+					"charge_time": 180,
+					"charge": 0,
+					"max_charges": 1,
+					"charges": 0,
+					"ability_script": scr_summon_golden_bloon
+				}
+			},
 		},
 	}
 

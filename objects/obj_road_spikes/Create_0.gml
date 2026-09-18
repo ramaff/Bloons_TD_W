@@ -15,7 +15,7 @@ var _projectile_stats = [
 
 repeat(10) {
 	_projectile_stats[0].direction = random(360)
-	scr_create_tower_projectiles(_projectile_stats, x, y, noone, 0, {}, noone);
+	scr_create_tower_projectiles(_projectile_stats, x - 15 + random(30), y - 15 + random(30), noone, 0, {}, noone);
 }
 
 instance_destroy()

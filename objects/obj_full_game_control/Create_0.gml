@@ -112,6 +112,12 @@ global.towers_progress = {
 	"exploding_pineapple": {
 		"unlocked": true	
 	},
+	"supply_drop": {
+		"unlocked": true	
+	},
+	"golden_bloon_jar": {
+		"unlocked": true	
+	},
 	"bongo_monkey": {
 		"unlocked": false	
 	}

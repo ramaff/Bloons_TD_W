@@ -13,14 +13,17 @@ if mouse_y < 60 || mouse_y > 540 {
 }
 
 if variable_struct_exists(tower_stats, "road_item") {
-	global.money -= tower_stats.total_cost
+	if global.money > tower_stats.total_cost {
+		global.money -= tower_stats.total_cost
 
-	if variable_struct_exists(tower_stats, "tower_object") {
-		var _tower = asset_get_index(tower_stats.tower_object)
-		instance_create_depth(x, y, depth, _tower)
+		if variable_struct_exists(tower_stats, "tower_object") {
+			var _tower = asset_get_index(tower_stats.tower_object)
+			instance_create_depth(x, y, depth, _tower)
+		}
+
+		scr_play_sound(tower_place)	
 	}
-
-	scr_play_sound(tower_place)	
+	exit;
 }
 
 x = floor(mouse_x / 16) * 16;
