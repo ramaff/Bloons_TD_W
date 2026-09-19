@@ -1,21 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_golden_bloon",
+  "%Name":"obj_golden_bloon_jar",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_golden_bloon",
+  "name":"obj_golden_bloon_jar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bounties",
-    "path":"folders/Objects/Bloons/Bounties.yy",
+    "name":"Towers",
+    "path":"folders/Objects/Towers.yy",
   },
   "parentObjectId":{
-    "name":"obj_bounty",
-    "path":"objects/obj_bounty/obj_bounty.yy",
+    "name":"obj_monkey",
+    "path":"objects/obj_monkey/obj_monkey.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_golden_bloon",
-    "path":"sprites/spr_golden_bloon/spr_golden_bloon.yy",
+    "name":"spr_golden_bloon_jar",
+    "path":"sprites/spr_golden_bloon_jar/spr_golden_bloon_jar.yy",
   },
   "spriteMaskId":null,
   "visible":true,

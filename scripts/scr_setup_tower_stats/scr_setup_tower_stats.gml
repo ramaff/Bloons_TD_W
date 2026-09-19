@@ -946,8 +946,8 @@ function scr_setup_tower_stats(){
 		},
 		"supply_drop": {
 			tower_object: "obj_monkey",
-			tower_sprite: "spr_pogo_pad",
-			butt_sprite: "spr_pineapple_butt",
+			tower_sprite: "spr_supply_drop_pad",
+			butt_sprite: "spr_supply_drop_butt",
 			total_cost: 0,
 			upgrade_cost: 0,
 			range: 150,
@@ -967,9 +967,9 @@ function scr_setup_tower_stats(){
 			},
 		},
 		"golden_bloon_jar": {
-			tower_object: "obj_monkey",
-			tower_sprite: "spr_pogo_pad",
-			butt_sprite: "spr_pineapple_butt",
+			tower_object: "obj_golden_bloon_jar",
+			tower_sprite: "spr_golden_bloon_jar",
+			butt_sprite: "spr_golden_bloon_jar_butt",
 			total_cost: 0,
 			upgrade_cost: 0,
 			range: 150,
@@ -983,7 +983,7 @@ function scr_setup_tower_stats(){
 					"charge_time": 180,
 					"charge": 0,
 					"max_charges": 1,
-					"charges": 2,
+					"charges": 1,
 					"ability_script": scr_summon_golden_bloon
 				}
 			},
