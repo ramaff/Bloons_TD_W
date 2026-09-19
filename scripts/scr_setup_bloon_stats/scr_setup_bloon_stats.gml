@@ -2376,6 +2376,21 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 1,
 			}
+		},
+		"golden": {
+			sprite: "spr_golden_bloon",
+			"icon_sprite": "spr_non_specified_bounty_icon",
+			"object": "obj_golden_bloon",
+			"golden": {
+				sprite: "spr_golden_bloon",
+				"big_bloon_tier": 2,
+				layers: 500,
+				rbe: 500,
+				damage: 0,
+				health: 500,
+				density: 1,
+				speed: 1.8,
+			},
 		}
 	}
 }

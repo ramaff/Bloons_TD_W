@@ -1,11 +1,11 @@
 function scr_summon_golden_bloon(){
-	var _layer = "red"
-	var _class = "animal"
+	var _layer = "golden"
+	var _class = "golden"
 	var _xx = x;
 	var _yy = y;
-	var _bloon_object = obj_bloon_animal_bloon
+	var _bloon_object = obj_golden_bloon
 	var _path = global.paths[irandom(array_length(global.paths) - 1)]
-	var _properties = ["float to track"]
+	var _properties = []
 	var _round = -1
 
 	with instance_create_depth(_xx, _yy, depth, _bloon_object) {
@@ -13,8 +13,8 @@ function scr_summon_golden_bloon(){
 		path_position = 0
 		x = _xx;
 		y = _yy;
-		bloon_stats.vertical_speed += 1 + random(2);
-		bloon_stats.float_height += 5;
+		//bloon_stats.vertical_speed += 1 + random(2);
+		//bloon_stats.float_height += 5;
 		
 		if instance_exists(target) {
 			target.path_position = 0;

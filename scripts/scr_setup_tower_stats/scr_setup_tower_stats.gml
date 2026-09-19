@@ -983,7 +983,7 @@ function scr_setup_tower_stats(){
 					"charge_time": 180,
 					"charge": 0,
 					"max_charges": 1,
-					"charges": 0,
+					"charges": 2,
 					"ability_script": scr_summon_golden_bloon
 				}
 			},
