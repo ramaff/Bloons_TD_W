@@ -15,6 +15,7 @@ function scr_setup_tower_stats(){
 			attack_cooldown: 0,
 			health: 200,
 			max_health: 200,
+			max_count: 1,
 			abilities: {
 				"Power Dart": {
 					"charge_time": 30,
@@ -118,6 +119,7 @@ function scr_setup_tower_stats(){
 			damage_scripts: [
 				scr_angry_squirrel_anger
 			],
+			max_count: 1,
 	
 			projectile_stats: [
 				{
@@ -194,6 +196,7 @@ function scr_setup_tower_stats(){
 			health: 200,
 			max_health: 200,
 			stat_boosts: {},
+			max_count: 1,
 	
 			projectile_stats: [],
 			upgrades: [
@@ -253,6 +256,7 @@ function scr_setup_tower_stats(){
 			health: 250,
 			max_health: 250,
 			stat_boosts: {},
+			max_count: 1,
 	
 			projectile_stats: [
 				{
@@ -954,6 +958,7 @@ function scr_setup_tower_stats(){
 			delay: 30,
 			attack_cooldown: 0,
 			stat_boosts: {},
+			max_count: 1,
 	
 			projectile_stats: [],
 			abilities: {
@@ -976,6 +981,7 @@ function scr_setup_tower_stats(){
 			delay: 30,
 			attack_cooldown: 0,
 			stat_boosts: {},
+			max_count: 1,
 	
 			projectile_stats: [],
 			abilities: {

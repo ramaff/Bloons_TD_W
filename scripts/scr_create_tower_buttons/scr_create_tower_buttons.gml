@@ -25,7 +25,11 @@ function scr_create_tower_buttons(){
 				hero_id = _hero_id;
 			} else {
 				if variable_struct_exists(global.placed_towers, _heroes[_i]) {
-					if variable_struct_get(global.placed_towers, _heroes[_i]) {
+					var _max_count = 999999
+					if variable_struct_exists(tower_stats, "max_count") {
+						_max_count = tower_stats.max_count	
+					}
+					if variable_struct_get(global.placed_towers, _heroes[_i]) >= _max_count {
 						instance_destroy()
 					}
 				}
@@ -54,6 +58,15 @@ function scr_create_tower_buttons(){
 				tower_stats = scr_get_tower_stats(base_tower_id)
 				if variable_struct_exists(tower_stats, "butt_sprite") {
 					sprite_index = asset_get_index(tower_stats.butt_sprite)
+				}
+				if variable_struct_exists(global.placed_towers, base_tower_id) {
+					var _max_count = 999999
+					if variable_struct_exists(tower_stats, "max_count") {
+						_max_count = tower_stats.max_count	
+					}
+					if variable_struct_get(global.placed_towers, base_tower_id) >= _max_count {
+						instance_destroy()
+					}
 				}
 			}
 		}

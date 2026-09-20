@@ -21,7 +21,12 @@ if variable_struct_exists(tower_stats, "road_item") {
 			instance_create_depth(x, y, depth, _tower)
 		}
 
-		scr_play_sound(tower_place)	
+		scr_play_sound(tower_place)
+		var _amt = 0
+		if variable_struct_exists(global.placed_towers, base_tower_id) {
+			_amt = variable_struct_get(global.placed_towers, base_tower_id)
+		}
+		variable_struct_set(global.placed_towers, base_tower_id, _amt + 1)
 	}
 	exit;
 }
@@ -51,13 +56,22 @@ global.money -= tower_stats.total_cost
 
 scr_play_sound(tower_place)
 
+var _amt = 0
+if variable_struct_exists(global.placed_towers, base_tower_id) {
+	_amt = variable_struct_get(global.placed_towers, base_tower_id)
+}
+variable_struct_set(global.placed_towers, base_tower_id, _amt + 1)
+
 if hero {
 	if instance_exists(button_id) {
 		button_id.hero_placed = true;
 		button_id.hero_id = _tower_id;
 	}
-	variable_struct_set(global.placed_towers, base_tower_id, true)
 }
+
+instance_destroy(obj_hero_butt)
+instance_destroy(obj_tower_butt)
+scr_create_tower_buttons()
 
 
 with(obj_non_placeable_tile) {
