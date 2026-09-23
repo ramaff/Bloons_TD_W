@@ -59,15 +59,19 @@ function scr_create_tower_buttons(){
 				if variable_struct_exists(tower_stats, "butt_sprite") {
 					sprite_index = asset_get_index(tower_stats.butt_sprite)
 				}
+				var _max_count = 999999
+				var _remain_count = _max_count
+				if variable_struct_exists(tower_stats, "max_count") {
+					_max_count = tower_stats.max_count	
+					_remain_count = _max_count
+				}
 				if variable_struct_exists(global.placed_towers, base_tower_id) {
-					var _max_count = 999999
-					if variable_struct_exists(tower_stats, "max_count") {
-						_max_count = tower_stats.max_count	
-					}
-					if variable_struct_get(global.placed_towers, base_tower_id) >= _max_count {
+					_remain_count -= variable_struct_get(global.placed_towers, base_tower_id)
+					if _remain_count <= 0 {
 						instance_destroy()
 					}
 				}
+				remaining_count = _remain_count
 			}
 		}
 	}

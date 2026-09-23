@@ -9,6 +9,10 @@ if bloon_stats.health < bloon_stats.max_health / 4 {
 	sprite_index = spr_angry_juror	
 }
 
+if !instance_exists(obj_judge_bloon) {
+	instance_destroy()	
+}
+
 event_inherited();
 
 if leak_frame {

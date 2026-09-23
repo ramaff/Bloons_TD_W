@@ -11,3 +11,6 @@ if global.menu == MENU.settings {
 if global.menu == MENU.credits {
 	event_user(3)	
 }
+if global.menu == MENU.shop_1 {
+	event_user(4)	
+}

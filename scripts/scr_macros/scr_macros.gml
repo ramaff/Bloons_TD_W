@@ -7,7 +7,9 @@ enum MENU {
 	bloons,
 	settings,
 	credits,
-	world_map
+	world_map,
+	shop_1,
+	shop_3
 }
 
 function scr_macros(){
