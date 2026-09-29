@@ -8,12 +8,12 @@
   "name":"obj_tower_defense_button",
   "overriddenProperties":[],
   "parent":{
-    "name":"World Map",
-    "path":"folders/Objects/World Map.yy",
+    "name":"buttons",
+    "path":"folders/Objects/World Map/buttons.yy",
   },
   "parentObjectId":{
-    "name":"obj_map_button",
-    "path":"objects/obj_map_button/obj_map_button.yy",
+    "name":"obj_map_button_parent",
+    "path":"objects/obj_map_button_parent/obj_map_button_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

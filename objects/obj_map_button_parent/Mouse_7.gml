@@ -63,7 +63,7 @@ with instance_create_depth(690, 390, depth - 2, obj_mission_start_button) {
 	menu = _menu	
 }
 
-instance_deactivate_object(obj_map_button)
+instance_deactivate_object(obj_map_button_parent)
 
 //global.paths = _track_info.paths
 //global.round_data = _track_info.round_data

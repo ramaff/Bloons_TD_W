@@ -8,6 +8,8 @@ function scr_setup_global_vars(){
 
 	global.bloon_stats = scr_setup_bloon_stats();
 	
+	global.goodie_stats = scr_import_json("goodies.json", json_parse);
+	
 	global.mission_unlocks = scr_import_json("mission_info.json", json_parse);
 	
 	global.tutorials = scr_import_json("tutorials.json", json_parse);

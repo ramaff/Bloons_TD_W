@@ -3,15 +3,19 @@
   "%Name":"obj_world_1_shop_button",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_world_1_shop_button",
   "overriddenProperties":[],
   "parent":{
-    "name":"World Map",
-    "path":"folders/Objects/World Map.yy",
+    "name":"shop",
+    "path":"folders/Objects/World Map/shop.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_shop_button_world_parent",
+    "path":"objects/obj_shop_button_world_parent/obj_shop_button_world_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

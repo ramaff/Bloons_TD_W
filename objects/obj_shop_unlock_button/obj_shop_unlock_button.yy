@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_map_button",
+  "%Name":"obj_shop_unlock_button",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_map_button",
+  "name":"obj_shop_unlock_button",
   "overriddenProperties":[],
   "parent":{
-    "name":"World Map",
-    "path":"folders/Objects/World Map.yy",
+    "name":"World Map Menus",
+    "path":"folders/Objects/World Map Menus.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_world_map_button",
-    "path":"sprites/spr_world_map_button/spr_world_map_button.yy",
+    "name":"spr_shop_butt",
+    "path":"sprites/spr_shop_butt/spr_shop_butt.yy",
   },
   "spriteMaskId":null,
   "visible":true,

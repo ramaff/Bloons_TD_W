@@ -107,16 +107,16 @@ global.towers_progress = {
 		"unlocked": false	
 	},
 	"road_spikes": {
-		"unlocked": true	
+		"unlocked": false
 	},
 	"exploding_pineapple": {
-		"unlocked": true	
+		"unlocked": false	
 	},
 	"supply_drop": {
-		"unlocked": true	
+		"unlocked": false
 	},
 	"golden_bloon_jar": {
-		"unlocked": true	
+		"unlocked": false
 	},
 	"bongo_monkey": {
 		"unlocked": false	

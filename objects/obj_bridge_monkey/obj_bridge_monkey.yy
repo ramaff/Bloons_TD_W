@@ -15,8 +15,8 @@
     "path":"folders/Objects/World Map.yy",
   },
   "parentObjectId":{
-    "name":"obj_map_button",
-    "path":"objects/obj_map_button/obj_map_button.yy",
+    "name":"obj_map_button_parent",
+    "path":"objects/obj_map_button_parent/obj_map_button_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

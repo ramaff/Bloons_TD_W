@@ -9,8 +9,8 @@
   "name":"obj_world_2_5_changer",
   "overriddenProperties":[],
   "parent":{
-    "name":"World Map",
-    "path":"folders/Objects/World Map.yy",
+    "name":"changers",
+    "path":"folders/Objects/World Map/changers.yy",
   },
   "parentObjectId":{
     "name":"obj_world_map_changer",

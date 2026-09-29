@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_shop_button",
+  "%Name":"obj_shop_button_world_parent",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_shop_button",
+  "name":"obj_shop_button_world_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"World Map Menus",
-    "path":"folders/Objects/World Map Menus.yy",
+    "name":"shop",
+    "path":"folders/Objects/World Map/shop.yy",
   },
   "parentObjectId":null,
   "persistent":false,
