@@ -30,24 +30,8 @@ if variable_struct_exists(_current_mission_stats, "added_cash") {
 	global.added_cash = variable_struct_get(_current_mission_stats, "added_cash")
 }
 
-/*
-if _track = "rm_the_stronghold" {
-	var _req_mission_prog = variable_struct_get(global.missions_complete, "the_stronghold")
-	if !_req_mission_prog.complete {
-		if variable_struct_exists(global.upgrades_progress.jim, "unlocked_paths") {
-			variable_struct_set(global.upgrades_progress.jim.unlocked_paths, "Splodey Darts", {"unlocked_upgrades": 2})
-		}
-	}
-	global.added_cash = 400;
-}
-*/
-
-
 global.pickable_tower_slots = 6 - array_length(global.added_towers)
 global.pickable_hero_slots = 3 - array_length(global.added_heroes)
-
-//var _selected_towers = global.towers_progress.selected
-//var _selected_heroes = global.heroes_progress.selected
 
 global.towers_progress.selected = [];
 global.heroes_progress.selected = [];

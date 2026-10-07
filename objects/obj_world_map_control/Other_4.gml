@@ -15,5 +15,6 @@ if room == rm_world_1_map || room == rm_world_1b_map || room == rm_world_1_5_map
 		scr_unlock_towers_upgrades(_current_mission_stats, _complete)
 	}
 	
+	scr_calc_monkey_money()
 	scr_save_game()
 }
