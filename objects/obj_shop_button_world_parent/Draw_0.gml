@@ -1,3 +1,4 @@
+
 draw_self()
 
 if abs(mouse_x - x) < 32 and abs(mouse_y - y) < 32 {

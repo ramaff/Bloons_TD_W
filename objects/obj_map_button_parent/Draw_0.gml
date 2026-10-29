@@ -9,10 +9,8 @@ var _mission_prog = variable_struct_get(global.missions_complete, _struct_name)
 
 if variable_struct_exists(_track_info, "requirement") {
 	var _req = _track_info.requirement
-	//show_debug_message(global.missions_complete)
-	//show_debug_message(_req)
+
 	var _req_mission_prog = variable_struct_get(global.missions_complete, _req)
-	//show_debug_message(_req_mission_prog)
 	
 	if !_req_mission_prog.complete {
 		exit;	
