@@ -80,6 +80,12 @@ tracks_info = {
 		"round_data": "the_high_court_rounds.json",
 		"name": "the high court",
 		"requirement": "wall_street"
+	},
+	"rm_zen_garden": {
+		"paths": [pth_zen_garden_1],
+		"round_data": "zen_garden_rounds.json",
+		"name": "zen garden",
+		"requirement": "traffic_jam"
 	}
 }
 global.mission = "training_room"

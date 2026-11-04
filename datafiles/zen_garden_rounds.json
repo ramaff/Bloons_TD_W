@@ -1,0 +1,98 @@
+[
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 25, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 25, "spread": 60, "cooldown": 5
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 5
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 10
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 15
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 20
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 25
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 30
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 35
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 40
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 30, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 25, "spread": 30, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 25, "spread": 30, "cooldown": 800
+		},
+		{
+			"class": "normal", "layer": "red", "count": 25, "spread": 30, "cooldown": 800
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 2
+		},
+		{
+			"class": "normal", "layer": "red", "count": 20, "spread": 100, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 20, "spread": 100, "cooldown": 5
+		},
+		{
+			"class": "normal", "layer": "green", "count": 20, "spread": 100, "cooldown": 10
+		},
+		{
+			"class": "normal", "layer": "red", "count": 20, "spread": 100, "cooldown": 15
+		},
+		{
+			"class": "normal", "layer": "blue", "count": 20, "spread": 100, "cooldown": 20
+		},
+		{
+			"class": "normal", "layer": "green", "count": 20, "spread": 100, "cooldown": 25
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_blue_static_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "static", "layer": "blue", "count": 10, "spread": 20, "cooldown": 0
+		}
+	]
+]

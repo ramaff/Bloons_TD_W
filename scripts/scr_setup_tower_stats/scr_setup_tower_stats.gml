@@ -994,6 +994,50 @@ function scr_setup_tower_stats(){
 				}
 			},
 		},
+		"green_monkey": {
+			tower_sprite: "spr_bongo_monkey",
+			tower_object: "obj_bongo_monkey",
+			butt_sprite: "spr_bongo_tower_butt",
+			total_cost: 660,
+			upgrade_cost: 0,
+			range: 90,
+			delay: 2,
+			attack_cooldown: 0,
+			attack_angle_offset: 0,
+	
+			projectile_stats: [
+			],
+			upgrades: [
+				[
+				],
+				[
+					{
+						keyword: "Louder Music",
+						upgrade_cost: 300
+					},
+					{
+						keyword: "Inspiring Music",
+						upgrade_cost: 1000
+					}
+				]
+			],
+			split_upgrades: [
+				[
+				],
+				[
+				],
+				[
+					{
+						keyword: "Spray Paint Artist",
+						upgrade_cost: 1200
+					},
+					{
+						keyword: "Complete Makeover",
+						upgrade_cost: 2000
+					}
+				]
+			]
+		},
 	}
 
 }
