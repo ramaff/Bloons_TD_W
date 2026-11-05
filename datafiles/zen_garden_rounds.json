@@ -2,13 +2,13 @@
 	[
 		{
 			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 1
+			"round_icon_index": 0
 		},
 		{
-			"class": "normal", "layer": "blue", "count": 25, "spread": 60, "cooldown": 0
+			"class": "normal", "layer": "red", "count": 20, "spread": 60, "cooldown": 0
 		},
 		{
-			"class": "normal", "layer": "blue", "count": 25, "spread": 60, "cooldown": 5
+			"class": "splitter", "layer": "red", "count": 20, "spread": 60, "cooldown": 30
 		}
 	],
 	[
@@ -17,31 +17,28 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 0
+			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 0
 		},
 		{
-			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 5
+			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 5
 		},
 		{
-			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 10
+			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 10
 		},
 		{
-			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 15
+			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 15
 		},
 		{
-			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 20
+			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 20
 		},
 		{
-			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 25
+			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 25
 		},
 		{
-			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 30
+			"class": "splitter", "layer": "red", "count": 20, "spread": 120, "cooldown": 30
 		},
 		{
-			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 35
-		},
-		{
-			"class": "normal", "layer": "red", "count": 25, "spread": 120, "cooldown": 40
+			"class": "splitter", "layer": "red", "count": 20, "spread": 120, "cooldown": 35
 		}
 	],
 	[
@@ -50,40 +47,24 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "red", "count": 25, "spread": 30, "cooldown": 0
+			"class": "splitter", "layer": "red", "count": 20, "spread": 60, "cooldown": 0
 		},
 		{
-			"class": "normal", "layer": "blue", "count": 25, "spread": 30, "cooldown": 0
-		},
-		{
-			"class": "normal", "layer": "blue", "count": 25, "spread": 30, "cooldown": 800
-		},
-		{
-			"class": "normal", "layer": "red", "count": 25, "spread": 30, "cooldown": 800
+			"class": "splitter", "layer": "green", "count": 20, "spread": 60, "cooldown": 30
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 2
+			"round_icon_sprite": "spr_camo_bloon",
+			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 100, "cooldown": 0
+			"class": "normal", "layer": "blue", "count": 20, "spread": 60, "cooldown": 0,
+			"properties": ["camo"]
 		},
 		{
-			"class": "normal", "layer": "blue", "count": 20, "spread": 100, "cooldown": 5
-		},
-		{
-			"class": "normal", "layer": "green", "count": 20, "spread": 100, "cooldown": 10
-		},
-		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 100, "cooldown": 15
-		},
-		{
-			"class": "normal", "layer": "blue", "count": 20, "spread": 100, "cooldown": 20
-		},
-		{
-			"class": "normal", "layer": "green", "count": 20, "spread": 100, "cooldown": 25
+			"class": "splitter", "layer": "red", "count": 20, "spread": 60, "cooldown": 30,
+			"properties": ["camo"]
 		}
 	],
 	[
@@ -92,7 +73,58 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "static", "layer": "blue", "count": 10, "spread": 20, "cooldown": 0
+			"class": "ninja", "layer": "red", "count": 2, "spread": 120, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index":4
+		},
+		{
+			"class": "normal", "layer": "yellow", "count": 30, "spread": 70, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloom_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "yellow", "count": 30, "spread": 70, "cooldown": 0
+		},
+		{
+			"class": "bloom", "layer": "bloom", "count": 3, "spread": 300, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index":4
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 30, "spread": 70, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index":4
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 20, "spread": 70, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "yellow", "count": 20, "spread": 70, "cooldown": 30
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_blue_static_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ninja", "layer": "red", "count": 12, "spread": 120, "cooldown": 0
 		}
 	]
 ]
