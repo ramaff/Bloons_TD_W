@@ -82,7 +82,7 @@ tracks_info = {
 		"requirement": "wall_street"
 	},
 	"rm_zen_garden": {
-		"paths": [pth_zen_garden_1],
+		"paths": [pth_zen_garden_1, pth_zen_garden_2],
 		"round_data": "zen_garden_rounds.json",
 		"name": "zen garden",
 		"requirement": "traffic_jam"
