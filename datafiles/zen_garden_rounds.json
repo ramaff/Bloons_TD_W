@@ -69,7 +69,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_blue_static_bloon",
+			"round_icon_sprite": "spr_ninja_bloon",
 			"round_icon_index": 0
 		},
 		{
@@ -120,7 +120,7 @@
 	],
 	[
 		{
-			"round_icon_sprite": "spr_blue_static_bloon",
+			"round_icon_sprite": "spr_ninja_bloon",
 			"round_icon_index": 0
 		},
 		{
