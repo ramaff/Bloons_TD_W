@@ -1,15 +1,6 @@
 [
 	[
 		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "ninja", "layer": "blue", "count": 30, "spread": 60, "cooldown": 0
-		}
-	],
-	[
-		{
 			"round_icon_sprite": "spr_bloon",
 			"round_icon_index": 0
 		},
@@ -83,6 +74,9 @@
 		},
 		{
 			"class": "ninja", "layer": "red", "count": 2, "spread": 120, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "red", "count": 20, "spread": 30, "cooldown": 0
 		}
 	],
 	[
@@ -134,6 +128,9 @@
 		},
 		{
 			"class": "ninja", "layer": "red", "count": 12, "spread": 120, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "blue", "count": 30, "spread": 60, "cooldown": 0
 		}
 	]
 ]

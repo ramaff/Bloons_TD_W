@@ -2114,6 +2114,7 @@ function scr_setup_bloon_stats(){
 		},
 		"chess": {
 			"damage_keys": ["chess_board"],
+			//"target_category": "chess",
 			"icon_sprite": "spr_non_specified_bounty_icon",
 			"pawn": {
 				"object": "obj_pawn_chess_bloon",

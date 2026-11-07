@@ -26,8 +26,9 @@ function scr_tower_attack(_tower_stats = tower_stats, _projectile_stats = tower_
 	
 	var _damage_keys = []
 	if variable_struct_exists(_tower_stats, "damage_keys") {
-		_damage_keys = _tower_stats.damage_keys	
+		_damage_keys = array_concat(_damage_keys, _tower_stats.damage_keys)
 	}
+	array_push(_damage_keys, target.bloon_stats.target_category)
 	
 	// In case the tower_attack_script adds a boost
 	if variable_struct_exists(_tower_stats, "stat_boosts") {

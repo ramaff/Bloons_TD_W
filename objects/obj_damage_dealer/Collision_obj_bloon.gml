@@ -7,6 +7,7 @@ if variable_struct_exists(other.bloon_stats, "damage_keys") {
 	show_debug_message("projectile_stats.damage_keys")
 	show_debug_message(projectile_stats.damage_keys)
 	show_debug_message(array_contains_ext(other.bloon_stats.damage_keys, projectile_stats.damage_keys, true)) */
+
 	if !array_contains_ext(projectile_stats.damage_keys, other.bloon_stats.damage_keys, true) {
 		exit;	
 	}

@@ -15,6 +15,15 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	
 	_bloon.bloon_stats.projectile_hits = {}
 	
+	if !variable_struct_exists(_bloon.bloon_stats, "damage_keys") {
+		_bloon.bloon_stats.damage_keys = []
+	}
+	
+	_bloon.bloon_stats.target_category = "normal"
+	if variable_struct_exists(_class_stats, "target_category") {
+		_bloon.bloon_stats.target_category = _class_stats.target_category
+	}
+	
 	target = noone;
 	
 	if variable_struct_exists(_class_stats, "properties") {
@@ -60,6 +69,8 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	}
 	if variable_struct_exists(_bloon.bloon_stats, "camo")  {
 		scr_bloon_set_camo(_bloon)
+	} else {
+		array_push(_bloon.bloon_stats.damage_keys, "normal")	
 	}
 	if variable_struct_exists(_bloon.bloon_stats, "sprite") {
 		_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.sprite);
