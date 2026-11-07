@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"static",
-    "path":"folders/Sprites/bloons/Base Classes/static.yy",
+    "name":"bloon projectiles",
+    "path":"folders/Sprites/bloons/bloon projectiles.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

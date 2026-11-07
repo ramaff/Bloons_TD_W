@@ -862,6 +862,9 @@ function scr_setup_bloon_stats(){
 		"ninja": {
 			"object": "obj_ninja_bloon",
 			"sprite": "spr_ninja_bloon",
+			"properties": [
+				"camo"
+			],
 			"big_bloon_tier": 1,
 			"red": {
 				layers: 6, index: 0, rbe: 8, health: 4, density: 1, speed: 1.6,
@@ -870,31 +873,31 @@ function scr_setup_bloon_stats(){
 				]
 			},
 			"blue": {
-				layers: 11, index: 0, rbe: 15, health: 8, density: 1, speed: 2,
+				layers: 11, index: 1, rbe: 15, health: 8, density: 1, speed: 2,
 				children: [
 					{"class": "splitter", "layer": "blue", "properties": ["camo"]},
 				]
 			},
 			"green": {
-				layers: 16, index: 0, rbe: 22, health: 12, density: 1, speed: 2.4,
+				layers: 16, index: 2, rbe: 22, health: 12, density: 1, speed: 2.4,
 				children: [
 					{"class": "splitter", "layer": "green", "properties": ["camo"]},
 				]
 			},
 			"yellow": {
-				layers: 21, index: 0, rbe: 29, health: 16, density: 1, speed: 3.2,
+				layers: 21, index: 3, rbe: 29, health: 16, density: 1, speed: 3.2,
 				children: [
 					{"class": "splitter", "layer": "yellow", "properties": ["camo"]},
 				]
 			},
 			"pink": {
-				layers: 26, index: 0, rbe: 36, health: 20, density: 1, speed: 3.6,
+				layers: 26, index: 4, rbe: 36, health: 20, density: 1, speed: 3.6,
 				children: [
 					{"class": "splitter", "layer": "pink", "properties": ["camo"]},
 				]
 			},
 			"rainbow": {
-				layers: 49, index: 0, rbe: 182, health: 40, density: 1, speed: 2.8,
+				layers: 49, index: 5, rbe: 182, health: 40, density: 1, speed: 2.8,
 				children: [
 					{"class": "splitter", "layer": "rainbow", "properties": ["camo"]},
 				]

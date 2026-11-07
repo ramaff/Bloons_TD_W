@@ -24,7 +24,7 @@
   "height":104,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"e9f3f8de-ada0-46da-8e2a-344368fd39cd","blendMode":0,"displayName":"default","isLocked":false,"name":"e9f3f8de-ada0-46da-8e2a-344368fd39cd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"ad80bb35-2793-4dbf-bd65-985c4a48249c","blendMode":0,"displayName":"default","isLocked":false,"name":"ad80bb35-2793-4dbf-bd65-985c4a48249c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_ninja_bloon",
   "nineSlice":null,
