@@ -1,31 +1,18 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
+/*
 function scr_check_if_bloon_targetable(_bloon, _tower_stats) {
-	if _bloon.object_index = obj_peek_a_bloon || _bloon.object_index = obj_tack_the_ripper {
-		if _bloon.image_alpha <= 0 {
-			return false;	
-		}
-	}
-	/*
-	if variable_struct_exists(_bloon.bloon_stats, "camo") and !variable_struct_exists(_tower_stats, "camo_detection") {
-		return false;
-	}
-	if variable_struct_exists(_bloon.bloon_stats, "damage_keys") {
-		if !array_contains_ext(_tower_stats.damage_keys, _bloon.bloon_stats.damage_keys, true) {
-			return false
-		}
-	}
-	*/
 	return true;
 }
+*/
 
-function scr_first_targeting(_bloon, _best_target_info, _tower_stats, _p_dist, _no_restrictions) {
+function scr_first_targeting(_bloon, _best_target_info, _tower_stats, _p_dist) {
 	var _check = false
 	//var _target_position = min(_bloon.path_position, 0)
 	_check = _bloon.path_position >= _best_target_info.path_position
 	
-	if _check and (_no_restrictions || scr_check_if_bloon_targetable(_bloon, _tower_stats)) {
+	if _check {
 		_best_target_info.path_position = _bloon.path_position
 		return true
 	}
@@ -33,12 +20,12 @@ function scr_first_targeting(_bloon, _best_target_info, _tower_stats, _p_dist, _
 	return false
 }
 
-function scr_last_targeting(_bloon, _best_target_info, _tower_stats, _p_dist, _no_restrictions) {
+function scr_last_targeting(_bloon, _best_target_info, _tower_stats, _p_dist) {
 	var _check = false
 	//var _target_position = min(_bloon.path_position, 0)
 	_check = _bloon.path_position <= _best_target_info.path_position
 	
-	if _check and (_no_restrictions || scr_check_if_bloon_targetable(_bloon, _tower_stats)) {
+	if _check {
 		_best_target_info.path_position = _bloon.path_position
 		return true
 	}
@@ -46,7 +33,7 @@ function scr_last_targeting(_bloon, _best_target_info, _tower_stats, _p_dist, _n
 	return false
 }
 
-function scr_strong_targeting(_bloon, _best_target_info, _tower_stats, _p_dist, _no_restrictions) {
+function scr_strong_targeting(_bloon, _best_target_info, _tower_stats, _p_dist) {
 	var _check = false
 	var _layers = 1;
 	var _power_level = 1;
@@ -61,21 +48,21 @@ function scr_strong_targeting(_bloon, _best_target_info, _tower_stats, _p_dist, 
 	
 	_check = _power_level > _best_target_info.bloon_power_level
 	
-	if _check and (_no_restrictions || scr_check_if_bloon_targetable(_bloon, _tower_stats)) {
+	if _check {
 		_best_target_info.bloon_power_level = _power_level
 		return true
 	} else if _power_level = _best_target_info.bloon_power_level {
-		return scr_first_targeting(_bloon, _best_target_info, _tower_stats, _p_dist, _no_restrictions)
+		return scr_first_targeting(_bloon, _best_target_info, _tower_stats, _p_dist)
 	}
 	
 	return false
 }
 
-function scr_close_targeting(_bloon, _best_target_info, _tower_stats, _p_dist, _no_restrictions) {
+function scr_close_targeting(_bloon, _best_target_info, _tower_stats, _p_dist) {
 	var _check = false
 	_check = _p_dist < _best_target_info.bloon_distance
 	
-	if _check and (_no_restrictions || scr_check_if_bloon_targetable(_bloon, _tower_stats)) {
+	if _check {
 		_best_target_info.bloon_distance = _p_dist
 		return true
 	}
@@ -94,6 +81,8 @@ function scr_get_bloon_target(_tower_stats, _xx = x, _yy = y, _targeting = "firs
 	var _total_range = _tower_stats.range + _range_boost
 	var _targeting_script = scr_get_targeting_script(_targeting, _best_target_info)
 	
+	// Future optimization: only do this categorization once per frame? (currently we do it once per tower)
+	
 	// Loop through all bloons, put plain_sight, normal, and camo into separate lists
 	// Then loop through each category in order to see if they can be targetted
 	var _target_categories = {
@@ -104,6 +93,12 @@ function scr_get_bloon_target(_tower_stats, _xx = x, _yy = y, _targeting = "firs
 	}
 	
 	with (obj_bloon) {
+		// possible further optimization: create "invis" target category, that is never actually checked
+		if object_index = obj_peek_a_bloon || object_index = obj_tack_the_ripper {
+			if image_alpha <= 0 {
+				continue;	
+			}
+		}
 		array_push(variable_struct_get(_target_categories, bloon_stats.target_category), id)
 	}
 	
