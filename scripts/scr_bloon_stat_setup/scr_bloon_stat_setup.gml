@@ -183,14 +183,38 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		with instance_create_depth(_xx, _yy, depth, obj_orbital_bloon) {
 			scr_bloon_stat_setup(id, "rune", "barrier", -1, [], -1)
 			speed = bloon_stats.speed;
-			
-			//if instance_exists(target) {
-			//	instance_destroy(target)	
-			//}
-		
+
 			target = _bloon.id
 			bloon_stats.remaining_value = 0;
 		}	
+	}
+	if _class = "pot" and _layer = "ceramic" {
+
+		var _ang = 0;
+		repeat(12) {
+			with instance_create_depth(_xx, _yy, depth, obj_orbital_bloon) {
+				scr_bloon_stat_setup(id, "splitter", "red", -1, ["orbital"], -1)
+				speed = bloon_stats.speed;
+
+				target = _bloon.id
+				bloon_stats.remaining_value = 0;
+				orbit_distance = 65;
+				orbit_angle = _ang;
+			}
+			_ang += 30
+		}
+		repeat(18) {
+			with instance_create_depth(_xx, _yy, depth, obj_orbital_bloon) {
+				scr_bloon_stat_setup(id, "normal", "yellow", -1, ["orbital"], -1)
+				speed = bloon_stats.speed;
+
+				target = _bloon.id
+				bloon_stats.remaining_value = 0;
+				orbit_distance = 95;
+				orbit_angle = _ang;
+			}
+			_ang += 20
+		}
 	}
 	
 	if variable_struct_exists(_bloon.bloon_stats, "specific_path") {

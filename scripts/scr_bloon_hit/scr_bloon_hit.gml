@@ -348,6 +348,10 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 				_child_path = _bloon.child_path	
 			}
 		}
+		
+		if variable_struct_exists(_bloon.bloon_stats, "orbital") {
+			_bloon_object = obj_orbital_bloon
+		}
 
 		with instance_create_depth(_xx, _yy, depth, _bloon_object) {
 			scr_bloon_stat_setup(id, _child_class, _layer, _child_path, _child_properties, _bloon.bloon_stats.round)
@@ -359,6 +363,11 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 				x = _xx;
 				y = _yy;
 				speed = 0;
+			} else if variable_struct_exists(_bloon.bloon_stats, "orbital") {
+				speed = bloon_stats.speed;
+				target = _bloon.target;
+				orbit_distance = _bloon.orbit_distance;
+				orbit_angle = _bloon.orbit_angle
 			} else {
 				if _bloon.bloon_stats.path != -1 {
 					x = path_get_x(_bloon.bloon_stats.path, path_position);
@@ -416,7 +425,7 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 				alarm[0] = 90;	
 			}
 			
-			if instance_exists(target) {
+			if instance_exists(target) and !variable_struct_exists(_bloon.bloon_stats, "orbital"){
 				target.path_position = _pos	
 				if _bloon.bloon_stats.path != -1 {
 					target.x = path_get_x(_bloon.bloon_stats.path, path_position);

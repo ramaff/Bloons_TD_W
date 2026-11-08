@@ -1942,7 +1942,7 @@ function scr_setup_bloon_stats(){
 				sprite: "spr_pot_ceramic_bloon",
 				layers: 27,
 				index: 0,
-				rbe: 186,
+				rbe: 146,
 				health: 10,
 				max_health: 10,
 				density: 1,
@@ -1950,10 +1950,6 @@ function scr_setup_bloon_stats(){
 				children: [
 					{
 						"class": "bloom",
-						"layer": "spring"
-					},
-					{
-						"class": "bloom",
 						"layer": "bloom"
 					},
 					{
@@ -1962,7 +1958,11 @@ function scr_setup_bloon_stats(){
 					},
 					{
 						"class": "bloom",
-						"layer": "spring"
+						"layer": "bloom"
+					},
+					{
+						"class": "bloom",
+						"layer": "bloom"
 					}
 				]
 			},
