@@ -1,6 +1,15 @@
 [
 	[
 		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "firey", "layer": "paper_lantern", "count": 4, "spread": 240, "cooldown": 0
+		}
+	],
+	[
+		{
 			"round_icon_sprite": "spr_bloon",
 			"round_icon_index": 0
 		},
@@ -245,7 +254,7 @@
 			"class": "ninja", "layer": "green", "count": 12, "spread": 105, "cooldown": 0
 		},
 		{
-			"class": "fire", "layer": "paper_lantern", "count": 4, "spread": 240, "cooldown": 0
+			"class": "firey", "layer": "paper_lantern", "count": 4, "spread": 240, "cooldown": 0
 		}
 	],
 	[
@@ -269,7 +278,7 @@
 			"class": "ninja", "layer": "pink", "count": 6, "spread": 45, "cooldown": 0
 		},
 		{
-			"class": "fire", "layer": "paper_lantern", "count": 12, "spread": 120, "cooldown": 0
+			"class": "firey", "layer": "paper_lantern", "count": 12, "spread": 120, "cooldown": 0
 		},
 		{
 			"class": "ninja", "layer": "pink", "count": 6, "spread": 45, "cooldown": 990

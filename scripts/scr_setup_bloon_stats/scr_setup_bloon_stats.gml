@@ -2437,9 +2437,9 @@ function scr_setup_bloon_stats(){
 				speed: 1.8,
 			},
 		},
-		"fire": {
+		"firey": {
 			"big_bloon_tier": 1,
-			"fire": {
+			"firey": {
 				"object": "obj_fire_bloon",
 				sprite: "spr_fire_bloon",
 				layers: 36,
@@ -2458,16 +2458,18 @@ function scr_setup_bloon_stats(){
 				"big_bloon_tier": 2,
 				"object": "obj_paper_lantern_bloon",
 				sprite: "spr_paper_lantern_bloon",
-				layers: 186,
+				layers: 136,
 				index: 0,
-				rbe: 254,
-				health: 150,
-				max_health: 150,
+				rbe: 308,
+				health: 100,
+				max_health: 100,
 				density: 1,
-				speed: 1,
+				speed: 1.6,
 				children: [
-					{"class": "fire", "layer": "fire", "properties": ["float to track"]},
-					{"class": "fire", "layer": "fire", "properties": ["float to track"]}
+					{"class": "firey", "layer": "firey", "properties": ["float to track"]},
+					{"class": "firey", "layer": "firey", "properties": ["float to track"]},
+					{"class": "firey", "layer": "firey", "properties": ["float to track"]},
+					{"class": "firey", "layer": "firey", "properties": ["float to track"]}
 				]
 			}
 		}

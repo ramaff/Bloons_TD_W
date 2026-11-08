@@ -108,13 +108,12 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 				} else {
 					projectile_stats.size = 1;	
 				}
+				projectile_stats.og_size = projectile_stats.size;
 				
 				if projectile_stats.object = "obj_explosion_projectile" {
 					image_xscale = 0.5;
 					image_yscale = 0.5;
-				}
-			
-				if projectile_stats.object = "obj_explosion_projectile_w_particles" {
+				} else if projectile_stats.object = "obj_explosion_projectile_w_particles" {
 					var _area = (image_xscale * 100) - 50;
 					repeat(projectile_stats.particles) {
 						var _xxx = random(_area) - (_area / 2);

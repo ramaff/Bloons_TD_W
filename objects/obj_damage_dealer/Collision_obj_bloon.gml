@@ -2,14 +2,14 @@
 // You can write your code in this editor
 
 if variable_struct_exists(other.bloon_stats, "damage_keys") {
-	show_debug_message("other.bloon_stats.damage_keys")
-	show_debug_message(other.bloon_stats.damage_keys)
-	show_debug_message("projectile_stats.damage_keys")
-	show_debug_message(projectile_stats.damage_keys)
+	//show_debug_message("other.bloon_stats.damage_keys")
+	//show_debug_message(other.bloon_stats.damage_keys)
+	//show_debug_message("projectile_stats.damage_keys")
+	//show_debug_message(projectile_stats.damage_keys)
 
 	var _bloon_keys = struct_get_names(other.bloon_stats.damage_keys)
-	show_debug_message("_bloon_keys")
-	show_debug_message(_bloon_keys)
+	//show_debug_message("_bloon_keys")
+	//show_debug_message(_bloon_keys)
 	var _key_count = array_length(_bloon_keys)
 	var _i;
 	
@@ -19,16 +19,8 @@ if variable_struct_exists(other.bloon_stats, "damage_keys") {
 		}
 	}
 
-	/* if !array_contains_ext(projectile_stats.damage_keys, other.bloon_stats.damage_keys, true) {
-		exit;	
-	} */
 }
-/*
-if variable_struct_exists(other.bloon_stats, "camo") {
-	if !variable_struct_exists(projectile_stats, "camo_detection") {
-		exit;
-	}
-} */
+
 
 if variable_struct_exists(projectile_stats, "projectile_burst") {
 	var _angle_offset = direction;

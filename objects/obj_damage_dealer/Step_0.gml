@@ -52,4 +52,18 @@ if variable_struct_exists(projectile_stats, "homing") {
 	}
 }
 
-
+if variable_struct_exists(projectile_stats, "fire") {
+	if projectile_stats.fire == 2 {
+		if projectile_stats.pierce > 1 {
+			projectile_stats.pierce--;	
+		}
+		if alarm[0] > 3 {
+			alarm[0] -= 3
+		}
+		if alarm[0] < 100 {
+			image_xscale -= image_xscale * 0.06;	
+			image_yscale -= image_yscale * 0.06;	
+			projectile_stats.size -= projectile_stats.size * 0.06;
+		}	
+	}
+}

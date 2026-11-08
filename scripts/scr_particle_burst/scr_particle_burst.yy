@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_particle_burst",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_particle_burst",
+  "parent":{
+    "name":"misc",
+    "path":"folders/Scripts/misc.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

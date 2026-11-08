@@ -3,13 +3,9 @@
 
 var _tar_angle = scr_off_path_wave()
 
-if angle_difference(direction, _tar_angle) < 0 {
-	image_yscale = -1;	
-} else {
-	image_yscale = 1;	
-}
+var _ang_off = hspeed * 12
 
-image_angle = direction
+image_angle = -_ang_off
 
 // Inherit the parent event
 event_inherited();
