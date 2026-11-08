@@ -18,7 +18,7 @@ function scr_finishing_performance(){
 	for(var _i = 0; _i < array_length(_ability_stats); _i++) {
 		var _attack = _ability_stats[_i];
 		
-		var _damage_keys = []
+		var _damage_keys = {}
 		if variable_struct_exists(tower_stats, "damage_keys") {
 			_damage_keys = tower_stats.damage_keys	
 		}

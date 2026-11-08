@@ -73,10 +73,10 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "ninja", "layer": "red", "count": 2, "spread": 120, "cooldown": 0
+			"class": "ninja", "layer": "red", "count": 8, "spread": 90, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "red", "count": 20, "spread": 30, "cooldown": 0
+			"class": "splitter", "layer": "red", "count": 25, "spread": 20, "cooldown": 100
 		}
 	],
 	[
@@ -112,13 +112,13 @@
 	[
 		{
 			"round_icon_sprite": "spr_bloon",
-			"round_icon_index":4
+			"round_icon_index": 4
 		},
 		{
 			"class": "normal", "layer": "pink", "count": 20, "spread": 70, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "yellow", "count": 20, "spread": 70, "cooldown": 30
+			"class": "splitter", "layer": "yellow", "count": 16, "spread": 80, "cooldown": 30
 		}
 	],
 	[
@@ -127,10 +127,152 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "ninja", "layer": "red", "count": 12, "spread": 120, "cooldown": 0
+			"class": "ninja", "layer": "red", "count": 16, "spread": 70, "cooldown": 0
 		},
 		{
-			"class": "splitter", "layer": "blue", "count": 30, "spread": 60, "cooldown": 0
+			"class": "splitter", "layer": "blue", "count": 30, "spread": 20, "cooldown": 20
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloom_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 130, "spread": 20, "cooldown": 0
+		},
+		{
+			"class": "bloom", "layer": "bloom", "count": 8, "spread": 150, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index":4
+		},
+		{
+			"class": "splitter", "layer": "pink", "count": 16, "spread": 90, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "yellow", "count": 16, "spread": 90, "cooldown": 30
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "ninja", "layer": "blue", "count": 16, "spread": 100, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloom_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "splitter", "layer": "yellow", "count": 80, "spread": 24, "cooldown": 0
+		},
+		{
+			"class": "bloom", "layer": "spring", "count": 6, "spread": 180, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ninja", "layer": "green", "count": 12, "spread": 105, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "yellow", "count": 30, "spread": 20, "cooldown": 200
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloom_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 200, "spread": 10, "cooldown": 0
+		},
+		{
+			"class": "ceramic", "layer": "ceramic", "count": 2, "spread": 300, "cooldown": 1000
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloom_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "pot", "layer": "ceramic", "count": 4, "spread": 300, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloom_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 200, "spread": 10, "cooldown": 0,
+			"properties": ["camo"]
+		},
+		{
+			"class": "pot", "layer": "ceramic", "count": 4, "spread": 300, "cooldown": 300
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ninja", "layer": "green", "count": 12, "spread": 105, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "pink", "count": 40, "spread": 40, "cooldown": 20
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ninja", "layer": "green", "count": 12, "spread": 105, "cooldown": 0
+		},
+		{
+			"class": "fire", "layer": "paper_lantern", "count": 4, "spread": 240, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ninja", "layer": "red", "count": 50, "spread": 25, "cooldown": 0
+		},
+		{
+			"class": "ninja", "layer": "yellow", "count": 8, "spread": 75, "cooldown": 400
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ninja", "layer": "pink", "count": 6, "spread": 45, "cooldown": 0
+		},
+		{
+			"class": "fire", "layer": "paper_lantern", "count": 12, "spread": 120, "cooldown": 0
+		},
+		{
+			"class": "ninja", "layer": "pink", "count": 6, "spread": 45, "cooldown": 990
 		}
 	]
 ]

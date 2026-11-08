@@ -6,7 +6,7 @@ function scr_bloon_set_camo(_bloon){
 	var _layer = _bloon.bloon_stats.layer
 	
 	_bloon.bloon_stats.target_category = "camo"
-	array_push(_bloon.bloon_stats.damage_keys, "camo")
+	variable_struct_set(_bloon.bloon_stats.damage_keys, "camo", true)
 	
 	_bloon.bloon_stats.sprite = "spr_camo_bloon"
 	if _class = "splitter" {

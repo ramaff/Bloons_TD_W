@@ -7,7 +7,7 @@ projectile_stats = {
 	bloons_hit: {},
 	size: 1,
 	targeting: "first",
-	damage_keys: []
+	damage_keys: {}
 }
 
 target = noone;

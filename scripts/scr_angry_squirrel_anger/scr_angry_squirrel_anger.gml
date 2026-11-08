@@ -86,7 +86,7 @@ function scr_angry_squirrel_anger(_tower_stats = tower_stats) {
 				
 				if _target != noone {
 					
-					var _damage_keys = []
+					var _damage_keys = {}
 					if variable_struct_exists(tower_stats, "damage_keys") {
 						_damage_keys = tower_stats.damage_keys	
 					}

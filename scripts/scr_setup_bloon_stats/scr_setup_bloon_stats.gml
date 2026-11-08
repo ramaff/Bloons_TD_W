@@ -2113,7 +2113,7 @@ function scr_setup_bloon_stats(){
 			}
 		},
 		"chess": {
-			"damage_keys": ["chess_board"],
+			"damage_keys": {"chess_board": true},
 			//"target_category": "chess",
 			"icon_sprite": "spr_non_specified_bounty_icon",
 			"pawn": {
@@ -2436,6 +2436,40 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 1.8,
 			},
+		},
+		"fire": {
+			"big_bloon_tier": 1,
+			"fire": {
+				"object": "obj_fire_bloon",
+				sprite: "spr_fire_bloon",
+				layers: 36,
+				index: 0,
+				rbe: 52,
+				health: 30,
+				max_health: 30,
+				density: 1,
+				speed: 2,
+				children: [
+					{"class": "normal", "layer": "black", "properties": ["float to track"]},
+					{"class": "normal", "layer": "black", "properties": ["float to track"]}
+				]
+			},
+			"paper_lantern": {
+				"big_bloon_tier": 2,
+				"object": "obj_paper_lantern_bloon",
+				sprite: "spr_paper_lantern_bloon",
+				layers: 186,
+				index: 0,
+				rbe: 254,
+				health: 150,
+				max_health: 150,
+				density: 1,
+				speed: 1,
+				children: [
+					{"class": "fire", "layer": "fire", "properties": ["float to track"]},
+					{"class": "fire", "layer": "fire", "properties": ["float to track"]}
+				]
+			}
 		}
 	}
 }

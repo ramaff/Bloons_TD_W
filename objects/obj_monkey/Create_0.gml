@@ -34,7 +34,7 @@ tower_stats = {
 		]
 	],
 	active_upgrades: {},
-	damage_keys: []
+	damage_keys: {}
 }
 
 tower_base = noone;

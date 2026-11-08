@@ -17,7 +17,7 @@ bloon_stats = {
 	properties: [],
 	projectile_hits: {},
 	big_bloon_tier: 0,
-	damage_keys: []
+	damage_keys: {}
 }
 
 image_index = bloon_stats.layers - 1;

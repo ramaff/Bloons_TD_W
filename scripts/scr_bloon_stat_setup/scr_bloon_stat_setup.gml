@@ -16,7 +16,7 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	_bloon.bloon_stats.projectile_hits = {}
 	
 	if !variable_struct_exists(_bloon.bloon_stats, "damage_keys") {
-		_bloon.bloon_stats.damage_keys = []
+		_bloon.bloon_stats.damage_keys = {}
 	}
 	
 	_bloon.bloon_stats.target_category = "normal"
@@ -70,7 +70,7 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	if variable_struct_exists(_bloon.bloon_stats, "camo")  {
 		scr_bloon_set_camo(_bloon)
 	} else {
-		array_push(_bloon.bloon_stats.damage_keys, "normal")	
+		variable_struct_set(_bloon.bloon_stats.damage_keys, "normal", true)	
 	}
 	if variable_struct_exists(_bloon.bloon_stats, "sprite") {
 		_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.sprite);
@@ -86,7 +86,7 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		//variable_struct_set(_bloon.bloon_stats, "tattered_sprite", _class_stats.tattered_sprite)
 	}
 	
-	if _class = "deflation" || _class = "bee" || _class = "golden" {
+	if _class = "deflation" || _class = "bee" || _class = "golden" || (_class = "fire" and _layer = "paper_lantern"){
 		//_bloon.sprite_index = spr_big_deflation_bloon;
 		var _target = instance_create_depth(x, y, depth, obj_bloon_target);
 		with(_target) {

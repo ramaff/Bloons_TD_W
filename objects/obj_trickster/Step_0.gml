@@ -6,7 +6,7 @@ depth = -y
 scr_generic_tower_pre_fire_step();
 
 if tower_stats.attack_cooldown <= 0 and !instance_exists(yoyo) {	
-	var _damage_keys = []
+	var _damage_keys = {}
 	if variable_struct_exists(tower_stats, "damage_keys") {
 		_damage_keys = tower_stats.damage_keys	
 	}
@@ -32,7 +32,7 @@ for(var _i = 0; _i < array_length(_additional_attacks); _i++) {
 	
 	if _attack.attack_cooldown <= 0 {
 		
-		var _damage_keys = []
+		var _damage_keys = {}
 		if variable_struct_exists(tower_stats, "damage_keys") {
 			_damage_keys = tower_stats.damage_keys	
 		}

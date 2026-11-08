@@ -12,6 +12,7 @@ function scr_power_dart(){
 	}
 	
 	for(var _i = 0; _i < _proj_count; _i++) {
+		variable_struct_set(_ability_stats[_i], "damage_keys", {"plain_sight": true, "camo": true, "normal": true})
 		_ability_stats[_i].damage = _ability_stats[_i].damage * _damage_multiplier;	
 		_ability_stats[_i].pierce = _ability_stats[_i].pierce * 50;
 		_ability_stats[_i].sprite = "spr_big_dart"

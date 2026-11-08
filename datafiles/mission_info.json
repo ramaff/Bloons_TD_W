@@ -58,7 +58,7 @@
     },
     "rm_zen_garden": {
         "towers": ["green_monkey"],
-        "added_cash": 400,
+        "added_cash": 4000,
         "difficulty": "intermediate"
     },
     "rm_snow_field": {

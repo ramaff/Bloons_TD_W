@@ -26,7 +26,7 @@ if hop_height <= 0 {
 	hop_height = 0;
 	hop_speed = max_hop_speed
 	
-	var _damage_keys = []
+	var _damage_keys = {}
 	if variable_struct_exists(tower_stats, "damage_keys") {
 		_damage_keys = tower_stats.damage_keys	
 	}

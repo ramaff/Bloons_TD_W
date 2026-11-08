@@ -26,7 +26,7 @@ if path_position <= 0 {
 		}
 	}
 	
-	var _damage_keys = []
+	var _damage_keys = {}
 	if variable_struct_exists(tower_stats, "damage_keys") {
 		_damage_keys = tower_stats.damage_keys	
 	}

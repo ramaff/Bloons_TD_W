@@ -4,7 +4,7 @@
 with(obj_monkey) {
 	if object_get_parent(object_index) != obj_turret {
 		if original_x > 208 and original_x < 592 and original_y > 136 and original_y < 456 {
-			tower_stats.damage_keys = ["chess_board"]
+			tower_stats.damage_keys = {"chess_board": true}
 		}
 	}
 }
@@ -25,7 +25,7 @@ if global.round >= 49 {
 		if !activated {
 			event_perform(ev_other, ev_user0)
 			activated = true;
-			bloon_stats.damage_keys = [];
+			bloon_stats.damage_keys = {};
 		}
 	}
 }
@@ -217,7 +217,7 @@ if global.round > saved_round {
 			}
 		}
 		_picked_piece.id.activated = true;
-		_picked_piece.id.bloon_stats.damage_keys = [];
+		_picked_piece.id.bloon_stats.damage_keys = {};
 	}
 	
 	with(obj_monkey) {
