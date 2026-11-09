@@ -188,12 +188,18 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 			bloon_stats.remaining_value = 0;
 		}	
 	}
-	if _class = "pot" and _layer = "ceramic" {
+	if _class = "pot" {
+		var _inner_layer = "red"
+		var _outer_layer = "yellow"
+		if _layer = "brick" {
+			_inner_layer = "green"
+			_outer_layer = "pink"
+		}
 
 		var _ang = 0;
 		repeat(12) {
 			with instance_create_depth(_xx, _yy, depth, obj_orbital_bloon) {
-				scr_bloon_stat_setup(id, "splitter", "red", -1, ["orbital"], -1)
+				scr_bloon_stat_setup(id, "splitter", _inner_layer, -1, ["orbital"], -1)
 				speed = bloon_stats.speed;
 
 				target = _bloon.id
@@ -205,7 +211,7 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 		}
 		repeat(18) {
 			with instance_create_depth(_xx, _yy, depth, obj_orbital_bloon) {
-				scr_bloon_stat_setup(id, "normal", "yellow", -1, ["orbital"], -1)
+				scr_bloon_stat_setup(id, "normal", _outer_layer, -1, ["orbital"], -1)
 				speed = bloon_stats.speed;
 
 				target = _bloon.id
@@ -215,6 +221,7 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 			}
 			_ang += 20
 		}
+		
 	}
 	
 	if variable_struct_exists(_bloon.bloon_stats, "specific_path") {

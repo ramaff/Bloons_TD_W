@@ -741,6 +741,7 @@
     {"id":{"name":"spr_pogo_stick_monkey","path":"sprites/spr_pogo_stick_monkey/spr_pogo_stick_monkey.yy",},},
     {"id":{"name":"spr_pointer","path":"sprites/spr_pointer/spr_pointer.yy",},},
     {"id":{"name":"spr_pop","path":"sprites/spr_pop/spr_pop.yy",},},
+    {"id":{"name":"spr_pot_brick_bloon","path":"sprites/spr_pot_brick_bloon/spr_pot_brick_bloon.yy",},},
     {"id":{"name":"spr_pot_ceramic_bloon","path":"sprites/spr_pot_ceramic_bloon/spr_pot_ceramic_bloon.yy",},},
     {"id":{"name":"spr_pro_yoyo","path":"sprites/spr_pro_yoyo/spr_pro_yoyo.yy",},},
     {"id":{"name":"spr_projectile_singe","path":"sprites/spr_projectile_singe/spr_projectile_singe.yy",},},

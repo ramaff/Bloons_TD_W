@@ -5,7 +5,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "pot", "layer": "ceramic", "count": 4, "spread": 240, "cooldown": 0
+			"class": "pot", "layer": "brick", "count": 4, "spread": 240, "cooldown": 0
 		}
 	],
 	[

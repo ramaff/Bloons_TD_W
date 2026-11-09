@@ -1901,7 +1901,6 @@ function scr_setup_bloon_stats(){
 		},
 		"bloom": {
 			"object": "obj_bloom_bloon",
-			sprite: "spr_bloom_bloon",
 			"big_bloon_tier": 1,
 			"height": 5,
 			"bloom": {
@@ -1937,7 +1936,6 @@ function scr_setup_bloon_stats(){
 		},
 		"pot": {
 			"object": "obj_pot_ceramic",
-			sprite: "spr_pot_ceramic_bloon",
 			"ceramic": {
 				sprite: "spr_pot_ceramic_bloon",
 				layers: 27,
@@ -1948,22 +1946,26 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 2.6,
 				children: [
-					{
-						"class": "bloom",
-						"layer": "bloom"
-					},
-					{
-						"class": "bloom",
-						"layer": "bloom"
-					},
-					{
-						"class": "bloom",
-						"layer": "bloom"
-					},
-					{
-						"class": "bloom",
-						"layer": "bloom"
-					}
+					{"class": "bloom", "layer": "bloom", "properties": ["float to track"]},
+					{"class": "bloom", "layer": "bloom", "properties": ["float to track"]},
+					{"class": "bloom", "layer": "bloom", "properties": ["float to track"]},
+					{"class": "bloom", "layer": "bloom", "properties": ["float to track"]}
+				]
+			},
+			"brick": {
+				sprite: "spr_pot_brick_bloon",
+				layers: 42,
+				index: 0,
+				rbe: 246,
+				health: 30,
+				max_health: 30,
+				density: 1,
+				speed: 1.9,
+				children: [
+					{"class": "bloom", "layer": "spring", "properties": ["float to track"]},
+					{"class": "bloom", "layer": "spring", "properties": ["float to track"]},
+					{"class": "bloom", "layer": "spring", "properties": ["float to track"]},
+					{"class": "bloom", "layer": "spring", "properties": ["float to track"]}
 				]
 			},
 		},
