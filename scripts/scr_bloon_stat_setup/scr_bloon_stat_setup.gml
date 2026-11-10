@@ -191,35 +191,34 @@ function scr_bloon_stat_setup(_bloon = self, _class = "normal", _layer = "red", 
 	if _class = "pot" {
 		var _inner_layer = "red"
 		var _outer_layer = "yellow"
+		var _inner_class = "splitter"
+		var _outer_class = "normal"
+		var _count = 18
+		var _outer_count = 18
+		
 		if _layer = "brick" {
 			_inner_layer = "green"
 			_outer_layer = "pink"
+		} else if _layer = "gardening" {
+			_inner_layer = "rainbow"
+			_outer_layer = "ceramic"
+			_inner_class = "normal"
+			_outer_class = "ceramic"
+			_outer_count = 9
 		}
 
 		var _ang = 0;
-		repeat(12) {
-			with instance_create_depth(_xx, _yy, depth, obj_orbital_bloon) {
-				scr_bloon_stat_setup(id, "splitter", _inner_layer, -1, ["orbital"], -1)
-				speed = bloon_stats.speed;
-
-				target = _bloon.id
-				bloon_stats.remaining_value = 0;
-				orbit_distance = 65;
-				orbit_angle = _ang;
-			}
-			_ang += 30
+		var _ang_diff = 360 / _count
+		repeat(_count) {
+			scr_spawn_orbital_bloon(_xx, _yy, _bloon.id, _inner_class, _inner_layer, 60, _ang)
+			_ang += _ang_diff
 		}
-		repeat(18) {
-			with instance_create_depth(_xx, _yy, depth, obj_orbital_bloon) {
-				scr_bloon_stat_setup(id, "normal", _outer_layer, -1, ["orbital"], -1)
-				speed = bloon_stats.speed;
-
-				target = _bloon.id
-				bloon_stats.remaining_value = 0;
-				orbit_distance = 95;
-				orbit_angle = _ang;
-			}
-			_ang += 20
+		_ang_diff = 180 / _outer_count
+		repeat(_outer_count) {
+			scr_spawn_orbital_bloon(_xx, _yy, _bloon.id, _outer_class, _outer_layer, 90, _ang)
+			_ang += _ang_diff
+			scr_spawn_orbital_bloon(_xx, _yy, _bloon.id, _outer_class, _outer_layer, 105, _ang)
+			_ang += _ang_diff
 		}
 		
 	}

@@ -10,8 +10,8 @@ credits_music_cluster += "\nHouraiji_kyuusyou_: World Map I & II, Academy/Tower 
 credits_music_cluster += "\nWichura: Bridge, Forest, Zen Garden, Traffic Jam, Desert Road, Wall Street"
 
 credits_design_cluster = "Design Credits"
-credits_design_cluster += "\nCutth/Kegg: Block Bloons, Deflation Bloons, BRC, Rune Bloons, Bloon Esq."
-credits_design_cluster += "\nAloeva: Pot Ceramics"
+credits_design_cluster += "\nCutth/Kegg: Block Bloons, Deflation Bloons, BRC, Rune Bloons, Bloon Esq., Gardening Pot"
+credits_design_cluster += "\nAloeva: Pot Ceramics/Bricks"
 
 
 /*

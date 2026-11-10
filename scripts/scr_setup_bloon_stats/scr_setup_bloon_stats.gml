@@ -1968,6 +1968,22 @@ function scr_setup_bloon_stats(){
 					{"class": "bloom", "layer": "spring", "properties": ["float to track"]}
 				]
 			},
+			"gardening": {
+				sprite: "spr_gardening_pot",
+				layers: 327,
+				index: 0,
+				rbe: 884,
+				health: 300,
+				max_health: 300,
+				density: 1,
+				speed: 1.05,
+				children: [
+					{"class": "pot", "layer": "ceramic", "properties": ["float to track"]},
+					{"class": "pot", "layer": "ceramic", "properties": ["float to track"]},
+					{"class": "pot", "layer": "ceramic", "properties": ["float to track"]},
+					{"class": "pot", "layer": "ceramic", "properties": ["float to track"]}
+				]
+			}
 		},
 		"beehive": {
 			"object": "obj_beehive_bloon",
