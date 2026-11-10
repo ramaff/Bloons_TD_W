@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_gardening_pot",
   "bboxMode":0,
-  "bbox_bottom":147,
+  "bbox_bottom":155,
   "bbox_left":14,
-  "bbox_right":139,
+  "bbox_right":150,
   "bbox_top":5,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -13,6 +13,8 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"f4f5a46b-ca6a-4d19-81b0-0f63355b67d8","name":"f4f5a46b-ca6a-4d19-81b0-0f63355b67d8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7fa5c1ec-0c3e-4dde-8721-73ea3668dd51","name":"7fa5c1ec-0c3e-4dde-8721-73ea3668dd51","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2d6c68eb-ec3e-448b-87b4-6c1e7ff8029f","name":"2d6c68eb-ec3e-448b-87b4-6c1e7ff8029f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -20,7 +22,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"714597d2-0c5c-4141-9978-e32c3d26bedc","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"714597d2-0c5c-4141-9978-e32c3d26bedc","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
-    {"$GMImageLayer":"","%Name":"f38f108a-b0b7-4bb5-be9a-d75e2bfa9d8d","blendMode":0,"displayName":"default","isLocked":false,"name":"f38f108a-b0b7-4bb5-be9a-d75e2bfa9d8d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"06d07983-188e-4053-af1e-45fe402e770e","blendMode":0,"displayName":"default","isLocked":false,"name":"06d07983-188e-4053-af1e-45fe402e770e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_gardening_pot",
   "nineSlice":null,
@@ -50,7 +52,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":3.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -72,6 +74,12 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f4f5a46b-ca6a-4d19-81b0-0f63355b67d8","path":"sprites/spr_gardening_pot/spr_gardening_pot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"7f62232f-d8b0-4e3f-a4b8-a4f01e2f4e32","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7fa5c1ec-0c3e-4dde-8721-73ea3668dd51","path":"sprites/spr_gardening_pot/spr_gardening_pot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2fb5add3-3d82-4bd4-8cf8-7b2fc851dfad","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2d6c68eb-ec3e-448b-87b4-6c1e7ff8029f","path":"sprites/spr_gardening_pot/spr_gardening_pot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"28346ea4-2c27-4e04-b57b-ef9eea3160b0","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
