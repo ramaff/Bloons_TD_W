@@ -5,7 +5,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "pot", "layer": "gardening", "count": 2, "spread": 400, "cooldown": 0
+			"class": "samurai_tack", "layer": "red", "count": 1, "spread": 400, "cooldown": 0
 		}
 	],
 	[

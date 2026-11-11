@@ -2490,6 +2490,23 @@ function scr_setup_bloon_stats(){
 					{"class": "firey", "layer": "firey", "properties": ["float to track"]}
 				]
 			}
+		},
+		"samurai_tack": {
+			"object": "obj_samurai_tack",
+			"icon_sprite": "spr_non_specified_bounty_icon", 
+			"properties": [
+				"camo"
+			],
+			"red": {
+				sprite: "spr_samurai_tack",
+				layers: 4100,
+				rbe: 4100,
+				"big_bloon_tier": 5,
+				damage: 70,
+				health: 4100,
+				density: 1,
+				speed: 1.3,
+			}
 		}
 	}
 }
