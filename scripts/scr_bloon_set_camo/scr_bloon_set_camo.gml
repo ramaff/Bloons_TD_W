@@ -8,14 +8,13 @@ function scr_bloon_set_camo(_bloon){
 	_bloon.bloon_stats.target_category = "camo"
 	variable_struct_set(_bloon.bloon_stats.damage_keys, "camo", true)
 	
+	if _class = "normal" {
 	_bloon.bloon_stats.sprite = "spr_camo_bloon"
-	if _class = "splitter" {
+	} else if _class = "splitter" {
 		_bloon.bloon_stats.sprite = "spr_camo_splitter_bloon"
-	}
-	if _class = "ceramic" and _layer = "ceramic" {
+	} else if _class = "ceramic" and _layer = "ceramic" {
 		_bloon.bloon_stats.sprite = "spr_camo_ceramic_bloon"
-	}
-	if _class = "ceramic" and _layer = "brick" {
+	} else if _class = "ceramic" and _layer = "brick" {
 		_bloon.bloon_stats.sprite = "spr_camo_brick_bloon"
 	}
 	_bloon.sprite_index = asset_get_index(_bloon.bloon_stats.sprite);

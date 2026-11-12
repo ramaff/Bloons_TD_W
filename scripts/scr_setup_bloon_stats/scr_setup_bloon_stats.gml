@@ -2493,6 +2493,7 @@ function scr_setup_bloon_stats(){
 		},
 		"samurai_tack": {
 			"object": "obj_samurai_tack",
+			sprite: "spr_samurai_tack",
 			"icon_sprite": "spr_non_specified_bounty_icon", 
 			"properties": [
 				"camo"
