@@ -1,15 +1,6 @@
 [
 	[
 		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "samurai_tack", "layer": "red", "count": 1, "spread": 400, "cooldown": 0
-		}
-	],
-	[
-		{
 			"round_icon_sprite": "spr_bloon",
 			"round_icon_index": 0
 		},
@@ -263,10 +254,41 @@
 			"round_icon_index": 0
 		},
 		{
+			"class": "splitter", "layer": "pink", "count": 100, "spread": 10, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloom_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "splitter", "layer": "yellow", "count": 200, "spread": 10, "cooldown": 0,
+			"properties": ["camo"]
+		},
+		{
+			"class": "pot", "layer": "ceramic", "count": 8, "spread": 200, "cooldown": 300
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "ninja", "layer": "red", "count": 50, "spread": 25, "cooldown": 0
 		},
 		{
 			"class": "ninja", "layer": "yellow", "count": 8, "spread": 75, "cooldown": 400
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 60, "spread": 5, "cooldown": 0
 		}
 	],
 	[
@@ -282,6 +304,155 @@
 		},
 		{
 			"class": "ninja", "layer": "pink", "count": 6, "spread": 45, "cooldown": 990
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "splitter", "layer": "pink", "count": 200, "spread": 5, "cooldown": 0,
+			"properties": ["tattered"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 12, "spread": 150, "cooldown": 0
+		},
+		{
+			"class": "firey", "layer": "paper_lantern", "count": 15, "spread": 120, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloom_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "splitter", "layer": "pink", "count": 200, "spread": 10, "cooldown": 0,
+			"properties": ["camo"]
+		},
+		{
+			"class": "pot", "layer": "brick", "count": 4, "spread": 300, "cooldown": 300
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ninja", "layer": "pink", "count": 24, "spread": 60, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "pot", "layer": "gardening", "count": 1, "spread": 400, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "firey", "layer": "paper_lantern", "count": 30, "spread": 60, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ninja", "layer": "pink", "count": 36, "spread": 45, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloom_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 200, "spread": 10, "cooldown": 0
+		},
+		{
+			"class": "pot", "layer": "ceramic", "count": 16, "spread": 120, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ninja", "layer": "rainbow", "count": 12, "spread": 120, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "samurai_tack", "layer": "red", "count": 1, "spread": 400, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloom_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 200, "spread": 10, "cooldown": 0
+		},
+		{
+			"class": "pot", "layer": "brick", "count": 8, "spread": 250, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "firey", "layer": "paper_lantern", "count": 60, "spread": 60, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "ninja", "layer": "rainbow", "count": 24, "spread": 60, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloom_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "pot", "layer": "brick", "count": 16, "spread": 120, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_ninja_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "pot", "layer": "gardening", "count": 3, "spread": 400, "cooldown": 0
 		}
 	]
 ]
