@@ -1506,5 +1506,37 @@ function scr_setup_upgrade_stats(){
 				]
 			}
 		},
+		"green_monkey": {
+			"Photosynthesis": {
+				range: 10,
+				upgrade_string: "Doubles flower production"
+			},
+			"Bloonbury Bush": {
+				upgrade_string: "Plants bushes on the ground that pop passing by bloons."
+			},
+			"Venus Bloon Trap": {
+				upgrade_string: "Eats bloons, absorbing them in order to grow more flowers.",
+				projectile_replacement: true,
+				tower_attack_script: scr_spray_paint_spray,
+				tower_sprite: "spr_spray_paint_monkey",
+				camo_detection: true,
+				projectile_stats: [
+					{
+						sprite: "spr_spray_paint_red",
+						pierce: 12,
+						damage: 0,
+						speed: 13,
+						lifespan: 10,
+						camo_detection: true,
+						lead_hit: true,
+						paint: 1,
+						paint_time: 120
+					}
+				]
+			},
+			"Garden Warfare": {
+				upgrade_string: "Massively upgrades the potency of plants",
+			}
+		},
 	}
 }

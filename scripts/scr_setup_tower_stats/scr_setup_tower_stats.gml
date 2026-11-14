@@ -995,29 +995,46 @@ function scr_setup_tower_stats(){
 			},
 		},
 		"green_monkey": {
-			tower_sprite: "spr_bongo_monkey",
-			tower_object: "obj_bongo_monkey",
-			butt_sprite: "spr_bongo_tower_butt",
+			tower_sprite: "spr_green_monkey",
+			tower_object: "obj_green_monkey",
+			butt_sprite: "spr_green_monkey_butt",
 			total_cost: 660,
+			flavor_text: "Grows flowers overtime that take up space and shoot thorns.",
 			upgrade_cost: 0,
 			range: 90,
 			delay: 2,
 			attack_cooldown: 0,
 			attack_angle_offset: 0,
+			no_target: true,
 	
 			projectile_stats: [
+				{
+					sprite: "spr_needle",
+					projectile_count: 3,
+					projectile_spread: 120,
+					direction: 0,
+					pierce: 1,
+					damage: 1,
+					speed: 8,
+					lifespan: 15,
+					height: 4,
+					lobbing: {
+						gravity: 0.5,
+						speed: 3.5
+					}
+				}
 			],
 			upgrades: [
 				[
 				],
 				[
 					{
-						keyword: "Louder Music",
-						upgrade_cost: 300
+						keyword: "Photosynthesis",
+						upgrade_cost: 500
 					},
 					{
-						keyword: "Inspiring Music",
-						upgrade_cost: 1000
+						keyword: "Bloonbury Bush",
+						upgrade_cost: 400
 					}
 				]
 			],
@@ -1025,16 +1042,16 @@ function scr_setup_tower_stats(){
 				[
 				],
 				[
-				],
-				[
 					{
-						keyword: "Spray Paint Artist",
-						upgrade_cost: 1200
+						keyword: "Venus Bloon Trap",
+						upgrade_cost: 1900
 					},
 					{
-						keyword: "Complete Makeover",
-						upgrade_cost: 2000
+						keyword: "Garden Warfare",
+						upgrade_cost: 6600
 					}
+				],
+				[
 				]
 			]
 		},
