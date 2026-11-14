@@ -406,6 +406,7 @@
     {"id":{"name":"scr_get_bloon_target","path":"scripts/scr_get_bloon_target/scr_get_bloon_target.yy",},},
     {"id":{"name":"scr_get_targeting_script","path":"scripts/scr_get_targeting_script/scr_get_targeting_script.yy",},},
     {"id":{"name":"scr_get_tower_stats","path":"scripts/scr_get_tower_stats/scr_get_tower_stats.yy",},},
+    {"id":{"name":"scr_green_monkey_scripts","path":"scripts/scr_green_monkey_scripts/scr_green_monkey_scripts.yy",},},
     {"id":{"name":"scr_handle_file_backup","path":"scripts/scr_handle_file_backup/scr_handle_file_backup.yy",},},
     {"id":{"name":"scr_haunted_monkey_scripts","path":"scripts/scr_haunted_monkey_scripts/scr_haunted_monkey_scripts.yy",},},
     {"id":{"name":"scr_import_json","path":"scripts/scr_import_json/scr_import_json.yy",},},

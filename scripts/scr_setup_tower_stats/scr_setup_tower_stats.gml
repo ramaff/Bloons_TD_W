@@ -1006,6 +1006,7 @@ function scr_setup_tower_stats(){
 			attack_cooldown: 0,
 			attack_angle_offset: 0,
 			no_target: true,
+			tower_attack_script: scr_spawn_flower,
 	
 			projectile_stats: [
 				{

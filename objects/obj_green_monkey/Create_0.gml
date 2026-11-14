@@ -4,8 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-alarm[1] = 1;
+// track flowers and delete if sold?
+flowers = {}
+sun = 0
 
-ghosts = {}
-
-angle_offset = 0;
