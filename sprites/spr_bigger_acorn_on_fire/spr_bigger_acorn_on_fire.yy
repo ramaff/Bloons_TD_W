@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"projectiles",
-    "path":"folders/Sprites/projectiles.yy",
+    "name":"acorns",
+    "path":"folders/Sprites/projectiles/acorns.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

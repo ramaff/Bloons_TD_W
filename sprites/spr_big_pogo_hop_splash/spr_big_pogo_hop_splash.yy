@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"projectiles",
-    "path":"folders/Sprites/projectiles.yy",
+    "name":"splash damage",
+    "path":"folders/Sprites/projectiles/splash damage.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

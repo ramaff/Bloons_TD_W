@@ -47,8 +47,49 @@ function scr_spawn_flower(){
 			}
 			variable_struct_set(flowers, _flower_id, _flower_id)
 			sun -= 100
+		} else {
+			_coords = scr_get_berry_tile(x - 16, y - 16, tower_stats.range)
+			if _coords != - 1 {
+				var _projectile_stats = [
+					{
+						sprite: "spr_bloonberry_bush",
+						projectile_count: 1,
+						projectile_spread: 45,
+						direction: random(360),
+						pierce: 5,
+						damage: 1,
+						speed: 0,
+						lifespan: 1800,
+						camo_detection: true,
+						tick_frequency: 1
+					}
+				]
+
+				_projectile_stats[0].direction = random(360)
+				scr_create_tower_projectiles(_projectile_stats, _coords[0] - 15 + random(30), _coords[1] - 15 + random(30), noone, 0, {}, noone);
+				sun -= 100
+			}
 		}
 	}
+}
+
+function scr_get_berry_tile(_mx, _my, _range) {
+	var _start = random(30);
+	var _j;
+	var _i;
+	var _paths = array_length(global.paths)
+	for(_i = 0; _i < _paths; _i++) {
+		var _path = global.paths[_i];
+		for(_j = 0; _j < 30; _j++) {
+			var _per = ((_start + _j) / 30) mod 30
+			var _xx = path_get_x(_path, _per)
+			var _yy = path_get_y(_path, _per)
+			if point_distance(_xx, _yy, _mx, _my) < _range {
+				return [_xx, _yy]
+			}
+		}
+	}
+	return -1
 }
 
 function scr_get_flower_tile(_mx, _my, _range) {
