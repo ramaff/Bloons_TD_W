@@ -87,6 +87,5 @@ for(var _i = 0; _i < array_length(global.paths); _i++) {
 				}
 			}
 		}
-		//instance_create_depth(_xx_down, _yy_up, depth, obj_non_placeable_tile)
 	}
 }
