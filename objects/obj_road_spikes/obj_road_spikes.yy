@@ -8,8 +8,8 @@
   "name":"obj_road_spikes",
   "overriddenProperties":[],
   "parent":{
-    "name":"Towers",
-    "path":"folders/Objects/Towers.yy",
+    "name":"Road Items",
+    "path":"folders/Objects/Towers/Road Items.yy",
   },
   "parentObjectId":null,
   "persistent":false,

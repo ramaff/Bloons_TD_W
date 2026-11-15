@@ -8,8 +8,8 @@
   "name":"obj_placeable_tile",
   "overriddenProperties":[],
   "parent":{
-    "name":"Towers",
-    "path":"folders/Objects/Towers.yy",
+    "name":"meta",
+    "path":"folders/Objects/Towers/meta.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_monkey",
-    "path":"sprites/spr_monkey/spr_monkey.yy",
+    "name":"spr_angry_squirrel",
+    "path":"sprites/spr_angry_squirrel/spr_angry_squirrel.yy",
   },
   "spriteMaskId":null,
   "visible":true,

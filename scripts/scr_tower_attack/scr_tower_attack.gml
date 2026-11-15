@@ -13,6 +13,12 @@ function scr_tower_attack(_tower_stats = tower_stats, _projectile_stats = tower_
 		return false;
 	}
 	
+	var _damage_keys = {}
+	if variable_struct_exists(_tower_stats, "damage_keys") {
+		_damage_keys = variable_clone(_tower_stats.damage_keys)
+	}
+	variable_struct_set(_damage_keys, target.bloon_stats.target_category, true)
+	
 	if variable_struct_exists(_tower_stats, "no_target") {
 		if _tower_stats.no_target {
 			target = noone;
@@ -23,12 +29,6 @@ function scr_tower_attack(_tower_stats = tower_stats, _projectile_stats = tower_
 	if variable_struct_exists(_tower_stats, "attack_angle_offset") {
 		_angle_offset += _tower_stats.attack_angle_offset
 	}
-	
-	var _damage_keys = {}
-	if variable_struct_exists(_tower_stats, "damage_keys") {
-		_damage_keys = variable_clone(_tower_stats.damage_keys)
-	}
-	variable_struct_set(_damage_keys, target.bloon_stats.target_category, true)
 	
 	// In case the tower_attack_script adds a boost
 	if variable_struct_exists(_tower_stats, "stat_boosts") {

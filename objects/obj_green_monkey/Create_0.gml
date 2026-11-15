@@ -6,5 +6,5 @@ event_inherited();
 
 // track flowers and delete if sold?
 flowers = {}
-sun = 0
+sun = 100
 

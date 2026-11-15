@@ -9,8 +9,8 @@
   "name":"obj_tower_base",
   "overriddenProperties":[],
   "parent":{
-    "name":"Towers",
-    "path":"folders/Objects/Towers.yy",
+    "name":"meta",
+    "path":"folders/Objects/Towers/meta.yy",
   },
   "parentObjectId":null,
   "persistent":false,

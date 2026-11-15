@@ -1002,29 +1002,13 @@ function scr_setup_tower_stats(){
 			flavor_text: "Grows flowers overtime that take up space and shoot thorns.",
 			upgrade_cost: 0,
 			range: 90,
-			delay: 2,
+			delay: 15,
 			attack_cooldown: 0,
 			attack_angle_offset: 0,
 			no_target: true,
 			tower_attack_script: scr_spawn_flower,
 	
-			projectile_stats: [
-				{
-					sprite: "spr_needle",
-					projectile_count: 3,
-					projectile_spread: 120,
-					direction: 0,
-					pierce: 1,
-					damage: 1,
-					speed: 8,
-					lifespan: 15,
-					height: 4,
-					lobbing: {
-						gravity: 0.5,
-						speed: 3.5
-					}
-				}
-			],
+			projectile_stats: [],
 			upgrades: [
 				[
 				],

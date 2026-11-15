@@ -10,8 +10,8 @@
   "name":"obj_ghost_monkey",
   "overriddenProperties":[],
   "parent":{
-    "name":"Towers",
-    "path":"folders/Objects/Towers.yy",
+    "name":"minions",
+    "path":"folders/Objects/Towers/minions.yy",
   },
   "parentObjectId":{
     "name":"obj_turret",
