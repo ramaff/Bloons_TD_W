@@ -11,7 +11,4 @@ enum MENU {
 	shop_1,
 	shop_3
 }
-
-function scr_macros(){
-
-}
+#macro BASE_ALL_DAMAGE_KEYS {"plain_sight": true, "camo": true, "normal": true}

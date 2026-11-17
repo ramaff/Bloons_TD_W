@@ -216,6 +216,10 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		exit;
 	}
 	
+	if variable_struct_exists(_projectile_stats, "hit_script") {
+		script_execute(_projectile_stats.hit_script)
+	}
+	
 	if variable_struct_exists(_projectile_stats, "freeze")  {
 		_bloon.bloon_stats.freeze = _projectile_stats.freeze;
 		_bloon.bloon_stats.freeze_time = _projectile_stats.freeze_time;

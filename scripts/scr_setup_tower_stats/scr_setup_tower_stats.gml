@@ -1014,12 +1014,12 @@ function scr_setup_tower_stats(){
 				],
 				[
 					{
-						keyword: "Photosynthesis",
-						upgrade_cost: 500
+						keyword: "Bloonberry Bush",
+						upgrade_cost: 390
 					},
 					{
-						keyword: "Bloonbury Bush",
-						upgrade_cost: 400
+						keyword: "Photosynthesis",
+						upgrade_cost: 630
 					}
 				]
 			],

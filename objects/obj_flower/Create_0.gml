@@ -1,4 +1,4 @@
 // Inherit the parent event
 event_inherited();
 
-thorns = 100
+thorns = 40

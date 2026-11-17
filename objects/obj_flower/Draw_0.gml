@@ -3,6 +3,6 @@
 
 draw_self()
 
-image_index = (100 - thorns) / 25
+image_index = (40 - thorns) / 10
 
 

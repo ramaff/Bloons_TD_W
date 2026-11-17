@@ -1509,28 +1509,26 @@ function scr_setup_upgrade_stats(){
 		"green_monkey": {
 			"Photosynthesis": {
 				range: 10,
-				upgrade_string: "Doubles flower production"
+				fire_rate_multiplier: 2,
+				upgrade_string: "Doubles sun production, resulting in more flowers being planted."
 			},
-			"Bloonbury Bush": {
-				upgrade_string: "Plants bushes on the ground that pop passing by bloons."
+			"Bloonberry Bush": {
+				upgrade_string: "When unable to plant more flowers, plant bushes on the ground that pop passing by bloons."
 			},
 			"Venus Bloon Trap": {
-				upgrade_string: "Eats bloons, absorbing them in order to grow more flowers.",
+				upgrade_string: "Eats bloons, absorbing them in order to grow more flowers. Also massively increases range.",
+				range: 70,
 				projectile_replacement: true,
-				tower_attack_script: scr_spray_paint_spray,
-				tower_sprite: "spr_spray_paint_monkey",
-				camo_detection: true,
 				projectile_stats: [
 					{
-						sprite: "spr_spray_paint_red",
-						pierce: 12,
-						damage: 0,
-						speed: 13,
-						lifespan: 10,
-						camo_detection: true,
-						lead_hit: true,
-						paint: 1,
-						paint_time: 120
+						object: "obj_venus_bloon_trap",
+						sprite: "spr_venus_bloon_trap",
+						pierce: 300,
+						damage: 1,
+						speed: 8,
+						lifespan: 999999,
+						tick_frequency: 30,
+						hit_script: scr_venus_bloon_consume
 					}
 				]
 			},
