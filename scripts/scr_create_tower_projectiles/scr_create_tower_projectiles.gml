@@ -57,7 +57,9 @@ function scr_create_tower_projectiles(_projectile_stats, _xx = x, _yy = y, _targ
 					projectile_stats.speed += _current_boosts.speed_boost
 				}
 				if variable_struct_exists(_current_boosts, "angular_velocity") {
-					projectile_stats.angular_velocity = _current_boosts.angular_velocity
+					if _current_boosts.angular_velocity != 0 {
+						projectile_stats.angular_velocity = _current_boosts.angular_velocity
+					}
 				}
 				if variable_struct_exists(_current_boosts, "puncture") {
 					if variable_struct_exists(projectile_stats, "puncture") {

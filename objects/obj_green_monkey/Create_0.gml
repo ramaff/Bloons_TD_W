@@ -8,3 +8,5 @@ event_inherited();
 flowers = {}
 sun = 100
 venus = noone;
+venus2 = noone;
+venus3 = noone;

@@ -1,25 +1,48 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_spawn_flower(){
-	scr_sun()
-	if sun >= 100 {
-		var _tower_stats = {
-			tower_sprite: "spr_flower",
-			total_cost: 660,
-			upgrade_cost: 0,
-			range: 90,
-			delay: 60,
-			attack_cooldown: 0,
-			attack_angle_offset: 0,
-			//no_target: true,
-	
+	var _sun_cost = 100
+	var _tower_stats = {
+		tower_sprite: "spr_flower", total_cost: 660, upgrade_cost: 0, range: 90,
+		delay: 60, attack_cooldown: 0, attack_angle_offset: 0,
+		projectile_stats: [
+			{
+				sprite: "spr_needle", projectile_count: 3, projectile_spread: 120,
+				direction: 0, pierce: 1, damage: 1, speed: 8, lifespan: 15
+			}
+		],	
+	}
+	var _projectile_stats = [
+		{
+			sprite: "spr_bloonberry_bush", projectile_count: 1, projectile_spread: 45,
+			direction: random(360), pierce: 5, damage: 1, speed: 0, lifespan: 1800,
+			camo_detection: true, tick_frequency: 1
+		}
+	]
+	if variable_struct_exists(tower_stats.active_upgrades, "Garden Warfare") {
+		_sun_cost = 300
+		_tower_stats = {
+			tower_sprite: "spr_flower", total_cost: 660, upgrade_cost: 0, range: 110,
+			delay: 45, attack_cooldown: 0, attack_angle_offset: 0,
 			projectile_stats: [
 				{
-					sprite: "spr_needle", projectile_count: 3, projectile_spread: 120,
-					direction: 0, pierce: 1, damage: 1, speed: 8, lifespan: 15
+					sprite: "spr_needle", projectile_count: 6, projectile_spread: 60,
+					direction: 0, pierce: 2, damage: 1, speed: 12, lifespan: 60, angular_velocity: 6,
+					stay_pointed: true
 				}
 			],	
 		}
+		_projectile_stats = [
+			{
+				sprite: "spr_bloonberry_bush", projectile_count: 1, projectile_spread: 45,
+				direction: random(360), pierce: 20, damage: 1, speed: 0, lifespan: 1800,
+				camo_detection: true, tick_frequency: 1
+			}
+		]
+	}
+	scr_sun(_sun_cost)
+	
+	if sun >= _sun_cost {
 		var _flower_id = noone;
 		// todo find closest 1x1 tile
 		//var _coords = scr_get_flower_tile(x - 16, y - 16, tower_stats.range)
@@ -47,28 +70,13 @@ function scr_spawn_flower(){
 			
 			}
 			variable_struct_set(flowers, _flower_id, _flower_id)
-			sun -= 100
+			sun -= _sun_cost
 		} else if variable_struct_exists(tower_stats.active_upgrades, "Bloonberry Bush") {
 			_coords = scr_get_berry_tile(x - 16, y - 16, tower_stats.range)
 			if _coords != - 1 {
-				var _projectile_stats = [
-					{
-						sprite: "spr_bloonberry_bush",
-						projectile_count: 1,
-						projectile_spread: 45,
-						direction: random(360),
-						pierce: 5,
-						damage: 1,
-						speed: 0,
-						lifespan: 1800,
-						camo_detection: true,
-						tick_frequency: 1
-					}
-				]
 
-				_projectile_stats[0].direction = random(360)
 				scr_create_tower_projectiles(_projectile_stats, _coords[0] - 15 + random(30), _coords[1] - 15 + random(30), noone, 0, {}, noone, undefined, BASE_ALL_DAMAGE_KEYS);
-				sun -= 100
+				sun -= _sun_cost
 			}
 		}
 	}
@@ -147,8 +155,8 @@ function scr_get_flower_tile(_mx, _my, _range) {
 	}
 }
 
-function scr_sun() {
-	if sun < 100 {
+function scr_sun(_cap) {
+	if sun < _cap {
 		sun += 5	
 	}
 }
