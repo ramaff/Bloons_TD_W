@@ -4,7 +4,7 @@ function scr_spawn_flower(){
 	var _sun_cost = 100
 	var _tower_stats = {
 		tower_sprite: "spr_flower", total_cost: 660, upgrade_cost: 0, range: 90,
-		delay: 60, attack_cooldown: 0, attack_angle_offset: 0,
+		delay: 60, attack_cooldown: 0, attack_angle_offset: 0, stun_resist_add: 100,
 		projectile_stats: [
 			{
 				sprite: "spr_needle", projectile_count: 3, projectile_spread: 120,
@@ -16,14 +16,14 @@ function scr_spawn_flower(){
 		{
 			sprite: "spr_bloonberry_bush", projectile_count: 1, projectile_spread: 45,
 			direction: random(360), pierce: 5, damage: 1, speed: 0, lifespan: 1800,
-			camo_detection: true, tick_frequency: 1
+			camo_detection: true, tick_frequency: 1, size: 0.7
 		}
 	]
 	if variable_struct_exists(tower_stats.active_upgrades, "Garden Warfare") {
 		_sun_cost = 300
 		_tower_stats = {
 			tower_sprite: "spr_flower", total_cost: 660, upgrade_cost: 0, range: 110,
-			delay: 45, attack_cooldown: 0, attack_angle_offset: 0,
+			delay: 45, attack_cooldown: 0, attack_angle_offset: 0, stun_resist_add: 500,
 			projectile_stats: [
 				{
 					sprite: "spr_needle", projectile_count: 6, projectile_spread: 60,

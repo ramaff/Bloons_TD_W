@@ -4,7 +4,9 @@ event_inherited();
 //show_debug_message(thorns)
 
 if attacked {
-	thorns--
+	thorns -= 3
+} else if stun > 0 {
+	thorns -= 0.05
 }
 if thorns <= 0 {
 	var _tower = id

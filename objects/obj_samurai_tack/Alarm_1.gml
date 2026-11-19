@@ -1,7 +1,7 @@
  /// @description Insert description here
 // You can write your code in this editor
 
-alarm[1] = 60 + (480 / bloon_stats.speed);
+alarm[1] = 90 + (720 / bloon_stats.speed);
 
 
 var _xx = x;
@@ -35,7 +35,17 @@ with (obj_normal_bloon) {
 	
 }
 
-scr_stun_closest_individual(1300)
+var _tower = scr_stun_closest_individual(1300)
+
+saved_position = scr_stop_bloon_path()
+x = _tower.x + 80
+y = _tower.y
+
+sprite_index = spr_samurai_tack_attack
+image_index = 1
+
+alarm[2] = 50;
+
 
 /*
 if instance_number(obj_bloon) <= instance_number(obj_tack_the_ripper) {

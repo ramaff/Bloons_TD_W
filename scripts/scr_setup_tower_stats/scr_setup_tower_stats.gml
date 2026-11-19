@@ -1002,7 +1002,7 @@ function scr_setup_tower_stats(){
 			flavor_text: "Grows flowers overtime that take up space and shoot thorns.",
 			upgrade_cost: 0,
 			range: 110,
-			delay: 15,
+			delay: 10,
 			attack_cooldown: 0,
 			attack_angle_offset: 0,
 			no_target: true,

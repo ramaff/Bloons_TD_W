@@ -120,6 +120,12 @@ global.towers_progress = {
 	},
 	"bongo_monkey": {
 		"unlocked": false	
+	},
+	"green_monkey": {
+		"unlocked": false	
+	},
+	"ice_ball": {
+		"unlocked": false	
 	}
 }
 

@@ -8,3 +8,4 @@ alarm[0] = 5;
 alarm[1] = 180;
 
 slicer = noone
+saved_position = 0

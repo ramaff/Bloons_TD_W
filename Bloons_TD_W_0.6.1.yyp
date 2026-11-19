@@ -451,6 +451,7 @@
     {"id":{"name":"scr_special_delivery","path":"scripts/scr_special_delivery/scr_special_delivery.yy",},},
     {"id":{"name":"scr_split_projectile_bad","path":"scripts/scr_split_projectile_bad/scr_split_projectile_bad.yy",},},
     {"id":{"name":"scr_spray_paint_spray","path":"scripts/scr_spray_paint_spray/scr_spray_paint_spray.yy",},},
+    {"id":{"name":"scr_stop_bloon_path","path":"scripts/scr_stop_bloon_path/scr_stop_bloon_path.yy",},},
     {"id":{"name":"scr_stun_closest_individual","path":"scripts/scr_stun_closest_individual/scr_stun_closest_individual.yy",},},
     {"id":{"name":"scr_summon_golden_bloon","path":"scripts/scr_summon_golden_bloon/scr_summon_golden_bloon.yy",},},
     {"id":{"name":"scr_supply_drop","path":"scripts/scr_supply_drop/scr_supply_drop.yy",},},

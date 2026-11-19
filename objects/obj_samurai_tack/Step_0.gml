@@ -19,3 +19,7 @@ if instance_exists(slicer) {
 	path_speed = bloon_stats.speed
 }
 
+if alarm[1] < 30 {
+	sprite_index = spr_samurai_tack_attack
+	image_index = 0;
+}

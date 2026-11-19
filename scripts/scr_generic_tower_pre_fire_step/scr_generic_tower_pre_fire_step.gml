@@ -66,7 +66,7 @@ function scr_generic_tower_pre_fire_step(){
 	}
 
 	if stun > 0 {
-		stun -= current_boosts.stun_heal_fac * tower_stats.total_cost / 3000;
+		stun -= current_boosts.stun_heal_fac * (tower_stats.stun_resist_add + tower_stats.total_cost) / 3000;
 		exit;
 	}
 
