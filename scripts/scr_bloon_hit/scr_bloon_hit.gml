@@ -209,7 +209,14 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			}
 		}
 	}
-	if _stopped_by_lead {
+	var _metallic_break = true
+	if variable_struct_exists(_bloon.bloon_stats, "metallic_break") {
+		if _bloon.bloon_stats.metallic_break = false {
+			_metallic_break = false	
+		}
+	}
+	
+	if _stopped_by_lead and _metallic_break {
 		if instance_exists(_projectile) {
 			instance_destroy(_projectile)
 		}
@@ -295,6 +302,10 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 	
 	var _damage = _projectile_stats.damage;
 	var _density = _bloon.bloon_stats.density;
+	
+	if _stopped_by_lead and !_metallic_break {
+		_damage = 0
+	}
 	
 	if variable_struct_exists(_bloon.bloon_stats, "magic_marking") {
 		_density = max(0, _density - _bloon.bloon_stats.magic_marking);

@@ -1040,6 +1040,46 @@ function scr_setup_tower_stats(){
 				]
 			]
 		},
+		"ice_monkey": {
+			tower_sprite: "spr_cactus_monkey",
+			butt_sprite: "spr_cactus_monkey_tower_butt",
+			total_cost: 430,
+			upgrade_cost: 0,
+			range: 95,
+			delay: 75,
+			attack_cooldown: 0,
+			attack_angle_offset: 0,
+			no_target: true,
+	
+			projectile_stats: [
+				{
+					object: "obj_explosion_projectile",
+					sprite: "spr_ice_burst",
+					lead_hit: true,
+					lifespan: 20,
+					speed: 0,
+					direction: 0,
+					damage: 0,
+					pierce: 60,
+					size: 0.65,
+					freeze: 1,
+					freeze_time: 45,
+				}
+			],
+			upgrades: [
+				[],
+				[
+					{keyword: "Stacking Snow", upgrade_cost: 260},
+					{keyword: "Enhanced Freeze", upgrade_cost: 450},
+				]
+			],
+			split_upgrades: [
+				[
+					{keyword: "Snow Crush", upgrade_cost: 1200},
+					{keyword: "Snow Monkeys", upgrade_cost: 5300},
+				],
+			]
+		}
 	}
 
 }

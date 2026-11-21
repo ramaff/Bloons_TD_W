@@ -2508,6 +2508,57 @@ function scr_setup_bloon_stats(){
 				density: 1,
 				speed: 1.3,
 			}
+		},
+		"snow": {
+			"icy": {
+				"sprite": "spr_icy_bloon",
+				"object": "obj_icy_bloon",
+				max_health: 3,
+				layers: 1,
+				index: 0,
+				rbe: 25,
+				health: 3,
+				density: 1,
+				speed: 1.5,
+				metallic: true,
+				metallic_break: false,
+				children: [
+					{"class": "normal", "layer": "white", "properties": ["float to track"]},
+					{"class": "normal", "layer": "white", "properties": ["float to track"]}
+				]
+			},
+			"block": {
+				"sprite": "spr_icy_bloon",
+				"object": "obj_icy_bloon",
+				max_health: 45,
+				layers: 1,
+				index: 0,
+				rbe: 145,
+				health: 45,
+				density: 1,
+				speed: 0.4,
+				metallic: true,
+				metallic_break: false,
+				children: [
+					{"class": "snow", "layer": "icy", "properties": ["float to track"]},
+					{"class": "snow", "layer": "icy", "properties": ["float to track"]},
+					{"class": "snow", "layer": "icy", "properties": ["float to track"]},
+					{"class": "snow", "layer": "icy", "properties": ["float to track"]}
+				]
+			},
+			"ball": {
+				"sprite": "spr_icy_bloon",
+				"object": "obj_icy_bloon",
+				max_health: 200,
+				layers: 1,
+				index: 0,
+				rbe: 1,
+				health: 200,
+				density: 1,
+				speed: 0.4,
+				children: [
+				]
+			}
 		}
 	}
 }

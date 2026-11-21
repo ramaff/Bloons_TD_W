@@ -86,6 +86,12 @@ tracks_info = {
 		"round_data": "zen_garden_rounds.json",
 		"name": "zen garden",
 		"requirement": "traffic_jam"
+	},
+	"rm_snow_field": {
+		"paths": [pth_snow_field],
+		"round_data": "snow_field_rounds.json",
+		"name": "snow field",
+		"requirement": "traffic_jam"
 	}
 }
 global.mission = "training_room"
