@@ -12,10 +12,3 @@ image_yscale = image_xscale
 
 image_angle -= speed * 5;
 
-/*
-if added_speed < 10 {
-	added_speed += 0.1;
-	speed += 0.1;
-	path_speed += 0.1;
-}
-*/

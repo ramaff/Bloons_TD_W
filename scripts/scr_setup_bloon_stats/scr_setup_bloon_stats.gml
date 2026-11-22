@@ -991,7 +991,6 @@ function scr_setup_bloon_stats(){
 			}
 		},
 		"moab": {
-			sprite: "spr_moab",
 			"object": "obj_moab_class",
 			"mini": {
 				sprite: "spr_mini_moab",
@@ -2558,6 +2557,21 @@ function scr_setup_bloon_stats(){
 				speed: 0.4,
 				children: [
 				]
+			}
+		},
+		"tack_frost": {
+			"object": "obj_tack_frost",
+			sprite: "spr_tack_frost",
+			"icon_sprite": "spr_non_specified_bounty_icon",
+			"blue": {
+				sprite: "spr_tack_frost",
+				layers: 7500,
+				rbe: 7500,
+				"big_bloon_tier": 6,
+				damage: 3000,
+				health: 7500,
+				density: 1,
+				speed: 0.15,
 			}
 		}
 	}

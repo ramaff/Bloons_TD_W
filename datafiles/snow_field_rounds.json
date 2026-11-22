@@ -338,7 +338,7 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "tack_frost", "layer": "tack_frost", "count": 1, "spread": 400, "cooldown": 0
+			"class": "tack_frost", "layer": "blue", "count": 1, "spread": 400, "cooldown": 0
 		}
 	],
 	[

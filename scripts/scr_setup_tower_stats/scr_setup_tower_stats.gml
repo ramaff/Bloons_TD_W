@@ -1041,7 +1041,7 @@ function scr_setup_tower_stats(){
 			]
 		},
 		"ice_monkey": {
-			tower_sprite: "spr_cactus_monkey",
+			tower_sprite: "spr_ice_monkey",
 			butt_sprite: "spr_cactus_monkey_tower_butt",
 			total_cost: 430,
 			upgrade_cost: 0,

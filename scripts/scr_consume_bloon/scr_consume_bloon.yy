@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_consume_bloon",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_consume_bloon",
+  "parent":{
+    "name":"bloons",
+    "path":"folders/Scripts/bloons.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
