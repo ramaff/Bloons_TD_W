@@ -7,7 +7,6 @@ alarm[2] = 30;
 sprite_index = spr_catapult_bloon_shooting
 
 var _class = "ceramic"
-//var _layer = _layers[floor(abs((stored_health - _lost_hp) mod 25) / 5)]
 var _xx = x;
 var _yy = y - 50;
 var _bloon_object = obj_ceramic_class

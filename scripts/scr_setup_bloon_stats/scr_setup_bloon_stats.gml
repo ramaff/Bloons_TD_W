@@ -2528,7 +2528,7 @@ function scr_setup_bloon_stats(){
 				]
 			},
 			"block": {
-				"sprite": "spr_icy_bloon",
+				"sprite": "spr_icy_block_bloon",
 				"object": "obj_icy_bloon",
 				max_health: 45,
 				layers: 1,
@@ -2547,8 +2547,8 @@ function scr_setup_bloon_stats(){
 				]
 			},
 			"ball": {
-				"sprite": "spr_icy_bloon",
-				"object": "obj_icy_bloon",
+				"sprite": "spr_snow_ball_bloon",
+				"object": "obj_snow_ball_bloon",
 				max_health: 200,
 				layers: 1,
 				index: 0,

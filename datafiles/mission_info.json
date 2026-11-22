@@ -63,7 +63,7 @@
     },
     "rm_snow_field": {
         "towers": ["ice_monkey"],
-        "added_cash": 400,
+        "added_cash": 50000,
         "difficulty": "intermediate"
     },
     "rm_abandoned_house_on_the_hill": {

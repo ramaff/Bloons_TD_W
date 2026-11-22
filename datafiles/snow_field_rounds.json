@@ -59,7 +59,10 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "snow", "layer": "icy", "count": 5, "spread": 95, "cooldown": 0
+			"class": "splitter", "layer": "blue", "count": 20, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "blue", "count": 20, "spread": 60, "cooldown": 10
 		}
 	],
 	[
@@ -68,7 +71,145 @@
 			"round_icon_index": 0
 		},
 		{
-			"class": "snow", "layer": "block", "count": 5, "spread": 95, "cooldown": 0
+			"class": "normal", "layer": "white", "count": 15, "spread": 80, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "splitter", "layer": "blue", "count": 20, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "blue", "count": 20, "spread": 60, "cooldown": 10
+		},
+		{
+			"class": "snow", "layer": "icy", "count": 1, "spread": 145, "cooldown": 250
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "splitter", "layer": "blue", "count": 20, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "splitter", "layer": "blue", "count": 20, "spread": 60, "cooldown": 10
+		},
+		{
+			"class": "snow", "layer": "icy", "count": 2, "spread": 350, "cooldown": 250
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "snow", "layer": "icy", "count": 5, "spread": 150, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "white", "count": 20, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "white", "count": 20, "spread": 60, "cooldown": 10
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 15, "spread": 80, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "white", "count": 20, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "white", "count": 20, "spread": 60, "cooldown": 10
+		},
+		{
+			"class": "snow", "layer": "icy", "count": 5, "spread": 150, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 15, "spread": 80, "cooldown": 0
+		},
+		{
+			"class": "snow", "layer": "icy", "count": 5, "spread": 150, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "snow", "layer": "block", "count": 5, "spread": 200, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "snow", "layer": "icy", "count": 20, "spread": 90, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "mini", "count": 1, "spread": 300, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 20, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 20, "spread": 60, "cooldown": 10
+		},
+		{
+			"class": "snow", "layer": "icy", "count": 20, "spread": 90, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "mini", "count": 2, "spread": 300, "cooldown": 0
 		}
 	],
 	[
@@ -89,7 +230,103 @@
 			"round_icon_index": 0
 		},
 		{
+			"class": "normal", "layer": "zebra", "count": 20, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 20, "spread": 60, "cooldown": 10
+		},
+		{
+			"class": "snow", "layer": "block", "count": 5, "spread": 200, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "mini", "count": 3, "spread": 250, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 20, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 20, "spread": 60, "cooldown": 10
+		},
+		{
+			"class": "snow", "layer": "block", "count": 10, "spread": 100, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 20, "spread": 60, "cooldown": 0
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 20, "spread": 60, "cooldown": 10
+		},
+		{
+			"class": "snow", "layer": "ball", "count": 1, "spread": 0, "cooldown": 150
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "normal", "layer": "zebra", "count": 50, "spread": 15, "cooldown": 0
+		},
+		{
+			"class": "snow", "layer": "ball", "count": 3, "spread": 200, "cooldown": 150
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "mini", "count": 5, "spread": 250, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "moab", "count": 1, "spread": 250, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 100, "spread": 15, "cooldown": 0
+		},
+		{
+			"class": "snow", "layer": "ball", "count": 3, "spread": 200, "cooldown": 150
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "mini", "count": 5, "spread": 250, "cooldown": 0
 		},
 		{
 			"class": "snow", "layer": "ball", "count": 3, "spread": 200, "cooldown": 150
@@ -110,7 +347,40 @@
 			"round_icon_index": 0
 		},
 		{
+			"class": "moab", "layer": "mini", "count": 15, "spread": 150, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "mini", "count": 15, "spread": 150, "cooldown": 0
+		},
+		{
+			"class": "snow", "layer": "block", "count": 30, "spread": 70, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
 			"class": "moab", "layer": "moab", "count": 3, "spread": 300, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 0
+		},
+		{
+			"class": "moab", "layer": "moab", "count": 2, "spread": 400, "cooldown": 0
+		},
+		{
+			"class": "snow", "layer": "block", "count": 30, "spread": 40, "cooldown": 0
 		}
 	],
 	[
