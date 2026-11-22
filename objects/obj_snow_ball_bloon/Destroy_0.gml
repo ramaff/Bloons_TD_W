@@ -4,6 +4,7 @@ event_inherited();
 
 var _bloon_count = array_length(consumed_bloons)
 var _i;
+var _pos = path_position;
 
 for (_i = 0; _i < _bloon_count; _i++) {
 
@@ -17,8 +18,6 @@ for (_i = 0; _i < _bloon_count; _i++) {
 	var _path = bloon_stats.path
 	var _properties = ["float to track"]
 	var _round = bloon_stats.round
-	
-	var _pos = path_position;
 
 	with instance_create_depth(_xx, _yy, depth, asset_get_index(_bloon_object)) {
 		scr_bloon_stat_setup(id, _class, _layer, _path, _properties, _round)
@@ -30,6 +29,7 @@ for (_i = 0; _i < _bloon_count; _i++) {
 		if instance_exists(target) {
 			target.x = path_get_x(bloon_stats.path, target.path_position);
 			target.y = path_get_y(bloon_stats.path, target.path_position);
+			target.path_position = _pos
 				
 			x = _xx;
 			y = _yy

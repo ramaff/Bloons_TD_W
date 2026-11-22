@@ -12,3 +12,5 @@ enum MENU {
 	shop_3
 }
 #macro BASE_ALL_DAMAGE_KEYS {"plain_sight": true, "camo": true, "normal": true}
+
+#macro BANNED_EATS_BLOONS {"snow": {"ball": true, "jack_head": true}, "tack_frost": {"blue": true}}

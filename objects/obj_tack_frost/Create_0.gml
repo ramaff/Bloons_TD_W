@@ -3,9 +3,6 @@ event_inherited();
 
 added_speed = 0
 consumed_bloons = []
-banned = {
-	"snow": {"ball": true},	
-	"tack_frost": {"blue": true}	
-}
+banned = BANNED_EATS_BLOONS
 
-stacks = 2
+stacks = 3

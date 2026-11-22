@@ -2557,6 +2557,19 @@ function scr_setup_bloon_stats(){
 				speed: 0.4,
 				children: [
 				]
+			},
+			"jack_head": {
+				"sprite": "spr_tack_frost_ball",
+				"object": "obj_snow_ball_bloon",
+				max_health: 500,
+				layers: 1,
+				index: 0,
+				rbe: 1,
+				health: 500,
+				density: 1,
+				speed: 0.4,
+				children: [
+				]
 			}
 		},
 		"tack_frost": {
