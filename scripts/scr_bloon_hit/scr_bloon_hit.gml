@@ -409,6 +409,10 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 				bloon_stats.goop = _bloon.bloon_stats.goop;
 				bloon_stats.goop_time = _bloon.bloon_stats.goop_time;
 			}
+			if variable_struct_exists(_bloon.bloon_stats, "freeze") {
+				bloon_stats.freeze = _bloon.bloon_stats.freeze;
+				bloon_stats.freeze_time = _bloon.bloon_stats.freeze_time;
+			}
 			if variable_struct_exists(_bloon.bloon_stats, "fire") {
 				bloon_stats.fire = _bloon.bloon_stats.fire;
 				bloon_stats.fire_time = _bloon.bloon_stats.fire_time;

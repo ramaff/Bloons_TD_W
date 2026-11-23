@@ -1059,7 +1059,7 @@ function scr_setup_tower_stats(){
 					lifespan: 20,
 					speed: 0,
 					direction: 0,
-					damage: 0,
+					damage: 1,
 					pierce: 60,
 					size: 0.65,
 					freeze: 1,

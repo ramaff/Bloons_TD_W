@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_ice_monkey",
   "bboxMode":0,
-  "bbox_bottom":70,
+  "bbox_bottom":69,
   "bbox_left":20,
   "bbox_right":69,
   "bbox_top":7,
