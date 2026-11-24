@@ -50,18 +50,17 @@ if variable_struct_exists(bloon_stats, "float to track") {
 
 if variable_struct_exists(bloon_stats, "freeze") {
 	
-	var _move_percent = 1 - (bloon_stats.freeze / power(2, other.bloon_stats.big_bloon_tier))
-	_move_percent = max(0, _move_percent);
 	bloon_stats.freeze_time--;
 	
 	if bloon_stats.freeze_time <= 0 {
 		variable_struct_remove(bloon_stats, "freeze")
 		variable_struct_remove(bloon_stats, "freeze_time")
-		_move_percent = 1;
+		speed = bloon_stats.speed;
+		path_speed = bloon_stats.speed;
+	} else {
+		speed = 0;
+		path_speed = 0;
 	}
-	
-	speed = bloon_stats.speed * _move_percent;
-	path_speed = bloon_stats.speed * _move_percent;
 }
 
 if variable_struct_exists(bloon_stats, "goop") {
@@ -73,6 +72,22 @@ if variable_struct_exists(bloon_stats, "goop") {
 	if bloon_stats.goop_time <= 0 {
 		variable_struct_remove(bloon_stats, "goop")
 		variable_struct_remove(bloon_stats, "goop_time")
+		_move_percent = 1;
+	}
+	
+	speed = bloon_stats.speed * _move_percent;
+	path_speed = bloon_stats.speed * _move_percent;
+}
+
+if variable_struct_exists(bloon_stats, "snow") {
+	
+	var _move_percent = 1 - ((0.25 + (bloon_stats.snow * 0.25)) / power(2, other.bloon_stats.big_bloon_tier))
+	_move_percent = max(0, _move_percent);
+	bloon_stats.snow_time--;
+	
+	if bloon_stats.snow_time <= 0 {
+		variable_struct_remove(bloon_stats, "snow")
+		variable_struct_remove(bloon_stats, "snow_time")
 		_move_percent = 1;
 	}
 	

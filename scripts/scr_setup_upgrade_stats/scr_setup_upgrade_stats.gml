@@ -1536,5 +1536,95 @@ function scr_setup_upgrade_stats(){
 				upgrade_string: "Massively upgrades the potency of plants",
 			}
 		},
+		"ice_monkey": {
+			"Stacking Snow": {
+				upgrade_string: "Applies a long lasting heavy slow effect, which also increases bloon density by 1, requiring more pierce to pass through them.",
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						object: "obj_explosion_projectile",
+						sprite: "spr_ice_burst",
+						lead_hit: true,
+						lifespan: 20,
+						speed: 0,
+						direction: 0,
+						damage: 1,
+						pierce: 30,
+						size: 0.5,
+						freeze: 1,
+						freeze_time: 45,
+						snow: 1,
+						snow_time: 180
+					}
+				]
+			},
+			"Enhanced Freeze": {
+				range: 15,
+				fire_rate_multiplier: 1.12,
+				upgrade_string: "Increases freeze radius, and status duration time.",
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						object: "obj_explosion_projectile",
+						sprite: "spr_ice_burst",
+						lead_hit: true,
+						lifespan: 20,
+						speed: 0,
+						direction: 0,
+						damage: 1,
+						pierce: 80,
+						size: 0.65,
+						freeze: 2,
+						freeze_time: 60,
+						snow: 1,
+						snow_time: 210
+					}
+				]
+			},
+			"Snow Crush": {
+				upgrade_string: "Applies heavy snow on to bloons. If bloons are below 4 layers then they are instantly crushed and popped by the snow.",
+				range: 10,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						object: "obj_explosion_projectile",
+						sprite: "spr_ice_burst",
+						lead_hit: true,
+						lifespan: 20,
+						speed: 0,
+						direction: 0,
+						damage: 1,
+						pierce: 80,
+						size: 0.65,
+						freeze: 2,
+						freeze_time: 60,
+						snow: 3,
+						snow_time: 240
+					}
+				]
+			},
+			"Snow Monkeys": {
+				upgrade_string: "Applies more snow on to bloons. When crushed they leave a snow monkey pile, which throws snow balls at bloons.",
+				range: 10,
+				projectile_replacement: true,
+				projectile_stats: [
+					{
+						object: "obj_explosion_projectile",
+						sprite: "spr_ice_burst",
+						lead_hit: true,
+						lifespan: 20,
+						speed: 0,
+						direction: 0,
+						damage: 1,
+						pierce: 100,
+						size: 0.7,
+						freeze: 2,
+						freeze_time: 60,
+						snow: 6,
+						snow_time: 240
+					}
+				]
+			}
+		},
 	}
 }

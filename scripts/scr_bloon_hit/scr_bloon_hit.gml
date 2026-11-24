@@ -14,7 +14,7 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 	if _bloon_stats.health <= 0 {
 		
 		var _cash_sucked = false 
-		var _cash_flow = 1;
+		var _cash_flow = global.cash_flow;
 		
 		if instance_exists(obj_real_estate_bloon) {
 			var _ogxx = x;
@@ -28,14 +28,6 @@ function scr_apply_damage_to_bloon(_bloon_stats, _damage, _round, _bloon = noone
 					//}
 				}
 			}
-		}
-		
-		if _round > 40 {
-			_cash_flow = _cash_flow * 0.2;
-		} else if _round > 30 {
-			_cash_flow = _cash_flow * 0.4;
-		} else if _round > 20 {
-			_cash_flow = _cash_flow * 0.6;
 		}
 		
 		//if !_cash_sucked {
@@ -228,8 +220,16 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 	}
 	
 	if variable_struct_exists(_projectile_stats, "freeze")  {
-		_bloon.bloon_stats.freeze = _projectile_stats.freeze;
-		_bloon.bloon_stats.freeze_time = _projectile_stats.freeze_time;
+		var _time = _projectile_stats.freeze_time
+		_time = floor(_time / power(2, _bloon.bloon_stats.big_bloon_tier))
+		if _time >= 1 {
+			_bloon.bloon_stats.freeze = _projectile_stats.freeze;
+			_bloon.bloon_stats.freeze_time = _projectile_stats.freeze_time;
+		}
+	}
+	if variable_struct_exists(_projectile_stats, "snow")  {
+		_bloon.bloon_stats.snow = _projectile_stats.snow;
+		_bloon.bloon_stats.snow_time = _projectile_stats.snow_time;
 	}
 	if variable_struct_exists(_projectile_stats, "goop") {
 		_bloon.bloon_stats.goop = _projectile_stats.goop;
@@ -307,6 +307,9 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		_damage = 0
 	}
 	
+	if variable_struct_exists(_bloon.bloon_stats, "snow") {
+		_density += 1	
+	}
 	if variable_struct_exists(_bloon.bloon_stats, "magic_marking") {
 		_density = max(0, _density - _bloon.bloon_stats.magic_marking);
 	}
@@ -364,6 +367,13 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 			}
 		}
 		
+		if variable_struct_exists(_bloon.bloon_stats, "snow") {
+			if _bloon.bloon_stats.layers <= _bloon.bloon_stats.snow {
+				global.money += global.cash_flow * max(0, (_bloon.bloon_stats.remaining_value - 1))
+				continue
+			}
+		}
+		
 		if variable_struct_exists(_bloon.bloon_stats, "orbital") {
 			_bloon_object = obj_orbital_bloon
 		}
@@ -410,8 +420,14 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 				bloon_stats.goop_time = _bloon.bloon_stats.goop_time;
 			}
 			if variable_struct_exists(_bloon.bloon_stats, "freeze") {
-				bloon_stats.freeze = _bloon.bloon_stats.freeze;
-				bloon_stats.freeze_time = _bloon.bloon_stats.freeze_time;
+				if _bloon.bloon_stats.freeze >= 1 {
+					bloon_stats.freeze = _bloon.bloon_stats.freeze - 1;
+					bloon_stats.freeze_time = _bloon.bloon_stats.freeze_time;
+				}
+			}
+			if variable_struct_exists(_bloon.bloon_stats, "snow") {
+				bloon_stats.snow = _bloon.bloon_stats.snow;
+				bloon_stats.snow_time = _bloon.bloon_stats.snow_time;
 			}
 			if variable_struct_exists(_bloon.bloon_stats, "fire") {
 				bloon_stats.fire = _bloon.bloon_stats.fire;
