@@ -28,7 +28,7 @@
   "origin":0,
   "parent":{
     "name":"tower_butts",
-    "path":"folders/Sprites/ui/tower_butts.yy",
+    "path":"folders/Sprites/tower_butts.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -370,7 +370,27 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		if variable_struct_exists(_bloon.bloon_stats, "snow") {
 			if _bloon.bloon_stats.layers <= _bloon.bloon_stats.snow {
 				global.money += global.cash_flow * max(0, (_bloon.bloon_stats.remaining_value - 1))
-				instance_create_depth(_bloon.x, _bloon.y, depth, obj_snow_pile);
+				//if _bloon.bloon_stats.snow > 3 and !irandom(5) {
+				if _bloon.bloon_stats.snow > 3 and (_projectile_stats.pierce mod 5 == 1) {
+					var _tower_stats = {
+						tower_sprite: "spr_snow_monkey", total_cost: 660, upgrade_cost: 0, range: 110,
+						delay: 30, attack_cooldown: 0, attack_angle_offset: 0, stun_resist_add: 100,
+						projectile_stats: [
+							{
+								sprite: "spr_snow_ball", projectile_count: 1, projectile_spread: 120,
+								direction: 0, pierce: 2, damage: 1, speed: 8, lifespan: 15, freeze: 1, freeze_time: 45
+							}
+						],	
+					}
+					with instance_create_depth(_bloon.x, _bloon.y, depth, obj_snow_monkey) {
+						tower_stats = _tower_stats
+						tower_stats.id = _projectile_stats.tower_id;
+						parent_id = _projectile_stats.tower_id;
+						tower_stats.damage_keys = _projectile_stats.damage_keys
+					}
+				} else {
+					instance_create_depth(_bloon.x, _bloon.y, depth, obj_snow_pile);
+				}
 				continue
 			}
 		}

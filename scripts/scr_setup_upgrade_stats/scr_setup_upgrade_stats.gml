@@ -1604,7 +1604,7 @@ function scr_setup_upgrade_stats(){
 				]
 			},
 			"Snow Monkeys": {
-				upgrade_string: "Applies more snow on to bloons. When crushed they leave a snow monkey pile, which throws snow balls at bloons.",
+				upgrade_string: "Applies more snow on to bloons. When crushed one in five leave a snow monkey pile, which throws snow balls at bloons.",
 				range: 10,
 				projectile_replacement: true,
 				projectile_stats: [
