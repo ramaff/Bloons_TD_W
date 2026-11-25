@@ -370,6 +370,7 @@ function scr_bloon_hit(_bloon = other, _class = "normal", _projectile_stats = pr
 		if variable_struct_exists(_bloon.bloon_stats, "snow") {
 			if _bloon.bloon_stats.layers <= _bloon.bloon_stats.snow {
 				global.money += global.cash_flow * max(0, (_bloon.bloon_stats.remaining_value - 1))
+				instance_create_depth(_bloon.x, _bloon.y, depth, obj_snow_pile);
 				continue
 			}
 		}
