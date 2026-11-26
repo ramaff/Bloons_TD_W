@@ -64,7 +64,7 @@ global.missions_complete = {
 		"complete": false,
 		"best_time": 999999	
 	},
-	"abandoned_house_on_the_hill": {
+	"house_on_the_hill": {
 		"complete": false,
 		"best_time": 999999	
 	},
@@ -206,7 +206,7 @@ global.tutorials_progress = {
     "the_high_court": {},
     "zen_garden": {},
     "snow_field": {},
-    "the_house_on_the_hill": {}
+    "house_on_the_hill": {}
 }
 
 global.start_room = rm_world_1_map

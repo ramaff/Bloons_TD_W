@@ -66,10 +66,10 @@
         "added_cash": 50000,
         "difficulty": "intermediate"
     },
-    "rm_abandoned_house_on_the_hill": {
+    "rm_house_on_the_hill": {
         "towers": [],
         "heroes": [],
-        "added_cash": 0,
+        "added_cash": 600,
         "difficulty": "advanced"
     },
     "rm_wall_street": {

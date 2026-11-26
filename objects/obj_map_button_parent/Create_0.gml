@@ -92,6 +92,12 @@ tracks_info = {
 		"round_data": "snow_field_rounds.json",
 		"name": "snow field",
 		"requirement": "traffic_jam"
+	},
+	"rm_house_on_the_hill": {
+		"paths": [pth_house_on_the_hill],
+		"round_data": "house_on_the_hill_rounds.json",
+		"name": "house on the hill",
+		"requirement": "traffic_jam"
 	}
 }
 global.mission = "training_room"
