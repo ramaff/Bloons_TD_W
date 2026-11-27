@@ -2,43 +2,10 @@
 	[
 		{
 			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 0
+			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 60, "cooldown": 0
-		},
-		{
-			"class": "splitter", "layer": "red", "count": 20, "spread": 60, "cooldown": 30
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 0
-		},
-		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 5
-		},
-		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 10
-		},
-		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 15
-		},
-		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 20
-		},
-		{
-			"class": "normal", "layer": "red", "count": 20, "spread": 120, "cooldown": 25
-		},
-		{
-			"class": "splitter", "layer": "red", "count": 20, "spread": 120, "cooldown": 30
-		},
-		{
-			"class": "splitter", "layer": "red", "count": 20, "spread": 120, "cooldown": 35
+			"class": "normal", "layer": "blue", "count": 25, "spread": 60, "cooldown": 0
 		}
 	],
 	[
@@ -47,412 +14,278 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "splitter", "layer": "red", "count": 15, "spread": 60, "cooldown": 0
-		},
-		{
-			"class": "splitter", "layer": "green", "count": 15, "spread": 60, "cooldown": 30
+			"class": "normal", "layer": "blue", "count": 35, "spread": 40, "cooldown": 0
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_camo_bloon",
+			"round_icon_sprite": "spr_bloon",
 			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "blue", "count": 20, "spread": 60, "cooldown": 0,
-			"properties": ["camo"]
-		},
-		{
-			"class": "splitter", "layer": "red", "count": 20, "spread": 60, "cooldown": 30,
-			"properties": ["camo"]
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "ninja", "layer": "red", "count": 8, "spread": 90, "cooldown": 0
-		},
-		{
-			"class": "splitter", "layer": "red", "count": 25, "spread": 20, "cooldown": 100
+			"class": "normal", "layer": "green", "count": 25, "spread": 60, "cooldown": 0
 		}
 	],
 	[
 		{
 			"round_icon_sprite": "spr_bloon",
-			"round_icon_index":4
-		},
-		{
-			"class": "normal", "layer": "yellow", "count": 30, "spread": 70, "cooldown": 0
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_bloom_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "normal", "layer": "yellow", "count": 30, "spread": 70, "cooldown": 0
-		},
-		{
-			"class": "bloom", "layer": "bloom", "count": 3, "spread": 300, "cooldown": 0
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index":4
-		},
-		{
-			"class": "normal", "layer": "pink", "count": 30, "spread": 70, "cooldown": 0
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index": 4
-		},
-		{
-			"class": "normal", "layer": "pink", "count": 20, "spread": 70, "cooldown": 0
-		},
-		{
-			"class": "splitter", "layer": "yellow", "count": 12, "spread": 80, "cooldown": 30
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "ninja", "layer": "red", "count": 16, "spread": 70, "cooldown": 0
-		},
-		{
-			"class": "splitter", "layer": "blue", "count": 20, "spread": 20, "cooldown": 20
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_bloom_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "normal", "layer": "pink", "count": 100, "spread": 20, "cooldown": 0
-		},
-		{
-			"class": "bloom", "layer": "bloom", "count": 8, "spread": 150, "cooldown": 0
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_bloon",
-			"round_icon_index":4
-		},
-		{
-			"class": "splitter", "layer": "pink", "count": 12, "spread": 90, "cooldown": 0
-		},
-		{
-			"class": "splitter", "layer": "yellow", "count": 12, "spread": 90, "cooldown": 30
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_ninja_bloon",
 			"round_icon_index": 1
 		},
 		{
-			"class": "ninja", "layer": "blue", "count": 16, "spread": 100, "cooldown": 0
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_bloom_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "splitter", "layer": "yellow", "count": 40, "spread": 24, "cooldown": 0
-		},
-		{
-			"class": "bloom", "layer": "spring", "count": 6, "spread": 180, "cooldown": 0
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "ninja", "layer": "green", "count": 12, "spread": 105, "cooldown": 0
-		},
-		{
-			"class": "splitter", "layer": "yellow", "count": 30, "spread": 20, "cooldown": 200
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_bloom_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "normal", "layer": "pink", "count": 100, "spread": 8, "cooldown": 0
-		},
-		{
-			"class": "ceramic", "layer": "ceramic", "count": 2, "spread": 300, "cooldown": 1000
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_bloom_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "pot", "layer": "ceramic", "count": 4, "spread": 300, "cooldown": 0
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_bloom_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "normal", "layer": "pink", "count": 100, "spread": 8, "cooldown": 0,
-			"properties": ["camo"]
-		},
-		{
-			"class": "pot", "layer": "ceramic", "count": 4, "spread": 300, "cooldown": 0
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "ninja", "layer": "green", "count": 12, "spread": 105, "cooldown": 0
-		},
-		{
-			"class": "splitter", "layer": "pink", "count": 30, "spread": 40, "cooldown": 20
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "ninja", "layer": "green", "count": 12, "spread": 105, "cooldown": 0
-		},
-		{
-			"class": "firey", "layer": "paper_lantern", "count": 4, "spread": 240, "cooldown": 0
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "splitter", "layer": "pink", "count": 60, "spread": 10, "cooldown": 0
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_bloom_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "splitter", "layer": "yellow", "count": 130, "spread": 10, "cooldown": 0,
-			"properties": ["camo"]
-		},
-		{
-			"class": "pot", "layer": "ceramic", "count": 8, "spread": 200, "cooldown": 300
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "ninja", "layer": "red", "count": 50, "spread": 25, "cooldown": 0
-		},
-		{
-			"class": "ninja", "layer": "yellow", "count": 8, "spread": 75, "cooldown": 400
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "normal", "layer": "rainbow", "count": 40, "spread": 2, "cooldown": 0
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "ninja", "layer": "pink", "count": 6, "spread": 45, "cooldown": 0
-		},
-		{
-			"class": "firey", "layer": "paper_lantern", "count": 12, "spread": 120, "cooldown": 0
-		},
-		{
-			"class": "ninja", "layer": "pink", "count": 6, "spread": 45, "cooldown": 990
-		}
-	],
-	[
-		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
-		},
-		{
-			"class": "splitter", "layer": "pink", "count": 120, "spread": 2, "cooldown": 0,
+			"class": "normal", "layer": "blue", "count": 25, "spread": 60, "cooldown": 0,
 			"properties": ["tattered"]
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
 		},
 		{
-			"class": "ceramic", "layer": "brick", "count": 12, "spread": 150, "cooldown": 0
-		},
-		{
-			"class": "firey", "layer": "paper_lantern", "count": 15, "spread": 120, "cooldown": 0
+			"class": "deflation", "layer": "blue", "count": 10, "spread": 75, "cooldown": 0
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloom_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
 		},
 		{
-			"class": "splitter", "layer": "pink", "count": 140, "spread": 10, "cooldown": 0,
+			"class": "normal", "layer": "yellow", "count": 25, "spread": 60, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "splitter", "layer": "blue", "count": 25, "spread": 60, "cooldown": 0,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "green", "count": 25, "spread": 60, "cooldown": 0,
 			"properties": ["camo"]
-		},
-		{
-			"class": "pot", "layer": "brick", "count": 4, "spread": 300, "cooldown": 300
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
 		},
 		{
-			"class": "ninja", "layer": "pink", "count": 24, "spread": 60, "cooldown": 0
+			"class": "normal", "layer": "blue", "count": 70, "spread": 20, "cooldown": 0,
+			"properties": ["shielded"]
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
 		},
 		{
-			"class": "pot", "layer": "gardening", "count": 1, "spread": 400, "cooldown": 0
+			"class": "belated_birthday", "layer": "red", "count": 1, "spread": 0, "cooldown": 0
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
 		},
 		{
-			"class": "firey", "layer": "paper_lantern", "count": 30, "spread": 60, "cooldown": 0
+			"class": "normal", "layer": "pink", "count": 35, "spread": 45, "cooldown": 0
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
 		},
 		{
-			"class": "ninja", "layer": "pink", "count": 36, "spread": 45, "cooldown": 0
+			"class": "splitter", "layer": "green", "count": 25, "spread": 60, "cooldown": 0,
+			"properties": ["regrow"]
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloom_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "zebra", "count": 150, "spread": 5, "cooldown": 0
-		},
-		{
-			"class": "pot", "layer": "ceramic", "count": 16, "spread": 70, "cooldown": 0
+			"class": "normal", "layer": "yellow", "count": 25, "spread": 60, "cooldown": 0,
+			"properties": ["camo"]
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
 		},
 		{
-			"class": "ninja", "layer": "rainbow", "count": 12, "spread": 120, "cooldown": 0
+			"class": "normal", "layer": "green", "count": 70, "spread": 20, "cooldown": 0,
+			"properties": ["shielded"]
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
 		},
 		{
-			"class": "samurai_tack", "layer": "red", "count": 1, "spread": 400, "cooldown": 0
+			"class": "belated_birthday", "layer": "blue", "count": 1, "spread": 0, "cooldown": 0
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloom_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "rainbow", "count": 100, "spread": 25, "cooldown": 0
-		},
-		{
-			"class": "pot", "layer": "brick", "count": 8, "spread": 250, "cooldown": 0
+			"class": "normal", "layer": "white", "count": 35, "spread": 45, "cooldown": 0,
+			"properties": ["tattered"]
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
 		},
 		{
-			"class": "firey", "layer": "paper_lantern", "count": 60, "spread": 60, "cooldown": 0
+			"class": "splitter", "layer": "yellow", "count": 25, "spread": 60, "cooldown": 0,
+			"properties": ["regrow"]
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
 		},
 		{
-			"class": "ninja", "layer": "rainbow", "count": 24, "spread": 60, "cooldown": 0
+			"class": "normal", "layer": "pink", "count": 35, "spread": 45, "cooldown": 0,
+			"properties": ["camo"]
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_bloom_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
 		},
 		{
-			"class": "pot", "layer": "brick", "count": 16, "spread": 120, "cooldown": 0
+			"class": "normal", "layer": "yellow", "count": 70, "spread": 20, "cooldown": 0,
+			"properties": ["shielded"]
 		}
 	],
 	[
 		{
-			"round_icon_sprite": "spr_ninja_bloon",
-			"round_icon_index": 0
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
 		},
 		{
-			"class": "pot", "layer": "gardening", "count": 3, "spread": 400, "cooldown": 0
+			"class": "belated_birthday", "layer": "green", "count": 1, "spread": 0, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 45, "spread": 35, "cooldown": 0,
+			"properties": ["tattered"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "splitter", "layer": "pink", "count": 35, "spread": 45, "cooldown": 0,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 45, "spread": 30, "cooldown": 0,
+			"properties": ["camo"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "pink", "count": 85, "spread": 15, "cooldown": 0,
+			"properties": ["shielded"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "belated_birthday", "layer": "yellow", "count": 1, "spread": 0, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 50, "spread": 30, "cooldown": 0,
+			"properties": ["tattered"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 35, "spread": 45, "cooldown": 0,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 45, "spread": 30, "cooldown": 0,
+			"properties": ["camo"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "zebra", "count": 55, "spread": 30, "cooldown": 0,
+			"properties": ["shielded"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "belated_birthday", "layer": "pink", "count": 1, "spread": 0, "cooldown": 0
 		}
 	]
 ]
