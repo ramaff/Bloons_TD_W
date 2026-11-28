@@ -3,6 +3,8 @@
 
 alarm[0] = 60;
 
+image_index = 1;
+
 var _layer = blayer
 var _class = bclass
 var _xx = x;

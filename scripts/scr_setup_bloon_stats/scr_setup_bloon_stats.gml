@@ -2598,17 +2598,17 @@ function scr_setup_bloon_stats(){
 			"red": {
 				sprite: "spr_belated_birthday_bloon",
 				layers: 1000, rbe: 1000, health: 1000, "big_bloon_tier": 4,
-				damage: 2, density: 1, speed: 0.5,
+				damage: 2, density: 1, speed: 0.6,
 			},
 			"blue": {
 				sprite: "spr_belated_birthday_bloon_blue",
 				layers: 2000, rbe: 2000, health: 2000, "big_bloon_tier": 4,
-				damage: 4, density: 1, speed: 0.6,
+				damage: 4, density: 1, speed: 0.7,
 			},
 			"green": {
 				sprite: "spr_belated_birthday_bloon_green",
 				layers: 3000, rbe: 3000, health: 3000, "big_bloon_tier": 4,
-				damage: 6, density: 1, speed: 0.7,
+				damage: 6, density: 1, speed: 0.8,
 			},
 			"yellow": {
 				sprite: "spr_belated_birthday_bloon_yellow",
@@ -2619,6 +2619,11 @@ function scr_setup_bloon_stats(){
 				sprite: "spr_belated_birthday_bloon_pink",
 				layers: 6000, rbe: 6000, health: 6000, "big_bloon_tier": 5,
 				damage: 10, density: 1, speed: 1,
+			},
+			"rainbow": {
+				sprite: "spr_belated_birthday_bloon_pink",
+				layers: 13500, rbe: 13500, health: 13500, "big_bloon_tier": 6,
+				damage: 15, density: 1, speed: 1,
 			}
 		}
 	}

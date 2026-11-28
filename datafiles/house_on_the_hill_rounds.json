@@ -5,7 +5,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "blue", "count": 25, "spread": 60, "cooldown": 0
+			"class": "normal", "layer": "blue", "count": 30, "spread": 60, "cooldown": 0
 		}
 	],
 	[
@@ -14,7 +14,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "blue", "count": 35, "spread": 40, "cooldown": 0
+			"class": "normal", "layer": "blue", "count": 40, "spread": 40, "cooldown": 0
 		}
 	],
 	[
@@ -23,7 +23,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "green", "count": 25, "spread": 60, "cooldown": 0
+			"class": "normal", "layer": "green", "count": 30, "spread": 60, "cooldown": 0
 		}
 	],
 	[
@@ -32,7 +32,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "blue", "count": 25, "spread": 60, "cooldown": 0,
+			"class": "normal", "layer": "blue", "count": 30, "spread": 60, "cooldown": 0,
 			"properties": ["tattered"]
 		}
 	],
@@ -42,7 +42,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "deflation", "layer": "blue", "count": 10, "spread": 75, "cooldown": 0
+			"class": "deflation", "layer": "blue", "count": 15, "spread": 60, "cooldown": 0
 		}
 	],
 	[
@@ -51,7 +51,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "yellow", "count": 25, "spread": 60, "cooldown": 0
+			"class": "normal", "layer": "yellow", "count": 30, "spread": 60, "cooldown": 0
 		}
 	],
 	[
@@ -60,7 +60,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "splitter", "layer": "blue", "count": 25, "spread": 60, "cooldown": 0,
+			"class": "splitter", "layer": "blue", "count": 30, "spread": 60, "cooldown": 0,
 			"properties": ["regrow"]
 		}
 	],
@@ -70,7 +70,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "green", "count": 25, "spread": 60, "cooldown": 0,
+			"class": "normal", "layer": "green", "count": 30, "spread": 60, "cooldown": 0,
 			"properties": ["camo"]
 		}
 	],
@@ -99,7 +99,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "pink", "count": 35, "spread": 45, "cooldown": 0
+			"class": "normal", "layer": "pink", "count": 40, "spread": 45, "cooldown": 0
 		}
 	],
 	[
@@ -108,7 +108,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "splitter", "layer": "green", "count": 25, "spread": 60, "cooldown": 0,
+			"class": "splitter", "layer": "green", "count": 30, "spread": 60, "cooldown": 0,
 			"properties": ["regrow"]
 		}
 	],
@@ -118,7 +118,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "yellow", "count": 25, "spread": 60, "cooldown": 0,
+			"class": "normal", "layer": "yellow", "count": 30, "spread": 60, "cooldown": 0,
 			"properties": ["camo"]
 		}
 	],
@@ -147,7 +147,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "white", "count": 35, "spread": 45, "cooldown": 0,
+			"class": "normal", "layer": "white", "count": 40, "spread": 45, "cooldown": 0,
 			"properties": ["tattered"]
 		}
 	],
@@ -157,7 +157,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "splitter", "layer": "yellow", "count": 25, "spread": 60, "cooldown": 0,
+			"class": "splitter", "layer": "yellow", "count": 30, "spread": 60, "cooldown": 0,
 			"properties": ["regrow"]
 		}
 	],
@@ -167,7 +167,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "pink", "count": 35, "spread": 45, "cooldown": 0,
+			"class": "normal", "layer": "pink", "count": 40, "spread": 45, "cooldown": 0,
 			"properties": ["camo"]
 		}
 	],
@@ -196,7 +196,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "zebra", "count": 45, "spread": 35, "cooldown": 0,
+			"class": "normal", "layer": "zebra", "count": 50, "spread": 35, "cooldown": 0,
 			"properties": ["tattered"]
 		}
 	],
@@ -206,7 +206,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "splitter", "layer": "pink", "count": 35, "spread": 45, "cooldown": 0,
+			"class": "splitter", "layer": "pink", "count": 40, "spread": 45, "cooldown": 0,
 			"properties": ["regrow"]
 		}
 	],
@@ -216,7 +216,7 @@
 			"round_icon_index": 1
 		},
 		{
-			"class": "normal", "layer": "pink", "count": 45, "spread": 30, "cooldown": 0,
+			"class": "normal", "layer": "pink", "count": 50, "spread": 30, "cooldown": 0,
 			"properties": ["camo"]
 		}
 	],
@@ -286,6 +286,152 @@
 		},
 		{
 			"class": "belated_birthday", "layer": "pink", "count": 1, "spread": 0, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "ceramic", "layer": "ceramic", "count": 40, "spread": 40, "cooldown": 0,
+			"properties": ["tattered"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "ceramic", "layer": "ceramic", "count": 30, "spread": 50, "cooldown": 0,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 45, "spread": 30, "cooldown": 0,
+			"properties": ["camo"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "normal", "layer": "rainbow", "count": 55, "spread": 30, "cooldown": 0,
+			"properties": ["shielded"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "belated_birthday", "layer": "candle", "count": 3, "spread": 0, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 30, "spread": 55, "cooldown": 0,
+			"properties": ["tattered"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "ceramic", "layer": "brick", "count": 20, "spread": 70, "cooldown": 0,
+			"properties": ["regrow"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "ceramic", "layer": "ceramic", "count": 30, "spread": 45, "cooldown": 0,
+			"properties": ["camo"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "ceramic", "layer": "ceramic", "count": 40, "spread": 45, "cooldown": 0,
+			"properties": ["shielded"]
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "belated_birthday", "layer": "rainbow", "count": 1, "spread": 0, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "moab", "layer": "rocket", "count": 9, "spread": 150, "cooldown": 0
+		},
+		{
+			"class": "moab", "layer": "rocket", "count": 4, "spread": 150, "cooldown": 975
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "moab", "layer": "hta", "count": 30, "spread": 100, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "moab", "layer": "ddt", "count": 3, "spread": 180, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "moab", "layer": "zap", "count": 4, "spread": 600, "cooldown": 0
+		}
+	],
+	[
+		{
+			"round_icon_sprite": "spr_bloon",
+			"round_icon_index": 1
+		},
+		{
+			"class": "party", "layer": "birthday_boy", "count": 1, "spread": 0, "cooldown": 0
 		}
 	]
 ]
