@@ -1044,32 +1044,27 @@ function scr_setup_bloon_stats(){
 				]
 			},
 			"moab": {
-				sprite: "spr_moab",
-				layers: 218,
-				"big_bloon_tier": 2,
-				"shielded_sprite": "spr_moab_shielded",
-				index: 0,
-				rbe: 616,
-				health: 200,
-				density: 1,
-				speed: 1.5,
+				sprite: "spr_moab", layers: 218,
+				"big_bloon_tier": 2, "shielded_sprite": "spr_moab_shielded",
+				index: 0, rbe: 616, health: 200,
+				density: 1, speed: 1.5,
 				children: [
-					{
-						"class": "ceramic",
-						"layer": "ceramic"
-					},
-					{
-						"class": "ceramic",
-						"layer": "ceramic"
-					},
-					{
-						"class": "ceramic",
-						"layer": "ceramic"
-					},
-					{
-						"class": "ceramic",
-						"layer": "ceramic"
-					}
+					{"class": "ceramic", "layer": "ceramic"},
+					{"class": "ceramic", "layer": "ceramic"},
+					{"class": "ceramic", "layer": "ceramic"},
+					{"class": "ceramic", "layer": "ceramic"}
+				]
+			},
+			"ddt": {
+				sprite: "spr_ddt", layers: 218,
+				"big_bloon_tier": 3, "shielded_sprite": "spr_moab_shielded",
+				index: 0, rbe: 616, health: 200,
+				density: 1, speed: 4.2, camo: true, metallic: true,
+				children: [
+					{"class": "ceramic", "layer": "ceramic", "properties": ["tattered", "camo", "lead"]},
+					{"class": "ceramic", "layer": "ceramic", "properties": ["tattered", "camo", "lead"]},
+					{"class": "ceramic", "layer": "ceramic", "properties": ["tattered", "camo", "lead"]},
+					{"class": "ceramic", "layer": "ceramic", "properties": ["tattered", "camo", "lead"]}
 				]
 			},
 			"brc": {
@@ -2593,37 +2588,60 @@ function scr_setup_bloon_stats(){
 		},
 		"belated_birthday": {
 			"off_track": true,
-			"object": "obj_belated_birthday_bloon",
 			"icon_sprite": "spr_non_specified_bounty_icon",
 			"red": {
 				sprite: "spr_belated_birthday_bloon",
+				"object": "obj_belated_birthday_bloon",
 				layers: 1000, rbe: 1000, health: 1000, "big_bloon_tier": 4,
 				damage: 2, density: 1, speed: 0.6,
 			},
 			"blue": {
 				sprite: "spr_belated_birthday_bloon_blue",
+				"object": "obj_belated_birthday_bloon",
 				layers: 2000, rbe: 2000, health: 2000, "big_bloon_tier": 4,
 				damage: 4, density: 1, speed: 0.7,
 			},
 			"green": {
 				sprite: "spr_belated_birthday_bloon_green",
+				"object": "obj_belated_birthday_bloon",
 				layers: 3000, rbe: 3000, health: 3000, "big_bloon_tier": 4,
 				damage: 6, density: 1, speed: 0.8,
 			},
 			"yellow": {
 				sprite: "spr_belated_birthday_bloon_yellow",
+				"object": "obj_belated_birthday_bloon",
 				layers: 4500, rbe: 4500, health: 4500, "big_bloon_tier": 5,
 				damage: 8, density: 1, speed: 0.9,
 			},
 			"pink": {
 				sprite: "spr_belated_birthday_bloon_pink",
+				"object": "obj_belated_birthday_bloon",
 				layers: 6000, rbe: 6000, health: 6000, "big_bloon_tier": 5,
 				damage: 10, density: 1, speed: 1,
 			},
 			"rainbow": {
 				sprite: "spr_belated_birthday_bloon_pink",
+				"object": "obj_belated_birthday_bloon",
 				layers: 13500, rbe: 13500, health: 13500, "big_bloon_tier": 6,
 				damage: 15, density: 1, speed: 1,
+			},
+			"candle": {
+				sprite: "spr_birthday_candle_bloon",
+				object: "obj_birthday_candle_bloon",
+				layers: 10500, rbe: 10500, health: 7500, "big_bloon_tier": 6,
+				damage: 15, density: 1, speed: 0.15,
+			},
+			"wish": {
+				sprite: "spr_lesser_wish_bloon",
+				"object": "obj_wish_bloon",
+				layers: 6500, rbe: 6500, health: 6500, "big_bloon_tier": 5,
+				damage: 45, density: 1, speed: 1.3,
+			},
+			"birthday_boy": {
+				sprite: "spr_real_birthday_boy_bloon",
+				"object": "obj_party_bloon",
+				layers: 6700, rbe: 6700, health: 6700, "big_bloon_tier": 5,
+				damage: 45, density: 1, speed: 0.6,
 			}
 		}
 	}

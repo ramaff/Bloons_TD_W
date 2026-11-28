@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_spiral_on_target",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_spiral_on_target",
+  "parent":{
+    "name":"bloons",
+    "path":"folders/Scripts/bloons.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

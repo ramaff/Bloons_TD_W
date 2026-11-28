@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var _tar_angle = scr_off_path_wave()
+var _tar_angle = scr_off_path_wave(0.2)
 
 var _ang_off = hspeed * 12
 

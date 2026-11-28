@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_lesser_wish_bloon",
-  "bboxMode":0,
-  "bbox_bottom":248,
-  "bbox_left":44,
+  "bboxMode":2,
+  "bbox_bottom":214,
+  "bbox_left":88,
   "bbox_right":238,
-  "bbox_top":93,
+  "bbox_top":91,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -13,12 +13,14 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"96c2e085-4934-40a4-ac54-f8a0c68bc5ea","name":"96c2e085-4934-40a4-ac54-f8a0c68bc5ea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4d5652b6-9c6e-4882-97a3-974549d47338","name":"4d5652b6-9c6e-4882-97a3-974549d47338","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":330,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"5dd69e5e-1982-45d1-9643-563bb9636ab5","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"5dd69e5e-1982-45d1-9643-563bb9636ab5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"eb73f070-1006-48d8-b64c-20a6b33b3690","blendMode":0,"displayName":"default","isLocked":false,"name":"eb73f070-1006-48d8-b64c-20a6b33b3690","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_lesser_wish_bloon",
@@ -49,7 +51,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":2.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -59,7 +61,7 @@
     },
     "name":"spr_lesser_wish_bloon",
     "playback":1,
-    "playbackSpeed":30.0,
+    "playbackSpeed":4.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -71,6 +73,9 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"96c2e085-4934-40a4-ac54-f8a0c68bc5ea","path":"sprites/spr_lesser_wish_bloon/spr_lesser_wish_bloon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"9bebdb9c-ad0b-439c-baaa-56925774d33c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4d5652b6-9c6e-4882-97a3-974549d47338","path":"sprites/spr_lesser_wish_bloon/spr_lesser_wish_bloon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"bb995813-c272-41b8-ae55-8eaa6a354d83","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

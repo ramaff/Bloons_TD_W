@@ -58,18 +58,18 @@
     },
     "rm_zen_garden": {
         "towers": ["green_monkey"],
-        "added_cash": 50000,
+        "added_cash": 500,
         "difficulty": "advanced"
     },
     "rm_snow_field": {
         "towers": ["ice_monkey"],
-        "added_cash": 50000,
+        "added_cash": 500,
         "difficulty": "intermediate"
     },
     "rm_house_on_the_hill": {
         "towers": [],
         "heroes": [],
-        "added_cash": 600,
+        "added_cash": 60000,
         "difficulty": "advanced"
     },
     "rm_wall_street": {
